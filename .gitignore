@@ -3,6 +3,7 @@
 bin/
 libs/
 obj/
+docfx/
 
 build.sh
 usr.sh
