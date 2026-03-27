@@ -24,7 +24,7 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           name: DeviceOfHermes ${{ env.VERSION }}
-          body_path: ./DeviceOfHermes/Release.md
+          body_path: ./Release.md
           draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
