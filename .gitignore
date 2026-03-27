@@ -8,3 +8,4 @@ docfx/
 build.sh
 usr.sh
 upload.sh
+doc.sh
