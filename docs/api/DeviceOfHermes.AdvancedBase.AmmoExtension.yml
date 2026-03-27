@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AmmoExtension
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 105
   assemblies:
   - DeviceOfHermes
@@ -52,11 +52,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ConsumeAmmo
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 107
   assemblies:
   - DeviceOfHermes
@@ -91,11 +91,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReloadAmmo
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 117
   assemblies:
   - DeviceOfHermes

@@ -33,11 +33,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Extension
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 2
   assemblies:
   - DeviceOfHermes
@@ -69,11 +69,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Min
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -106,11 +106,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Max
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 9
   assemblies:
   - DeviceOfHermes
@@ -143,11 +143,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: StripPrefix
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 14
   assemblies:
   - DeviceOfHermes
@@ -180,11 +180,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: StripSuffix
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 24
   assemblies:
   - DeviceOfHermes
@@ -217,11 +217,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Map
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 34
   assemblies:
   - DeviceOfHermes
@@ -257,11 +257,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Filter
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 39
   assemblies:
   - DeviceOfHermes
@@ -296,11 +296,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: FilterMap
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 44
   assemblies:
   - DeviceOfHermes
@@ -336,11 +336,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Flatten
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 49
   assemblies:
   - DeviceOfHermes
@@ -373,11 +373,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Enumerate
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 54
   assemblies:
   - DeviceOfHermes
@@ -410,11 +410,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Collect
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 59
   assemblies:
   - DeviceOfHermes
@@ -447,11 +447,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Fold
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 64
   assemblies:
   - DeviceOfHermes
@@ -489,11 +489,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Reduce
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 76
   assemblies:
   - DeviceOfHermes
@@ -528,11 +528,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Foreach
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 95
   assemblies:
   - DeviceOfHermes
@@ -565,11 +565,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: TryForeach
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 103
   assemblies:
   - DeviceOfHermes
@@ -605,11 +605,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Inspect
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 118
   assemblies:
   - DeviceOfHermes
@@ -644,11 +644,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: FaceTo
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 128
   assemblies:
   - DeviceOfHermes
@@ -676,11 +676,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: GetHands
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 137
   assemblies:
   - DeviceOfHermes
@@ -713,11 +713,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Say
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 147
   assemblies:
   - DeviceOfHermes
@@ -748,11 +748,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/SysExtension.cs
+      path: src/SysExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: GetAsmDirectory
-    path: ../SysExtension.cs
+    path: ../src/SysExtension.cs
     startLine: 152
   assemblies:
   - DeviceOfHermes

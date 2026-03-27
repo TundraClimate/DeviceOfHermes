@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/HermesConstants.cs
+      path: src/HermesConstants.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: HermesConstants
-    path: ../HermesConstants.cs
+    path: ../src/HermesConstants.cs
     startLine: 5
   assemblies:
   - DeviceOfHermes
@@ -55,11 +55,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/HermesConstants.cs
+      path: src/HermesConstants.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RevengeDiceSlash
-    path: ../HermesConstants.cs
+    path: ../src/HermesConstants.cs
     startLine: 32
   assemblies:
   - DeviceOfHermes
@@ -82,11 +82,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/HermesConstants.cs
+      path: src/HermesConstants.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RevengeDicePenetrate
-    path: ../HermesConstants.cs
+    path: ../src/HermesConstants.cs
     startLine: 34
   assemblies:
   - DeviceOfHermes
@@ -109,11 +109,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/HermesConstants.cs
+      path: src/HermesConstants.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RevengeDiceHit
-    path: ../HermesConstants.cs
+    path: ../src/HermesConstants.cs
     startLine: 36
   assemblies:
   - DeviceOfHermes
@@ -136,11 +136,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/HermesConstants.cs
+      path: src/HermesConstants.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: UnbreakableSlash
-    path: ../HermesConstants.cs
+    path: ../src/HermesConstants.cs
     startLine: 38
   assemblies:
   - DeviceOfHermes
@@ -163,11 +163,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/HermesConstants.cs
+      path: src/HermesConstants.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: UnbreakablePenetrate
-    path: ../HermesConstants.cs
+    path: ../src/HermesConstants.cs
     startLine: 40
   assemblies:
   - DeviceOfHermes
@@ -190,11 +190,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/HermesConstants.cs
+      path: src/HermesConstants.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: UnbreakableHit
-    path: ../HermesConstants.cs
+    path: ../src/HermesConstants.cs
     startLine: 42
   assemblies:
   - DeviceOfHermes

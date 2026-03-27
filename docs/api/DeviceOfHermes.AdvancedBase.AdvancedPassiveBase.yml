@@ -21,11 +21,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AdvancedPassiveBase
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 5
   assemblies:
   - DeviceOfHermes
@@ -191,11 +191,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnRoundStartFirst
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 21
   assemblies:
   - DeviceOfHermes
@@ -217,11 +217,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnRoundStartLast
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 25
   assemblies:
   - DeviceOfHermes
@@ -243,11 +243,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsClashable
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 29
   assemblies:
   - DeviceOfHermes
@@ -274,11 +274,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsClashable
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 34
   assemblies:
   - DeviceOfHermes
@@ -307,11 +307,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsIgnoreSpeedByMatch
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 39
   assemblies:
   - DeviceOfHermes
@@ -340,11 +340,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsAllowRoundEnd
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 44
   assemblies:
   - DeviceOfHermes
@@ -368,11 +368,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedPassiveBase.cs
+      path: src/AdvancedPassiveBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: CanDiscardByAbility
-    path: ../AdvancedPassiveBase.cs
+    path: ../src/AdvancedPassiveBase.cs
     startLine: 49
   assemblies:
   - DeviceOfHermes

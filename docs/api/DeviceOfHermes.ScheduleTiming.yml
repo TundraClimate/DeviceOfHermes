@@ -20,11 +20,11 @@ items:
   type: Enum
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ScheduleTiming
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 99
   assemblies:
   - DeviceOfHermes
@@ -47,11 +47,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RoundStart
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 101
   assemblies:
   - DeviceOfHermes
@@ -73,11 +73,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RollSpeedDice
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 102
   assemblies:
   - DeviceOfHermes
@@ -99,11 +99,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: StartBattle
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 103
   assemblies:
   - DeviceOfHermes
@@ -125,11 +125,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: UseCard
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 104
   assemblies:
   - DeviceOfHermes
@@ -151,11 +151,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: EndBattle
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 105
   assemblies:
   - DeviceOfHermes
@@ -177,11 +177,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RoundEnd
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 106
   assemblies:
   - DeviceOfHermes

@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/BattleBufExtension.cs
+      path: src/BattleBufExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: BattleBufExtension
-    path: ../BattleBufExtension.cs
+    path: ../src/BattleBufExtension.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -56,11 +56,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleBufExtension.cs
+      path: src/BattleBufExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: GetBuf
-    path: ../BattleBufExtension.cs
+    path: ../src/BattleBufExtension.cs
     startLine: 6
   assemblies:
   - DeviceOfHermes
@@ -93,11 +93,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleBufExtension.cs
+      path: src/BattleBufExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: TryGetBuf
-    path: ../BattleBufExtension.cs
+    path: ../src/BattleBufExtension.cs
     startLine: 12
   assemblies:
   - DeviceOfHermes
@@ -138,11 +138,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleBufExtension.cs
+      path: src/BattleBufExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: GetBufAndInitIfNull
-    path: ../BattleBufExtension.cs
+    path: ../src/BattleBufExtension.cs
     startLine: 22
   assemblies:
   - DeviceOfHermes
@@ -177,11 +177,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleBufExtension.cs
+      path: src/BattleBufExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RemoveBuf
-    path: ../BattleBufExtension.cs
+    path: ../src/BattleBufExtension.cs
     startLine: 37
   assemblies:
   - DeviceOfHermes
@@ -212,11 +212,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleBufExtension.cs
+      path: src/BattleBufExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RemoveBufIf
-    path: ../BattleBufExtension.cs
+    path: ../src/BattleBufExtension.cs
     startLine: 42
   assemblies:
   - DeviceOfHermes
@@ -247,11 +247,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleBufExtension.cs
+      path: src/BattleBufExtension.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: GetBufStack
-    path: ../BattleBufExtension.cs
+    path: ../src/BattleBufExtension.cs
     startLine: 60
   assemblies:
   - DeviceOfHermes

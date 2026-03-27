@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/Peekable.cs
+      path: src/Peekable.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Peekable
-    path: ../Peekable.cs
+    path: ../src/Peekable.cs
     startLine: 2
   assemblies:
   - DeviceOfHermes
@@ -59,11 +59,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: DeviceOfHermes/Peekable.cs
+      path: src/Peekable.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: .ctor
-    path: ../Peekable.cs
+    path: ../src/Peekable.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -91,11 +91,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Peekable.cs
+      path: src/Peekable.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Peek
-    path: ../Peekable.cs
+    path: ../src/Peekable.cs
     startLine: 9
   assemblies:
   - DeviceOfHermes
@@ -125,11 +125,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Peekable.cs
+      path: src/Peekable.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: MoveNext
-    path: ../Peekable.cs
+    path: ../src/Peekable.cs
     startLine: 29
   assemblies:
   - DeviceOfHermes

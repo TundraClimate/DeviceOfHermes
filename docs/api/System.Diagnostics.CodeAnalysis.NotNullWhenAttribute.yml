@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/CodeAnalysis.cs
+      path: src/CodeAnalysis.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: NotNullWhenAttribute
-    path: ../CodeAnalysis.cs
+    path: ../src/CodeAnalysis.cs
     startLine: 2
   assemblies:
   - DeviceOfHermes
@@ -102,11 +102,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/CodeAnalysis.cs
+      path: src/CodeAnalysis.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReturnValue
-    path: ../CodeAnalysis.cs
+    path: ../src/CodeAnalysis.cs
     startLine: 5
   assemblies:
   - DeviceOfHermes
@@ -131,11 +131,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: DeviceOfHermes/CodeAnalysis.cs
+      path: src/CodeAnalysis.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: .ctor
-    path: ../CodeAnalysis.cs
+    path: ../src/CodeAnalysis.cs
     startLine: 7
   assemblies:
   - DeviceOfHermes

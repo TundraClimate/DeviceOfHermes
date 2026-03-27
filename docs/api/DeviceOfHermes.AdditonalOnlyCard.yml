@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/AdditionalOnlyCard.cs
+      path: src/AdditionalOnlyCard.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AdditonalOnlyCard
-    path: ../AdditionalOnlyCard.cs
+    path: ../src/AdditionalOnlyCard.cs
     startLine: 5
   assemblies:
   - DeviceOfHermes
@@ -53,11 +53,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: DeviceOfHermes/AdditionalOnlyCard.cs
+      path: src/AdditionalOnlyCard.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: .ctor
-    path: ../AdditionalOnlyCard.cs
+    path: ../src/AdditionalOnlyCard.cs
     startLine: 14
   assemblies:
   - DeviceOfHermes
@@ -85,11 +85,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdditionalOnlyCard.cs
+      path: src/AdditionalOnlyCard.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AddCards
-    path: ../AdditionalOnlyCard.cs
+    path: ../src/AdditionalOnlyCard.cs
     startLine: 19
   assemblies:
   - DeviceOfHermes

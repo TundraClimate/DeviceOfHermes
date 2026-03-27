@@ -19,11 +19,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/PassiveResolver.cs
+      path: src/PassiveResolver.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: PassiveResolver
-    path: ../PassiveResolver.cs
+    path: ../src/PassiveResolver.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -54,11 +54,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/PassiveResolver.cs
+      path: src/PassiveResolver.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AddRestrict
-    path: ../PassiveResolver.cs
+    path: ../src/PassiveResolver.cs
     startLine: 13
   assemblies:
   - DeviceOfHermes
@@ -86,11 +86,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/PassiveResolver.cs
+      path: src/PassiveResolver.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: LockAlways
-    path: ../PassiveResolver.cs
+    path: ../src/PassiveResolver.cs
     startLine: 18
   assemblies:
   - DeviceOfHermes
@@ -117,11 +117,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/PassiveResolver.cs
+      path: src/PassiveResolver.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: LockIf
-    path: ../PassiveResolver.cs
+    path: ../src/PassiveResolver.cs
     startLine: 23
   assemblies:
   - DeviceOfHermes
@@ -153,11 +153,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/PassiveResolver.cs
+      path: src/PassiveResolver.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: LockIfExists
-    path: ../PassiveResolver.cs
+    path: ../src/PassiveResolver.cs
     startLine: 28
   assemblies:
   - DeviceOfHermes
@@ -189,11 +189,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/PassiveResolver.cs
+      path: src/PassiveResolver.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Conflict
-    path: ../PassiveResolver.cs
+    path: ../src/PassiveResolver.cs
     startLine: 33
   assemblies:
   - DeviceOfHermes

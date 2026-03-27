@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/Hermes.cs
+      path: src/Hermes.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Hermes
-    path: ../Hermes.cs
+    path: ../src/Hermes.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -55,11 +55,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Hermes.cs
+      path: src/Hermes.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Say
-    path: ../Hermes.cs
+    path: ../src/Hermes.cs
     startLine: 6
   assemblies:
   - DeviceOfHermes
@@ -89,11 +89,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Hermes.cs
+      path: src/Hermes.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Store
-    path: ../Hermes.cs
+    path: ../src/Hermes.cs
     startLine: 25
   assemblies:
   - DeviceOfHermes
@@ -123,11 +123,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Hermes.cs
+      path: src/Hermes.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Load
-    path: ../Hermes.cs
+    path: ../src/Hermes.cs
     startLine: 30
   assemblies:
   - DeviceOfHermes
@@ -156,11 +156,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Hermes.cs
+      path: src/Hermes.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: TryLoad
-    path: ../Hermes.cs
+    path: ../src/Hermes.cs
     startLine: 35
   assemblies:
   - DeviceOfHermes
@@ -192,11 +192,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Hermes.cs
+      path: src/Hermes.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: CreateSprite
-    path: ../Hermes.cs
+    path: ../src/Hermes.cs
     startLine: 42
   assemblies:
   - DeviceOfHermes
@@ -228,11 +228,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Hermes.cs
+      path: src/Hermes.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: CreateSprite
-    path: ../Hermes.cs
+    path: ../src/Hermes.cs
     startLine: 58
   assemblies:
   - DeviceOfHermes

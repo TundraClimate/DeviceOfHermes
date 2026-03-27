@@ -24,11 +24,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: BattleAmmoBuf
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -180,11 +180,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: GainByReload
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 6
   assemblies:
   - DeviceOfHermes
@@ -209,11 +209,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: DiceBlockWithNotConsumable
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 8
   assemblies:
   - DeviceOfHermes
@@ -238,11 +238,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ConsumedStack
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 10
   assemblies:
   - DeviceOfHermes
@@ -267,11 +267,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: LosedStack
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 12
   assemblies:
   - DeviceOfHermes
@@ -296,11 +296,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Consume
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 18
   assemblies:
   - DeviceOfHermes
@@ -328,11 +328,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnConsume
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 41
   assemblies:
   - DeviceOfHermes
@@ -360,11 +360,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnCanceled
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 45
   assemblies:
   - DeviceOfHermes
@@ -386,11 +386,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsConsumable
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 49
   assemblies:
   - DeviceOfHermes
@@ -420,11 +420,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Reload
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 54
   assemblies:
   - DeviceOfHermes
@@ -446,11 +446,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/BattleAmmoBuf.cs
+      path: src/BattleAmmoBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnReload
-    path: ../BattleAmmoBuf.cs
+    path: ../src/BattleAmmoBuf.cs
     startLine: 63
   assemblies:
   - DeviceOfHermes

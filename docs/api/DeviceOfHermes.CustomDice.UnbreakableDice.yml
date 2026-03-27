@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/UnbreakableDice.cs
+      path: src/UnbreakableDice.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: UnbreakableDice
-    path: ../UnbreakableDice.cs
+    path: ../src/UnbreakableDice.cs
     startLine: 7
   assemblies:
   - DeviceOfHermes
@@ -84,11 +84,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/UnbreakableDice.cs
+      path: src/UnbreakableDice.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnUseBreaked
-    path: ../UnbreakableDice.cs
+    path: ../src/UnbreakableDice.cs
     startLine: 47
   assemblies:
   - DeviceOfHermes
@@ -113,11 +113,11 @@ items:
   type: Field
   source:
     remote:
-      path: DeviceOfHermes/UnbreakableDice.cs
+      path: src/UnbreakableDice.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsBreaked
-    path: ../UnbreakableDice.cs
+    path: ../src/UnbreakableDice.cs
     startLine: 51
   assemblies:
   - DeviceOfHermes

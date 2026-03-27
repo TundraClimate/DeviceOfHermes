@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/TextModel.cs
+      path: src/TextModel.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: TextModel
-    path: ../TextModel.cs
+    path: ../src/TextModel.cs
     startLine: 6
   assemblies:
   - DeviceOfHermes
@@ -52,11 +52,11 @@ items:
   type: Event
   source:
     remote:
-      path: DeviceOfHermes/TextModel.cs
+      path: src/TextModel.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnLoadLocalize
-    path: ../TextModel.cs
+    path: ../src/TextModel.cs
     startLine: 18
   assemblies:
   - DeviceOfHermes
@@ -79,11 +79,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/TextModel.cs
+      path: src/TextModel.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: SetBattleEffectText
-    path: ../TextModel.cs
+    path: ../src/TextModel.cs
     startLine: 20
   assemblies:
   - DeviceOfHermes
@@ -113,11 +113,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/TextModel.cs
+      path: src/TextModel.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: SetBattleEffectTexts
-    path: ../TextModel.cs
+    path: ../src/TextModel.cs
     startLine: 41
   assemblies:
   - DeviceOfHermes

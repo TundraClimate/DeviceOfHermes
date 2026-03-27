@@ -31,11 +31,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Mem
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 2
   assemblies:
   - DeviceOfHermes
@@ -66,11 +66,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Swap
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -102,11 +102,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Take
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 9
   assemblies:
   - DeviceOfHermes
@@ -138,11 +138,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Take
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 15
   assemblies:
   - DeviceOfHermes
@@ -172,11 +172,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Replace
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 20
   assemblies:
   - DeviceOfHermes
@@ -210,11 +210,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Replace
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 26
   assemblies:
   - DeviceOfHermes
@@ -246,11 +246,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Replace
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 31
   assemblies:
   - DeviceOfHermes
@@ -282,11 +282,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Replace
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 36
   assemblies:
   - DeviceOfHermes
@@ -318,11 +318,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Replace
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 41
   assemblies:
   - DeviceOfHermes
@@ -354,11 +354,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Replace
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 46
   assemblies:
   - DeviceOfHermes
@@ -390,11 +390,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Replace
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 51
   assemblies:
   - DeviceOfHermes
@@ -426,11 +426,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReplaceIf
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 56
   assemblies:
   - DeviceOfHermes
@@ -466,11 +466,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReplaceIf
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 62
   assemblies:
   - DeviceOfHermes
@@ -504,11 +504,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReplaceIf
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 67
   assemblies:
   - DeviceOfHermes
@@ -542,11 +542,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReplaceIf
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 72
   assemblies:
   - DeviceOfHermes
@@ -580,11 +580,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReplaceIf
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 77
   assemblies:
   - DeviceOfHermes
@@ -618,11 +618,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReplaceIf
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 82
   assemblies:
   - DeviceOfHermes
@@ -656,11 +656,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Mem.cs
+      path: src/Mem.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ReplaceIf
-    path: ../Mem.cs
+    path: ../src/Mem.cs
     startLine: 87
   assemblies:
   - DeviceOfHermes

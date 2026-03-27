@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/CustomDiceSprite.cs
+      path: src/CustomDiceSprite.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: CustomDiceSprite
-    path: ../CustomDiceSprite.cs
+    path: ../src/CustomDiceSprite.cs
     startLine: 9
   assemblies:
   - DeviceOfHermes
@@ -50,11 +50,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/CustomDiceSprite.cs
+      path: src/CustomDiceSprite.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AddSequence
-    path: ../CustomDiceSprite.cs
+    path: ../src/CustomDiceSprite.cs
     startLine: 22
   assemblies:
   - DeviceOfHermes

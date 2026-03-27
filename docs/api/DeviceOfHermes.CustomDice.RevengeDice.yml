@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/RevengeDice.cs
+      path: src/RevengeDice.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: RevengeDice
-    path: ../RevengeDice.cs
+    path: ../src/RevengeDice.cs
     startLine: 8
   assemblies:
   - DeviceOfHermes
@@ -84,11 +84,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/RevengeDice.cs
+      path: src/RevengeDice.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnRevenge
-    path: ../RevengeDice.cs
+    path: ../src/RevengeDice.cs
     startLine: 90
   assemblies:
   - DeviceOfHermes
@@ -115,11 +115,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/RevengeDice.cs
+      path: src/RevengeDice.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnUseRevenge
-    path: ../RevengeDice.cs
+    path: ../src/RevengeDice.cs
     startLine: 94
   assemblies:
   - DeviceOfHermes

@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: ScheduleRunner
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -50,11 +50,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Schedule.cs
+      path: src/Schedule.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AddSchedule
-    path: ../Schedule.cs
+    path: ../src/Schedule.cs
     startLine: 17
   assemblies:
   - DeviceOfHermes

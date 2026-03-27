@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/AdvancedUnitBuf.cs
+      path: src/AdvancedUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AdvancedUnitBuf
-    path: ../AdvancedUnitBuf.cs
+    path: ../src/AdvancedUnitBuf.cs
     startLine: 5
   assemblies:
   - DeviceOfHermes
@@ -172,11 +172,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedUnitBuf.cs
+      path: src/AdvancedUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Init
-    path: ../AdvancedUnitBuf.cs
+    path: ../src/AdvancedUnitBuf.cs
     startLine: 18
   assemblies:
   - DeviceOfHermes
@@ -203,11 +203,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/AdvancedUnitBuf.cs
+      path: src/AdvancedUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: DefaultStack
-    path: ../AdvancedUnitBuf.cs
+    path: ../src/AdvancedUnitBuf.cs
     startLine: 26
   assemblies:
   - DeviceOfHermes
@@ -232,11 +232,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/AdvancedUnitBuf.cs
+      path: src/AdvancedUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsInstant
-    path: ../AdvancedUnitBuf.cs
+    path: ../src/AdvancedUnitBuf.cs
     startLine: 28
   assemblies:
   - DeviceOfHermes
@@ -261,11 +261,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedUnitBuf.cs
+      path: src/AdvancedUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnInstant
-    path: ../AdvancedUnitBuf.cs
+    path: ../src/AdvancedUnitBuf.cs
     startLine: 30
   assemblies:
   - DeviceOfHermes
@@ -287,11 +287,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedUnitBuf.cs
+      path: src/AdvancedUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnOtherInstant
-    path: ../AdvancedUnitBuf.cs
+    path: ../src/AdvancedUnitBuf.cs
     startLine: 34
   assemblies:
   - DeviceOfHermes
@@ -316,11 +316,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedUnitBuf.cs
+      path: src/AdvancedUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: OnStackChange
-    path: ../AdvancedUnitBuf.cs
+    path: ../src/AdvancedUnitBuf.cs
     startLine: 38
   assemblies:
   - DeviceOfHermes

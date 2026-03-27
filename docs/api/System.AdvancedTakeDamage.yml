@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/AdvancedTakeDamage.cs
+      path: src/AdvancedTakeDamage.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AdvancedTakeDamage
-    path: ../AdvancedTakeDamage.cs
+    path: ../src/AdvancedTakeDamage.cs
     startLine: 7
   assemblies:
   - DeviceOfHermes
@@ -51,11 +51,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedTakeDamage.cs
+      path: src/AdvancedTakeDamage.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: DealDamage
-    path: ../AdvancedTakeDamage.cs
+    path: ../src/AdvancedTakeDamage.cs
     startLine: 16
   assemblies:
   - DeviceOfHermes

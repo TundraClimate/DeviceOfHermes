@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/VannilaUnitBuf.cs
+      path: src/VannilaUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: VannilaUnitBuf
-    path: ../VannilaUnitBuf.cs
+    path: ../src/VannilaUnitBuf.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -54,11 +54,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/VannilaUnitBuf.cs
+      path: src/VannilaUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: SetMaxForcely
-    path: ../VannilaUnitBuf.cs
+    path: ../src/VannilaUnitBuf.cs
     startLine: 6
   assemblies:
   - DeviceOfHermes
@@ -88,11 +88,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/VannilaUnitBuf.cs
+      path: src/VannilaUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: SetMaxIf
-    path: ../VannilaUnitBuf.cs
+    path: ../src/VannilaUnitBuf.cs
     startLine: 16
   assemblies:
   - DeviceOfHermes
@@ -124,11 +124,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/VannilaUnitBuf.cs
+      path: src/VannilaUnitBuf.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AddMaxIf
-    path: ../VannilaUnitBuf.cs
+    path: ../src/VannilaUnitBuf.cs
     startLine: 29
   assemblies:
   - DeviceOfHermes

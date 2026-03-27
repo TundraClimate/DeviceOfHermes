@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/AdvancedCardBase.cs
+      path: src/AdvancedCardBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: AdvancedCardBase
-    path: ../AdvancedCardBase.cs
+    path: ../src/AdvancedCardBase.cs
     startLine: 6
   assemblies:
   - DeviceOfHermes
@@ -110,11 +110,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/AdvancedCardBase.cs
+      path: src/AdvancedCardBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsClashable
-    path: ../AdvancedCardBase.cs
+    path: ../src/AdvancedCardBase.cs
     startLine: 19
   assemblies:
   - DeviceOfHermes
@@ -139,11 +139,11 @@ items:
   type: Property
   source:
     remote:
-      path: DeviceOfHermes/AdvancedCardBase.cs
+      path: src/AdvancedCardBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: IsIgnoreSpeedByMatch
-    path: ../AdvancedCardBase.cs
+    path: ../src/AdvancedCardBase.cs
     startLine: 21
   assemblies:
   - DeviceOfHermes
@@ -168,11 +168,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/AdvancedCardBase.cs
+      path: src/AdvancedCardBase.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: CanDiscardByAbility
-    path: ../AdvancedCardBase.cs
+    path: ../src/AdvancedCardBase.cs
     startLine: 23
   assemblies:
   - DeviceOfHermes

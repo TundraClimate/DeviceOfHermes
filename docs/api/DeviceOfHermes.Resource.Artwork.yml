@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: DeviceOfHermes/Artwork.cs
+      path: src/Artwork.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: Artwork
-    path: ../Artwork.cs
+    path: ../src/Artwork.cs
     startLine: 4
   assemblies:
   - DeviceOfHermes
@@ -53,11 +53,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Artwork.cs
+      path: src/Artwork.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: SetBattleUnitBufSprite
-    path: ../Artwork.cs
+    path: ../src/Artwork.cs
     startLine: 6
   assemblies:
   - DeviceOfHermes
@@ -89,11 +89,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Artwork.cs
+      path: src/Artwork.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: SetBattleUnitBufSprite
-    path: ../Artwork.cs
+    path: ../src/Artwork.cs
     startLine: 27
   assemblies:
   - DeviceOfHermes
@@ -123,11 +123,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Artwork.cs
+      path: src/Artwork.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: SetBattleUnitBufSprite
-    path: ../Artwork.cs
+    path: ../src/Artwork.cs
     startLine: 50
   assemblies:
   - DeviceOfHermes
@@ -159,11 +159,11 @@ items:
   type: Method
   source:
     remote:
-      path: DeviceOfHermes/Artwork.cs
+      path: src/Artwork.cs
       branch: master
-      repo: git@github.com:TundraClimate/LoR-Mods.git
+      repo: git@github.com:TundraClimate/DeviceOfHermes.git
     id: LoadBattleUnitBufSprites
-    path: ../Artwork.cs
+    path: ../src/Artwork.cs
     startLine: 64
   assemblies:
   - DeviceOfHermes
