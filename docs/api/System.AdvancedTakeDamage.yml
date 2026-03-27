@@ -1,0 +1,398 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.AdvancedTakeDamage
+  commentId: T:System.AdvancedTakeDamage
+  id: AdvancedTakeDamage
+  parent: System
+  children:
+  - System.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  langs:
+  - csharp
+  - vb
+  name: AdvancedTakeDamage
+  nameWithType: AdvancedTakeDamage
+  fullName: System.AdvancedTakeDamage
+  type: Class
+  source:
+    remote:
+      path: DeviceOfHermes/AdvancedTakeDamage.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: AdvancedTakeDamage
+    path: ../AdvancedTakeDamage.cs
+    startLine: 7
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static class AdvancedTakeDamage
+    content.vb: Public Module AdvancedTakeDamage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  commentId: M:System.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  id: DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  isExtensionMethod: true
+  parent: System.AdvancedTakeDamage
+  langs:
+  - csharp
+  - vb
+  name: DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
+  nameWithType: AdvancedTakeDamage.DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
+  fullName: System.AdvancedTakeDamage.DealDamage(BattleUnitModel, int, LOR_DiceSystem.BehaviourDetail, BattleUnitModel?, AtkResist?)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/AdvancedTakeDamage.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: DealDamage
+    path: ../AdvancedTakeDamage.cs
+    startLine: 16
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static void DealDamage(this BattleUnitModel target, int baseDmg, BehaviourDetail detail, BattleUnitModel? attacker = null, AtkResist? resist = null)
+    parameters:
+    - id: target
+      type: BattleUnitModel
+    - id: baseDmg
+      type: System.Int32
+    - id: detail
+      type: LOR_DiceSystem.BehaviourDetail
+    - id: attacker
+      type: BattleUnitModel
+    - id: resist
+      type: System.Nullable{AtkResist}
+    content.vb: Public Shared Sub DealDamage(target As BattleUnitModel, baseDmg As Integer, detail As BehaviourDetail, attacker As BattleUnitModel = Nothing, resist As AtkResist? = Nothing)
+  overload: System.AdvancedTakeDamage.DealDamage*
+  nameWithType.vb: AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
+  fullName.vb: System.AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, LOR_DiceSystem.BehaviourDetail, BattleUnitModel, AtkResist?)
+  name.vb: DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
+references:
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.AdvancedTakeDamage.DealDamage*
+  commentId: Overload:System.AdvancedTakeDamage.DealDamage
+  href: System.AdvancedTakeDamage.html#System_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist__
+  name: DealDamage
+  nameWithType: AdvancedTakeDamage.DealDamage
+  fullName: System.AdvancedTakeDamage.DealDamage
+- uid: BattleUnitModel
+  commentId: T:BattleUnitModel
+  isExternal: true
+  name: BattleUnitModel
+  nameWithType: BattleUnitModel
+  fullName: BattleUnitModel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: LOR_DiceSystem.BehaviourDetail
+  commentId: T:LOR_DiceSystem.BehaviourDetail
+  parent: LOR_DiceSystem
+  isExternal: true
+  name: BehaviourDetail
+  nameWithType: BehaviourDetail
+  fullName: LOR_DiceSystem.BehaviourDetail
+- uid: System.Nullable{AtkResist}
+  commentId: T:System.Nullable{AtkResist}
+  parent: System
+  definition: System.Nullable`1
+  name: AtkResist?
+  nameWithType: AtkResist?
+  fullName: AtkResist?
+  spec.csharp:
+  - uid: AtkResist
+    name: AtkResist
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: AtkResist
+    name: AtkResist
+    isExternal: true
+  - name: '?'
+- uid: LOR_DiceSystem
+  commentId: N:LOR_DiceSystem
+  isExternal: true
+  name: LOR_DiceSystem
+  nameWithType: LOR_DiceSystem
+  fullName: LOR_DiceSystem
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

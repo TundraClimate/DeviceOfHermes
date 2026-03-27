@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeviceOfHermes.Resource
+  commentId: N:DeviceOfHermes.Resource
+  id: DeviceOfHermes.Resource
+  children:
+  - DeviceOfHermes.Resource.Artwork
+  - DeviceOfHermes.Resource.ReadXmlParser
+  - DeviceOfHermes.Resource.TextModel
+  langs:
+  - csharp
+  - vb
+  name: DeviceOfHermes.Resource
+  nameWithType: DeviceOfHermes.Resource
+  fullName: DeviceOfHermes.Resource
+  type: Namespace
+  assemblies:
+  - DeviceOfHermes
+references:
+- uid: DeviceOfHermes.Resource.Artwork
+  commentId: T:DeviceOfHermes.Resource.Artwork
+  href: DeviceOfHermes.Resource.Artwork.html
+  name: Artwork
+  nameWithType: Artwork
+  fullName: DeviceOfHermes.Resource.Artwork
+- uid: DeviceOfHermes.Resource.ReadXmlParser
+  commentId: T:DeviceOfHermes.Resource.ReadXmlParser
+  href: DeviceOfHermes.Resource.ReadXmlParser.html
+  name: ReadXmlParser
+  nameWithType: ReadXmlParser
+  fullName: DeviceOfHermes.Resource.ReadXmlParser
+- uid: DeviceOfHermes.Resource.TextModel
+  commentId: T:DeviceOfHermes.Resource.TextModel
+  href: DeviceOfHermes.Resource.TextModel.html
+  name: TextModel
+  nameWithType: TextModel
+  fullName: DeviceOfHermes.Resource.TextModel

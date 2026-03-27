@@ -1,0 +1,1126 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeviceOfHermes.CustomDice.RevengeDice
+  commentId: T:DeviceOfHermes.CustomDice.RevengeDice
+  id: RevengeDice
+  parent: DeviceOfHermes.CustomDice
+  children:
+  - DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  - DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  langs:
+  - csharp
+  - vb
+  name: RevengeDice
+  nameWithType: RevengeDice
+  fullName: DeviceOfHermes.CustomDice.RevengeDice
+  type: Class
+  source:
+    remote:
+      path: DeviceOfHermes/RevengeDice.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: RevengeDice
+    path: ../RevengeDice.cs
+    startLine: 8
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes.CustomDice
+  syntax:
+    content: 'public class RevengeDice : AdvancedDiceBase'
+    content.vb: Public Class RevengeDice Inherits AdvancedDiceBase
+  inheritance:
+  - System.Object
+  - DiceCardAbilityBase
+  - DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  inheritedMembers:
+  - DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+  - DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+  - DiceCardAbilityBase.behavior
+  - DiceCardAbilityBase.IsAttackDice(LOR_DiceSystem.BehaviourDetail)
+  - DiceCardAbilityBase.IsDefenseDice(LOR_DiceSystem.BehaviourDetail)
+  - DiceCardAbilityBase.ActivateBonusAttackDice
+  - DiceCardAbilityBase.GetKeywords
+  - DiceCardAbilityBase.IsDoublePower
+  - DiceCardAbilityBase.BeforeRollDice
+  - DiceCardAbilityBase.BeforeRollDice_Target(BattleDiceBehavior)
+  - DiceCardAbilityBase.OnRollDice
+  - DiceCardAbilityBase.BeforeGiveDamage
+  - DiceCardAbilityBase.BeforeGiveDamage(BattleUnitModel)
+  - DiceCardAbilityBase.GetMaximumPercentDmg
+  - DiceCardAbilityBase.OnSucceedAreaAttack(BattleUnitModel)
+  - DiceCardAbilityBase.OnSucceedAttack
+  - DiceCardAbilityBase.OnSucceedAttack(BattleUnitModel)
+  - DiceCardAbilityBase.OnWinParrying
+  - DiceCardAbilityBase.OnLoseParrying
+  - DiceCardAbilityBase.OnDrawParrying
+  - DiceCardAbilityBase.OnWinParryingDefense
+  - DiceCardAbilityBase.AfterAction
+  - DiceCardAbilityBase.OnAfterAreaAtk(System.Collections.Generic.List{BattleUnitModel},System.Collections.Generic.List{BattleUnitModel})
+  - DiceCardAbilityBase.card
+  - DiceCardAbilityBase.owner
+  - DiceCardAbilityBase.Keywords
+  - DiceCardAbilityBase.Invalidity
+  - DiceCardAbilityBase.IsPercentDmg
+  - DiceCardAbilityBase.IsImmuneDestory
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - DeviceOfHermes.CustomDice.RevengeDice.System.Extension.Inspect``1(System.Action{DeviceOfHermes.CustomDice.RevengeDice})
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  id: OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  parent: DeviceOfHermes.CustomDice.RevengeDice
+  langs:
+  - csharp
+  - vb
+  name: OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  nameWithType: RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/RevengeDice.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: OnRevenge
+    path: ../RevengeDice.cs
+    startLine: 90
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes.CustomDice
+  syntax:
+    content: public virtual void OnRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
+    parameters:
+    - id: card
+      type: BattlePlayingCardDataInUnitModel
+    - id: revengeBy
+      type: BattleDiceBehavior
+    content.vb: Public Overridable Sub OnRevenge(card As BattlePlayingCardDataInUnitModel, revengeBy As BattleDiceBehavior)
+  overload: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge*
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  id: OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  parent: DeviceOfHermes.CustomDice.RevengeDice
+  langs:
+  - csharp
+  - vb
+  name: OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  nameWithType: RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/RevengeDice.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: OnUseRevenge
+    path: ../RevengeDice.cs
+    startLine: 94
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes.CustomDice
+  syntax:
+    content: public virtual void OnUseRevenge(BattlePlayingCardDataInUnitModel card)
+    parameters:
+    - id: card
+      type: BattlePlayingCardDataInUnitModel
+    content.vb: Public Overridable Sub OnUseRevenge(card As BattlePlayingCardDataInUnitModel)
+  overload: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge*
+references:
+- uid: DeviceOfHermes.CustomDice
+  commentId: N:DeviceOfHermes.CustomDice
+  href: DeviceOfHermes.html
+  name: DeviceOfHermes.CustomDice
+  nameWithType: DeviceOfHermes.CustomDice
+  fullName: DeviceOfHermes.CustomDice
+  spec.csharp:
+  - uid: DeviceOfHermes
+    name: DeviceOfHermes
+    href: DeviceOfHermes.html
+  - name: .
+  - uid: DeviceOfHermes.CustomDice
+    name: CustomDice
+    href: DeviceOfHermes.CustomDice.html
+  spec.vb:
+  - uid: DeviceOfHermes
+    name: DeviceOfHermes
+    href: DeviceOfHermes.html
+  - name: .
+  - uid: DeviceOfHermes.CustomDice
+    name: CustomDice
+    href: DeviceOfHermes.CustomDice.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: DiceCardAbilityBase
+  commentId: T:DiceCardAbilityBase
+  isExternal: true
+  name: DiceCardAbilityBase
+  nameWithType: DiceCardAbilityBase
+  fullName: DiceCardAbilityBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  parent: DeviceOfHermes.AdvancedBase
+  href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html
+  name: AdvancedDiceBase
+  nameWithType: AdvancedDiceBase
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+  parent: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_OnAddToKeeped
+  name: OnAddToKeeped()
+  nameWithType: AdvancedDiceBase.OnAddToKeeped()
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped()
+  spec.csharp:
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+    name: OnAddToKeeped
+    href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_OnAddToKeeped
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+    name: OnAddToKeeped
+    href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_OnAddToKeeped
+  - name: (
+  - name: )
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+  parent: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_IsKeeps
+  name: IsKeeps()
+  nameWithType: AdvancedDiceBase.IsKeeps()
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps()
+  spec.csharp:
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+    name: IsKeeps
+    href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_IsKeeps
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+    name: IsKeeps
+    href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_IsKeeps
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.behavior
+  commentId: F:DiceCardAbilityBase.behavior
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: behavior
+  nameWithType: DiceCardAbilityBase.behavior
+  fullName: DiceCardAbilityBase.behavior
+- uid: DiceCardAbilityBase.IsAttackDice(LOR_DiceSystem.BehaviourDetail)
+  commentId: M:DiceCardAbilityBase.IsAttackDice(LOR_DiceSystem.BehaviourDetail)
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: IsAttackDice(BehaviourDetail)
+  nameWithType: DiceCardAbilityBase.IsAttackDice(BehaviourDetail)
+  fullName: DiceCardAbilityBase.IsAttackDice(LOR_DiceSystem.BehaviourDetail)
+  spec.csharp:
+  - uid: DiceCardAbilityBase.IsAttackDice(LOR_DiceSystem.BehaviourDetail)
+    name: IsAttackDice
+    isExternal: true
+  - name: (
+  - uid: LOR_DiceSystem.BehaviourDetail
+    name: BehaviourDetail
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.IsAttackDice(LOR_DiceSystem.BehaviourDetail)
+    name: IsAttackDice
+    isExternal: true
+  - name: (
+  - uid: LOR_DiceSystem.BehaviourDetail
+    name: BehaviourDetail
+    isExternal: true
+  - name: )
+- uid: DiceCardAbilityBase.IsDefenseDice(LOR_DiceSystem.BehaviourDetail)
+  commentId: M:DiceCardAbilityBase.IsDefenseDice(LOR_DiceSystem.BehaviourDetail)
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: IsDefenseDice(BehaviourDetail)
+  nameWithType: DiceCardAbilityBase.IsDefenseDice(BehaviourDetail)
+  fullName: DiceCardAbilityBase.IsDefenseDice(LOR_DiceSystem.BehaviourDetail)
+  spec.csharp:
+  - uid: DiceCardAbilityBase.IsDefenseDice(LOR_DiceSystem.BehaviourDetail)
+    name: IsDefenseDice
+    isExternal: true
+  - name: (
+  - uid: LOR_DiceSystem.BehaviourDetail
+    name: BehaviourDetail
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.IsDefenseDice(LOR_DiceSystem.BehaviourDetail)
+    name: IsDefenseDice
+    isExternal: true
+  - name: (
+  - uid: LOR_DiceSystem.BehaviourDetail
+    name: BehaviourDetail
+    isExternal: true
+  - name: )
+- uid: DiceCardAbilityBase.ActivateBonusAttackDice
+  commentId: M:DiceCardAbilityBase.ActivateBonusAttackDice
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: ActivateBonusAttackDice()
+  nameWithType: DiceCardAbilityBase.ActivateBonusAttackDice()
+  fullName: DiceCardAbilityBase.ActivateBonusAttackDice()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.ActivateBonusAttackDice
+    name: ActivateBonusAttackDice
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.ActivateBonusAttackDice
+    name: ActivateBonusAttackDice
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.GetKeywords
+  commentId: M:DiceCardAbilityBase.GetKeywords
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: GetKeywords()
+  nameWithType: DiceCardAbilityBase.GetKeywords()
+  fullName: DiceCardAbilityBase.GetKeywords()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.GetKeywords
+    name: GetKeywords
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.GetKeywords
+    name: GetKeywords
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.IsDoublePower
+  commentId: M:DiceCardAbilityBase.IsDoublePower
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: IsDoublePower()
+  nameWithType: DiceCardAbilityBase.IsDoublePower()
+  fullName: DiceCardAbilityBase.IsDoublePower()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.IsDoublePower
+    name: IsDoublePower
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.IsDoublePower
+    name: IsDoublePower
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.BeforeRollDice
+  commentId: M:DiceCardAbilityBase.BeforeRollDice
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: BeforeRollDice()
+  nameWithType: DiceCardAbilityBase.BeforeRollDice()
+  fullName: DiceCardAbilityBase.BeforeRollDice()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.BeforeRollDice
+    name: BeforeRollDice
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.BeforeRollDice
+    name: BeforeRollDice
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.BeforeRollDice_Target(BattleDiceBehavior)
+  commentId: M:DiceCardAbilityBase.BeforeRollDice_Target(BattleDiceBehavior)
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: BeforeRollDice_Target(BattleDiceBehavior)
+  nameWithType: DiceCardAbilityBase.BeforeRollDice_Target(BattleDiceBehavior)
+  fullName: DiceCardAbilityBase.BeforeRollDice_Target(BattleDiceBehavior)
+  spec.csharp:
+  - uid: DiceCardAbilityBase.BeforeRollDice_Target(BattleDiceBehavior)
+    name: BeforeRollDice_Target
+    isExternal: true
+  - name: (
+  - uid: BattleDiceBehavior
+    name: BattleDiceBehavior
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.BeforeRollDice_Target(BattleDiceBehavior)
+    name: BeforeRollDice_Target
+    isExternal: true
+  - name: (
+  - uid: BattleDiceBehavior
+    name: BattleDiceBehavior
+    isExternal: true
+  - name: )
+- uid: DiceCardAbilityBase.OnRollDice
+  commentId: M:DiceCardAbilityBase.OnRollDice
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnRollDice()
+  nameWithType: DiceCardAbilityBase.OnRollDice()
+  fullName: DiceCardAbilityBase.OnRollDice()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnRollDice
+    name: OnRollDice
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnRollDice
+    name: OnRollDice
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.BeforeGiveDamage
+  commentId: M:DiceCardAbilityBase.BeforeGiveDamage
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: BeforeGiveDamage()
+  nameWithType: DiceCardAbilityBase.BeforeGiveDamage()
+  fullName: DiceCardAbilityBase.BeforeGiveDamage()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.BeforeGiveDamage
+    name: BeforeGiveDamage
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.BeforeGiveDamage
+    name: BeforeGiveDamage
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.BeforeGiveDamage(BattleUnitModel)
+  commentId: M:DiceCardAbilityBase.BeforeGiveDamage(BattleUnitModel)
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: BeforeGiveDamage(BattleUnitModel)
+  nameWithType: DiceCardAbilityBase.BeforeGiveDamage(BattleUnitModel)
+  fullName: DiceCardAbilityBase.BeforeGiveDamage(BattleUnitModel)
+  spec.csharp:
+  - uid: DiceCardAbilityBase.BeforeGiveDamage(BattleUnitModel)
+    name: BeforeGiveDamage
+    isExternal: true
+  - name: (
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.BeforeGiveDamage(BattleUnitModel)
+    name: BeforeGiveDamage
+    isExternal: true
+  - name: (
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+- uid: DiceCardAbilityBase.GetMaximumPercentDmg
+  commentId: M:DiceCardAbilityBase.GetMaximumPercentDmg
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: GetMaximumPercentDmg()
+  nameWithType: DiceCardAbilityBase.GetMaximumPercentDmg()
+  fullName: DiceCardAbilityBase.GetMaximumPercentDmg()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.GetMaximumPercentDmg
+    name: GetMaximumPercentDmg
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.GetMaximumPercentDmg
+    name: GetMaximumPercentDmg
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.OnSucceedAreaAttack(BattleUnitModel)
+  commentId: M:DiceCardAbilityBase.OnSucceedAreaAttack(BattleUnitModel)
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnSucceedAreaAttack(BattleUnitModel)
+  nameWithType: DiceCardAbilityBase.OnSucceedAreaAttack(BattleUnitModel)
+  fullName: DiceCardAbilityBase.OnSucceedAreaAttack(BattleUnitModel)
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnSucceedAreaAttack(BattleUnitModel)
+    name: OnSucceedAreaAttack
+    isExternal: true
+  - name: (
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnSucceedAreaAttack(BattleUnitModel)
+    name: OnSucceedAreaAttack
+    isExternal: true
+  - name: (
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+- uid: DiceCardAbilityBase.OnSucceedAttack
+  commentId: M:DiceCardAbilityBase.OnSucceedAttack
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnSucceedAttack()
+  nameWithType: DiceCardAbilityBase.OnSucceedAttack()
+  fullName: DiceCardAbilityBase.OnSucceedAttack()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnSucceedAttack
+    name: OnSucceedAttack
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnSucceedAttack
+    name: OnSucceedAttack
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.OnSucceedAttack(BattleUnitModel)
+  commentId: M:DiceCardAbilityBase.OnSucceedAttack(BattleUnitModel)
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnSucceedAttack(BattleUnitModel)
+  nameWithType: DiceCardAbilityBase.OnSucceedAttack(BattleUnitModel)
+  fullName: DiceCardAbilityBase.OnSucceedAttack(BattleUnitModel)
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnSucceedAttack(BattleUnitModel)
+    name: OnSucceedAttack
+    isExternal: true
+  - name: (
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnSucceedAttack(BattleUnitModel)
+    name: OnSucceedAttack
+    isExternal: true
+  - name: (
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+- uid: DiceCardAbilityBase.OnWinParrying
+  commentId: M:DiceCardAbilityBase.OnWinParrying
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnWinParrying()
+  nameWithType: DiceCardAbilityBase.OnWinParrying()
+  fullName: DiceCardAbilityBase.OnWinParrying()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnWinParrying
+    name: OnWinParrying
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnWinParrying
+    name: OnWinParrying
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.OnLoseParrying
+  commentId: M:DiceCardAbilityBase.OnLoseParrying
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnLoseParrying()
+  nameWithType: DiceCardAbilityBase.OnLoseParrying()
+  fullName: DiceCardAbilityBase.OnLoseParrying()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnLoseParrying
+    name: OnLoseParrying
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnLoseParrying
+    name: OnLoseParrying
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.OnDrawParrying
+  commentId: M:DiceCardAbilityBase.OnDrawParrying
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnDrawParrying()
+  nameWithType: DiceCardAbilityBase.OnDrawParrying()
+  fullName: DiceCardAbilityBase.OnDrawParrying()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnDrawParrying
+    name: OnDrawParrying
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnDrawParrying
+    name: OnDrawParrying
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.OnWinParryingDefense
+  commentId: M:DiceCardAbilityBase.OnWinParryingDefense
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: OnWinParryingDefense()
+  nameWithType: DiceCardAbilityBase.OnWinParryingDefense()
+  fullName: DiceCardAbilityBase.OnWinParryingDefense()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnWinParryingDefense
+    name: OnWinParryingDefense
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnWinParryingDefense
+    name: OnWinParryingDefense
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.AfterAction
+  commentId: M:DiceCardAbilityBase.AfterAction
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: AfterAction()
+  nameWithType: DiceCardAbilityBase.AfterAction()
+  fullName: DiceCardAbilityBase.AfterAction()
+  spec.csharp:
+  - uid: DiceCardAbilityBase.AfterAction
+    name: AfterAction
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.AfterAction
+    name: AfterAction
+    isExternal: true
+  - name: (
+  - name: )
+- uid: DiceCardAbilityBase.OnAfterAreaAtk(System.Collections.Generic.List{BattleUnitModel},System.Collections.Generic.List{BattleUnitModel})
+  commentId: M:DiceCardAbilityBase.OnAfterAreaAtk(System.Collections.Generic.List{BattleUnitModel},System.Collections.Generic.List{BattleUnitModel})
+  parent: DiceCardAbilityBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: OnAfterAreaAtk(List<BattleUnitModel>, List<BattleUnitModel>)
+  nameWithType: DiceCardAbilityBase.OnAfterAreaAtk(List<BattleUnitModel>, List<BattleUnitModel>)
+  fullName: DiceCardAbilityBase.OnAfterAreaAtk(System.Collections.Generic.List<BattleUnitModel>, System.Collections.Generic.List<BattleUnitModel>)
+  nameWithType.vb: DiceCardAbilityBase.OnAfterAreaAtk(List(Of BattleUnitModel), List(Of BattleUnitModel))
+  fullName.vb: DiceCardAbilityBase.OnAfterAreaAtk(System.Collections.Generic.List(Of BattleUnitModel), System.Collections.Generic.List(Of BattleUnitModel))
+  name.vb: OnAfterAreaAtk(List(Of BattleUnitModel), List(Of BattleUnitModel))
+  spec.csharp:
+  - uid: DiceCardAbilityBase.OnAfterAreaAtk(System.Collections.Generic.List{BattleUnitModel},System.Collections.Generic.List{BattleUnitModel})
+    name: OnAfterAreaAtk
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: DiceCardAbilityBase.OnAfterAreaAtk(System.Collections.Generic.List{BattleUnitModel},System.Collections.Generic.List{BattleUnitModel})
+    name: OnAfterAreaAtk
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleUnitModel
+    name: BattleUnitModel
+    isExternal: true
+  - name: )
+  - name: )
+- uid: DiceCardAbilityBase.card
+  commentId: P:DiceCardAbilityBase.card
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: card
+  nameWithType: DiceCardAbilityBase.card
+  fullName: DiceCardAbilityBase.card
+- uid: DiceCardAbilityBase.owner
+  commentId: P:DiceCardAbilityBase.owner
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: owner
+  nameWithType: DiceCardAbilityBase.owner
+  fullName: DiceCardAbilityBase.owner
+- uid: DiceCardAbilityBase.Keywords
+  commentId: P:DiceCardAbilityBase.Keywords
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: Keywords
+  nameWithType: DiceCardAbilityBase.Keywords
+  fullName: DiceCardAbilityBase.Keywords
+- uid: DiceCardAbilityBase.Invalidity
+  commentId: P:DiceCardAbilityBase.Invalidity
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: Invalidity
+  nameWithType: DiceCardAbilityBase.Invalidity
+  fullName: DiceCardAbilityBase.Invalidity
+- uid: DiceCardAbilityBase.IsPercentDmg
+  commentId: P:DiceCardAbilityBase.IsPercentDmg
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: IsPercentDmg
+  nameWithType: DiceCardAbilityBase.IsPercentDmg
+  fullName: DiceCardAbilityBase.IsPercentDmg
+- uid: DiceCardAbilityBase.IsImmuneDestory
+  commentId: P:DiceCardAbilityBase.IsImmuneDestory
+  parent: DiceCardAbilityBase
+  isExternal: true
+  name: IsImmuneDestory
+  nameWithType: DiceCardAbilityBase.IsImmuneDestory
+  fullName: DiceCardAbilityBase.IsImmuneDestory
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DeviceOfHermes.CustomDice.RevengeDice.System.Extension.Inspect``1(System.Action{DeviceOfHermes.CustomDice.RevengeDice})
+  commentId: M:System.Extension.Inspect``1(``0,System.Action{``0})
+  parent: System.Extension
+  definition: System.Extension.Inspect``1(``0,System.Action{``0})
+  href: System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  name: Inspect<RevengeDice>(RevengeDice, Action<RevengeDice>)
+  nameWithType: Extension.Inspect<RevengeDice>(RevengeDice, Action<RevengeDice>)
+  fullName: System.Extension.Inspect<DeviceOfHermes.CustomDice.RevengeDice>(DeviceOfHermes.CustomDice.RevengeDice, System.Action<DeviceOfHermes.CustomDice.RevengeDice>)
+  nameWithType.vb: Extension.Inspect(Of RevengeDice)(RevengeDice, Action(Of RevengeDice))
+  fullName.vb: System.Extension.Inspect(Of DeviceOfHermes.CustomDice.RevengeDice)(DeviceOfHermes.CustomDice.RevengeDice, System.Action(Of DeviceOfHermes.CustomDice.RevengeDice))
+  name.vb: Inspect(Of RevengeDice)(RevengeDice, Action(Of RevengeDice))
+  spec.csharp:
+  - uid: System.Extension.Inspect``1(DeviceOfHermes.CustomDice.RevengeDice,System.Action{DeviceOfHermes.CustomDice.RevengeDice})
+    name: Inspect
+    href: System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  - name: <
+  - uid: DeviceOfHermes.CustomDice.RevengeDice
+    name: RevengeDice
+    href: DeviceOfHermes.CustomDice.RevengeDice.html
+  - name: '>'
+  - name: (
+  - uid: DeviceOfHermes.CustomDice.RevengeDice
+    name: RevengeDice
+    href: DeviceOfHermes.CustomDice.RevengeDice.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: DeviceOfHermes.CustomDice.RevengeDice
+    name: RevengeDice
+    href: DeviceOfHermes.CustomDice.RevengeDice.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Extension.Inspect``1(DeviceOfHermes.CustomDice.RevengeDice,System.Action{DeviceOfHermes.CustomDice.RevengeDice})
+    name: Inspect
+    href: System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DeviceOfHermes.CustomDice.RevengeDice
+    name: RevengeDice
+    href: DeviceOfHermes.CustomDice.RevengeDice.html
+  - name: )
+  - name: (
+  - uid: DeviceOfHermes.CustomDice.RevengeDice
+    name: RevengeDice
+    href: DeviceOfHermes.CustomDice.RevengeDice.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DeviceOfHermes.CustomDice.RevengeDice
+    name: RevengeDice
+    href: DeviceOfHermes.CustomDice.RevengeDice.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DeviceOfHermes.AdvancedBase
+  commentId: N:DeviceOfHermes.AdvancedBase
+  href: DeviceOfHermes.html
+  name: DeviceOfHermes.AdvancedBase
+  nameWithType: DeviceOfHermes.AdvancedBase
+  fullName: DeviceOfHermes.AdvancedBase
+  spec.csharp:
+  - uid: DeviceOfHermes
+    name: DeviceOfHermes
+    href: DeviceOfHermes.html
+  - name: .
+  - uid: DeviceOfHermes.AdvancedBase
+    name: AdvancedBase
+    href: DeviceOfHermes.AdvancedBase.html
+  spec.vb:
+  - uid: DeviceOfHermes
+    name: DeviceOfHermes
+    href: DeviceOfHermes.html
+  - name: .
+  - uid: DeviceOfHermes.AdvancedBase
+    name: AdvancedBase
+    href: DeviceOfHermes.AdvancedBase.html
+- uid: System.Extension.Inspect``1(``0,System.Action{``0})
+  commentId: M:System.Extension.Inspect``1(``0,System.Action{``0})
+  isExternal: true
+  href: System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  name: Inspect<T>(T, Action<T>)
+  nameWithType: Extension.Inspect<T>(T, Action<T>)
+  fullName: System.Extension.Inspect<T>(T, System.Action<T>)
+  nameWithType.vb: Extension.Inspect(Of T)(T, Action(Of T))
+  fullName.vb: System.Extension.Inspect(Of T)(T, System.Action(Of T))
+  name.vb: Inspect(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: System.Extension.Inspect``1(``0,System.Action{``0})
+    name: Inspect
+    href: System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Extension.Inspect``1(``0,System.Action{``0})
+    name: Inspect
+    href: System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Extension
+  commentId: T:System.Extension
+  parent: System
+  href: System.Extension.html
+  name: Extension
+  nameWithType: Extension
+  fullName: System.Extension
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge*
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.OnRevenge
+  href: DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_
+  name: OnRevenge
+  nameWithType: RevengeDice.OnRevenge
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge
+- uid: BattlePlayingCardDataInUnitModel
+  commentId: T:BattlePlayingCardDataInUnitModel
+  isExternal: true
+  name: BattlePlayingCardDataInUnitModel
+  nameWithType: BattlePlayingCardDataInUnitModel
+  fullName: BattlePlayingCardDataInUnitModel
+- uid: BattleDiceBehavior
+  commentId: T:BattleDiceBehavior
+  isExternal: true
+  name: BattleDiceBehavior
+  nameWithType: BattleDiceBehavior
+  fullName: BattleDiceBehavior
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge*
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge
+  href: DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnUseRevenge_BattlePlayingCardDataInUnitModel_
+  name: OnUseRevenge
+  nameWithType: RevengeDice.OnUseRevenge
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge

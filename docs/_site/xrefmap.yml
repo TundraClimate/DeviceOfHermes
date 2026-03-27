@@ -1,0 +1,2599 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: DeviceOfHermes
+  name: DeviceOfHermes
+  href: api/DeviceOfHermes.html
+  commentId: N:DeviceOfHermes
+  fullName: DeviceOfHermes
+  nameWithType: DeviceOfHermes
+- uid: DeviceOfHermes.AdditonalOnlyCard
+  name: AdditonalOnlyCard
+  href: api/DeviceOfHermes.AdditonalOnlyCard.html
+  commentId: T:DeviceOfHermes.AdditonalOnlyCard
+  fullName: DeviceOfHermes.AdditonalOnlyCard
+  nameWithType: AdditonalOnlyCard
+- uid: DeviceOfHermes.AdditonalOnlyCard.#ctor(LorId)
+  name: AdditonalOnlyCard(LorId)
+  href: api/DeviceOfHermes.AdditonalOnlyCard.html#DeviceOfHermes_AdditonalOnlyCard__ctor_LorId_
+  commentId: M:DeviceOfHermes.AdditonalOnlyCard.#ctor(LorId)
+  name.vb: New(LorId)
+  fullName: DeviceOfHermes.AdditonalOnlyCard.AdditonalOnlyCard(LorId)
+  fullName.vb: DeviceOfHermes.AdditonalOnlyCard.New(LorId)
+  nameWithType: AdditonalOnlyCard.AdditonalOnlyCard(LorId)
+  nameWithType.vb: AdditonalOnlyCard.New(LorId)
+- uid: DeviceOfHermes.AdditonalOnlyCard.#ctor*
+  name: AdditonalOnlyCard
+  href: api/DeviceOfHermes.AdditonalOnlyCard.html#DeviceOfHermes_AdditonalOnlyCard__ctor_
+  commentId: Overload:DeviceOfHermes.AdditonalOnlyCard.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.AdditonalOnlyCard.AdditonalOnlyCard
+  fullName.vb: DeviceOfHermes.AdditonalOnlyCard.New
+  nameWithType: AdditonalOnlyCard.AdditonalOnlyCard
+  nameWithType.vb: AdditonalOnlyCard.New
+- uid: DeviceOfHermes.AdditonalOnlyCard.AddCards(LorId[])
+  name: AddCards(params LorId[])
+  href: api/DeviceOfHermes.AdditonalOnlyCard.html#DeviceOfHermes_AdditonalOnlyCard_AddCards_LorId___
+  commentId: M:DeviceOfHermes.AdditonalOnlyCard.AddCards(LorId[])
+  name.vb: AddCards(ParamArray LorId())
+  fullName: DeviceOfHermes.AdditonalOnlyCard.AddCards(params LorId[])
+  fullName.vb: DeviceOfHermes.AdditonalOnlyCard.AddCards(ParamArray LorId())
+  nameWithType: AdditonalOnlyCard.AddCards(params LorId[])
+  nameWithType.vb: AdditonalOnlyCard.AddCards(ParamArray LorId())
+- uid: DeviceOfHermes.AdditonalOnlyCard.AddCards*
+  name: AddCards
+  href: api/DeviceOfHermes.AdditonalOnlyCard.html#DeviceOfHermes_AdditonalOnlyCard_AddCards_
+  commentId: Overload:DeviceOfHermes.AdditonalOnlyCard.AddCards
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdditonalOnlyCard.AddCards
+  nameWithType: AdditonalOnlyCard.AddCards
+- uid: DeviceOfHermes.AdvancedBase
+  name: DeviceOfHermes.AdvancedBase
+  href: api/DeviceOfHermes.AdvancedBase.html
+  commentId: N:DeviceOfHermes.AdvancedBase
+  fullName: DeviceOfHermes.AdvancedBase
+  nameWithType: DeviceOfHermes.AdvancedBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase
+  name: AdvancedCardBase
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedCardBase
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase
+  nameWithType: AdvancedCardBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility(BattleDiceCardModel)
+  name: CanDiscardByAbility(BattleDiceCardModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_CanDiscardByAbility_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility(BattleDiceCardModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility(BattleDiceCardModel)
+  nameWithType: AdvancedCardBase.CanDiscardByAbility(BattleDiceCardModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility*
+  name: CanDiscardByAbility
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_CanDiscardByAbility_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility
+  nameWithType: AdvancedCardBase.CanDiscardByAbility
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable
+  name: IsClashable
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsClashable
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable
+  nameWithType: AdvancedCardBase.IsClashable
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable*
+  name: IsClashable
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsClashable_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable
+  nameWithType: AdvancedCardBase.IsClashable
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
+  name: IsIgnoreSpeedByMatch
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsIgnoreSpeedByMatch
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
+  nameWithType: AdvancedCardBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch*
+  name: IsIgnoreSpeedByMatch
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsIgnoreSpeedByMatch_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
+  nameWithType: AdvancedCardBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  name: AdvancedDiceBase
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  nameWithType: AdvancedDiceBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+  name: IsKeeps()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_IsKeeps
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps()
+  nameWithType: AdvancedDiceBase.IsKeeps()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps*
+  name: IsKeeps
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_IsKeeps_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
+  nameWithType: AdvancedDiceBase.IsKeeps
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+  name: OnAddToKeeped()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_OnAddToKeeped
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped()
+  nameWithType: AdvancedDiceBase.OnAddToKeeped()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped*
+  name: OnAddToKeeped
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_OnAddToKeeped_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
+  nameWithType: AdvancedDiceBase.OnAddToKeeped
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+  name: AdvancedPassiveBase
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+  nameWithType: AdvancedPassiveBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility(BattleDiceCardModel)
+  name: CanDiscardByAbility(BattleDiceCardModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_CanDiscardByAbility_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility(BattleDiceCardModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility(BattleDiceCardModel)
+  nameWithType: AdvancedPassiveBase.CanDiscardByAbility(BattleDiceCardModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility*
+  name: CanDiscardByAbility
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_CanDiscardByAbility_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility
+  nameWithType: AdvancedPassiveBase.CanDiscardByAbility
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd
+  name: IsAllowRoundEnd()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsAllowRoundEnd
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd()
+  nameWithType: AdvancedPassiveBase.IsAllowRoundEnd()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd*
+  name: IsAllowRoundEnd
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsAllowRoundEnd_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd
+  nameWithType: AdvancedPassiveBase.IsAllowRoundEnd
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel)
+  name: IsClashable(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsClashable_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)
+  name: IsClashable(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsClashable_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable*
+  name: IsClashable
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsClashable_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable
+  nameWithType: AdvancedPassiveBase.IsClashable
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)
+  name: IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsIgnoreSpeedByMatch_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedPassiveBase.IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch*
+  name: IsIgnoreSpeedByMatch
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsIgnoreSpeedByMatch_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch
+  nameWithType: AdvancedPassiveBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
+  name: OnRoundStartFirst()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartFirst
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst()
+  nameWithType: AdvancedPassiveBase.OnRoundStartFirst()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst*
+  name: OnRoundStartFirst
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartFirst_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
+  nameWithType: AdvancedPassiveBase.OnRoundStartFirst
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast
+  name: OnRoundStartLast()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartLast
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast()
+  nameWithType: AdvancedPassiveBase.OnRoundStartLast()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast*
+  name: OnRoundStartLast
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartLast_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast
+  nameWithType: AdvancedPassiveBase.OnRoundStartLast
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+  name: AdvancedUnitBuf
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+  nameWithType: AdvancedUnitBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack
+  name: DefaultStack
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_DefaultStack
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack
+  nameWithType: AdvancedUnitBuf.DefaultStack
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack*
+  name: DefaultStack
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_DefaultStack_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack
+  nameWithType: AdvancedUnitBuf.DefaultStack
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init(BattleUnitModel)
+  name: Init(BattleUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_Init_BattleUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init(BattleUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init(BattleUnitModel)
+  nameWithType: AdvancedUnitBuf.Init(BattleUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init*
+  name: Init
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_Init_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init
+  nameWithType: AdvancedUnitBuf.Init
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
+  name: IsInstant
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsInstant
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
+  nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant*
+  name: IsInstant
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsInstant_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
+  nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
+  name: OnInstant()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnInstant
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant()
+  nameWithType: AdvancedUnitBuf.OnInstant()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant*
+  name: OnInstant
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnInstant_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
+  nameWithType: AdvancedUnitBuf.OnInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf)
+  name: OnOtherInstant(AdvancedUnitBuf)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherInstant_DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf)
+  nameWithType: AdvancedUnitBuf.OnOtherInstant(AdvancedUnitBuf)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant*
+  name: OnOtherInstant
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherInstant_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant
+  nameWithType: AdvancedUnitBuf.OnOtherInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange(System.Int32)
+  name: OnStackChange(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStackChange_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange(System.Int32)
+  name.vb: OnStackChange(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange(Integer)
+  nameWithType: AdvancedUnitBuf.OnStackChange(int)
+  nameWithType.vb: AdvancedUnitBuf.OnStackChange(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange*
+  name: OnStackChange
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStackChange_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange
+  nameWithType: AdvancedUnitBuf.OnStackChange
+- uid: DeviceOfHermes.AdvancedBase.AmmoExtension
+  name: AmmoExtension
+  href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AmmoExtension
+  fullName: DeviceOfHermes.AdvancedBase.AmmoExtension
+  nameWithType: AmmoExtension
+- uid: DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo*
+  name: ConsumeAmmo
+  href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html#DeviceOfHermes_AdvancedBase_AmmoExtension_ConsumeAmmo_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo
+  nameWithType: AmmoExtension.ConsumeAmmo
+- uid: DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo``1(BattleUnitModel,System.Int32)
+  name: ConsumeAmmo<T>(BattleUnitModel?, int)
+  href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html#DeviceOfHermes_AdvancedBase_AmmoExtension_ConsumeAmmo__1_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo``1(BattleUnitModel,System.Int32)
+  name.vb: ConsumeAmmo(Of T)(BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo<T>(BattleUnitModel?, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo(Of T)(BattleUnitModel, Integer)
+  nameWithType: AmmoExtension.ConsumeAmmo<T>(BattleUnitModel?, int)
+  nameWithType.vb: AmmoExtension.ConsumeAmmo(Of T)(BattleUnitModel, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo*
+  name: ReloadAmmo
+  href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html#DeviceOfHermes_AdvancedBase_AmmoExtension_ReloadAmmo_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo
+  nameWithType: AmmoExtension.ReloadAmmo
+- uid: DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo``1(BattleUnitModel)
+  name: ReloadAmmo<T>(BattleUnitModel?)
+  href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html#DeviceOfHermes_AdvancedBase_AmmoExtension_ReloadAmmo__1_BattleUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo``1(BattleUnitModel)
+  name.vb: ReloadAmmo(Of T)(BattleUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo<T>(BattleUnitModel?)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo(Of T)(BattleUnitModel)
+  nameWithType: AmmoExtension.ReloadAmmo<T>(BattleUnitModel?)
+  nameWithType.vb: AmmoExtension.ReloadAmmo(Of T)(BattleUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+  name: BattleAmmoBuf
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html
+  commentId: T:DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+  nameWithType: BattleAmmoBuf
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume(System.Int32)
+  name: Consume(int)
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Consume_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume(System.Int32)
+  name.vb: Consume(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume(Integer)
+  nameWithType: BattleAmmoBuf.Consume(int)
+  nameWithType.vb: BattleAmmoBuf.Consume(Integer)
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume*
+  name: Consume
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Consume_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume
+  nameWithType: BattleAmmoBuf.Consume
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack
+  name: ConsumedStack
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_ConsumedStack
+  commentId: P:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack
+  nameWithType: BattleAmmoBuf.ConsumedStack
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack*
+  name: ConsumedStack
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_ConsumedStack_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack
+  nameWithType: BattleAmmoBuf.ConsumedStack
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable
+  name: DiceBlockWithNotConsumable
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_DiceBlockWithNotConsumable
+  commentId: P:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable
+  nameWithType: BattleAmmoBuf.DiceBlockWithNotConsumable
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable*
+  name: DiceBlockWithNotConsumable
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_DiceBlockWithNotConsumable_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable
+  nameWithType: BattleAmmoBuf.DiceBlockWithNotConsumable
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload
+  name: GainByReload
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_GainByReload
+  commentId: P:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload
+  nameWithType: BattleAmmoBuf.GainByReload
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload*
+  name: GainByReload
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_GainByReload_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload
+  nameWithType: BattleAmmoBuf.GainByReload
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable(System.Int32)
+  name: IsConsumable(int)
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_IsConsumable_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable(System.Int32)
+  name.vb: IsConsumable(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable(Integer)
+  nameWithType: BattleAmmoBuf.IsConsumable(int)
+  nameWithType.vb: BattleAmmoBuf.IsConsumable(Integer)
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable*
+  name: IsConsumable
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_IsConsumable_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable
+  nameWithType: BattleAmmoBuf.IsConsumable
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack
+  name: LosedStack
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_LosedStack
+  commentId: P:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack
+  nameWithType: BattleAmmoBuf.LosedStack
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack*
+  name: LosedStack
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_LosedStack_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack
+  nameWithType: BattleAmmoBuf.LosedStack
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
+  name: OnCanceled()
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCanceled
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled()
+  nameWithType: BattleAmmoBuf.OnCanceled()
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled*
+  name: OnCanceled
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCanceled_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
+  nameWithType: BattleAmmoBuf.OnCanceled
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32@)
+  name: OnConsume(ref int)
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_System_Int32__
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32@)
+  name.vb: OnConsume(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(ref int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(Integer)
+  nameWithType: BattleAmmoBuf.OnConsume(ref int)
+  nameWithType.vb: BattleAmmoBuf.OnConsume(Integer)
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume*
+  name: OnConsume
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume
+  nameWithType: BattleAmmoBuf.OnConsume
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload
+  name: OnReload()
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnReload
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload()
+  nameWithType: BattleAmmoBuf.OnReload()
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload*
+  name: OnReload
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnReload_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload
+  nameWithType: BattleAmmoBuf.OnReload
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload
+  name: Reload()
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Reload
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload()
+  nameWithType: BattleAmmoBuf.Reload()
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload*
+  name: Reload
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Reload_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload
+  nameWithType: BattleAmmoBuf.Reload
+- uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+  name: ReloadAmmoBuf<T>
+  href: api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html
+  commentId: T:DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+  name.vb: ReloadAmmoBuf(Of T)
+  fullName: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>
+  fullName.vb: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf(Of T)
+  nameWithType: ReloadAmmoBuf<T>
+  nameWithType.vb: ReloadAmmoBuf(Of T)
+- uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.IsInstant
+  name: IsInstant
+  href: api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html#DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_IsInstant
+  commentId: P:DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.IsInstant
+  fullName: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>.IsInstant
+  fullName.vb: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf(Of T).IsInstant
+  nameWithType: ReloadAmmoBuf<T>.IsInstant
+  nameWithType.vb: ReloadAmmoBuf(Of T).IsInstant
+- uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.IsInstant*
+  name: IsInstant
+  href: api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html#DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_IsInstant_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.IsInstant
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>.IsInstant
+  fullName.vb: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf(Of T).IsInstant
+  nameWithType: ReloadAmmoBuf<T>.IsInstant
+  nameWithType.vb: ReloadAmmoBuf(Of T).IsInstant
+- uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.OnInstant
+  name: OnInstant()
+  href: api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html#DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_OnInstant
+  commentId: M:DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.OnInstant
+  fullName: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>.OnInstant()
+  fullName.vb: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf(Of T).OnInstant()
+  nameWithType: ReloadAmmoBuf<T>.OnInstant()
+  nameWithType.vb: ReloadAmmoBuf(Of T).OnInstant()
+- uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.OnInstant*
+  name: OnInstant
+  href: api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html#DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_OnInstant_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.OnInstant
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>.OnInstant
+  fullName.vb: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf(Of T).OnInstant
+  nameWithType: ReloadAmmoBuf<T>.OnInstant
+  nameWithType.vb: ReloadAmmoBuf(Of T).OnInstant
+- uid: DeviceOfHermes.BattleBufExtension
+  name: BattleBufExtension
+  href: api/DeviceOfHermes.BattleBufExtension.html
+  commentId: T:DeviceOfHermes.BattleBufExtension
+  fullName: DeviceOfHermes.BattleBufExtension
+  nameWithType: BattleBufExtension
+- uid: DeviceOfHermes.BattleBufExtension.GetBuf*
+  name: GetBuf
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBuf_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.GetBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.GetBuf
+  nameWithType: BattleBufExtension.GetBuf
+- uid: DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull*
+  name: GetBufAndInitIfNull
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBufAndInitIfNull_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull
+  nameWithType: BattleBufExtension.GetBufAndInitIfNull
+- uid: DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull``1(BattleUnitModel,System.Func{``0})
+  name: GetBufAndInitIfNull<T>(BattleUnitModel, Func<T>)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBufAndInitIfNull__1_BattleUnitModel_System_Func___0__
+  commentId: M:DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull``1(BattleUnitModel,System.Func{``0})
+  name.vb: GetBufAndInitIfNull(Of T)(BattleUnitModel, Func(Of T))
+  fullName: DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull<T>(BattleUnitModel, System.Func<T>)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull(Of T)(BattleUnitModel, System.Func(Of T))
+  nameWithType: BattleBufExtension.GetBufAndInitIfNull<T>(BattleUnitModel, Func<T>)
+  nameWithType.vb: BattleBufExtension.GetBufAndInitIfNull(Of T)(BattleUnitModel, Func(Of T))
+- uid: DeviceOfHermes.BattleBufExtension.GetBufStack*
+  name: GetBufStack
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBufStack_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.GetBufStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.GetBufStack
+  nameWithType: BattleBufExtension.GetBufStack
+- uid: DeviceOfHermes.BattleBufExtension.GetBufStack``1(BattleUnitModel)
+  name: GetBufStack<T>(BattleUnitModel?)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBufStack__1_BattleUnitModel_
+  commentId: M:DeviceOfHermes.BattleBufExtension.GetBufStack``1(BattleUnitModel)
+  name.vb: GetBufStack(Of T)(BattleUnitModel)
+  fullName: DeviceOfHermes.BattleBufExtension.GetBufStack<T>(BattleUnitModel?)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.GetBufStack(Of T)(BattleUnitModel)
+  nameWithType: BattleBufExtension.GetBufStack<T>(BattleUnitModel?)
+  nameWithType.vb: BattleBufExtension.GetBufStack(Of T)(BattleUnitModel)
+- uid: DeviceOfHermes.BattleBufExtension.GetBuf``1(BattleUnitModel)
+  name: GetBuf<T>(BattleUnitModel?)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBuf__1_BattleUnitModel_
+  commentId: M:DeviceOfHermes.BattleBufExtension.GetBuf``1(BattleUnitModel)
+  name.vb: GetBuf(Of T)(BattleUnitModel)
+  fullName: DeviceOfHermes.BattleBufExtension.GetBuf<T>(BattleUnitModel?)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.GetBuf(Of T)(BattleUnitModel)
+  nameWithType: BattleBufExtension.GetBuf<T>(BattleUnitModel?)
+  nameWithType.vb: BattleBufExtension.GetBuf(Of T)(BattleUnitModel)
+- uid: DeviceOfHermes.BattleBufExtension.RemoveBuf*
+  name: RemoveBuf
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_RemoveBuf_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.RemoveBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.RemoveBuf
+  nameWithType: BattleBufExtension.RemoveBuf
+- uid: DeviceOfHermes.BattleBufExtension.RemoveBufIf(BattleUnitModel,System.Func{BattleUnitBuf,System.Boolean})
+  name: RemoveBufIf(BattleUnitModel?, Func<BattleUnitBuf, bool>)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_RemoveBufIf_BattleUnitModel_System_Func_BattleUnitBuf_System_Boolean__
+  commentId: M:DeviceOfHermes.BattleBufExtension.RemoveBufIf(BattleUnitModel,System.Func{BattleUnitBuf,System.Boolean})
+  name.vb: RemoveBufIf(BattleUnitModel, Func(Of BattleUnitBuf, Boolean))
+  fullName: DeviceOfHermes.BattleBufExtension.RemoveBufIf(BattleUnitModel?, System.Func<BattleUnitBuf, bool>)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.RemoveBufIf(BattleUnitModel, System.Func(Of BattleUnitBuf, Boolean))
+  nameWithType: BattleBufExtension.RemoveBufIf(BattleUnitModel?, Func<BattleUnitBuf, bool>)
+  nameWithType.vb: BattleBufExtension.RemoveBufIf(BattleUnitModel, Func(Of BattleUnitBuf, Boolean))
+- uid: DeviceOfHermes.BattleBufExtension.RemoveBufIf*
+  name: RemoveBufIf
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_RemoveBufIf_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.RemoveBufIf
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.RemoveBufIf
+  nameWithType: BattleBufExtension.RemoveBufIf
+- uid: DeviceOfHermes.BattleBufExtension.RemoveBuf``1(BattleUnitModel)
+  name: RemoveBuf<T>(BattleUnitModel?)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_RemoveBuf__1_BattleUnitModel_
+  commentId: M:DeviceOfHermes.BattleBufExtension.RemoveBuf``1(BattleUnitModel)
+  name.vb: RemoveBuf(Of T)(BattleUnitModel)
+  fullName: DeviceOfHermes.BattleBufExtension.RemoveBuf<T>(BattleUnitModel?)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.RemoveBuf(Of T)(BattleUnitModel)
+  nameWithType: BattleBufExtension.RemoveBuf<T>(BattleUnitModel?)
+  nameWithType.vb: BattleBufExtension.RemoveBuf(Of T)(BattleUnitModel)
+- uid: DeviceOfHermes.BattleBufExtension.TryGetBuf*
+  name: TryGetBuf
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_TryGetBuf_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.TryGetBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.TryGetBuf
+  nameWithType: BattleBufExtension.TryGetBuf
+- uid: DeviceOfHermes.BattleBufExtension.TryGetBuf``1(BattleUnitModel,``0@)
+  name: TryGetBuf<T>(BattleUnitModel?, out T?)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_TryGetBuf__1_BattleUnitModel___0__
+  commentId: M:DeviceOfHermes.BattleBufExtension.TryGetBuf``1(BattleUnitModel,``0@)
+  name.vb: TryGetBuf(Of T)(BattleUnitModel, T)
+  fullName: DeviceOfHermes.BattleBufExtension.TryGetBuf<T>(BattleUnitModel?, out T?)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.TryGetBuf(Of T)(BattleUnitModel, T)
+  nameWithType: BattleBufExtension.TryGetBuf<T>(BattleUnitModel?, out T?)
+  nameWithType.vb: BattleBufExtension.TryGetBuf(Of T)(BattleUnitModel, T)
+- uid: DeviceOfHermes.CustomDice
+  name: DeviceOfHermes.CustomDice
+  href: api/DeviceOfHermes.CustomDice.html
+  commentId: N:DeviceOfHermes.CustomDice
+  fullName: DeviceOfHermes.CustomDice
+  nameWithType: DeviceOfHermes.CustomDice
+- uid: DeviceOfHermes.CustomDice.RevengeDice
+  name: RevengeDice
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html
+  commentId: T:DeviceOfHermes.CustomDice.RevengeDice
+  fullName: DeviceOfHermes.CustomDice.RevengeDice
+  nameWithType: RevengeDice
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  name: OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  nameWithType: RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge*
+  name: OnRevenge
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.OnRevenge
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge
+  nameWithType: RevengeDice.OnRevenge
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  name: OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnUseRevenge_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+  nameWithType: RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge*
+  name: OnUseRevenge
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnUseRevenge_
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge
+  nameWithType: RevengeDice.OnUseRevenge
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice
+  name: UnbreakableDice
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html
+  commentId: T:DeviceOfHermes.CustomDice.UnbreakableDice
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice
+  nameWithType: UnbreakableDice
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  name: IsBreaked
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsBreaked
+  commentId: F:DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  nameWithType: UnbreakableDice.IsBreaked
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked(BattlePlayingCardDataInUnitModel)
+  name: OnUseBreaked(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_OnUseBreaked_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked(BattlePlayingCardDataInUnitModel)
+  nameWithType: UnbreakableDice.OnUseBreaked(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked*
+  name: OnUseBreaked
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_OnUseBreaked_
+  commentId: Overload:DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked
+  nameWithType: UnbreakableDice.OnUseBreaked
+- uid: DeviceOfHermes.CustomDiceSprite
+  name: CustomDiceSprite
+  href: api/DeviceOfHermes.CustomDiceSprite.html
+  commentId: T:DeviceOfHermes.CustomDiceSprite
+  fullName: DeviceOfHermes.CustomDiceSprite
+  nameWithType: CustomDiceSprite
+- uid: DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean},UnityEngine.Sprite,System.Nullable{UnityEngine.Color})
+  name: AddSequence(Func<DiceBehaviour, bool>, Sprite, Color?)
+  href: api/DeviceOfHermes.CustomDiceSprite.html#DeviceOfHermes_CustomDiceSprite_AddSequence_System_Func_LOR_DiceSystem_DiceBehaviour_System_Boolean__UnityEngine_Sprite_System_Nullable_UnityEngine_Color__
+  commentId: M:DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean},UnityEngine.Sprite,System.Nullable{UnityEngine.Color})
+  name.vb: AddSequence(Func(Of DiceBehaviour, Boolean), Sprite, Color?)
+  fullName: DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func<LOR_DiceSystem.DiceBehaviour, bool>, UnityEngine.Sprite, UnityEngine.Color?)
+  fullName.vb: DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func(Of LOR_DiceSystem.DiceBehaviour, Boolean), UnityEngine.Sprite, UnityEngine.Color?)
+  nameWithType: CustomDiceSprite.AddSequence(Func<DiceBehaviour, bool>, Sprite, Color?)
+  nameWithType.vb: CustomDiceSprite.AddSequence(Func(Of DiceBehaviour, Boolean), Sprite, Color?)
+- uid: DeviceOfHermes.CustomDiceSprite.AddSequence*
+  name: AddSequence
+  href: api/DeviceOfHermes.CustomDiceSprite.html#DeviceOfHermes_CustomDiceSprite_AddSequence_
+  commentId: Overload:DeviceOfHermes.CustomDiceSprite.AddSequence
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDiceSprite.AddSequence
+  nameWithType: CustomDiceSprite.AddSequence
+- uid: DeviceOfHermes.HermesConstants
+  name: HermesConstants
+  href: api/DeviceOfHermes.HermesConstants.html
+  commentId: T:DeviceOfHermes.HermesConstants
+  fullName: DeviceOfHermes.HermesConstants
+  nameWithType: HermesConstants
+- uid: DeviceOfHermes.HermesConstants.RevengeDiceHit
+  name: RevengeDiceHit
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_RevengeDiceHit
+  commentId: F:DeviceOfHermes.HermesConstants.RevengeDiceHit
+  fullName: DeviceOfHermes.HermesConstants.RevengeDiceHit
+  nameWithType: HermesConstants.RevengeDiceHit
+- uid: DeviceOfHermes.HermesConstants.RevengeDicePenetrate
+  name: RevengeDicePenetrate
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_RevengeDicePenetrate
+  commentId: F:DeviceOfHermes.HermesConstants.RevengeDicePenetrate
+  fullName: DeviceOfHermes.HermesConstants.RevengeDicePenetrate
+  nameWithType: HermesConstants.RevengeDicePenetrate
+- uid: DeviceOfHermes.HermesConstants.RevengeDiceSlash
+  name: RevengeDiceSlash
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_RevengeDiceSlash
+  commentId: F:DeviceOfHermes.HermesConstants.RevengeDiceSlash
+  fullName: DeviceOfHermes.HermesConstants.RevengeDiceSlash
+  nameWithType: HermesConstants.RevengeDiceSlash
+- uid: DeviceOfHermes.HermesConstants.UnbreakableHit
+  name: UnbreakableHit
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakableHit
+  commentId: F:DeviceOfHermes.HermesConstants.UnbreakableHit
+  fullName: DeviceOfHermes.HermesConstants.UnbreakableHit
+  nameWithType: HermesConstants.UnbreakableHit
+- uid: DeviceOfHermes.HermesConstants.UnbreakablePenetrate
+  name: UnbreakablePenetrate
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakablePenetrate
+  commentId: F:DeviceOfHermes.HermesConstants.UnbreakablePenetrate
+  fullName: DeviceOfHermes.HermesConstants.UnbreakablePenetrate
+  nameWithType: HermesConstants.UnbreakablePenetrate
+- uid: DeviceOfHermes.HermesConstants.UnbreakableSlash
+  name: UnbreakableSlash
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakableSlash
+  commentId: F:DeviceOfHermes.HermesConstants.UnbreakableSlash
+  fullName: DeviceOfHermes.HermesConstants.UnbreakableSlash
+  nameWithType: HermesConstants.UnbreakableSlash
+- uid: DeviceOfHermes.PassiveResolver
+  name: PassiveResolver
+  href: api/DeviceOfHermes.PassiveResolver.html
+  commentId: T:DeviceOfHermes.PassiveResolver
+  fullName: DeviceOfHermes.PassiveResolver
+  nameWithType: PassiveResolver
+- uid: DeviceOfHermes.PassiveResolver.AddRestrict(System.Func{System.Collections.Generic.List{PassiveXmlInfo},PassiveXmlInfo,System.Boolean})
+  name: AddRestrict(Func<List<PassiveXmlInfo>, PassiveXmlInfo, bool>)
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_AddRestrict_System_Func_System_Collections_Generic_List_PassiveXmlInfo__PassiveXmlInfo_System_Boolean__
+  commentId: M:DeviceOfHermes.PassiveResolver.AddRestrict(System.Func{System.Collections.Generic.List{PassiveXmlInfo},PassiveXmlInfo,System.Boolean})
+  name.vb: AddRestrict(Func(Of List(Of PassiveXmlInfo), PassiveXmlInfo, Boolean))
+  fullName: DeviceOfHermes.PassiveResolver.AddRestrict(System.Func<System.Collections.Generic.List<PassiveXmlInfo>, PassiveXmlInfo, bool>)
+  fullName.vb: DeviceOfHermes.PassiveResolver.AddRestrict(System.Func(Of System.Collections.Generic.List(Of PassiveXmlInfo), PassiveXmlInfo, Boolean))
+  nameWithType: PassiveResolver.AddRestrict(Func<List<PassiveXmlInfo>, PassiveXmlInfo, bool>)
+  nameWithType.vb: PassiveResolver.AddRestrict(Func(Of List(Of PassiveXmlInfo), PassiveXmlInfo, Boolean))
+- uid: DeviceOfHermes.PassiveResolver.AddRestrict*
+  name: AddRestrict
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_AddRestrict_
+  commentId: Overload:DeviceOfHermes.PassiveResolver.AddRestrict
+  isSpec: "True"
+  fullName: DeviceOfHermes.PassiveResolver.AddRestrict
+  nameWithType: PassiveResolver.AddRestrict
+- uid: DeviceOfHermes.PassiveResolver.Conflict(LorId[])
+  name: Conflict(params LorId[])
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_Conflict_LorId___
+  commentId: M:DeviceOfHermes.PassiveResolver.Conflict(LorId[])
+  name.vb: Conflict(ParamArray LorId())
+  fullName: DeviceOfHermes.PassiveResolver.Conflict(params LorId[])
+  fullName.vb: DeviceOfHermes.PassiveResolver.Conflict(ParamArray LorId())
+  nameWithType: PassiveResolver.Conflict(params LorId[])
+  nameWithType.vb: PassiveResolver.Conflict(ParamArray LorId())
+- uid: DeviceOfHermes.PassiveResolver.Conflict*
+  name: Conflict
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_Conflict_
+  commentId: Overload:DeviceOfHermes.PassiveResolver.Conflict
+  isSpec: "True"
+  fullName: DeviceOfHermes.PassiveResolver.Conflict
+  nameWithType: PassiveResolver.Conflict
+- uid: DeviceOfHermes.PassiveResolver.LockAlways(LorId)
+  name: LockAlways(LorId)
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_LockAlways_LorId_
+  commentId: M:DeviceOfHermes.PassiveResolver.LockAlways(LorId)
+  fullName: DeviceOfHermes.PassiveResolver.LockAlways(LorId)
+  nameWithType: PassiveResolver.LockAlways(LorId)
+- uid: DeviceOfHermes.PassiveResolver.LockAlways*
+  name: LockAlways
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_LockAlways_
+  commentId: Overload:DeviceOfHermes.PassiveResolver.LockAlways
+  isSpec: "True"
+  fullName: DeviceOfHermes.PassiveResolver.LockAlways
+  nameWithType: PassiveResolver.LockAlways
+- uid: DeviceOfHermes.PassiveResolver.LockIf(LorId,System.Func{System.Collections.Generic.List{PassiveXmlInfo},System.Boolean})
+  name: LockIf(LorId, Func<List<PassiveXmlInfo>, bool>)
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_LockIf_LorId_System_Func_System_Collections_Generic_List_PassiveXmlInfo__System_Boolean__
+  commentId: M:DeviceOfHermes.PassiveResolver.LockIf(LorId,System.Func{System.Collections.Generic.List{PassiveXmlInfo},System.Boolean})
+  name.vb: LockIf(LorId, Func(Of List(Of PassiveXmlInfo), Boolean))
+  fullName: DeviceOfHermes.PassiveResolver.LockIf(LorId, System.Func<System.Collections.Generic.List<PassiveXmlInfo>, bool>)
+  fullName.vb: DeviceOfHermes.PassiveResolver.LockIf(LorId, System.Func(Of System.Collections.Generic.List(Of PassiveXmlInfo), Boolean))
+  nameWithType: PassiveResolver.LockIf(LorId, Func<List<PassiveXmlInfo>, bool>)
+  nameWithType.vb: PassiveResolver.LockIf(LorId, Func(Of List(Of PassiveXmlInfo), Boolean))
+- uid: DeviceOfHermes.PassiveResolver.LockIf*
+  name: LockIf
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_LockIf_
+  commentId: Overload:DeviceOfHermes.PassiveResolver.LockIf
+  isSpec: "True"
+  fullName: DeviceOfHermes.PassiveResolver.LockIf
+  nameWithType: PassiveResolver.LockIf
+- uid: DeviceOfHermes.PassiveResolver.LockIfExists(LorId,LorId[])
+  name: LockIfExists(LorId, params LorId[])
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_LockIfExists_LorId_LorId___
+  commentId: M:DeviceOfHermes.PassiveResolver.LockIfExists(LorId,LorId[])
+  name.vb: LockIfExists(LorId, ParamArray LorId())
+  fullName: DeviceOfHermes.PassiveResolver.LockIfExists(LorId, params LorId[])
+  fullName.vb: DeviceOfHermes.PassiveResolver.LockIfExists(LorId, ParamArray LorId())
+  nameWithType: PassiveResolver.LockIfExists(LorId, params LorId[])
+  nameWithType.vb: PassiveResolver.LockIfExists(LorId, ParamArray LorId())
+- uid: DeviceOfHermes.PassiveResolver.LockIfExists*
+  name: LockIfExists
+  href: api/DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_LockIfExists_
+  commentId: Overload:DeviceOfHermes.PassiveResolver.LockIfExists
+  isSpec: "True"
+  fullName: DeviceOfHermes.PassiveResolver.LockIfExists
+  nameWithType: PassiveResolver.LockIfExists
+- uid: DeviceOfHermes.Resource
+  name: DeviceOfHermes.Resource
+  href: api/DeviceOfHermes.Resource.html
+  commentId: N:DeviceOfHermes.Resource
+  fullName: DeviceOfHermes.Resource
+  nameWithType: DeviceOfHermes.Resource
+- uid: DeviceOfHermes.Resource.Artwork
+  name: Artwork
+  href: api/DeviceOfHermes.Resource.Artwork.html
+  commentId: T:DeviceOfHermes.Resource.Artwork
+  fullName: DeviceOfHermes.Resource.Artwork
+  nameWithType: Artwork
+- uid: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites(System.String,System.Boolean)
+  name: LoadBattleUnitBufSprites(string, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadBattleUnitBufSprites_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites(System.String,System.Boolean)
+  name.vb: LoadBattleUnitBufSprites(String, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites(string, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites(String, Boolean)
+  nameWithType: Artwork.LoadBattleUnitBufSprites(string, bool)
+  nameWithType.vb: Artwork.LoadBattleUnitBufSprites(String, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites*
+  name: LoadBattleUnitBufSprites
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadBattleUnitBufSprites_
+  commentId: Overload:DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites
+  nameWithType: Artwork.LoadBattleUnitBufSprites
+- uid: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.Boolean)
+  name: SetBattleUnitBufSprite(string, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.Boolean)
+  name.vb: SetBattleUnitBufSprite(String, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(string, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(String, Boolean)
+  nameWithType: Artwork.SetBattleUnitBufSprite(string, bool)
+  nameWithType.vb: Artwork.SetBattleUnitBufSprite(String, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.String,System.Boolean)
+  name: SetBattleUnitBufSprite(string, string, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.String,System.Boolean)
+  name.vb: SetBattleUnitBufSprite(String, String, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(string, string, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(String, String, Boolean)
+  nameWithType: Artwork.SetBattleUnitBufSprite(string, string, bool)
+  nameWithType.vb: Artwork.SetBattleUnitBufSprite(String, String, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,UnityEngine.Sprite,System.Boolean)
+  name: SetBattleUnitBufSprite(string, Sprite, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_UnityEngine_Sprite_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,UnityEngine.Sprite,System.Boolean)
+  name.vb: SetBattleUnitBufSprite(String, Sprite, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(string, UnityEngine.Sprite, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(String, UnityEngine.Sprite, Boolean)
+  nameWithType: Artwork.SetBattleUnitBufSprite(string, Sprite, bool)
+  nameWithType.vb: Artwork.SetBattleUnitBufSprite(String, Sprite, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite*
+  name: SetBattleUnitBufSprite
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_
+  commentId: Overload:DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite
+  nameWithType: Artwork.SetBattleUnitBufSprite
+- uid: DeviceOfHermes.Resource.ReadXmlParser
+  name: ReadXmlParser
+  href: api/DeviceOfHermes.Resource.ReadXmlParser.html
+  commentId: T:DeviceOfHermes.Resource.ReadXmlParser
+  fullName: DeviceOfHermes.Resource.ReadXmlParser
+  nameWithType: ReadXmlParser
+- uid: DeviceOfHermes.Resource.ReadXmlParser.Read*
+  name: Read
+  href: api/DeviceOfHermes.Resource.ReadXmlParser.html#DeviceOfHermes_Resource_ReadXmlParser_Read_
+  commentId: Overload:DeviceOfHermes.Resource.ReadXmlParser.Read
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.ReadXmlParser.Read
+  nameWithType: ReadXmlParser.Read
+- uid: DeviceOfHermes.Resource.ReadXmlParser.Read``1(System.String)
+  name: Read<T>(string)
+  href: api/DeviceOfHermes.Resource.ReadXmlParser.html#DeviceOfHermes_Resource_ReadXmlParser_Read__1_System_String_
+  commentId: M:DeviceOfHermes.Resource.ReadXmlParser.Read``1(System.String)
+  name.vb: Read(Of T)(String)
+  fullName: DeviceOfHermes.Resource.ReadXmlParser.Read<T>(string)
+  fullName.vb: DeviceOfHermes.Resource.ReadXmlParser.Read(Of T)(String)
+  nameWithType: ReadXmlParser.Read<T>(string)
+  nameWithType.vb: ReadXmlParser.Read(Of T)(String)
+- uid: DeviceOfHermes.Resource.TextModel
+  name: TextModel
+  href: api/DeviceOfHermes.Resource.TextModel.html
+  commentId: T:DeviceOfHermes.Resource.TextModel
+  fullName: DeviceOfHermes.Resource.TextModel
+  nameWithType: TextModel
+- uid: DeviceOfHermes.Resource.TextModel.OnLoadLocalize
+  name: OnLoadLocalize
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_OnLoadLocalize
+  commentId: E:DeviceOfHermes.Resource.TextModel.OnLoadLocalize
+  fullName: DeviceOfHermes.Resource.TextModel.OnLoadLocalize
+  nameWithType: TextModel.OnLoadLocalize
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleEffectText(LOR_XML.BattleEffectText,System.Boolean)
+  name: SetBattleEffectText(BattleEffectText, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleEffectText_LOR_XML_BattleEffectText_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBattleEffectText(LOR_XML.BattleEffectText,System.Boolean)
+  name.vb: SetBattleEffectText(BattleEffectText, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleEffectText(LOR_XML.BattleEffectText, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBattleEffectText(LOR_XML.BattleEffectText, Boolean)
+  nameWithType: TextModel.SetBattleEffectText(BattleEffectText, bool)
+  nameWithType.vb: TextModel.SetBattleEffectText(BattleEffectText, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleEffectText*
+  name: SetBattleEffectText
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleEffectText_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBattleEffectText
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleEffectText
+  nameWithType: TextModel.SetBattleEffectText
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts(System.Collections.Generic.IEnumerable{LOR_XML.BattleEffectText},System.Boolean)
+  name: SetBattleEffectTexts(IEnumerable<BattleEffectText>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleEffectTexts_System_Collections_Generic_IEnumerable_LOR_XML_BattleEffectText__System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts(System.Collections.Generic.IEnumerable{LOR_XML.BattleEffectText},System.Boolean)
+  name.vb: SetBattleEffectTexts(IEnumerable(Of BattleEffectText), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts(System.Collections.Generic.IEnumerable<LOR_XML.BattleEffectText>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts(System.Collections.Generic.IEnumerable(Of LOR_XML.BattleEffectText), Boolean)
+  nameWithType: TextModel.SetBattleEffectTexts(IEnumerable<BattleEffectText>, bool)
+  nameWithType.vb: TextModel.SetBattleEffectTexts(IEnumerable(Of BattleEffectText), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts*
+  name: SetBattleEffectTexts
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleEffectTexts_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts
+  nameWithType: TextModel.SetBattleEffectTexts
+- uid: DeviceOfHermes.ScheduleRunner
+  name: ScheduleRunner
+  href: api/DeviceOfHermes.ScheduleRunner.html
+  commentId: T:DeviceOfHermes.ScheduleRunner
+  fullName: DeviceOfHermes.ScheduleRunner
+  nameWithType: ScheduleRunner
+- uid: DeviceOfHermes.ScheduleRunner.AddSchedule(DeviceOfHermes.ScheduleTiming,System.Action)
+  name: AddSchedule(ScheduleTiming, Action)
+  href: api/DeviceOfHermes.ScheduleRunner.html#DeviceOfHermes_ScheduleRunner_AddSchedule_DeviceOfHermes_ScheduleTiming_System_Action_
+  commentId: M:DeviceOfHermes.ScheduleRunner.AddSchedule(DeviceOfHermes.ScheduleTiming,System.Action)
+  fullName: DeviceOfHermes.ScheduleRunner.AddSchedule(DeviceOfHermes.ScheduleTiming, System.Action)
+  nameWithType: ScheduleRunner.AddSchedule(ScheduleTiming, Action)
+- uid: DeviceOfHermes.ScheduleRunner.AddSchedule*
+  name: AddSchedule
+  href: api/DeviceOfHermes.ScheduleRunner.html#DeviceOfHermes_ScheduleRunner_AddSchedule_
+  commentId: Overload:DeviceOfHermes.ScheduleRunner.AddSchedule
+  isSpec: "True"
+  fullName: DeviceOfHermes.ScheduleRunner.AddSchedule
+  nameWithType: ScheduleRunner.AddSchedule
+- uid: DeviceOfHermes.ScheduleTiming
+  name: ScheduleTiming
+  href: api/DeviceOfHermes.ScheduleTiming.html
+  commentId: T:DeviceOfHermes.ScheduleTiming
+  fullName: DeviceOfHermes.ScheduleTiming
+  nameWithType: ScheduleTiming
+- uid: DeviceOfHermes.ScheduleTiming.EndBattle
+  name: EndBattle
+  href: api/DeviceOfHermes.ScheduleTiming.html#DeviceOfHermes_ScheduleTiming_EndBattle
+  commentId: F:DeviceOfHermes.ScheduleTiming.EndBattle
+  fullName: DeviceOfHermes.ScheduleTiming.EndBattle
+  nameWithType: ScheduleTiming.EndBattle
+- uid: DeviceOfHermes.ScheduleTiming.RollSpeedDice
+  name: RollSpeedDice
+  href: api/DeviceOfHermes.ScheduleTiming.html#DeviceOfHermes_ScheduleTiming_RollSpeedDice
+  commentId: F:DeviceOfHermes.ScheduleTiming.RollSpeedDice
+  fullName: DeviceOfHermes.ScheduleTiming.RollSpeedDice
+  nameWithType: ScheduleTiming.RollSpeedDice
+- uid: DeviceOfHermes.ScheduleTiming.RoundEnd
+  name: RoundEnd
+  href: api/DeviceOfHermes.ScheduleTiming.html#DeviceOfHermes_ScheduleTiming_RoundEnd
+  commentId: F:DeviceOfHermes.ScheduleTiming.RoundEnd
+  fullName: DeviceOfHermes.ScheduleTiming.RoundEnd
+  nameWithType: ScheduleTiming.RoundEnd
+- uid: DeviceOfHermes.ScheduleTiming.RoundStart
+  name: RoundStart
+  href: api/DeviceOfHermes.ScheduleTiming.html#DeviceOfHermes_ScheduleTiming_RoundStart
+  commentId: F:DeviceOfHermes.ScheduleTiming.RoundStart
+  fullName: DeviceOfHermes.ScheduleTiming.RoundStart
+  nameWithType: ScheduleTiming.RoundStart
+- uid: DeviceOfHermes.ScheduleTiming.StartBattle
+  name: StartBattle
+  href: api/DeviceOfHermes.ScheduleTiming.html#DeviceOfHermes_ScheduleTiming_StartBattle
+  commentId: F:DeviceOfHermes.ScheduleTiming.StartBattle
+  fullName: DeviceOfHermes.ScheduleTiming.StartBattle
+  nameWithType: ScheduleTiming.StartBattle
+- uid: DeviceOfHermes.ScheduleTiming.UseCard
+  name: UseCard
+  href: api/DeviceOfHermes.ScheduleTiming.html#DeviceOfHermes_ScheduleTiming_UseCard
+  commentId: F:DeviceOfHermes.ScheduleTiming.UseCard
+  fullName: DeviceOfHermes.ScheduleTiming.UseCard
+  nameWithType: ScheduleTiming.UseCard
+- uid: DeviceOfHermes.StyleExtension
+  name: StyleExtension
+  href: api/DeviceOfHermes.StyleExtension.html
+  commentId: T:DeviceOfHermes.StyleExtension
+  fullName: DeviceOfHermes.StyleExtension
+  nameWithType: StyleExtension
+- uid: DeviceOfHermes.StyleExtension.Alpha(System.String,System.String)
+  name: Alpha(string, string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Alpha_System_String_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Alpha(System.String,System.String)
+  name.vb: Alpha(String, String)
+  fullName: DeviceOfHermes.StyleExtension.Alpha(string, string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Alpha(String, String)
+  nameWithType: StyleExtension.Alpha(string, string)
+  nameWithType.vb: StyleExtension.Alpha(String, String)
+- uid: DeviceOfHermes.StyleExtension.Alpha*
+  name: Alpha
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Alpha_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Alpha
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Alpha
+  nameWithType: StyleExtension.Alpha
+- uid: DeviceOfHermes.StyleExtension.Aqua(System.String)
+  name: Aqua(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Aqua_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Aqua(System.String)
+  name.vb: Aqua(String)
+  fullName: DeviceOfHermes.StyleExtension.Aqua(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Aqua(String)
+  nameWithType: StyleExtension.Aqua(string)
+  nameWithType.vb: StyleExtension.Aqua(String)
+- uid: DeviceOfHermes.StyleExtension.Aqua*
+  name: Aqua
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Aqua_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Aqua
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Aqua
+  nameWithType: StyleExtension.Aqua
+- uid: DeviceOfHermes.StyleExtension.Black(System.String)
+  name: Black(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Black_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Black(System.String)
+  name.vb: Black(String)
+  fullName: DeviceOfHermes.StyleExtension.Black(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Black(String)
+  nameWithType: StyleExtension.Black(string)
+  nameWithType.vb: StyleExtension.Black(String)
+- uid: DeviceOfHermes.StyleExtension.Black*
+  name: Black
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Black_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Black
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Black
+  nameWithType: StyleExtension.Black
+- uid: DeviceOfHermes.StyleExtension.Blue(System.String)
+  name: Blue(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Blue_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Blue(System.String)
+  name.vb: Blue(String)
+  fullName: DeviceOfHermes.StyleExtension.Blue(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Blue(String)
+  nameWithType: StyleExtension.Blue(string)
+  nameWithType.vb: StyleExtension.Blue(String)
+- uid: DeviceOfHermes.StyleExtension.Blue*
+  name: Blue
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Blue_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Blue
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Blue
+  nameWithType: StyleExtension.Blue
+- uid: DeviceOfHermes.StyleExtension.Bold(System.String)
+  name: Bold(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Bold_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Bold(System.String)
+  name.vb: Bold(String)
+  fullName: DeviceOfHermes.StyleExtension.Bold(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Bold(String)
+  nameWithType: StyleExtension.Bold(string)
+  nameWithType.vb: StyleExtension.Bold(String)
+- uid: DeviceOfHermes.StyleExtension.Bold*
+  name: Bold
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Bold_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Bold
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Bold
+  nameWithType: StyleExtension.Bold
+- uid: DeviceOfHermes.StyleExtension.Brown(System.String)
+  name: Brown(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Brown_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Brown(System.String)
+  name.vb: Brown(String)
+  fullName: DeviceOfHermes.StyleExtension.Brown(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Brown(String)
+  nameWithType: StyleExtension.Brown(string)
+  nameWithType.vb: StyleExtension.Brown(String)
+- uid: DeviceOfHermes.StyleExtension.Brown*
+  name: Brown
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Brown_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Brown
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Brown
+  nameWithType: StyleExtension.Brown
+- uid: DeviceOfHermes.StyleExtension.Cspace(System.String,System.String)
+  name: Cspace(string, string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Cspace_System_String_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Cspace(System.String,System.String)
+  name.vb: Cspace(String, String)
+  fullName: DeviceOfHermes.StyleExtension.Cspace(string, string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Cspace(String, String)
+  nameWithType: StyleExtension.Cspace(string, string)
+  nameWithType.vb: StyleExtension.Cspace(String, String)
+- uid: DeviceOfHermes.StyleExtension.Cspace*
+  name: Cspace
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Cspace_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Cspace
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Cspace
+  nameWithType: StyleExtension.Cspace
+- uid: DeviceOfHermes.StyleExtension.Cyan(System.String)
+  name: Cyan(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Cyan_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Cyan(System.String)
+  name.vb: Cyan(String)
+  fullName: DeviceOfHermes.StyleExtension.Cyan(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Cyan(String)
+  nameWithType: StyleExtension.Cyan(string)
+  nameWithType.vb: StyleExtension.Cyan(String)
+- uid: DeviceOfHermes.StyleExtension.Cyan*
+  name: Cyan
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Cyan_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Cyan
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Cyan
+  nameWithType: StyleExtension.Cyan
+- uid: DeviceOfHermes.StyleExtension.DarkBlue(System.String)
+  name: DarkBlue(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_DarkBlue_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.DarkBlue(System.String)
+  name.vb: DarkBlue(String)
+  fullName: DeviceOfHermes.StyleExtension.DarkBlue(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.DarkBlue(String)
+  nameWithType: StyleExtension.DarkBlue(string)
+  nameWithType.vb: StyleExtension.DarkBlue(String)
+- uid: DeviceOfHermes.StyleExtension.DarkBlue*
+  name: DarkBlue
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_DarkBlue_
+  commentId: Overload:DeviceOfHermes.StyleExtension.DarkBlue
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.DarkBlue
+  nameWithType: StyleExtension.DarkBlue
+- uid: DeviceOfHermes.StyleExtension.Font(System.String,System.String)
+  name: Font(string, string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Font_System_String_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Font(System.String,System.String)
+  name.vb: Font(String, String)
+  fullName: DeviceOfHermes.StyleExtension.Font(string, string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Font(String, String)
+  nameWithType: StyleExtension.Font(string, string)
+  nameWithType.vb: StyleExtension.Font(String, String)
+- uid: DeviceOfHermes.StyleExtension.Font*
+  name: Font
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Font_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Font
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Font
+  nameWithType: StyleExtension.Font
+- uid: DeviceOfHermes.StyleExtension.Fuchsia(System.String)
+  name: Fuchsia(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Fuchsia_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Fuchsia(System.String)
+  name.vb: Fuchsia(String)
+  fullName: DeviceOfHermes.StyleExtension.Fuchsia(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Fuchsia(String)
+  nameWithType: StyleExtension.Fuchsia(string)
+  nameWithType.vb: StyleExtension.Fuchsia(String)
+- uid: DeviceOfHermes.StyleExtension.Fuchsia*
+  name: Fuchsia
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Fuchsia_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Fuchsia
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Fuchsia
+  nameWithType: StyleExtension.Fuchsia
+- uid: DeviceOfHermes.StyleExtension.Gradient(System.String,System.String)
+  name: Gradient(string, string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Gradient_System_String_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Gradient(System.String,System.String)
+  name.vb: Gradient(String, String)
+  fullName: DeviceOfHermes.StyleExtension.Gradient(string, string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Gradient(String, String)
+  nameWithType: StyleExtension.Gradient(string, string)
+  nameWithType.vb: StyleExtension.Gradient(String, String)
+- uid: DeviceOfHermes.StyleExtension.Gradient*
+  name: Gradient
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Gradient_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Gradient
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Gradient
+  nameWithType: StyleExtension.Gradient
+- uid: DeviceOfHermes.StyleExtension.Green(System.String)
+  name: Green(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Green_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Green(System.String)
+  name.vb: Green(String)
+  fullName: DeviceOfHermes.StyleExtension.Green(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Green(String)
+  nameWithType: StyleExtension.Green(string)
+  nameWithType.vb: StyleExtension.Green(String)
+- uid: DeviceOfHermes.StyleExtension.Green*
+  name: Green
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Green_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Green
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Green
+  nameWithType: StyleExtension.Green
+- uid: DeviceOfHermes.StyleExtension.Grey(System.String)
+  name: Grey(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Grey_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Grey(System.String)
+  name.vb: Grey(String)
+  fullName: DeviceOfHermes.StyleExtension.Grey(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Grey(String)
+  nameWithType: StyleExtension.Grey(string)
+  nameWithType.vb: StyleExtension.Grey(String)
+- uid: DeviceOfHermes.StyleExtension.Grey*
+  name: Grey
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Grey_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Grey
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Grey
+  nameWithType: StyleExtension.Grey
+- uid: DeviceOfHermes.StyleExtension.Hex(System.String,System.String)
+  name: Hex(string, string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Hex_System_String_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Hex(System.String,System.String)
+  name.vb: Hex(String, String)
+  fullName: DeviceOfHermes.StyleExtension.Hex(string, string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Hex(String, String)
+  nameWithType: StyleExtension.Hex(string, string)
+  nameWithType.vb: StyleExtension.Hex(String, String)
+- uid: DeviceOfHermes.StyleExtension.Hex*
+  name: Hex
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Hex_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Hex
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Hex
+  nameWithType: StyleExtension.Hex
+- uid: DeviceOfHermes.StyleExtension.Italic(System.String)
+  name: Italic(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Italic_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Italic(System.String)
+  name.vb: Italic(String)
+  fullName: DeviceOfHermes.StyleExtension.Italic(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Italic(String)
+  nameWithType: StyleExtension.Italic(string)
+  nameWithType.vb: StyleExtension.Italic(String)
+- uid: DeviceOfHermes.StyleExtension.Italic*
+  name: Italic
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Italic_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Italic
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Italic
+  nameWithType: StyleExtension.Italic
+- uid: DeviceOfHermes.StyleExtension.LightBlue(System.String)
+  name: LightBlue(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_LightBlue_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.LightBlue(System.String)
+  name.vb: LightBlue(String)
+  fullName: DeviceOfHermes.StyleExtension.LightBlue(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.LightBlue(String)
+  nameWithType: StyleExtension.LightBlue(string)
+  nameWithType.vb: StyleExtension.LightBlue(String)
+- uid: DeviceOfHermes.StyleExtension.LightBlue*
+  name: LightBlue
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_LightBlue_
+  commentId: Overload:DeviceOfHermes.StyleExtension.LightBlue
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.LightBlue
+  nameWithType: StyleExtension.LightBlue
+- uid: DeviceOfHermes.StyleExtension.Lime(System.String)
+  name: Lime(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Lime_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Lime(System.String)
+  name.vb: Lime(String)
+  fullName: DeviceOfHermes.StyleExtension.Lime(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Lime(String)
+  nameWithType: StyleExtension.Lime(string)
+  nameWithType.vb: StyleExtension.Lime(String)
+- uid: DeviceOfHermes.StyleExtension.Lime*
+  name: Lime
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Lime_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Lime
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Lime
+  nameWithType: StyleExtension.Lime
+- uid: DeviceOfHermes.StyleExtension.LineHeight(System.String,System.String)
+  name: LineHeight(string, string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_LineHeight_System_String_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.LineHeight(System.String,System.String)
+  name.vb: LineHeight(String, String)
+  fullName: DeviceOfHermes.StyleExtension.LineHeight(string, string)
+  fullName.vb: DeviceOfHermes.StyleExtension.LineHeight(String, String)
+  nameWithType: StyleExtension.LineHeight(string, string)
+  nameWithType.vb: StyleExtension.LineHeight(String, String)
+- uid: DeviceOfHermes.StyleExtension.LineHeight*
+  name: LineHeight
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_LineHeight_
+  commentId: Overload:DeviceOfHermes.StyleExtension.LineHeight
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.LineHeight
+  nameWithType: StyleExtension.LineHeight
+- uid: DeviceOfHermes.StyleExtension.Lower(System.String)
+  name: Lower(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Lower_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Lower(System.String)
+  name.vb: Lower(String)
+  fullName: DeviceOfHermes.StyleExtension.Lower(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Lower(String)
+  nameWithType: StyleExtension.Lower(string)
+  nameWithType.vb: StyleExtension.Lower(String)
+- uid: DeviceOfHermes.StyleExtension.Lower*
+  name: Lower
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Lower_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Lower
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Lower
+  nameWithType: StyleExtension.Lower
+- uid: DeviceOfHermes.StyleExtension.Magenta(System.String)
+  name: Magenta(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Magenta_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Magenta(System.String)
+  name.vb: Magenta(String)
+  fullName: DeviceOfHermes.StyleExtension.Magenta(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Magenta(String)
+  nameWithType: StyleExtension.Magenta(string)
+  nameWithType.vb: StyleExtension.Magenta(String)
+- uid: DeviceOfHermes.StyleExtension.Magenta*
+  name: Magenta
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Magenta_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Magenta
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Magenta
+  nameWithType: StyleExtension.Magenta
+- uid: DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32)
+  name: Mark(string, int, int, int)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Mark_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32)
+  name.vb: Mark(String, Integer, Integer, Integer)
+  fullName: DeviceOfHermes.StyleExtension.Mark(string, int, int, int)
+  fullName.vb: DeviceOfHermes.StyleExtension.Mark(String, Integer, Integer, Integer)
+  nameWithType: StyleExtension.Mark(string, int, int, int)
+  nameWithType.vb: StyleExtension.Mark(String, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Mark(string, int, int, int, int)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Mark_System_String_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: Mark(String, Integer, Integer, Integer, Integer)
+  fullName: DeviceOfHermes.StyleExtension.Mark(string, int, int, int, int)
+  fullName.vb: DeviceOfHermes.StyleExtension.Mark(String, Integer, Integer, Integer, Integer)
+  nameWithType: StyleExtension.Mark(string, int, int, int, int)
+  nameWithType.vb: StyleExtension.Mark(String, Integer, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.Mark(System.String,System.String)
+  name: Mark(string, string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Mark_System_String_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Mark(System.String,System.String)
+  name.vb: Mark(String, String)
+  fullName: DeviceOfHermes.StyleExtension.Mark(string, string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Mark(String, String)
+  nameWithType: StyleExtension.Mark(string, string)
+  nameWithType.vb: StyleExtension.Mark(String, String)
+- uid: DeviceOfHermes.StyleExtension.Mark*
+  name: Mark
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Mark_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Mark
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Mark
+  nameWithType: StyleExtension.Mark
+- uid: DeviceOfHermes.StyleExtension.Maroon(System.String)
+  name: Maroon(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Maroon_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Maroon(System.String)
+  name.vb: Maroon(String)
+  fullName: DeviceOfHermes.StyleExtension.Maroon(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Maroon(String)
+  nameWithType: StyleExtension.Maroon(string)
+  nameWithType.vb: StyleExtension.Maroon(String)
+- uid: DeviceOfHermes.StyleExtension.Maroon*
+  name: Maroon
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Maroon_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Maroon
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Maroon
+  nameWithType: StyleExtension.Maroon
+- uid: DeviceOfHermes.StyleExtension.Navy(System.String)
+  name: Navy(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Navy_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Navy(System.String)
+  name.vb: Navy(String)
+  fullName: DeviceOfHermes.StyleExtension.Navy(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Navy(String)
+  nameWithType: StyleExtension.Navy(string)
+  nameWithType.vb: StyleExtension.Navy(String)
+- uid: DeviceOfHermes.StyleExtension.Navy*
+  name: Navy
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Navy_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Navy
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Navy
+  nameWithType: StyleExtension.Navy
+- uid: DeviceOfHermes.StyleExtension.Olive(System.String)
+  name: Olive(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Olive_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Olive(System.String)
+  name.vb: Olive(String)
+  fullName: DeviceOfHermes.StyleExtension.Olive(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Olive(String)
+  nameWithType: StyleExtension.Olive(string)
+  nameWithType.vb: StyleExtension.Olive(String)
+- uid: DeviceOfHermes.StyleExtension.Olive*
+  name: Olive
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Olive_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Olive
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Olive
+  nameWithType: StyleExtension.Olive
+- uid: DeviceOfHermes.StyleExtension.Orange(System.String)
+  name: Orange(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Orange_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Orange(System.String)
+  name.vb: Orange(String)
+  fullName: DeviceOfHermes.StyleExtension.Orange(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Orange(String)
+  nameWithType: StyleExtension.Orange(string)
+  nameWithType.vb: StyleExtension.Orange(String)
+- uid: DeviceOfHermes.StyleExtension.Orange*
+  name: Orange
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Orange_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Orange
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Orange
+  nameWithType: StyleExtension.Orange
+- uid: DeviceOfHermes.StyleExtension.Purple(System.String)
+  name: Purple(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Purple_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Purple(System.String)
+  name.vb: Purple(String)
+  fullName: DeviceOfHermes.StyleExtension.Purple(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Purple(String)
+  nameWithType: StyleExtension.Purple(string)
+  nameWithType.vb: StyleExtension.Purple(String)
+- uid: DeviceOfHermes.StyleExtension.Purple*
+  name: Purple
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Purple_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Purple
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Purple
+  nameWithType: StyleExtension.Purple
+- uid: DeviceOfHermes.StyleExtension.Red(System.String)
+  name: Red(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Red_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Red(System.String)
+  name.vb: Red(String)
+  fullName: DeviceOfHermes.StyleExtension.Red(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Red(String)
+  nameWithType: StyleExtension.Red(string)
+  nameWithType.vb: StyleExtension.Red(String)
+- uid: DeviceOfHermes.StyleExtension.Red*
+  name: Red
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Red_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Red
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Red
+  nameWithType: StyleExtension.Red
+- uid: DeviceOfHermes.StyleExtension.Rgb(System.String,System.Int32,System.Int32,System.Int32)
+  name: Rgb(string, int, int, int)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Rgb_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:DeviceOfHermes.StyleExtension.Rgb(System.String,System.Int32,System.Int32,System.Int32)
+  name.vb: Rgb(String, Integer, Integer, Integer)
+  fullName: DeviceOfHermes.StyleExtension.Rgb(string, int, int, int)
+  fullName.vb: DeviceOfHermes.StyleExtension.Rgb(String, Integer, Integer, Integer)
+  nameWithType: StyleExtension.Rgb(string, int, int, int)
+  nameWithType.vb: StyleExtension.Rgb(String, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.Rgb*
+  name: Rgb
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Rgb_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Rgb
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Rgb
+  nameWithType: StyleExtension.Rgb
+- uid: DeviceOfHermes.StyleExtension.Rgba(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Rgba(string, int, int, int, int)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Rgba_System_String_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:DeviceOfHermes.StyleExtension.Rgba(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: Rgba(String, Integer, Integer, Integer, Integer)
+  fullName: DeviceOfHermes.StyleExtension.Rgba(string, int, int, int, int)
+  fullName.vb: DeviceOfHermes.StyleExtension.Rgba(String, Integer, Integer, Integer, Integer)
+  nameWithType: StyleExtension.Rgba(string, int, int, int, int)
+  nameWithType.vb: StyleExtension.Rgba(String, Integer, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.Rgba*
+  name: Rgba
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Rgba_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Rgba
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Rgba
+  nameWithType: StyleExtension.Rgba
+- uid: DeviceOfHermes.StyleExtension.Silver(System.String)
+  name: Silver(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Silver_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Silver(System.String)
+  name.vb: Silver(String)
+  fullName: DeviceOfHermes.StyleExtension.Silver(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Silver(String)
+  nameWithType: StyleExtension.Silver(string)
+  nameWithType.vb: StyleExtension.Silver(String)
+- uid: DeviceOfHermes.StyleExtension.Silver*
+  name: Silver
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Silver_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Silver
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Silver
+  nameWithType: StyleExtension.Silver
+- uid: DeviceOfHermes.StyleExtension.SizeAbs(System.String,System.Int32)
+  name: SizeAbs(string, int)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_SizeAbs_System_String_System_Int32_
+  commentId: M:DeviceOfHermes.StyleExtension.SizeAbs(System.String,System.Int32)
+  name.vb: SizeAbs(String, Integer)
+  fullName: DeviceOfHermes.StyleExtension.SizeAbs(string, int)
+  fullName.vb: DeviceOfHermes.StyleExtension.SizeAbs(String, Integer)
+  nameWithType: StyleExtension.SizeAbs(string, int)
+  nameWithType.vb: StyleExtension.SizeAbs(String, Integer)
+- uid: DeviceOfHermes.StyleExtension.SizeAbs*
+  name: SizeAbs
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_SizeAbs_
+  commentId: Overload:DeviceOfHermes.StyleExtension.SizeAbs
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.SizeAbs
+  nameWithType: StyleExtension.SizeAbs
+- uid: DeviceOfHermes.StyleExtension.SizeRel(System.String,System.Int32)
+  name: SizeRel(string, int)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_SizeRel_System_String_System_Int32_
+  commentId: M:DeviceOfHermes.StyleExtension.SizeRel(System.String,System.Int32)
+  name.vb: SizeRel(String, Integer)
+  fullName: DeviceOfHermes.StyleExtension.SizeRel(string, int)
+  fullName.vb: DeviceOfHermes.StyleExtension.SizeRel(String, Integer)
+  nameWithType: StyleExtension.SizeRel(string, int)
+  nameWithType.vb: StyleExtension.SizeRel(String, Integer)
+- uid: DeviceOfHermes.StyleExtension.SizeRel*
+  name: SizeRel
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_SizeRel_
+  commentId: Overload:DeviceOfHermes.StyleExtension.SizeRel
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.SizeRel
+  nameWithType: StyleExtension.SizeRel
+- uid: DeviceOfHermes.StyleExtension.Smallcaps(System.String)
+  name: Smallcaps(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Smallcaps_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Smallcaps(System.String)
+  name.vb: Smallcaps(String)
+  fullName: DeviceOfHermes.StyleExtension.Smallcaps(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Smallcaps(String)
+  nameWithType: StyleExtension.Smallcaps(string)
+  nameWithType.vb: StyleExtension.Smallcaps(String)
+- uid: DeviceOfHermes.StyleExtension.Smallcaps*
+  name: Smallcaps
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Smallcaps_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Smallcaps
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Smallcaps
+  nameWithType: StyleExtension.Smallcaps
+- uid: DeviceOfHermes.StyleExtension.Strikethrough(System.String)
+  name: Strikethrough(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Strikethrough_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Strikethrough(System.String)
+  name.vb: Strikethrough(String)
+  fullName: DeviceOfHermes.StyleExtension.Strikethrough(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Strikethrough(String)
+  nameWithType: StyleExtension.Strikethrough(string)
+  nameWithType.vb: StyleExtension.Strikethrough(String)
+- uid: DeviceOfHermes.StyleExtension.Strikethrough*
+  name: Strikethrough
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Strikethrough_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Strikethrough
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Strikethrough
+  nameWithType: StyleExtension.Strikethrough
+- uid: DeviceOfHermes.StyleExtension.Sub(System.String)
+  name: Sub(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Sub_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Sub(System.String)
+  name.vb: Sub(String)
+  fullName: DeviceOfHermes.StyleExtension.Sub(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Sub(String)
+  nameWithType: StyleExtension.Sub(string)
+  nameWithType.vb: StyleExtension.Sub(String)
+- uid: DeviceOfHermes.StyleExtension.Sub*
+  name: Sub
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Sub_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Sub
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Sub
+  nameWithType: StyleExtension.Sub
+- uid: DeviceOfHermes.StyleExtension.Sup(System.String)
+  name: Sup(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Sup_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Sup(System.String)
+  name.vb: Sup(String)
+  fullName: DeviceOfHermes.StyleExtension.Sup(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Sup(String)
+  nameWithType: StyleExtension.Sup(string)
+  nameWithType.vb: StyleExtension.Sup(String)
+- uid: DeviceOfHermes.StyleExtension.Sup*
+  name: Sup
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Sup_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Sup
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Sup
+  nameWithType: StyleExtension.Sup
+- uid: DeviceOfHermes.StyleExtension.Teal(System.String)
+  name: Teal(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Teal_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Teal(System.String)
+  name.vb: Teal(String)
+  fullName: DeviceOfHermes.StyleExtension.Teal(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Teal(String)
+  nameWithType: StyleExtension.Teal(string)
+  nameWithType.vb: StyleExtension.Teal(String)
+- uid: DeviceOfHermes.StyleExtension.Teal*
+  name: Teal
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Teal_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Teal
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Teal
+  nameWithType: StyleExtension.Teal
+- uid: DeviceOfHermes.StyleExtension.Underline(System.String)
+  name: Underline(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Underline_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Underline(System.String)
+  name.vb: Underline(String)
+  fullName: DeviceOfHermes.StyleExtension.Underline(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Underline(String)
+  nameWithType: StyleExtension.Underline(string)
+  nameWithType.vb: StyleExtension.Underline(String)
+- uid: DeviceOfHermes.StyleExtension.Underline*
+  name: Underline
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Underline_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Underline
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Underline
+  nameWithType: StyleExtension.Underline
+- uid: DeviceOfHermes.StyleExtension.Upper(System.String)
+  name: Upper(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Upper_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Upper(System.String)
+  name.vb: Upper(String)
+  fullName: DeviceOfHermes.StyleExtension.Upper(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Upper(String)
+  nameWithType: StyleExtension.Upper(string)
+  nameWithType.vb: StyleExtension.Upper(String)
+- uid: DeviceOfHermes.StyleExtension.Upper*
+  name: Upper
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Upper_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Upper
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Upper
+  nameWithType: StyleExtension.Upper
+- uid: DeviceOfHermes.StyleExtension.White(System.String)
+  name: White(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_White_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.White(System.String)
+  name.vb: White(String)
+  fullName: DeviceOfHermes.StyleExtension.White(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.White(String)
+  nameWithType: StyleExtension.White(string)
+  nameWithType.vb: StyleExtension.White(String)
+- uid: DeviceOfHermes.StyleExtension.White*
+  name: White
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_White_
+  commentId: Overload:DeviceOfHermes.StyleExtension.White
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.White
+  nameWithType: StyleExtension.White
+- uid: DeviceOfHermes.StyleExtension.Yellow(System.String)
+  name: Yellow(string)
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Yellow_System_String_
+  commentId: M:DeviceOfHermes.StyleExtension.Yellow(System.String)
+  name.vb: Yellow(String)
+  fullName: DeviceOfHermes.StyleExtension.Yellow(string)
+  fullName.vb: DeviceOfHermes.StyleExtension.Yellow(String)
+  nameWithType: StyleExtension.Yellow(string)
+  nameWithType.vb: StyleExtension.Yellow(String)
+- uid: DeviceOfHermes.StyleExtension.Yellow*
+  name: Yellow
+  href: api/DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Yellow_
+  commentId: Overload:DeviceOfHermes.StyleExtension.Yellow
+  isSpec: "True"
+  fullName: DeviceOfHermes.StyleExtension.Yellow
+  nameWithType: StyleExtension.Yellow
+- uid: DeviceOfHermes.VannilaUnitBuf
+  name: VannilaUnitBuf
+  href: api/DeviceOfHermes.VannilaUnitBuf.html
+  commentId: T:DeviceOfHermes.VannilaUnitBuf
+  fullName: DeviceOfHermes.VannilaUnitBuf
+  nameWithType: VannilaUnitBuf
+- uid: DeviceOfHermes.VannilaUnitBuf.AddMaxIf*
+  name: AddMaxIf
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddMaxIf_
+  commentId: Overload:DeviceOfHermes.VannilaUnitBuf.AddMaxIf
+  isSpec: "True"
+  fullName: DeviceOfHermes.VannilaUnitBuf.AddMaxIf
+  nameWithType: VannilaUnitBuf.AddMaxIf
+- uid: DeviceOfHermes.VannilaUnitBuf.AddMaxIf``1(System.Int32,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name: AddMaxIf<T>(int, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddMaxIf__1_System_Int32_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean__
+  commentId: M:DeviceOfHermes.VannilaUnitBuf.AddMaxIf``1(System.Int32,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name.vb: AddMaxIf(Of T)(Integer, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  fullName: DeviceOfHermes.VannilaUnitBuf.AddMaxIf<T>(int, System.Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  fullName.vb: DeviceOfHermes.VannilaUnitBuf.AddMaxIf(Of T)(Integer, System.Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  nameWithType: VannilaUnitBuf.AddMaxIf<T>(int, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  nameWithType.vb: VannilaUnitBuf.AddMaxIf(Of T)(Integer, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+- uid: DeviceOfHermes.VannilaUnitBuf.SetMaxForcely*
+  name: SetMaxForcely
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_SetMaxForcely_
+  commentId: Overload:DeviceOfHermes.VannilaUnitBuf.SetMaxForcely
+  isSpec: "True"
+  fullName: DeviceOfHermes.VannilaUnitBuf.SetMaxForcely
+  nameWithType: VannilaUnitBuf.SetMaxForcely
+- uid: DeviceOfHermes.VannilaUnitBuf.SetMaxForcely``1(System.Int32)
+  name: SetMaxForcely<T>(int)
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_SetMaxForcely__1_System_Int32_
+  commentId: M:DeviceOfHermes.VannilaUnitBuf.SetMaxForcely``1(System.Int32)
+  name.vb: SetMaxForcely(Of T)(Integer)
+  fullName: DeviceOfHermes.VannilaUnitBuf.SetMaxForcely<T>(int)
+  fullName.vb: DeviceOfHermes.VannilaUnitBuf.SetMaxForcely(Of T)(Integer)
+  nameWithType: VannilaUnitBuf.SetMaxForcely<T>(int)
+  nameWithType.vb: VannilaUnitBuf.SetMaxForcely(Of T)(Integer)
+- uid: DeviceOfHermes.VannilaUnitBuf.SetMaxIf*
+  name: SetMaxIf
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_SetMaxIf_
+  commentId: Overload:DeviceOfHermes.VannilaUnitBuf.SetMaxIf
+  isSpec: "True"
+  fullName: DeviceOfHermes.VannilaUnitBuf.SetMaxIf
+  nameWithType: VannilaUnitBuf.SetMaxIf
+- uid: DeviceOfHermes.VannilaUnitBuf.SetMaxIf``1(System.Int32,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name: SetMaxIf<T>(int, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_SetMaxIf__1_System_Int32_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean__
+  commentId: M:DeviceOfHermes.VannilaUnitBuf.SetMaxIf``1(System.Int32,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name.vb: SetMaxIf(Of T)(Integer, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  fullName: DeviceOfHermes.VannilaUnitBuf.SetMaxIf<T>(int, System.Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  fullName.vb: DeviceOfHermes.VannilaUnitBuf.SetMaxIf(Of T)(Integer, System.Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  nameWithType: VannilaUnitBuf.SetMaxIf<T>(int, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  nameWithType.vb: VannilaUnitBuf.SetMaxIf(Of T)(Integer, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+- uid: System
+  name: System
+  href: api/System.html
+  commentId: N:System
+  fullName: System
+  nameWithType: System
+- uid: System.AdvancedTakeDamage
+  name: AdvancedTakeDamage
+  href: api/System.AdvancedTakeDamage.html
+  commentId: T:System.AdvancedTakeDamage
+  fullName: System.AdvancedTakeDamage
+  nameWithType: AdvancedTakeDamage
+- uid: System.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  name: DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
+  href: api/System.AdvancedTakeDamage.html#System_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist__
+  commentId: M:System.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  name.vb: DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
+  fullName: System.AdvancedTakeDamage.DealDamage(BattleUnitModel, int, LOR_DiceSystem.BehaviourDetail, BattleUnitModel?, AtkResist?)
+  fullName.vb: System.AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, LOR_DiceSystem.BehaviourDetail, BattleUnitModel, AtkResist?)
+  nameWithType: AdvancedTakeDamage.DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
+  nameWithType.vb: AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
+- uid: System.AdvancedTakeDamage.DealDamage*
+  name: DealDamage
+  href: api/System.AdvancedTakeDamage.html#System_AdvancedTakeDamage_DealDamage_
+  commentId: Overload:System.AdvancedTakeDamage.DealDamage
+  isSpec: "True"
+  fullName: System.AdvancedTakeDamage.DealDamage
+  nameWithType: AdvancedTakeDamage.DealDamage
+- uid: System.Collections.Generic
+  name: System.Collections.Generic
+  href: api/System.Collections.Generic.html
+  commentId: N:System.Collections.Generic
+  fullName: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+- uid: System.Collections.Generic.Peekable`1
+  name: Peekable<T>
+  href: api/System.Collections.Generic.Peekable-1.html
+  commentId: T:System.Collections.Generic.Peekable`1
+  name.vb: Peekable(Of T)
+  fullName: System.Collections.Generic.Peekable<T>
+  fullName.vb: System.Collections.Generic.Peekable(Of T)
+  nameWithType: Peekable<T>
+  nameWithType.vb: Peekable(Of T)
+- uid: System.Collections.Generic.Peekable`1.#ctor(System.Collections.IEnumerable)
+  name: Peekable(IEnumerable)
+  href: api/System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1__ctor_System_Collections_IEnumerable_
+  commentId: M:System.Collections.Generic.Peekable`1.#ctor(System.Collections.IEnumerable)
+  name.vb: New(IEnumerable)
+  fullName: System.Collections.Generic.Peekable<T>.Peekable(System.Collections.IEnumerable)
+  fullName.vb: System.Collections.Generic.Peekable(Of T).New(System.Collections.IEnumerable)
+  nameWithType: Peekable<T>.Peekable(IEnumerable)
+  nameWithType.vb: Peekable(Of T).New(IEnumerable)
+- uid: System.Collections.Generic.Peekable`1.#ctor*
+  name: Peekable
+  href: api/System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1__ctor_
+  commentId: Overload:System.Collections.Generic.Peekable`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Collections.Generic.Peekable<T>.Peekable
+  fullName.vb: System.Collections.Generic.Peekable(Of T).New
+  nameWithType: Peekable<T>.Peekable
+  nameWithType.vb: Peekable(Of T).New
+- uid: System.Collections.Generic.Peekable`1.MoveNext(`0@)
+  name: MoveNext(out T?)
+  href: api/System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_MoveNext__0__
+  commentId: M:System.Collections.Generic.Peekable`1.MoveNext(`0@)
+  name.vb: MoveNext(T)
+  fullName: System.Collections.Generic.Peekable<T>.MoveNext(out T?)
+  fullName.vb: System.Collections.Generic.Peekable(Of T).MoveNext(T)
+  nameWithType: Peekable<T>.MoveNext(out T?)
+  nameWithType.vb: Peekable(Of T).MoveNext(T)
+- uid: System.Collections.Generic.Peekable`1.MoveNext*
+  name: MoveNext
+  href: api/System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_MoveNext_
+  commentId: Overload:System.Collections.Generic.Peekable`1.MoveNext
+  isSpec: "True"
+  fullName: System.Collections.Generic.Peekable<T>.MoveNext
+  fullName.vb: System.Collections.Generic.Peekable(Of T).MoveNext
+  nameWithType: Peekable<T>.MoveNext
+  nameWithType.vb: Peekable(Of T).MoveNext
+- uid: System.Collections.Generic.Peekable`1.Peek(`0@)
+  name: Peek(out T?)
+  href: api/System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_Peek__0__
+  commentId: M:System.Collections.Generic.Peekable`1.Peek(`0@)
+  name.vb: Peek(T)
+  fullName: System.Collections.Generic.Peekable<T>.Peek(out T?)
+  fullName.vb: System.Collections.Generic.Peekable(Of T).Peek(T)
+  nameWithType: Peekable<T>.Peek(out T?)
+  nameWithType.vb: Peekable(Of T).Peek(T)
+- uid: System.Collections.Generic.Peekable`1.Peek*
+  name: Peek
+  href: api/System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_Peek_
+  commentId: Overload:System.Collections.Generic.Peekable`1.Peek
+  isSpec: "True"
+  fullName: System.Collections.Generic.Peekable<T>.Peek
+  fullName.vb: System.Collections.Generic.Peekable(Of T).Peek
+  nameWithType: Peekable<T>.Peek
+  nameWithType.vb: Peekable(Of T).Peek
+- uid: System.Collections.Generic.Walkdir
+  name: Walkdir
+  href: api/System.Collections.Generic.Walkdir.html
+  commentId: T:System.Collections.Generic.Walkdir
+  fullName: System.Collections.Generic.Walkdir
+  nameWithType: Walkdir
+- uid: System.Collections.Generic.Walkdir.GetFilesRecursive(System.String)
+  name: GetFilesRecursive(string)
+  href: api/System.Collections.Generic.Walkdir.html#System_Collections_Generic_Walkdir_GetFilesRecursive_System_String_
+  commentId: M:System.Collections.Generic.Walkdir.GetFilesRecursive(System.String)
+  name.vb: GetFilesRecursive(String)
+  fullName: System.Collections.Generic.Walkdir.GetFilesRecursive(string)
+  fullName.vb: System.Collections.Generic.Walkdir.GetFilesRecursive(String)
+  nameWithType: Walkdir.GetFilesRecursive(string)
+  nameWithType.vb: Walkdir.GetFilesRecursive(String)
+- uid: System.Collections.Generic.Walkdir.GetFilesRecursive*
+  name: GetFilesRecursive
+  href: api/System.Collections.Generic.Walkdir.html#System_Collections_Generic_Walkdir_GetFilesRecursive_
+  commentId: Overload:System.Collections.Generic.Walkdir.GetFilesRecursive
+  isSpec: "True"
+  fullName: System.Collections.Generic.Walkdir.GetFilesRecursive
+  nameWithType: Walkdir.GetFilesRecursive
+- uid: System.Diagnostics.CodeAnalysis
+  name: System.Diagnostics.CodeAnalysis
+  href: api/System.Diagnostics.CodeAnalysis.html
+  commentId: N:System.Diagnostics.CodeAnalysis
+  fullName: System.Diagnostics.CodeAnalysis
+  nameWithType: System.Diagnostics.CodeAnalysis
+- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+  name: MaybeNullWhenAttribute
+  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html
+  commentId: T:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+  nameWithType: MaybeNullWhenAttribute
+- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor(System.Boolean)
+  name: MaybeNullWhenAttribute(bool)
+  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute__ctor_System_Boolean_
+  commentId: M:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.MaybeNullWhenAttribute(bool)
+  fullName.vb: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.New(Boolean)
+  nameWithType: MaybeNullWhenAttribute.MaybeNullWhenAttribute(bool)
+  nameWithType.vb: MaybeNullWhenAttribute.New(Boolean)
+- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor*
+  name: MaybeNullWhenAttribute
+  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute__ctor_
+  commentId: Overload:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.MaybeNullWhenAttribute
+  fullName.vb: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.New
+  nameWithType: MaybeNullWhenAttribute.MaybeNullWhenAttribute
+  nameWithType.vb: MaybeNullWhenAttribute.New
+- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
+  name: ReturnValue
+  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute_ReturnValue
+  commentId: P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
+  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
+  nameWithType: MaybeNullWhenAttribute.ReturnValue
+- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue*
+  name: ReturnValue
+  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute_ReturnValue_
+  commentId: Overload:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
+  isSpec: "True"
+  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
+  nameWithType: MaybeNullWhenAttribute.ReturnValue
+- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+  name: NotNullWhenAttribute
+  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html
+  commentId: T:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+  nameWithType: NotNullWhenAttribute
+- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+  name: NotNullWhenAttribute(bool)
+  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute__ctor_System_Boolean_
+  commentId: M:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.NotNullWhenAttribute(bool)
+  fullName.vb: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.New(Boolean)
+  nameWithType: NotNullWhenAttribute.NotNullWhenAttribute(bool)
+  nameWithType.vb: NotNullWhenAttribute.New(Boolean)
+- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor*
+  name: NotNullWhenAttribute
+  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute__ctor_
+  commentId: Overload:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.NotNullWhenAttribute
+  fullName.vb: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.New
+  nameWithType: NotNullWhenAttribute.NotNullWhenAttribute
+  nameWithType.vb: NotNullWhenAttribute.New
+- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
+  name: ReturnValue
+  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute_ReturnValue
+  commentId: P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
+  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
+  nameWithType: NotNullWhenAttribute.ReturnValue
+- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue*
+  name: ReturnValue
+  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute_ReturnValue_
+  commentId: Overload:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
+  isSpec: "True"
+  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
+  nameWithType: NotNullWhenAttribute.ReturnValue
+- uid: System.Extension
+  name: Extension
+  href: api/System.Extension.html
+  commentId: T:System.Extension
+  fullName: System.Extension
+  nameWithType: Extension
+- uid: System.Extension.Collect*
+  name: Collect
+  href: api/System.Extension.html#System_Extension_Collect_
+  commentId: Overload:System.Extension.Collect
+  isSpec: "True"
+  fullName: System.Extension.Collect
+  nameWithType: Extension.Collect
+- uid: System.Extension.Collect``1(System.Collections.Generic.IEnumerable{``0})
+  name: Collect<T>(IEnumerable<T>)
+  href: api/System.Extension.html#System_Extension_Collect__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:System.Extension.Collect``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: Collect(Of T)(IEnumerable(Of T))
+  fullName: System.Extension.Collect<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Extension.Collect(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: Extension.Collect<T>(IEnumerable<T>)
+  nameWithType.vb: Extension.Collect(Of T)(IEnumerable(Of T))
+- uid: System.Extension.Enumerate*
+  name: Enumerate
+  href: api/System.Extension.html#System_Extension_Enumerate_
+  commentId: Overload:System.Extension.Enumerate
+  isSpec: "True"
+  fullName: System.Extension.Enumerate
+  nameWithType: Extension.Enumerate
+- uid: System.Extension.Enumerate``1(System.Collections.Generic.IEnumerable{``0})
+  name: Enumerate<T>(IEnumerable<T>)
+  href: api/System.Extension.html#System_Extension_Enumerate__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:System.Extension.Enumerate``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: Enumerate(Of T)(IEnumerable(Of T))
+  fullName: System.Extension.Enumerate<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Extension.Enumerate(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: Extension.Enumerate<T>(IEnumerable<T>)
+  nameWithType.vb: Extension.Enumerate(Of T)(IEnumerable(Of T))
+- uid: System.Extension.FaceTo(Faction)
+  name: FaceTo(Faction)
+  href: api/System.Extension.html#System_Extension_FaceTo_Faction_
+  commentId: M:System.Extension.FaceTo(Faction)
+  fullName: System.Extension.FaceTo(Faction)
+  nameWithType: Extension.FaceTo(Faction)
+- uid: System.Extension.FaceTo*
+  name: FaceTo
+  href: api/System.Extension.html#System_Extension_FaceTo_
+  commentId: Overload:System.Extension.FaceTo
+  isSpec: "True"
+  fullName: System.Extension.FaceTo
+  nameWithType: Extension.FaceTo
+- uid: System.Extension.Filter*
+  name: Filter
+  href: api/System.Extension.html#System_Extension_Filter_
+  commentId: Overload:System.Extension.Filter
+  isSpec: "True"
+  fullName: System.Extension.Filter
+  nameWithType: Extension.Filter
+- uid: System.Extension.FilterMap*
+  name: FilterMap
+  href: api/System.Extension.html#System_Extension_FilterMap_
+  commentId: Overload:System.Extension.FilterMap
+  isSpec: "True"
+  fullName: System.Extension.FilterMap
+  nameWithType: Extension.FilterMap
+- uid: System.Extension.FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name: FilterMap<T, V>(IEnumerable<T>, Func<T, V>)
+  href: api/System.Extension.html#System_Extension_FilterMap__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  commentId: M:System.Extension.FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name.vb: FilterMap(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+  fullName: System.Extension.FilterMap<T, V>(System.Collections.Generic.IEnumerable<T>, System.Func<T, V>)
+  fullName.vb: System.Extension.FilterMap(Of T, V)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, V))
+  nameWithType: Extension.FilterMap<T, V>(IEnumerable<T>, Func<T, V>)
+  nameWithType.vb: Extension.FilterMap(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+- uid: System.Extension.Filter``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  name: Filter<T>(IEnumerable<T>, Func<T, bool>)
+  href: api/System.Extension.html#System_Extension_Filter__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  commentId: M:System.Extension.Filter``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  name.vb: Filter(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+  fullName: System.Extension.Filter<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>)
+  fullName.vb: System.Extension.Filter(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean))
+  nameWithType: Extension.Filter<T>(IEnumerable<T>, Func<T, bool>)
+  nameWithType.vb: Extension.Filter(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+- uid: System.Extension.Flatten*
+  name: Flatten
+  href: api/System.Extension.html#System_Extension_Flatten_
+  commentId: Overload:System.Extension.Flatten
+  isSpec: "True"
+  fullName: System.Extension.Flatten
+  nameWithType: Extension.Flatten
+- uid: System.Extension.Flatten``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+  name: Flatten<T>(IEnumerable<IEnumerable<T>>)
+  href: api/System.Extension.html#System_Extension_Flatten__1_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable___0___
+  commentId: M:System.Extension.Flatten``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+  name.vb: Flatten(Of T)(IEnumerable(Of IEnumerable(Of T)))
+  fullName: System.Extension.Flatten<T>(System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<T>>)
+  fullName.vb: System.Extension.Flatten(Of T)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of T)))
+  nameWithType: Extension.Flatten<T>(IEnumerable<IEnumerable<T>>)
+  nameWithType.vb: Extension.Flatten(Of T)(IEnumerable(Of IEnumerable(Of T)))
+- uid: System.Extension.Fold*
+  name: Fold
+  href: api/System.Extension.html#System_Extension_Fold_
+  commentId: Overload:System.Extension.Fold
+  isSpec: "True"
+  fullName: System.Extension.Fold
+  nameWithType: Extension.Fold
+- uid: System.Extension.Fold``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})
+  name: Fold<T, R>(IEnumerable<T>, R, Func<R, T, R>)
+  href: api/System.Extension.html#System_Extension_Fold__2_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0___1__
+  commentId: M:System.Extension.Fold``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})
+  name.vb: Fold(Of T, R)(IEnumerable(Of T), R, Func(Of R, T, R))
+  fullName: System.Extension.Fold<T, R>(System.Collections.Generic.IEnumerable<T>, R, System.Func<R, T, R>)
+  fullName.vb: System.Extension.Fold(Of T, R)(System.Collections.Generic.IEnumerable(Of T), R, System.Func(Of R, T, R))
+  nameWithType: Extension.Fold<T, R>(IEnumerable<T>, R, Func<R, T, R>)
+  nameWithType.vb: Extension.Fold(Of T, R)(IEnumerable(Of T), R, Func(Of R, T, R))
+- uid: System.Extension.Foreach*
+  name: Foreach
+  href: api/System.Extension.html#System_Extension_Foreach_
+  commentId: Overload:System.Extension.Foreach
+  isSpec: "True"
+  fullName: System.Extension.Foreach
+  nameWithType: Extension.Foreach
+- uid: System.Extension.Foreach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name: Foreach<T>(IEnumerable<T>, Action<T>)
+  href: api/System.Extension.html#System_Extension_Foreach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  commentId: M:System.Extension.Foreach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name.vb: Foreach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: System.Extension.Foreach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  fullName.vb: System.Extension.Foreach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  nameWithType: Extension.Foreach<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: Extension.Foreach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: System.Extension.GetAsmDirectory(System.Type)
+  name: GetAsmDirectory(Type)
+  href: api/System.Extension.html#System_Extension_GetAsmDirectory_System_Type_
+  commentId: M:System.Extension.GetAsmDirectory(System.Type)
+  fullName: System.Extension.GetAsmDirectory(System.Type)
+  nameWithType: Extension.GetAsmDirectory(Type)
+- uid: System.Extension.GetAsmDirectory*
+  name: GetAsmDirectory
+  href: api/System.Extension.html#System_Extension_GetAsmDirectory_
+  commentId: Overload:System.Extension.GetAsmDirectory
+  isSpec: "True"
+  fullName: System.Extension.GetAsmDirectory
+  nameWithType: Extension.GetAsmDirectory
+- uid: System.Extension.GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
+  name: GetHands(BattleUnitModel?, Func<BattleDiceCardModel, bool>?)
+  href: api/System.Extension.html#System_Extension_GetHands_BattleUnitModel_System_Func_BattleDiceCardModel_System_Boolean__
+  commentId: M:System.Extension.GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
+  name.vb: GetHands(BattleUnitModel, Func(Of BattleDiceCardModel, Boolean))
+  fullName: System.Extension.GetHands(BattleUnitModel?, System.Func<BattleDiceCardModel, bool>?)
+  fullName.vb: System.Extension.GetHands(BattleUnitModel, System.Func(Of BattleDiceCardModel, Boolean))
+  nameWithType: Extension.GetHands(BattleUnitModel?, Func<BattleDiceCardModel, bool>?)
+  nameWithType.vb: Extension.GetHands(BattleUnitModel, Func(Of BattleDiceCardModel, Boolean))
+- uid: System.Extension.GetHands*
+  name: GetHands
+  href: api/System.Extension.html#System_Extension_GetHands_
+  commentId: Overload:System.Extension.GetHands
+  isSpec: "True"
+  fullName: System.Extension.GetHands
+  nameWithType: Extension.GetHands
+- uid: System.Extension.Inspect*
+  name: Inspect
+  href: api/System.Extension.html#System_Extension_Inspect_
+  commentId: Overload:System.Extension.Inspect
+  isSpec: "True"
+  fullName: System.Extension.Inspect
+  nameWithType: Extension.Inspect
+- uid: System.Extension.Inspect``1(``0,System.Action{``0})
+  name: Inspect<T>(T?, Action<T>)
+  href: api/System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  commentId: M:System.Extension.Inspect``1(``0,System.Action{``0})
+  name.vb: Inspect(Of T)(T, Action(Of T))
+  fullName: System.Extension.Inspect<T>(T?, System.Action<T>)
+  fullName.vb: System.Extension.Inspect(Of T)(T, System.Action(Of T))
+  nameWithType: Extension.Inspect<T>(T?, Action<T>)
+  nameWithType.vb: Extension.Inspect(Of T)(T, Action(Of T))
+- uid: System.Extension.Map*
+  name: Map
+  href: api/System.Extension.html#System_Extension_Map_
+  commentId: Overload:System.Extension.Map
+  isSpec: "True"
+  fullName: System.Extension.Map
+  nameWithType: Extension.Map
+- uid: System.Extension.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name: Map<T, V>(IEnumerable<T>, Func<T, V>)
+  href: api/System.Extension.html#System_Extension_Map__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  commentId: M:System.Extension.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name.vb: Map(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+  fullName: System.Extension.Map<T, V>(System.Collections.Generic.IEnumerable<T>, System.Func<T, V>)
+  fullName.vb: System.Extension.Map(Of T, V)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, V))
+  nameWithType: Extension.Map<T, V>(IEnumerable<T>, Func<T, V>)
+  nameWithType.vb: Extension.Map(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+- uid: System.Extension.Max(System.Int32,System.Int32)
+  name: Max(int, int)
+  href: api/System.Extension.html#System_Extension_Max_System_Int32_System_Int32_
+  commentId: M:System.Extension.Max(System.Int32,System.Int32)
+  name.vb: Max(Integer, Integer)
+  fullName: System.Extension.Max(int, int)
+  fullName.vb: System.Extension.Max(Integer, Integer)
+  nameWithType: Extension.Max(int, int)
+  nameWithType.vb: Extension.Max(Integer, Integer)
+- uid: System.Extension.Max*
+  name: Max
+  href: api/System.Extension.html#System_Extension_Max_
+  commentId: Overload:System.Extension.Max
+  isSpec: "True"
+  fullName: System.Extension.Max
+  nameWithType: Extension.Max
+- uid: System.Extension.Min(System.Int32,System.Int32)
+  name: Min(int, int)
+  href: api/System.Extension.html#System_Extension_Min_System_Int32_System_Int32_
+  commentId: M:System.Extension.Min(System.Int32,System.Int32)
+  name.vb: Min(Integer, Integer)
+  fullName: System.Extension.Min(int, int)
+  fullName.vb: System.Extension.Min(Integer, Integer)
+  nameWithType: Extension.Min(int, int)
+  nameWithType.vb: Extension.Min(Integer, Integer)
+- uid: System.Extension.Min*
+  name: Min
+  href: api/System.Extension.html#System_Extension_Min_
+  commentId: Overload:System.Extension.Min
+  isSpec: "True"
+  fullName: System.Extension.Min
+  nameWithType: Extension.Min
+- uid: System.Extension.Reduce*
+  name: Reduce
+  href: api/System.Extension.html#System_Extension_Reduce_
+  commentId: Overload:System.Extension.Reduce
+  isSpec: "True"
+  fullName: System.Extension.Reduce
+  nameWithType: Extension.Reduce
+- uid: System.Extension.Reduce``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})
+  name: Reduce<T>(IEnumerable<T>, Func<T, T, T>)
+  href: api/System.Extension.html#System_Extension_Reduce__1_System_Collections_Generic_IEnumerable___0__System_Func___0___0___0__
+  commentId: M:System.Extension.Reduce``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})
+  name.vb: Reduce(Of T)(IEnumerable(Of T), Func(Of T, T, T))
+  fullName: System.Extension.Reduce<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, T, T>)
+  fullName.vb: System.Extension.Reduce(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, T))
+  nameWithType: Extension.Reduce<T>(IEnumerable<T>, Func<T, T, T>)
+  nameWithType.vb: Extension.Reduce(Of T)(IEnumerable(Of T), Func(Of T, T, T))
+- uid: System.Extension.Say(BattleUnitModel,System.String)
+  name: Say(BattleUnitModel, string)
+  href: api/System.Extension.html#System_Extension_Say_BattleUnitModel_System_String_
+  commentId: M:System.Extension.Say(BattleUnitModel,System.String)
+  name.vb: Say(BattleUnitModel, String)
+  fullName: System.Extension.Say(BattleUnitModel, string)
+  fullName.vb: System.Extension.Say(BattleUnitModel, String)
+  nameWithType: Extension.Say(BattleUnitModel, string)
+  nameWithType.vb: Extension.Say(BattleUnitModel, String)
+- uid: System.Extension.Say*
+  name: Say
+  href: api/System.Extension.html#System_Extension_Say_
+  commentId: Overload:System.Extension.Say
+  isSpec: "True"
+  fullName: System.Extension.Say
+  nameWithType: Extension.Say
+- uid: System.Extension.StripPrefix(System.String,System.String)
+  name: StripPrefix(string, string)
+  href: api/System.Extension.html#System_Extension_StripPrefix_System_String_System_String_
+  commentId: M:System.Extension.StripPrefix(System.String,System.String)
+  name.vb: StripPrefix(String, String)
+  fullName: System.Extension.StripPrefix(string, string)
+  fullName.vb: System.Extension.StripPrefix(String, String)
+  nameWithType: Extension.StripPrefix(string, string)
+  nameWithType.vb: Extension.StripPrefix(String, String)
+- uid: System.Extension.StripPrefix*
+  name: StripPrefix
+  href: api/System.Extension.html#System_Extension_StripPrefix_
+  commentId: Overload:System.Extension.StripPrefix
+  isSpec: "True"
+  fullName: System.Extension.StripPrefix
+  nameWithType: Extension.StripPrefix
+- uid: System.Extension.StripSuffix(System.String,System.String)
+  name: StripSuffix(string, string)
+  href: api/System.Extension.html#System_Extension_StripSuffix_System_String_System_String_
+  commentId: M:System.Extension.StripSuffix(System.String,System.String)
+  name.vb: StripSuffix(String, String)
+  fullName: System.Extension.StripSuffix(string, string)
+  fullName.vb: System.Extension.StripSuffix(String, String)
+  nameWithType: Extension.StripSuffix(string, string)
+  nameWithType.vb: Extension.StripSuffix(String, String)
+- uid: System.Extension.StripSuffix*
+  name: StripSuffix
+  href: api/System.Extension.html#System_Extension_StripSuffix_
+  commentId: Overload:System.Extension.StripSuffix
+  isSpec: "True"
+  fullName: System.Extension.StripSuffix
+  nameWithType: Extension.StripSuffix
+- uid: System.Extension.TryForeach*
+  name: TryForeach
+  href: api/System.Extension.html#System_Extension_TryForeach_
+  commentId: Overload:System.Extension.TryForeach
+  isSpec: "True"
+  fullName: System.Extension.TryForeach
+  nameWithType: Extension.TryForeach
+- uid: System.Extension.TryForeach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name: TryForeach<T, R>(IEnumerable<T>, Func<T, R?>)
+  href: api/System.Extension.html#System_Extension_TryForeach__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  commentId: M:System.Extension.TryForeach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name.vb: TryForeach(Of T, R)(IEnumerable(Of T), Func(Of T, R))
+  fullName: System.Extension.TryForeach<T, R>(System.Collections.Generic.IEnumerable<T>, System.Func<T, R?>)
+  fullName.vb: System.Extension.TryForeach(Of T, R)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, R))
+  nameWithType: Extension.TryForeach<T, R>(IEnumerable<T>, Func<T, R?>)
+  nameWithType.vb: Extension.TryForeach(Of T, R)(IEnumerable(Of T), Func(Of T, R))
+- uid: System.Hermes
+  name: Hermes
+  href: api/System.Hermes.html
+  commentId: T:System.Hermes
+  fullName: System.Hermes
+  nameWithType: Hermes
+- uid: System.Hermes.CreateSprite(System.Byte[],System.Single)
+  name: CreateSprite(byte[], float)
+  href: api/System.Hermes.html#System_Hermes_CreateSprite_System_Byte___System_Single_
+  commentId: M:System.Hermes.CreateSprite(System.Byte[],System.Single)
+  name.vb: CreateSprite(Byte(), Single)
+  fullName: System.Hermes.CreateSprite(byte[], float)
+  fullName.vb: System.Hermes.CreateSprite(Byte(), Single)
+  nameWithType: Hermes.CreateSprite(byte[], float)
+  nameWithType.vb: Hermes.CreateSprite(Byte(), Single)
+- uid: System.Hermes.CreateSprite(System.String,System.Single)
+  name: CreateSprite(string, float)
+  href: api/System.Hermes.html#System_Hermes_CreateSprite_System_String_System_Single_
+  commentId: M:System.Hermes.CreateSprite(System.String,System.Single)
+  name.vb: CreateSprite(String, Single)
+  fullName: System.Hermes.CreateSprite(string, float)
+  fullName.vb: System.Hermes.CreateSprite(String, Single)
+  nameWithType: Hermes.CreateSprite(string, float)
+  nameWithType.vb: Hermes.CreateSprite(String, Single)
+- uid: System.Hermes.CreateSprite*
+  name: CreateSprite
+  href: api/System.Hermes.html#System_Hermes_CreateSprite_
+  commentId: Overload:System.Hermes.CreateSprite
+  isSpec: "True"
+  fullName: System.Hermes.CreateSprite
+  nameWithType: Hermes.CreateSprite
+- uid: System.Hermes.Load*
+  name: Load
+  href: api/System.Hermes.html#System_Hermes_Load_
+  commentId: Overload:System.Hermes.Load
+  isSpec: "True"
+  fullName: System.Hermes.Load
+  nameWithType: Hermes.Load
+- uid: System.Hermes.Load``1
+  name: Load<T>()
+  href: api/System.Hermes.html#System_Hermes_Load__1
+  commentId: M:System.Hermes.Load``1
+  name.vb: Load(Of T)()
+  fullName: System.Hermes.Load<T>()
+  fullName.vb: System.Hermes.Load(Of T)()
+  nameWithType: Hermes.Load<T>()
+  nameWithType.vb: Hermes.Load(Of T)()
+- uid: System.Hermes.Say(System.String,System.MessageLevel)
+  name: Say(string?, MessageLevel)
+  href: api/System.Hermes.html#System_Hermes_Say_System_String_System_MessageLevel_
+  commentId: M:System.Hermes.Say(System.String,System.MessageLevel)
+  name.vb: Say(String, MessageLevel)
+  fullName: System.Hermes.Say(string?, System.MessageLevel)
+  fullName.vb: System.Hermes.Say(String, System.MessageLevel)
+  nameWithType: Hermes.Say(string?, MessageLevel)
+  nameWithType.vb: Hermes.Say(String, MessageLevel)
+- uid: System.Hermes.Say*
+  name: Say
+  href: api/System.Hermes.html#System_Hermes_Say_
+  commentId: Overload:System.Hermes.Say
+  isSpec: "True"
+  fullName: System.Hermes.Say
+  nameWithType: Hermes.Say
+- uid: System.Hermes.Store*
+  name: Store
+  href: api/System.Hermes.html#System_Hermes_Store_
+  commentId: Overload:System.Hermes.Store
+  isSpec: "True"
+  fullName: System.Hermes.Store
+  nameWithType: Hermes.Store
+- uid: System.Hermes.Store``1(``0)
+  name: Store<T>(T)
+  href: api/System.Hermes.html#System_Hermes_Store__1___0_
+  commentId: M:System.Hermes.Store``1(``0)
+  name.vb: Store(Of T)(T)
+  fullName: System.Hermes.Store<T>(T)
+  fullName.vb: System.Hermes.Store(Of T)(T)
+  nameWithType: Hermes.Store<T>(T)
+  nameWithType.vb: Hermes.Store(Of T)(T)
+- uid: System.Hermes.TryLoad*
+  name: TryLoad
+  href: api/System.Hermes.html#System_Hermes_TryLoad_
+  commentId: Overload:System.Hermes.TryLoad
+  isSpec: "True"
+  fullName: System.Hermes.TryLoad
+  nameWithType: Hermes.TryLoad
+- uid: System.Hermes.TryLoad``1(``0@)
+  name: TryLoad<T>(out T?)
+  href: api/System.Hermes.html#System_Hermes_TryLoad__1___0__
+  commentId: M:System.Hermes.TryLoad``1(``0@)
+  name.vb: TryLoad(Of T)(T)
+  fullName: System.Hermes.TryLoad<T>(out T?)
+  fullName.vb: System.Hermes.TryLoad(Of T)(T)
+  nameWithType: Hermes.TryLoad<T>(out T?)
+  nameWithType.vb: Hermes.TryLoad(Of T)(T)
+- uid: System.Mem
+  name: Mem
+  href: api/System.Mem.html
+  commentId: T:System.Mem
+  fullName: System.Mem
+  nameWithType: Mem
+- uid: System.Mem.Replace(System.Double@,System.Double)
+  name: Replace(ref double, double)
+  href: api/System.Mem.html#System_Mem_Replace_System_Double__System_Double_
+  commentId: M:System.Mem.Replace(System.Double@,System.Double)
+  name.vb: Replace(Double, Double)
+  fullName: System.Mem.Replace(ref double, double)
+  fullName.vb: System.Mem.Replace(Double, Double)
+  nameWithType: Mem.Replace(ref double, double)
+  nameWithType.vb: Mem.Replace(Double, Double)
+- uid: System.Mem.Replace(System.Int32@,System.Int32)
+  name: Replace(ref int, int)
+  href: api/System.Mem.html#System_Mem_Replace_System_Int32__System_Int32_
+  commentId: M:System.Mem.Replace(System.Int32@,System.Int32)
+  name.vb: Replace(Integer, Integer)
+  fullName: System.Mem.Replace(ref int, int)
+  fullName.vb: System.Mem.Replace(Integer, Integer)
+  nameWithType: Mem.Replace(ref int, int)
+  nameWithType.vb: Mem.Replace(Integer, Integer)
+- uid: System.Mem.Replace(System.Int64@,System.Int64)
+  name: Replace(ref long, long)
+  href: api/System.Mem.html#System_Mem_Replace_System_Int64__System_Int64_
+  commentId: M:System.Mem.Replace(System.Int64@,System.Int64)
+  name.vb: Replace(Long, Long)
+  fullName: System.Mem.Replace(ref long, long)
+  fullName.vb: System.Mem.Replace(Long, Long)
+  nameWithType: Mem.Replace(ref long, long)
+  nameWithType.vb: Mem.Replace(Long, Long)
+- uid: System.Mem.Replace(System.IntPtr@,System.IntPtr)
+  name: Replace(ref IntPtr, IntPtr)
+  href: api/System.Mem.html#System_Mem_Replace_System_IntPtr__System_IntPtr_
+  commentId: M:System.Mem.Replace(System.IntPtr@,System.IntPtr)
+  name.vb: Replace(IntPtr, IntPtr)
+  fullName: System.Mem.Replace(ref System.IntPtr, System.IntPtr)
+  fullName.vb: System.Mem.Replace(System.IntPtr, System.IntPtr)
+  nameWithType: Mem.Replace(ref IntPtr, IntPtr)
+  nameWithType.vb: Mem.Replace(IntPtr, IntPtr)
+- uid: System.Mem.Replace(System.Object@,System.Object)
+  name: Replace(ref object?, object?)
+  href: api/System.Mem.html#System_Mem_Replace_System_Object__System_Object_
+  commentId: M:System.Mem.Replace(System.Object@,System.Object)
+  name.vb: Replace(Object, Object)
+  fullName: System.Mem.Replace(ref object?, object?)
+  fullName.vb: System.Mem.Replace(Object, Object)
+  nameWithType: Mem.Replace(ref object?, object?)
+  nameWithType.vb: Mem.Replace(Object, Object)
+- uid: System.Mem.Replace(System.Single@,System.Single)
+  name: Replace(ref float, float)
+  href: api/System.Mem.html#System_Mem_Replace_System_Single__System_Single_
+  commentId: M:System.Mem.Replace(System.Single@,System.Single)
+  name.vb: Replace(Single, Single)
+  fullName: System.Mem.Replace(ref float, float)
+  fullName.vb: System.Mem.Replace(Single, Single)
+  nameWithType: Mem.Replace(ref float, float)
+  nameWithType.vb: Mem.Replace(Single, Single)
+- uid: System.Mem.Replace*
+  name: Replace
+  href: api/System.Mem.html#System_Mem_Replace_
+  commentId: Overload:System.Mem.Replace
+  isSpec: "True"
+  fullName: System.Mem.Replace
+  nameWithType: Mem.Replace
+- uid: System.Mem.ReplaceIf(System.Double@,System.Double,System.Double)
+  name: ReplaceIf(ref double, double, double)
+  href: api/System.Mem.html#System_Mem_ReplaceIf_System_Double__System_Double_System_Double_
+  commentId: M:System.Mem.ReplaceIf(System.Double@,System.Double,System.Double)
+  name.vb: ReplaceIf(Double, Double, Double)
+  fullName: System.Mem.ReplaceIf(ref double, double, double)
+  fullName.vb: System.Mem.ReplaceIf(Double, Double, Double)
+  nameWithType: Mem.ReplaceIf(ref double, double, double)
+  nameWithType.vb: Mem.ReplaceIf(Double, Double, Double)
+- uid: System.Mem.ReplaceIf(System.Int32@,System.Int32,System.Int32)
+  name: ReplaceIf(ref int, int, int)
+  href: api/System.Mem.html#System_Mem_ReplaceIf_System_Int32__System_Int32_System_Int32_
+  commentId: M:System.Mem.ReplaceIf(System.Int32@,System.Int32,System.Int32)
+  name.vb: ReplaceIf(Integer, Integer, Integer)
+  fullName: System.Mem.ReplaceIf(ref int, int, int)
+  fullName.vb: System.Mem.ReplaceIf(Integer, Integer, Integer)
+  nameWithType: Mem.ReplaceIf(ref int, int, int)
+  nameWithType.vb: Mem.ReplaceIf(Integer, Integer, Integer)
+- uid: System.Mem.ReplaceIf(System.Int64@,System.Int64,System.Int64)
+  name: ReplaceIf(ref long, long, long)
+  href: api/System.Mem.html#System_Mem_ReplaceIf_System_Int64__System_Int64_System_Int64_
+  commentId: M:System.Mem.ReplaceIf(System.Int64@,System.Int64,System.Int64)
+  name.vb: ReplaceIf(Long, Long, Long)
+  fullName: System.Mem.ReplaceIf(ref long, long, long)
+  fullName.vb: System.Mem.ReplaceIf(Long, Long, Long)
+  nameWithType: Mem.ReplaceIf(ref long, long, long)
+  nameWithType.vb: Mem.ReplaceIf(Long, Long, Long)
+- uid: System.Mem.ReplaceIf(System.IntPtr@,System.IntPtr,System.IntPtr)
+  name: ReplaceIf(ref IntPtr, IntPtr, IntPtr)
+  href: api/System.Mem.html#System_Mem_ReplaceIf_System_IntPtr__System_IntPtr_System_IntPtr_
+  commentId: M:System.Mem.ReplaceIf(System.IntPtr@,System.IntPtr,System.IntPtr)
+  name.vb: ReplaceIf(IntPtr, IntPtr, IntPtr)
+  fullName: System.Mem.ReplaceIf(ref System.IntPtr, System.IntPtr, System.IntPtr)
+  fullName.vb: System.Mem.ReplaceIf(System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: Mem.ReplaceIf(ref IntPtr, IntPtr, IntPtr)
+  nameWithType.vb: Mem.ReplaceIf(IntPtr, IntPtr, IntPtr)
+- uid: System.Mem.ReplaceIf(System.Object@,System.Object,System.Object)
+  name: ReplaceIf(ref object?, object?, object?)
+  href: api/System.Mem.html#System_Mem_ReplaceIf_System_Object__System_Object_System_Object_
+  commentId: M:System.Mem.ReplaceIf(System.Object@,System.Object,System.Object)
+  name.vb: ReplaceIf(Object, Object, Object)
+  fullName: System.Mem.ReplaceIf(ref object?, object?, object?)
+  fullName.vb: System.Mem.ReplaceIf(Object, Object, Object)
+  nameWithType: Mem.ReplaceIf(ref object?, object?, object?)
+  nameWithType.vb: Mem.ReplaceIf(Object, Object, Object)
+- uid: System.Mem.ReplaceIf(System.Single@,System.Single,System.Single)
+  name: ReplaceIf(ref float, float, float)
+  href: api/System.Mem.html#System_Mem_ReplaceIf_System_Single__System_Single_System_Single_
+  commentId: M:System.Mem.ReplaceIf(System.Single@,System.Single,System.Single)
+  name.vb: ReplaceIf(Single, Single, Single)
+  fullName: System.Mem.ReplaceIf(ref float, float, float)
+  fullName.vb: System.Mem.ReplaceIf(Single, Single, Single)
+  nameWithType: Mem.ReplaceIf(ref float, float, float)
+  nameWithType.vb: Mem.ReplaceIf(Single, Single, Single)
+- uid: System.Mem.ReplaceIf*
+  name: ReplaceIf
+  href: api/System.Mem.html#System_Mem_ReplaceIf_
+  commentId: Overload:System.Mem.ReplaceIf
+  isSpec: "True"
+  fullName: System.Mem.ReplaceIf
+  nameWithType: Mem.ReplaceIf
+- uid: System.Mem.ReplaceIf``1(``0@,``0,``0)
+  name: ReplaceIf<T>(ref T?, T?, T?)
+  href: api/System.Mem.html#System_Mem_ReplaceIf__1___0____0___0_
+  commentId: M:System.Mem.ReplaceIf``1(``0@,``0,``0)
+  name.vb: ReplaceIf(Of T)(T, T, T)
+  fullName: System.Mem.ReplaceIf<T>(ref T?, T?, T?)
+  fullName.vb: System.Mem.ReplaceIf(Of T)(T, T, T)
+  nameWithType: Mem.ReplaceIf<T>(ref T?, T?, T?)
+  nameWithType.vb: Mem.ReplaceIf(Of T)(T, T, T)
+- uid: System.Mem.Replace``1(``0@,``0)
+  name: Replace<T>(ref T?, T?)
+  href: api/System.Mem.html#System_Mem_Replace__1___0____0_
+  commentId: M:System.Mem.Replace``1(``0@,``0)
+  name.vb: Replace(Of T)(T, T)
+  fullName: System.Mem.Replace<T>(ref T?, T?)
+  fullName.vb: System.Mem.Replace(Of T)(T, T)
+  nameWithType: Mem.Replace<T>(ref T?, T?)
+  nameWithType.vb: Mem.Replace(Of T)(T, T)
+- uid: System.Mem.Swap*
+  name: Swap
+  href: api/System.Mem.html#System_Mem_Swap_
+  commentId: Overload:System.Mem.Swap
+  isSpec: "True"
+  fullName: System.Mem.Swap
+  nameWithType: Mem.Swap
+- uid: System.Mem.Swap``1(``0@,``0@)
+  name: Swap<T>(ref T, ref T)
+  href: api/System.Mem.html#System_Mem_Swap__1___0____0__
+  commentId: M:System.Mem.Swap``1(``0@,``0@)
+  name.vb: Swap(Of T)(T, T)
+  fullName: System.Mem.Swap<T>(ref T, ref T)
+  fullName.vb: System.Mem.Swap(Of T)(T, T)
+  nameWithType: Mem.Swap<T>(ref T, ref T)
+  nameWithType.vb: Mem.Swap(Of T)(T, T)
+- uid: System.Mem.Take(System.Object@)
+  name: Take(ref object?)
+  href: api/System.Mem.html#System_Mem_Take_System_Object__
+  commentId: M:System.Mem.Take(System.Object@)
+  name.vb: Take(Object)
+  fullName: System.Mem.Take(ref object?)
+  fullName.vb: System.Mem.Take(Object)
+  nameWithType: Mem.Take(ref object?)
+  nameWithType.vb: Mem.Take(Object)
+- uid: System.Mem.Take*
+  name: Take
+  href: api/System.Mem.html#System_Mem_Take_
+  commentId: Overload:System.Mem.Take
+  isSpec: "True"
+  fullName: System.Mem.Take
+  nameWithType: Mem.Take
+- uid: System.Mem.Take``1(``0@)
+  name: Take<T>(ref T?)
+  href: api/System.Mem.html#System_Mem_Take__1___0__
+  commentId: M:System.Mem.Take``1(``0@)
+  name.vb: Take(Of T)(T)
+  fullName: System.Mem.Take<T>(ref T?)
+  fullName.vb: System.Mem.Take(Of T)(T)
+  nameWithType: Mem.Take<T>(ref T?)
+  nameWithType.vb: Mem.Take(Of T)(T)
+- uid: System.MessageLevel
+  name: MessageLevel
+  href: api/System.MessageLevel.html
+  commentId: T:System.MessageLevel
+  fullName: System.MessageLevel
+  nameWithType: MessageLevel
+- uid: System.MessageLevel.Error
+  name: Error
+  href: api/System.MessageLevel.html#System_MessageLevel_Error
+  commentId: F:System.MessageLevel.Error
+  fullName: System.MessageLevel.Error
+  nameWithType: MessageLevel.Error
+- uid: System.MessageLevel.Info
+  name: Info
+  href: api/System.MessageLevel.html#System_MessageLevel_Info
+  commentId: F:System.MessageLevel.Info
+  fullName: System.MessageLevel.Info
+  nameWithType: MessageLevel.Info
+- uid: System.MessageLevel.Warn
+  name: Warn
+  href: api/System.MessageLevel.html#System_MessageLevel_Warn
+  commentId: F:System.MessageLevel.Warn
+  fullName: System.MessageLevel.Warn
+  nameWithType: MessageLevel.Warn

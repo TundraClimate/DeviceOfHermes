@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeviceOfHermes.AdvancedBase
+  commentId: N:DeviceOfHermes.AdvancedBase
+  id: DeviceOfHermes.AdvancedBase
+  children:
+  - DeviceOfHermes.AdvancedBase.AdvancedCardBase
+  - DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  - DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+  - DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+  - DeviceOfHermes.AdvancedBase.AmmoExtension
+  - DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+  - DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+  langs:
+  - csharp
+  - vb
+  name: DeviceOfHermes.AdvancedBase
+  nameWithType: DeviceOfHermes.AdvancedBase
+  fullName: DeviceOfHermes.AdvancedBase
+  type: Namespace
+  assemblies:
+  - DeviceOfHermes
+references:
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedCardBase
+  href: DeviceOfHermes.AdvancedBase.AdvancedCardBase.html
+  name: AdvancedCardBase
+  nameWithType: AdvancedCardBase
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+  parent: DeviceOfHermes.AdvancedBase
+  href: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html
+  name: AdvancedDiceBase
+  nameWithType: AdvancedDiceBase
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+  href: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html
+  name: AdvancedPassiveBase
+  nameWithType: AdvancedPassiveBase
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+  parent: DeviceOfHermes.AdvancedBase
+  href: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html
+  name: AdvancedUnitBuf
+  nameWithType: AdvancedUnitBuf
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+  commentId: T:DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+  href: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html
+  name: BattleAmmoBuf
+  nameWithType: BattleAmmoBuf
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+- uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+  commentId: T:DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+  href: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html
+  name: ReloadAmmoBuf<T>
+  nameWithType: ReloadAmmoBuf<T>
+  fullName: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>
+  nameWithType.vb: ReloadAmmoBuf(Of T)
+  fullName.vb: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf(Of T)
+  name.vb: ReloadAmmoBuf(Of T)
+  spec.csharp:
+  - uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+    name: ReloadAmmoBuf
+    href: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+    name: ReloadAmmoBuf
+    href: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DeviceOfHermes.AdvancedBase.AmmoExtension
+  commentId: T:DeviceOfHermes.AdvancedBase.AmmoExtension
+  href: DeviceOfHermes.AdvancedBase.AmmoExtension.html
+  name: AmmoExtension
+  nameWithType: AmmoExtension
+  fullName: DeviceOfHermes.AdvancedBase.AmmoExtension
+- uid: DeviceOfHermes.AdvancedBase
+  commentId: N:DeviceOfHermes.AdvancedBase
+  href: DeviceOfHermes.html
+  name: DeviceOfHermes.AdvancedBase
+  nameWithType: DeviceOfHermes.AdvancedBase
+  fullName: DeviceOfHermes.AdvancedBase
+  spec.csharp:
+  - uid: DeviceOfHermes
+    name: DeviceOfHermes
+    href: DeviceOfHermes.html
+  - name: .
+  - uid: DeviceOfHermes.AdvancedBase
+    name: AdvancedBase
+    href: DeviceOfHermes.AdvancedBase.html
+  spec.vb:
+  - uid: DeviceOfHermes
+    name: DeviceOfHermes
+    href: DeviceOfHermes.html
+  - name: .
+  - uid: DeviceOfHermes.AdvancedBase
+    name: AdvancedBase
+    href: DeviceOfHermes.AdvancedBase.html

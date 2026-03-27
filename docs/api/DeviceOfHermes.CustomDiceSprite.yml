@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeviceOfHermes.CustomDiceSprite
+  commentId: T:DeviceOfHermes.CustomDiceSprite
+  id: CustomDiceSprite
+  parent: DeviceOfHermes
+  children:
+  - DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean},UnityEngine.Sprite,System.Nullable{UnityEngine.Color})
+  langs:
+  - csharp
+  - vb
+  name: CustomDiceSprite
+  nameWithType: CustomDiceSprite
+  fullName: DeviceOfHermes.CustomDiceSprite
+  type: Class
+  source:
+    remote:
+      path: DeviceOfHermes/CustomDiceSprite.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: CustomDiceSprite
+    path: ../CustomDiceSprite.cs
+    startLine: 9
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static class CustomDiceSprite
+    content.vb: Public Module CustomDiceSprite
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean},UnityEngine.Sprite,System.Nullable{UnityEngine.Color})
+  commentId: M:DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean},UnityEngine.Sprite,System.Nullable{UnityEngine.Color})
+  id: AddSequence(System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean},UnityEngine.Sprite,System.Nullable{UnityEngine.Color})
+  parent: DeviceOfHermes.CustomDiceSprite
+  langs:
+  - csharp
+  - vb
+  name: AddSequence(Func<DiceBehaviour, bool>, Sprite, Color?)
+  nameWithType: CustomDiceSprite.AddSequence(Func<DiceBehaviour, bool>, Sprite, Color?)
+  fullName: DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func<LOR_DiceSystem.DiceBehaviour, bool>, UnityEngine.Sprite, UnityEngine.Color?)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/CustomDiceSprite.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: AddSequence
+    path: ../CustomDiceSprite.cs
+    startLine: 22
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static void AddSequence(Func<DiceBehaviour, bool> cond, Sprite map, Color? behColor = null)
+    parameters:
+    - id: cond
+      type: System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean}
+    - id: map
+      type: UnityEngine.Sprite
+    - id: behColor
+      type: System.Nullable{UnityEngine.Color}
+    content.vb: Public Shared Sub AddSequence(cond As Func(Of DiceBehaviour, Boolean), map As Sprite, behColor As Color? = Nothing)
+  overload: DeviceOfHermes.CustomDiceSprite.AddSequence*
+  nameWithType.vb: CustomDiceSprite.AddSequence(Func(Of DiceBehaviour, Boolean), Sprite, Color?)
+  fullName.vb: DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func(Of LOR_DiceSystem.DiceBehaviour, Boolean), UnityEngine.Sprite, UnityEngine.Color?)
+  name.vb: AddSequence(Func(Of DiceBehaviour, Boolean), Sprite, Color?)
+references:
+- uid: DeviceOfHermes
+  commentId: N:DeviceOfHermes
+  href: DeviceOfHermes.html
+  name: DeviceOfHermes
+  nameWithType: DeviceOfHermes
+  fullName: DeviceOfHermes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DeviceOfHermes.CustomDiceSprite.AddSequence*
+  commentId: Overload:DeviceOfHermes.CustomDiceSprite.AddSequence
+  href: DeviceOfHermes.CustomDiceSprite.html#DeviceOfHermes_CustomDiceSprite_AddSequence_System_Func_LOR_DiceSystem_DiceBehaviour_System_Boolean__UnityEngine_Sprite_System_Nullable_UnityEngine_Color__
+  name: AddSequence
+  nameWithType: CustomDiceSprite.AddSequence
+  fullName: DeviceOfHermes.CustomDiceSprite.AddSequence
+- uid: System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean}
+  commentId: T:System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<DiceBehaviour, bool>
+  nameWithType: Func<DiceBehaviour, bool>
+  fullName: System.Func<LOR_DiceSystem.DiceBehaviour, bool>
+  nameWithType.vb: Func(Of DiceBehaviour, Boolean)
+  fullName.vb: System.Func(Of LOR_DiceSystem.DiceBehaviour, Boolean)
+  name.vb: Func(Of DiceBehaviour, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: LOR_DiceSystem.DiceBehaviour
+    name: DiceBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LOR_DiceSystem.DiceBehaviour
+    name: DiceBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: System.Nullable{UnityEngine.Color}
+  commentId: T:System.Nullable{UnityEngine.Color}
+  parent: System
+  definition: System.Nullable`1
+  name: Color?
+  nameWithType: Color?
+  fullName: UnityEngine.Color?
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '?'
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

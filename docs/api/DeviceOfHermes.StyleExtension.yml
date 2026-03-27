@@ -1,0 +1,2185 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeviceOfHermes.StyleExtension
+  commentId: T:DeviceOfHermes.StyleExtension
+  id: StyleExtension
+  parent: DeviceOfHermes
+  children:
+  - DeviceOfHermes.StyleExtension.Alpha(System.String,System.String)
+  - DeviceOfHermes.StyleExtension.Aqua(System.String)
+  - DeviceOfHermes.StyleExtension.Black(System.String)
+  - DeviceOfHermes.StyleExtension.Blue(System.String)
+  - DeviceOfHermes.StyleExtension.Bold(System.String)
+  - DeviceOfHermes.StyleExtension.Brown(System.String)
+  - DeviceOfHermes.StyleExtension.Cspace(System.String,System.String)
+  - DeviceOfHermes.StyleExtension.Cyan(System.String)
+  - DeviceOfHermes.StyleExtension.DarkBlue(System.String)
+  - DeviceOfHermes.StyleExtension.Font(System.String,System.String)
+  - DeviceOfHermes.StyleExtension.Fuchsia(System.String)
+  - DeviceOfHermes.StyleExtension.Gradient(System.String,System.String)
+  - DeviceOfHermes.StyleExtension.Green(System.String)
+  - DeviceOfHermes.StyleExtension.Grey(System.String)
+  - DeviceOfHermes.StyleExtension.Hex(System.String,System.String)
+  - DeviceOfHermes.StyleExtension.Italic(System.String)
+  - DeviceOfHermes.StyleExtension.LightBlue(System.String)
+  - DeviceOfHermes.StyleExtension.Lime(System.String)
+  - DeviceOfHermes.StyleExtension.LineHeight(System.String,System.String)
+  - DeviceOfHermes.StyleExtension.Lower(System.String)
+  - DeviceOfHermes.StyleExtension.Magenta(System.String)
+  - DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32)
+  - DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  - DeviceOfHermes.StyleExtension.Mark(System.String,System.String)
+  - DeviceOfHermes.StyleExtension.Maroon(System.String)
+  - DeviceOfHermes.StyleExtension.Navy(System.String)
+  - DeviceOfHermes.StyleExtension.Olive(System.String)
+  - DeviceOfHermes.StyleExtension.Orange(System.String)
+  - DeviceOfHermes.StyleExtension.Purple(System.String)
+  - DeviceOfHermes.StyleExtension.Red(System.String)
+  - DeviceOfHermes.StyleExtension.Rgb(System.String,System.Int32,System.Int32,System.Int32)
+  - DeviceOfHermes.StyleExtension.Rgba(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  - DeviceOfHermes.StyleExtension.Silver(System.String)
+  - DeviceOfHermes.StyleExtension.SizeAbs(System.String,System.Int32)
+  - DeviceOfHermes.StyleExtension.SizeRel(System.String,System.Int32)
+  - DeviceOfHermes.StyleExtension.Smallcaps(System.String)
+  - DeviceOfHermes.StyleExtension.Strikethrough(System.String)
+  - DeviceOfHermes.StyleExtension.Sub(System.String)
+  - DeviceOfHermes.StyleExtension.Sup(System.String)
+  - DeviceOfHermes.StyleExtension.Teal(System.String)
+  - DeviceOfHermes.StyleExtension.Underline(System.String)
+  - DeviceOfHermes.StyleExtension.Upper(System.String)
+  - DeviceOfHermes.StyleExtension.White(System.String)
+  - DeviceOfHermes.StyleExtension.Yellow(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StyleExtension
+  nameWithType: StyleExtension
+  fullName: DeviceOfHermes.StyleExtension
+  type: Class
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: StyleExtension
+    path: ../Style.cs
+    startLine: 2
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static class StyleExtension
+    content.vb: Public Module StyleExtension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: DeviceOfHermes.StyleExtension.Aqua(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Aqua(System.String)
+  id: Aqua(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Aqua(string)
+  nameWithType: StyleExtension.Aqua(string)
+  fullName: DeviceOfHermes.StyleExtension.Aqua(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Aqua
+    path: ../Style.cs
+    startLine: 6
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Aqua(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Aqua(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Aqua*
+  nameWithType.vb: StyleExtension.Aqua(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Aqua(String)
+  name.vb: Aqua(String)
+- uid: DeviceOfHermes.StyleExtension.Black(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Black(System.String)
+  id: Black(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Black(string)
+  nameWithType: StyleExtension.Black(string)
+  fullName: DeviceOfHermes.StyleExtension.Black(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Black
+    path: ../Style.cs
+    startLine: 7
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Black(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Black(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Black*
+  nameWithType.vb: StyleExtension.Black(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Black(String)
+  name.vb: Black(String)
+- uid: DeviceOfHermes.StyleExtension.Blue(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Blue(System.String)
+  id: Blue(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Blue(string)
+  nameWithType: StyleExtension.Blue(string)
+  fullName: DeviceOfHermes.StyleExtension.Blue(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Blue
+    path: ../Style.cs
+    startLine: 8
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Blue(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Blue(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Blue*
+  nameWithType.vb: StyleExtension.Blue(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Blue(String)
+  name.vb: Blue(String)
+- uid: DeviceOfHermes.StyleExtension.Brown(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Brown(System.String)
+  id: Brown(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Brown(string)
+  nameWithType: StyleExtension.Brown(string)
+  fullName: DeviceOfHermes.StyleExtension.Brown(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Brown
+    path: ../Style.cs
+    startLine: 9
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Brown(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Brown(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Brown*
+  nameWithType.vb: StyleExtension.Brown(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Brown(String)
+  name.vb: Brown(String)
+- uid: DeviceOfHermes.StyleExtension.Cyan(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Cyan(System.String)
+  id: Cyan(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Cyan(string)
+  nameWithType: StyleExtension.Cyan(string)
+  fullName: DeviceOfHermes.StyleExtension.Cyan(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Cyan
+    path: ../Style.cs
+    startLine: 10
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Cyan(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Cyan(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Cyan*
+  nameWithType.vb: StyleExtension.Cyan(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Cyan(String)
+  name.vb: Cyan(String)
+- uid: DeviceOfHermes.StyleExtension.DarkBlue(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.DarkBlue(System.String)
+  id: DarkBlue(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: DarkBlue(string)
+  nameWithType: StyleExtension.DarkBlue(string)
+  fullName: DeviceOfHermes.StyleExtension.DarkBlue(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: DarkBlue
+    path: ../Style.cs
+    startLine: 11
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string DarkBlue(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function DarkBlue(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.DarkBlue*
+  nameWithType.vb: StyleExtension.DarkBlue(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.DarkBlue(String)
+  name.vb: DarkBlue(String)
+- uid: DeviceOfHermes.StyleExtension.Fuchsia(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Fuchsia(System.String)
+  id: Fuchsia(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Fuchsia(string)
+  nameWithType: StyleExtension.Fuchsia(string)
+  fullName: DeviceOfHermes.StyleExtension.Fuchsia(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Fuchsia
+    path: ../Style.cs
+    startLine: 12
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Fuchsia(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Fuchsia(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Fuchsia*
+  nameWithType.vb: StyleExtension.Fuchsia(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Fuchsia(String)
+  name.vb: Fuchsia(String)
+- uid: DeviceOfHermes.StyleExtension.Green(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Green(System.String)
+  id: Green(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Green(string)
+  nameWithType: StyleExtension.Green(string)
+  fullName: DeviceOfHermes.StyleExtension.Green(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Green
+    path: ../Style.cs
+    startLine: 13
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Green(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Green(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Green*
+  nameWithType.vb: StyleExtension.Green(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Green(String)
+  name.vb: Green(String)
+- uid: DeviceOfHermes.StyleExtension.Grey(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Grey(System.String)
+  id: Grey(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Grey(string)
+  nameWithType: StyleExtension.Grey(string)
+  fullName: DeviceOfHermes.StyleExtension.Grey(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Grey
+    path: ../Style.cs
+    startLine: 14
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Grey(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Grey(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Grey*
+  nameWithType.vb: StyleExtension.Grey(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Grey(String)
+  name.vb: Grey(String)
+- uid: DeviceOfHermes.StyleExtension.LightBlue(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.LightBlue(System.String)
+  id: LightBlue(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: LightBlue(string)
+  nameWithType: StyleExtension.LightBlue(string)
+  fullName: DeviceOfHermes.StyleExtension.LightBlue(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: LightBlue
+    path: ../Style.cs
+    startLine: 15
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string LightBlue(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function LightBlue(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.LightBlue*
+  nameWithType.vb: StyleExtension.LightBlue(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.LightBlue(String)
+  name.vb: LightBlue(String)
+- uid: DeviceOfHermes.StyleExtension.Lime(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Lime(System.String)
+  id: Lime(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Lime(string)
+  nameWithType: StyleExtension.Lime(string)
+  fullName: DeviceOfHermes.StyleExtension.Lime(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Lime
+    path: ../Style.cs
+    startLine: 16
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Lime(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Lime(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Lime*
+  nameWithType.vb: StyleExtension.Lime(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Lime(String)
+  name.vb: Lime(String)
+- uid: DeviceOfHermes.StyleExtension.Magenta(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Magenta(System.String)
+  id: Magenta(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Magenta(string)
+  nameWithType: StyleExtension.Magenta(string)
+  fullName: DeviceOfHermes.StyleExtension.Magenta(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Magenta
+    path: ../Style.cs
+    startLine: 17
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Magenta(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Magenta(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Magenta*
+  nameWithType.vb: StyleExtension.Magenta(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Magenta(String)
+  name.vb: Magenta(String)
+- uid: DeviceOfHermes.StyleExtension.Maroon(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Maroon(System.String)
+  id: Maroon(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Maroon(string)
+  nameWithType: StyleExtension.Maroon(string)
+  fullName: DeviceOfHermes.StyleExtension.Maroon(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Maroon
+    path: ../Style.cs
+    startLine: 18
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Maroon(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Maroon(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Maroon*
+  nameWithType.vb: StyleExtension.Maroon(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Maroon(String)
+  name.vb: Maroon(String)
+- uid: DeviceOfHermes.StyleExtension.Navy(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Navy(System.String)
+  id: Navy(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Navy(string)
+  nameWithType: StyleExtension.Navy(string)
+  fullName: DeviceOfHermes.StyleExtension.Navy(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Navy
+    path: ../Style.cs
+    startLine: 19
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Navy(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Navy(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Navy*
+  nameWithType.vb: StyleExtension.Navy(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Navy(String)
+  name.vb: Navy(String)
+- uid: DeviceOfHermes.StyleExtension.Olive(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Olive(System.String)
+  id: Olive(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Olive(string)
+  nameWithType: StyleExtension.Olive(string)
+  fullName: DeviceOfHermes.StyleExtension.Olive(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Olive
+    path: ../Style.cs
+    startLine: 20
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Olive(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Olive(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Olive*
+  nameWithType.vb: StyleExtension.Olive(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Olive(String)
+  name.vb: Olive(String)
+- uid: DeviceOfHermes.StyleExtension.Orange(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Orange(System.String)
+  id: Orange(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Orange(string)
+  nameWithType: StyleExtension.Orange(string)
+  fullName: DeviceOfHermes.StyleExtension.Orange(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Orange
+    path: ../Style.cs
+    startLine: 21
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Orange(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Orange(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Orange*
+  nameWithType.vb: StyleExtension.Orange(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Orange(String)
+  name.vb: Orange(String)
+- uid: DeviceOfHermes.StyleExtension.Purple(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Purple(System.String)
+  id: Purple(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Purple(string)
+  nameWithType: StyleExtension.Purple(string)
+  fullName: DeviceOfHermes.StyleExtension.Purple(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Purple
+    path: ../Style.cs
+    startLine: 22
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Purple(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Purple(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Purple*
+  nameWithType.vb: StyleExtension.Purple(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Purple(String)
+  name.vb: Purple(String)
+- uid: DeviceOfHermes.StyleExtension.Red(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Red(System.String)
+  id: Red(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Red(string)
+  nameWithType: StyleExtension.Red(string)
+  fullName: DeviceOfHermes.StyleExtension.Red(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Red
+    path: ../Style.cs
+    startLine: 23
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Red(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Red(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Red*
+  nameWithType.vb: StyleExtension.Red(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Red(String)
+  name.vb: Red(String)
+- uid: DeviceOfHermes.StyleExtension.Silver(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Silver(System.String)
+  id: Silver(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Silver(string)
+  nameWithType: StyleExtension.Silver(string)
+  fullName: DeviceOfHermes.StyleExtension.Silver(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Silver
+    path: ../Style.cs
+    startLine: 24
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Silver(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Silver(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Silver*
+  nameWithType.vb: StyleExtension.Silver(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Silver(String)
+  name.vb: Silver(String)
+- uid: DeviceOfHermes.StyleExtension.Teal(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Teal(System.String)
+  id: Teal(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Teal(string)
+  nameWithType: StyleExtension.Teal(string)
+  fullName: DeviceOfHermes.StyleExtension.Teal(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Teal
+    path: ../Style.cs
+    startLine: 25
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Teal(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Teal(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Teal*
+  nameWithType.vb: StyleExtension.Teal(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Teal(String)
+  name.vb: Teal(String)
+- uid: DeviceOfHermes.StyleExtension.White(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.White(System.String)
+  id: White(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: White(string)
+  nameWithType: StyleExtension.White(string)
+  fullName: DeviceOfHermes.StyleExtension.White(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: White
+    path: ../Style.cs
+    startLine: 26
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string White(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function White(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.White*
+  nameWithType.vb: StyleExtension.White(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.White(String)
+  name.vb: White(String)
+- uid: DeviceOfHermes.StyleExtension.Yellow(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Yellow(System.String)
+  id: Yellow(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Yellow(string)
+  nameWithType: StyleExtension.Yellow(string)
+  fullName: DeviceOfHermes.StyleExtension.Yellow(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Yellow
+    path: ../Style.cs
+    startLine: 27
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Yellow(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Yellow(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Yellow*
+  nameWithType.vb: StyleExtension.Yellow(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Yellow(String)
+  name.vb: Yellow(String)
+- uid: DeviceOfHermes.StyleExtension.Rgb(System.String,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeviceOfHermes.StyleExtension.Rgb(System.String,System.Int32,System.Int32,System.Int32)
+  id: Rgb(System.String,System.Int32,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Rgb(string, int, int, int)
+  nameWithType: StyleExtension.Rgb(string, int, int, int)
+  fullName: DeviceOfHermes.StyleExtension.Rgb(string, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Rgb
+    path: ../Style.cs
+    startLine: 28
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Rgb(this string self, int r, int g, int b)
+    parameters:
+    - id: self
+      type: System.String
+    - id: r
+      type: System.Int32
+    - id: g
+      type: System.Int32
+    - id: b
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function Rgb(self As String, r As Integer, g As Integer, b As Integer) As String
+  overload: DeviceOfHermes.StyleExtension.Rgb*
+  nameWithType.vb: StyleExtension.Rgb(String, Integer, Integer, Integer)
+  fullName.vb: DeviceOfHermes.StyleExtension.Rgb(String, Integer, Integer, Integer)
+  name.vb: Rgb(String, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.Rgba(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeviceOfHermes.StyleExtension.Rgba(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: Rgba(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Rgba(string, int, int, int, int)
+  nameWithType: StyleExtension.Rgba(string, int, int, int, int)
+  fullName: DeviceOfHermes.StyleExtension.Rgba(string, int, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Rgba
+    path: ../Style.cs
+    startLine: 29
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Rgba(this string self, int r, int g, int b, int a)
+    parameters:
+    - id: self
+      type: System.String
+    - id: r
+      type: System.Int32
+    - id: g
+      type: System.Int32
+    - id: b
+      type: System.Int32
+    - id: a
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function Rgba(self As String, r As Integer, g As Integer, b As Integer, a As Integer) As String
+  overload: DeviceOfHermes.StyleExtension.Rgba*
+  nameWithType.vb: StyleExtension.Rgba(String, Integer, Integer, Integer, Integer)
+  fullName.vb: DeviceOfHermes.StyleExtension.Rgba(String, Integer, Integer, Integer, Integer)
+  name.vb: Rgba(String, Integer, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.Hex(System.String,System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Hex(System.String,System.String)
+  id: Hex(System.String,System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Hex(string, string)
+  nameWithType: StyleExtension.Hex(string, string)
+  fullName: DeviceOfHermes.StyleExtension.Hex(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Hex
+    path: ../Style.cs
+    startLine: 30
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Hex(this string self, string hex)
+    parameters:
+    - id: self
+      type: System.String
+    - id: hex
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Hex(self As String, hex As String) As String
+  overload: DeviceOfHermes.StyleExtension.Hex*
+  nameWithType.vb: StyleExtension.Hex(String, String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Hex(String, String)
+  name.vb: Hex(String, String)
+- uid: DeviceOfHermes.StyleExtension.Bold(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Bold(System.String)
+  id: Bold(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Bold(string)
+  nameWithType: StyleExtension.Bold(string)
+  fullName: DeviceOfHermes.StyleExtension.Bold(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Bold
+    path: ../Style.cs
+    startLine: 32
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Bold(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Bold(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Bold*
+  nameWithType.vb: StyleExtension.Bold(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Bold(String)
+  name.vb: Bold(String)
+- uid: DeviceOfHermes.StyleExtension.Italic(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Italic(System.String)
+  id: Italic(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Italic(string)
+  nameWithType: StyleExtension.Italic(string)
+  fullName: DeviceOfHermes.StyleExtension.Italic(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Italic
+    path: ../Style.cs
+    startLine: 33
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Italic(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Italic(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Italic*
+  nameWithType.vb: StyleExtension.Italic(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Italic(String)
+  name.vb: Italic(String)
+- uid: DeviceOfHermes.StyleExtension.Underline(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Underline(System.String)
+  id: Underline(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Underline(string)
+  nameWithType: StyleExtension.Underline(string)
+  fullName: DeviceOfHermes.StyleExtension.Underline(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Underline
+    path: ../Style.cs
+    startLine: 34
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Underline(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Underline(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Underline*
+  nameWithType.vb: StyleExtension.Underline(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Underline(String)
+  name.vb: Underline(String)
+- uid: DeviceOfHermes.StyleExtension.Strikethrough(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Strikethrough(System.String)
+  id: Strikethrough(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Strikethrough(string)
+  nameWithType: StyleExtension.Strikethrough(string)
+  fullName: DeviceOfHermes.StyleExtension.Strikethrough(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Strikethrough
+    path: ../Style.cs
+    startLine: 35
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Strikethrough(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Strikethrough(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Strikethrough*
+  nameWithType.vb: StyleExtension.Strikethrough(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Strikethrough(String)
+  name.vb: Strikethrough(String)
+- uid: DeviceOfHermes.StyleExtension.Alpha(System.String,System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Alpha(System.String,System.String)
+  id: Alpha(System.String,System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Alpha(string, string)
+  nameWithType: StyleExtension.Alpha(string, string)
+  fullName: DeviceOfHermes.StyleExtension.Alpha(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Alpha
+    path: ../Style.cs
+    startLine: 36
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Alpha(this string self, string alpha)
+    parameters:
+    - id: self
+      type: System.String
+    - id: alpha
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Alpha(self As String, alpha As String) As String
+  overload: DeviceOfHermes.StyleExtension.Alpha*
+  nameWithType.vb: StyleExtension.Alpha(String, String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Alpha(String, String)
+  name.vb: Alpha(String, String)
+- uid: DeviceOfHermes.StyleExtension.SizeAbs(System.String,System.Int32)
+  commentId: M:DeviceOfHermes.StyleExtension.SizeAbs(System.String,System.Int32)
+  id: SizeAbs(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: SizeAbs(string, int)
+  nameWithType: StyleExtension.SizeAbs(string, int)
+  fullName: DeviceOfHermes.StyleExtension.SizeAbs(string, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: SizeAbs
+    path: ../Style.cs
+    startLine: 37
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string SizeAbs(this string self, int size)
+    parameters:
+    - id: self
+      type: System.String
+    - id: size
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function SizeAbs(self As String, size As Integer) As String
+  overload: DeviceOfHermes.StyleExtension.SizeAbs*
+  nameWithType.vb: StyleExtension.SizeAbs(String, Integer)
+  fullName.vb: DeviceOfHermes.StyleExtension.SizeAbs(String, Integer)
+  name.vb: SizeAbs(String, Integer)
+- uid: DeviceOfHermes.StyleExtension.SizeRel(System.String,System.Int32)
+  commentId: M:DeviceOfHermes.StyleExtension.SizeRel(System.String,System.Int32)
+  id: SizeRel(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: SizeRel(string, int)
+  nameWithType: StyleExtension.SizeRel(string, int)
+  fullName: DeviceOfHermes.StyleExtension.SizeRel(string, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: SizeRel
+    path: ../Style.cs
+    startLine: 38
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string SizeRel(this string self, int size)
+    parameters:
+    - id: self
+      type: System.String
+    - id: size
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function SizeRel(self As String, size As Integer) As String
+  overload: DeviceOfHermes.StyleExtension.SizeRel*
+  nameWithType.vb: StyleExtension.SizeRel(String, Integer)
+  fullName.vb: DeviceOfHermes.StyleExtension.SizeRel(String, Integer)
+  name.vb: SizeRel(String, Integer)
+- uid: DeviceOfHermes.StyleExtension.Lower(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Lower(System.String)
+  id: Lower(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Lower(string)
+  nameWithType: StyleExtension.Lower(string)
+  fullName: DeviceOfHermes.StyleExtension.Lower(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Lower
+    path: ../Style.cs
+    startLine: 39
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Lower(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Lower(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Lower*
+  nameWithType.vb: StyleExtension.Lower(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Lower(String)
+  name.vb: Lower(String)
+- uid: DeviceOfHermes.StyleExtension.Upper(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Upper(System.String)
+  id: Upper(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Upper(string)
+  nameWithType: StyleExtension.Upper(string)
+  fullName: DeviceOfHermes.StyleExtension.Upper(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Upper
+    path: ../Style.cs
+    startLine: 40
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Upper(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Upper(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Upper*
+  nameWithType.vb: StyleExtension.Upper(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Upper(String)
+  name.vb: Upper(String)
+- uid: DeviceOfHermes.StyleExtension.Smallcaps(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Smallcaps(System.String)
+  id: Smallcaps(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Smallcaps(string)
+  nameWithType: StyleExtension.Smallcaps(string)
+  fullName: DeviceOfHermes.StyleExtension.Smallcaps(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Smallcaps
+    path: ../Style.cs
+    startLine: 41
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Smallcaps(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Smallcaps(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Smallcaps*
+  nameWithType.vb: StyleExtension.Smallcaps(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Smallcaps(String)
+  name.vb: Smallcaps(String)
+- uid: DeviceOfHermes.StyleExtension.Mark(System.String,System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Mark(System.String,System.String)
+  id: Mark(System.String,System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Mark(string, string)
+  nameWithType: StyleExtension.Mark(string, string)
+  fullName: DeviceOfHermes.StyleExtension.Mark(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Mark
+    path: ../Style.cs
+    startLine: 42
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Mark(this string self, string hex)
+    parameters:
+    - id: self
+      type: System.String
+    - id: hex
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Mark(self As String, hex As String) As String
+  overload: DeviceOfHermes.StyleExtension.Mark*
+  nameWithType.vb: StyleExtension.Mark(String, String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Mark(String, String)
+  name.vb: Mark(String, String)
+- uid: DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32)
+  id: Mark(System.String,System.Int32,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Mark(string, int, int, int)
+  nameWithType: StyleExtension.Mark(string, int, int, int)
+  fullName: DeviceOfHermes.StyleExtension.Mark(string, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Mark
+    path: ../Style.cs
+    startLine: 43
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Mark(this string self, int r, int g, int b)
+    parameters:
+    - id: self
+      type: System.String
+    - id: r
+      type: System.Int32
+    - id: g
+      type: System.Int32
+    - id: b
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function Mark(self As String, r As Integer, g As Integer, b As Integer) As String
+  overload: DeviceOfHermes.StyleExtension.Mark*
+  nameWithType.vb: StyleExtension.Mark(String, Integer, Integer, Integer)
+  fullName.vb: DeviceOfHermes.StyleExtension.Mark(String, Integer, Integer, Integer)
+  name.vb: Mark(String, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeviceOfHermes.StyleExtension.Mark(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: Mark(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Mark(string, int, int, int, int)
+  nameWithType: StyleExtension.Mark(string, int, int, int, int)
+  fullName: DeviceOfHermes.StyleExtension.Mark(string, int, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Mark
+    path: ../Style.cs
+    startLine: 44
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Mark(this string self, int r, int g, int b, int a)
+    parameters:
+    - id: self
+      type: System.String
+    - id: r
+      type: System.Int32
+    - id: g
+      type: System.Int32
+    - id: b
+      type: System.Int32
+    - id: a
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function Mark(self As String, r As Integer, g As Integer, b As Integer, a As Integer) As String
+  overload: DeviceOfHermes.StyleExtension.Mark*
+  nameWithType.vb: StyleExtension.Mark(String, Integer, Integer, Integer, Integer)
+  fullName.vb: DeviceOfHermes.StyleExtension.Mark(String, Integer, Integer, Integer, Integer)
+  name.vb: Mark(String, Integer, Integer, Integer, Integer)
+- uid: DeviceOfHermes.StyleExtension.LineHeight(System.String,System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.LineHeight(System.String,System.String)
+  id: LineHeight(System.String,System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: LineHeight(string, string)
+  nameWithType: StyleExtension.LineHeight(string, string)
+  fullName: DeviceOfHermes.StyleExtension.LineHeight(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: LineHeight
+    path: ../Style.cs
+    startLine: 45
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string LineHeight(this string self, string height)
+    parameters:
+    - id: self
+      type: System.String
+    - id: height
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function LineHeight(self As String, height As String) As String
+  overload: DeviceOfHermes.StyleExtension.LineHeight*
+  nameWithType.vb: StyleExtension.LineHeight(String, String)
+  fullName.vb: DeviceOfHermes.StyleExtension.LineHeight(String, String)
+  name.vb: LineHeight(String, String)
+- uid: DeviceOfHermes.StyleExtension.Sup(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Sup(System.String)
+  id: Sup(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Sup(string)
+  nameWithType: StyleExtension.Sup(string)
+  fullName: DeviceOfHermes.StyleExtension.Sup(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Sup
+    path: ../Style.cs
+    startLine: 46
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Sup(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Sup(self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Sup*
+  nameWithType.vb: StyleExtension.Sup(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Sup(String)
+  name.vb: Sup(String)
+- uid: DeviceOfHermes.StyleExtension.Sub(System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Sub(System.String)
+  id: Sub(System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Sub(string)
+  nameWithType: StyleExtension.Sub(string)
+  fullName: DeviceOfHermes.StyleExtension.Sub(string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Sub
+    path: ../Style.cs
+    startLine: 47
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Sub(this string self)
+    parameters:
+    - id: self
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function [Sub](self As String) As String
+  overload: DeviceOfHermes.StyleExtension.Sub*
+  nameWithType.vb: StyleExtension.Sub(String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Sub(String)
+  name.vb: Sub(String)
+- uid: DeviceOfHermes.StyleExtension.Font(System.String,System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Font(System.String,System.String)
+  id: Font(System.String,System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Font(string, string)
+  nameWithType: StyleExtension.Font(string, string)
+  fullName: DeviceOfHermes.StyleExtension.Font(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Font
+    path: ../Style.cs
+    startLine: 48
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Font(this string self, string assetName)
+    parameters:
+    - id: self
+      type: System.String
+    - id: assetName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Font(self As String, assetName As String) As String
+  overload: DeviceOfHermes.StyleExtension.Font*
+  nameWithType.vb: StyleExtension.Font(String, String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Font(String, String)
+  name.vb: Font(String, String)
+- uid: DeviceOfHermes.StyleExtension.Gradient(System.String,System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Gradient(System.String,System.String)
+  id: Gradient(System.String,System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Gradient(string, string)
+  nameWithType: StyleExtension.Gradient(string, string)
+  fullName: DeviceOfHermes.StyleExtension.Gradient(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Gradient
+    path: ../Style.cs
+    startLine: 49
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Gradient(this string self, string gradient)
+    parameters:
+    - id: self
+      type: System.String
+    - id: gradient
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Gradient(self As String, gradient As String) As String
+  overload: DeviceOfHermes.StyleExtension.Gradient*
+  nameWithType.vb: StyleExtension.Gradient(String, String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Gradient(String, String)
+  name.vb: Gradient(String, String)
+- uid: DeviceOfHermes.StyleExtension.Cspace(System.String,System.String)
+  commentId: M:DeviceOfHermes.StyleExtension.Cspace(System.String,System.String)
+  id: Cspace(System.String,System.String)
+  isExtensionMethod: true
+  parent: DeviceOfHermes.StyleExtension
+  langs:
+  - csharp
+  - vb
+  name: Cspace(string, string)
+  nameWithType: StyleExtension.Cspace(string, string)
+  fullName: DeviceOfHermes.StyleExtension.Cspace(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/Style.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Cspace
+    path: ../Style.cs
+    startLine: 50
+  assemblies:
+  - DeviceOfHermes
+  namespace: DeviceOfHermes
+  syntax:
+    content: public static string Cspace(this string self, string spacing)
+    parameters:
+    - id: self
+      type: System.String
+    - id: spacing
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Cspace(self As String, spacing As String) As String
+  overload: DeviceOfHermes.StyleExtension.Cspace*
+  nameWithType.vb: StyleExtension.Cspace(String, String)
+  fullName.vb: DeviceOfHermes.StyleExtension.Cspace(String, String)
+  name.vb: Cspace(String, String)
+references:
+- uid: DeviceOfHermes
+  commentId: N:DeviceOfHermes
+  href: DeviceOfHermes.html
+  name: DeviceOfHermes
+  nameWithType: DeviceOfHermes
+  fullName: DeviceOfHermes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DeviceOfHermes.StyleExtension.Aqua*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Aqua
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Aqua_System_String_
+  name: Aqua
+  nameWithType: StyleExtension.Aqua
+  fullName: DeviceOfHermes.StyleExtension.Aqua
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: DeviceOfHermes.StyleExtension.Black*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Black
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Black_System_String_
+  name: Black
+  nameWithType: StyleExtension.Black
+  fullName: DeviceOfHermes.StyleExtension.Black
+- uid: DeviceOfHermes.StyleExtension.Blue*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Blue
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Blue_System_String_
+  name: Blue
+  nameWithType: StyleExtension.Blue
+  fullName: DeviceOfHermes.StyleExtension.Blue
+- uid: DeviceOfHermes.StyleExtension.Brown*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Brown
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Brown_System_String_
+  name: Brown
+  nameWithType: StyleExtension.Brown
+  fullName: DeviceOfHermes.StyleExtension.Brown
+- uid: DeviceOfHermes.StyleExtension.Cyan*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Cyan
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Cyan_System_String_
+  name: Cyan
+  nameWithType: StyleExtension.Cyan
+  fullName: DeviceOfHermes.StyleExtension.Cyan
+- uid: DeviceOfHermes.StyleExtension.DarkBlue*
+  commentId: Overload:DeviceOfHermes.StyleExtension.DarkBlue
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_DarkBlue_System_String_
+  name: DarkBlue
+  nameWithType: StyleExtension.DarkBlue
+  fullName: DeviceOfHermes.StyleExtension.DarkBlue
+- uid: DeviceOfHermes.StyleExtension.Fuchsia*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Fuchsia
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Fuchsia_System_String_
+  name: Fuchsia
+  nameWithType: StyleExtension.Fuchsia
+  fullName: DeviceOfHermes.StyleExtension.Fuchsia
+- uid: DeviceOfHermes.StyleExtension.Green*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Green
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Green_System_String_
+  name: Green
+  nameWithType: StyleExtension.Green
+  fullName: DeviceOfHermes.StyleExtension.Green
+- uid: DeviceOfHermes.StyleExtension.Grey*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Grey
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Grey_System_String_
+  name: Grey
+  nameWithType: StyleExtension.Grey
+  fullName: DeviceOfHermes.StyleExtension.Grey
+- uid: DeviceOfHermes.StyleExtension.LightBlue*
+  commentId: Overload:DeviceOfHermes.StyleExtension.LightBlue
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_LightBlue_System_String_
+  name: LightBlue
+  nameWithType: StyleExtension.LightBlue
+  fullName: DeviceOfHermes.StyleExtension.LightBlue
+- uid: DeviceOfHermes.StyleExtension.Lime*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Lime
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Lime_System_String_
+  name: Lime
+  nameWithType: StyleExtension.Lime
+  fullName: DeviceOfHermes.StyleExtension.Lime
+- uid: DeviceOfHermes.StyleExtension.Magenta*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Magenta
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Magenta_System_String_
+  name: Magenta
+  nameWithType: StyleExtension.Magenta
+  fullName: DeviceOfHermes.StyleExtension.Magenta
+- uid: DeviceOfHermes.StyleExtension.Maroon*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Maroon
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Maroon_System_String_
+  name: Maroon
+  nameWithType: StyleExtension.Maroon
+  fullName: DeviceOfHermes.StyleExtension.Maroon
+- uid: DeviceOfHermes.StyleExtension.Navy*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Navy
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Navy_System_String_
+  name: Navy
+  nameWithType: StyleExtension.Navy
+  fullName: DeviceOfHermes.StyleExtension.Navy
+- uid: DeviceOfHermes.StyleExtension.Olive*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Olive
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Olive_System_String_
+  name: Olive
+  nameWithType: StyleExtension.Olive
+  fullName: DeviceOfHermes.StyleExtension.Olive
+- uid: DeviceOfHermes.StyleExtension.Orange*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Orange
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Orange_System_String_
+  name: Orange
+  nameWithType: StyleExtension.Orange
+  fullName: DeviceOfHermes.StyleExtension.Orange
+- uid: DeviceOfHermes.StyleExtension.Purple*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Purple
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Purple_System_String_
+  name: Purple
+  nameWithType: StyleExtension.Purple
+  fullName: DeviceOfHermes.StyleExtension.Purple
+- uid: DeviceOfHermes.StyleExtension.Red*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Red
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Red_System_String_
+  name: Red
+  nameWithType: StyleExtension.Red
+  fullName: DeviceOfHermes.StyleExtension.Red
+- uid: DeviceOfHermes.StyleExtension.Silver*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Silver
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Silver_System_String_
+  name: Silver
+  nameWithType: StyleExtension.Silver
+  fullName: DeviceOfHermes.StyleExtension.Silver
+- uid: DeviceOfHermes.StyleExtension.Teal*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Teal
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Teal_System_String_
+  name: Teal
+  nameWithType: StyleExtension.Teal
+  fullName: DeviceOfHermes.StyleExtension.Teal
+- uid: DeviceOfHermes.StyleExtension.White*
+  commentId: Overload:DeviceOfHermes.StyleExtension.White
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_White_System_String_
+  name: White
+  nameWithType: StyleExtension.White
+  fullName: DeviceOfHermes.StyleExtension.White
+- uid: DeviceOfHermes.StyleExtension.Yellow*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Yellow
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Yellow_System_String_
+  name: Yellow
+  nameWithType: StyleExtension.Yellow
+  fullName: DeviceOfHermes.StyleExtension.Yellow
+- uid: DeviceOfHermes.StyleExtension.Rgb*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Rgb
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Rgb_System_String_System_Int32_System_Int32_System_Int32_
+  name: Rgb
+  nameWithType: StyleExtension.Rgb
+  fullName: DeviceOfHermes.StyleExtension.Rgb
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: DeviceOfHermes.StyleExtension.Rgba*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Rgba
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Rgba_System_String_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: Rgba
+  nameWithType: StyleExtension.Rgba
+  fullName: DeviceOfHermes.StyleExtension.Rgba
+- uid: DeviceOfHermes.StyleExtension.Hex*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Hex
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Hex_System_String_System_String_
+  name: Hex
+  nameWithType: StyleExtension.Hex
+  fullName: DeviceOfHermes.StyleExtension.Hex
+- uid: DeviceOfHermes.StyleExtension.Bold*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Bold
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Bold_System_String_
+  name: Bold
+  nameWithType: StyleExtension.Bold
+  fullName: DeviceOfHermes.StyleExtension.Bold
+- uid: DeviceOfHermes.StyleExtension.Italic*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Italic
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Italic_System_String_
+  name: Italic
+  nameWithType: StyleExtension.Italic
+  fullName: DeviceOfHermes.StyleExtension.Italic
+- uid: DeviceOfHermes.StyleExtension.Underline*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Underline
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Underline_System_String_
+  name: Underline
+  nameWithType: StyleExtension.Underline
+  fullName: DeviceOfHermes.StyleExtension.Underline
+- uid: DeviceOfHermes.StyleExtension.Strikethrough*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Strikethrough
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Strikethrough_System_String_
+  name: Strikethrough
+  nameWithType: StyleExtension.Strikethrough
+  fullName: DeviceOfHermes.StyleExtension.Strikethrough
+- uid: DeviceOfHermes.StyleExtension.Alpha*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Alpha
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Alpha_System_String_System_String_
+  name: Alpha
+  nameWithType: StyleExtension.Alpha
+  fullName: DeviceOfHermes.StyleExtension.Alpha
+- uid: DeviceOfHermes.StyleExtension.SizeAbs*
+  commentId: Overload:DeviceOfHermes.StyleExtension.SizeAbs
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_SizeAbs_System_String_System_Int32_
+  name: SizeAbs
+  nameWithType: StyleExtension.SizeAbs
+  fullName: DeviceOfHermes.StyleExtension.SizeAbs
+- uid: DeviceOfHermes.StyleExtension.SizeRel*
+  commentId: Overload:DeviceOfHermes.StyleExtension.SizeRel
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_SizeRel_System_String_System_Int32_
+  name: SizeRel
+  nameWithType: StyleExtension.SizeRel
+  fullName: DeviceOfHermes.StyleExtension.SizeRel
+- uid: DeviceOfHermes.StyleExtension.Lower*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Lower
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Lower_System_String_
+  name: Lower
+  nameWithType: StyleExtension.Lower
+  fullName: DeviceOfHermes.StyleExtension.Lower
+- uid: DeviceOfHermes.StyleExtension.Upper*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Upper
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Upper_System_String_
+  name: Upper
+  nameWithType: StyleExtension.Upper
+  fullName: DeviceOfHermes.StyleExtension.Upper
+- uid: DeviceOfHermes.StyleExtension.Smallcaps*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Smallcaps
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Smallcaps_System_String_
+  name: Smallcaps
+  nameWithType: StyleExtension.Smallcaps
+  fullName: DeviceOfHermes.StyleExtension.Smallcaps
+- uid: DeviceOfHermes.StyleExtension.Mark*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Mark
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Mark_System_String_System_String_
+  name: Mark
+  nameWithType: StyleExtension.Mark
+  fullName: DeviceOfHermes.StyleExtension.Mark
+- uid: DeviceOfHermes.StyleExtension.LineHeight*
+  commentId: Overload:DeviceOfHermes.StyleExtension.LineHeight
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_LineHeight_System_String_System_String_
+  name: LineHeight
+  nameWithType: StyleExtension.LineHeight
+  fullName: DeviceOfHermes.StyleExtension.LineHeight
+- uid: DeviceOfHermes.StyleExtension.Sup*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Sup
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Sup_System_String_
+  name: Sup
+  nameWithType: StyleExtension.Sup
+  fullName: DeviceOfHermes.StyleExtension.Sup
+- uid: DeviceOfHermes.StyleExtension.Sub*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Sub
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Sub_System_String_
+  name: Sub
+  nameWithType: StyleExtension.Sub
+  fullName: DeviceOfHermes.StyleExtension.Sub
+- uid: DeviceOfHermes.StyleExtension.Font*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Font
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Font_System_String_System_String_
+  name: Font
+  nameWithType: StyleExtension.Font
+  fullName: DeviceOfHermes.StyleExtension.Font
+- uid: DeviceOfHermes.StyleExtension.Gradient*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Gradient
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Gradient_System_String_System_String_
+  name: Gradient
+  nameWithType: StyleExtension.Gradient
+  fullName: DeviceOfHermes.StyleExtension.Gradient
+- uid: DeviceOfHermes.StyleExtension.Cspace*
+  commentId: Overload:DeviceOfHermes.StyleExtension.Cspace
+  href: DeviceOfHermes.StyleExtension.html#DeviceOfHermes_StyleExtension_Cspace_System_String_System_String_
+  name: Cspace
+  nameWithType: StyleExtension.Cspace
+  fullName: DeviceOfHermes.StyleExtension.Cspace

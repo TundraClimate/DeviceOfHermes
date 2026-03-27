@@ -1,0 +1,606 @@
+{
+  "source_base_path": "/home/tundra/MyStorage/IdeaProjects/LoR-Mods/DeviceOfHermes/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdditonalOnlyCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdditonalOnlyCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdditonalOnlyCard",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AdvancedCardBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AdvancedDiceBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AdvancedPassiveBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AdvancedUnitBuf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AmmoExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AmmoExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AmmoExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.BattleAmmoBuf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.BattleBufExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.BattleBufExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.BattleBufExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.CustomDice.RevengeDice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.CustomDice.RevengeDice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.CustomDice.RevengeDice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.CustomDice.UnbreakableDice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.CustomDice.UnbreakableDice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.CustomDice.UnbreakableDice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.CustomDice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.CustomDice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.CustomDice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.CustomDiceSprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.CustomDiceSprite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.CustomDiceSprite",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.HermesConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.HermesConstants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.HermesConstants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.PassiveResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.PassiveResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.PassiveResolver",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.Artwork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.Artwork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource.Artwork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.ReadXmlParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.ReadXmlParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource.ReadXmlParser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.TextModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.TextModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource.TextModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.ScheduleRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.ScheduleRunner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.ScheduleRunner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.ScheduleTiming.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.ScheduleTiming.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.ScheduleTiming",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.StyleExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.StyleExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.StyleExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.VannilaUnitBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.VannilaUnitBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.VannilaUnitBuf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.AdvancedTakeDamage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.AdvancedTakeDamage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.AdvancedTakeDamage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.Peekable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.Peekable-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.Peekable<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.Walkdir.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.Walkdir.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.Walkdir",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Diagnostics.CodeAnalysis.NotNullWhenAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Diagnostics.CodeAnalysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Diagnostics.CodeAnalysis.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Diagnostics.CodeAnalysis",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Extension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Extension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Hermes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Hermes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Hermes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Mem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Mem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Mem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.MessageLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.MessageLevel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.MessageLevel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

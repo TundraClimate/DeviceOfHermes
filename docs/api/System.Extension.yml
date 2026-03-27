@@ -1,0 +1,1855 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Extension
+  commentId: T:System.Extension
+  id: Extension
+  parent: System
+  children:
+  - System.Extension.Collect``1(System.Collections.Generic.IEnumerable{``0})
+  - System.Extension.Enumerate``1(System.Collections.Generic.IEnumerable{``0})
+  - System.Extension.FaceTo(Faction)
+  - System.Extension.FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - System.Extension.Filter``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  - System.Extension.Flatten``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+  - System.Extension.Fold``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})
+  - System.Extension.Foreach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  - System.Extension.GetAsmDirectory(System.Type)
+  - System.Extension.GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
+  - System.Extension.Inspect``1(``0,System.Action{``0})
+  - System.Extension.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - System.Extension.Max(System.Int32,System.Int32)
+  - System.Extension.Min(System.Int32,System.Int32)
+  - System.Extension.Reduce``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})
+  - System.Extension.Say(BattleUnitModel,System.String)
+  - System.Extension.StripPrefix(System.String,System.String)
+  - System.Extension.StripSuffix(System.String,System.String)
+  - System.Extension.TryForeach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  langs:
+  - csharp
+  - vb
+  name: Extension
+  nameWithType: Extension
+  fullName: System.Extension
+  type: Class
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Extension
+    path: ../SysExtension.cs
+    startLine: 2
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static class Extension
+    content.vb: Public Module Extension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Extension.Min(System.Int32,System.Int32)
+  commentId: M:System.Extension.Min(System.Int32,System.Int32)
+  id: Min(System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Min(int, int)
+  nameWithType: Extension.Min(int, int)
+  fullName: System.Extension.Min(int, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Min
+    path: ../SysExtension.cs
+    startLine: 4
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static int Min(this int n1, int n2)
+    parameters:
+    - id: n1
+      type: System.Int32
+    - id: n2
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Min(n1 As Integer, n2 As Integer) As Integer
+  overload: System.Extension.Min*
+  nameWithType.vb: Extension.Min(Integer, Integer)
+  fullName.vb: System.Extension.Min(Integer, Integer)
+  name.vb: Min(Integer, Integer)
+- uid: System.Extension.Max(System.Int32,System.Int32)
+  commentId: M:System.Extension.Max(System.Int32,System.Int32)
+  id: Max(System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Max(int, int)
+  nameWithType: Extension.Max(int, int)
+  fullName: System.Extension.Max(int, int)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Max
+    path: ../SysExtension.cs
+    startLine: 9
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static int Max(this int n1, int n2)
+    parameters:
+    - id: n1
+      type: System.Int32
+    - id: n2
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Max(n1 As Integer, n2 As Integer) As Integer
+  overload: System.Extension.Max*
+  nameWithType.vb: Extension.Max(Integer, Integer)
+  fullName.vb: System.Extension.Max(Integer, Integer)
+  name.vb: Max(Integer, Integer)
+- uid: System.Extension.StripPrefix(System.String,System.String)
+  commentId: M:System.Extension.StripPrefix(System.String,System.String)
+  id: StripPrefix(System.String,System.String)
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: StripPrefix(string, string)
+  nameWithType: Extension.StripPrefix(string, string)
+  fullName: System.Extension.StripPrefix(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: StripPrefix
+    path: ../SysExtension.cs
+    startLine: 14
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static string? StripPrefix(this string original, string strip)
+    parameters:
+    - id: original
+      type: System.String
+    - id: strip
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function StripPrefix(original As String, strip As String) As String
+  overload: System.Extension.StripPrefix*
+  nameWithType.vb: Extension.StripPrefix(String, String)
+  fullName.vb: System.Extension.StripPrefix(String, String)
+  name.vb: StripPrefix(String, String)
+- uid: System.Extension.StripSuffix(System.String,System.String)
+  commentId: M:System.Extension.StripSuffix(System.String,System.String)
+  id: StripSuffix(System.String,System.String)
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: StripSuffix(string, string)
+  nameWithType: Extension.StripSuffix(string, string)
+  fullName: System.Extension.StripSuffix(string, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: StripSuffix
+    path: ../SysExtension.cs
+    startLine: 24
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static string? StripSuffix(this string original, string strip)
+    parameters:
+    - id: original
+      type: System.String
+    - id: strip
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function StripSuffix(original As String, strip As String) As String
+  overload: System.Extension.StripSuffix*
+  nameWithType.vb: Extension.StripSuffix(String, String)
+  fullName.vb: System.Extension.StripSuffix(String, String)
+  name.vb: StripSuffix(String, String)
+- uid: System.Extension.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:System.Extension.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  id: Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Map<T, V>(IEnumerable<T>, Func<T, V>)
+  nameWithType: Extension.Map<T, V>(IEnumerable<T>, Func<T, V>)
+  fullName: System.Extension.Map<T, V>(System.Collections.Generic.IEnumerable<T>, System.Func<T, V>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Map
+    path: ../SysExtension.cs
+    startLine: 34
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static IEnumerable<V> Map<T, V>(this IEnumerable<T> enumerable, Func<T, V> pred)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: pred
+      type: System.Func{{T},{V}}
+    typeParameters:
+    - id: T
+    - id: V
+    return:
+      type: System.Collections.Generic.IEnumerable{{V}}
+    content.vb: Public Shared Function Map(Of T, V)(enumerable As IEnumerable(Of T), pred As Func(Of T, V)) As IEnumerable(Of V)
+  overload: System.Extension.Map*
+  nameWithType.vb: Extension.Map(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+  fullName.vb: System.Extension.Map(Of T, V)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, V))
+  name.vb: Map(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+- uid: System.Extension.Filter``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  commentId: M:System.Extension.Filter``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  id: Filter``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Filter<T>(IEnumerable<T>, Func<T, bool>)
+  nameWithType: Extension.Filter<T>(IEnumerable<T>, Func<T, bool>)
+  fullName: System.Extension.Filter<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Filter
+    path: ../SysExtension.cs
+    startLine: 39
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static IEnumerable<T> Filter<T>(this IEnumerable<T> enumerable, Func<T, bool> pred)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: pred
+      type: System.Func{{T},System.Boolean}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Public Shared Function Filter(Of T)(enumerable As IEnumerable(Of T), pred As Func(Of T, Boolean)) As IEnumerable(Of T)
+  overload: System.Extension.Filter*
+  nameWithType.vb: Extension.Filter(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+  fullName.vb: System.Extension.Filter(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean))
+  name.vb: Filter(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+- uid: System.Extension.FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:System.Extension.FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  id: FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: FilterMap<T, V>(IEnumerable<T>, Func<T, V>)
+  nameWithType: Extension.FilterMap<T, V>(IEnumerable<T>, Func<T, V>)
+  fullName: System.Extension.FilterMap<T, V>(System.Collections.Generic.IEnumerable<T>, System.Func<T, V>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: FilterMap
+    path: ../SysExtension.cs
+    startLine: 44
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static IEnumerable<V> FilterMap<T, V>(this IEnumerable<T> enumerable, Func<T, V> pred)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: pred
+      type: System.Func{{T},{V}}
+    typeParameters:
+    - id: T
+    - id: V
+    return:
+      type: System.Collections.Generic.IEnumerable{{V}}
+    content.vb: Public Shared Function FilterMap(Of T, V)(enumerable As IEnumerable(Of T), pred As Func(Of T, V)) As IEnumerable(Of V)
+  overload: System.Extension.FilterMap*
+  nameWithType.vb: Extension.FilterMap(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+  fullName.vb: System.Extension.FilterMap(Of T, V)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, V))
+  name.vb: FilterMap(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+- uid: System.Extension.Flatten``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+  commentId: M:System.Extension.Flatten``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+  id: Flatten``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Flatten<T>(IEnumerable<IEnumerable<T>>)
+  nameWithType: Extension.Flatten<T>(IEnumerable<IEnumerable<T>>)
+  fullName: System.Extension.Flatten<T>(System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<T>>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Flatten
+    path: ../SysExtension.cs
+    startLine: 49
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static IEnumerable<T> Flatten<T>(this IEnumerable<IEnumerable<T>> enumerable)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{{T}}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Public Shared Function Flatten(Of T)(enumerable As IEnumerable(Of IEnumerable(Of T))) As IEnumerable(Of T)
+  overload: System.Extension.Flatten*
+  nameWithType.vb: Extension.Flatten(Of T)(IEnumerable(Of IEnumerable(Of T)))
+  fullName.vb: System.Extension.Flatten(Of T)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of T)))
+  name.vb: Flatten(Of T)(IEnumerable(Of IEnumerable(Of T)))
+- uid: System.Extension.Enumerate``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:System.Extension.Enumerate``1(System.Collections.Generic.IEnumerable{``0})
+  id: Enumerate``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Enumerate<T>(IEnumerable<T>)
+  nameWithType: Extension.Enumerate<T>(IEnumerable<T>)
+  fullName: System.Extension.Enumerate<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Enumerate
+    path: ../SysExtension.cs
+    startLine: 54
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static IEnumerable<(int, T)> Enumerate<T>(this IEnumerable<T> enumerable)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,{T}}}
+    content.vb: Public Shared Function Enumerate(Of T)(enumerable As IEnumerable(Of T)) As IEnumerable(Of (Integer, T))
+  overload: System.Extension.Enumerate*
+  nameWithType.vb: Extension.Enumerate(Of T)(IEnumerable(Of T))
+  fullName.vb: System.Extension.Enumerate(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Enumerate(Of T)(IEnumerable(Of T))
+- uid: System.Extension.Collect``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:System.Extension.Collect``1(System.Collections.Generic.IEnumerable{``0})
+  id: Collect``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Collect<T>(IEnumerable<T>)
+  nameWithType: Extension.Collect<T>(IEnumerable<T>)
+  fullName: System.Extension.Collect<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Collect
+    path: ../SysExtension.cs
+    startLine: 59
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static List<T> Collect<T>(this IEnumerable<T> enumerable)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Shared Function Collect(Of T)(enumerable As IEnumerable(Of T)) As List(Of T)
+  overload: System.Extension.Collect*
+  nameWithType.vb: Extension.Collect(Of T)(IEnumerable(Of T))
+  fullName.vb: System.Extension.Collect(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Collect(Of T)(IEnumerable(Of T))
+- uid: System.Extension.Fold``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})
+  commentId: M:System.Extension.Fold``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})
+  id: Fold``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Fold<T, R>(IEnumerable<T>, R, Func<R, T, R>)
+  nameWithType: Extension.Fold<T, R>(IEnumerable<T>, R, Func<R, T, R>)
+  fullName: System.Extension.Fold<T, R>(System.Collections.Generic.IEnumerable<T>, R, System.Func<R, T, R>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Fold
+    path: ../SysExtension.cs
+    startLine: 64
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static R Fold<T, R>(this IEnumerable<T> enumerable, R root, Func<R, T, R> acc)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: root
+      type: '{R}'
+    - id: acc
+      type: System.Func{{R},{T},{R}}
+    typeParameters:
+    - id: T
+    - id: R
+    return:
+      type: '{R}'
+    content.vb: Public Shared Function Fold(Of T, R)(enumerable As IEnumerable(Of T), root As R, acc As Func(Of R, T, R)) As R
+  overload: System.Extension.Fold*
+  nameWithType.vb: Extension.Fold(Of T, R)(IEnumerable(Of T), R, Func(Of R, T, R))
+  fullName.vb: System.Extension.Fold(Of T, R)(System.Collections.Generic.IEnumerable(Of T), R, System.Func(Of R, T, R))
+  name.vb: Fold(Of T, R)(IEnumerable(Of T), R, Func(Of R, T, R))
+- uid: System.Extension.Reduce``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})
+  commentId: M:System.Extension.Reduce``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})
+  id: Reduce``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Reduce<T>(IEnumerable<T>, Func<T, T, T>)
+  nameWithType: Extension.Reduce<T>(IEnumerable<T>, Func<T, T, T>)
+  fullName: System.Extension.Reduce<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, T, T>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Reduce
+    path: ../SysExtension.cs
+    startLine: 76
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static T? Reduce<T>(this IEnumerable<T> enumerable, Func<T, T, T> acc)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: acc
+      type: System.Func{{T},{T},{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Reduce(Of T)(enumerable As IEnumerable(Of T), acc As Func(Of T, T, T)) As T
+  overload: System.Extension.Reduce*
+  nameWithType.vb: Extension.Reduce(Of T)(IEnumerable(Of T), Func(Of T, T, T))
+  fullName.vb: System.Extension.Reduce(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, T))
+  name.vb: Reduce(Of T)(IEnumerable(Of T), Func(Of T, T, T))
+- uid: System.Extension.Foreach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:System.Extension.Foreach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  id: Foreach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Foreach<T>(IEnumerable<T>, Action<T>)
+  nameWithType: Extension.Foreach<T>(IEnumerable<T>, Action<T>)
+  fullName: System.Extension.Foreach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Foreach
+    path: ../SysExtension.cs
+    startLine: 95
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static void Foreach<T>(this IEnumerable<T> enumerable, Action<T> each)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: each
+      type: System.Action{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub Foreach(Of T)(enumerable As IEnumerable(Of T), [each] As Action(Of T))
+  overload: System.Extension.Foreach*
+  nameWithType.vb: Extension.Foreach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName.vb: System.Extension.Foreach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  name.vb: Foreach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: System.Extension.TryForeach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:System.Extension.TryForeach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  id: TryForeach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: TryForeach<T, R>(IEnumerable<T>, Func<T, R?>)
+  nameWithType: Extension.TryForeach<T, R>(IEnumerable<T>, Func<T, R?>)
+  fullName: System.Extension.TryForeach<T, R>(System.Collections.Generic.IEnumerable<T>, System.Func<T, R?>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: TryForeach
+    path: ../SysExtension.cs
+    startLine: 103
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static bool TryForeach<T, R>(this IEnumerable<T> enumerable, Func<T, R?> each)
+    parameters:
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: each
+      type: System.Func{{T},{R}}
+    typeParameters:
+    - id: T
+    - id: R
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryForeach(Of T, R)(enumerable As IEnumerable(Of T), [each] As Func(Of T, R)) As Boolean
+  overload: System.Extension.TryForeach*
+  nameWithType.vb: Extension.TryForeach(Of T, R)(IEnumerable(Of T), Func(Of T, R))
+  fullName.vb: System.Extension.TryForeach(Of T, R)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, R))
+  name.vb: TryForeach(Of T, R)(IEnumerable(Of T), Func(Of T, R))
+- uid: System.Extension.Inspect``1(``0,System.Action{``0})
+  commentId: M:System.Extension.Inspect``1(``0,System.Action{``0})
+  id: Inspect``1(``0,System.Action{``0})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Inspect<T>(T?, Action<T>)
+  nameWithType: Extension.Inspect<T>(T?, Action<T>)
+  fullName: System.Extension.Inspect<T>(T?, System.Action<T>)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Inspect
+    path: ../SysExtension.cs
+    startLine: 118
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static T? Inspect<T>(this T? nullable, Action<T> inspect)
+    parameters:
+    - id: nullable
+      type: '{T}'
+    - id: inspect
+      type: System.Action{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Inspect(Of T)(nullable As T, inspect As Action(Of T)) As T
+  overload: System.Extension.Inspect*
+  nameWithType.vb: Extension.Inspect(Of T)(T, Action(Of T))
+  fullName.vb: System.Extension.Inspect(Of T)(T, System.Action(Of T))
+  name.vb: Inspect(Of T)(T, Action(Of T))
+- uid: System.Extension.FaceTo(Faction)
+  commentId: M:System.Extension.FaceTo(Faction)
+  id: FaceTo(Faction)
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: FaceTo(Faction)
+  nameWithType: Extension.FaceTo(Faction)
+  fullName: System.Extension.FaceTo(Faction)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: FaceTo
+    path: ../SysExtension.cs
+    startLine: 128
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static Faction FaceTo(this Faction faction)
+    parameters:
+    - id: faction
+      type: Faction
+    return:
+      type: Faction
+    content.vb: Public Shared Function FaceTo(faction As Faction) As Faction
+  overload: System.Extension.FaceTo*
+- uid: System.Extension.GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
+  commentId: M:System.Extension.GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
+  id: GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: GetHands(BattleUnitModel?, Func<BattleDiceCardModel, bool>?)
+  nameWithType: Extension.GetHands(BattleUnitModel?, Func<BattleDiceCardModel, bool>?)
+  fullName: System.Extension.GetHands(BattleUnitModel?, System.Func<BattleDiceCardModel, bool>?)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: GetHands
+    path: ../SysExtension.cs
+    startLine: 137
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static List<BattleDiceCardModel> GetHands(this BattleUnitModel? owner, Func<BattleDiceCardModel, bool>? filter = null)
+    parameters:
+    - id: owner
+      type: BattleUnitModel
+    - id: filter
+      type: System.Func{BattleDiceCardModel,System.Boolean}
+    return:
+      type: System.Collections.Generic.List{BattleDiceCardModel}
+    content.vb: Public Shared Function GetHands(owner As BattleUnitModel, filter As Func(Of BattleDiceCardModel, Boolean) = Nothing) As List(Of BattleDiceCardModel)
+  overload: System.Extension.GetHands*
+  nameWithType.vb: Extension.GetHands(BattleUnitModel, Func(Of BattleDiceCardModel, Boolean))
+  fullName.vb: System.Extension.GetHands(BattleUnitModel, System.Func(Of BattleDiceCardModel, Boolean))
+  name.vb: GetHands(BattleUnitModel, Func(Of BattleDiceCardModel, Boolean))
+- uid: System.Extension.Say(BattleUnitModel,System.String)
+  commentId: M:System.Extension.Say(BattleUnitModel,System.String)
+  id: Say(BattleUnitModel,System.String)
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: Say(BattleUnitModel, string)
+  nameWithType: Extension.Say(BattleUnitModel, string)
+  fullName: System.Extension.Say(BattleUnitModel, string)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: Say
+    path: ../SysExtension.cs
+    startLine: 147
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static void Say(this BattleUnitModel owner, string txt)
+    parameters:
+    - id: owner
+      type: BattleUnitModel
+    - id: txt
+      type: System.String
+    content.vb: Public Shared Sub Say(owner As BattleUnitModel, txt As String)
+  overload: System.Extension.Say*
+  nameWithType.vb: Extension.Say(BattleUnitModel, String)
+  fullName.vb: System.Extension.Say(BattleUnitModel, String)
+  name.vb: Say(BattleUnitModel, String)
+- uid: System.Extension.GetAsmDirectory(System.Type)
+  commentId: M:System.Extension.GetAsmDirectory(System.Type)
+  id: GetAsmDirectory(System.Type)
+  isExtensionMethod: true
+  parent: System.Extension
+  langs:
+  - csharp
+  - vb
+  name: GetAsmDirectory(Type)
+  nameWithType: Extension.GetAsmDirectory(Type)
+  fullName: System.Extension.GetAsmDirectory(System.Type)
+  type: Method
+  source:
+    remote:
+      path: DeviceOfHermes/SysExtension.cs
+      branch: master
+      repo: git@github.com:TundraClimate/LoR-Mods.git
+    id: GetAsmDirectory
+    path: ../SysExtension.cs
+    startLine: 152
+  assemblies:
+  - DeviceOfHermes
+  namespace: System
+  syntax:
+    content: public static string GetAsmDirectory(this Type ty)
+    parameters:
+    - id: ty
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetAsmDirectory(ty As Type) As String
+  overload: System.Extension.GetAsmDirectory*
+references:
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Extension.Min*
+  commentId: Overload:System.Extension.Min
+  href: System.Extension.html#System_Extension_Min_System_Int32_System_Int32_
+  name: Min
+  nameWithType: Extension.Min
+  fullName: System.Extension.Min
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Extension.Max*
+  commentId: Overload:System.Extension.Max
+  href: System.Extension.html#System_Extension_Max_System_Int32_System_Int32_
+  name: Max
+  nameWithType: Extension.Max
+  fullName: System.Extension.Max
+- uid: System.Extension.StripPrefix*
+  commentId: Overload:System.Extension.StripPrefix
+  href: System.Extension.html#System_Extension_StripPrefix_System_String_System_String_
+  name: StripPrefix
+  nameWithType: Extension.StripPrefix
+  fullName: System.Extension.StripPrefix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Extension.StripSuffix*
+  commentId: Overload:System.Extension.StripSuffix
+  href: System.Extension.html#System_Extension_StripSuffix_System_String_System_String_
+  name: StripSuffix
+  nameWithType: Extension.StripSuffix
+  fullName: System.Extension.StripSuffix
+- uid: System.Extension.Map*
+  commentId: Overload:System.Extension.Map
+  href: System.Extension.html#System_Extension_Map__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  name: Map
+  nameWithType: Extension.Map
+  fullName: System.Extension.Map
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func{{T},{V}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, V>
+  nameWithType: Func<T, V>
+  fullName: System.Func<T, V>
+  nameWithType.vb: Func(Of T, V)
+  fullName.vb: System.Func(Of T, V)
+  name.vb: Func(Of T, V)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{V}}
+  commentId: T:System.Collections.Generic.IEnumerable{``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<V>
+  nameWithType: IEnumerable<V>
+  fullName: System.Collections.Generic.IEnumerable<V>
+  nameWithType.vb: IEnumerable(Of V)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of V)
+  name.vb: IEnumerable(Of V)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Extension.Filter*
+  commentId: Overload:System.Extension.Filter
+  href: System.Extension.html#System_Extension_Filter__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  name: Filter
+  nameWithType: Extension.Filter
+  fullName: System.Extension.Filter
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, bool>
+  nameWithType: Func<T, bool>
+  fullName: System.Func<T, bool>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Extension.FilterMap*
+  commentId: Overload:System.Extension.FilterMap
+  href: System.Extension.html#System_Extension_FilterMap__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  name: FilterMap
+  nameWithType: Extension.FilterMap
+  fullName: System.Extension.FilterMap
+- uid: System.Extension.Flatten*
+  commentId: Overload:System.Extension.Flatten
+  href: System.Extension.html#System_Extension_Flatten__1_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable___0___
+  name: Flatten
+  nameWithType: Extension.Flatten
+  fullName: System.Extension.Flatten
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{{T}}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEnumerable<T>>
+  nameWithType: IEnumerable<IEnumerable<T>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<T>>
+  nameWithType.vb: IEnumerable(Of IEnumerable(Of T))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IEnumerable(Of IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Extension.Enumerate*
+  commentId: Overload:System.Extension.Enumerate
+  href: System.Extension.html#System_Extension_Enumerate__1_System_Collections_Generic_IEnumerable___0__
+  name: Enumerate
+  nameWithType: Extension.Enumerate
+  fullName: System.Extension.Enumerate
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,{T}}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,``0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(int, T)>
+  nameWithType: IEnumerable<(int, T)>
+  fullName: System.Collections.Generic.IEnumerable<(int, T)>
+  nameWithType.vb: IEnumerable(Of (Integer, T))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (Integer, T))
+  name.vb: IEnumerable(Of (Integer, T))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Extension.Collect*
+  commentId: Overload:System.Extension.Collect
+  href: System.Extension.html#System_Extension_Collect__1_System_Collections_Generic_IEnumerable___0__
+  name: Collect
+  nameWithType: Extension.Collect
+  fullName: System.Extension.Collect
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Extension.Fold*
+  commentId: Overload:System.Extension.Fold
+  href: System.Extension.html#System_Extension_Fold__2_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0___1__
+  name: Fold
+  nameWithType: Extension.Fold
+  fullName: System.Extension.Fold
+- uid: '{R}'
+  commentId: '!:R'
+  definition: R
+  name: R
+  nameWithType: R
+  fullName: R
+- uid: System.Func{{R},{T},{R}}
+  commentId: T:System.Func{``1,``0,``1}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<R, T, R>
+  nameWithType: Func<R, T, R>
+  fullName: System.Func<R, T, R>
+  nameWithType.vb: Func(Of R, T, R)
+  fullName.vb: System.Func(Of R, T, R)
+  name.vb: Func(Of R, T, R)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: R
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: R
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: )
+- uid: R
+  name: R
+  nameWithType: R
+  fullName: R
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Extension.Reduce*
+  commentId: Overload:System.Extension.Reduce
+  href: System.Extension.html#System_Extension_Reduce__1_System_Collections_Generic_IEnumerable___0__System_Func___0___0___0__
+  name: Reduce
+  nameWithType: Extension.Reduce
+  fullName: System.Extension.Reduce
+- uid: System.Func{{T},{T},{T}}
+  commentId: T:System.Func{``0,``0,``0}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T, T, T>
+  nameWithType: Func<T, T, T>
+  fullName: System.Func<T, T, T>
+  nameWithType.vb: Func(Of T, T, T)
+  fullName.vb: System.Func(Of T, T, T)
+  name.vb: Func(Of T, T, T)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Extension.Foreach*
+  commentId: Overload:System.Extension.Foreach
+  href: System.Extension.html#System_Extension_Foreach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: Foreach
+  nameWithType: Extension.Foreach
+  fullName: System.Extension.Foreach
+- uid: System.Action{{T}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Extension.TryForeach*
+  commentId: Overload:System.Extension.TryForeach
+  href: System.Extension.html#System_Extension_TryForeach__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  name: TryForeach
+  nameWithType: Extension.TryForeach
+  fullName: System.Extension.TryForeach
+- uid: System.Func{{T},{R}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, R>
+  nameWithType: Func<T, R>
+  fullName: System.Func<T, R>
+  nameWithType.vb: Func(Of T, R)
+  fullName.vb: System.Func(Of T, R)
+  name.vb: Func(Of T, R)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Extension.Inspect*
+  commentId: Overload:System.Extension.Inspect
+  href: System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
+  name: Inspect
+  nameWithType: Extension.Inspect
+  fullName: System.Extension.Inspect
+- uid: System.Extension.FaceTo*
+  commentId: Overload:System.Extension.FaceTo
+  href: System.Extension.html#System_Extension_FaceTo_Faction_
+  name: FaceTo
+  nameWithType: Extension.FaceTo
+  fullName: System.Extension.FaceTo
+- uid: Faction
+  commentId: T:Faction
+  isExternal: true
+  name: Faction
+  nameWithType: Faction
+  fullName: Faction
+- uid: System.Extension.GetHands*
+  commentId: Overload:System.Extension.GetHands
+  href: System.Extension.html#System_Extension_GetHands_BattleUnitModel_System_Func_BattleDiceCardModel_System_Boolean__
+  name: GetHands
+  nameWithType: Extension.GetHands
+  fullName: System.Extension.GetHands
+- uid: BattleUnitModel
+  commentId: T:BattleUnitModel
+  isExternal: true
+  name: BattleUnitModel
+  nameWithType: BattleUnitModel
+  fullName: BattleUnitModel
+- uid: System.Func{BattleDiceCardModel,System.Boolean}
+  commentId: T:System.Func{BattleDiceCardModel,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<BattleDiceCardModel, bool>
+  nameWithType: Func<BattleDiceCardModel, bool>
+  fullName: System.Func<BattleDiceCardModel, bool>
+  nameWithType.vb: Func(Of BattleDiceCardModel, Boolean)
+  fullName.vb: System.Func(Of BattleDiceCardModel, Boolean)
+  name.vb: Func(Of BattleDiceCardModel, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: BattleDiceCardModel
+    name: BattleDiceCardModel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleDiceCardModel
+    name: BattleDiceCardModel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.List{BattleDiceCardModel}
+  commentId: T:System.Collections.Generic.List{BattleDiceCardModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BattleDiceCardModel>
+  nameWithType: List<BattleDiceCardModel>
+  fullName: System.Collections.Generic.List<BattleDiceCardModel>
+  nameWithType.vb: List(Of BattleDiceCardModel)
+  fullName.vb: System.Collections.Generic.List(Of BattleDiceCardModel)
+  name.vb: List(Of BattleDiceCardModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BattleDiceCardModel
+    name: BattleDiceCardModel
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleDiceCardModel
+    name: BattleDiceCardModel
+    isExternal: true
+  - name: )
+- uid: System.Extension.Say*
+  commentId: Overload:System.Extension.Say
+  href: System.Extension.html#System_Extension_Say_BattleUnitModel_System_String_
+  name: Say
+  nameWithType: Extension.Say
+  fullName: System.Extension.Say
+- uid: System.Extension.GetAsmDirectory*
+  commentId: Overload:System.Extension.GetAsmDirectory
+  href: System.Extension.html#System_Extension_GetAsmDirectory_System_Type_
+  name: GetAsmDirectory
+  nameWithType: Extension.GetAsmDirectory
+  fullName: System.Extension.GetAsmDirectory
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

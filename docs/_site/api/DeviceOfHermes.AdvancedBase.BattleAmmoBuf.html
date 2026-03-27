@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BattleAmmoBuf | DeviceOfHermes </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BattleAmmoBuf | DeviceOfHermes ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/LoR-Mods/new/master/apiSpec/new?filename=DeviceOfHermes_AdvancedBase_BattleAmmoBuf.md&amp;value=---%0Auid%3A%20DeviceOfHermes.AdvancedBase.BattleAmmoBuf%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DeviceOfHermes">
+            DeviceOfHermes
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf">
+
+
+
+  <h1 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf" class="text-break">
+Class BattleAmmoBuf  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DeviceOfHermes.html">DeviceOfHermes</a>.<a class="xref" href="DeviceOfHermes.AdvancedBase.html">AdvancedBase</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BattleAmmoBuf : AdvancedUnitBuf</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BattleUnitBuf</span></div>
+      <div><a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html">AdvancedUnitBuf</a></div>
+      <div><span class="xref">BattleAmmoBuf</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_Init_BattleUnitModel_">AdvancedUnitBuf.Init(BattleUnitModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_DefaultStack">AdvancedUnitBuf.DefaultStack</a>
+    </div>
+    <div>
+      <a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsInstant">AdvancedUnitBuf.IsInstant</a>
+    </div>
+    <div>
+      <a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnInstant">AdvancedUnitBuf.OnInstant()</a>
+    </div>
+    <div>
+      <a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherInstant_DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_">AdvancedUnitBuf.OnOtherInstant(AdvancedUnitBuf)</a>
+    </div>
+    <div>
+      <a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStackChange_System_Int32_">AdvancedUnitBuf.OnStackChange(int)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.hide</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.stack</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf._owner</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf._bufIconDictionary</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.OnAddBuf(int)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.Destroy()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsDestroyed()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.NullifyNotTargetable()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsTargetable()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsTauntable()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsTargetable(BattleUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsCardChoosable(BattleDiceCardModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsActionable()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetFixedTarget()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsInvincibleHp(BattleUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsInvincibleBp(BattleUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnDie()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnDieForReadybuf()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnDieOtherUnit(BattleUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetStatBonus()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.MaxPlayPointAdder()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnRoundStart()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnRoundStartAfter()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnDrawCard()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.SpeedDiceNumAdder()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.SpeedDiceBreakedAdder()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.GetSpeedDiceAdder(int)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetDamageReduction(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetBreakDamageReduction(BehaviourDetail)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetDamageIncreaseRate()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.GetEmotionCoinAdder(int)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetBreakDamageIncreaseRate()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetDamageReductionRate()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetBreakDamageReductionRate()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetDamageReductionAll()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetBufIcon()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnRollSpeedDice()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnAfterRollSpeedDice()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnRoundEnd()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnEndOneSideAction(BattlePlayingCardDataInUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnEndParrying()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnKill(BattleUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnUseCard(BattlePlayingCardDataInUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnDestroyCard(BattlePlayingCardDataInUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.BeforeRollDice(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.BeforeGiveDamage(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.AfterDiceAction(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnSuccessAttack(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnWinParrying(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnDrawParrying(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnLoseParrying(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnPrintEffect(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.OnTakeDamageByAttack(BattleDiceBehavior, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.OnFriendTakeDamageByAttack(BattleDiceBehavior, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.ChangeAttackTarget(BattleDiceCardModel, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.ChangeTargetSlot(BattleDiceCardModel, BattleUnitModel, int, int, bool)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsAttackDice(BehaviourDetail)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsDefenseDice(BehaviourDetail)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnEndBattlePhase()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">BattleUnitBuf.OnLayerChanged(string)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetResistHP(AtkResist, BehaviourDetail)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetResistBP(AtkResist, BehaviourDetail)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnRollDice(BattleDiceBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnRollDiceInRecounter()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnHpZero()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.CanRecoverHp(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.CanRecoverBreak(int)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetUIData()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.DirectAttack()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnRoundEndTheLast()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnStartOneSideAction(BattlePlayingCardDataInUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnStartTargetedOneSide(BattlePlayingCardDataInUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnStartParrying(BattlePlayingCardDataInUnitModel)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.BeforeTakeDamage(BattleUnitModel, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.BeforeLoseHPNotDmg(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.OnLoseHp(int)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsImmortal()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsStraighten()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsImmune(KeywordBuf)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.DmgFactor(int, DamageType, KeywordBuf)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.BreakDmgFactor(int, DamageType, KeywordBuf)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsImmuneDmg(DamageType, KeywordBuf)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsImmuneBreakDmg(DamageType)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsImmune(BufPositiveType)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsImmune(BattleUnitBuf)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsImmuneDmg()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnBreakState()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.TeamKill()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsNullifiedPower()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsHalfPower()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.OnGiveKeywordBufByCard(BattleUnitBuf, int, BattleUnitModel)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetMultiplierOnGiveKeywordBufByCard(BattleUnitBuf, BattleUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetCardCostAdder(BattleDiceCardModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetMinHp()</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.GetAddTextData()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">BattleUnitBuf.ChangeDamage(BattleUnitModel, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">BattleUnitBuf.ChangeDiceResult(BattleDiceBehavior, ref int)</a>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.OnEndBattle(BattlePlayingCardDataInUnitModel)</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.IsControllable</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.Hide</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.paramInBufDesc</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.bufType</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.independentBufIcon</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.keywordId</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.keywordIconId</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.positiveType</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.isAssimilation</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.bufActivatedName</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.bufActivatedNameWithStack</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.bufActivatedText</span>
+    </div>
+    <div>
+      <span class="xref">BattleUnitBuf.bufKeywordText</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__">Extension.Inspect&lt;T&gt;(T?, Action&lt;T&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_ConsumedStack_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_ConsumedStack" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.ConsumedStack">
+  ConsumedStack
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConsumedStack { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_DiceBlockWithNotConsumable_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_DiceBlockWithNotConsumable" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.DiceBlockWithNotConsumable">
+  DiceBlockWithNotConsumable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool DiceBlockWithNotConsumable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_GainByReload_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_GainByReload" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.GainByReload">
+  GainByReload
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GainByReload { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_LosedStack_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_LosedStack" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack">
+  LosedStack
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LosedStack { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Consume_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Consume_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Consume(System.Int32)">
+  Consume(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Consume(int num)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_IsConsumable_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_IsConsumable_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable(System.Int32)">
+  IsConsumable(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsConsumable(int num = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCanceled_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCanceled" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled">
+  OnCanceled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCanceled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_System_Int32__" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32@)">
+  OnConsume(ref int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConsume(ref int require)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>require</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnReload_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnReload" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload">
+  OnReload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool OnReload()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Reload_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Reload" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload">
+  Reload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/LoR-Mods/blob/master/DeviceOfHermes/BattleAmmoBuf.cs/#L5" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Diagnostics.CodeAnalysis
+  commentId: N:System.Diagnostics.CodeAnalysis
+  id: System.Diagnostics.CodeAnalysis
+  children:
+  - System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+  - System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+  langs:
+  - csharp
+  - vb
+  name: System.Diagnostics.CodeAnalysis
+  nameWithType: System.Diagnostics.CodeAnalysis
+  fullName: System.Diagnostics.CodeAnalysis
+  type: Namespace
+  assemblies:
+  - DeviceOfHermes
+references:
+- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+  commentId: T:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+  parent: System.Diagnostics.CodeAnalysis
+  href: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html
+  name: NotNullWhenAttribute
+  nameWithType: NotNullWhenAttribute
+  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+  commentId: T:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+  href: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html
+  name: MaybeNullWhenAttribute
+  nameWithType: MaybeNullWhenAttribute
+  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+- uid: System.Diagnostics.CodeAnalysis
+  commentId: N:System.Diagnostics.CodeAnalysis
+  href: System.html
+  name: System.Diagnostics.CodeAnalysis
+  nameWithType: System.Diagnostics.CodeAnalysis
+  fullName: System.Diagnostics.CodeAnalysis
+  spec.csharp:
+  - uid: System
+    name: System
+    href: System.html
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    href: System.Diagnostics.html
+  - name: .
+  - uid: System.Diagnostics.CodeAnalysis
+    name: CodeAnalysis
+    href: System.Diagnostics.CodeAnalysis.html
+  spec.vb:
+  - uid: System
+    name: System
+    href: System.html
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    href: System.Diagnostics.html
+  - name: .
+  - uid: System.Diagnostics.CodeAnalysis
+    name: CodeAnalysis
+    href: System.Diagnostics.CodeAnalysis.html

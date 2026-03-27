@@ -1,0 +1,121 @@
+### YamlMime:TableOfContent
+items:
+- uid: DeviceOfHermes
+  name: DeviceOfHermes
+  type: Namespace
+  items:
+  - uid: DeviceOfHermes.AdditonalOnlyCard
+    name: AdditonalOnlyCard
+    type: Class
+  - uid: DeviceOfHermes.BattleBufExtension
+    name: BattleBufExtension
+    type: Class
+  - uid: DeviceOfHermes.CustomDiceSprite
+    name: CustomDiceSprite
+    type: Class
+  - uid: DeviceOfHermes.HermesConstants
+    name: HermesConstants
+    type: Class
+  - uid: DeviceOfHermes.PassiveResolver
+    name: PassiveResolver
+    type: Class
+  - uid: DeviceOfHermes.ScheduleRunner
+    name: ScheduleRunner
+    type: Class
+  - uid: DeviceOfHermes.ScheduleTiming
+    name: ScheduleTiming
+    type: Enum
+  - uid: DeviceOfHermes.StyleExtension
+    name: StyleExtension
+    type: Class
+  - uid: DeviceOfHermes.VannilaUnitBuf
+    name: VannilaUnitBuf
+    type: Class
+- uid: DeviceOfHermes.AdvancedBase
+  name: DeviceOfHermes.AdvancedBase
+  type: Namespace
+  items:
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase
+    name: AdvancedCardBase
+    type: Class
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
+    name: AdvancedDiceBase
+    type: Class
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
+    name: AdvancedPassiveBase
+    type: Class
+  - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
+    name: AdvancedUnitBuf
+    type: Class
+  - uid: DeviceOfHermes.AdvancedBase.AmmoExtension
+    name: AmmoExtension
+    type: Class
+  - uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf
+    name: BattleAmmoBuf
+    type: Class
+  - uid: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1
+    name: ReloadAmmoBuf<T>
+    type: Class
+- uid: DeviceOfHermes.CustomDice
+  name: DeviceOfHermes.CustomDice
+  type: Namespace
+  items:
+  - uid: DeviceOfHermes.CustomDice.RevengeDice
+    name: RevengeDice
+    type: Class
+  - uid: DeviceOfHermes.CustomDice.UnbreakableDice
+    name: UnbreakableDice
+    type: Class
+- uid: DeviceOfHermes.Resource
+  name: DeviceOfHermes.Resource
+  type: Namespace
+  items:
+  - uid: DeviceOfHermes.Resource.Artwork
+    name: Artwork
+    type: Class
+  - uid: DeviceOfHermes.Resource.ReadXmlParser
+    name: ReadXmlParser
+    type: Class
+  - uid: DeviceOfHermes.Resource.TextModel
+    name: TextModel
+    type: Class
+- uid: System
+  name: System
+  type: Namespace
+  items:
+  - uid: System.AdvancedTakeDamage
+    name: AdvancedTakeDamage
+    type: Class
+  - uid: System.Extension
+    name: Extension
+    type: Class
+  - uid: System.Hermes
+    name: Hermes
+    type: Class
+  - uid: System.Mem
+    name: Mem
+    type: Class
+  - uid: System.MessageLevel
+    name: MessageLevel
+    type: Enum
+- uid: System.Collections.Generic
+  name: System.Collections.Generic
+  type: Namespace
+  items:
+  - uid: System.Collections.Generic.Peekable`1
+    name: Peekable<T>
+    type: Class
+  - uid: System.Collections.Generic.Walkdir
+    name: Walkdir
+    type: Class
+- uid: System.Diagnostics.CodeAnalysis
+  name: System.Diagnostics.CodeAnalysis
+  type: Namespace
+  items:
+  - uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+    name: MaybeNullWhenAttribute
+    type: Class
+  - uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+    name: NotNullWhenAttribute
+    type: Class
+memberLayout: SamePage
