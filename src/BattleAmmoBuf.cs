@@ -2,20 +2,49 @@ using LOR_DiceSystem;
 
 namespace DeviceOfHermes.AdvancedBase;
 
+/// <summary>A ammo optimized <see cref="BattleUnitBuf"/></summary>
+/// <remarks>
+/// What is ammo:<br/>
+/// Is consumable, and generally can reload.
+/// </remarks>
+/// <example><code>
+/// public class BattleUnitBuf_Ammo : BattleAmmoBuf
+/// {
+/// }
+/// </code></example>
 public class BattleAmmoBuf : AdvancedUnitBuf
 {
+    /// <summary>A number of gain by reloaded</summary>
+    /// <returns>Returns number by reload</returns>
     public virtual int GainByReload => this.DefaultStack;
 
+    /// <summary>Is atk dice block when stack is zero</summary>
+    /// <returns>Returns true if block</returns>
     public virtual bool DiceBlockWithNotConsumable => true;
 
+    /// <summary>A number of Consumed ammo value excludes reload</summary>
+    /// <returns>Returns number of consumed</returns>
     public int ConsumedStack => _consumedStack;
 
+    /// <summary>A number of Consumed ammo value includes reload</summary>
+    /// <returns>Returns number of consumed</returns>
     public int LosedStack => _losedStack;
 
     private int _consumedStack = 0;
 
     private int _losedStack = 0;
 
+    /// <summary>Consume ammo</summary>
+    /// <param name="num">A number of consume</param>
+    /// <remarks>
+    /// Ammo consume with <paramref name="num"/> stack. <br/>
+    /// <see cref="IsConsumable(int)"/> if false, will consuming cancel.
+    /// </remarks>
+    /// <example><code>
+    /// var ammo = owner.GetBuf&lt;MyAmmoBuf&gt;();
+    ///
+    /// ammo.Consume(1);
+    /// </code></example>
     public void Consume(int num)
     {
         this.OnConsume(ref num);
@@ -39,19 +68,33 @@ public class BattleAmmoBuf : AdvancedUnitBuf
         }
     }
 
+    /// <summary>Unitbuf on consumed ammo</summary>
+    /// <param name="require">A value of required number by consume</param>
     public virtual void OnConsume(ref int require)
     {
     }
 
+    /// <summary>Unitbuf on reload cancelled</summary>
     public virtual void OnCanceled()
     {
     }
 
+    /// <summary>Unit buf is ammo consumable</summary>
+    /// <returns>An ammo is consumable</returns>
     public virtual bool IsConsumable(int num = 1)
     {
         return base.stack != 0 && base.stack >= num;
     }
 
+    /// <summary>Reload ammo</summary>
+    /// <remarks>
+    /// <see cref="OnReload"/> if false, will reloading cancel.
+    /// </remarks>
+    /// <example><code>
+    /// var ammo = owner.GetBuf&lt;MyAmmoBuf&gt;();
+    ///
+    /// ammo.Reload();
+    /// </code></example>
     public void Reload()
     {
         if (this.OnReload())
@@ -61,6 +104,8 @@ public class BattleAmmoBuf : AdvancedUnitBuf
         }
     }
 
+    /// <summary>Unitbuf on reload</summary>
+    /// <returns>Reload be cancelled if false</returns>
     public virtual bool OnReload()
     {
         return true;
@@ -92,19 +137,44 @@ public class BattleAmmoBuf : AdvancedUnitBuf
     }
 }
 
+/// <summary>A instant <see cref="BattleUnitBuf"/> for reload ammo</summary>
+/// <typeparam name="T">A type of BattleAmmoBuf</typeparam>
+/// <remarks>
+/// Reload instantly applied when inflict.
+/// </remarks>
+/// <example><code>
+/// public class BattleUnitBuf_Reload : ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;
+/// {
+/// }
+///
+/// // or Simply
+///
+/// owner.bufListDetail.AddBuf(new ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;());
+/// </code></example>
 public class ReloadAmmoBuf<T> : AdvancedUnitBuf
     where T : BattleAmmoBuf
 {
+    /// <summary>This unitbuf is instat</summary>
     public override bool IsInstant => true;
 
+    /// <summary>Reload for T</summary>
     public override void OnInstant()
     {
         base._owner?.ReloadAmmo<T>();
     }
 }
 
+/// <summary>The functions related to BattleAmmoBuf</summary>
 public static class AmmoExtension
 {
+    /// <summary>Consumes ammos if find</summary>
+    /// <param name="owner">Consumes owner</param>
+    /// <param name="num">Consumes number</param>
+    /// <typeparam name="T">Ammo type</typeparam>
+    /// <returns>Is find ammo buf</returns>
+    /// <example><code>
+    /// owner.ConsumeAmmo&lt;BattleUnitBuf_Ammo&gt;(6);
+    /// </code></example>
     public static bool ConsumeAmmo<T>(this BattleUnitModel? owner, int num)
         where T : BattleAmmoBuf
     {
@@ -115,6 +185,13 @@ public static class AmmoExtension
         return ammo is not null;
     }
 
+    /// <summary>Reload ammos if find</summary>
+    /// <param name="owner">Ammo owner</param>
+    /// <typeparam name="T">Ammo type</typeparam>
+    /// <returns>Is find ammo buf</returns>
+    /// <example><code>
+    /// owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;(6);
+    /// </code></example>
     public static bool ReloadAmmo<T>(this BattleUnitModel? owner)
         where T : BattleAmmoBuf
     {

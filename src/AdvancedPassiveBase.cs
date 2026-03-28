@@ -3,6 +3,15 @@ using HarmonyLib;
 
 namespace DeviceOfHermes.AdvancedBase;
 
+/// <summary>An advanced <see cref="PassiveAbilityBase"/></summary>
+/// <remarks>
+/// Can replaces <c>PassiveAbilityBase</c> into this.
+/// </remarks>
+/// <example><code>
+/// public class PassiveAbility_Advance : AdvancedPassiveBase
+/// {
+/// }
+/// </code></example>
 public class AdvancedPassiveBase : PassiveAbilityBase
 {
     static AdvancedPassiveBase()
@@ -19,34 +28,52 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         harmony.CreateClassProcessor(typeof(PassivePatch.PatchOnChangeTarget)).Patch();
     }
 
+    /// <summary>Unit on round start before <see cref="PassiveAbilityBase.OnRoundStart"/></summary>
     public virtual void OnRoundStartFirst()
     {
     }
 
+    /// <summary>Unit on round start after <see cref="PassiveAbilityBase.OnRoundStartAfter"/></summary>
     public virtual void OnRoundStartLast()
     {
     }
 
+    /// <summary>Is <paramref name="card"/> is clashable</summary>
+    /// <param name="card">A card of set slot</param>
+    /// <returns>Is <paramref name="card"/> is clashable if true</returns>
     public virtual bool IsClashable(BattlePlayingCardDataInUnitModel card)
     {
         return true;
     }
 
+    /// <summary>Is <paramref name="self"/> is clashable with <paramref name="target"/></summary>
+    /// <param name="self">A card of set slot</param>
+    /// <param name="target">A card of targeted</param>
+    /// <returns>Is <paramref name="self"/> is clashable with <paramref name="target"/> if true</returns>
     public virtual bool IsClashable(BattlePlayingCardDataInUnitModel self, BattlePlayingCardDataInUnitModel target)
     {
         return true;
     }
 
+    /// <summary>Is <paramref name="self"/> is ignore speed by match with <paramref name="target"/></summary>
+    /// <param name="self">A card of set slot</param>
+    /// <param name="target">A card of targeted</param>
+    /// <returns>Is <paramref name="self"/> is ignore speed by match with <paramref name="target"/> if true</returns>
     public virtual bool IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel self, BattlePlayingCardDataInUnitModel target)
     {
         return false;
     }
 
+    /// <summary>Is allows round end</summary>
+    /// <returns>Is allows if true</returns>
     public virtual bool IsAllowRoundEnd()
     {
         return true;
     }
 
+    /// <summary>Can discard this <paramref name="card"/> by ability</summary>
+    /// <param name="card">A card of discard</param>
+    /// <returns>Is card can discard</returns>
     public virtual bool CanDiscardByAbility(BattleDiceCardModel card)
     {
         return true;

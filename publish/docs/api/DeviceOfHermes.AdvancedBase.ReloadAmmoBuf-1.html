@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ReloadAmmoBuf&lt;T&gt; | DeviceOfHermes ">
       
-      
+      <meta name="description" content="A instant  for reload ammo">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1" data-uid="DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1" class="text-break">
-Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L95"><i class="bi bi-code-slash"></i></a>
+Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A instant <span class="xref">BattleUnitBuf</span> for reload ammo</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,8 @@ Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A type of BattleAmmoBuf</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -504,7 +506,19 @@ Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   </dd></dl>
 
 
+  <h2 id="DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_examples">Examples</h2>
+  <pre><code class="lang-csharp">public class BattleUnitBuf_Reload : ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;
+{
+}
 
+// or Simply
+
+owner.bufListDetail.AddBuf(new ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;());</code></pre>
+
+
+  <h2 id="DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Reload instantly applied when inflict.</p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -515,10 +529,11 @@ Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
   <h3 id="DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_IsInstant" data-uid="DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.IsInstant">
   IsInstant
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This unitbuf is instat</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -550,10 +565,11 @@ Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
   <h3 id="DeviceOfHermes_AdvancedBase_ReloadAmmoBuf_1_OnInstant" data-uid="DeviceOfHermes.AdvancedBase.ReloadAmmoBuf`1.OnInstant">
   OnInstant()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reload for T</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -576,7 +592,7 @@ Class ReloadAmmoBuf&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L95" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L154" class="edit-link">Edit this page</a>
         </div>
 
 

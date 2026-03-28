@@ -36,7 +36,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.AdvancedBase.AdvancedCardBase",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.yml\" sourcestartlinenumber=\"1\">An advanced <xref href=\"DiceCardSelfAbilityBase\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -50,7 +50,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.AdvancedBase.AdvancedDiceBase",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.yml\" sourcestartlinenumber=\"1\">An advanced <xref href=\"DiceCardAbilityBase\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -64,7 +64,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.AdvancedBase.AdvancedPassiveBase",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.yml\" sourcestartlinenumber=\"1\">An advanced <xref href=\"PassiveAbilityBase\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +78,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.AdvancedBase.AdvancedUnitBuf",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.yml\" sourcestartlinenumber=\"1\">An advanced <xref href=\"BattleUnitBuf\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -92,7 +92,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.AdvancedBase.AmmoExtension",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AmmoExtension.yml\" sourcestartlinenumber=\"1\">The functions related to BattleAmmoBuf</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -106,7 +106,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.AdvancedBase.BattleAmmoBuf",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.yml\" sourcestartlinenumber=\"1\">A ammo optimized <xref href=\"BattleUnitBuf\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -120,7 +120,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.AdvancedBase.ReloadAmmoBuf<T>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.ReloadAmmoBuf-1.yml\" sourcestartlinenumber=\"1\">A instant <xref href=\"BattleUnitBuf\" data-throw-if-not-resolved=\"false\"></xref> for reload ammo</p>\n"
     },
     {
       "type": "ManagedReference",

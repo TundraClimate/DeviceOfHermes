@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AmmoExtension | DeviceOfHermes ">
       
-      
+      <meta name="description" content="The functions related to BattleAmmoBuf">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_AdvancedBase_AmmoExtension" data-uid="DeviceOfHermes.AdvancedBase.AmmoExtension" class="text-break">
-Class AmmoExtension  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L106"><i class="bi bi-code-slash"></i></a>
+Class AmmoExtension  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class AmmoExtension  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The functions related to BattleAmmoBuf</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class AmmoExtension  <a class="header-action link-secondary" title="View source"
 
   <h3 id="DeviceOfHermes_AdvancedBase_AmmoExtension_ConsumeAmmo__1_BattleUnitModel_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AmmoExtension.ConsumeAmmo``1(BattleUnitModel,System.Int32)">
   ConsumeAmmo&lt;T&gt;(BattleUnitModel?, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consumes ammos if find</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,26 +171,33 @@ Class AmmoExtension  <a class="header-action link-secondary" title="View source"
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>owner</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>Consumes owner</p>
+</dd>
     <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Consumes number</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is find ammo buf</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Ammo type</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_AdvancedBase_AmmoExtension_ConsumeAmmo__1_BattleUnitModel_System_Int32__examples">Examples</h4>
+  <pre><code class="lang-csharp">owner.ConsumeAmmo&lt;BattleUnitBuf_Ammo&gt;(6);</code></pre>
 
 
 
@@ -199,10 +208,11 @@ Class AmmoExtension  <a class="header-action link-secondary" title="View source"
 
   <h3 id="DeviceOfHermes_AdvancedBase_AmmoExtension_ReloadAmmo__1_BattleUnitModel_" data-uid="DeviceOfHermes.AdvancedBase.AmmoExtension.ReloadAmmo``1(BattleUnitModel)">
   ReloadAmmo&lt;T&gt;(BattleUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reload ammos if find</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -212,24 +222,30 @@ Class AmmoExtension  <a class="header-action link-secondary" title="View source"
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>owner</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>Ammo owner</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is find ammo buf</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Ammo type</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_AdvancedBase_AmmoExtension_ReloadAmmo__1_BattleUnitModel__examples">Examples</h4>
+  <pre><code class="lang-csharp">owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;(6);</code></pre>
 
 
 
@@ -240,7 +256,7 @@ Class AmmoExtension  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L106" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L168" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -3,6 +3,15 @@ using LOR_DiceSystem;
 
 namespace DeviceOfHermes.AdvancedBase;
 
+/// <summary>An advanced <see cref="DiceCardAbilityBase"/></summary>
+/// <remarks>
+/// Can replaces <c>DiceCardAbilityBase</c> into this.
+/// </remarks>
+/// <example><code>
+/// public class DiceCardAbility_Advance : AdvancedDiceBase
+/// {
+/// }
+/// </code></example>
 public class AdvancedDiceBase : DiceCardAbilityBase
 {
     static AdvancedDiceBase()
@@ -15,10 +24,13 @@ public class AdvancedDiceBase : DiceCardAbilityBase
         harmony.CreateClassProcessor(typeof(DicePatch.PatchOnAddKeepForDef)).Patch();
     }
 
+    /// <summary>Dice on move to keeped</summary>
     public virtual void OnAddToKeeped()
     {
     }
 
+    /// <summary>Dice can move to keeps</summary>
+    /// <returns>Is dice can move to keeps if true</returns>
     public virtual bool IsKeeps()
     {
         return true;
