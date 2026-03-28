@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using HarmonyLib;
 using LOR_DiceSystem;
 
-namespace System;
+namespace DeviceOfHermes;
 
 public static class AdvancedTakeDamage
 {
