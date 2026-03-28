@@ -260,7 +260,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.Resource.Artwork",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.Artwork.yml\" sourcestartlinenumber=\"1\">An additional artwork loader</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -400,7 +400,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Collections.Generic.Peekable<T>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.Peekable-1.yml\" sourcestartlinenumber=\"1\">Provides a wrapper over an enumerator that supports peeking the next element\nwithout consuming it.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -414,7 +414,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Collections.Generic.Walkdir",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.Walkdir.yml\" sourcestartlinenumber=\"1\">Provides utilities for recursively walking directories.</p>\n"
     },
     {
       "type": "ManagedReference",

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Walkdir | DeviceOfHermes ">
       
-      
+      <meta name="description" content="Provides utilities for recursively walking directories.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_Collections_Generic_Walkdir" data-uid="System.Collections.Generic.Walkdir" class="text-break">
-Class Walkdir  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Walkdir.cs/#L3"><i class="bi bi-code-slash"></i></a>
+Class Walkdir  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Walkdir.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Walkdir  <a class="header-action link-secondary" title="View source" href=
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides utilities for recursively walking directories.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,23 @@ Class Walkdir  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h2 id="System_Collections_Generic_Walkdir_examples">Examples</h2>
+  <pre><code class="lang-csharp">var files = Walkdir.GetFilesRecursive(path);
 
+foreach (var file in files)
+{
+    Console.WriteLine(file);
+}</code></pre>
+
+
+  <h2 id="System_Collections_Generic_Walkdir_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class performs a depth-first traversal of directories and collects file paths.</p>
+<p></p>
+<p>It keeps track of visited directories to prevent infinite loops caused by symbolic links
+or junctions.</p>
+<p></p>
+<p>Invalid paths or non-directory inputs are silently ignored.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +173,11 @@ Class Walkdir  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="System_Collections_Generic_Walkdir_GetFilesRecursive_System_String_" data-uid="System.Collections.Generic.Walkdir.GetFilesRecursive(System.String)">
   GetFilesRecursive(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Walkdir.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Walkdir.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Recursively retrieves all file paths under the specified directory.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +187,16 @@ Class Walkdir  <a class="header-action link-secondary" title="View source" href=
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The root directory to traverse.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A list of file paths found under the specified directory.
+Returns an empty list if the path does not exist or is not a directory.</p>
+</dd>
   </dl>
 
 
@@ -184,6 +205,13 @@ Class Walkdir  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h4 class="section" id="System_Collections_Generic_Walkdir_GetFilesRecursive_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method performs a depth-first traversal.</p>
+<p></p>
+<p>Directories that have already been visited are skipped to prevent infinite recursion.</p>
+<p></p>
+<p>No exceptions are thrown for invalid paths; such inputs are ignored.</p>
+</div>
 
 
 
@@ -192,7 +220,7 @@ Class Walkdir  <a class="header-action link-secondary" title="View source" href=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Walkdir.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Walkdir.cs/#L24" class="edit-link">Edit this page</a>
         </div>
 
 

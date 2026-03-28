@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Artwork | DeviceOfHermes ">
       
-      
+      <meta name="description" content="An additional artwork loader">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_Resource_Artwork" data-uid="DeviceOfHermes.Resource.Artwork" class="text-break">
-Class Artwork  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class Artwork  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>An additional artwork loader</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,19 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h2 id="DeviceOfHermes_Resource_Artwork_examples">Examples</h2>
+  <pre><code class="lang-csharp">var unitBufPath = Path.Combine(typeof(MyModInitializer).GetAsmDirectory(), "Artwork", "BattleUnitBuf");
 
+TextModel.OnLoadLocalize += lang =&gt; 
+{
+    Artwork.LoadBattleUnitBufSprites(path, true);
+}</code></pre>
+
+
+  <h2 id="DeviceOfHermes_Resource_Artwork_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The additional artworks that loaded by <a class="xref" href="DeviceOfHermes.Resource.Artwork.html">Artwork</a> will clear when main initializer.<br>
+therefore needs the lazy load and on-initialize hook.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +169,11 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="DeviceOfHermes_Resource_Artwork_LoadBattleUnitBufSprites_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites(System.String,System.Boolean)">
   LoadBattleUnitBufSprites(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loads all images with under <code>rootDirPath</code></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,9 +183,11 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rootDirPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A path that includes unitbuf sprite image</p>
+</dd>
     <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is replace if contains same ID</p>
+</dd>
   </dl>
 
 
@@ -180,7 +196,19 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_LoadBattleUnitBufSprites_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">var unitBufPath = Path.Combine(typeof(MyModInitializer).GetAsmDirectory(), "Artwork", "BattleUnitBuf");
 
+TextModel.OnLoadLocalize += lang =&gt; 
+{
+    Artwork.LoadBattleUnitBufSprites(path, true);
+}</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_LoadBattleUnitBufSprites_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Method retrieves under path files on recursive.<br>
+Only read the png or jpeg extension file.</p>
+</div>
 
 
 
@@ -189,10 +217,11 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.Boolean)">
   SetBattleUnitBufSprite(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set <span class="xref">BattleUnitBuf</span> with path</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -202,9 +231,11 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>imgPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A unit texure path</p>
+</dd>
     <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is replace if contains same ID</p>
+</dd>
   </dl>
 
 
@@ -213,7 +244,13 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">Artwork.SetBattleUnitBufSprite("MyUnitBuf.png");</code></pre>
 
+
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>An Id uses non-extension filename</p>
+</div>
 
 
 
@@ -222,10 +259,11 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.String,System.Boolean)">
   SetBattleUnitBufSprite(string, string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set <span class="xref">BattleUnitBuf</span> with path</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,11 +273,14 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>unitBufId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Specific ID</p>
+</dd>
     <dt><code>imgPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A unit texure path</p>
+</dd>
     <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is replace if contains same ID</p>
+</dd>
   </dl>
 
 
@@ -248,7 +289,13 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">Artwork.SetBattleUnitBufSprite("UnitBuf", "MyUnitBuf.png");</code></pre>
 
+
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Overrides Id with <code>unitBufId</code>.</p>
+</div>
 
 
 
@@ -257,10 +304,11 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_UnityEngine_Sprite_System_Boolean_" data-uid="DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,UnityEngine.Sprite,System.Boolean)">
   SetBattleUnitBufSprite(string, Sprite, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set <span class="xref">BattleUnitBuf</span> with id</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -270,11 +318,14 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>unitBufId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Specific ID</p>
+</dd>
     <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
-    <dd></dd>
+    <dd><p>A sprite that shown</p>
+</dd>
     <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is replace if contains same ID</p>
+</dd>
   </dl>
 
 
@@ -283,7 +334,15 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_UnityEngine_Sprite_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">var unitBuf = Hermes.CreateSprite("MyUnitBuf.png");
 
+Artwork.SetBattleUnitBufSprite("MyUnitBuf", unitBuf);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_UnityEngine_Sprite_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The unitBufId is correspond the <code>BattleUnitBuf.keywordIconId</code> by default<br></p>
+</div>
 
 
 
@@ -292,7 +351,7 @@ Class Artwork  <a class="header-action link-secondary" title="View source" href=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Artwork.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

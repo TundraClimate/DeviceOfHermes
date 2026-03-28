@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Peekable&lt;T&gt; | DeviceOfHermes ">
       
-      
+      <meta name="description" content="Provides a wrapper over an enumerator that supports peeking the next element without consuming it.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_Collections_Generic_Peekable_1" data-uid="System.Collections.Generic.Peekable`1" class="text-break">
-Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L3"><i class="bi bi-code-slash"></i></a>
+Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides a wrapper over an enumerator that supports peeking the next element
+without consuming it.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -157,7 +159,26 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
   </dd></dl>
 
 
+  <h2 id="System_Collections_Generic_Peekable_1_examples">Examples</h2>
+  <pre><code class="lang-csharp">var source = new List&lt;int&gt; { 1, 2, 3 };
+var it = new Peekable&lt;int&gt;(source);
 
+if (it.Peek(out var next))
+{
+    Console.WriteLine(next); // 1 (not consumed yet)
+}
+
+it.MoveNext(out var current);
+Console.WriteLine(current); // 1</code></pre>
+
+
+  <h2 id="System_Collections_Generic_Peekable_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class wraps an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a> and allows inspecting the next
+element using <a class="xref" href="System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_Peek__0__">Peek(out T?)</a> without advancing the sequence.</p>
+<p></p>
+<p>When <a class="xref" href="System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_Peek__0__">Peek(out T?)</a> is called, the value is cached internally.
+The subsequent call to <a class="xref" href="System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_MoveNext__0__">MoveNext(out T?)</a> will return the same value.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -168,10 +189,12 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="System_Collections_Generic_Peekable_1__ctor_System_Collections_IEnumerable_" data-uid="System.Collections.Generic.Peekable`1.#ctor(System.Collections.IEnumerable)">
   Peekable(IEnumerable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.Collections.Generic.Peekable-1.html">Peekable&lt;T&gt;</a> class
+from the specified enumerable source.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -181,7 +204,8 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>enumrable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></dt>
-    <dd></dd>
+    <dd><p>The source enumerable.</p>
+</dd>
   </dl>
 
 
@@ -203,10 +227,11 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="System_Collections_Generic_Peekable_1_MoveNext__0__" data-uid="System.Collections.Generic.Peekable`1.MoveNext(`0@)">
   MoveNext(out T?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Advances to the next element and returns it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -216,13 +241,16 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>current</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>When this method returns, contains the current element if available;
+otherwise, the default value.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><code>true</code> if the next element exists; otherwise, <code>false</code>.</p>
+</dd>
   </dl>
 
 
@@ -231,6 +259,10 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h4 class="section" id="System_Collections_Generic_Peekable_1_MoveNext__0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_Peek__0__">Peek(out T?)</a> was previously called, this method
+returns the cached value and clears the internal state.</p>
+</div>
 
 
 
@@ -239,10 +271,11 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="System_Collections_Generic_Peekable_1_Peek__0__" data-uid="System.Collections.Generic.Peekable`1.Peek(`0@)">
   Peek(out T?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the next element without consuming it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -252,13 +285,16 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>peeked</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>When this method returns, contains the next element if available;
+otherwise, the default value.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><code>true</code> if the next element exists; otherwise, <code>false</code>.</p>
+</dd>
   </dl>
 
 
@@ -267,6 +303,11 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h4 class="section" id="System_Collections_Generic_Peekable_1_Peek__0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method advances the underlying enumerator only once and caches
+the value internally so it can be returned again by
+<a class="xref" href="System.Collections.Generic.Peekable-1.html#System_Collections_Generic_Peekable_1_MoveNext__0__">MoveNext(out T?)</a>.</p>
+</div>
 
 
 
@@ -275,7 +316,7 @@ Class Peekable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Peekable.cs/#L28" class="edit-link">Edit this page</a>
         </div>
 
 
