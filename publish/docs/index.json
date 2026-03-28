@@ -92,7 +92,7 @@
   "api/DeviceOfHermes.Resource.ReadXmlParser.html": {
     "href": "api/DeviceOfHermes.Resource.ReadXmlParser.html",
     "title": "Class ReadXmlParser | DeviceOfHermes",
-    "summary": "Class ReadXmlParser Namespace DeviceOfHermes.Resource Assembly DeviceOfHermes.dll public class ReadXmlParser Inheritance object ReadXmlParser Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Inspect<T>(T?, Action<T>) Methods Read<T>(string) public static T? Read<T>(string path) Parameters path string Returns T Type Parameters T"
+    "summary": "Class ReadXmlParser Namespace DeviceOfHermes.Resource Assembly DeviceOfHermes.dll A generic Xmls parser public class ReadXmlParser Inheritance object ReadXmlParser Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Inspect<T>(T?, Action<T>) Examples var path = \"data.xml\"; var data = ReadXmlParser.Read<Data>(path); Methods Read<T>(string) Reads file then parse to T public static T? Read<T>(string path) Parameters path string A xml path Returns T A result of read and parse Type Parameters T Examples var path = \"data.xml\"; var data = ReadXmlParser.Read<Data>(path);"
   },
   "api/DeviceOfHermes.Resource.TextModel.html": {
     "href": "api/DeviceOfHermes.Resource.TextModel.html",
@@ -102,7 +102,7 @@
   "api/DeviceOfHermes.Resource.html": {
     "href": "api/DeviceOfHermes.Resource.html",
     "title": "Namespace DeviceOfHermes.Resource | DeviceOfHermes",
-    "summary": "Namespace DeviceOfHermes.Resource Classes Artwork An additional artwork loader ReadXmlParser TextModel"
+    "summary": "Namespace DeviceOfHermes.Resource Classes Artwork An additional artwork loader ReadXmlParser A generic Xmls parser TextModel"
   },
   "api/DeviceOfHermes.ScheduleRunner.html": {
     "href": "api/DeviceOfHermes.ScheduleRunner.html",

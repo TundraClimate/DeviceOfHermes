@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ReadXmlParser | DeviceOfHermes ">
       
-      
+      <meta name="description" content="A generic Xmls parser">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_Resource_ReadXmlParser" data-uid="DeviceOfHermes.Resource.ReadXmlParser" class="text-break">
-Class ReadXmlParser  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ReadStrParser.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class ReadXmlParser  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ReadStrParser.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ReadXmlParser  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A generic Xmls parser</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -152,6 +153,11 @@ Class ReadXmlParser  <a class="header-action link-secondary" title="View source"
   </dd></dl>
 
 
+  <h2 id="DeviceOfHermes_Resource_ReadXmlParser_examples">Examples</h2>
+  <pre><code class="lang-csharp">var path = "data.xml";
+
+var data = ReadXmlParser.Read&lt;Data&gt;(path);</code></pre>
+
 
 
 
@@ -163,10 +169,11 @@ Class ReadXmlParser  <a class="header-action link-secondary" title="View source"
 
   <h3 id="DeviceOfHermes_Resource_ReadXmlParser_Read__1_System_String_" data-uid="DeviceOfHermes.Resource.ReadXmlParser.Read``1(System.String)">
   Read&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ReadStrParser.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ReadStrParser.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads file then parse to T</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -176,13 +183,15 @@ Class ReadXmlParser  <a class="header-action link-secondary" title="View source"
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A xml path</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>A result of read and parse</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
@@ -195,6 +204,11 @@ Class ReadXmlParser  <a class="header-action link-secondary" title="View source"
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_ReadXmlParser_Read__1_System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">var path = "data.xml";
+
+var data = ReadXmlParser.Read&lt;Data&gt;(path);</code></pre>
+
 
 
 
@@ -204,7 +218,7 @@ Class ReadXmlParser  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ReadStrParser.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ReadStrParser.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

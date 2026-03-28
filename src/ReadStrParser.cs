@@ -3,8 +3,23 @@ using System.Xml.Serialization;
 
 namespace DeviceOfHermes.Resource;
 
+/// <summary>A generic Xmls parser</summary>
+/// <example><code>
+/// var path = "data.xml";
+///
+/// var data = ReadXmlParser.Read&lt;Data&gt;(path);
+/// </code></example>
 public class ReadXmlParser
 {
+    /// <summary>Reads file then parse to T</summary>
+    /// <param name="path">A xml path</param>
+    /// <typeparam name="T">Type of Parse</typeparam>
+    /// <returns>A result of read and parse</returns>
+    /// <example><code>
+    /// var path = "data.xml";
+    ///
+    /// var data = ReadXmlParser.Read&lt;Data&gt;(path);
+    /// </code></example>
     public static T? Read<T>(string path)
     {
         if (!File.Exists(path))

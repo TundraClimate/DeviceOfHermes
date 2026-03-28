@@ -274,7 +274,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.Resource.ReadXmlParser",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.ReadXmlParser.yml\" sourcestartlinenumber=\"1\">A generic Xmls parser</p>\n"
     },
     {
       "type": "ManagedReference",
