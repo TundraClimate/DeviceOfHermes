@@ -1,7 +1,7 @@
 namespace System.Diagnostics.CodeAnalysis
 {
     [AttributeUsage(AttributeTargets.Parameter)]
-    public sealed class NotNullWhenAttribute : Attribute
+    internal sealed class NotNullWhenAttribute : Attribute
     {
         public bool ReturnValue { get; }
 
@@ -12,7 +12,7 @@ namespace System.Diagnostics.CodeAnalysis
     }
 
     [AttributeUsage(AttributeTargets.Parameter)]
-    public sealed class MaybeNullWhenAttribute : Attribute
+    internal sealed class MaybeNullWhenAttribute : Attribute
     {
         public bool ReturnValue { get; }
 
