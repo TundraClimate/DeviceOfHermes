@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TextModel | DeviceOfHermes ">
       
-      
+      <meta name="description" content="The localize helper">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_Resource_TextModel" data-uid="DeviceOfHermes.Resource.TextModel" class="text-break">
-Class TextModel  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class TextModel  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The localize helper</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,18 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="DeviceOfHermes_Resource_TextModel_examples">Examples</h2>
+  <pre><code class="lang-csharp">TextModel.OnLoadLocalize += lang =&gt;
+{
+    Hermes.Say($"Language changed to {lang}!");
+}</code></pre>
 
+
+  <h2 id="DeviceOfHermes_Resource_TextModel_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Set text data for directory.<br>
+Additional data reset when change language, or restart game.<br>
+Therefore, an event the <code>OnLoadLocalize</code> is hooks localize initialize.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +168,11 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleEffectText_LOR_XML_BattleEffectText_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleEffectText(LOR_XML.BattleEffectText,System.Boolean)">
   SetBattleEffectText(BattleEffectText, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set BattleEffectText with text</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,9 +182,11 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>text</code> <span class="xref">BattleEffectText</span></dt>
-    <dd></dd>
+    <dd><p>A dataset of <span class="xref">LOR_XML.BattleEffectText</span></p>
+</dd>
     <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is replace if contains same text ID</p>
+</dd>
   </dl>
 
 
@@ -180,7 +195,18 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleEffectText_LOR_XML_BattleEffectText_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBattleEffectText(new BattleEffectText()
+{
+    ID = "Burn",
+    Name = "Burn",
+    Desc = "Will die",
+}, true);</code></pre>
 
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleEffectText_LOR_XML_BattleEffectText_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. Burn) data.<br></p>
+</div>
 
 
 
@@ -189,10 +215,11 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleEffectTexts_System_Collections_Generic_IEnumerable_LOR_XML_BattleEffectText__System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts(System.Collections.Generic.IEnumerable{LOR_XML.BattleEffectText},System.Boolean)">
   SetBattleEffectTexts(IEnumerable&lt;BattleEffectText&gt;, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set BattleEffectText with texts</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -202,9 +229,11 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>texts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">BattleEffectText</span>&gt;</dt>
-    <dd></dd>
+    <dd><p>The datasets of <span class="xref">LOR_XML.BattleEffectText</span></p>
+</dd>
     <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Is replace if contains same text ID</p>
+</dd>
   </dl>
 
 
@@ -213,7 +242,26 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleEffectTexts_System_Collections_Generic_IEnumerable_LOR_XML_BattleEffectText__System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBattleEffectTexts([
+new BattleEffectText()
+{
+    ID = "Burn",
+    Name = "Burn",
+    Desc = "Will die",
+},
+new BattleEffectText()
+{
+    ID = "Bleeding",
+    Name = "Bleeding",
+    Desc = "Will burst",
+}
+], true);</code></pre>
 
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleEffectTexts_System_Collections_Generic_IEnumerable_LOR_XML_BattleEffectText__System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. Burn) data.<br></p>
+</div>
 
 
 
@@ -225,10 +273,11 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="DeviceOfHermes_Resource_TextModel_OnLoadLocalize" data-uid="DeviceOfHermes.Resource.TextModel.OnLoadLocalize">
   OnLoadLocalize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes on localize data initialized</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -248,6 +297,9 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_OnLoadLocalize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Game start, language reset or etc.</p>
+</div>
 
 
 
@@ -256,7 +308,7 @@ Class TextModel  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

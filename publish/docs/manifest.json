@@ -288,7 +288,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.Resource.TextModel",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.TextModel.yml\" sourcestartlinenumber=\"1\">The localize helper</p>\n"
     },
     {
       "type": "ManagedReference",
