@@ -484,7 +484,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Extension",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Extension.yml\" sourcestartlinenumber=\"1\">Respects the functions in Rust</p>\n"
     },
     {
       "type": "ManagedReference",
