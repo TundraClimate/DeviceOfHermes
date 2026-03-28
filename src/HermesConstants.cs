@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace DeviceOfHermes;
 
+/// <summary>The constants used by DoH</summary>
 public static class HermesConstants
 {
     static HermesConstants()
@@ -30,15 +31,21 @@ public static class HermesConstants
         return ms.ToArray();
     }
 
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.RevengeDice"/>
     public static Sprite RevengeDiceSlash;
 
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.RevengeDice"/>
     public static Sprite RevengeDicePenetrate;
 
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.RevengeDice"/>
     public static Sprite RevengeDiceHit;
 
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.UnbreakableDice"/>
     public static Sprite UnbreakableSlash;
 
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.UnbreakableDice"/>
     public static Sprite UnbreakablePenetrate;
 
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.UnbreakableDice"/>
     public static Sprite UnbreakableHit;
 }
