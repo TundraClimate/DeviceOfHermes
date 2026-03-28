@@ -138,6 +138,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedTakeDamage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedTakeDamage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedTakeDamage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.BattleBufExtension.yml",
       "output": {
         ".html": {
@@ -218,7 +232,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.HermesConstants",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.HermesConstants.yml\" sourcestartlinenumber=\"1\">The constants used by DoH</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -498,7 +512,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Mem",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Mem.yml\" sourcestartlinenumber=\"1\">Respects the std::mem in Rust</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -512,7 +526,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.MessageLevel",
-      "Summary": "<p sourcefile=\"api/System.MessageLevel.yml\" sourcestartlinenumber=\"1\">Log level used by<xref href=\"System.Hermes.Say(System.String%2cSystem.MessageLevel)\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/System.MessageLevel.yml\" sourcestartlinenumber=\"1\">Log level used by <xref href=\"System.Hermes.Say(System.String%2cSystem.MessageLevel)\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",

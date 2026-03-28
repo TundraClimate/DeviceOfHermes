@@ -1,17 +1,21 @@
 namespace System;
 
+/// <summary>Respects the functions in Rust</summary>
 public static class Extension
 {
+    /// <summary>Returns min</summary>
     public static int Min(this int n1, int n2)
     {
         return Math.Min(n1, n2);
     }
 
+    /// <summary>Returns max</summary>
     public static int Max(this int n1, int n2)
     {
         return Math.Max(n1, n2);
     }
 
+    /// <summary>Strips prefix and returns null when not matches</summary>
     public static string? StripPrefix(this string original, string strip)
     {
         if (original.StartsWith(strip))
@@ -22,6 +26,7 @@ public static class Extension
         return null;
     }
 
+    /// <summary>Strips suffix and returns null when not matches</summary>
     public static string? StripSuffix(this string original, string strip)
     {
         if (original.EndsWith(strip))
@@ -32,36 +37,43 @@ public static class Extension
         return null;
     }
 
+    /// <summary>Renamed by Select</summary>
     public static IEnumerable<V> Map<T, V>(this IEnumerable<T> enumerable, Func<T, V> pred)
     {
         return enumerable.Select(pred);
     }
 
+    /// <summary>Renamed by Where</summary>
     public static IEnumerable<T> Filter<T>(this IEnumerable<T> enumerable, Func<T, bool> pred)
     {
         return enumerable.Where(pred);
     }
 
+    /// <summary>Renamed by Select Where</summary>
     public static IEnumerable<V> FilterMap<T, V>(this IEnumerable<T> enumerable, Func<T, V> pred)
     {
         return enumerable.Select(val => pred(val)).Where(val => val is not null);
     }
 
+    /// <summary>SelectMany and less 1 depth</summary>
     public static IEnumerable<T> Flatten<T>(this IEnumerable<IEnumerable<T>> enumerable)
     {
         return enumerable.SelectMany(val => val);
     }
 
+    /// <summary>Returns enumerable with index</summary>
     public static IEnumerable<(int, T)> Enumerate<T>(this IEnumerable<T> enumerable)
     {
         return enumerable.Select((val, idx) => (idx, val));
     }
 
+    /// <summary>Renamed by ToList</summary>
     public static List<T> Collect<T>(this IEnumerable<T> enumerable)
     {
         return enumerable.ToList();
     }
 
+    /// <summary>Compute new Value with enumerable</summary>
     public static R Fold<T, R>(this IEnumerable<T> enumerable, R root, Func<R, T, R> acc)
     {
         var res = root;
@@ -74,6 +86,7 @@ public static class Extension
         return res;
     }
 
+    /// <summary>Compute new Value with enumerable</summary>
     public static T? Reduce<T>(this IEnumerable<T> enumerable, Func<T, T, T> acc)
     {
         T? res = default(T);
@@ -93,6 +106,7 @@ public static class Extension
         return res;
     }
 
+    /// <summary>Iterate the enumerable</summary>
     public static void Foreach<T>(this IEnumerable<T> enumerable, Action<T> each)
     {
         foreach (T elem in enumerable)
@@ -101,6 +115,7 @@ public static class Extension
         }
     }
 
+    /// <summary>Iterate the enumerable with breakable</summary>
     public static bool TryForeach<T, R>(this IEnumerable<T> enumerable, Func<T, R?> each)
     {
         foreach (T elem in enumerable)
@@ -116,6 +131,7 @@ public static class Extension
         return true;
     }
 
+    /// <summary>Runs inner action when not null</summary>
     public static T? Inspect<T>(this T? nullable, Action<T> inspect)
     {
         if (nullable is not null)
@@ -126,6 +142,7 @@ public static class Extension
         return nullable;
     }
 
+    /// <summary>Returns opponent</summary>
     public static Faction FaceTo(this Faction faction)
     {
         return faction switch
@@ -135,6 +152,7 @@ public static class Extension
         };
     }
 
+    /// <summary>Returns unit hands with filter</summary>
     public static List<BattleDiceCardModel> GetHands(this BattleUnitModel? owner, Func<BattleDiceCardModel, bool>? filter = null)
     {
         List<BattleDiceCardModel> list = new();
@@ -145,11 +163,13 @@ public static class Extension
         return list;
     }
 
+    /// <summary>Says by unit on character dialog</summary>
     public static void Say(this BattleUnitModel owner, string txt)
     {
         BattleManagerUI.Instance.ui_unitListInfoSummary.DisplayDlg(txt, owner, false, MentalState.Positive);
     }
 
+    /// <summary>Returns directory of ty found assembly</summary>
     public static string GetAsmDirectory(this Type ty)
     {
         return Path.GetDirectoryName(ty.Assembly.Location);

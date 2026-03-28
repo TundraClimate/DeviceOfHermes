@@ -534,6 +534,28 @@ references:
   fullName.vb: DeviceOfHermes.AdvancedBase.ReloadAmmoBuf(Of T).OnInstant
   nameWithType: ReloadAmmoBuf<T>.OnInstant
   nameWithType.vb: ReloadAmmoBuf(Of T).OnInstant
+- uid: DeviceOfHermes.AdvancedTakeDamage
+  name: AdvancedTakeDamage
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html
+  commentId: T:DeviceOfHermes.AdvancedTakeDamage
+  fullName: DeviceOfHermes.AdvancedTakeDamage
+  nameWithType: AdvancedTakeDamage
+- uid: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  name: DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist__
+  commentId: M:DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
+  name.vb: DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
+  fullName: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel, int, LOR_DiceSystem.BehaviourDetail, BattleUnitModel?, AtkResist?)
+  fullName.vb: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, LOR_DiceSystem.BehaviourDetail, BattleUnitModel, AtkResist?)
+  nameWithType: AdvancedTakeDamage.DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
+  nameWithType.vb: AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
+- uid: DeviceOfHermes.AdvancedTakeDamage.DealDamage*
+  name: DealDamage
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_DealDamage_
+  commentId: Overload:DeviceOfHermes.AdvancedTakeDamage.DealDamage
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedTakeDamage.DealDamage
+  nameWithType: AdvancedTakeDamage.DealDamage
 - uid: DeviceOfHermes.BattleBufExtension
   name: BattleBufExtension
   href: api/DeviceOfHermes.BattleBufExtension.html
