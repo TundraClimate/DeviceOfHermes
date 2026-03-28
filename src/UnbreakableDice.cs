@@ -5,6 +5,21 @@ using DeviceOfHermes.AdvancedBase;
 
 namespace DeviceOfHermes.CustomDice;
 
+/// <summary>The custom dice of Limbus unbreakable</summary>
+/// <remarks>
+/// How to apply unbreakable dice:<br/>
+/// - Exntends this class to your dice ability. <br/>
+/// - That ability adds for <c>Atk</c> dice. <br/>
+/// <para/>
+/// Dice specify <br/>
+/// - Dice when lose clash, use losed dices in a card.<br/>
+/// - The unbreakable card not clashable.<br/>
+/// </remarks>
+/// <example><code>
+/// public class DiceCardAbility_Unbreakable : Unbreakable
+/// {
+/// }
+/// </code></example>
 public class UnbreakableDice : AdvancedDiceBase
 {
     static UnbreakableDice()
@@ -45,11 +60,13 @@ public class UnbreakableDice : AdvancedDiceBase
         _stash = new();
     }
 
+    /// <summary>A unit when use unbreakable dices</summary>
+    /// <param name="card">A unbreakable dices</param>
     public virtual void OnUseBreaked(BattlePlayingCardDataInUnitModel card)
     {
     }
 
-    public bool IsBreaked = false;
+    internal bool IsBreaked = false;
 
     private static Dictionary<BattleUnitModel, Queue<BattleDiceBehavior>> _stash;
 

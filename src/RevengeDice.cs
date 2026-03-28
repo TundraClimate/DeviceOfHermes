@@ -6,6 +6,21 @@ using DeviceOfHermes.AdvancedBase;
 
 namespace DeviceOfHermes.CustomDice;
 
+/// <summary>The custom dice of Limbus standby</summary>
+/// <remarks>
+/// How to apply revenge dice:<br/>
+/// - Exntends this class to your dice ability. <br/>
+/// - That ability adds for <c>Standby</c> dice. <br/>
+/// <para/>
+/// Dice specify <br/>
+/// - When take damage by attack, use revenge dices in a card.<br/>
+/// - The revenge card not clashable.<br/>
+/// </remarks>
+/// <example><code>
+/// public class DiceCardAbility_Revenge : RevengeDice
+/// {
+/// }
+/// </code></example>
 public class RevengeDice : AdvancedDiceBase
 {
     static RevengeDice()
@@ -88,10 +103,15 @@ public class RevengeDice : AdvancedDiceBase
         }
     }
 
+    /// <summary>A unit when revenge decided</summary>
+    /// <param name="card">A revenge dicecard</param>
+    /// <param name="revengeBy">A dice of revenge decided</param>
     public virtual void OnRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
     {
     }
 
+    /// <summary>A unit when use revenge</summary>
+    /// <param name="card">A revenge dicecard</param>
     public virtual void OnUseRevenge(BattlePlayingCardDataInUnitModel card)
     {
     }

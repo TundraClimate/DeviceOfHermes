@@ -702,12 +702,6 @@ references:
   commentId: T:DeviceOfHermes.CustomDice.UnbreakableDice
   fullName: DeviceOfHermes.CustomDice.UnbreakableDice
   nameWithType: UnbreakableDice
-- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
-  name: IsBreaked
-  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsBreaked
-  commentId: F:DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
-  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
-  nameWithType: UnbreakableDice.IsBreaked
 - uid: DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked(BattlePlayingCardDataInUnitModel)
   name: OnUseBreaked(BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_OnUseBreaked_BattlePlayingCardDataInUnitModel_

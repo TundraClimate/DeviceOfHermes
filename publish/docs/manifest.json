@@ -176,7 +176,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.CustomDice.RevengeDice",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.CustomDice.RevengeDice.yml\" sourcestartlinenumber=\"1\">The custom dice of Limbus standby</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -190,7 +190,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DeviceOfHermes.CustomDice.UnbreakableDice",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.CustomDice.UnbreakableDice.yml\" sourcestartlinenumber=\"1\">The custom dice of Limbus unbreakable</p>\n"
     },
     {
       "type": "ManagedReference",
