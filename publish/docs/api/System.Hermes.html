@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Hermes | DeviceOfHermes ">
       
-      
+      <meta name="description" content="A main class of the DeviceOfHermes">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_Hermes" data-uid="System.Hermes" class="text-break">
-Class Hermes  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class Hermes  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A main class of the DeviceOfHermes</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,17 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h2 id="System_Hermes_examples">Examples</h2>
+  <pre><code class="lang-csharp">Hermes.Say("Hermes says: Hello, rien.");
 
+Hermes.Say("Prescript warning", MessageLevel.Warn);
+
+Hermes.Say("*beep*", MessageLevel.Error);</code></pre>
+
+
+  <h2 id="System_Hermes_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Hijacks the System and includes util</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +167,11 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="System_Hermes_CreateSprite_System_Byte___System_Single_" data-uid="System.Hermes.CreateSprite(System.Byte[],System.Single)">
   CreateSprite(byte[], float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates UnityEngine.Sprite from bytes</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,15 +181,18 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
+    <dd><p>The bytes that read by image</p>
+</dd>
     <dt><code>pixPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Pixel length used by Sprite.CreateSprite</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">Sprite</span></dt>
-    <dd></dd>
+    <dd><p>A object of Sprite</p>
+</dd>
   </dl>
 
 
@@ -185,7 +200,14 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section" id="System_Hermes_CreateSprite_System_Byte___System_Single__examples">Examples</h4>
+  <pre><code class="lang-csharp">var sprite = Hermes.CreateSprite(imageBytes);</code></pre>
 
+
+  <h4 class="section" id="System_Hermes_CreateSprite_System_Byte___System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The bytes that read image will convert with <span class="xref">UnityEngine.ImageConversion</span>. <br>
+Returns null when can not convertion.</p>
+</div>
 
 
 
@@ -194,10 +216,11 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="System_Hermes_CreateSprite_System_String_System_Single_" data-uid="System.Hermes.CreateSprite(System.String,System.Single)">
   CreateSprite(string, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates UnityEngine.Sprite from image path</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -207,15 +230,18 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A path that read image</p>
+</dd>
     <dt><code>pixPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Pixel length used by Sprite.CreateSprite</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">Sprite</span></dt>
-    <dd></dd>
+    <dd><p>A object of Sprite</p>
+</dd>
   </dl>
 
 
@@ -223,7 +249,13 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section" id="System_Hermes_CreateSprite_System_String_System_Single__examples">Examples</h4>
+  <pre><code class="lang-csharp">var sprite = Hermes.CreateSprite("image.png");</code></pre>
 
+
+  <h4 class="section" id="System_Hermes_CreateSprite_System_String_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Lets see <a class="xref" href="System.Hermes.html#System_Hermes_CreateSprite_System_Byte___System_Single_">CreateSprite(byte[], float)</a></p>
+</div>
 
 
 
@@ -232,10 +264,11 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="System_Hermes_Load__1" data-uid="System.Hermes.Load``1">
   Load&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loads data from global state</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -246,21 +279,41 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>A data that loaded from global state</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Corresponds state type</p>
+</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section" id="System_Hermes_Load__1_examples">Examples</h4>
+  <pre><code class="lang-csharp">// var value = Hermes.Load&lt;DataType&gt;();
+// Throws InvalidOperationException by not initialized state
+
+Hermes.Store(new DataType(12));
+
+var number = Hermes.Load&lt;DataType&gt;().Value;</code></pre>
 
 
+  <h4 class="section" id="System_Hermes_Load__1_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Loads data that was stored.<br>
+Dont calls when not state initialized.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Throws when not initialized</p>
+</dd>
+  </dl>
 
 
 
@@ -268,10 +321,11 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="System_Hermes_Say_System_String_System_MessageLevel_" data-uid="System.Hermes.Say(System.String,System.MessageLevel)">
   Say(string?, MessageLevel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper of the UnityEngine.Debug.Log</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -281,9 +335,11 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A message</p>
+</dd>
     <dt><code>lvl</code> <a class="xref" href="System.MessageLevel.html">MessageLevel</a></dt>
-    <dd></dd>
+    <dd><p>Corresponds output level</p>
+</dd>
   </dl>
 
 
@@ -292,7 +348,14 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section" id="System_Hermes_Say_System_String_System_MessageLevel__examples">Examples</h4>
+  <pre><code class="lang-csharp">Hermes.Say("Debug message");</code></pre>
 
+
+  <h4 class="section" id="System_Hermes_Say_System_String_System_MessageLevel__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Says message with UnityEngine.Debug
+but dont needs the UnityEngine using.</p>
+</div>
 
 
 
@@ -301,10 +364,11 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="System_Hermes_Store__1___0_" data-uid="System.Hermes.Store``1(``0)">
   Store&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Stores data to global state</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -314,21 +378,32 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>data</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>A data that will store</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Corresponds state type</p>
+</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section" id="System_Hermes_Store__1___0__examples">Examples</h4>
+  <pre><code class="lang-csharp">Hermes.Store(new DataType(12));
 
+int num = Hermes.Load&lt;DataType&gt;().Value;</code></pre>
+
+
+  <h4 class="section" id="System_Hermes_Store__1___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The setter also serves as Initializer,
+therefore must calls it on first.</p>
+</div>
 
 
 
@@ -337,10 +412,11 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="System_Hermes_TryLoad__1___0__" data-uid="System.Hermes.TryLoad``1(``0@)">
   TryLoad&lt;T&gt;(out T?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Try load data from global state</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -356,20 +432,34 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>The result of load by T</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Corresponds state type</p>
+</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section" id="System_Hermes_TryLoad__1___0___examples">Examples</h4>
+  <pre><code class="lang-csharp">Hermes.Store(new DataType(12));
 
+if (Hermes.TryLoad(var out data))
+{
+    var num = data.Value;
+}</code></pre>
+
+
+  <h4 class="section" id="System_Hermes_TryLoad__1___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Loads data that was stored.<br>
+Returns true when succeed by load.</p>
+</div>
 
 
 
@@ -378,7 +468,7 @@ Class Hermes  <a class="header-action link-secondary" title="View source" href="
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

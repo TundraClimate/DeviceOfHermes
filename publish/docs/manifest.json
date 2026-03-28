@@ -484,7 +484,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Hermes",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Hermes.yml\" sourcestartlinenumber=\"1\">A main class of the DeviceOfHermes</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -512,7 +512,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.MessageLevel",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.MessageLevel.yml\" sourcestartlinenumber=\"1\">Log level used by<xref href=\"System.Hermes.Say(System.String%2cSystem.MessageLevel)\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
