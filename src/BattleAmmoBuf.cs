@@ -64,7 +64,7 @@ public class BattleAmmoBuf : AdvancedUnitBuf
                 card.currentBehavior = CreateCancelAlternate(card);
             }
 
-            this.OnCanceled();
+            this.OnCancelled();
         }
     }
 
@@ -75,7 +75,7 @@ public class BattleAmmoBuf : AdvancedUnitBuf
     }
 
     /// <summary>Unitbuf on reload cancelled</summary>
-    public virtual void OnCanceled()
+    public virtual void OnCancelled()
     {
     }
 
