@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PassiveResolver | DeviceOfHermes ">
       
-      
+      <meta name="description" content="Resolver the passive attribute succession">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_PassiveResolver" data-uid="DeviceOfHermes.PassiveResolver" class="text-break">
-Class PassiveResolver  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class PassiveResolver  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Resolver the passive attribute succession</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,15 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h2 id="DeviceOfHermes_PassiveResolver_examples">Examples</h2>
+  <pre><code class="lang-csharp">PassiveResolver.AddRestrict(PassiveResolver.LockAlways(new LorId(1)));
+PassiveResolver.AddRestrict(PassiveResolver.Conflict(new LorId(2), new LorId(3)));</code></pre>
 
+
+  <h2 id="DeviceOfHermes_PassiveResolver_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Restricts passive attribution with cond func.<br>
+<a class="xref" href="DeviceOfHermes.PassiveResolver.html#DeviceOfHermes_PassiveResolver_AddRestrict_System_Func_System_Collections_Generic_List_PassiveXmlInfo__PassiveXmlInfo_System_Boolean__">AddRestrict(Func&lt;List&lt;PassiveXmlInfo&gt;, PassiveXmlInfo, bool&gt;)</a> is restrict adds for Game in running.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +165,11 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_PassiveResolver_AddRestrict_System_Func_System_Collections_Generic_List_PassiveXmlInfo__PassiveXmlInfo_System_Boolean__" data-uid="DeviceOfHermes.PassiveResolver.AddRestrict(System.Func{System.Collections.Generic.List{PassiveXmlInfo},PassiveXmlInfo,System.Boolean})">
   AddRestrict(Func&lt;List&lt;PassiveXmlInfo&gt;, PassiveXmlInfo, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add restrict for Resolver</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,7 +179,8 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>restrict</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">PassiveXmlInfo</span>&gt;, <span class="xref">PassiveXmlInfo</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>If returns true, locks that passive</p>
+</dd>
   </dl>
 
 
@@ -178,7 +189,15 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h4 class="section" id="DeviceOfHermes_PassiveResolver_AddRestrict_System_Func_System_Collections_Generic_List_PassiveXmlInfo__PassiveXmlInfo_System_Boolean___examples">Examples</h4>
+  <pre><code class="lang-csharp"></code></pre>
 
+
+  <h4 class="section" id="DeviceOfHermes_PassiveResolver_AddRestrict_System_Func_System_Collections_Generic_List_PassiveXmlInfo__PassiveXmlInfo_System_Boolean___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <code class="paramref">restrict</code> arg0: passive attributes<br>
+The <code class="paramref">restrict</code> arg1: restricts target passive
+If <code class="paramref">restrict</code> returns true, that passive is locking.</p>
+</div>
 
 
 
@@ -187,10 +206,11 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_PassiveResolver_Conflict_LorId___" data-uid="DeviceOfHermes.PassiveResolver.Conflict(LorId[])">
   Conflict(params LorId[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A helper of confilict ids</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -200,7 +220,8 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cand</code> <span class="xref">LorId</span>[]</dt>
-    <dd></dd>
+    <dd><p>Conflict passive candidates</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -223,10 +244,11 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_PassiveResolver_LockAlways_LorId_" data-uid="DeviceOfHermes.PassiveResolver.LockAlways(LorId)">
   LockAlways(LorId)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A helper of lock always</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -236,7 +258,8 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>targetId</code> <span class="xref">LorId</span></dt>
-    <dd></dd>
+    <dd><p>Lock passive ID</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -259,10 +282,11 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_PassiveResolver_LockIf_LorId_System_Func_System_Collections_Generic_List_PassiveXmlInfo__System_Boolean__" data-uid="DeviceOfHermes.PassiveResolver.LockIf(LorId,System.Func{System.Collections.Generic.List{PassiveXmlInfo},System.Boolean})">
   LockIf(LorId, Func&lt;List&lt;PassiveXmlInfo&gt;, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A helper of lock if</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -272,9 +296,11 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>targetId</code> <span class="xref">LorId</span></dt>
-    <dd></dd>
+    <dd><p>Lock passive ID</p>
+</dd>
     <dt><code>ifCond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">PassiveXmlInfo</span>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Locking cond</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -297,10 +323,11 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_PassiveResolver_LockIfExists_LorId_LorId___" data-uid="DeviceOfHermes.PassiveResolver.LockIfExists(LorId,LorId[])">
   LockIfExists(LorId, params LorId[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A helper of lock if exists</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -310,9 +337,11 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>targetId</code> <span class="xref">LorId</span></dt>
-    <dd></dd>
+    <dd><p>Lock passive ID</p>
+</dd>
     <dt><code>excludes</code> <span class="xref">LorId</span>[]</dt>
-    <dd></dd>
+    <dd><p>Exclude ids</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -335,7 +364,7 @@ Class PassiveResolver  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/PassiveResolver.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

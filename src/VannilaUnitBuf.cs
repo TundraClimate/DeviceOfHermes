@@ -2,8 +2,26 @@ using HarmonyLib;
 
 namespace DeviceOfHermes;
 
+/// <summary>Modify the vannila unitbufs</summary>
+/// <remarks>
+/// This class is helper of HarmonyPatch for Vannila unitbufs.<br/>
+/// When called functions then instantly patches for correspond method.
+/// </remarks>
+/// <example><code>
+/// // Change the warpCharge max stack to 20
+/// VannilaUnitBuf.SetMaxForcely&lt;BattleUnitBuf_warpCharge&gt;(20);
+///
+/// // Change the smoke max stack to 20 if owner has a PassiveAbility_cigar
+/// VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) => owner?.passiveDetail.HasPassive&lt;PassiveAbility_cigar&gt;() == true);
+/// </code></example>
 public class VannilaUnitBuf
 {
+    /// <summary>Set max stack forcely</summary>
+    /// <param name="max">A number of max stack</param>
+    /// <typeparam name="T">A target of vannila unitbuf</typeparam>
+    /// <example><code>
+    /// VannilaUnitBuf.SetMaxForcely&lt;BattleUnitBuf_warpCharge&gt;(20);
+    /// </code></example>
     public static void SetMaxForcely<T>(int max)
         where T : BattleUnitBuf, new()
     {
@@ -14,6 +32,16 @@ public class VannilaUnitBuf
         _harmony.Patch(target, prefix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("PrefixForcely")));
     }
 
+    /// <summary>Set max stack if cond</summary>
+    /// <param name="max">A number of max stack</param>
+    /// <param name="cond">Applies max if returns true</param>
+    /// <typeparam name="T">A target of vannila unitbuf</typeparam>
+    /// <remarks>
+    /// Each calls then reset cond.
+    /// </remarks>
+    /// <example><code>
+    /// VannilaUnitBuf.SetMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) => owner?.passiveDetail.HasPassive&lt;PassiveAbility_cigar&gt;() == true);
+    /// </code></example>
     public static void SetMaxIf<T>(int max, Func<BattleUnitBuf, BattleUnitModel?, bool> cond)
         where T : BattleUnitBuf, new()
     {
@@ -27,6 +55,13 @@ public class VannilaUnitBuf
         }
     }
 
+    /// <summary>Set max stack if cond</summary>
+    /// <param name="max">A number of max stack</param>
+    /// <param name="cond">Applies max if returns true</param>
+    /// <typeparam name="T">A target of vannila unitbuf</typeparam>
+    /// <example><code>
+    /// VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) => owner?.passiveDetail.HasPassive&lt;PassiveAbility_cigar&gt;() == true);
+    /// </code></example>
     public static void AddMaxIf<T>(int max, Func<BattleUnitBuf, BattleUnitModel?, bool> cond)
         where T : BattleUnitBuf, new()
     {

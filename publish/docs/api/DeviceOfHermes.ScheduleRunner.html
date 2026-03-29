@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ScheduleRunner | DeviceOfHermes ">
       
-      
+      <meta name="description" content="In battle scheduler">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_ScheduleRunner" data-uid="DeviceOfHermes.ScheduleRunner" class="text-break">
-Class ScheduleRunner  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Schedule.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class ScheduleRunner  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Schedule.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ScheduleRunner  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>In battle scheduler</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,15 @@ Class ScheduleRunner  <a class="header-action link-secondary" title="View source
 
 
 
+  <h2 id="DeviceOfHermes_ScheduleRunner_examples">Examples</h2>
+  <pre><code class="lang-csharp">ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () =&gt; { Hermes.Say("Round started") });</code></pre>
 
+
+  <h2 id="DeviceOfHermes_ScheduleRunner_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Scheduler ovserves some events then hooks.<br>
+Event handlers can adds to scheduler with <a class="xref" href="DeviceOfHermes.ScheduleRunner.html#DeviceOfHermes_ScheduleRunner_AddSchedule_DeviceOfHermes_ScheduleTiming_System_Action_">AddSchedule(ScheduleTiming, Action)</a>.
+Scheduler lives on game running.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +165,11 @@ Class ScheduleRunner  <a class="header-action link-secondary" title="View source
 
   <h3 id="DeviceOfHermes_ScheduleRunner_AddSchedule_DeviceOfHermes_ScheduleTiming_System_Action_" data-uid="DeviceOfHermes.ScheduleRunner.AddSchedule(DeviceOfHermes.ScheduleTiming,System.Action)">
   AddSchedule(ScheduleTiming, Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Schedule.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Schedule.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add schedule handler for scheduler</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,9 +179,11 @@ Class ScheduleRunner  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>time</code> <a class="xref" href="DeviceOfHermes.ScheduleTiming.html">ScheduleTiming</a></dt>
-    <dd></dd>
+    <dd><p>The handling timing</p>
+</dd>
     <dt><code>schedule</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
-    <dd></dd>
+    <dd><p>A handler</p>
+</dd>
   </dl>
 
 
@@ -179,6 +191,9 @@ Class ScheduleRunner  <a class="header-action link-secondary" title="View source
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_ScheduleRunner_AddSchedule_DeviceOfHermes_ScheduleTiming_System_Action__examples">Examples</h4>
+  <pre><code class="lang-csharp">ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () =&gt; { Hermes.Say("Round started") });</code></pre>
 
 
 
@@ -189,7 +204,7 @@ Class ScheduleRunner  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Schedule.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Schedule.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -2,6 +2,15 @@ using HarmonyLib;
 
 namespace DeviceOfHermes;
 
+/// <summary>In battle scheduler</summary>
+/// <remarks>
+/// Scheduler ovserves some events then hooks.<br/>
+/// Event handlers can adds to scheduler with <see cref="AddSchedule"/>.
+/// Scheduler lives on game running.
+/// </remarks>
+/// <example><code>
+/// ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () => { Hermes.Say("Round started") });
+/// </code></example>
 public static class ScheduleRunner
 {
     static ScheduleRunner()
@@ -15,6 +24,12 @@ public static class ScheduleRunner
         harmony.CreateClassProcessor(typeof(SchedulePatch_OnRoundEnd)).Patch();
     }
 
+    /// <summary>Add schedule handler for scheduler</summary>
+    /// <param name="time">The handling timing</param>
+    /// <param name="schedule">A handler</param>
+    /// <example><code>
+    /// ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () => { Hermes.Say("Round started") });
+    /// </code></example>
     public static void AddSchedule(ScheduleTiming time, Action schedule)
     {
         if (_schedule.ContainsKey(time))
@@ -97,12 +112,24 @@ public static class ScheduleRunner
     }
 }
 
+/// <summary>A timing of scheduled</summary>
 public enum ScheduleTiming
 {
+    /// <summary>RoundStart</summary>
     RoundStart,
+
+    /// <summary>RollSpeedDice</summary>
     RollSpeedDice,
+
+    /// <summary>StartBattle</summary>
     StartBattle,
+
+    /// <summary>UseCard</summary>
     UseCard,
+
+    /// <summary>EndBattle</summary>
     EndBattle,
+
+    /// <summary>RoundEnd</summary>
     RoundEnd,
 }

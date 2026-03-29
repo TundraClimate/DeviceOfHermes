@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VannilaUnitBuf | DeviceOfHermes ">
       
-      
+      <meta name="description" content="Modify the vannila unitbufs">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_VannilaUnitBuf" data-uid="DeviceOfHermes.VannilaUnitBuf" class="text-break">
-Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Modify the vannila unitbufs</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -152,7 +153,18 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
   </dd></dl>
 
 
+  <h2 id="DeviceOfHermes_VannilaUnitBuf_examples">Examples</h2>
+  <pre><code class="lang-csharp">// Change the warpCharge max stack to 20
+VannilaUnitBuf.SetMaxForcely&lt;BattleUnitBuf_warpCharge&gt;(20);
 
+// Change the smoke max stack to 20 if owner has a PassiveAbility_cigar
+VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) =&gt; owner?.passiveDetail.HasPassive&lt;PassiveAbility_cigar&gt;() == true);</code></pre>
+
+
+  <h2 id="DeviceOfHermes_VannilaUnitBuf_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class is helper of HarmonyPatch for Vannila unitbufs.<br>
+When called functions then instantly patches for correspond method.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -163,10 +175,11 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
 
   <h3 id="DeviceOfHermes_VannilaUnitBuf_AddMaxIf__1_System_Int32_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean__" data-uid="DeviceOfHermes.VannilaUnitBuf.AddMaxIf``1(System.Int32,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})">
   AddMaxIf&lt;T&gt;(int, Func&lt;BattleUnitBuf, BattleUnitModel?, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set max stack if cond</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -176,21 +189,27 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>A number of max stack</p>
+</dd>
     <dt><code>cond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span class="xref">BattleUnitBuf</span>, <span class="xref">BattleUnitModel</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Applies max if returns true</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target of vannila unitbuf</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_VannilaUnitBuf_AddMaxIf__1_System_Int32_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean___examples">Examples</h4>
+  <pre><code class="lang-csharp">VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) =&gt; owner?.passiveDetail.HasPassive&lt;PassiveAbility_cigar&gt;() == true);</code></pre>
 
 
 
@@ -201,10 +220,11 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
 
   <h3 id="DeviceOfHermes_VannilaUnitBuf_SetMaxForcely__1_System_Int32_" data-uid="DeviceOfHermes.VannilaUnitBuf.SetMaxForcely``1(System.Int32)">
   SetMaxForcely&lt;T&gt;(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set max stack forcely</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -214,19 +234,24 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>A number of max stack</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target of vannila unitbuf</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_VannilaUnitBuf_SetMaxForcely__1_System_Int32__examples">Examples</h4>
+  <pre><code class="lang-csharp">VannilaUnitBuf.SetMaxForcely&lt;BattleUnitBuf_warpCharge&gt;(20);</code></pre>
 
 
 
@@ -237,10 +262,11 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
 
   <h3 id="DeviceOfHermes_VannilaUnitBuf_SetMaxIf__1_System_Int32_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean__" data-uid="DeviceOfHermes.VannilaUnitBuf.SetMaxIf``1(System.Int32,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})">
   SetMaxIf&lt;T&gt;(int, Func&lt;BattleUnitBuf, BattleUnitModel?, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set max stack if cond</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -250,23 +276,32 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>A number of max stack</p>
+</dd>
     <dt><code>cond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span class="xref">BattleUnitBuf</span>, <span class="xref">BattleUnitModel</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Applies max if returns true</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target of vannila unitbuf</p>
+</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section" id="DeviceOfHermes_VannilaUnitBuf_SetMaxIf__1_System_Int32_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean___examples">Examples</h4>
+  <pre><code class="lang-csharp">VannilaUnitBuf.SetMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) =&gt; owner?.passiveDetail.HasPassive&lt;PassiveAbility_cigar&gt;() == true);</code></pre>
 
+
+  <h4 class="section" id="DeviceOfHermes_VannilaUnitBuf_SetMaxIf__1_System_Int32_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Each calls then reset cond.</p>
+</div>
 
 
 
@@ -275,7 +310,7 @@ Class VannilaUnitBuf  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/VannilaUnitBuf.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

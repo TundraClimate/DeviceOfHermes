@@ -3,6 +3,14 @@ using LOR_DiceSystem;
 
 namespace DeviceOfHermes;
 
+/// <summary>OnlyCard manage helper</summary>
+/// <remarks>
+/// Only supports the onlycard add.<br/>
+/// Can add for vannila and mod keypage.
+/// </remarks>
+/// <example><code>
+/// new AdditonalOnlyCard(new LorId(targetID)).AddCards(new LorId(onlycardId));
+/// </code></example>
 public class AdditonalOnlyCard
 {
     static AdditonalOnlyCard()
@@ -12,11 +20,18 @@ public class AdditonalOnlyCard
         harmony.CreateClassProcessor(typeof(PatchXmlInfoSetter)).Patch();
     }
 
+    /// <summary>Creates with target book ID</summary>
+    /// <param name="bookId">target keypage ID</param>
     public AdditonalOnlyCard(LorId bookId)
     {
         this._bookId = bookId;
     }
 
+    /// <summary>Add onlycard for target</summary>
+    /// <param name="cards">OnlyCard ID list</param>
+    /// <example><code>
+    /// new AdditonalOnlyCard(new LorId(targetID)).AddCards(new LorId(onlycardId));
+    /// </code></example>
     public void AddCards(params LorId[] cards)
     {
         if (AdditonalOnlyCard._onlyCardDict.TryGetValue(this._bookId, out var stored))

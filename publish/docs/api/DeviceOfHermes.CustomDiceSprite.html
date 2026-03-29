@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CustomDiceSprite | DeviceOfHermes ">
       
-      
+      <meta name="description" content="Supplies dice sprite customizer">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_CustomDiceSprite" data-uid="DeviceOfHermes.CustomDiceSprite" class="text-break">
-Class CustomDiceSprite  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CustomDiceSprite.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class CustomDiceSprite  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CustomDiceSprite.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class CustomDiceSprite  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Supplies dice sprite customizer</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,13 @@ Class CustomDiceSprite  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h2 id="DeviceOfHermes_CustomDiceSprite_examples">Examples</h2>
+  <pre><code class="lang-csharp">CustomDiceSprite.AddSequence(() =&gt; true, yourSprite, new Color(255, 255, 255, 255));</code></pre>
 
+
+  <h2 id="DeviceOfHermes_CustomDiceSprite_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Applies exchange sequence, the all dice sprite that cond matched change to specified sprite.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +163,11 @@ Class CustomDiceSprite  <a class="header-action link-secondary" title="View sour
 
   <h3 id="DeviceOfHermes_CustomDiceSprite_AddSequence_System_Func_LOR_DiceSystem_DiceBehaviour_System_Boolean__UnityEngine_Sprite_System_Nullable_UnityEngine_Color__" data-uid="DeviceOfHermes.CustomDiceSprite.AddSequence(System.Func{LOR_DiceSystem.DiceBehaviour,System.Boolean},UnityEngine.Sprite,System.Nullable{UnityEngine.Color})">
   AddSequence(Func&lt;DiceBehaviour, bool&gt;, Sprite, Color?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CustomDiceSprite.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CustomDiceSprite.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add customize sequence</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,11 +177,14 @@ Class CustomDiceSprite  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">DiceBehaviour</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Apply mapping if returns true</p>
+</dd>
     <dt><code>map</code> <span class="xref">Sprite</span></dt>
-    <dd></dd>
+    <dd><p>Sprite mapping</p>
+</dd>
     <dt><code>behColor</code> <span class="xref">Color</span>?</dt>
-    <dd></dd>
+    <dd><p>Text that beside dice sprite applies color</p>
+</dd>
   </dl>
 
 
@@ -181,6 +192,9 @@ Class CustomDiceSprite  <a class="header-action link-secondary" title="View sour
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_CustomDiceSprite_AddSequence_System_Func_LOR_DiceSystem_DiceBehaviour_System_Boolean__UnityEngine_Sprite_System_Nullable_UnityEngine_Color___examples">Examples</h4>
+  <pre><code class="lang-csharp">CustomDiceSprite.AddSequence(() =&gt; true, yourSprite, new Color(255, 255, 255, 255));</code></pre>
 
 
 
@@ -191,7 +205,7 @@ Class CustomDiceSprite  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CustomDiceSprite.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CustomDiceSprite.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

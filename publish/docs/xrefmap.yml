@@ -436,19 +436,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack
   nameWithType: BattleAmmoBuf.LosedStack
-- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
-  name: OnCanceled()
-  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCanceled
-  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
-  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled()
-  nameWithType: BattleAmmoBuf.OnCanceled()
-- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled*
-  name: OnCanceled
-  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCanceled_
-  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled
+  name: OnCancelled()
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCancelled
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled()
+  nameWithType: BattleAmmoBuf.OnCancelled()
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled*
+  name: OnCancelled
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCancelled_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled
   isSpec: "True"
-  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCanceled
-  nameWithType: BattleAmmoBuf.OnCanceled
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled
+  nameWithType: BattleAmmoBuf.OnCancelled
 - uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32@)
   name: OnConsume(ref int)
   href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_System_Int32__

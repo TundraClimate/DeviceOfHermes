@@ -7,6 +7,13 @@ using LOR_DiceSystem;
 
 namespace DeviceOfHermes;
 
+/// <summary>Supplies dice sprite customizer</summary>
+/// <remarks>
+/// Applies exchange sequence, the all dice sprite that cond matched change to specified sprite.
+/// </remarks>
+/// <example><code>
+/// CustomDiceSprite.AddSequence(() => true, yourSprite, new Color(255, 255, 255, 255));
+/// </code></example>
 public static class CustomDiceSprite
 {
     static CustomDiceSprite()
@@ -20,6 +27,13 @@ public static class CustomDiceSprite
         harmony.CreateClassProcessor(typeof(CustomDicePatch.PatchDetailCardSlot)).Patch();
     }
 
+    /// <summary>Add customize sequence</summary>
+    /// <param name="cond">Apply mapping if returns true</param>
+    /// <param name="map">Sprite mapping</param>
+    /// <param name="behColor">Text that beside dice sprite applies color</param>
+    /// <example><code>
+    /// CustomDiceSprite.AddSequence(() => true, yourSprite, new Color(255, 255, 255, 255));
+    /// </code></example>
     public static void AddSequence(Func<DiceBehaviour, bool> cond, Sprite map, Color? behColor = null)
     {
         _seqs.Add((cond, map, behColor));

@@ -5,6 +5,7 @@ using LOR_DiceSystem;
 
 namespace DeviceOfHermes;
 
+/// <summary>The useful TakeDamage</summary>
 public static class AdvancedTakeDamage
 {
     static AdvancedTakeDamage()
@@ -14,6 +15,19 @@ public static class AdvancedTakeDamage
         harmony.CreateClassProcessor(typeof(AdvancedTakeDamagePatch.PatchTakeDamage)).Patch();
     }
 
+    /// <summary>Deals Damage with specific detail and resist</summary>
+    /// <param name="target">An attacking target</param>
+    /// <param name="baseDmg">A base damage before resist</param>
+    /// <param name="detail">The damage detail only atk type</param>
+    /// <param name="attacker">An attacker unit</param>
+    /// <param name="resist">Take resist override</param>
+    /// <remarks>
+    /// Use default resistance if resist override is null.<br/>
+    /// baseDmg is affected by resistance but not affected reducation passive, buf and etc.
+    /// </remarks>
+    /// <example><code>
+    /// target.DealDamage(999, BehaviourDetail.Slash);
+    /// </code></example>
     public static void DealDamage(this BattleUnitModel target, int baseDmg, BehaviourDetail detail, BattleUnitModel? attacker = null, AtkResist? resist = null)
     {
         table.Remove(target);

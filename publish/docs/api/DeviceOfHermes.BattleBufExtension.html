@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BattleBufExtension | DeviceOfHermes ">
       
-      
+      <meta name="description" content="Additional battleunitbuf extension">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_BattleBufExtension" data-uid="DeviceOfHermes.BattleBufExtension" class="text-break">
-Class BattleBufExtension  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class BattleBufExtension  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Additional battleunitbuf extension</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_BattleBufExtension_GetBufAndInitIfNull__1_BattleUnitModel_System_Func___0__" data-uid="DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull``1(BattleUnitModel,System.Func{``0})">
   GetBufAndInitIfNull&lt;T&gt;(BattleUnitModel, Func&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get unitBuf if found, otherwise initialize by Func</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,28 +171,38 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>A target of retrieves</p>
+</dd>
     <dt><code>bufMake</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>New instance constructor</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>Returns T</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target unitBuf</p>
+</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_GetBufAndInitIfNull__1_BattleUnitModel_System_Func___0___examples">Examples</h4>
+  <pre><code class="lang-csharp">var buf = owner.GetBufAndInitIfNull&lt;MyUnitBuf&gt;(() =&gt; new MyUnitBuf());</code></pre>
 
+
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_GetBufAndInitIfNull__1_BattleUnitModel_System_Func___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Try get the <code class="typeparamref">T</code> is failed, run <code class="paramref">bufMake</code> and initialize buf.</p>
+</div>
 
 
 
@@ -199,10 +211,11 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_BattleBufExtension_GetBufStack__1_BattleUnitModel_" data-uid="DeviceOfHermes.BattleBufExtension.GetBufStack``1(BattleUnitModel)">
   GetBufStack&lt;T&gt;(BattleUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get stack number of specified unitBuf</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -212,7 +225,8 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>A target of retrieves</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -224,12 +238,17 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target unitBuf</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_GetBufStack__1_BattleUnitModel__examples">Examples</h4>
+  <pre><code class="lang-csharp">// Binds MyUnitBuf stack if found otherwise binds 0
+var stack = owner?.GetBufStack&lt;MyUnitBuf&gt;() ?? 0;</code></pre>
 
 
 
@@ -240,10 +259,11 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_BattleBufExtension_GetBuf__1_BattleUnitModel_" data-uid="DeviceOfHermes.BattleBufExtension.GetBuf``1(BattleUnitModel)">
   GetBuf&lt;T&gt;(BattleUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get unitbuf if found</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -253,24 +273,30 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>A target of retrieves</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>Returns T if found</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target unitBuf</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_GetBuf__1_BattleUnitModel__examples">Examples</h4>
+  <pre><code class="lang-csharp">var buf = owner.GetBuf&lt;MyUnitBuf&gt;();</code></pre>
 
 
 
@@ -281,10 +307,11 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_BattleBufExtension_RemoveBufIf_BattleUnitModel_System_Func_BattleUnitBuf_System_Boolean__" data-uid="DeviceOfHermes.BattleBufExtension.RemoveBufIf(BattleUnitModel,System.Func{BattleUnitBuf,System.Boolean})">
   RemoveBufIf(BattleUnitModel?, Func&lt;BattleUnitBuf, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Remove cond matches buf</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -294,9 +321,11 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>A target of retrieves</p>
+</dd>
     <dt><code>cond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">BattleUnitBuf</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Iterate activated bufs, remove that if returns true</p>
+</dd>
   </dl>
 
 
@@ -304,6 +333,9 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_RemoveBufIf_BattleUnitModel_System_Func_BattleUnitBuf_System_Boolean___examples">Examples</h4>
+  <pre><code class="lang-csharp">owner.RemoveBufIf(buf =&gt; buf.bufType == KeywordBuf.None);</code></pre>
 
 
 
@@ -314,10 +346,11 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_BattleBufExtension_RemoveBuf__1_BattleUnitModel_" data-uid="DeviceOfHermes.BattleBufExtension.RemoveBuf``1(BattleUnitModel)">
   RemoveBuf&lt;T&gt;(BattleUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Remove specific buf if found</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -327,19 +360,24 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>A target of retrieves</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target unitBuf</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_RemoveBuf__1_BattleUnitModel__examples">Examples</h4>
+  <pre><code class="lang-csharp">owner.RemoveBuf&lt;MyUnitBuf&gt;();</code></pre>
 
 
 
@@ -350,10 +388,11 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_BattleBufExtension_TryGetBuf__1_BattleUnitModel___0__" data-uid="DeviceOfHermes.BattleBufExtension.TryGetBuf``1(BattleUnitModel,``0@)">
   TryGetBuf&lt;T&gt;(BattleUnitModel?, out T?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Try get unitbuf</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -363,26 +402,35 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd></dd>
+    <dd><p>A target of retrieves</p>
+</dd>
     <dt><code>buf</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>Get resut if found</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Unitbuf is found</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>A target unitBuf</p>
+</dd>
   </dl>
 
 
 
 
+
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_TryGetBuf__1_BattleUnitModel___0___examples">Examples</h4>
+  <pre><code class="lang-csharp">if(owner.TryGetBuf&lt;MyUnitBuf&gt;(var out buf))
+{
+}</code></pre>
 
 
 
@@ -393,7 +441,7 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 
