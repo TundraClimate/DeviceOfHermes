@@ -28,7 +28,7 @@ public static class ScheduleRunner
     /// <param name="time">The handling timing</param>
     /// <param name="schedule">A handler</param>
     /// <example><code>
-    /// ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () => { Hermes.Say("Round started") });
+    /// ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () => Hermes.Say("Round started"));
     /// </code></example>
     public static void AddSchedule(ScheduleTiming time, Action schedule)
     {

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>using DeviceOfHermes; | DeviceOfHermes </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="using DeviceOfHermes; | DeviceOfHermes ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/passive-resolver.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DeviceOfHermes">
+            DeviceOfHermes
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="using-deviceofhermes"><code>using DeviceOfHermes;</code></h1>
+
+<p>名前空間<code>DeviceOfHermes</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="passiveresolver">PassiveResolver</h1>
+<p>パッシブの帰属可否を管理します。</p>
+<p>例:</p>
+<pre><code class="lang-cs">PassiveResolver.AddRestrict(PassiveResolver.LockAlways(new LorId(&quot;あなたのMODID&quot;, 1)));
+
+PassiveResolver.AddRestrict(PassiveResolver.Conflict(new LorId(250322), new LorId(250024)));
+</code></pre>
+<p><code>LockAlways</code>は指定したIDのパッシブを帰属不可にします。<br>
+<code>Conflict</code>は指定したID同士で重複できないようにします。</p>
+<h2 id="specified-usage">Specified usage</h2>
+<pre><code class="lang-cs">PassiveResolver.AddRestrict(restrict);
+</code></pre>
+<p>帰属制約を追加します。</p>
+<ul>
+<li><code>restrict(List&lt;PassiveXmlInfo&gt;, PassiveXmlInfo): bool</code>: 保有しているパッシブから制限を与えるか決める関数です。trueを返すと帰属を制限できます。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">PassiveResolver.LockAlways(id);
+</code></pre>
+<p>特定のIDのパッシブは常に帰属できないという制約です。</p>
+<ul>
+<li><code>id</code>: 制約を与えるパッシブのIDです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">PassiveResolver.LockIf(id, cond);
+</code></pre>
+<p>特定のIDのパッシブは一定条件下では帰属できないという制約です。</p>
+<ul>
+<li><code>id</code>: 制約を与えるパッシブのIDです。</li>
+<li><code>cond(List&lt;PassiveXmlInfo&gt;): bool</code>: 保有しているパッシブから制限を与えるか決める関数です。trueを返すと帰属を制限できます。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">PassiveResolver.LockIfExists(id, passives...);
+</code></pre>
+<p>特定のIDのパッシブはまた別の特定のIDのパッシブが帰属されているなら帰属できないという制約です。</p>
+<ul>
+<li><code>id</code>: 制約を与えるパッシブのIDです。</li>
+<li><code>params passives</code>: 帰属制限をするためのパッシブのIDです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">PassiveResolver.Conflict(cand...);
+</code></pre>
+<p>幾つかのIDのパッシブは重複できないという制約です。</p>
+<ul>
+<li><code>params cand</code>: 重複を制限するパッシブのIDです。</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/passive-resolver.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

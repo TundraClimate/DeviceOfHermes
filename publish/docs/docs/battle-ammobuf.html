@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>using DeviceOfHermes.AdvancedBase; | DeviceOfHermes </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="using DeviceOfHermes.AdvancedBase; | DeviceOfHermes ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battle-ammobuf.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DeviceOfHermes">
+            DeviceOfHermes
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="using-deviceofhermesadvancedbase"><code>using DeviceOfHermes.AdvancedBase;</code></h1>
+
+<p>名前空間<code>DeviceOfHermes.AdvancedBase</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="battleammobuf">BattleAmmoBuf</h1>
+<p>&quot;弾丸&quot;のバフを作成・管理するためのクラスです。</p>
+<p>例:</p>
+<pre><code class="lang-cs">class BattleUnitBuf_Ammo : BattleAmmoBuf
+{
+    public override int GainByReload =&gt; this.DefaultStack;
+
+    public override bool DiceBlockWithNotConsumable =&gt; true;
+
+    public override void OnConsume(ref int require)
+    {
+    }
+
+    public override void OnCancelled()
+    {
+    }
+
+    public override bool IsConsumable(int num = 1)
+    {
+        return base.stack != 0 &amp;&amp; base.stack &gt;= num;
+    }
+
+    public override bool OnReload()
+    {
+        return true;
+    }
+}
+
+var buf = owner.GetBuf&lt;BattleUnitBuf_Ammo&gt;();
+
+buf.Reload();
+buf.Consume(1);
+
+var consumed = buf.ConsumedStack;
+var losed = buf.LosedStack;
+
+class BattleUnitBuf_Reload : ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;
+{
+}
+
+owner.bufListDetail.AddBuf(new ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;());
+
+owner.ConsumeAmmo&lt;BattleUnitBuf_Ammo&gt;(2);
+owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
+</code></pre>
+<p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
+それの代わりに<code>BattleAmmoBuf</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
+<h2 id="specified-usage">Specified usage</h2>
+<pre><code class="lang-cs">public override int GainByReload =&gt; this.DefaultStack;
+</code></pre>
+<p>リロードで獲得するスタック数を指定するプロパティです。</p>
+<hr>
+<pre><code class="lang-cs">public override bool DiceBlockWithNotConsumable =&gt; true;
+</code></pre>
+<p>弾丸を消耗できないとき、対象の攻撃ダイスをブロックするか指定するプロパティです。</p>
+<hr>
+<pre><code class="lang-cs">public override void OnConsume(ref require)
+{
+}
+</code></pre>
+<p>弾丸を消耗する前に実行されます。<br>
+<code>require</code>の値を変更することで消耗量を変化させることが出来ます。</p>
+<ul>
+<li><code>require</code>: 弾丸を消耗しようとする値です。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">public override void OnCancelled()
+{
+}
+</code></pre>
+<p>攻撃がブロックされたときに実行されます。<br>
+<code>DiceBlockWithNotConsumable</code>がtrueでない場合は実行されません。</p>
+<hr>
+<pre><code class="lang-cs">public override bool IsConsumable(num)
+{
+    return base.stack != 0 &amp;&amp; base.stack &gt;= num;
+}
+</code></pre>
+<p>弾丸を<code>num</code>だけ消耗できるかを返します。</p>
+<ul>
+<li><code>num</code>: 消耗できるか確認する値です。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">public override bool OnReload()
+{
+    return true;
+}
+</code></pre>
+<p>弾丸がリロードされたときに実行されます。<br>
+falseを返した場合はリロードがキャンセルされます。</p>
+<hr>
+<pre><code class="lang-cs">buf.Reload();
+</code></pre>
+<p>弾丸をリロードします。</p>
+<ul>
+<li><code>buf</code>: 対象の弾丸バフです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">buf.Consume(num);
+</code></pre>
+<p>弾丸を消耗します。</p>
+<ul>
+<li><code>buf</code>: 対象の弾丸バフです。</li>
+<li><code>num</code>: 消耗する弾丸の数です。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">var consumed = buf.ConsumedStack;
+
+</code></pre>
+<p>消耗によって失った弾丸の数です。<br>
+リロードを含みません。</p>
+<ul>
+<li><code>buf</code>: 対象の弾丸バフです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">var losed = buf.LosedStack;
+</code></pre>
+<p>消耗によって失った弾丸の数です。<br>
+リロードを含みます。</p>
+<ul>
+<li><code>buf</code>: 対象の弾丸バフです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">class BattleUnitBuf_Reload : ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;
+{
+}
+
+owner.bufListDetail.AddBuf(new ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;());
+</code></pre>
+<p><code>ReloadAmmoBuf&lt;T&gt;</code>はリロード用の即時適用型バフです。<br>
+継承したバフを追加するか、<code>ReloadAmmoBuf&lt;T&gt;</code>自体を追加することで即座にリロードを行います。</p>
+<ul>
+<li><code>T</code>: 対象の弾丸バフの型です。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">owner.ConsumeAmmo&lt;T&gt;(num);
+</code></pre>
+<p>弾丸を消耗します。<br>
+弾丸を保有していないなら何もしません。</p>
+<ul>
+<li><code>T</code>: 対象の弾丸バフの型です。</li>
+<li><code>num</code>: 消耗する弾丸の数です。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">owner.ReloadAmmo&lt;T&gt;();
+</code></pre>
+<p>弾丸をリロードします。<br>
+弾丸を保有していないなら何もしません。</p>
+<ul>
+<li><code>T</code>: 対象の弾丸バフの型です。</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battle-ammobuf.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

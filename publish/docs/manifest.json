@@ -557,20 +557,160 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
+      "source_relative_path": "docs/additional-onlycard.md",
       "output": {
         ".html": {
-          "relative_path": "docs/getting-started.html"
+          "relative_path": "docs/additional-onlycard.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
+      "source_relative_path": "docs/advanced-cardbase.md",
       "output": {
         ".html": {
-          "relative_path": "docs/introduction.html"
+          "relative_path": "docs/advanced-cardbase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-dicebase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-dicebase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-passivebase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-passivebase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-takedamage.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-takedamage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-unitbuf.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-unitbuf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/artwork.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/artwork.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/battle-ammobuf.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battle-ammobuf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/battlebuf-extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battlebuf-extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/custom-dicesprite.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/custom-dicesprite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/passive-resolver.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/passive-resolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/read-xmlparser.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/read-xmlparser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/revenge-dice.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/revenge-dice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/schedule-runner.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/schedule-runner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/table-of-content.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/table-of-content.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/textmodel.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/textmodel.html"
         }
       },
       "version": ""
@@ -584,6 +724,26 @@
         },
         ".json": {
           "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unbreakable-dice.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unbreakable-dice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/vannila-unitbuf.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/vannila-unitbuf.html"
         }
       },
       "version": ""
