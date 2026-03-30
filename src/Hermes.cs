@@ -103,50 +103,6 @@ public static class Hermes
 
         return data is not null;
     }
-
-    /// <summary>Creates UnityEngine.Sprite from bytes</summary>
-    /// <param name="bytes">The bytes that read by image</param>
-    /// <param name="pixPerUnit">Pixel length used by Sprite.CreateSprite</param>
-    /// <returns>A object of Sprite</returns>
-    /// <remarks>
-    /// The bytes that read image will convert with <see cref="UnityEngine.ImageConversion"/>. <br/>
-    /// Returns null when can not convertion.
-    /// </remarks>
-    /// <example><code>
-    /// var sprite = Hermes.CreateSprite(imageBytes);
-    /// </code></example>
-    public static Sprite? CreateSprite(byte[] bytes, float pixPerUnit = 50f)
-    {
-        Texture2D texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
-        if (!ImageConversion.LoadImage(texture, bytes))
-        {
-            return null;
-        }
-
-        return Sprite.Create(
-            texture,
-            new Rect(0, 0, texture.width, texture.height),
-            new Vector2(0.5f, 0.5f),
-            pixPerUnit
-        );
-    }
-
-    /// <summary>Creates UnityEngine.Sprite from image path</summary>
-    /// <param name="path">A path that read image</param>
-    /// <param name="pixPerUnit">Pixel length used by Sprite.CreateSprite</param>
-    /// <returns>A object of Sprite</returns>
-    /// <remarks>
-    /// Lets see <see cref="Hermes.CreateSprite(byte[], float)"/>
-    /// </remarks>
-    /// <example><code>
-    /// var sprite = Hermes.CreateSprite("image.png");
-    /// </code></example>
-    public static Sprite? CreateSprite(string path, float pixPerUnit = 50f)
-    {
-        var fileBytes = File.ReadAllBytes(path);
-
-        return CreateSprite(fileBytes, pixPerUnit);
-    }
 }
 
 /// <summary>Log level used by <see cref="Hermes.Say(string?, MessageLevel)"/></summary>
