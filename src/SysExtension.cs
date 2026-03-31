@@ -1,3 +1,5 @@
+using LOR_DiceSystem;
+
 namespace System;
 
 /// <summary>Respects the functions in Rust</summary>
@@ -167,5 +169,65 @@ public static class Extension
     public static string GetAsmDirectory(this Type ty)
     {
         return Path.GetDirectoryName(ty.Assembly.Location);
+    }
+
+    /// <summary>Creates new <see cref="BattlePlayingCardDataInUnitModel"/></summary>
+    public static BattlePlayingCardDataInUnitModel CreatePlayingCard(
+        this BattleUnitModel owner,
+        DiceCardXmlInfo cardInfo,
+        BattleUnitModel? target = null,
+        int targetSlotOrder = -1,
+        int speedDiceResultValue = 0,
+        List<BattleUnitModel>? subTargets = null
+    )
+    {
+        var card = BattleDiceCardModel.CreatePlayingCard(cardInfo);
+
+        card.owner = owner;
+
+        var playcard = new BattlePlayingCardDataInUnitModel()
+        {
+            owner = owner,
+            card = card,
+            target = target,
+            targetSlotOrder = targetSlotOrder,
+            earlyTarget = target,
+            earlyTargetOrder = targetSlotOrder,
+            cardAbility = card.CreateDiceCardSelfAbilityScript(),
+            cardBehaviorQueue = new(),
+            speedDiceResultValue = speedDiceResultValue,
+            subTargets = subTargets?
+                .Filter(unit => unit != owner)
+                .Map(unit => new BattlePlayingCardDataInUnitModel.SubTarget()
+                {
+                    target = unit,
+                    targetSlotOrder = RandomUtil.Range(0, unit.speedDiceResult.Count)
+                })
+                .Collect()
+        };
+
+        playcard.cardAbility.card = playcard;
+
+        foreach (var (i, beh) in cardInfo.DiceBehaviourList.Enumerate())
+        {
+            var dbeh = new BattleDiceBehavior()
+            {
+                card = playcard,
+                behaviourInCard = beh.Copy(),
+                abilityList = string.IsNullOrEmpty(beh.Script) ?
+                    new() : [AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script)],
+            };
+
+            foreach (var abi in dbeh.abilityList)
+            {
+                abi.behavior = dbeh;
+            }
+
+            dbeh.SetIndex(i);
+
+            playcard.cardBehaviorQueue.Enqueue(dbeh);
+        }
+
+        return playcard;
     }
 }
