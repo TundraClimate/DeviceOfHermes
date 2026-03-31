@@ -51,7 +51,7 @@ public class AdditonalOnlyCard
     [HarmonyPatch(typeof(BookModel), "SetXmlInfo", [typeof(BookXmlInfo)])]
     class PatchXmlInfoSetter
     {
-        static void Postfix(BookModel __instance, List<DiceCardXmlInfo> ____onlyCards)
+        static Exception Finalizer(Exception __exception, BookModel __instance, List<DiceCardXmlInfo> ____onlyCards)
         {
             if (LorId.IsBasicId(__instance.ClassInfo.workshopID))
             {
@@ -62,7 +62,7 @@ public class AdditonalOnlyCard
                     ____onlyCards.AddRange(cardXmls);
                 }
 
-                return;
+                return __exception;
             }
 
             if (AdditonalOnlyCard._onlyCardDict.TryGetValue(__instance.ClassInfo.id, out var cards))
@@ -71,6 +71,8 @@ public class AdditonalOnlyCard
 
                 ____onlyCards.AddRange(cardXmls);
             }
+
+            return __exception;
         }
     }
 }
