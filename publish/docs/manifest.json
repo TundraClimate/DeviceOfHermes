@@ -348,6 +348,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.UnitUIExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.UnitUIExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.UnitUIExtension",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.UnitUIExtension.yml\" sourcestartlinenumber=\"1\">The extensions of ui on unit model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.VannilaUnitBuf.yml",
       "output": {
         ".html": {
@@ -734,6 +748,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/unbreakable-dice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unitui-extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unitui-extension.html"
         }
       },
       "version": ""

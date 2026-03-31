@@ -163,12 +163,6 @@ public static class Extension
         return list;
     }
 
-    /// <summary>Says by unit on character dialog</summary>
-    public static void Say(this BattleUnitModel owner, string txt)
-    {
-        BattleManagerUI.Instance.ui_unitListInfoSummary.DisplayDlg(txt, owner, false, MentalState.Positive);
-    }
-
     /// <summary>Returns directory of ty found assembly</summary>
     public static string GetAsmDirectory(this Type ty)
     {

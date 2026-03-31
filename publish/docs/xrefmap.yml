@@ -874,6 +874,31 @@ references:
   commentId: T:DeviceOfHermes.Resource.Artwork
   fullName: DeviceOfHermes.Resource.Artwork
   nameWithType: Artwork
+- uid: DeviceOfHermes.Resource.Artwork.CreateSprite(System.Byte[],System.Single)
+  name: CreateSprite(byte[], float)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_CreateSprite_System_Byte___System_Single_
+  commentId: M:DeviceOfHermes.Resource.Artwork.CreateSprite(System.Byte[],System.Single)
+  name.vb: CreateSprite(Byte(), Single)
+  fullName: DeviceOfHermes.Resource.Artwork.CreateSprite(byte[], float)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.CreateSprite(Byte(), Single)
+  nameWithType: Artwork.CreateSprite(byte[], float)
+  nameWithType.vb: Artwork.CreateSprite(Byte(), Single)
+- uid: DeviceOfHermes.Resource.Artwork.CreateSprite(System.String,System.Single)
+  name: CreateSprite(string, float)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_CreateSprite_System_String_System_Single_
+  commentId: M:DeviceOfHermes.Resource.Artwork.CreateSprite(System.String,System.Single)
+  name.vb: CreateSprite(String, Single)
+  fullName: DeviceOfHermes.Resource.Artwork.CreateSprite(string, float)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.CreateSprite(String, Single)
+  nameWithType: Artwork.CreateSprite(string, float)
+  nameWithType.vb: Artwork.CreateSprite(String, Single)
+- uid: DeviceOfHermes.Resource.Artwork.CreateSprite*
+  name: CreateSprite
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_CreateSprite_
+  commentId: Overload:DeviceOfHermes.Resource.Artwork.CreateSprite
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Artwork.CreateSprite
+  nameWithType: Artwork.CreateSprite
 - uid: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites(System.String,System.Boolean)
   name: LoadBattleUnitBufSprites(string, bool)
   href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadBattleUnitBufSprites_System_String_System_Boolean_
@@ -1747,6 +1772,37 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.StyleExtension.Yellow
   nameWithType: StyleExtension.Yellow
+- uid: DeviceOfHermes.UnitUIExtension
+  name: UnitUIExtension
+  href: api/DeviceOfHermes.UnitUIExtension.html
+  commentId: T:DeviceOfHermes.UnitUIExtension
+  fullName: DeviceOfHermes.UnitUIExtension
+  nameWithType: UnitUIExtension
+- uid: DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel,System.String)
+  name: Say(BattleUnitModel, string)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_BattleUnitModel_System_String_
+  commentId: M:DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel,System.String)
+  name.vb: Say(BattleUnitModel, String)
+  fullName: DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel, string)
+  fullName.vb: DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel, String)
+  nameWithType: UnitUIExtension.Say(BattleUnitModel, string)
+  nameWithType.vb: UnitUIExtension.Say(BattleUnitModel, String)
+- uid: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView,System.String,System.Single)
+  name: Say(BattleUnitView, string, float)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_BattleUnitView_System_String_System_Single_
+  commentId: M:DeviceOfHermes.UnitUIExtension.Say(BattleUnitView,System.String,System.Single)
+  name.vb: Say(BattleUnitView, String, Single)
+  fullName: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView, string, float)
+  fullName.vb: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView, String, Single)
+  nameWithType: UnitUIExtension.Say(BattleUnitView, string, float)
+  nameWithType.vb: UnitUIExtension.Say(BattleUnitView, String, Single)
+- uid: DeviceOfHermes.UnitUIExtension.Say*
+  name: Say
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_
+  commentId: Overload:DeviceOfHermes.UnitUIExtension.Say
+  isSpec: "True"
+  fullName: DeviceOfHermes.UnitUIExtension.Say
+  nameWithType: UnitUIExtension.Say
 - uid: DeviceOfHermes.VannilaUnitBuf
   name: VannilaUnitBuf
   href: api/DeviceOfHermes.VannilaUnitBuf.html
@@ -2243,22 +2299,6 @@ references:
   fullName.vb: System.Extension.Reduce(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, T))
   nameWithType: Extension.Reduce<T>(IEnumerable<T>, Func<T, T, T>)
   nameWithType.vb: Extension.Reduce(Of T)(IEnumerable(Of T), Func(Of T, T, T))
-- uid: System.Extension.Say(BattleUnitModel,System.String)
-  name: Say(BattleUnitModel, string)
-  href: api/System.Extension.html#System_Extension_Say_BattleUnitModel_System_String_
-  commentId: M:System.Extension.Say(BattleUnitModel,System.String)
-  name.vb: Say(BattleUnitModel, String)
-  fullName: System.Extension.Say(BattleUnitModel, string)
-  fullName.vb: System.Extension.Say(BattleUnitModel, String)
-  nameWithType: Extension.Say(BattleUnitModel, string)
-  nameWithType.vb: Extension.Say(BattleUnitModel, String)
-- uid: System.Extension.Say*
-  name: Say
-  href: api/System.Extension.html#System_Extension_Say_
-  commentId: Overload:System.Extension.Say
-  isSpec: "True"
-  fullName: System.Extension.Say
-  nameWithType: Extension.Say
 - uid: System.Extension.StripPrefix(System.String,System.String)
   name: StripPrefix(string, string)
   href: api/System.Extension.html#System_Extension_StripPrefix_System_String_System_String_
@@ -2313,31 +2353,6 @@ references:
   commentId: T:System.Hermes
   fullName: System.Hermes
   nameWithType: Hermes
-- uid: System.Hermes.CreateSprite(System.Byte[],System.Single)
-  name: CreateSprite(byte[], float)
-  href: api/System.Hermes.html#System_Hermes_CreateSprite_System_Byte___System_Single_
-  commentId: M:System.Hermes.CreateSprite(System.Byte[],System.Single)
-  name.vb: CreateSprite(Byte(), Single)
-  fullName: System.Hermes.CreateSprite(byte[], float)
-  fullName.vb: System.Hermes.CreateSprite(Byte(), Single)
-  nameWithType: Hermes.CreateSprite(byte[], float)
-  nameWithType.vb: Hermes.CreateSprite(Byte(), Single)
-- uid: System.Hermes.CreateSprite(System.String,System.Single)
-  name: CreateSprite(string, float)
-  href: api/System.Hermes.html#System_Hermes_CreateSprite_System_String_System_Single_
-  commentId: M:System.Hermes.CreateSprite(System.String,System.Single)
-  name.vb: CreateSprite(String, Single)
-  fullName: System.Hermes.CreateSprite(string, float)
-  fullName.vb: System.Hermes.CreateSprite(String, Single)
-  nameWithType: Hermes.CreateSprite(string, float)
-  nameWithType.vb: Hermes.CreateSprite(String, Single)
-- uid: System.Hermes.CreateSprite*
-  name: CreateSprite
-  href: api/System.Hermes.html#System_Hermes_CreateSprite_
-  commentId: Overload:System.Hermes.CreateSprite
-  isSpec: "True"
-  fullName: System.Hermes.CreateSprite
-  nameWithType: Hermes.CreateSprite
 - uid: System.Hermes.Load*
   name: Load
   href: api/System.Hermes.html#System_Hermes_Load_
