@@ -28,7 +28,9 @@ public static class UnitUIExtension
     /// <param name="view">A unit view to display text</param>
     /// <param name="txt">A text to display</param>
     /// <param name="duration">The duration of display without fade</param>
-    public static void Say(this BattleUnitView view, string txt, float duration = 1f)
+    /// <param name="overhead">A height of on overhead</param>
+    /// <param name="scale">A text scale</param>
+    public static void Say(this BattleUnitView view, string txt, float duration = 1f, float overhead = 3.2f, float scale = 0.7f)
     {
         var cg = view.dialogUI.GetComponent<CanvasGroup>();
         var dialog = view.dialogUI;
@@ -47,21 +49,29 @@ public static class UnitUIExtension
             canvas.enabled = false;
         }
 
-        if (!_table.TryGetValue(view, out var _ignore))
+        if (_table.TryGetValue(view, out var ctx))
         {
-            _table.Add(view, dialog);
+            if (ctx.overhead != overhead)
+            {
+                _table.Remove(view);
+                _table.Add(view, new DialogContext(dialog) { overhead = overhead });
+            }
+        }
+        else
+        {
+            _table.Add(view, new DialogContext(dialog) { overhead = overhead });
         }
 
         canvas.enabled = true;
         cg.blocksRaycasts = true;
-        routine = dialog.StartCoroutine(Routine(canvas, cg, duration, view));
+        routine = dialog.StartCoroutine(Routine(canvas, cg, duration, view, scale));
     }
 
-    static IEnumerator Routine(Canvas canvas, CanvasGroup cg, float duration, BattleUnitView vRef)
+    static IEnumerator Routine(Canvas canvas, CanvasGroup cg, float duration, BattleUnitView vRef, float scale)
     {
         var reScale = cg.transform.localScale;
 
-        cg.transform.localScale = new Vector3(0.7f, 0.7f, 1f);
+        cg.transform.localScale = new Vector3(scale, scale, 1f);
 
         float elapsed = 0f;
 
@@ -98,14 +108,17 @@ public static class UnitUIExtension
     {
         static void Postfix(BattleUnitView ___view)
         {
-            if (_table.TryGetValue(___view, out var ui))
+            if (_table.TryGetValue(___view, out var ctx))
             {
-                ui.transform.localPosition = new Vector3(0f, 3.2f, 0f);
+                var ui = ctx.ui;
+                var overhead = ctx.overhead;
+
+                ui.transform.localPosition = new Vector3(0f, overhead, 0f);
             }
         }
     }
 
-    private static ConditionalWeakTable<BattleUnitView, BattleDialogUI> _table = new();
+    private static ConditionalWeakTable<BattleUnitView, DialogContext> _table = new();
 
     private static AccessTools.FieldRef<BattleDialogUI, TextMeshProUGUI> _txtAbnormalityDlg
         = typeof(BattleDialogUI).FieldRefAccess<TextMeshProUGUI>("_txtAbnormalityDlg");
@@ -115,4 +128,16 @@ public static class UnitUIExtension
 
     private static AccessTools.FieldRef<BattleDialogUI, Coroutine> _routine
         = typeof(BattleDialogUI).FieldRefAccess<Coroutine>("_routine");
+
+    class DialogContext
+    {
+        public DialogContext(BattleDialogUI _ui)
+        {
+            ui = _ui;
+        }
+
+        public BattleDialogUI ui;
+
+        public float overhead = 3.2f;
+    }
 }
