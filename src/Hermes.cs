@@ -103,6 +103,42 @@ public static class Hermes
 
         return data is not null;
     }
+
+    /// <summary>Creates improved log handler</summary>
+    /// <param name="outputLog">A realative path of game persistent data</param>
+    /// <returns>The log handler for <see cref="Application.logMessageReceived"/></returns>
+    /// <remarks>
+    /// This method has effect of output stream.<br/>
+    /// A stream writer will runs.
+    /// </remarks>
+    /// <example><code>
+    /// Application.logMessageReceived += CreateCleanLog("Output.log");
+    /// </code></example>
+    public static Application.LogCallback CreateCleanLog(string outputLog)
+    {
+        var stream = new StreamWriter(Path.Combine(GameSave.SaveManager.savePath, outputLog), false);
+
+        stream.AutoFlush = true;
+
+        Application.quitting += () => stream.Dispose();
+
+        return (condition, stackTrace, type) =>
+        {
+            var prefix = type switch
+            {
+                LogType.Error | LogType.Exception => "[ERROR] ",
+                LogType.Warning => "[WARN] ",
+                _ => "[INFO] "
+            };
+
+            stream.WriteLine(prefix + condition);
+
+            if (type == LogType.Exception)
+            {
+                stream.WriteLine(stackTrace);
+            }
+        };
+    }
 }
 
 /// <summary>Log level used by <see cref="Hermes.Say(string?, MessageLevel)"/></summary>

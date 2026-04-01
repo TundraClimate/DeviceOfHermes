@@ -1,4 +1,5 @@
 using HarmonyLib;
+using UnityEngine;
 using GameSave;
 
 internal class HermesBootStrap : DiceCardAbilityBase
@@ -10,6 +11,8 @@ internal class HermesBootStrap : DiceCardAbilityBase
         var harmony = new Harmony("DeviceOfHermes.Boot");
 
         harmony.CreateClassProcessor(typeof(SaveModifierPatch.PatchOnStart)).Patch();
+
+        Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
         return "";
     }
