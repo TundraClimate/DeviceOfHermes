@@ -1,3 +1,4 @@
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 using GameSave;
@@ -15,6 +16,29 @@ internal class HermesBootStrap : DiceCardAbilityBase
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
         return "";
+    }
+
+    private static void LoadNotExists(string depsPath)
+    {
+        var path = Path.Combine(DepsPath, depsPath);
+
+        if (!File.Exists(path))
+        {
+            Hermes.Say($"A file '{path}' is not exists");
+
+            return;
+        }
+
+        var addsAsm = AssemblyName.GetAssemblyName(path);
+
+        var find = AppDomain.CurrentDomain.GetAssemblies()
+            .Any(asm => AssemblyName.ReferenceMatchesDefinition(asm.GetName(), addsAsm));
+
+        if (!find)
+        {
+            Hermes.Say($"Load by DeviceOfHermes: {path}");
+            Assembly.LoadFrom(path);
+        }
     }
 
     private static string SavePath => Path.Combine(SaveManager.savePath, "ModSetting.save");
