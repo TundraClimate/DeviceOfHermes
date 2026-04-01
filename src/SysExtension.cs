@@ -133,15 +133,38 @@ public static class Extension
         return true;
     }
 
-    /// <summary>Runs inner action when not null</summary>
-    public static T? Inspect<T>(this T? nullable, Action<T> inspect)
+    /// <summary>Iterate the enumerable, returns self</summary>
+    public static IEnumerable<T> Inspect<T>(this IEnumerable<T> enumerable, Action<T> inspect)
     {
-        if (nullable is not null)
+        foreach (var elem in enumerable)
         {
-            inspect(nullable);
+            if (elem is not null)
+            {
+                inspect(elem);
+            }
         }
 
-        return nullable;
+        return enumerable;
+    }
+
+    /// <summary>Runs fn with it</summary>
+    public static R Let<T, R>(this T it, Func<T, R> fn)
+    {
+        return fn(it);
+    }
+
+    /// <summary>Runs fn with it</summary>
+    public static void Let<T>(this T it, Action<T> fn)
+    {
+        fn(it);
+    }
+
+    /// <summary>Runs fn with it and returns self</summary>
+    public static T Also<T>(this T it, Action<T> fn)
+    {
+        fn(it);
+
+        return it;
     }
 
     /// <summary>Returns opponent</summary>
@@ -160,7 +183,7 @@ public static class Extension
         List<BattleDiceCardModel> list = new();
         var f = filter ??= _ => true;
 
-        owner?.allyCardDetail?.GetHand()?.Filter(f)?.Inspect(hands => list.AddRange(hands));
+        owner?.allyCardDetail?.GetHand()?.Filter(f)?.Let(hands => list.AddRange(hands));
 
         return list;
     }
