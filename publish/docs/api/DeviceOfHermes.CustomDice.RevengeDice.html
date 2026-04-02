@@ -237,7 +237,13 @@ Class RevengeDice  <a class="header-action link-secondary" title="View source" h
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__">Extension.Inspect&lt;T&gt;(T?, Action&lt;T&gt;)</a>
+      <a class="xref" href="System.Extension.html#System_Extension_Also__1___0_System_Action___0__">Extension.Also&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Let__1___0_System_Action___0__">Extension.Let&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Let__2___0_System_Func___0___1__">Extension.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   </dd></dl>
 
@@ -267,11 +273,50 @@ Class RevengeDice  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
-  <a id="DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnRevenge*"></a>
+  <a id="DeviceOfHermes_CustomDice_RevengeDice_AddRevengeCard_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard*"></a>
 
-  <h3 id="DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)">
-  OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/RevengeDice.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <h3 id="DeviceOfHermes_CustomDice_RevengeDice_AddRevengeCard_BattleUnitModel_LOR_DiceSystem_DiceCardXmlInfo_System_Collections_Generic_List_BattleDiceBehavior__" data-uid="DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,System.Collections.Generic.List{BattleDiceBehavior})">
+  AddRevengeCard(BattleUnitModel, DiceCardXmlInfo, List&lt;BattleDiceBehavior&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/RevengeDice.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds revenge card to unit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddRevengeCard(BattleUnitModel unit, DiceCardXmlInfo display, List&lt;BattleDiceBehavior&gt;? behaviors = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A unit for adds card</p>
+</dd>
+    <dt><code>display</code> <span class="xref">DiceCardXmlInfo</span></dt>
+    <dd><p>The card that display in battle</p>
+</dd>
+    <dt><code>behaviors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">BattleDiceBehavior</span>&gt;</dt>
+    <dd><p>Override behavior if not null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_CustomDice_RevengeDice_OnBeforeRevenge_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge*"></a>
+
+  <h3 id="DeviceOfHermes_CustomDice_RevengeDice_OnBeforeRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)">
+  OnBeforeRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/RevengeDice.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A unit when revenge decided</p>
@@ -279,7 +324,7 @@ Class RevengeDice  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void OnRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnBeforeRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -303,11 +348,11 @@ Class RevengeDice  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <a id="DeviceOfHermes_CustomDice_RevengeDice_OnUseRevenge_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge*"></a>
+  <a id="DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnRevenge*"></a>
 
-  <h3 id="DeviceOfHermes_CustomDice_RevengeDice_OnUseRevenge_BattlePlayingCardDataInUnitModel_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)">
-  OnUseRevenge(BattlePlayingCardDataInUnitModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/RevengeDice.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <h3 id="DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_BattlePlayingCardDataInUnitModel_" data-uid="DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel)">
+  OnRevenge(BattlePlayingCardDataInUnitModel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/RevengeDice.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A unit when use revenge</p>
@@ -315,7 +360,7 @@ Class RevengeDice  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void OnUseRevenge(BattlePlayingCardDataInUnitModel card)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnRevenge(BattlePlayingCardDataInUnitModel card)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

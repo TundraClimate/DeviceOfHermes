@@ -670,12 +670,41 @@ references:
   commentId: T:DeviceOfHermes.CustomDice.RevengeDice
   fullName: DeviceOfHermes.CustomDice.RevengeDice
   nameWithType: RevengeDice
-- uid: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
-  name: OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
-  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_
-  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
-  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
-  nameWithType: RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+- uid: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,System.Collections.Generic.List{BattleDiceBehavior})
+  name: AddRevengeCard(BattleUnitModel, DiceCardXmlInfo, List<BattleDiceBehavior>?)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_AddRevengeCard_BattleUnitModel_LOR_DiceSystem_DiceCardXmlInfo_System_Collections_Generic_List_BattleDiceBehavior__
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,System.Collections.Generic.List{BattleDiceBehavior})
+  name.vb: AddRevengeCard(BattleUnitModel, DiceCardXmlInfo, List(Of BattleDiceBehavior))
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel, LOR_DiceSystem.DiceCardXmlInfo, System.Collections.Generic.List<BattleDiceBehavior>?)
+  fullName.vb: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel, LOR_DiceSystem.DiceCardXmlInfo, System.Collections.Generic.List(Of BattleDiceBehavior))
+  nameWithType: RevengeDice.AddRevengeCard(BattleUnitModel, DiceCardXmlInfo, List<BattleDiceBehavior>?)
+  nameWithType.vb: RevengeDice.AddRevengeCard(BattleUnitModel, DiceCardXmlInfo, List(Of BattleDiceBehavior))
+- uid: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard*
+  name: AddRevengeCard
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_AddRevengeCard_
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard
+  nameWithType: RevengeDice.AddRevengeCard
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  name: OnBeforeRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnBeforeRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  nameWithType: RevengeDice.OnBeforeRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge*
+  name: OnBeforeRevenge
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnBeforeRevenge_
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge
+  nameWithType: RevengeDice.OnBeforeRevenge
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel)
+  name: OnRevenge(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel)
+  nameWithType: RevengeDice.OnRevenge(BattlePlayingCardDataInUnitModel)
 - uid: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge*
   name: OnRevenge
   href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnRevenge_
@@ -683,19 +712,6 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge
   nameWithType: RevengeDice.OnRevenge
-- uid: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
-  name: OnUseRevenge(BattlePlayingCardDataInUnitModel)
-  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnUseRevenge_BattlePlayingCardDataInUnitModel_
-  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
-  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
-  nameWithType: RevengeDice.OnUseRevenge(BattlePlayingCardDataInUnitModel)
-- uid: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge*
-  name: OnUseRevenge
-  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnUseRevenge_
-  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge
-  isSpec: "True"
-  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnUseRevenge
-  nameWithType: RevengeDice.OnUseRevenge
 - uid: DeviceOfHermes.CustomDice.UnbreakableDice
   name: UnbreakableDice
   href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html
@@ -1787,15 +1803,15 @@ references:
   fullName.vb: DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel, String)
   nameWithType: UnitUIExtension.Say(BattleUnitModel, string)
   nameWithType.vb: UnitUIExtension.Say(BattleUnitModel, String)
-- uid: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView,System.String,System.Single)
-  name: Say(BattleUnitView, string, float)
-  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_BattleUnitView_System_String_System_Single_
-  commentId: M:DeviceOfHermes.UnitUIExtension.Say(BattleUnitView,System.String,System.Single)
-  name.vb: Say(BattleUnitView, String, Single)
-  fullName: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView, string, float)
-  fullName.vb: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView, String, Single)
-  nameWithType: UnitUIExtension.Say(BattleUnitView, string, float)
-  nameWithType.vb: UnitUIExtension.Say(BattleUnitView, String, Single)
+- uid: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView,System.String,System.Single,System.Single,System.Single)
+  name: Say(BattleUnitView, string, float, float, float)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_BattleUnitView_System_String_System_Single_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.UnitUIExtension.Say(BattleUnitView,System.String,System.Single,System.Single,System.Single)
+  name.vb: Say(BattleUnitView, String, Single, Single, Single)
+  fullName: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView, string, float, float, float)
+  fullName.vb: DeviceOfHermes.UnitUIExtension.Say(BattleUnitView, String, Single, Single, Single)
+  nameWithType: UnitUIExtension.Say(BattleUnitView, string, float, float, float)
+  nameWithType.vb: UnitUIExtension.Say(BattleUnitView, String, Single, Single, Single)
 - uid: DeviceOfHermes.UnitUIExtension.Say*
   name: Say
   href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_
@@ -1863,28 +1879,6 @@ references:
   commentId: N:System
   fullName: System
   nameWithType: System
-- uid: System.AdvancedTakeDamage
-  name: AdvancedTakeDamage
-  href: api/System.AdvancedTakeDamage.html
-  commentId: T:System.AdvancedTakeDamage
-  fullName: System.AdvancedTakeDamage
-  nameWithType: AdvancedTakeDamage
-- uid: System.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
-  name: DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
-  href: api/System.AdvancedTakeDamage.html#System_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist__
-  commentId: M:System.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
-  name.vb: DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
-  fullName: System.AdvancedTakeDamage.DealDamage(BattleUnitModel, int, LOR_DiceSystem.BehaviourDetail, BattleUnitModel?, AtkResist?)
-  fullName.vb: System.AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, LOR_DiceSystem.BehaviourDetail, BattleUnitModel, AtkResist?)
-  nameWithType: AdvancedTakeDamage.DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
-  nameWithType.vb: AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
-- uid: System.AdvancedTakeDamage.DealDamage*
-  name: DealDamage
-  href: api/System.AdvancedTakeDamage.html#System_AdvancedTakeDamage_DealDamage_
-  commentId: Overload:System.AdvancedTakeDamage.DealDamage
-  isSpec: "True"
-  fullName: System.AdvancedTakeDamage.DealDamage
-  nameWithType: AdvancedTakeDamage.DealDamage
 - uid: System.Collections.Generic
   name: System.Collections.Generic
   href: api/System.Collections.Generic.html
@@ -1977,94 +1971,28 @@ references:
   isSpec: "True"
   fullName: System.Collections.Generic.Walkdir.GetFilesRecursive
   nameWithType: Walkdir.GetFilesRecursive
-- uid: System.Diagnostics.CodeAnalysis
-  name: System.Diagnostics.CodeAnalysis
-  href: api/System.Diagnostics.CodeAnalysis.html
-  commentId: N:System.Diagnostics.CodeAnalysis
-  fullName: System.Diagnostics.CodeAnalysis
-  nameWithType: System.Diagnostics.CodeAnalysis
-- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
-  name: MaybeNullWhenAttribute
-  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html
-  commentId: T:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
-  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
-  nameWithType: MaybeNullWhenAttribute
-- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor(System.Boolean)
-  name: MaybeNullWhenAttribute(bool)
-  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute__ctor_System_Boolean_
-  commentId: M:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor(System.Boolean)
-  name.vb: New(Boolean)
-  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.MaybeNullWhenAttribute(bool)
-  fullName.vb: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.New(Boolean)
-  nameWithType: MaybeNullWhenAttribute.MaybeNullWhenAttribute(bool)
-  nameWithType.vb: MaybeNullWhenAttribute.New(Boolean)
-- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor*
-  name: MaybeNullWhenAttribute
-  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute__ctor_
-  commentId: Overload:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.MaybeNullWhenAttribute
-  fullName.vb: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.New
-  nameWithType: MaybeNullWhenAttribute.MaybeNullWhenAttribute
-  nameWithType.vb: MaybeNullWhenAttribute.New
-- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
-  name: ReturnValue
-  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute_ReturnValue
-  commentId: P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
-  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
-  nameWithType: MaybeNullWhenAttribute.ReturnValue
-- uid: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue*
-  name: ReturnValue
-  href: api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_MaybeNullWhenAttribute_ReturnValue_
-  commentId: Overload:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
-  isSpec: "True"
-  fullName: System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue
-  nameWithType: MaybeNullWhenAttribute.ReturnValue
-- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
-  name: NotNullWhenAttribute
-  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html
-  commentId: T:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
-  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
-  nameWithType: NotNullWhenAttribute
-- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
-  name: NotNullWhenAttribute(bool)
-  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute__ctor_System_Boolean_
-  commentId: M:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
-  name.vb: New(Boolean)
-  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.NotNullWhenAttribute(bool)
-  fullName.vb: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.New(Boolean)
-  nameWithType: NotNullWhenAttribute.NotNullWhenAttribute(bool)
-  nameWithType.vb: NotNullWhenAttribute.New(Boolean)
-- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor*
-  name: NotNullWhenAttribute
-  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute__ctor_
-  commentId: Overload:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.NotNullWhenAttribute
-  fullName.vb: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.New
-  nameWithType: NotNullWhenAttribute.NotNullWhenAttribute
-  nameWithType.vb: NotNullWhenAttribute.New
-- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
-  name: ReturnValue
-  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute_ReturnValue
-  commentId: P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
-  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
-  nameWithType: NotNullWhenAttribute.ReturnValue
-- uid: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue*
-  name: ReturnValue
-  href: api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html#System_Diagnostics_CodeAnalysis_NotNullWhenAttribute_ReturnValue_
-  commentId: Overload:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
-  isSpec: "True"
-  fullName: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue
-  nameWithType: NotNullWhenAttribute.ReturnValue
 - uid: System.Extension
   name: Extension
   href: api/System.Extension.html
   commentId: T:System.Extension
   fullName: System.Extension
   nameWithType: Extension
+- uid: System.Extension.Also*
+  name: Also
+  href: api/System.Extension.html#System_Extension_Also_
+  commentId: Overload:System.Extension.Also
+  isSpec: "True"
+  fullName: System.Extension.Also
+  nameWithType: Extension.Also
+- uid: System.Extension.Also``1(``0,System.Action{``0})
+  name: Also<T>(T, Action<T>)
+  href: api/System.Extension.html#System_Extension_Also__1___0_System_Action___0__
+  commentId: M:System.Extension.Also``1(``0,System.Action{``0})
+  name.vb: Also(Of T)(T, Action(Of T))
+  fullName: System.Extension.Also<T>(T, System.Action<T>)
+  fullName.vb: System.Extension.Also(Of T)(T, System.Action(Of T))
+  nameWithType: Extension.Also<T>(T, Action<T>)
+  nameWithType.vb: Extension.Also(Of T)(T, Action(Of T))
 - uid: System.Extension.Collect*
   name: Collect
   href: api/System.Extension.html#System_Extension_Collect_
@@ -2081,6 +2009,22 @@ references:
   fullName.vb: System.Extension.Collect(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: Extension.Collect<T>(IEnumerable<T>)
   nameWithType.vb: Extension.Collect(Of T)(IEnumerable(Of T))
+- uid: System.Extension.CreatePlayingCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,BattleUnitModel,System.Int32,System.Int32,System.Collections.Generic.List{BattleUnitModel})
+  name: CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel?, int, int, List<BattleUnitModel>?)
+  href: api/System.Extension.html#System_Extension_CreatePlayingCard_BattleUnitModel_LOR_DiceSystem_DiceCardXmlInfo_BattleUnitModel_System_Int32_System_Int32_System_Collections_Generic_List_BattleUnitModel__
+  commentId: M:System.Extension.CreatePlayingCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,BattleUnitModel,System.Int32,System.Int32,System.Collections.Generic.List{BattleUnitModel})
+  name.vb: CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel, Integer, Integer, List(Of BattleUnitModel))
+  fullName: System.Extension.CreatePlayingCard(BattleUnitModel, LOR_DiceSystem.DiceCardXmlInfo, BattleUnitModel?, int, int, System.Collections.Generic.List<BattleUnitModel>?)
+  fullName.vb: System.Extension.CreatePlayingCard(BattleUnitModel, LOR_DiceSystem.DiceCardXmlInfo, BattleUnitModel, Integer, Integer, System.Collections.Generic.List(Of BattleUnitModel))
+  nameWithType: Extension.CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel?, int, int, List<BattleUnitModel>?)
+  nameWithType.vb: Extension.CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel, Integer, Integer, List(Of BattleUnitModel))
+- uid: System.Extension.CreatePlayingCard*
+  name: CreatePlayingCard
+  href: api/System.Extension.html#System_Extension_CreatePlayingCard_
+  commentId: Overload:System.Extension.CreatePlayingCard
+  isSpec: "True"
+  fullName: System.Extension.CreatePlayingCard
+  nameWithType: Extension.CreatePlayingCard
 - uid: System.Extension.Enumerate*
   name: Enumerate
   href: api/System.Extension.html#System_Extension_Enumerate_
@@ -2226,15 +2170,40 @@ references:
   isSpec: "True"
   fullName: System.Extension.Inspect
   nameWithType: Extension.Inspect
-- uid: System.Extension.Inspect``1(``0,System.Action{``0})
-  name: Inspect<T>(T?, Action<T>)
-  href: api/System.Extension.html#System_Extension_Inspect__1___0_System_Action___0__
-  commentId: M:System.Extension.Inspect``1(``0,System.Action{``0})
-  name.vb: Inspect(Of T)(T, Action(Of T))
-  fullName: System.Extension.Inspect<T>(T?, System.Action<T>)
-  fullName.vb: System.Extension.Inspect(Of T)(T, System.Action(Of T))
-  nameWithType: Extension.Inspect<T>(T?, Action<T>)
-  nameWithType.vb: Extension.Inspect(Of T)(T, Action(Of T))
+- uid: System.Extension.Inspect``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name: Inspect<T>(IEnumerable<T>, Action<T>)
+  href: api/System.Extension.html#System_Extension_Inspect__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  commentId: M:System.Extension.Inspect``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name.vb: Inspect(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: System.Extension.Inspect<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  fullName.vb: System.Extension.Inspect(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  nameWithType: Extension.Inspect<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: Extension.Inspect(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: System.Extension.Let*
+  name: Let
+  href: api/System.Extension.html#System_Extension_Let_
+  commentId: Overload:System.Extension.Let
+  isSpec: "True"
+  fullName: System.Extension.Let
+  nameWithType: Extension.Let
+- uid: System.Extension.Let``1(``0,System.Action{``0})
+  name: Let<T>(T, Action<T>)
+  href: api/System.Extension.html#System_Extension_Let__1___0_System_Action___0__
+  commentId: M:System.Extension.Let``1(``0,System.Action{``0})
+  name.vb: Let(Of T)(T, Action(Of T))
+  fullName: System.Extension.Let<T>(T, System.Action<T>)
+  fullName.vb: System.Extension.Let(Of T)(T, System.Action(Of T))
+  nameWithType: Extension.Let<T>(T, Action<T>)
+  nameWithType.vb: Extension.Let(Of T)(T, Action(Of T))
+- uid: System.Extension.Let``2(``0,System.Func{``0,``1})
+  name: Let<T, R>(T, Func<T, R>)
+  href: api/System.Extension.html#System_Extension_Let__2___0_System_Func___0___1__
+  commentId: M:System.Extension.Let``2(``0,System.Func{``0,``1})
+  name.vb: Let(Of T, R)(T, Func(Of T, R))
+  fullName: System.Extension.Let<T, R>(T, System.Func<T, R>)
+  fullName.vb: System.Extension.Let(Of T, R)(T, System.Func(Of T, R))
+  nameWithType: Extension.Let<T, R>(T, Func<T, R>)
+  nameWithType.vb: Extension.Let(Of T, R)(T, Func(Of T, R))
 - uid: System.Extension.Map*
   name: Map
   href: api/System.Extension.html#System_Extension_Map_
@@ -2353,6 +2322,22 @@ references:
   commentId: T:System.Hermes
   fullName: System.Hermes
   nameWithType: Hermes
+- uid: System.Hermes.CreateCleanLog(System.String)
+  name: CreateCleanLog(string)
+  href: api/System.Hermes.html#System_Hermes_CreateCleanLog_System_String_
+  commentId: M:System.Hermes.CreateCleanLog(System.String)
+  name.vb: CreateCleanLog(String)
+  fullName: System.Hermes.CreateCleanLog(string)
+  fullName.vb: System.Hermes.CreateCleanLog(String)
+  nameWithType: Hermes.CreateCleanLog(string)
+  nameWithType.vb: Hermes.CreateCleanLog(String)
+- uid: System.Hermes.CreateCleanLog*
+  name: CreateCleanLog
+  href: api/System.Hermes.html#System_Hermes_CreateCleanLog_
+  commentId: Overload:System.Hermes.CreateCleanLog
+  isSpec: "True"
+  fullName: System.Hermes.CreateCleanLog
+  nameWithType: Hermes.CreateCleanLog
 - uid: System.Hermes.Load*
   name: Load
   href: api/System.Hermes.html#System_Hermes_Load_

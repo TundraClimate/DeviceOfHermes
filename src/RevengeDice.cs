@@ -52,105 +52,200 @@ public class RevengeDice : AdvancedDiceBase
 
         var harmony = new Harmony("DeviceOfHermes.CustomDice.Revenge");
 
-        harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchBehaviourToKeeps)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchStandbyResolve)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchOnEndBattle)).Patch();
         harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchClearDices)).Patch();
         harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchOnTakeDamage)).Patch();
         harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchStartParrying)).Patch();
         harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchStartAction)).Patch();
         harmony.CreateClassProcessor(typeof(PatchRevengeDice.PatchOnUseCard)).Patch();
 
-        _dices = new();
-    }
-
-    internal static void UpdateDices(BattleUnitModel owner, BattleDiceCardModel card, BattleDiceBehavior dice)
-    {
-        if (!_dices.ContainsKey(owner))
-        {
-            _dices.Add(owner, new());
-        }
-
-        var newBeh = dice.behaviourInCard.Copy();
-
-        newBeh.Type = BehaviourType.Atk;
-
-        dice.behaviourInCard = newBeh;
-
-        if (_dices[owner].Any(pc => pc.card == card))
-        {
-            _dices[owner].Foreach(pc =>
-            {
-                if (pc.card == card)
-                {
-                    dice.card = pc;
-                    pc.cardBehaviorQueue.Enqueue(dice);
-                }
-            });
-        }
-        else
-        {
-            var playCard = new BattlePlayingCardDataInUnitModel()
-            {
-                card = card,
-                cardBehaviorQueue = new(),
-            };
-
-            dice.card = playCard;
-
-            playCard.cardBehaviorQueue.Enqueue(dice);
-            playCard.owner = owner;
-
-            _dices[owner].Enqueue(playCard);
-        }
+        Cards = new();
+        CurrentRevenge = new();
     }
 
     /// <summary>A unit when revenge decided</summary>
     /// <param name="card">A revenge dicecard</param>
     /// <param name="revengeBy">A dice of revenge decided</param>
-    public virtual void OnRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
+    public virtual void OnBeforeRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
     {
     }
 
     /// <summary>A unit when use revenge</summary>
     /// <param name="card">A revenge dicecard</param>
-    public virtual void OnUseRevenge(BattlePlayingCardDataInUnitModel card)
+    public virtual void OnRevenge(BattlePlayingCardDataInUnitModel card)
     {
     }
 
-    internal static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> Dices => _dices;
+    /// <summary>Adds revenge card to unit</summary>
+    /// <param name="unit">A unit for adds card</param>
+    /// <param name="display">The card that display in battle</param>
+    /// <param name="behaviors">Override behavior if not null</param>
+    public static void AddRevengeCard(BattleUnitModel unit, DiceCardXmlInfo display, List<BattleDiceBehavior>? behaviors = null)
+    {
+        var playcard = unit.CreatePlayingCard(display);
 
-    private static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> _dices;
+        behaviors?.Let(it =>
+        {
+            playcard.cardBehaviorQueue = new();
 
-    internal static BattlePlayingCardDataInUnitModel? currentRevenge;
+            foreach (var beh in it)
+            {
+                beh.card = playcard;
+
+                foreach (var abi in beh.abilityList)
+                {
+                    abi.behavior = beh;
+                }
+
+                playcard.cardBehaviorQueue.Enqueue(beh);
+            }
+        });
+
+        if (!RevengeDice.Cards.ContainsKey(unit))
+        {
+            RevengeDice.Cards.Add(unit, new());
+        }
+
+        RevengeDice.Cards[unit].Enqueue(playcard);
+    }
+
+    internal static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> Cards
+    {
+        get;
+        set => field = value;
+    }
+
+    internal static Dictionary<BattleUnitModel, BattlePlayingCardDataInUnitModel> CurrentRevenge
+    {
+        get;
+        set => field = value;
+    }
 }
 
 internal class PatchRevengeDice
 {
-    [HarmonyPatch(typeof(BattleKeepedCardDataInUnitModel), "AddBehaviours", [typeof(BattleDiceCardModel), typeof(List<BattleDiceBehavior>)])]
-    public class PatchBehaviourToKeeps
+    [HarmonyPatch(typeof(StageController), "ActivateStartBattleEffectPhase")]
+    public class PatchStandbyResolve
     {
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            var target = AccessTools.Method(typeof(Queue<BattleDiceBehavior>), "Enqueue");
-            var inject = AccessTools.Method(typeof(PatchBehaviourToKeeps), "InjectMethod");
+            var target = typeof(BattleKeepedCardDataInUnitModel).Method("AddBehaviours", [typeof(BattleDiceCardModel), typeof(List<BattleDiceBehavior>)]);
+            var inject = typeof(PatchStandbyResolve).Method("InjectMethod");
 
             var matcher = new CodeMatcher(instructions);
 
             matcher.MatchStartForward(CodeMatch.Calls(target))
-                .SetInstruction(new CodeInstruction(OpCodes.Call, inject))
-                .Insert(new CodeInstruction(OpCodes.Ldarg_0), new CodeInstruction(OpCodes.Ldarg_1));
+                .Insert(new CodeInstruction(OpCodes.Call, inject));
 
             return matcher.Instructions();
         }
 
-        static void InjectMethod(Queue<BattleDiceBehavior> cardBehaviorQueue, BattleDiceBehavior beh, BattleKeepedCardDataInUnitModel keeps, BattleDiceCardModel card)
+        static List<BattleDiceBehavior> InjectMethod(List<BattleDiceBehavior> standbyDices)
         {
-            if (beh.abilityList.Exists(abi => abi is RevengeDice))
+            List<BattleDiceBehavior> solved = new();
+            List<BattleDiceBehavior> revenges = new();
+            BattleUnitModel? owner = null;
+
+            foreach (var dice in standbyDices)
             {
-                RevengeDice.UpdateDices(keeps.owner, card, beh);
+                if (dice.abilityList.Exists(abi => abi is RevengeDice))
+                {
+                    owner = dice.owner;
+
+                    revenges.Add(dice);
+                }
+                else
+                {
+                    solved.Add(dice);
+                }
             }
-            else
+
+            if (owner is not null)
             {
-                cardBehaviorQueue.Enqueue(beh);
+                var xmlInfo = revenges[0].card.card.XmlData;
+
+                RevengeDice.AddRevengeCard(owner, xmlInfo, revenges);
+            }
+
+            return solved;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnTakeDamageByAttack")]
+    public class PatchOnTakeDamage
+    {
+        static void Prefix(BattleUnitModel __instance, BattleDiceBehavior atkDice)
+        {
+            if (!RevengeDice.CurrentRevenge.ContainsKey(__instance) && RevengeDice.Cards.TryGetValue(__instance, out var res))
+            {
+                if (res.Count < 1)
+                {
+                    return;
+                }
+
+                var playcard = res.Dequeue();
+
+                var speed = atkDice.card.speedDiceResultValue + 1;
+                var target = atkDice.owner;
+
+                playcard.Let(it =>
+                {
+                    it.target = target;
+                    it.earlyTarget = target;
+                    it.speedDiceResultValue = speed;
+                });
+
+                foreach (var beh in playcard.cardBehaviorQueue)
+                {
+                    if (beh.Type == BehaviourType.Standby)
+                    {
+                        var newBeh = beh.behaviourInCard.Copy();
+
+                        newBeh.Type = BehaviourType.Atk;
+
+                        beh.behaviourInCard = newBeh;
+                    }
+
+                }
+
+                foreach (var abi in playcard.cardBehaviorQueue.SelectMany(beh => beh.abilityList))
+                {
+                    if (abi is RevengeDice rev)
+                    {
+                        rev.OnBeforeRevenge(playcard, atkDice);
+                    }
+                }
+
+                RevengeDice.CurrentRevenge.Add(__instance, playcard);
+                StageController.Instance.GetAllCards().Insert(0, playcard);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnEndBattle")]
+    public class PatchOnEndBattle
+    {
+        static void Prefix(BattlePlayingCardDataInUnitModel __instance)
+        {
+            if (RevengeDice.CurrentRevenge.ContainsValue(__instance))
+            {
+                RevengeDice.CurrentRevenge.Remove(__instance.owner);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnUseCard")]
+    public class PatchOnUseCard
+    {
+        static void Prefix(BattlePlayingCardDataInUnitModel card)
+        {
+            foreach (var abi in card.GetDiceBehaviorList().Map(beh => beh.abilityList).Flatten())
+            {
+                if (abi is RevengeDice rev)
+                {
+                    rev.OnRevenge(card);
+                }
             }
         }
     }
@@ -160,8 +255,8 @@ internal class PatchRevengeDice
     {
         static void Prefix()
         {
-            RevengeDice.Dices.Clear();
-            RevengeDice.currentRevenge = null;
+            RevengeDice.Cards.Clear();
+            RevengeDice.CurrentRevenge.Clear();
         }
     }
 
@@ -187,52 +282,5 @@ internal class PatchRevengeDice
         [HarmonyReversePatch]
         public static void StartAction(StageController instance, BattlePlayingCardDataInUnitModel card) =>
             throw new NotImplementedException();
-    }
-
-    [HarmonyPatch(typeof(BattleUnitModel), "OnTakeDamageByAttack")]
-    public class PatchOnTakeDamage
-    {
-        static void Prefix(BattleUnitModel __instance, BattleDiceBehavior atkDice)
-        {
-            if (atkDice.abilityList.Exists(abi => abi is RevengeDice))
-            {
-                RevengeDice.currentRevenge = null;
-
-                return;
-            }
-
-
-            if (RevengeDice.Dices.ContainsKey(__instance) && RevengeDice.Dices[__instance].Count > 0)
-            {
-                if (RevengeDice.currentRevenge is null)
-                {
-                    var card = RevengeDice.Dices[__instance].Dequeue();
-
-                    card.target = atkDice.owner;
-                    card.targetSlotOrder = -1;
-                    card.speedDiceResultValue = 99;
-
-                    card.cardBehaviorQueue.Foreach(beh => beh.abilityList.Filter(abi => abi is RevengeDice).Foreach(abi => ((RevengeDice)abi).OnRevenge(card, atkDice)));
-
-                    RevengeDice.currentRevenge = card;
-                    StageController.Instance.GetAllCards().Add(card);
-                }
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(BattleUnitModel), "OnUseCard")]
-    public class PatchOnUseCard
-    {
-        static void Prefix(BattlePlayingCardDataInUnitModel card)
-        {
-            foreach (var abi in card.GetDiceBehaviorList().Map(beh => beh.abilityList).Flatten())
-            {
-                if (abi is RevengeDice rev)
-                {
-                    rev.OnUseRevenge(card);
-                }
-            }
-        }
     }
 }

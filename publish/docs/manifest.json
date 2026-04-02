@@ -390,20 +390,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/System.AdvancedTakeDamage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/System.AdvancedTakeDamage.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "System.AdvancedTakeDamage",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/System.Collections.Generic.Peekable-1.yml",
       "output": {
         ".html": {
@@ -442,48 +428,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Collections.Generic",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "System.Diagnostics.CodeAnalysis.NotNullWhenAttribute",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/System.Diagnostics.CodeAnalysis.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/System.Diagnostics.CodeAnalysis.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "System.Diagnostics.CodeAnalysis",
       "Summary": null
     },
     {

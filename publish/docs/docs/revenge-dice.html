@@ -109,7 +109,7 @@
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
 それの代わりに<code>RevengeDice</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
-<pre><code class="lang-cs">public override void OnRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
+<pre><code class="lang-cs">public override void OnBeforeRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
 {
 }
 </code></pre>
@@ -119,13 +119,23 @@
 <li><code>revengeBy</code>: 反撃のトリガーになった敵のダイスです。</li>
 </ul>
 <hr>
-<pre><code class="lang-cs">public override void OnUseRevenge(BattlePlayingCardDataInUnitModel card)
+<pre><code class="lang-cs">public override void OnRevenge(BattlePlayingCardDataInUnitModel card)
 {
 }
 </code></pre>
 <p>特殊反撃でページが使用された瞬間に含まれるダイスで実行されます。</p>
 <ul>
 <li><code>card</code>: そのダイスが実際に使用されるページ。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">RevengeDice.AddRevengeCard(unit, display, behaviors);
+</code></pre>
+<p>デフォルトのダイス、もしくは指定のダイスでページを作成し、反撃ページとして追加します。<br>
+戦闘中にのみ有効です。</p>
+<ul>
+<li><code>unit</code>: 追加する対象です。</li>
+<li><code>display</code>: このページとしてダイスを使用します。</li>
+<li><code>behaviors</code>: 指定した場合、ダイスが上書きされます。</li>
 </ul>
 
 </article>

@@ -148,21 +148,32 @@ public static class Extension
     }
 
     /// <summary>Runs fn with it</summary>
-    public static R Let<T, R>(this T it, Func<T, R> fn)
+    public static R? Let<T, R>(this T it, Func<T, R> fn)
     {
+        if (it is null)
+        {
+            return default(R);
+        }
+
         return fn(it);
     }
 
     /// <summary>Runs fn with it</summary>
     public static void Let<T>(this T it, Action<T> fn)
     {
-        fn(it);
+        if (it is not null)
+        {
+            fn(it);
+        }
     }
 
     /// <summary>Runs fn with it and returns self</summary>
     public static T Also<T>(this T it, Action<T> fn)
     {
-        fn(it);
+        if (it is not null)
+        {
+            fn(it);
+        }
 
         return it;
     }
@@ -229,7 +240,7 @@ public static class Extension
                 .Collect()
         };
 
-        playcard.cardAbility.card = playcard;
+        playcard.cardAbility?.card = playcard;
 
         foreach (var (i, beh) in cardInfo.DiceBehaviourList.Enumerate())
         {

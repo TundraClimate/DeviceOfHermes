@@ -163,6 +163,52 @@ Hermes.Say("*beep*", MessageLevel.Error);</code></pre>
 </h2>
 
 
+  <a id="System_Hermes_CreateCleanLog_" data-uid="System.Hermes.CreateCleanLog*"></a>
+
+  <h3 id="System_Hermes_CreateCleanLog_System_String_" data-uid="System.Hermes.CreateCleanLog(System.String)">
+  CreateCleanLog(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Hermes.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates improved log handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Application.LogCallback CreateCleanLog(string outputLog)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputLog</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A realative path of game persistent data</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Application</span>.<span class="xref">LogCallback</span></dt>
+    <dd><p>The log handler for <span class="xref">UnityEngine.Application.logMessageReceived</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="System_Hermes_CreateCleanLog_System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">Application.logMessageReceived += CreateCleanLog("Output.log");</code></pre>
+
+
+  <h4 class="section" id="System_Hermes_CreateCleanLog_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method has effect of output stream.<br>
+A stream writer will runs.</p>
+</div>
+
+
+
+
   <a id="System_Hermes_Load_" data-uid="System.Hermes.Load*"></a>
 
   <h3 id="System_Hermes_Load__1" data-uid="System.Hermes.Load``1">

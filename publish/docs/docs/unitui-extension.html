@@ -101,15 +101,19 @@ owner.view.Say(&quot;ルール違反だ！&quot;, 1f);
 </code></pre>
 <p>通常と同じようにセリフを喋らせます。</p>
 <ul>
+<li><code>owner</code>: 喋らせるキャラクターユニットです。</li>
 <li><code>dlg</code>: キャラクターが喋るテキストです。</li>
 </ul>
 <hr>
-<pre><code class="lang-cs">owner.view.Say(dlg, duration);
+<pre><code class="lang-cs">owner.view.Say(dlg, duration, overhead, scale);
 </code></pre>
 <p>キャラクターの頭上にテキストを表示します。</p>
 <ul>
+<li><code>owner</code>: 表示する対象のユニットです。</li>
 <li><code>dlg</code>: 表示するテキストです。</li>
 <li><code>duration</code>: フェードイン・アウトを除いた表示時間です。</li>
+<li><code>overhead</code>: テキストを表示する高さです。デフォルトは<code>3.2f</code>です。</li>
+<li><code>scale</code>: テキストのサイズ比です。デフォルトは<code>0.7f</code>です。</li>
 </ul>
 
 </article>
