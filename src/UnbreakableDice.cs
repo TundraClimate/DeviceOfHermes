@@ -54,10 +54,8 @@ public class UnbreakableDice : AdvancedDiceBase
         harmony.CreateClassProcessor(typeof(PatchUnbreakableDice.PatchOnUseCard)).Patch();
         harmony.CreateClassProcessor(typeof(PatchUnbreakableDice.PatchOnEndBattle)).Patch();
         harmony.CreateClassProcessor(typeof(PatchUnbreakableDice.PatchOnLoseParrying)).Patch();
-        harmony.CreateClassProcessor(typeof(PatchUnbreakableDice.PatchStartParrying)).Patch();
-        harmony.CreateClassProcessor(typeof(PatchUnbreakableDice.PatchStartAction)).Patch();
 
-        _stash = new();
+        Stash = new();
     }
 
     /// <summary>A unit when use unbreakable dices</summary>
@@ -66,11 +64,16 @@ public class UnbreakableDice : AdvancedDiceBase
     {
     }
 
-    internal bool IsBreaked = false;
+    /// <summary>A dice is breaked</summary>
+    public bool IsBreaked => _isBreaked;
 
-    private static Dictionary<BattleUnitModel, Queue<BattleDiceBehavior>> _stash;
+    internal bool _isBreaked = false;
 
-    internal static Dictionary<BattleUnitModel, Queue<BattleDiceBehavior>> Stash => _stash;
+    internal static Dictionary<BattleUnitModel, Queue<BattleDiceBehavior>> Stash
+    {
+        get;
+        set => field = value;
+    }
 }
 
 internal class PatchUnbreakableDice
@@ -84,7 +87,7 @@ internal class PatchUnbreakableDice
             {
                 if (abi is UnbreakableDice unb)
                 {
-                    if (unb.IsBreaked)
+                    if (unb._isBreaked)
                     {
                         unb.OnUseBreaked(card);
                     }
@@ -110,91 +113,89 @@ internal class PatchUnbreakableDice
                 return;
             }
 
-            if (UnbreakableDice.Stash.ContainsKey(owner) && UnbreakableDice.Stash[owner].Count > 0)
+            if (UnbreakableDice.Stash.TryGetValue(owner, out var queue))
             {
-                var queue = UnbreakableDice.Stash[owner];
-
-                var playCard = new BattlePlayingCardDataInUnitModel()
+                if (queue.Count < 1)
                 {
-                    cardBehaviorQueue = new(),
-                    target = __instance.target,
-                    targetSlotOrder = -1,
-                    speedDiceResultValue = 99,
-                };
+                    return;
+                }
 
-                while (queue.Count != 0)
-                {
-                    var dice = queue.Dequeue();
+                var xmlInfo = queue.Peek().card.card.XmlData;
+                var target = queue.Peek().card.target;
+                var speed = queue.Peek().card.speedDiceResultValue;
 
-                    if (playCard.card is null)
+                var playcard = owner.CreatePlayingCard(xmlInfo, target, speedDiceResultValue: speed)
+                    .Also(it =>
                     {
-                        playCard.owner = owner;
-                        playCard.card = dice.card.card;
-                        playCard.speedDiceResultValue = dice.card.speedDiceResultValue;
-                    }
+                        it.cardBehaviorQueue = new();
+                        it.cardAbility = null;
+                    });
 
-                    dice.card = playCard;
+                while (queue.Count > 0)
+                {
+                    var beh = queue.Dequeue();
 
-                    var behInCard = dice.behaviourInCard.Copy();
+                    var behInCard = beh.behaviourInCard.Copy();
 
                     behInCard.Dice = behInCard.Min;
 
-                    dice.behaviourInCard = behInCard;
+                    var newBeh = new BattleDiceBehavior()
+                    {
+                        card = playcard,
+                        behaviourInCard = behInCard,
+                        abilityList = beh.abilityList,
+                    };
 
-                    playCard.cardBehaviorQueue.Enqueue(dice);
+                    foreach (var abi in newBeh.abilityList)
+                    {
+                        abi.behavior = newBeh;
+                    }
+
+                    var stat = _diceStatBonus(beh);
+
+                    ref var newStat = ref _diceStatBonus(newBeh);
+
+                    newStat = stat;
+
+                    playcard.cardBehaviorQueue.Enqueue(newBeh);
                 }
 
-                StageController.Instance.GetAllCards().Add(playCard);
+                StageController.Instance.GetAllCards().Insert(0, playcard);
             }
         }
+
+        private static AccessTools.FieldRef<BattleDiceBehavior, DiceStatBonus> _diceStatBonus =
+            typeof(BattleDiceBehavior).FieldRefAccess<DiceStatBonus>("_statBonus");
     }
 
     [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnLoseParrying")]
     public class PatchOnLoseParrying
     {
-        static void Prefix(BattlePlayingCardDataInUnitModel __instance)
+        static void Postfix(BattlePlayingCardDataInUnitModel __instance)
         {
             var beh = __instance.currentBehavior;
             var owner = __instance.owner;
 
             if (beh is not null && owner is not null)
             {
-                if (beh.abilityList.Exists(abi => abi is UnbreakableDice adv && !adv.IsBreaked))
+                if (beh.abilityList.Exists(abi => abi is UnbreakableDice adv && !adv._isBreaked))
                 {
                     if (!UnbreakableDice.Stash.ContainsKey(owner))
                     {
                         UnbreakableDice.Stash.Add(owner, new());
                     }
 
-                    beh.abilityList.Filter(abi => abi is UnbreakableDice).Foreach(abi => ((UnbreakableDice)abi).IsBreaked = true);
+                    foreach (var abi in beh.abilityList)
+                    {
+                        if (abi is UnbreakableDice unb)
+                        {
+                            unb._isBreaked = true;
+                        }
+                    }
 
                     UnbreakableDice.Stash[owner].Enqueue(beh);
                 }
             }
         }
-    }
-
-    [HarmonyPatch(typeof(StageController), "StartParrying")]
-    public class PatchStartParrying
-    {
-        static bool Prefix(BattlePlayingCardDataInUnitModel cardA)
-        {
-            if (cardA.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is UnbreakableDice adv && adv.IsBreaked)))
-            {
-                PatchStartAction.StartAction(StageController.Instance, cardA);
-
-                return false;
-            }
-
-            return true;
-        }
-    }
-
-    [HarmonyPatch(typeof(StageController), "StartAction")]
-    public class PatchStartAction
-    {
-        [HarmonyReversePatch]
-        public static void StartAction(StageController instance, BattlePlayingCardDataInUnitModel card) =>
-            throw new NotImplementedException();
     }
 }

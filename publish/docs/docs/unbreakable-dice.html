@@ -91,8 +91,8 @@
 この記事はこれを前提に書かれています。</p>
 <h1 id="unbreakabledice">UnbreakableDice</h1>
 <p>特殊な攻撃ダイスです。<br>
-マッチ敗北時に保存され、敵のページ使用終了時に一方攻撃で使用します。<br>
-ただし、出目範囲が最低値に固定されます。</p>
+マッチ敗北時に保存され、敵のページ使用終了時に再使用します。<br>
+ただし、出目範囲が最低値に固定され、ページ効果が消滅します。</p>
 <p>例:</p>
 <pre><code class="lang-cs">class DiceCardAbility_Unbreakable : UnbreakableDice
 {
@@ -114,6 +114,10 @@
 <ul>
 <li><code>card</code>: そのダイスが実際に使用されるページ。</li>
 </ul>
+<hr>
+<pre><code class="lang-cs">var breaked = this.IsBreaked;
+</code></pre>
+<p>ダイスが破壊されているかどうかを示すプロパティ。</p>
 
 </article>
 
