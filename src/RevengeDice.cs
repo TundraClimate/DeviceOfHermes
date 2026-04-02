@@ -177,6 +177,11 @@ internal class PatchRevengeDice
     {
         static void Prefix(BattleUnitModel __instance, BattleDiceBehavior atkDice)
         {
+            if (!atkDice.owner.IsTargetable(__instance))
+            {
+                return;
+            }
+
             if (!RevengeDice.CurrentRevenge.ContainsKey(__instance) && RevengeDice.Cards.TryGetValue(__instance, out var res))
             {
                 if (res.Count < 1)
