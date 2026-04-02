@@ -47,10 +47,12 @@ public class BattleAmmoBuf : AdvancedUnitBuf
     /// </code></example>
     public void Consume(int num)
     {
-        this.OnConsume(ref num);
+        this.OnBeforeConsume(ref num);
 
         if (this.IsConsumable(num))
         {
+            this.OnConsume(num);
+
             this._consumedStack += num;
             this._losedStack += num;
             base.stack = 0.Max(base.stack - num);
@@ -68,9 +70,15 @@ public class BattleAmmoBuf : AdvancedUnitBuf
         }
     }
 
-    /// <summary>Unitbuf on consumed ammo</summary>
+    /// <summary>Unitbuf before consume ammo</summary>
     /// <param name="require">A value of required number by consume</param>
-    public virtual void OnConsume(ref int require)
+    public virtual void OnBeforeConsume(ref int require)
+    {
+    }
+
+    /// <summary>Unitbuf on consumed ammo</summary>
+    /// <param name="consumed">A value of consumed ammo</param>
+    public virtual void OnConsume(int consumed)
     {
     }
 

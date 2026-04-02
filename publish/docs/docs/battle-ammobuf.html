@@ -98,7 +98,11 @@
 
     public override bool DiceBlockWithNotConsumable =&gt; true;
 
-    public override void OnConsume(ref int require)
+    public override void OnBeforeConsume(ref int require)
+    {
+    }
+
+    public override void OnConsume(int consumed)
     {
     }
 
@@ -145,7 +149,7 @@ owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
 </code></pre>
 <p>弾丸を消耗できないとき、対象の攻撃ダイスをブロックするか指定するプロパティです。</p>
 <hr>
-<pre><code class="lang-cs">public override void OnConsume(ref require)
+<pre><code class="lang-cs">public override void OnBeforeConsume(ref require)
 {
 }
 </code></pre>
@@ -153,6 +157,15 @@ owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
 <code>require</code>の値を変更することで消耗量を変化させることが出来ます。</p>
 <ul>
 <li><code>require</code>: 弾丸を消耗しようとする値です。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">public override void OnConsume(int consumed)
+{
+}
+</code></pre>
+<p>弾丸が消耗されたときに実行されます。</p>
+<ul>
+<li><code>consumed</code>: 消耗された弾丸の値です。</li>
 </ul>
 <hr>
 <pre><code class="lang-cs">public override void OnCancelled()
