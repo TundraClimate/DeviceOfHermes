@@ -110,6 +110,19 @@ public class RevengeDice : AdvancedDiceBase
         RevengeDice.Cards[unit].Enqueue(playcard);
     }
 
+    /// <summary>Adds revenge card to unit</summary>
+    /// <param name="unit">A unit for adds card</param>
+    /// <param name="card">A card to adds</param>
+    public static void AddRevengeCard(BattleUnitModel unit, BattlePlayingCardDataInUnitModel card)
+    {
+        if (!RevengeDice.Cards.ContainsKey(unit))
+        {
+            RevengeDice.Cards.Add(unit, new());
+        }
+
+        RevengeDice.Cards[unit].Enqueue(card);
+    }
+
     internal static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> Cards
     {
         get;
