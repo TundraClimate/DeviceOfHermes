@@ -223,6 +223,104 @@ public static class TextModel
         }
     }
 
+    /// <summary>Set Character dialog in group</summary>
+    /// <param name="character">A <see cref="BattleDialogCharacter"/> of to add</param>
+    /// <param name="groupName">The group of character found</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. AwlOfNight, Named) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetCharacterDialog(new BattleDialogCharacter()
+    /// {
+    ///     characterID = "Named",
+    ///     dialogTypeList = [
+    ///         new BattleDialogType()
+    ///         {
+    ///             dialogType = DialogType.START_BATTLE,
+    ///             dialogList = [
+    ///                 new BattleDialog()
+    ///                 {
+    ///                     dialogID = "START_BATTLE_0",
+    ///                     dialogContent = ";(",
+    ///                 }
+    ///             ],
+    ///         }
+    ///     ],
+    /// }, "AwlOfNight", true);
+    /// </code></example>
+    public static void SetCharacterDialog(BattleDialogCharacter character, string groupName = "Workshop", bool replace = false)
+    {
+        ref var dict = ref DialogGroupDict;
+
+        if (!dict.ContainsKey(groupName))
+        {
+            var root = new BattleDialogRoot();
+
+            root.groupName = groupName;
+            root.characterList = new();
+
+            dict.Add(groupName, root);
+        }
+
+        var charList = dict[groupName].characterList;
+        var fdIdx = charList.FindIndex(ch => ch.characterID == character.characterID);
+
+        if (fdIdx != -1)
+        {
+            if (replace)
+            {
+                charList[fdIdx] = character;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: BattleCardDesc the '{character.characterID}' is already exists in {groupName}.", MessageLevel.Warn);
+            }
+
+            return;
+        }
+
+        charList.Add(character);
+    }
+
+    /// <summary>Set Character dialogs in group</summary>
+    /// <param name="characters">THe <see cref="BattleDialogCharacter"/> of to add</param>
+    /// <param name="groupName">The group of character found</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. AwlOfNight, Named) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetCharacterDialogs([new BattleDialogCharacter()
+    /// {
+    ///     characterID = "Named",
+    ///     dialogTypeList = [
+    ///         new BattleDialogType()
+    ///         {
+    ///             dialogType = DialogType.START_BATTLE,
+    ///             dialogList = [
+    ///                 new BattleDialog()
+    ///                 {
+    ///                     dialogID = "START_BATTLE_0",
+    ///                     dialogContent = ";(",
+    ///                 }
+    ///             ],
+    ///         }
+    ///     ],
+    /// }], "AwlOfNight", true);
+    /// </code></example>
+    public static void SetCharacterDialogs(
+        IEnumerable<BattleDialogCharacter> characters,
+        string groupName = "Workshop",
+        bool replace = false
+    )
+    {
+        foreach (var character in characters)
+        {
+            SetCharacterDialog(character, groupName, replace);
+        }
+    }
+
     private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
         ref _effTxtRef(BattleEffectTextsXmlList.Instance);
 
@@ -240,6 +338,12 @@ public static class TextModel
 
     private static readonly FieldRef<BattleCardDescXmlList, Dictionary<LorId, BattleCardDesc>> _cardDescRef =
         typeof(BattleCardDescXmlList).FieldRefAccess<Dictionary<LorId, BattleCardDesc>>("_dictionary");
+
+    private static ref Dictionary<string, BattleDialogRoot> DialogGroupDict =>
+        ref _dialogGroupRef(BattleDialogXmlList.Instance);
+
+    private static readonly FieldRef<BattleDialogXmlList, Dictionary<string, BattleDialogRoot>> _dialogGroupRef =
+        typeof(BattleDialogXmlList).FieldRefAccess<Dictionary<string, BattleDialogRoot>>("_dictionary");
 
     private class TextModelPatch
     {
