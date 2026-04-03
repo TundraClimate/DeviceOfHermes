@@ -126,7 +126,7 @@ public static class Hermes
         {
             var prefix = type switch
             {
-                LogType.Error | LogType.Exception => "[ERROR] ",
+                LogType.Error or LogType.Exception => "[ERROR] ",
                 LogType.Warning => "[WARN] ",
                 _ => "[INFO] "
             };
