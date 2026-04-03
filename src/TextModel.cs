@@ -154,6 +154,75 @@ public static class TextModel
         }
     }
 
+    /// <summary>Set BattleCardDesc with desc</summary>
+    /// <param name="desc">A desc data</param>
+    /// <param name="pid">The pid of desc</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. LorId(602008)) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetBattleCardDesc(new BattleCardDesc()
+    /// {
+    ///     cardID = 602008,
+    ///     cardName = "Gloden knuckle",
+    /// }, replace: true);
+    /// </code></example>
+    public static void SetBattleCardDesc(BattleCardDesc desc, string? pid = null, bool replace = false)
+    {
+        var lid = pid switch
+        {
+            null or "" or "@origin" => new LorId(desc.cardID),
+            _ => new LorId(pid, desc.cardID),
+        };
+
+        ref var dict = ref CardDescDict;
+
+        if (dict.ContainsKey(lid))
+        {
+            if (replace)
+            {
+                dict[lid] = desc;
+            }
+            else
+            {
+                if (lid.IsBasic())
+                {
+                    Hermes.Say($"Skipped: BattleCardDesc the '{desc.cardID}' is already exists.", MessageLevel.Warn);
+                }
+                else
+                {
+                    Hermes.Say($"Skipped: BattleCardDesc the '{desc.cardID}' is already exists in {pid}.", MessageLevel.Warn);
+                }
+            }
+
+            return;
+        }
+
+        dict.Add(lid, desc);
+    }
+
+    /// <summary>Set BattleCardDesc with descs</summary>
+    /// <param name="descs">The desc data with pids</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. LorId(602008)) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetBattleCardDescs([(null, new BattleCardDesc()
+    /// {
+    ///     cardID = 602008,
+    ///     cardName = "Gloden knuckle",
+    /// })], true);
+    /// </code></example>
+    public static void SetBattleCardDescs(IEnumerable<(string?, BattleCardDesc)> descs, bool replace = false)
+    {
+        foreach (var (pid, desc) in descs)
+        {
+            SetBattleCardDesc(desc, pid, replace);
+        }
+    }
+
     private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
         ref _effTxtRef(BattleEffectTextsXmlList.Instance);
 
@@ -161,10 +230,16 @@ public static class TextModel
         typeof(BattleEffectTextsXmlList).FieldRefAccess<Dictionary<string, BattleEffectText>>("_dictionary");
 
     private static ref Dictionary<string, BattleCardAbilityDesc> AbilityDescDict =>
-        ref _abilityDesc(BattleCardAbilityDescXmlList.Instance);
+        ref _abilityDescRef(BattleCardAbilityDescXmlList.Instance);
 
-    private static readonly FieldRef<BattleCardAbilityDescXmlList, Dictionary<string, BattleCardAbilityDesc>> _abilityDesc =
+    private static readonly FieldRef<BattleCardAbilityDescXmlList, Dictionary<string, BattleCardAbilityDesc>> _abilityDescRef =
         typeof(BattleCardAbilityDescXmlList).FieldRefAccess<Dictionary<string, BattleCardAbilityDesc>>("_dictionary");
+
+    private static ref Dictionary<LorId, BattleCardDesc> CardDescDict =>
+        ref _cardDescRef(BattleCardDescXmlList.Instance);
+
+    private static readonly FieldRef<BattleCardDescXmlList, Dictionary<LorId, BattleCardDesc>> _cardDescRef =
+        typeof(BattleCardDescXmlList).FieldRefAccess<Dictionary<LorId, BattleCardDesc>>("_dictionary");
 
     private class TextModelPatch
     {
