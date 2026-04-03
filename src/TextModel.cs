@@ -1,6 +1,7 @@
 using System.Reflection;
 using HarmonyLib;
 using LOR_XML;
+using static HarmonyLib.AccessTools;
 
 namespace DeviceOfHermes.Resource;
 
@@ -20,8 +21,6 @@ public static class TextModel
 {
     static TextModel()
     {
-        _effTxtRef = AccessTools.FieldRefAccess<BattleEffectTextsXmlList, Dictionary<string, BattleEffectText>>("_dictionary");
-
         var harmony = new Harmony("DeviceOfHermes.Resource.TextModel");
 
         harmony.CreateClassProcessor(typeof(TextModelPatch.PatchLoadObserver)).Patch();
@@ -97,9 +96,75 @@ public static class TextModel
         }
     }
 
-    private static ref Dictionary<string, BattleEffectText> EffectTextDict => ref _effTxtRef(BattleEffectTextsXmlList.Instance);
+    /// <summary>Set BattleCardAbilityDesc with desc</summary>
+    /// <param name="desc">A desc data</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. drawCard) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetBattleCardAbilityDesc(new BattleCardAbilityDesc()
+    /// {
+    ///     id = "drawCard",
+    ///     desc = ["Draws HYPERMAXED card"],
+    /// }, true);
+    /// </code></example>
+    public static void SetBattleCardAbilityDesc(BattleCardAbilityDesc desc, bool replace = false)
+    {
+        ref var dict = ref AbilityDescDict;
 
-    private static readonly AccessTools.FieldRef<BattleEffectTextsXmlList, Dictionary<string, BattleEffectText>> _effTxtRef;
+        if (dict.ContainsKey(desc.id))
+        {
+            if (replace)
+            {
+                dict[desc.id] = desc;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: BattleCardAbilityDesc the '{desc.id}' is already exists.", MessageLevel.Warn);
+            }
+
+            return;
+        }
+
+        dict.Add(desc.id, desc);
+    }
+
+
+    /// <summary>Set BattleCardAbilityDesc with descs</summary>
+    /// <param name="descs">The desc data</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. drawCard) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetBattleCardAbilityDescs([
+    ///     new BattleCardAbilityDesc()
+    ///     {
+    ///         id = "drawCard",
+    ///         desc = ["Draws HYPERMAXED card"],
+    ///     }
+    /// ], true);
+    /// </code></example>
+    public static void SetBattleCardAbilityDescs(IEnumerable<BattleCardAbilityDesc> descs, bool replace = false)
+    {
+        foreach (var desc in descs)
+        {
+            SetBattleCardAbilityDesc(desc, replace);
+        }
+    }
+
+    private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
+        ref _effTxtRef(BattleEffectTextsXmlList.Instance);
+
+    private static readonly FieldRef<BattleEffectTextsXmlList, Dictionary<string, BattleEffectText>> _effTxtRef =
+        typeof(BattleEffectTextsXmlList).FieldRefAccess<Dictionary<string, BattleEffectText>>("_dictionary");
+
+    private static ref Dictionary<string, BattleCardAbilityDesc> AbilityDescDict =>
+        ref _abilityDesc(BattleCardAbilityDescXmlList.Instance);
+
+    private static readonly FieldRef<BattleCardAbilityDescXmlList, Dictionary<string, BattleCardAbilityDesc>> _abilityDesc =
+        typeof(BattleCardAbilityDescXmlList).FieldRefAccess<Dictionary<string, BattleCardAbilityDesc>>("_dictionary");
 
     private class TextModelPatch
     {
