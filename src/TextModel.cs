@@ -274,7 +274,7 @@ public static class TextModel
             }
             else
             {
-                Hermes.Say($"Skipped: BattleCardDesc the '{character.characterID}' is already exists in {groupName}.", MessageLevel.Warn);
+                Hermes.Say($"Skipped: CharacterDialog the '{character.characterID}' is already exists in {groupName}.", MessageLevel.Warn);
             }
 
             return;
@@ -321,6 +321,103 @@ public static class TextModel
         }
     }
 
+    /// <summary>Set BookDesc with pid</summary>
+    /// <param name="desc">A desc of to add</param>
+    /// <param name="pid">The target packageId</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. 250051) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetBookDesc(new BookDesc()
+    /// {
+    ///     bookID = 250051,
+    ///     bookName = "KeyPage of Yan",
+    ///     texts = [
+    ///         "Yan"
+    ///     ],
+    ///     passives = [],
+    /// }, replace: true);
+    /// </code></example>
+    public static void SetBookDesc(BookDesc desc, string? pid = null, bool replace = false)
+    {
+        if (pid is null or "" or "@origin")
+        {
+            ref var dict = ref OriginBookDescDict;
+
+            if (dict.ContainsKey(desc.bookID))
+            {
+                if (replace)
+                {
+                    dict[desc.bookID] = desc;
+                }
+                else
+                {
+                    Hermes.Say($"Skipped: Vannila BookDesc the '{desc.bookID}' is already exists.", MessageLevel.Warn);
+                }
+
+                return;
+            }
+
+            dict.Add(desc.bookID, desc);
+        }
+        else
+        {
+            ref var dict = ref WorkshopBookDescDict;
+
+            if (dict.ContainsKey(pid))
+            {
+                var ilist = dict[pid];
+                var fdIdx = ilist.FindIndex(bd => bd.bookID == desc.bookID);
+
+                if (fdIdx != -1)
+                {
+                    if (replace)
+                    {
+                        ilist[fdIdx] = desc;
+                    }
+                    else
+                    {
+                        Hermes.Say($"Skipped: Workshop BookDesc the '{desc.bookID}' is already exists.", MessageLevel.Warn);
+                    }
+
+                    return;
+                }
+
+                ilist.Add(desc);
+
+                return;
+            }
+
+            dict.Add(pid, [desc]);
+        }
+    }
+
+    /// <summary>Set BookDesc with pid</summary>
+    /// <param name="descs">The desc of to add with pid</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. 250051) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetBookDescs([(null, new BookDesc()
+    /// {
+    ///     bookID = 250051,
+    ///     bookName = "KeyPage of Yan",
+    ///     texts = [
+    ///         "Yan"
+    ///     ],
+    ///     passives = [],
+    /// })], replace: true);
+    /// </code></example>
+    public static void SetBookDescs(IEnumerable<(string?, BookDesc)> descs, bool replace = false)
+    {
+        foreach (var (pid, desc) in descs)
+        {
+            SetBookDesc(desc, pid, replace);
+        }
+    }
+
     private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
         ref _effTxtRef(BattleEffectTextsXmlList.Instance);
 
@@ -344,6 +441,18 @@ public static class TextModel
 
     private static readonly FieldRef<BattleDialogXmlList, Dictionary<string, BattleDialogRoot>> _dialogGroupRef =
         typeof(BattleDialogXmlList).FieldRefAccess<Dictionary<string, BattleDialogRoot>>("_dictionary");
+
+    private static ref Dictionary<int, BookDesc> OriginBookDescDict =>
+        ref _originBookDescRef(BookDescXmlList.Instance);
+
+    private static readonly FieldRef<BookDescXmlList, Dictionary<int, BookDesc>> _originBookDescRef =
+        typeof(BookDescXmlList).FieldRefAccess<Dictionary<int, BookDesc>>("_dictionaryOrigin");
+
+    private static ref Dictionary<string, List<BookDesc>> WorkshopBookDescDict =>
+        ref _workshopBookDescRef(BookDescXmlList.Instance);
+
+    private static readonly FieldRef<BookDescXmlList, Dictionary<string, List<BookDesc>>> _workshopBookDescRef =
+        typeof(BookDescXmlList).FieldRefAccess<Dictionary<string, List<BookDesc>>>("_dictionaryWorkshop");
 
     private class TextModelPatch
     {

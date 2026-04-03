@@ -117,6 +117,74 @@
 <li><code>texts</code>: 追加する<code>BattleEffectText</code>のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetBattleCardAbilityDesc(desc, replace);
+</code></pre>
+<p>ページ効果のテキストを追加・変更します。</p>
+<ul>
+<li><code>desc</code>: 追加する<code>BattleCardAbilityDesc</code>です。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetBattleCardAbilityDescs(descs, replace);
+</code></pre>
+<p>ページ効果のテキストを追加・変更します。</p>
+<ul>
+<li><code>descs</code>: 追加する<code>BattleCardAbilityDesc</code>のリストです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetBattleCardDesc(desc, pid, replace);
+</code></pre>
+<p>ページタイトル含めページのテキストを追加・変更します。</p>
+<ul>
+<li><code>desc</code>: 追加する<code>BattleCardDesc</code>です。</li>
+<li><code>pid</code>: 属するパッケージのIDです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetBattleCardDescs(descs, replace);
+</code></pre>
+<p>ページタイトル含めページのテキストを追加・変更します。</p>
+<ul>
+<li><code>descs</code>: 追加する<code>BattleCardDesc</code>とpidのタプルリストです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetCharacterDialog(character, groupName, replace);
+</code></pre>
+<p>特定グループのキャラクターのセリフを追加・変更します。</p>
+<ul>
+<li><code>character</code>: 追加する<code>BattleDialogCharacter</code>です。</li>
+<li><code>groupName</code>: キャラクターが所属するグループです。MOD環境は<code>Workshop</code>です。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetCharacterDialogs(characters, groupName, replace);
+</code></pre>
+<p>特定グループのキャラクターのセリフを追加・変更します。</p>
+<ul>
+<li><code>characters</code>: 追加する<code>BattleDialogCharacter</code>のリストです。</li>
+<li><code>groupName</code>: キャラクターが所属するグループです。MOD環境は<code>Workshop</code>です。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetBookDesc(desc, pid, replace);
+</code></pre>
+<p>特定の本のストーリーを追加・変更します</p>
+<ul>
+<li><code>desc</code>: 追加する<code>BookDesc</code>です。</li>
+<li><code>pid</code>: その本が所属するパッケージのIDです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetBookDescs(descs, replace);
+</code></pre>
+<p>特定の本のストーリーを追加・変更します</p>
+<ul>
+<li><code>desc</code>: 追加する<code>BookDesc</code>のリストです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
 
 </article>
 
