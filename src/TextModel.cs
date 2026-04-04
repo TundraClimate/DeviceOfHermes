@@ -501,7 +501,7 @@ public static class TextModel
     /// <summary>Set StageName with id</summary>
     /// <param name="id">An id of editing target</param>
     /// <param name="name">A new name</param>
-    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <param name="replace">Is replace if contains same stage ID</param>
     /// <remarks>
     /// If <c>replace</c> is true, replaces same ID(ex. 50014) data.<br/>
     /// </remarks>
@@ -563,7 +563,7 @@ public static class TextModel
 
     /// <summary>Set StageName with id</summary>
     /// <param name="names">An enumerable of (id, name) tuple</param>
-    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <param name="replace">Is replace if contains same stage ID</param>
     /// <remarks>
     /// If <c>replace</c> is true, replaces same ID(ex. 50014) data.<br/>
     /// </remarks>
@@ -575,6 +575,65 @@ public static class TextModel
         foreach (var (id, name) in names)
         {
             SetStageName(id, name, replace);
+        }
+    }
+
+    /// <summary>Set PassiveDesc</summary>
+    /// <param name="desc">A desc to set</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. LorId(10008)) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetPassiveDesc(new PassiveDesc()
+    /// {
+    ///     _id = 10008,
+    ///     workshopID = "",
+    ///     name = "HighSpeed",
+    ///     desc = "Speed dice +8",
+    /// }, true);
+    /// </code></example>
+    public static void SetPassiveDesc(PassiveDesc desc, bool replace = false)
+    {
+        ref var dict = ref PassiveDescDict;
+
+        if (dict.ContainsKey(desc.ID))
+        {
+            if (replace)
+            {
+                dict[desc.ID] = desc;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: PassiveDesc the '{desc.ID}' is already exists.", MessageLevel.Warn);
+            }
+
+            return;
+        }
+
+        dict.Add(desc.ID, desc);
+    }
+
+    /// <summary>Set PassiveDesc</summary>
+    /// <param name="descs">The dataset of descs</param>
+    /// <param name="replace">Is replace if contains same desc ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. LorId(10008)) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetPassiveDescs([new PassiveDesc()
+    /// {
+    ///     _id = 10008,
+    ///     workshopID = "",
+    ///     name = "HighSpeed",
+    ///     desc = "Speed dice +8",
+    /// }], true);
+    /// </code></example>
+    public static void SetPassiveDescs(IEnumerable<PassiveDesc> descs, bool replace = false)
+    {
+        foreach (var desc in descs)
+        {
+            SetPassiveDesc(desc, replace);
         }
     }
 
@@ -685,6 +744,12 @@ public static class TextModel
 
     private static readonly FieldRef<StageClassInfoList, Dictionary<string, List<StageClassInfo>>> _workshopStageRef =
         typeof(StageClassInfoList).FieldRefAccess<Dictionary<string, List<StageClassInfo>>>("_workshopStageDict");
+
+    private static ref Dictionary<LorId, PassiveDesc> PassiveDescDict =>
+        ref _passiveDescRef(PassiveDescXmlList.Instance);
+
+    private static readonly FieldRef<PassiveDescXmlList, Dictionary<LorId, PassiveDesc>> _passiveDescRef =
+        typeof(PassiveDescXmlList).FieldRefAccess<Dictionary<LorId, PassiveDesc>>("_dictionary");
 
 
     private static ref Dictionary<string, string> TextDataDict =>
