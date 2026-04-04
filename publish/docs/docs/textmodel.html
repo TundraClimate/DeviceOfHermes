@@ -204,6 +204,73 @@ MOD由来のキャラクターは変更のみ可能です。</p>
 <li><code>names</code>: キャラクターのIDと名称のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetStageName(id, name, replace);
+</code></pre>
+<p>特定のステージ名を追加・変更します。<br>
+MOD由来のステージは変更のみ可能です。</p>
+<ul>
+<li><code>id</code>: ステージ固有のIDです。</li>
+<li><code>name</code>: 新しいステージの名称です。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetStageNames(names, replace);
+</code></pre>
+<p>特定のステージ名を追加・変更します。<br>
+MOD由来のステージは変更のみ可能です。</p>
+<ul>
+<li><code>names</code>: ステージのIDと名称のリストです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetPassiveDesc(desc, replace);
+</code></pre>
+<p>特定のパッシブのテキストを追加・変更します。</p>
+<ul>
+<li><code>desc</code>: 追加・変更する<code>PassiveDesc</code>です。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetPassiveDescs(descs, replace);
+</code></pre>
+<p>特定のパッシブのテキストを追加・変更します。</p>
+<ul>
+<li><code>descs</code>: 追加・変更する<code>PassiveDesc</code>のリストです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetDropBookName(id, name);
+</code></pre>
+<p>特定の本の名前を変更します。</p>
+<ul>
+<li><code>id</code>: 本固有のIDです。</li>
+<li><code>name</code>: 変更する名称です。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetDropBookNames(names);
+</code></pre>
+<p>特定の本の名前を変更します。</p>
+<ul>
+<li><code>names</code>: 変更する名称とIDのリストです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetTextData(id, data, replace);
+</code></pre>
+<p>テキストデータを追加・変更します。</p>
+<ul>
+<li><code>id</code>: テキストデータのIDです。</li>
+<li><code>data</code>: テキストです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">TextModel.SetTextData(data, replace);
+</code></pre>
+<p>テキストデータを追加・変更します。</p>
+<ul>
+<li><code>data</code>: テキストデータとIDのリストです。</li>
+<li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
+</ul>
 
 </article>
 

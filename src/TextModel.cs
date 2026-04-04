@@ -637,6 +637,48 @@ public static class TextModel
         }
     }
 
+    /// <summary>Set DropBook name</summary>
+    /// <param name="id">A target book id</param>
+    /// <param name="name">A new name</param>
+    /// <example><code>
+    /// TextModel.SetDropBookName(new LorId(250037), "Book of Distorted Yan");
+    /// </code></example>
+    public static void SetDropBookName(LorId id, string name)
+    {
+        ref var dict = ref DropBookDict;
+
+        if (!dict.TryGetValue(id, out var target))
+        {
+            Hermes.Say($"Skipped: DropBookName the '{id.id}' is not found.", MessageLevel.Warn);
+
+            return;
+        }
+
+        if (id.IsBasic())
+        {
+            var targetText = target._targetText;
+
+            SetTextData(targetText, name, true);
+        }
+        else
+        {
+            target.workshopName = name;
+        }
+    }
+
+    /// <summary>Set DropBook name</summary>
+    /// <param name="names">The dataset of (id, name) tuple</param>
+    /// <example><code>
+    /// TextModel.SetDropBookNames([(new LorId(250037), "Book of Distorted Yan")]);
+    /// </code></example>
+    public static void SetDropBookNames(IEnumerable<(LorId, string)> names)
+    {
+        foreach (var (id, name) in names)
+        {
+            SetDropBookName(id, name);
+        }
+    }
+
     /// <summary>Set TextData with id</summary>
     /// <param name="id">An id of specify text</param>
     /// <param name="data">A data of corresponds id</param>
@@ -750,6 +792,12 @@ public static class TextModel
 
     private static readonly FieldRef<PassiveDescXmlList, Dictionary<LorId, PassiveDesc>> _passiveDescRef =
         typeof(PassiveDescXmlList).FieldRefAccess<Dictionary<LorId, PassiveDesc>>("_dictionary");
+
+    private static ref Dictionary<LorId, DropBookXmlInfo> DropBookDict =>
+        ref _dropBookRef(DropBookXmlList.Instance);
+
+    private static readonly FieldRef<DropBookXmlList, Dictionary<LorId, DropBookXmlInfo>> _dropBookRef =
+        typeof(DropBookXmlList).FieldRefAccess<Dictionary<LorId, DropBookXmlInfo>>("_dict");
 
 
     private static ref Dictionary<string, string> TextDataDict =>
