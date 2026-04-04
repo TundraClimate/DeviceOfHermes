@@ -578,6 +578,54 @@ public static class TextModel
         }
     }
 
+    /// <summary>Set TextData with id</summary>
+    /// <param name="id">An id of specify text</param>
+    /// <param name="data">A data of corresponds id</param>
+    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. ui_invitation_context) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetTextData("ui_invitation_context", "GET OUT!", true);
+    /// </code></example>
+    public static void SetTextData(string id, string data, bool replace = false)
+    {
+        ref var dict = ref TextDataDict;
+
+        if (dict.ContainsKey(id))
+        {
+            if (replace)
+            {
+                dict[id] = data;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: TextData the '{id}' is already exists.", MessageLevel.Warn);
+            }
+
+            return;
+        }
+
+        dict.Add(id, data);
+    }
+
+    /// <summary>Set TextData with id</summary>
+    /// <param name="data">The dataset</param>
+    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. ui_invitation_context) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetTextData([("ui_invitation_context", "GET OUT!")], true);
+    /// </code></example>
+    public static void SetTextData(IEnumerable<(string, string)> data, bool replace = false)
+    {
+        foreach (var (id, text) in data)
+        {
+            SetTextData(id, text, replace);
+        }
+    }
+
     private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
         ref _effTxtRef(BattleEffectTextsXmlList.Instance);
 
@@ -637,6 +685,10 @@ public static class TextModel
 
     private static readonly FieldRef<StageClassInfoList, Dictionary<string, List<StageClassInfo>>> _workshopStageRef =
         typeof(StageClassInfoList).FieldRefAccess<Dictionary<string, List<StageClassInfo>>>("_workshopStageDict");
+
+
+    private static ref Dictionary<string, string> TextDataDict =>
+        ref typeof(TextDataModel).StaticFieldRefAccess<Dictionary<string, string>>("_dic");
 
     private class TextModelPatch
     {
