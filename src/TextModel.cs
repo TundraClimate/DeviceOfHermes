@@ -284,7 +284,7 @@ public static class TextModel
     }
 
     /// <summary>Set Character dialogs in group</summary>
-    /// <param name="characters">THe <see cref="BattleDialogCharacter"/> of to add</param>
+    /// <param name="characters">The <see cref="BattleDialogCharacter"/> of to add</param>
     /// <param name="groupName">The group of character found</param>
     /// <param name="replace">Is replace if contains same desc ID</param>
     /// <remarks>
@@ -498,6 +498,86 @@ public static class TextModel
         }
     }
 
+    /// <summary>Set StageName with id</summary>
+    /// <param name="id">An id of editing target</param>
+    /// <param name="name">A new name</param>
+    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. 50014) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetStageName(new LorId(50014), "Distorted Yan", true);
+    /// </code></example>
+    public static void SetStageName(LorId id, string name, bool replace = false)
+    {
+        if (id.packageId is null or "" or "@origin")
+        {
+            ref var dict = ref StageNameDict;
+
+            if (dict.ContainsKey(id.id))
+            {
+                if (replace)
+                {
+                    dict[id.id] = name;
+                }
+                else
+                {
+                    Hermes.Say($"Skipped: Vannila StageName the '{id.id}' is already exists.", MessageLevel.Warn);
+                }
+
+                return;
+            }
+
+            dict.Add(id.id, name);
+        }
+        else
+        {
+            ref var dict = ref WorkshopStageDict;
+
+            if (!dict.ContainsKey(id.packageId))
+            {
+                Hermes.Say($"Skipped: Failures set '{id.id}' since package the '{id.packageId}' is not found.", MessageLevel.Warn);
+
+                return;
+            }
+
+            var target = dict[id.packageId].Find(unit => unit.id == id);
+
+            if (target is null)
+            {
+                Hermes.Say($"Skipped: Failures set '{id.id}' since it is not found in the '{id.packageId}'.", MessageLevel.Warn);
+
+                return;
+            }
+
+            if (replace)
+            {
+                target.stageName = name;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: Failures set '{id.id}' since the 'replace' flag is false.", MessageLevel.Warn);
+            }
+        }
+    }
+
+    /// <summary>Set StageName with id</summary>
+    /// <param name="names">An enumerable of (id, name) tuple</param>
+    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. 50014) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetStageNames([(new LorId(50014), "Distorted Yan")], true);
+    /// </code></example>
+    public static void SetStageNames(IEnumerable<(LorId, string)> names, bool replace = false)
+    {
+        foreach (var (id, name) in names)
+        {
+            SetStageName(id, name, replace);
+        }
+    }
+
     private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
         ref _effTxtRef(BattleEffectTextsXmlList.Instance);
 
@@ -545,6 +625,18 @@ public static class TextModel
 
     private static readonly FieldRef<EnemyUnitClassInfoList, Dictionary<string, List<EnemyUnitClassInfo>>> _byWorkshopNameRef =
         typeof(EnemyUnitClassInfoList).FieldRefAccess<Dictionary<string, List<EnemyUnitClassInfo>>>("_workshopEnemyDict");
+
+    private static ref Dictionary<int, string> StageNameDict =>
+        ref _stageNameRef(StageNameXmlList.Instance);
+
+    private static readonly FieldRef<StageNameXmlList, Dictionary<int, string>> _stageNameRef =
+        typeof(StageNameXmlList).FieldRefAccess<Dictionary<int, string>>("_dictionary");
+
+    private static ref Dictionary<string, List<StageClassInfo>> WorkshopStageDict =>
+        ref _workshopStageRef(StageClassInfoList.Instance);
+
+    private static readonly FieldRef<StageClassInfoList, Dictionary<string, List<StageClassInfo>>> _workshopStageRef =
+        typeof(StageClassInfoList).FieldRefAccess<Dictionary<string, List<StageClassInfo>>>("_workshopStageDict");
 
     private class TextModelPatch
     {
