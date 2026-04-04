@@ -418,6 +418,86 @@ public static class TextModel
         }
     }
 
+    /// <summary>Set CharacterName with id</summary>
+    /// <param name="id">An id of editing target</param>
+    /// <param name="name">A new name</param>
+    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. 148) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetCharacterName(new LorId(148), "Distorted Yan", true);
+    /// </code></example>
+    public static void SetCharacterName(LorId id, string name, bool replace = false)
+    {
+        if (id.packageId is null or "" or "@origin")
+        {
+            ref var dict = ref CharacterNameDict;
+
+            if (dict.ContainsKey(id.id))
+            {
+                if (replace)
+                {
+                    dict[id.id] = name;
+                }
+                else
+                {
+                    Hermes.Say($"Skipped: Vannila CharacterName the '{id.id}' is already exists.", MessageLevel.Warn);
+                }
+
+                return;
+            }
+
+            dict.Add(id.id, name);
+        }
+        else
+        {
+            ref var dict = ref ByWorkshopNameDict;
+
+            if (!dict.ContainsKey(id.packageId))
+            {
+                Hermes.Say($"Skipped: Failures set '{id.id}' since package the '{id.packageId}' is not found.", MessageLevel.Warn);
+
+                return;
+            }
+
+            var target = dict[id.packageId].Find(unit => unit.id == id);
+
+            if (target is null)
+            {
+                Hermes.Say($"Skipped: Failures set '{id.id}' since it is not found in the '{id.packageId}'.", MessageLevel.Warn);
+
+                return;
+            }
+
+            if (replace)
+            {
+                target.name = name;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: Failures set '{id.id}' since the 'replace' flag is false.", MessageLevel.Warn);
+            }
+        }
+    }
+
+    /// <summary>Set CharacterNames with id</summary>
+    /// <param name="names">An enumerable of (id, name) tuple</param>
+    /// <param name="replace">Is replace if contains same character ID</param>
+    /// <remarks>
+    /// If <c>replace</c> is true, replaces same ID(ex. 148) data.<br/>
+    /// </remarks>
+    /// <example><code>
+    /// TextModel.SetCharacterNames([(new LorId(148), "Distorted Yan")], true);
+    /// </code></example>
+    public static void SetCharacterNames(IEnumerable<(LorId, string)> names, bool replace = false)
+    {
+        foreach (var (id, name) in names)
+        {
+            SetCharacterName(id, name, replace);
+        }
+    }
+
     private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
         ref _effTxtRef(BattleEffectTextsXmlList.Instance);
 
@@ -453,6 +533,18 @@ public static class TextModel
 
     private static readonly FieldRef<BookDescXmlList, Dictionary<string, List<BookDesc>>> _workshopBookDescRef =
         typeof(BookDescXmlList).FieldRefAccess<Dictionary<string, List<BookDesc>>>("_dictionaryWorkshop");
+
+    private static ref Dictionary<int, string> CharacterNameDict =>
+        ref _characterNameRef(CharactersNameXmlList.Instance);
+
+    private static readonly FieldRef<CharactersNameXmlList, Dictionary<int, string>> _characterNameRef =
+        typeof(CharactersNameXmlList).FieldRefAccess<Dictionary<int, string>>("_dictionary");
+
+    private static ref Dictionary<string, List<EnemyUnitClassInfo>> ByWorkshopNameDict =>
+        ref _byWorkshopNameRef(EnemyUnitClassInfoList.Instance);
+
+    private static readonly FieldRef<EnemyUnitClassInfoList, Dictionary<string, List<EnemyUnitClassInfo>>> _byWorkshopNameRef =
+        typeof(EnemyUnitClassInfoList).FieldRefAccess<Dictionary<string, List<EnemyUnitClassInfo>>>("_workshopEnemyDict");
 
     private class TextModelPatch
     {
