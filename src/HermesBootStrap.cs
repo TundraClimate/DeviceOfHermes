@@ -15,6 +15,8 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
+        DynamicAbility.Init();
+
         return "";
     }
 
