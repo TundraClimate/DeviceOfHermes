@@ -1,4 +1,7 @@
+using UI;
 using UnityEngine;
+using HarmonyLib;
+using static HarmonyLib.AccessTools;
 
 namespace DeviceOfHermes.Resource;
 
@@ -10,6 +13,13 @@ namespace DeviceOfHermes.Resource;
 /// </code></example>
 public static class Artwork
 {
+    static Artwork()
+    {
+        var harmony = new Harmony("DeviceOfHermes.Resource.Artwork");
+
+        harmony.CreateClassProcessor(typeof(PatchArtwork.PatchOnInitStoryIconDic)).Patch();
+    }
+
     /// <summary>Creates UnityEngine.Sprite from bytes</summary>
     /// <param name="bytes">The bytes that read by image</param>
     /// <param name="pixPerUnit">Pixel length used by Sprite.CreateSprite</param>
@@ -169,6 +179,187 @@ public static class Artwork
         foreach (var path in paths)
         {
             SetBattleUnitBufSprite(path, replace);
+        }
+    }
+
+    /// <summary>Set new StoryIcon</summary>
+    /// <param name="icon">A new icon</param>
+    /// <param name="replace">Is replace if contains same type</param>
+    /// <remarks>
+    /// If calls on Initializer, set is lazy polling since manager not initialized.
+    /// </remarks>
+    /// <example><code>
+    /// var sprite = Artwork.CreateSprite("sprite.png");
+    ///
+    /// Artwork.SetStoryIconSprite(new UIIconManager.IconSet()
+    /// {
+    ///     type = "MolarOffice",
+    ///     icon = sprite,
+    ///     iconGlow = sprite,
+    /// }, true);
+    /// </code></example>
+    public static void SetStoryIconSprite(UIIconManager.IconSet icon, bool replace = false)
+    {
+
+        if (GameSceneManager.Instance is null)
+        {
+            _initializeStoryIconStash?.Add((icon, replace));
+
+            return;
+        }
+
+        ref var dict = ref _storyIconRef(UISpriteDataManager.instance);
+
+        if (dict.ContainsKey(icon.type))
+        {
+            if (replace)
+            {
+                dict[icon.type] = icon;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: The StoryIcon '{icon.type}' is already exists.", MessageLevel.Warn);
+            }
+
+            return;
+        }
+
+        dict.Add(icon.type, icon);
+    }
+
+    /// <summary>Set new StoryIcon</summary>
+    /// <param name="type">A keyword of icon type</param>
+    /// <param name="icon">A new icon</param>
+    /// <param name="iconGlow">A new icon glow</param>
+    /// <param name="replace">Is replace if contains same type</param>
+    /// <remarks>
+    /// If calls on Initializer, set is lazy polling since manager not initialized.
+    /// </remarks>
+    /// <example><code>
+    /// var sprite = Artwork.CreateSprite("sprite.png");
+    ///
+    /// Artwork.SetStoryIconSprite("MolarOffice", sprite, replace: true);
+    /// </code></example>
+    public static void SetStoryIconSprite(string type, Sprite icon, Sprite? iconGlow = null, bool replace = false)
+    {
+        iconGlow ??= icon;
+
+        var iconSet = new UIIconManager.IconSet()
+        {
+            type = type,
+            icon = icon,
+            iconGlow = iconGlow,
+        };
+
+        SetStoryIconSprite(iconSet, replace);
+    }
+
+    /// <summary>Set new StoryIcon</summary>
+    /// <param name="type">A keyword of icon type</param>
+    /// <param name="iconPath">A new icon path</param>
+    /// <param name="iconGlowPath">A new icon glow path</param>
+    /// <param name="replace">Is replace if contains same type</param>
+    /// <remarks>
+    /// If calls on Initializer, set is lazy polling since manager not initialized.<br/>
+    /// Overides type if set.
+    /// </remarks>
+    /// <example><code>
+    /// Artwork.SetStoryIconSprite("MolarOffice.png", replace: true);
+    /// </code></example>
+    public static void SetStoryIconSprite(string iconPath, string? iconGlowPath = null, string? type = null, bool replace = false)
+    {
+        type ??= Path.GetFileName(iconPath)
+            .Let(name => (name.EndsWith(".png") || name.EndsWith(".jpg")) ? name.Substring(0, name.Length - 4) : name)
+            .Let(name => (name!.EndsWith(".jpeg") ? name!.Substring(0, name.Length - 5) : name));
+        iconGlowPath ??= iconPath;
+
+        var icon = Artwork.CreateSprite(iconPath);
+        var iconGlow = Artwork.CreateSprite(iconGlowPath);
+
+        var iconSet = new UIIconManager.IconSet()
+        {
+            type = type,
+            icon = icon,
+            iconGlow = iconGlow,
+        };
+
+        SetStoryIconSprite(iconSet, replace);
+    }
+
+    /// <summary>Loads all images with under <c>rootDirPath</c></summary>
+    /// <param name="rootDirPath">A path that includes storyicon sprite image</param>
+    /// <param name="glowSuffix">A suffix of glow sprite</param>
+    /// <param name="replace">Is replace if contains same ID</param>
+    /// <remarks>
+    /// Method retrieves under path files on recursive.<br/>
+    /// Only read the png or jpeg extension file.
+    /// </remarks>
+    /// <example><code>
+    /// var storyIconPath = Path.Combine(typeof(MyModInitializer).GetAsmDirectory(), "Artwork", "StoryIcon");
+    ///
+    /// Artwork.LoadStoryIconSprites(path, "_Glow", true);
+    /// </code></example>
+    public static void LoadStoryIconSprites(string rootDirPath, string glowSuffix = "_Glow", bool replace = false)
+    {
+        if (!Directory.Exists(rootDirPath))
+        {
+            Hermes.Say($"Skipped: The rootDirPath '{rootDirPath}' is not exists.", MessageLevel.Warn);
+
+            return;
+        }
+
+        var paths = Walkdir.GetFilesRecursive(rootDirPath);
+
+        foreach (var path in paths)
+        {
+            if (!path.EndsWith(".png") && !path.EndsWith(".jpeg") && !path.EndsWith(".jpg"))
+            {
+                continue;
+            }
+
+            var type = Path.GetFileNameWithoutExtension(path);
+
+            if (type.EndsWith(glowSuffix))
+            {
+                continue;
+            }
+
+            var ext = Path.GetExtension(path);
+            var glowPath = string.Format("{0}{1}{2}", path.Substring(0, path.Length - ext.Length), glowSuffix, ext);
+
+            var icon = Artwork.CreateSprite(path);
+            var glow = Artwork.CreateSprite(glowPath);
+
+            var iconSet = new UIIconManager.IconSet()
+            {
+                type = type,
+                icon = icon,
+                iconGlow = glow,
+            };
+
+            SetStoryIconSprite(iconSet, replace);
+        }
+    }
+
+    private static readonly FieldRef<UISpriteDataManager, Dictionary<string, UIIconManager.IconSet>> _storyIconRef =
+        typeof(UISpriteDataManager).FieldRefAccess<Dictionary<string, UIIconManager.IconSet>>("StoryIconDic");
+
+    private static List<(UIIconManager.IconSet, bool)>? _initializeStoryIconStash = new();
+
+    private class PatchArtwork
+    {
+        [HarmonyPatch(typeof(UISpriteDataManager), "Init")]
+        public class PatchOnInitStoryIconDic
+        {
+            static void Postfix(Dictionary<string, UIIconManager.IconSet> ___StoryIconDic)
+            {
+                foreach (var (sic, replace) in _initializeStoryIconStash ?? new())
+                {
+                    SetStoryIconSprite(sic, replace);
+                }
+
+                _initializeStoryIconStash = null;
+            }
         }
     }
 }

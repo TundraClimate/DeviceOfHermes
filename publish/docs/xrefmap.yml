@@ -966,6 +966,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites
   nameWithType: Artwork.LoadBattleUnitBufSprites
+- uid: DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites(System.String,System.String,System.Boolean)
+  name: LoadStoryIconSprites(string, string, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadStoryIconSprites_System_String_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites(System.String,System.String,System.Boolean)
+  name.vb: LoadStoryIconSprites(String, String, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites(string, string, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites(String, String, Boolean)
+  nameWithType: Artwork.LoadStoryIconSprites(string, string, bool)
+  nameWithType.vb: Artwork.LoadStoryIconSprites(String, String, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites*
+  name: LoadStoryIconSprites
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadStoryIconSprites_
+  commentId: Overload:DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites
+  nameWithType: Artwork.LoadStoryIconSprites
 - uid: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.Boolean)
   name: SetBattleUnitBufSprite(string, bool)
   href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_Boolean_
@@ -1000,6 +1016,40 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite
   nameWithType: Artwork.SetBattleUnitBufSprite
+- uid: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(System.String,System.String,System.String,System.Boolean)
+  name: SetStoryIconSprite(string, string?, string?, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetStoryIconSprite_System_String_System_String_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(System.String,System.String,System.String,System.Boolean)
+  name.vb: SetStoryIconSprite(String, String, String, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(string, string?, string?, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(String, String, String, Boolean)
+  nameWithType: Artwork.SetStoryIconSprite(string, string?, string?, bool)
+  nameWithType.vb: Artwork.SetStoryIconSprite(String, String, String, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(System.String,UnityEngine.Sprite,UnityEngine.Sprite,System.Boolean)
+  name: SetStoryIconSprite(string, Sprite, Sprite?, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetStoryIconSprite_System_String_UnityEngine_Sprite_UnityEngine_Sprite_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(System.String,UnityEngine.Sprite,UnityEngine.Sprite,System.Boolean)
+  name.vb: SetStoryIconSprite(String, Sprite, Sprite, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(string, UnityEngine.Sprite, UnityEngine.Sprite?, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(String, UnityEngine.Sprite, UnityEngine.Sprite, Boolean)
+  nameWithType: Artwork.SetStoryIconSprite(string, Sprite, Sprite?, bool)
+  nameWithType.vb: Artwork.SetStoryIconSprite(String, Sprite, Sprite, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(UI.UIIconManager.IconSet,System.Boolean)
+  name: SetStoryIconSprite(IconSet, bool)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetStoryIconSprite_UI_UIIconManager_IconSet_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(UI.UIIconManager.IconSet,System.Boolean)
+  name.vb: SetStoryIconSprite(IconSet, Boolean)
+  fullName: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(UI.UIIconManager.IconSet, bool)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite(UI.UIIconManager.IconSet, Boolean)
+  nameWithType: Artwork.SetStoryIconSprite(UIIconManager.IconSet, bool)
+  nameWithType.vb: Artwork.SetStoryIconSprite(UIIconManager.IconSet, Boolean)
+- uid: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite*
+  name: SetStoryIconSprite
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetStoryIconSprite_
+  commentId: Overload:DeviceOfHermes.Resource.Artwork.SetStoryIconSprite
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite
+  nameWithType: Artwork.SetStoryIconSprite
 - uid: DeviceOfHermes.Resource.ReadXmlParser
   name: ReadXmlParser
   href: api/DeviceOfHermes.Resource.ReadXmlParser.html

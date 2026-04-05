@@ -138,11 +138,48 @@
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
 <hr>
-<pre><code class="lang-cs">Artwork.LoadBattleUnitBufSprites(rootDirPath, replace)
+<pre><code class="lang-cs">Artwork.LoadBattleUnitBufSprites(rootDirPath, replace);
 </code></pre>
 <p>フォルダ内の全ての画像ファイルをバフ効果のSpriteとして追加します。</p>
 <ul>
 <li><code>rootDirPath</code>: 対象のフォルダです。</li>
+<li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">Artwork.SetStoryIconSprite(icon, replace);
+</code></pre>
+<p>ストーリーのアイコンに使われるSpriteを追加・変更します。</p>
+<ul>
+<li><code>icon</code>: 対象の<code>IconSet</code>です。</li>
+<li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">Artwork.SetStoryIconSprite(type, icon, iconGlow, replace);
+</code></pre>
+<p>ストーリーのアイコンに使われるSpriteを追加・変更します。</p>
+<ul>
+<li><code>type</code>: アイコン固有のIDです。</li>
+<li><code>icon</code>: 対象のSpriteです。</li>
+<li><code>iconGlow</code>: 上部に表示されるSpriteです。</li>
+<li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">Artwork.SetStoryIconSprite(icon, iconGlow, type, replace);
+</code></pre>
+<p>ストーリーのアイコンに使われるSpriteを追加・変更します。</p>
+<ul>
+<li><code>icon</code>: 対象の画像のパスです。</li>
+<li><code>iconGlow</code>: 上部に表示される画像のパスです。</li>
+<li><code>type</code>: アイコン固有のIDを上書きするIDです。</li>
+<li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">Artwork.LoadStoryIconSprites(rootDirPath, glowSuffix, replace);
+</code></pre>
+<p>フォルダ内の全ての画像ファイルをストーリーアイコンのSpriteとして追加します。</p>
+<ul>
+<li><code>rootDirPath</code>: 対象のフォルダです。</li>
+<li><code>glowSuffix</code>: Glowに使用するファイルの接尾詞です。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
 
