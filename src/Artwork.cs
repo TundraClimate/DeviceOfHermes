@@ -3,17 +3,10 @@ using UnityEngine;
 namespace DeviceOfHermes.Resource;
 
 /// <summary>An additional artwork loader</summary>
-/// <remarks>
-/// The additional artworks that loaded by <see cref="Artwork"/> will clear when main initializer.<br/>
-/// therefore needs the lazy load and on-initialize hook.
-/// </remarks>
 /// <example><code>
 /// var unitBufPath = Path.Combine(typeof(MyModInitializer).GetAsmDirectory(), "Artwork", "BattleUnitBuf");
 ///
-/// TextModel.OnLoadLocalize += lang => 
-/// {
-///     Artwork.LoadBattleUnitBufSprites(path, true);
-/// }
+/// Artwork.LoadBattleUnitBufSprites(path, true);
 /// </code></example>
 public static class Artwork
 {
@@ -160,10 +153,7 @@ public static class Artwork
     /// <example><code>
     /// var unitBufPath = Path.Combine(typeof(MyModInitializer).GetAsmDirectory(), "Artwork", "BattleUnitBuf");
     ///
-    /// TextModel.OnLoadLocalize += lang => 
-    /// {
-    ///     Artwork.LoadBattleUnitBufSprites(path, true);
-    /// }
+    /// Artwork.LoadBattleUnitBufSprites(path, true);
     /// </code></example>
     public static void LoadBattleUnitBufSprites(string rootDirPath, bool replace = false)
     {

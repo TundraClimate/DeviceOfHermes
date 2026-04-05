@@ -710,7 +710,7 @@ ammo.Consume(1);</code></pre>
 
   <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_IsConsumable_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.IsConsumable(System.Int32)">
   IsConsumable(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unit buf is ammo consumable</p>
@@ -744,11 +744,44 @@ ammo.Consume(1);</code></pre>
 
 
 
+  <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnBeforeConsume_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnBeforeConsume_System_Int32__" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume(System.Int32@)">
+  OnBeforeConsume(ref int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unitbuf before consume ammo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeforeConsume(ref int require)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>require</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value of required number by consume</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCancelled_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled*"></a>
 
   <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCancelled" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled">
   OnCancelled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unitbuf on reload cancelled</p>
@@ -773,9 +806,9 @@ ammo.Consume(1);</code></pre>
 
   <a id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume*"></a>
 
-  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_System_Int32__" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32@)">
-  OnConsume(ref int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32)">
+  OnConsume(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unitbuf on consumed ammo</p>
@@ -783,13 +816,13 @@ ammo.Consume(1);</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void OnConsume(ref int require)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnConsume(int consumed)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>require</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>A value of required number by consume</p>
+    <dt><code>consumed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value of consumed ammo</p>
 </dd>
   </dl>
 
@@ -808,7 +841,7 @@ ammo.Consume(1);</code></pre>
 
   <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnReload" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnReload">
   OnReload()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unitbuf on reload</p>
@@ -841,7 +874,7 @@ ammo.Consume(1);</code></pre>
 
   <h3 id="DeviceOfHermes_AdvancedBase_BattleAmmoBuf_Reload" data-uid="DeviceOfHermes.AdvancedBase.BattleAmmoBuf.Reload">
   Reload()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleAmmoBuf.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reload ammo</p>

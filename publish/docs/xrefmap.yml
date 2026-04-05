@@ -436,6 +436,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.LosedStack
   nameWithType: BattleAmmoBuf.LosedStack
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume(System.Int32@)
+  name: OnBeforeConsume(ref int)
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnBeforeConsume_System_Int32__
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume(System.Int32@)
+  name.vb: OnBeforeConsume(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume(ref int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume(Integer)
+  nameWithType: BattleAmmoBuf.OnBeforeConsume(ref int)
+  nameWithType.vb: BattleAmmoBuf.OnBeforeConsume(Integer)
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume*
+  name: OnBeforeConsume
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnBeforeConsume_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnBeforeConsume
+  nameWithType: BattleAmmoBuf.OnBeforeConsume
 - uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled
   name: OnCancelled()
   href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnCancelled
@@ -449,14 +465,14 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnCancelled
   nameWithType: BattleAmmoBuf.OnCancelled
-- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32@)
-  name: OnConsume(ref int)
-  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_System_Int32__
-  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32@)
+- uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32)
+  name: OnConsume(int)
+  href: api/DeviceOfHermes.AdvancedBase.BattleAmmoBuf.html#DeviceOfHermes_AdvancedBase_BattleAmmoBuf_OnConsume_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(System.Int32)
   name.vb: OnConsume(Integer)
-  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(ref int)
+  fullName: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(int)
   fullName.vb: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume(Integer)
-  nameWithType: BattleAmmoBuf.OnConsume(ref int)
+  nameWithType: BattleAmmoBuf.OnConsume(int)
   nameWithType.vb: BattleAmmoBuf.OnConsume(Integer)
 - uid: DeviceOfHermes.AdvancedBase.BattleAmmoBuf.OnConsume*
   name: OnConsume
@@ -670,6 +686,12 @@ references:
   commentId: T:DeviceOfHermes.CustomDice.RevengeDice
   fullName: DeviceOfHermes.CustomDice.RevengeDice
   nameWithType: RevengeDice
+- uid: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel,BattlePlayingCardDataInUnitModel)
+  name: AddRevengeCard(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_AddRevengeCard_BattleUnitModel_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel,BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: RevengeDice.AddRevengeCard(BattleUnitModel, BattlePlayingCardDataInUnitModel)
 - uid: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,System.Collections.Generic.List{BattleDiceBehavior})
   name: AddRevengeCard(BattleUnitModel, DiceCardXmlInfo, List<BattleDiceBehavior>?)
   href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_AddRevengeCard_BattleUnitModel_LOR_DiceSystem_DiceCardXmlInfo_System_Collections_Generic_List_BattleDiceBehavior__
@@ -718,6 +740,19 @@ references:
   commentId: T:DeviceOfHermes.CustomDice.UnbreakableDice
   fullName: DeviceOfHermes.CustomDice.UnbreakableDice
   nameWithType: UnbreakableDice
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  name: IsBreaked
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsBreaked
+  commentId: P:DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  nameWithType: UnbreakableDice.IsBreaked
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked*
+  name: IsBreaked
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsBreaked_
+  commentId: Overload:DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
+  nameWithType: UnbreakableDice.IsBreaked
 - uid: DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked(BattlePlayingCardDataInUnitModel)
   name: OnUseBreaked(BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_OnUseBreaked_BattlePlayingCardDataInUnitModel_
@@ -999,6 +1034,70 @@ references:
   commentId: E:DeviceOfHermes.Resource.TextModel.OnLoadLocalize
   fullName: DeviceOfHermes.Resource.TextModel.OnLoadLocalize
   nameWithType: TextModel.OnLoadLocalize
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc(LOR_XML.BattleCardAbilityDesc,System.Boolean)
+  name: SetBattleCardAbilityDesc(BattleCardAbilityDesc, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDesc_LOR_XML_BattleCardAbilityDesc_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc(LOR_XML.BattleCardAbilityDesc,System.Boolean)
+  name.vb: SetBattleCardAbilityDesc(BattleCardAbilityDesc, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc(LOR_XML.BattleCardAbilityDesc, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc(LOR_XML.BattleCardAbilityDesc, Boolean)
+  nameWithType: TextModel.SetBattleCardAbilityDesc(BattleCardAbilityDesc, bool)
+  nameWithType.vb: TextModel.SetBattleCardAbilityDesc(BattleCardAbilityDesc, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc*
+  name: SetBattleCardAbilityDesc
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDesc_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc
+  nameWithType: TextModel.SetBattleCardAbilityDesc
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs(System.Collections.Generic.IEnumerable{LOR_XML.BattleCardAbilityDesc},System.Boolean)
+  name: SetBattleCardAbilityDescs(IEnumerable<BattleCardAbilityDesc>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDescs_System_Collections_Generic_IEnumerable_LOR_XML_BattleCardAbilityDesc__System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs(System.Collections.Generic.IEnumerable{LOR_XML.BattleCardAbilityDesc},System.Boolean)
+  name.vb: SetBattleCardAbilityDescs(IEnumerable(Of BattleCardAbilityDesc), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs(System.Collections.Generic.IEnumerable<LOR_XML.BattleCardAbilityDesc>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs(System.Collections.Generic.IEnumerable(Of LOR_XML.BattleCardAbilityDesc), Boolean)
+  nameWithType: TextModel.SetBattleCardAbilityDescs(IEnumerable<BattleCardAbilityDesc>, bool)
+  nameWithType.vb: TextModel.SetBattleCardAbilityDescs(IEnumerable(Of BattleCardAbilityDesc), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs*
+  name: SetBattleCardAbilityDescs
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDescs_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs
+  nameWithType: TextModel.SetBattleCardAbilityDescs
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardDesc(LOR_XML.BattleCardDesc,System.String,System.Boolean)
+  name: SetBattleCardDesc(BattleCardDesc, string?, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardDesc_LOR_XML_BattleCardDesc_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBattleCardDesc(LOR_XML.BattleCardDesc,System.String,System.Boolean)
+  name.vb: SetBattleCardDesc(BattleCardDesc, String, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardDesc(LOR_XML.BattleCardDesc, string?, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBattleCardDesc(LOR_XML.BattleCardDesc, String, Boolean)
+  nameWithType: TextModel.SetBattleCardDesc(BattleCardDesc, string?, bool)
+  nameWithType.vb: TextModel.SetBattleCardDesc(BattleCardDesc, String, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardDesc*
+  name: SetBattleCardDesc
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardDesc_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBattleCardDesc
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardDesc
+  nameWithType: TextModel.SetBattleCardDesc
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardDescs(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,LOR_XML.BattleCardDesc}},System.Boolean)
+  name: SetBattleCardDescs(IEnumerable<(string?, BattleCardDesc)>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BattleCardDesc___System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBattleCardDescs(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,LOR_XML.BattleCardDesc}},System.Boolean)
+  name.vb: SetBattleCardDescs(IEnumerable(Of (String, BattleCardDesc)), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardDescs(System.Collections.Generic.IEnumerable<(string?, LOR_XML.BattleCardDesc)>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBattleCardDescs(System.Collections.Generic.IEnumerable(Of (String, LOR_XML.BattleCardDesc)), Boolean)
+  nameWithType: TextModel.SetBattleCardDescs(IEnumerable<(string?, BattleCardDesc)>, bool)
+  nameWithType.vb: TextModel.SetBattleCardDescs(IEnumerable(Of (String, BattleCardDesc)), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBattleCardDescs*
+  name: SetBattleCardDescs
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardDescs_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBattleCardDescs
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBattleCardDescs
+  nameWithType: TextModel.SetBattleCardDescs
 - uid: DeviceOfHermes.Resource.TextModel.SetBattleEffectText(LOR_XML.BattleEffectText,System.Boolean)
   name: SetBattleEffectText(BattleEffectText, bool)
   href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleEffectText_LOR_XML_BattleEffectText_System_Boolean_
@@ -1031,6 +1130,223 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts
   nameWithType: TextModel.SetBattleEffectTexts
+- uid: DeviceOfHermes.Resource.TextModel.SetBookDesc(LOR_XML.BookDesc,System.String,System.Boolean)
+  name: SetBookDesc(BookDesc, string?, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBookDesc_LOR_XML_BookDesc_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBookDesc(LOR_XML.BookDesc,System.String,System.Boolean)
+  name.vb: SetBookDesc(BookDesc, String, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBookDesc(LOR_XML.BookDesc, string?, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBookDesc(LOR_XML.BookDesc, String, Boolean)
+  nameWithType: TextModel.SetBookDesc(BookDesc, string?, bool)
+  nameWithType.vb: TextModel.SetBookDesc(BookDesc, String, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBookDesc*
+  name: SetBookDesc
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBookDesc_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBookDesc
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBookDesc
+  nameWithType: TextModel.SetBookDesc
+- uid: DeviceOfHermes.Resource.TextModel.SetBookDescs(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,LOR_XML.BookDesc}},System.Boolean)
+  name: SetBookDescs(IEnumerable<(string?, BookDesc)>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBookDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BookDesc___System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetBookDescs(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,LOR_XML.BookDesc}},System.Boolean)
+  name.vb: SetBookDescs(IEnumerable(Of (String, BookDesc)), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetBookDescs(System.Collections.Generic.IEnumerable<(string?, LOR_XML.BookDesc)>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetBookDescs(System.Collections.Generic.IEnumerable(Of (String, LOR_XML.BookDesc)), Boolean)
+  nameWithType: TextModel.SetBookDescs(IEnumerable<(string?, BookDesc)>, bool)
+  nameWithType.vb: TextModel.SetBookDescs(IEnumerable(Of (String, BookDesc)), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetBookDescs*
+  name: SetBookDescs
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBookDescs_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetBookDescs
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetBookDescs
+  nameWithType: TextModel.SetBookDescs
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterDialog(LOR_XML.BattleDialogCharacter,System.String,System.Boolean)
+  name: SetCharacterDialog(BattleDialogCharacter, string, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterDialog_LOR_XML_BattleDialogCharacter_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetCharacterDialog(LOR_XML.BattleDialogCharacter,System.String,System.Boolean)
+  name.vb: SetCharacterDialog(BattleDialogCharacter, String, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterDialog(LOR_XML.BattleDialogCharacter, string, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetCharacterDialog(LOR_XML.BattleDialogCharacter, String, Boolean)
+  nameWithType: TextModel.SetCharacterDialog(BattleDialogCharacter, string, bool)
+  nameWithType.vb: TextModel.SetCharacterDialog(BattleDialogCharacter, String, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterDialog*
+  name: SetCharacterDialog
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterDialog_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetCharacterDialog
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterDialog
+  nameWithType: TextModel.SetCharacterDialog
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterDialogs(System.Collections.Generic.IEnumerable{LOR_XML.BattleDialogCharacter},System.String,System.Boolean)
+  name: SetCharacterDialogs(IEnumerable<BattleDialogCharacter>, string, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterDialogs_System_Collections_Generic_IEnumerable_LOR_XML_BattleDialogCharacter__System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetCharacterDialogs(System.Collections.Generic.IEnumerable{LOR_XML.BattleDialogCharacter},System.String,System.Boolean)
+  name.vb: SetCharacterDialogs(IEnumerable(Of BattleDialogCharacter), String, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterDialogs(System.Collections.Generic.IEnumerable<LOR_XML.BattleDialogCharacter>, string, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetCharacterDialogs(System.Collections.Generic.IEnumerable(Of LOR_XML.BattleDialogCharacter), String, Boolean)
+  nameWithType: TextModel.SetCharacterDialogs(IEnumerable<BattleDialogCharacter>, string, bool)
+  nameWithType.vb: TextModel.SetCharacterDialogs(IEnumerable(Of BattleDialogCharacter), String, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterDialogs*
+  name: SetCharacterDialogs
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterDialogs_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetCharacterDialogs
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterDialogs
+  nameWithType: TextModel.SetCharacterDialogs
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterName(LorId,System.String,System.Boolean)
+  name: SetCharacterName(LorId, string, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterName_LorId_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetCharacterName(LorId,System.String,System.Boolean)
+  name.vb: SetCharacterName(LorId, String, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterName(LorId, string, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetCharacterName(LorId, String, Boolean)
+  nameWithType: TextModel.SetCharacterName(LorId, string, bool)
+  nameWithType.vb: TextModel.SetCharacterName(LorId, String, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterName*
+  name: SetCharacterName
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterName_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetCharacterName
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterName
+  nameWithType: TextModel.SetCharacterName
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}},System.Boolean)
+  name: SetCharacterNames(IEnumerable<(LorId, string)>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetCharacterNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}},System.Boolean)
+  name.vb: SetCharacterNames(IEnumerable(Of (LorId, String)), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterNames(System.Collections.Generic.IEnumerable<(LorId, string)>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetCharacterNames(System.Collections.Generic.IEnumerable(Of (LorId, String)), Boolean)
+  nameWithType: TextModel.SetCharacterNames(IEnumerable<(LorId, string)>, bool)
+  nameWithType.vb: TextModel.SetCharacterNames(IEnumerable(Of (LorId, String)), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetCharacterNames*
+  name: SetCharacterNames
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetCharacterNames_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetCharacterNames
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetCharacterNames
+  nameWithType: TextModel.SetCharacterNames
+- uid: DeviceOfHermes.Resource.TextModel.SetDropBookName(LorId,System.String)
+  name: SetDropBookName(LorId, string)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetDropBookName_LorId_System_String_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetDropBookName(LorId,System.String)
+  name.vb: SetDropBookName(LorId, String)
+  fullName: DeviceOfHermes.Resource.TextModel.SetDropBookName(LorId, string)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetDropBookName(LorId, String)
+  nameWithType: TextModel.SetDropBookName(LorId, string)
+  nameWithType.vb: TextModel.SetDropBookName(LorId, String)
+- uid: DeviceOfHermes.Resource.TextModel.SetDropBookName*
+  name: SetDropBookName
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetDropBookName_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetDropBookName
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetDropBookName
+  nameWithType: TextModel.SetDropBookName
+- uid: DeviceOfHermes.Resource.TextModel.SetDropBookNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}})
+  name: SetDropBookNames(IEnumerable<(LorId, string)>)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetDropBookNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetDropBookNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}})
+  name.vb: SetDropBookNames(IEnumerable(Of (LorId, String)))
+  fullName: DeviceOfHermes.Resource.TextModel.SetDropBookNames(System.Collections.Generic.IEnumerable<(LorId, string)>)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetDropBookNames(System.Collections.Generic.IEnumerable(Of (LorId, String)))
+  nameWithType: TextModel.SetDropBookNames(IEnumerable<(LorId, string)>)
+  nameWithType.vb: TextModel.SetDropBookNames(IEnumerable(Of (LorId, String)))
+- uid: DeviceOfHermes.Resource.TextModel.SetDropBookNames*
+  name: SetDropBookNames
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetDropBookNames_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetDropBookNames
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetDropBookNames
+  nameWithType: TextModel.SetDropBookNames
+- uid: DeviceOfHermes.Resource.TextModel.SetPassiveDesc(LOR_XML.PassiveDesc,System.Boolean)
+  name: SetPassiveDesc(PassiveDesc, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetPassiveDesc_LOR_XML_PassiveDesc_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetPassiveDesc(LOR_XML.PassiveDesc,System.Boolean)
+  name.vb: SetPassiveDesc(PassiveDesc, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetPassiveDesc(LOR_XML.PassiveDesc, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetPassiveDesc(LOR_XML.PassiveDesc, Boolean)
+  nameWithType: TextModel.SetPassiveDesc(PassiveDesc, bool)
+  nameWithType.vb: TextModel.SetPassiveDesc(PassiveDesc, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetPassiveDesc*
+  name: SetPassiveDesc
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetPassiveDesc_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetPassiveDesc
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetPassiveDesc
+  nameWithType: TextModel.SetPassiveDesc
+- uid: DeviceOfHermes.Resource.TextModel.SetPassiveDescs(System.Collections.Generic.IEnumerable{LOR_XML.PassiveDesc},System.Boolean)
+  name: SetPassiveDescs(IEnumerable<PassiveDesc>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetPassiveDescs_System_Collections_Generic_IEnumerable_LOR_XML_PassiveDesc__System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetPassiveDescs(System.Collections.Generic.IEnumerable{LOR_XML.PassiveDesc},System.Boolean)
+  name.vb: SetPassiveDescs(IEnumerable(Of PassiveDesc), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetPassiveDescs(System.Collections.Generic.IEnumerable<LOR_XML.PassiveDesc>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetPassiveDescs(System.Collections.Generic.IEnumerable(Of LOR_XML.PassiveDesc), Boolean)
+  nameWithType: TextModel.SetPassiveDescs(IEnumerable<PassiveDesc>, bool)
+  nameWithType.vb: TextModel.SetPassiveDescs(IEnumerable(Of PassiveDesc), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetPassiveDescs*
+  name: SetPassiveDescs
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetPassiveDescs_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetPassiveDescs
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetPassiveDescs
+  nameWithType: TextModel.SetPassiveDescs
+- uid: DeviceOfHermes.Resource.TextModel.SetStageName(LorId,System.String,System.Boolean)
+  name: SetStageName(LorId, string, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetStageName_LorId_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetStageName(LorId,System.String,System.Boolean)
+  name.vb: SetStageName(LorId, String, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetStageName(LorId, string, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetStageName(LorId, String, Boolean)
+  nameWithType: TextModel.SetStageName(LorId, string, bool)
+  nameWithType.vb: TextModel.SetStageName(LorId, String, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetStageName*
+  name: SetStageName
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetStageName_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetStageName
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetStageName
+  nameWithType: TextModel.SetStageName
+- uid: DeviceOfHermes.Resource.TextModel.SetStageNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}},System.Boolean)
+  name: SetStageNames(IEnumerable<(LorId, string)>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetStageNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetStageNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}},System.Boolean)
+  name.vb: SetStageNames(IEnumerable(Of (LorId, String)), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetStageNames(System.Collections.Generic.IEnumerable<(LorId, string)>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetStageNames(System.Collections.Generic.IEnumerable(Of (LorId, String)), Boolean)
+  nameWithType: TextModel.SetStageNames(IEnumerable<(LorId, string)>, bool)
+  nameWithType.vb: TextModel.SetStageNames(IEnumerable(Of (LorId, String)), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetStageNames*
+  name: SetStageNames
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetStageNames_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetStageNames
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetStageNames
+  nameWithType: TextModel.SetStageNames
+- uid: DeviceOfHermes.Resource.TextModel.SetTextData(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}},System.Boolean)
+  name: SetTextData(IEnumerable<(string, string)>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetTextData_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetTextData(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}},System.Boolean)
+  name.vb: SetTextData(IEnumerable(Of (String, String)), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetTextData(System.Collections.Generic.IEnumerable<(string, string)>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetTextData(System.Collections.Generic.IEnumerable(Of (String, String)), Boolean)
+  nameWithType: TextModel.SetTextData(IEnumerable<(string, string)>, bool)
+  nameWithType.vb: TextModel.SetTextData(IEnumerable(Of (String, String)), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetTextData(System.String,System.String,System.Boolean)
+  name: SetTextData(string, string, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetTextData_System_String_System_String_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetTextData(System.String,System.String,System.Boolean)
+  name.vb: SetTextData(String, String, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetTextData(string, string, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetTextData(String, String, Boolean)
+  nameWithType: TextModel.SetTextData(string, string, bool)
+  nameWithType.vb: TextModel.SetTextData(String, String, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetTextData*
+  name: SetTextData
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetTextData_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetTextData
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetTextData
+  nameWithType: TextModel.SetTextData
 - uid: DeviceOfHermes.ScheduleRunner
   name: ScheduleRunner
   href: api/DeviceOfHermes.ScheduleRunner.html

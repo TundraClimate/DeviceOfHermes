@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_Resource_TextModel" data-uid="DeviceOfHermes.Resource.TextModel" class="text-break">
-Class TextModel  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L19"><i class="bi bi-code-slash"></i></a>
+Class TextModel  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -164,11 +164,200 @@ Therefore, an event the <code>OnLoadLocalize</code> is hooks localize initialize
 </h2>
 
 
+  <a id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDesc_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDesc_LOR_XML_BattleCardAbilityDesc_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc(LOR_XML.BattleCardAbilityDesc,System.Boolean)">
+  SetBattleCardAbilityDesc(BattleCardAbilityDesc, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set BattleCardAbilityDesc with desc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBattleCardAbilityDesc(BattleCardAbilityDesc desc, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>desc</code> <span class="xref">BattleCardAbilityDesc</span></dt>
+    <dd><p>A desc data</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDesc_LOR_XML_BattleCardAbilityDesc_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBattleCardAbilityDesc(new BattleCardAbilityDesc()
+{
+    id = "drawCard",
+    desc = ["Draws HYPERMAXED card"],
+}, true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDesc_LOR_XML_BattleCardAbilityDesc_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. drawCard) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDescs_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDescs_System_Collections_Generic_IEnumerable_LOR_XML_BattleCardAbilityDesc__System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDescs(System.Collections.Generic.IEnumerable{LOR_XML.BattleCardAbilityDesc},System.Boolean)">
+  SetBattleCardAbilityDescs(IEnumerable&lt;BattleCardAbilityDesc&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set BattleCardAbilityDesc with descs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBattleCardAbilityDescs(IEnumerable&lt;BattleCardAbilityDesc&gt; descs, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>descs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">BattleCardAbilityDesc</span>&gt;</dt>
+    <dd><p>The desc data</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDescs_System_Collections_Generic_IEnumerable_LOR_XML_BattleCardAbilityDesc__System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBattleCardAbilityDescs([
+    new BattleCardAbilityDesc()
+    {
+        id = "drawCard",
+        desc = ["Draws HYPERMAXED card"],
+    }
+], true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDescs_System_Collections_Generic_IEnumerable_LOR_XML_BattleCardAbilityDesc__System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. drawCard) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetBattleCardDesc_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardDesc*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleCardDesc_LOR_XML_BattleCardDesc_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardDesc(LOR_XML.BattleCardDesc,System.String,System.Boolean)">
+  SetBattleCardDesc(BattleCardDesc, string?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set BattleCardDesc with desc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBattleCardDesc(BattleCardDesc desc, string? pid = null, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>desc</code> <span class="xref">BattleCardDesc</span></dt>
+    <dd><p>A desc data</p>
+</dd>
+    <dt><code>pid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The pid of desc</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardDesc_LOR_XML_BattleCardDesc_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBattleCardDesc(new BattleCardDesc()
+{
+    cardID = 602008,
+    cardName = "Gloden knuckle",
+}, replace: true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardDesc_LOR_XML_BattleCardDesc_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. LorId(602008)) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetBattleCardDescs_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardDescs*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleCardDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BattleCardDesc___System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleCardDescs(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,LOR_XML.BattleCardDesc}},System.Boolean)">
+  SetBattleCardDescs(IEnumerable&lt;(string?, BattleCardDesc)&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set BattleCardDesc with descs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBattleCardDescs(IEnumerable&lt;(string?, BattleCardDesc)&gt; descs, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>descs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">BattleCardDesc</span>)&gt;</dt>
+    <dd><p>The desc data with pids</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BattleCardDesc___System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBattleCardDescs([(null, new BattleCardDesc()
+{
+    cardID = 602008,
+    cardName = "Gloden knuckle",
+})], true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBattleCardDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BattleCardDesc___System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. LorId(602008)) data.<br></p>
+</div>
+
+
+
+
   <a id="DeviceOfHermes_Resource_TextModel_SetBattleEffectText_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleEffectText*"></a>
 
   <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleEffectText_LOR_XML_BattleEffectText_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleEffectText(LOR_XML.BattleEffectText,System.Boolean)">
   SetBattleEffectText(BattleEffectText, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set BattleEffectText with text</p>
@@ -215,7 +404,7 @@ Therefore, an event the <code>OnLoadLocalize</code> is hooks localize initialize
 
   <h3 id="DeviceOfHermes_Resource_TextModel_SetBattleEffectTexts_System_Collections_Generic_IEnumerable_LOR_XML_BattleEffectText__System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBattleEffectTexts(System.Collections.Generic.IEnumerable{LOR_XML.BattleEffectText},System.Boolean)">
   SetBattleEffectTexts(IEnumerable&lt;BattleEffectText&gt;, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set BattleEffectText with texts</p>
@@ -266,6 +455,663 @@ Therefore, an event the <code>OnLoadLocalize</code> is hooks localize initialize
 
 
 
+  <a id="DeviceOfHermes_Resource_TextModel_SetBookDesc_" data-uid="DeviceOfHermes.Resource.TextModel.SetBookDesc*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetBookDesc_LOR_XML_BookDesc_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBookDesc(LOR_XML.BookDesc,System.String,System.Boolean)">
+  SetBookDesc(BookDesc, string?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set BookDesc with pid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBookDesc(BookDesc desc, string? pid = null, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>desc</code> <span class="xref">BookDesc</span></dt>
+    <dd><p>A desc of to add</p>
+</dd>
+    <dt><code>pid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The target packageId</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBookDesc_LOR_XML_BookDesc_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBookDesc(new BookDesc()
+{
+    bookID = 250051,
+    bookName = "KeyPage of Yan",
+    texts = [
+        "Yan"
+    ],
+    passives = [],
+}, replace: true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBookDesc_LOR_XML_BookDesc_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. 250051) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetBookDescs_" data-uid="DeviceOfHermes.Resource.TextModel.SetBookDescs*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetBookDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BookDesc___System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetBookDescs(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,LOR_XML.BookDesc}},System.Boolean)">
+  SetBookDescs(IEnumerable&lt;(string?, BookDesc)&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set BookDesc with pid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBookDescs(IEnumerable&lt;(string?, BookDesc)&gt; descs, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>descs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">BookDesc</span>)&gt;</dt>
+    <dd><p>The desc of to add with pid</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBookDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BookDesc___System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetBookDescs([(null, new BookDesc()
+{
+    bookID = 250051,
+    bookName = "KeyPage of Yan",
+    texts = [
+        "Yan"
+    ],
+    passives = [],
+})], replace: true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetBookDescs_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_LOR_XML_BookDesc___System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. 250051) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetCharacterDialog_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterDialog*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetCharacterDialog_LOR_XML_BattleDialogCharacter_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterDialog(LOR_XML.BattleDialogCharacter,System.String,System.Boolean)">
+  SetCharacterDialog(BattleDialogCharacter, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Character dialog in group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCharacterDialog(BattleDialogCharacter character, string groupName = &quot;Workshop&quot;, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <span class="xref">BattleDialogCharacter</span></dt>
+    <dd><p>A <span class="xref">LOR_XML.BattleDialogCharacter</span> of to add</p>
+</dd>
+    <dt><code>groupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The group of character found</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterDialog_LOR_XML_BattleDialogCharacter_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetCharacterDialog(new BattleDialogCharacter()
+{
+    characterID = "Named",
+    dialogTypeList = [
+        new BattleDialogType()
+        {
+            dialogType = DialogType.START_BATTLE,
+            dialogList = [
+                new BattleDialog()
+                {
+                    dialogID = "START_BATTLE_0",
+                    dialogContent = ";(",
+                }
+            ],
+        }
+    ],
+}, "AwlOfNight", true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterDialog_LOR_XML_BattleDialogCharacter_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. AwlOfNight, Named) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetCharacterDialogs_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterDialogs*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetCharacterDialogs_System_Collections_Generic_IEnumerable_LOR_XML_BattleDialogCharacter__System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterDialogs(System.Collections.Generic.IEnumerable{LOR_XML.BattleDialogCharacter},System.String,System.Boolean)">
+  SetCharacterDialogs(IEnumerable&lt;BattleDialogCharacter&gt;, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Character dialogs in group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCharacterDialogs(IEnumerable&lt;BattleDialogCharacter&gt; characters, string groupName = &quot;Workshop&quot;, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>characters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">BattleDialogCharacter</span>&gt;</dt>
+    <dd><p>The <span class="xref">LOR_XML.BattleDialogCharacter</span> of to add</p>
+</dd>
+    <dt><code>groupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The group of character found</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterDialogs_System_Collections_Generic_IEnumerable_LOR_XML_BattleDialogCharacter__System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetCharacterDialogs([new BattleDialogCharacter()
+{
+    characterID = "Named",
+    dialogTypeList = [
+        new BattleDialogType()
+        {
+            dialogType = DialogType.START_BATTLE,
+            dialogList = [
+                new BattleDialog()
+                {
+                    dialogID = "START_BATTLE_0",
+                    dialogContent = ";(",
+                }
+            ],
+        }
+    ],
+}], "AwlOfNight", true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterDialogs_System_Collections_Generic_IEnumerable_LOR_XML_BattleDialogCharacter__System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. AwlOfNight, Named) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetCharacterName_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterName*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetCharacterName_LorId_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterName(LorId,System.String,System.Boolean)">
+  SetCharacterName(LorId, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set CharacterName with id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCharacterName(LorId id, string name, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">LorId</span></dt>
+    <dd><p>An id of editing target</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A new name</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same character ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterName_LorId_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetCharacterName(new LorId(148), "Distorted Yan", true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterName_LorId_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. 148) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetCharacterNames_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterNames*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetCharacterNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetCharacterNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}},System.Boolean)">
+  SetCharacterNames(IEnumerable&lt;(LorId, string)&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set CharacterNames with id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCharacterNames(IEnumerable&lt;(LorId, string)&gt; names, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<span class="xref">LorId</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)&gt;</dt>
+    <dd><p>An enumerable of (id, name) tuple</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same character ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetCharacterNames([(new LorId(148), "Distorted Yan")], true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetCharacterNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. 148) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetDropBookName_" data-uid="DeviceOfHermes.Resource.TextModel.SetDropBookName*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetDropBookName_LorId_System_String_" data-uid="DeviceOfHermes.Resource.TextModel.SetDropBookName(LorId,System.String)">
+  SetDropBookName(LorId, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L646"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set DropBook name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDropBookName(LorId id, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">LorId</span></dt>
+    <dd><p>A target book id</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A new name</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetDropBookName_LorId_System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetDropBookName(new LorId(250037), "Book of Distorted Yan");</code></pre>
+
+
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetDropBookNames_" data-uid="DeviceOfHermes.Resource.TextModel.SetDropBookNames*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetDropBookNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___" data-uid="DeviceOfHermes.Resource.TextModel.SetDropBookNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}})">
+  SetDropBookNames(IEnumerable&lt;(LorId, string)&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set DropBook name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDropBookNames(IEnumerable&lt;(LorId, string)&gt; names)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<span class="xref">LorId</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)&gt;</dt>
+    <dd><p>The dataset of (id, name) tuple</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetDropBookNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String____examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetDropBookNames([(new LorId(250037), "Book of Distorted Yan")]);</code></pre>
+
+
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetPassiveDesc_" data-uid="DeviceOfHermes.Resource.TextModel.SetPassiveDesc*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetPassiveDesc_LOR_XML_PassiveDesc_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetPassiveDesc(LOR_XML.PassiveDesc,System.Boolean)">
+  SetPassiveDesc(PassiveDesc, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set PassiveDesc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPassiveDesc(PassiveDesc desc, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>desc</code> <span class="xref">PassiveDesc</span></dt>
+    <dd><p>A desc to set</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetPassiveDesc_LOR_XML_PassiveDesc_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetPassiveDesc(new PassiveDesc()
+{
+    _id = 10008,
+    workshopID = "",
+    name = "HighSpeed",
+    desc = "Speed dice +8",
+}, true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetPassiveDesc_LOR_XML_PassiveDesc_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. LorId(10008)) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetPassiveDescs_" data-uid="DeviceOfHermes.Resource.TextModel.SetPassiveDescs*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetPassiveDescs_System_Collections_Generic_IEnumerable_LOR_XML_PassiveDesc__System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetPassiveDescs(System.Collections.Generic.IEnumerable{LOR_XML.PassiveDesc},System.Boolean)">
+  SetPassiveDescs(IEnumerable&lt;PassiveDesc&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set PassiveDesc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPassiveDescs(IEnumerable&lt;PassiveDesc&gt; descs, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>descs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">PassiveDesc</span>&gt;</dt>
+    <dd><p>The dataset of descs</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same desc ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetPassiveDescs_System_Collections_Generic_IEnumerable_LOR_XML_PassiveDesc__System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetPassiveDescs([new PassiveDesc()
+{
+    _id = 10008,
+    workshopID = "",
+    name = "HighSpeed",
+    desc = "Speed dice +8",
+}], true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetPassiveDescs_System_Collections_Generic_IEnumerable_LOR_XML_PassiveDesc__System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. LorId(10008)) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetStageName_" data-uid="DeviceOfHermes.Resource.TextModel.SetStageName*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetStageName_LorId_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetStageName(LorId,System.String,System.Boolean)">
+  SetStageName(LorId, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set StageName with id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStageName(LorId id, string name, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">LorId</span></dt>
+    <dd><p>An id of editing target</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A new name</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same stage ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetStageName_LorId_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetStageName(new LorId(50014), "Distorted Yan", true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetStageName_LorId_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. 50014) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetStageNames_" data-uid="DeviceOfHermes.Resource.TextModel.SetStageNames*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetStageNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetStageNames(System.Collections.Generic.IEnumerable{System.ValueTuple{LorId,System.String}},System.Boolean)">
+  SetStageNames(IEnumerable&lt;(LorId, string)&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set StageName with id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStageNames(IEnumerable&lt;(LorId, string)&gt; names, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<span class="xref">LorId</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)&gt;</dt>
+    <dd><p>An enumerable of (id, name) tuple</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same stage ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetStageNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetStageNames([(new LorId(50014), "Distorted Yan")], true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetStageNames_System_Collections_Generic_IEnumerable_System_ValueTuple_LorId_System_String___System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. 50014) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetTextData_" data-uid="DeviceOfHermes.Resource.TextModel.SetTextData*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetTextData_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetTextData(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}},System.Boolean)">
+  SetTextData(IEnumerable&lt;(string, string)&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L722"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set TextData with id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTextData(IEnumerable&lt;(string, string)&gt; data, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)&gt;</dt>
+    <dd><p>The dataset</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same character ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetTextData_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetTextData([("ui_invitation_context", "GET OUT!")], true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetTextData_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. ui_invitation_context) data.<br></p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_Resource_TextModel_SetTextData_" data-uid="DeviceOfHermes.Resource.TextModel.SetTextData*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_TextModel_SetTextData_System_String_System_String_System_Boolean_" data-uid="DeviceOfHermes.Resource.TextModel.SetTextData(System.String,System.String,System.Boolean)">
+  SetTextData(string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L692"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set TextData with id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTextData(string id, string data, bool replace = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An id of specify text</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A data of corresponds id</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is replace if contains same character ID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetTextData_System_String_System_String_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">TextModel.SetTextData("ui_invitation_context", "GET OUT!", true);</code></pre>
+
+
+  <h4 class="section" id="DeviceOfHermes_Resource_TextModel_SetTextData_System_String_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code>replace</code> is true, replaces same ID(ex. ui_invitation_context) data.<br></p>
+</div>
+
+
+
+
   <h2 class="section" id="events">Events
 </h2>
 
@@ -273,7 +1119,7 @@ Therefore, an event the <code>OnLoadLocalize</code> is hooks localize initialize
 
   <h3 id="DeviceOfHermes_Resource_TextModel_OnLoadLocalize" data-uid="DeviceOfHermes.Resource.TextModel.OnLoadLocalize">
   OnLoadLocalize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invokes on localize data initialized</p>
@@ -308,7 +1154,7 @@ Therefore, an event the <code>OnLoadLocalize</code> is hooks localize initialize
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L19" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/TextModel.cs/#L20" class="edit-link">Edit this page</a>
         </div>
 
 
