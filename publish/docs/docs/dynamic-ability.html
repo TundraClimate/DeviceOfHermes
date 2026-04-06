@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DynamicAbility | DeviceOfHermes </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DynamicAbility | DeviceOfHermes ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/dynamic-ability.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DeviceOfHermes">
+            DeviceOfHermes
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dynamicability">DynamicAbility</h1>
+
+<p>コマンドからページ・ダイス効果を生成します。</p>
+<p>例:</p>
+<pre><code class="lang-xml">&lt;Script&gt;dohc_DynamicCard_uc(draw1light1)_desc([使用時] 光を1回復。ページを1枚引く)&lt;/Script&gt;
+Script=&quot;dohd_sa(draw1)_desc([的中] ページを1枚引く)&quot;
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<p>コマンドは<code>&quot;_&quot;</code>で区切った複数の要素で構成されています。</p>
+<p>第一区間は<code>DOHC</code>もしくは<code>DOHD</code>のみをコマンドとして認識し、この2種類以外が指定された場合は通常のScriptとして処理されます。<br>
+この文字列は大文字・小文字を区別しません。<code>dohc</code>や<code>dohd</code>もコマンドとして使用可能です。</p>
+<p>第二区間はアビリティ名を指定します。これは既存のものを指定するのではなく、新規かつ他と重複しない名称である必要があります。<br>
+これはIDとしての意味を持ち、LocalizationManager等で指定するときにはこのIDを指定することでターゲットして指定することが出来ます。</p>
+<p>第三区間以降は実際の処理を組み上げるコマンドになっています。<br>
+コマンドは現在、</p>
+<ul>
+<li><code>uc()</code>: OnUseCard</li>
+<li><code>sb()</code>: OnStartBattle</li>
+<li><code>sp()</code>: OnStartParrying</li>
+<li><code>so()</code>: OnStartOneSideAction</li>
+<li><code>wp()</code>: OnWinParrying/OnWinParryingAtk|Def</li>
+<li><code>lp()</code>: OnLoseParrying</li>
+<li><code>brd()</code>: BeforeRollDice</li>
+<li><code>sa()</code>: SucceedAttack</li>
+<li><code>rd()</code>: RollDice</li>
+<li><code>desc()</code>: Desc</li>
+</ul>
+<p>これらに対応しており、<code>()</code>の中の文字列をそれぞれ指定することで処理を追加することが出来ます。</p>
+<p>コマンドに指定する文字列は以下の値の組み合わせです。ただし<code>desc()</code>のみは例外で、文字列をそのまま指定する方法になります。</p>
+<ul>
+<li><code>light{N}</code>: 光を回復します。<code>{N}</code>は回復する光の値です。(例: <code>light2</code>)
+<ul>
+<li>使用可能なコマンド: 全て</li>
+</ul>
+</li>
+<li><code>draw{N}</code>: ページを引きます。<code>{N}</code>は引くページの枚数です。(例: <code>draw1</code>)
+<ul>
+<li>使用可能なコマンド: 全て</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/dynamic-ability.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

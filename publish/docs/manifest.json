@@ -615,6 +615,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/dynamic-ability.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/dynamic-ability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/passive-resolver.md",
       "output": {
         ".html": {
