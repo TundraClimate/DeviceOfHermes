@@ -91,11 +91,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -108,11 +140,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -125,11 +189,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -142,11 +238,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -159,11 +287,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -176,11 +336,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -193,11 +385,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -210,11 +434,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -227,11 +483,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -244,11 +532,43 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -266,11 +586,43 @@ internal class DynamicDiceAbility(Context ctx) : DiceCardAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -283,11 +635,43 @@ internal class DynamicDiceAbility(Context ctx) : DiceCardAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -300,11 +684,43 @@ internal class DynamicDiceAbility(Context ctx) : DiceCardAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -317,11 +733,43 @@ internal class DynamicDiceAbility(Context ctx) : DiceCardAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -334,11 +782,43 @@ internal class DynamicDiceAbility(Context ctx) : DiceCardAbilityBase
             switch (c.type)
             {
                 case Context.CommandType.Light:
-                    base.owner.cardSlotDetail.RecoverPlayPoint(c.A0());
+                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
                     break;
 
                 case Context.CommandType.Draw:
-                    base.owner.allyCardDetail.DrawCards(c.A0());
+                    base.owner?.allyCardDetail.DrawCards(c.A0());
+                    break;
+
+                case Context.CommandType.Gain:
+                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextGain:
+                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Inf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.NextNextInf:
+                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
+                    break;
+
+                case Context.CommandType.Heal:
+                    base.owner?.RecoverHP(c.A0());
+                    break;
+
+                case Context.CommandType.HealBreak:
+                    base.owner?.breakDetail.RecoverBreak(c.A0());
                     break;
             }
         }
@@ -380,6 +860,14 @@ internal class Context
     {
         Light,
         Draw,
+        Gain,
+        Inf,
+        NextGain,
+        NextNextGain,
+        NextInf,
+        NextNextInf,
+        Heal,
+        HealBreak,
     }
 
     public ContextType ctxType = ContextType.Card;
@@ -641,6 +1129,14 @@ internal class DynamicAbilityParser
             {
                 "light" => Context.Command.New(Context.CommandType.Light, [ParseNumber(commands, ref i)]),
                 "draw" => Context.Command.New(Context.CommandType.Draw, [ParseNumber(commands, ref i)]),
+                "gain" => Context.Command.New(Context.CommandType.Gain, [ParseKeywordBuf(commands, ref i), ParseNumber(commands, ref i)]),
+                "inf" => Context.Command.New(Context.CommandType.Inf, [ParseKeywordBuf(commands, ref i), ParseNumber(commands, ref i)]),
+                "ngain" => Context.Command.New(Context.CommandType.NextGain, [ParseKeywordBuf(commands, ref i), ParseNumber(commands, ref i)]),
+                "nngain" => Context.Command.New(Context.CommandType.NextNextGain, [ParseKeywordBuf(commands, ref i), ParseNumber(commands, ref i)]),
+                "ninf" => Context.Command.New(Context.CommandType.NextInf, [ParseKeywordBuf(commands, ref i), ParseNumber(commands, ref i)]),
+                "nninf" => Context.Command.New(Context.CommandType.NextNextInf, [ParseKeywordBuf(commands, ref i), ParseNumber(commands, ref i)]),
+                "heal" => Context.Command.New(Context.CommandType.Heal, [ParseNumber(commands, ref i)]),
+                "bheal" => Context.Command.New(Context.CommandType.HealBreak, [ParseNumber(commands, ref i)]),
                 _ => null,
             };
 
@@ -678,6 +1174,25 @@ internal class DynamicAbilityParser
         {
             throw new InvalidOperationException($"The argument number '{buffer.ToString()}' is invalid.");
         }
+    }
+
+    private static KeywordBuf ParseKeywordBuf(string commands, ref int i)
+    {
+        var buffer = new StringBuilder();
+
+        while (commands.Length > i)
+        {
+            buffer.Append(commands[i]);
+
+            i++;
+
+            if (Enum.TryParse<KeywordBuf>(buffer.ToString(), ignoreCase: true, out var keywordBuf))
+            {
+                return keywordBuf;
+            }
+        }
+
+        throw new InvalidOperationException("The Specified input cannot parse to KeywordBuf.");
     }
 
     private static string ParseBrace(string commands)
