@@ -86,492 +86,52 @@ internal class DynamicCardAbility(Context ctx) : DiceCardSelfAbilityBase
 {
     public override void OnUseCard()
     {
-        foreach (var c in ctx.useCard)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.useCard);
     }
 
     public override void OnStartBattle()
     {
-        foreach (var c in ctx.startBattle)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.startBattle);
     }
 
     public override void OnStartParrying()
     {
-        foreach (var c in ctx.startParrying)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.startParrying);
     }
 
     public override void OnStartOneSideAction()
     {
-        foreach (var c in ctx.startOneside)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.startOneside);
     }
 
     public override void OnWinParryingAtk()
     {
-        foreach (var c in ctx.winParrying)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.winParrying);
     }
 
     public override void OnWinParryingDef()
     {
-        foreach (var c in ctx.winParrying)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.winParrying);
     }
 
     public override void OnLoseParrying()
     {
-        foreach (var c in ctx.loseParrying)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.loseParrying);
     }
 
     public override void BeforeRollDice(BattleDiceBehavior behavior)
     {
-        foreach (var c in ctx.beforeRollDice)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.beforeRollDice);
     }
 
     public override void OnSucceedAttack(BattleDiceBehavior behavior)
     {
-        foreach (var c in ctx.succeedAttack)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.succeedAttack);
     }
 
     public override void OnRollDice(BattleDiceBehavior behavior)
     {
-        foreach (var c in ctx.rollDice)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunCard(this, ctx.rollDice);
     }
 
     private Context ctx = ctx;
@@ -581,247 +141,27 @@ internal class DynamicDiceAbility(Context ctx) : DiceCardAbilityBase
 {
     public override void OnWinParrying()
     {
-        foreach (var c in ctx.winParrying)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunDice(this, ctx.winParrying);
     }
 
     public override void OnLoseParrying()
     {
-        foreach (var c in ctx.loseParrying)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunDice(this, ctx.loseParrying);
     }
 
     public override void BeforeRollDice()
     {
-        foreach (var c in ctx.beforeRollDice)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunDice(this, ctx.beforeRollDice);
     }
 
     public override void OnSucceedAttack(BattleUnitModel target)
     {
-        foreach (var c in ctx.succeedAttack)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunDice(this, ctx.succeedAttack);
     }
 
     public override void OnRollDice()
     {
-        foreach (var c in ctx.rollDice)
-        {
-            switch (c.type)
-            {
-                case Context.CommandType.Light:
-                    base.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
-                    break;
-
-                case Context.CommandType.Draw:
-                    base.owner?.allyCardDetail.DrawCards(c.A0());
-                    break;
-
-                case Context.CommandType.Gain:
-                    base.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextGain:
-                    base.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Inf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.NextNextInf:
-                    base.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], base.owner);
-                    break;
-
-                case Context.CommandType.Heal:
-                    base.owner?.RecoverHP(c.A0());
-                    break;
-
-                case Context.CommandType.HealBreak:
-                    base.owner?.breakDetail.RecoverBreak(c.A0());
-                    break;
-            }
-        }
+        Context.Command.RunDice(this, ctx.rollDice);
     }
 
     private Context ctx = ctx;
@@ -854,6 +194,104 @@ internal class Context
         public CommandType type;
 
         public object[] args = [];
+
+        public static void RunCard(DiceCardSelfAbilityBase ability, List<Context.Command> commands)
+        {
+            foreach (var c in commands)
+            {
+                switch (c.type)
+                {
+                    case Context.CommandType.Light:
+                        ability.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
+                        break;
+
+                    case Context.CommandType.Draw:
+                        ability.owner?.allyCardDetail.DrawCards(c.A0());
+                        break;
+
+                    case Context.CommandType.Gain:
+                        ability.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextGain:
+                        ability.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextNextGain:
+                        ability.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.Inf:
+                        ability.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextInf:
+                        ability.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextNextInf:
+                        ability.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.Heal:
+                        ability.owner?.RecoverHP(c.A0());
+                        break;
+
+                    case Context.CommandType.HealBreak:
+                        ability.owner?.breakDetail.RecoverBreak(c.A0());
+                        break;
+                }
+            }
+        }
+
+        public static void RunDice(DiceCardAbilityBase ability, List<Context.Command> commands)
+        {
+            foreach (var c in commands)
+            {
+                switch (c.type)
+                {
+                    case Context.CommandType.Light:
+                        ability.owner?.cardSlotDetail.RecoverPlayPoint(c.A0());
+                        break;
+
+                    case Context.CommandType.Draw:
+                        ability.owner?.allyCardDetail.DrawCards(c.A0());
+                        break;
+
+                    case Context.CommandType.Gain:
+                        ability.owner?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextGain:
+                        ability.owner?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextNextGain:
+                        ability.owner?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.Inf:
+                        ability.card?.target?.bufListDetail?.AddKeywordBufThisRoundByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextInf:
+                        ability.card?.target?.bufListDetail?.AddKeywordBufByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.NextNextInf:
+                        ability.card?.target?.bufListDetail?.AddKeywordBufNextNextByCard((KeywordBuf)c.args[0], (int)c.args[1], ability.owner);
+                        break;
+
+                    case Context.CommandType.Heal:
+                        ability.owner?.RecoverHP(c.A0());
+                        break;
+
+                    case Context.CommandType.HealBreak:
+                        ability.owner?.breakDetail.RecoverBreak(c.A0());
+                        break;
+                }
+            }
+        }
     }
 
     public enum CommandType
