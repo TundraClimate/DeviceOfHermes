@@ -240,6 +240,41 @@ internal class Context
                     case Context.CommandType.HealBreak:
                         ability.owner?.breakDetail.RecoverBreak(c.A0());
                         break;
+
+                    case Context.CommandType.ApplyDmg:
+                        ability.card?.ApplyDiceStatBonus(_ => true, new DiceStatBonus() { dmg = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyBreakDmg:
+                        ability.card?.ApplyDiceStatBonus(_ => true, new DiceStatBonus() { breakDmg = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyPower:
+                        ability.card?.ApplyDiceStatBonus(_ => true, new DiceStatBonus() { power = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyDmgRate:
+                        ability.card?.ApplyDiceStatBonus(_ => true, new DiceStatBonus() { dmgRate = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyBreakDmgRate:
+                        ability.card?.ApplyDiceStatBonus(_ => true, new DiceStatBonus() { breakRate = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyMin:
+                        ability.card?.ApplyDiceStatBonus(_ => true, new DiceStatBonus() { min = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyMax:
+                        ability.card?.ApplyDiceStatBonus(_ => true, new DiceStatBonus() { max = c.A0() });
+
+                        break;
                 }
             }
         }
@@ -289,6 +324,41 @@ internal class Context
                     case Context.CommandType.HealBreak:
                         ability.owner?.breakDetail.RecoverBreak(c.A0());
                         break;
+
+                    case Context.CommandType.ApplyDmg:
+                        ability.behavior?.ApplyDiceStatBonus(new DiceStatBonus() { dmg = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyBreakDmg:
+                        ability.behavior?.ApplyDiceStatBonus(new DiceStatBonus() { breakDmg = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyPower:
+                        ability.behavior?.ApplyDiceStatBonus(new DiceStatBonus() { power = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyDmgRate:
+                        ability.behavior?.ApplyDiceStatBonus(new DiceStatBonus() { dmgRate = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyBreakDmgRate:
+                        ability.behavior?.ApplyDiceStatBonus(new DiceStatBonus() { breakRate = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyMin:
+                        ability.behavior?.ApplyDiceStatBonus(new DiceStatBonus() { min = c.A0() });
+
+                        break;
+
+                    case Context.CommandType.ApplyMax:
+                        ability.behavior?.ApplyDiceStatBonus(new DiceStatBonus() { max = c.A0() });
+
+                        break;
                 }
             }
         }
@@ -306,6 +376,13 @@ internal class Context
         NextNextInf,
         Heal,
         HealBreak,
+        ApplyDmg,
+        ApplyBreakDmg,
+        ApplyPower,
+        ApplyDmgRate,
+        ApplyBreakDmgRate,
+        ApplyMin,
+        ApplyMax,
     }
 
     public ContextType ctxType = ContextType.Card;
@@ -575,6 +652,13 @@ internal class DynamicAbilityParser
                 "nninf" => Context.Command.New(Context.CommandType.NextNextInf, [ParseKeywordBuf(commands, ref i), ParseNumber(commands, ref i)]),
                 "heal" => Context.Command.New(Context.CommandType.Heal, [ParseNumber(commands, ref i)]),
                 "bheal" => Context.Command.New(Context.CommandType.HealBreak, [ParseNumber(commands, ref i)]),
+                "admg" => Context.Command.New(Context.CommandType.ApplyDmg, [ParseNumber(commands, ref i)]),
+                "abdmg" => Context.Command.New(Context.CommandType.ApplyBreakDmg, [ParseNumber(commands, ref i)]),
+                "apow" => Context.Command.New(Context.CommandType.ApplyPower, [ParseNumber(commands, ref i)]),
+                "adr" => Context.Command.New(Context.CommandType.ApplyDmgRate, [ParseNumber(commands, ref i)]),
+                "abdr" => Context.Command.New(Context.CommandType.ApplyBreakDmgRate, [ParseNumber(commands, ref i)]),
+                "amin" => Context.Command.New(Context.CommandType.ApplyMin, [ParseNumber(commands, ref i)]),
+                "amax" => Context.Command.New(Context.CommandType.ApplyMax, [ParseNumber(commands, ref i)]),
                 _ => null,
             };
 

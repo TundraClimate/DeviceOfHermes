@@ -95,6 +95,7 @@ Script=&quot;dohd_sa(draw1)_desc([的中] ページを1枚引く)&quot;
 <h2 id="specified-usage">Specified usage</h2>
 <p>コマンドは<code>&quot;_&quot;</code>で区切った複数の要素で構成されています。</p>
 <p>第一区間は<code>DOHC</code>もしくは<code>DOHD</code>のみをコマンドとして認識し、この2種類以外が指定された場合は通常のScriptとして処理されます。<br>
+<code>DOHC</code>は<code>DiceCardSelfAbility</code>に、<code>DOHD</code>は<code>DiceCardAbility</code>用のコマンドです。<br>
 この文字列は大文字・小文字を区別しません。<code>dohc</code>や<code>dohd</code>もコマンドとして使用可能です。</p>
 <p>第二区間はアビリティ名を指定します。これは既存のものを指定するのではなく、新規かつ他と重複しない名称である必要があります。<br>
 これはIDとしての意味を持ち、LocalizationManager等で指定するときにはこのIDを指定することでターゲットして指定することが出来ます。</p>
@@ -115,16 +116,23 @@ Script=&quot;dohd_sa(draw1)_desc([的中] ページを1枚引く)&quot;
 <p>これらに対応しており、<code>()</code>の中の文字列をそれぞれ指定することで処理を追加することが出来ます。</p>
 <p>コマンドに指定する文字列は以下の値の組み合わせです。ただし<code>desc()</code>のみは例外で、文字列をそのまま指定する方法になります。</p>
 <ul>
-<li><code>light{N}</code>: 光を回復します。<code>{N}</code>は回復する光の値です。(例: <code>light2</code>)
-<ul>
-<li>使用可能なコマンド: 全て</li>
-</ul>
-</li>
-<li><code>draw{N}</code>: ページを引きます。<code>{N}</code>は引くページの枚数です。(例: <code>draw1</code>)
-<ul>
-<li>使用可能なコマンド: 全て</li>
-</ul>
-</li>
+<li><code>light{N}</code>: 光を回復します。<code>{N}</code>は回復する光の値です。(例: <code>light2</code>)</li>
+<li><code>draw{N}</code>: ページを引きます。<code>{N}</code>は引くページの枚数です。(例: <code>draw1</code>)</li>
+<li><code>gain{B}{N}</code>: <code>KeywordBuf</code>を獲得します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>gainstrength1</code>)</li>
+<li><code>ngain{B}{N}</code>: 次の幕に<code>KeywordBuf</code>を獲得します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>gainstrength1</code>)</li>
+<li><code>nngain{B}{N}</code>: 次の次の幕に<code>KeywordBuf</code>を獲得します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>gainstrength1</code>)</li>
+<li><code>inf{B}{N}</code>: <code>KeywordBuf</code>を付与します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>infstrength1</code>)</li>
+<li><code>ninf{B}{N}</code>: 次の幕に<code>KeywordBuf</code>を付与します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>ninfstrength1</code>)</li>
+<li><code>nninf{B}{N}</code>: 次の次の幕に<code>KeywordBuf</code>を付与します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>nninfstrength1</code>)</li>
+<li><code>heal{N}</code>: 体力を回復します。<code>{N}</code>は回復する値です。(例: <code>heal99</code>)</li>
+<li><code>bheal{N}</code>: 混乱抵抗値を回復します。<code>{N}</code>は回復する値です。(例: <code>bheal99</code>)</li>
+<li><code>admg{N}</code>: DiceStatBonusにダメージ量を追加します。<code>{N}</code>はボーナス量です。(例: <code>admg1</code>)</li>
+<li><code>abdmg{N}</code>: DiceStatBonusに混乱ダメージ量を追加します。<code>{N}</code>はボーナス量です。(例: <code>abdmg1</code>)</li>
+<li><code>apow{N}</code>: DiceStatBonusに威力を追加します。<code>{N}</code>はボーナス量です。(例: <code>apow1</code>)</li>
+<li><code>adr{N}</code>: DiceStatBonusにダメージレートを追加します。<code>{N}</code>はボーナス量です。(例: <code>adr10</code>)</li>
+<li><code>abdr{N}</code>: DiceStatBonusに混乱ダメージレートを追加します。<code>{N}</code>はボーナス量です。(例: <code>abdr10</code>)</li>
+<li><code>amin{N}</code>: DiceStatBonusに最低値を追加します。<code>{N}</code>はボーナス量です。(例: <code>amin9</code>)</li>
+<li><code>amax{N}</code>: DiceStatBonusに最大値を追加します。<code>{N}</code>はボーナス量です。(例: <code>amax10</code>)</li>
 </ul>
 
 </article>
