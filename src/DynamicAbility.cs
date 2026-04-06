@@ -1159,6 +1159,13 @@ internal class DynamicAbilityParser
     {
         var buffer = new StringBuilder();
 
+        if (commands.Length > i && (commands[i] is '+' or '-'))
+        {
+            buffer.Append(commands[i]);
+
+            i++;
+        }
+
         while (commands.Length > i && char.IsNumber(commands[i]))
         {
             buffer.Append(commands[i]);
