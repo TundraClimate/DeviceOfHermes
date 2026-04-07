@@ -66,6 +66,11 @@ internal static class CustomDicePatch
     {
         static void Postfix(BattleDiceCardUI __instance, BattleDiceCardModel cardModel)
         {
+            if (cardModel is null)
+            {
+                return;
+            }
+
             foreach (var (i, beh) in cardModel.GetBehaviourList().Enumerate())
             {
                 if (CustomDiceSprite.TryGetSeq(beh, out var res))
@@ -115,6 +120,11 @@ internal static class CustomDicePatch
 
         static Sprite InjectMethod(Sprite grab, DiceCardItemModel cardmodel, int i)
         {
+            if (cardmodel is null)
+            {
+                return grab;
+            }
+
             var beh = cardmodel.GetBehaviourList()[i];
 
             if (CustomDiceSprite.TryGetSeq(beh, out var res))
@@ -133,6 +143,11 @@ internal static class CustomDicePatch
     {
         static void Postfix(DiceCardItemModel cardmodel, List<UI.UIDetailCardDescSlot> ___rightDescSlotList)
         {
+            if (cardmodel is null)
+            {
+                return;
+            }
+
             foreach (var (i, beh) in cardmodel.GetBehaviourList().Enumerate())
             {
                 if (CustomDiceSprite.TryGetSeq(beh, out var res))
