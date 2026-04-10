@@ -105,6 +105,19 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   nameWithType: AdvancedDiceBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetParryingResult(DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult)
+  name: GetParryingResult(ParryingResult)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetParryingResult_DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetParryingResult(DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetParryingResult(DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult)
+  nameWithType: AdvancedDiceBase.GetParryingResult(AdvancedDiceBase.ParryingResult)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetParryingResult*
+  name: GetParryingResult
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetParryingResult_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetParryingResult
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetParryingResult
+  nameWithType: AdvancedDiceBase.GetParryingResult
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.IsKeeps
   name: IsKeeps()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_IsKeeps
@@ -131,6 +144,30 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
   nameWithType: AdvancedDiceBase.OnAddToKeeped
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult
+  name: AdvancedDiceBase.ParryingResult
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult
+  nameWithType: AdvancedDiceBase.ParryingResult
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Draw
+  name: Draw
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_Draw
+  commentId: F:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Draw
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Draw
+  nameWithType: AdvancedDiceBase.ParryingResult.Draw
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Lose
+  name: Lose
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_Lose
+  commentId: F:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Lose
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Lose
+  nameWithType: AdvancedDiceBase.ParryingResult.Lose
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Win
+  name: Win
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_Win
+  commentId: F:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Win
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.Win
+  nameWithType: AdvancedDiceBase.ParryingResult.Win
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
   name: AdvancedPassiveBase
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html

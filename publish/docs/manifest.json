@@ -40,6 +40,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.yml\" sourcestartlinenumber=\"1\">A result of parrying</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.yml",
       "output": {
         ".html": {

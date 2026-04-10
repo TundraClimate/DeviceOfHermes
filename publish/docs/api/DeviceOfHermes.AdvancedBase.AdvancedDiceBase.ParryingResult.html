@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>using DeviceOfHermes.AdvancedBase; | DeviceOfHermes </title>
+      <title>Enum AdvancedDiceBase.ParryingResult | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="using DeviceOfHermes.AdvancedBase; | DeviceOfHermes ">
+      <meta name="title" content="Enum AdvancedDiceBase.ParryingResult | DeviceOfHermes ">
       
-      
+      <meta name="description" content="A result of parrying">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/advanced-dicebase.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/new/master/apiSpec/new?filename=DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult.md&amp;value=---%0Auid%3A%20DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,66 +84,77 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="using-deviceofhermesadvancedbase"><code>using DeviceOfHermes.AdvancedBase;</code></h1>
+        <article data-uid="DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult">
 
-<p>名前空間<code>DeviceOfHermes.AdvancedBase</code>に存在するクラスです。<br>
-この記事はこれを前提に書かれています。</p>
-<h1 id="advanceddicebase">AdvancedDiceBase</h1>
-<p>効果拡張版<code>DiceCardAbilityBase</code>です。</p>
-<p>例:</p>
-<pre><code class="lang-cs">class DiceCardAbility_AdvDice : AdvancedDiceBase
-{
-    public override void OnAddToKeeped()
-    {
-    }
 
-    public override bool IsKeeps()
-    {
-        return true;
-    }
 
-    public override ParryingResult GetParryingResult(ParryingResult origin)
-    {
-        return origin;
-    }
-}
-</code></pre>
-<p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
-それの代わりに<code>AdvancedDiceBase</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
-<h2 id="specified-usage">Specified usage</h2>
-<pre><code class="lang-cs">public override void OnAddToKeeped()
-{
-}
-</code></pre>
-<p>反撃ダイス等でこのダイスが<code>BattleKeepedCardDataInUnitModel</code>に追加されたときに実行されます。</p>
-<hr>
-<pre><code class="lang-cs">public override bool IsKeeps()
-{
-    return false;
-}
-</code></pre>
-<p>反撃ダイス等でこのダイスが<code>BattleKeepedCardDataInUnitModel</code>に追加されるかどうかを返します。</p>
-<hr>
-<pre><code class="lang-cs">public override ParryingResult GetParryingResult(ParryingResult origin)
-{
-    return origin;
-}
-</code></pre>
-<p>マッチ結果を変更します。<br>
-<code>ParryingResult.Win</code>、<code>ParryingResult.Lose</code>、<code>ParryingResult.Draw</code>のいずれかを返すとその結果になります。<br>
-この処理はプレイヤー側の結果が優先されます。</p>
-<ul>
-<li><code>origin</code>: 変更前のマッチ結果です。</li>
-</ul>
+
+  <h1 id="DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult" data-uid="DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult" class="text-break">
+Enum AdvancedDiceBase.ParryingResult  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedDiceBase.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DeviceOfHermes.html">DeviceOfHermes</a>.<a class="xref" href="DeviceOfHermes.AdvancedBase.html">AdvancedBase</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A result of parrying</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum AdvancedDiceBase.ParryingResult</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Also__1___0_System_Action___0__">Extension.Also&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Let__1___0_System_Action___0__">Extension.Let&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Let__2___0_System_Func___0___1__">Extension.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  </dd></dl>
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_Draw"><code>Draw = 1</code></dt>
+  
+  <dd><p>Draw</p>
+</dd>
+    <dt id="DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_Lose"><code>Lose = 2</code></dt>
+  
+  <dd><p>Lose</p>
+</dd>
+    <dt id="DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_Win"><code>Win = 0</code></dt>
+  
+  <dd><p>Win</p>
+</dd>
+  </dl>
+
+
+  <h2 id="DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>That uses only the <a class="xref" href="DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetParryingResult_DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_">GetParryingResult(ParryingResult)</a></p>
+</div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/advanced-dicebase.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedDiceBase.cs/#L49" class="edit-link">Edit this page</a>
         </div>
 
-        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 
