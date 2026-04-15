@@ -153,6 +153,180 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 </h2>
 
 
+  <a id="DeviceOfHermes_BattleBufExtension_AddBufStack_" data-uid="DeviceOfHermes.BattleBufExtension.AddBufStack*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_AddBufStack__1_BattleUnitModel_System_Int32_" data-uid="DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32)">
+  AddBufStack&lt;T&gt;(BattleUnitModel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add buf stacks if <code class="typeparamref">T</code> is null then initialize <code>new T()</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddBufStack&lt;T&gt;(this BattleUnitModel model, int stack) where T : BattleUnitBuf, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+    <dt><code>stack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A number of addition stacks</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_BattleBufExtension_AddBufStack_" data-uid="DeviceOfHermes.BattleBufExtension.AddBufStack*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_AddBufStack__1_BattleUnitModel_System_Int32_System_Func_BattleUnitBuf__" data-uid="DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})">
+  AddBufStack&lt;T&gt;(BattleUnitModel, int, Func&lt;BattleUnitBuf&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add buf stacks if <code class="typeparamref">T</code> is null then initialize by <code class="paramref">bufMake</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddBufStack&lt;T&gt;(this BattleUnitModel model, int stack, Func&lt;BattleUnitBuf&gt; bufMake) where T : BattleUnitBuf</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+    <dt><code>stack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A number of addition stacks</p>
+</dd>
+    <dt><code>bufMake</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<span class="xref">BattleUnitBuf</span>&gt;</dt>
+    <dd><p>New instance constructor</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_BattleBufExtension_AddReadyBufStack_" data-uid="DeviceOfHermes.BattleBufExtension.AddReadyBufStack*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_AddReadyBufStack__1_BattleUnitModel_System_Int32_" data-uid="DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32)">
+  AddReadyBufStack&lt;T&gt;(BattleUnitModel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add buf stacks if <code class="typeparamref">T</code> is null then initialize <code>new T()</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddReadyBufStack&lt;T&gt;(this BattleUnitModel model, int stack) where T : BattleUnitBuf, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+    <dt><code>stack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A number of addition stacks</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_BattleBufExtension_AddReadyBufStack_" data-uid="DeviceOfHermes.BattleBufExtension.AddReadyBufStack*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_AddReadyBufStack__1_BattleUnitModel_System_Int32_System_Func_BattleUnitBuf__" data-uid="DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})">
+  AddReadyBufStack&lt;T&gt;(BattleUnitModel, int, Func&lt;BattleUnitBuf&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add buf stacks if <code class="typeparamref">T</code> is null then initialize by <code class="paramref">bufMake</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddReadyBufStack&lt;T&gt;(this BattleUnitModel model, int stack, Func&lt;BattleUnitBuf&gt; bufMake) where T : BattleUnitBuf</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+    <dt><code>stack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A number of addition stacks</p>
+</dd>
+    <dt><code>bufMake</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<span class="xref">BattleUnitBuf</span>&gt;</dt>
+    <dd><p>New instance constructor</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="DeviceOfHermes_BattleBufExtension_GetBufAndInitIfNull_" data-uid="DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull*"></a>
 
   <h3 id="DeviceOfHermes_BattleBufExtension_GetBufAndInitIfNull__1_BattleUnitModel_System_Func___0__" data-uid="DeviceOfHermes.BattleBufExtension.GetBufAndInitIfNull``1(BattleUnitModel,System.Func{``0})">
@@ -211,7 +385,7 @@ Class BattleBufExtension  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_BattleBufExtension_GetBufStack__1_BattleUnitModel_" data-uid="DeviceOfHermes.BattleBufExtension.GetBufStack``1(BattleUnitModel)">
   GetBufStack&lt;T&gt;(BattleUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get stack number of specified unitBuf</p>
@@ -303,11 +477,151 @@ var stack = owner?.GetBufStack&lt;MyUnitBuf&gt;() ?? 0;</code></pre>
 
 
 
+  <a id="DeviceOfHermes_BattleBufExtension_GetReadyBufAndInitIfNull_" data-uid="DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_GetReadyBufAndInitIfNull__1_BattleUnitModel_System_Func___0__" data-uid="DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull``1(BattleUnitModel,System.Func{``0})">
+  GetReadyBufAndInitIfNull&lt;T&gt;(BattleUnitModel, Func&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get ready unitBuf if found, otherwise initialize by Func</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetReadyBufAndInitIfNull&lt;T&gt;(this BattleUnitModel model, Func&lt;T&gt; bufMake) where T : BattleUnitBuf</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+    <dt><code>bufMake</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd><p>New instance constructor</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>Returns T</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="DeviceOfHermes_BattleBufExtension_GetReadyBufAndInitIfNull__1_BattleUnitModel_System_Func___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Try get the <code class="typeparamref">T</code> is failed, run <code class="paramref">bufMake</code> and initialize buf.</p>
+</div>
+
+
+
+
+  <a id="DeviceOfHermes_BattleBufExtension_GetReadyBufStack_" data-uid="DeviceOfHermes.BattleBufExtension.GetReadyBufStack*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_GetReadyBufStack__1_BattleUnitModel_" data-uid="DeviceOfHermes.BattleBufExtension.GetReadyBufStack``1(BattleUnitModel)">
+  GetReadyBufStack&lt;T&gt;(BattleUnitModel?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get stack number of specified ready unitBuf</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? GetReadyBufStack&lt;T&gt;(this BattleUnitModel? model) where T : BattleUnitBuf</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_BattleBufExtension_GetReadyBuf_" data-uid="DeviceOfHermes.BattleBufExtension.GetReadyBuf*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_GetReadyBuf__1_BattleUnitModel_" data-uid="DeviceOfHermes.BattleBufExtension.GetReadyBuf``1(BattleUnitModel)">
+  GetReadyBuf&lt;T&gt;(BattleUnitModel?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get ready unitbuf if found</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? GetReadyBuf&lt;T&gt;(this BattleUnitModel? model) where T : BattleUnitBuf</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>Returns T if found</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="DeviceOfHermes_BattleBufExtension_RemoveBufIf_" data-uid="DeviceOfHermes.BattleBufExtension.RemoveBufIf*"></a>
 
   <h3 id="DeviceOfHermes_BattleBufExtension_RemoveBufIf_BattleUnitModel_System_Func_BattleUnitBuf_System_Boolean__" data-uid="DeviceOfHermes.BattleBufExtension.RemoveBufIf(BattleUnitModel,System.Func{BattleUnitBuf,System.Boolean})">
   RemoveBufIf(BattleUnitModel?, Func&lt;BattleUnitBuf, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove cond matches buf</p>
@@ -346,7 +660,7 @@ var stack = owner?.GetBufStack&lt;MyUnitBuf&gt;() ?? 0;</code></pre>
 
   <h3 id="DeviceOfHermes_BattleBufExtension_RemoveBuf__1_BattleUnitModel_" data-uid="DeviceOfHermes.BattleBufExtension.RemoveBuf``1(BattleUnitModel)">
   RemoveBuf&lt;T&gt;(BattleUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove specific buf if found</p>
@@ -431,6 +745,54 @@ var stack = owner?.GetBufStack&lt;MyUnitBuf&gt;() ?? 0;</code></pre>
   <pre><code class="lang-csharp">if(owner.TryGetBuf&lt;MyUnitBuf&gt;(var out buf))
 {
 }</code></pre>
+
+
+
+
+
+
+  <a id="DeviceOfHermes_BattleBufExtension_TryGetReadyBuf_" data-uid="DeviceOfHermes.BattleBufExtension.TryGetReadyBuf*"></a>
+
+  <h3 id="DeviceOfHermes_BattleBufExtension_TryGetReadyBuf__1_BattleUnitModel___0__" data-uid="DeviceOfHermes.BattleBufExtension.TryGetReadyBuf``1(BattleUnitModel,``0@)">
+  TryGetReadyBuf&lt;T&gt;(BattleUnitModel?, out T?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/BattleBufExtension.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Try get ready unitbuf</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetReadyBuf&lt;T&gt;(this BattleUnitModel? model, out T? buf) where T : BattleUnitBuf</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd><p>A target of retrieves</p>
+</dd>
+    <dt><code>buf</code> <span class="xref">T</span></dt>
+    <dd><p>Get resut if found</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Unitbuf is found</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>A target unitBuf</p>
+</dd>
+  </dl>
+
+
+
+
 
 
 

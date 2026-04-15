@@ -100,11 +100,27 @@ if (owner.TryGetBuf&lt;BattleUnitBuf_MyUnitBuf&gt;(out var tryGetBuf))
 
 var getOrInit = owner.GetBufAndInitIfNull&lt;BattleUnitBuf_MyUnitBuf&gt;(() =&gt; new BattleUnitBuf_MyUnitBuf());
 
+var getReadyBuf = owner.GetReadyBuf&lt;BattleUnitBuf_MyUnitBuf&gt;();
+
+if (owner.TryGetReadyBuf&lt;BattleUnitBuf_MyUnitBuf&gt;(out var tryGetReadyBuf))
+{
+}
+
+var getOrInitReady = owner.GetReadyBufAndInitIfNull&lt;BattleUnitBuf_MyUnitBuf&gt;(() =&gt; new BattleUnitBuf_MyUnitBuf());
+
 owner.RemoveBuf&lt;BattleUnitBuf_MyUnitBuf&gt;();
 
 owner.RemoveBufIf(buf =&gt; buf is BattleUnitBuf_MyUnitBuf);
 
 var stack = owner.GetBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;() ?? 0;
+
+var readyStack = owner.GetBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;() ?? 0;
+
+owner.AddBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2, () =&gt; new BattleUnitBuf_MyUnitBuf(owner));
+owner.AddBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
+
+owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2, () =&gt; new BattleUnitBuf_MyUnitBuf(owner));
+owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <pre><code class="lang-cs">var getBuf = owner.GetBuf&lt;T&gt;();
@@ -135,6 +151,34 @@ var stack = owner.GetBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;() ?? 0;
 <li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
 </ul>
 <hr>
+<pre><code class="lang-cs">var getReadyBuf = owner.GetReadyBuf&lt;T&gt;();
+</code></pre>
+<p>次の幕に有効な特定バフを取得します。有効でないならばnullを返します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">if (owner.TryGetReadyBuf&lt;T&gt;(out var tryGetReadyBuf))
+{
+}
+</code></pre>
+<p>次の幕に有効な特定バフを取得します。有効でないならfalseを返します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+<li><code>tryGetReadyBuf</code>: 取得したバフです。falseを返した場合はnullになります。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">var getOrInitReady = owner.GetReadyBufAndInitIfNull&lt;T&gt;(init);
+</code></pre>
+<p>次の幕に有効な特定バフを取得します。取得に失敗した場合は<code>init</code>を実行して有効化したものを返します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+<li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
+</ul>
+<hr>
 <pre><code class="lang-cs">owner.RemoveBuf&lt;T&gt;();
 </code></pre>
 <p>現在有効なバフから特定のバフのみ消去します。</p>
@@ -156,6 +200,56 @@ var stack = owner.GetBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;() ?? 0;
 <p>現在有効なバフから特定のバフのスタック数を取得します。特定のバフが有効でないならnullを返します。</p>
 <ul>
 <li><code>owner</code>: 取得対象です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">var readyStack = owner.GetBufStack&lt;T&gt;() ?? 0;
+</code></pre>
+<p>次の幕に有効なバフから特定のバフのスタック数を取得します。特定のバフが有効でないならnullを返します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">owner.AddBufStack&lt;T&gt;(num, init);
+</code></pre>
+<p>現在有効なバフから特定のバフのスタック数だけ加算します。<br>
+バフが有効でないなら<code>init</code>を実行して有効化します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>num</code>: 追加するスタック数です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+<li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">owner.AddBufStack&lt;T&gt;(num);
+</code></pre>
+<p>現在有効なバフから特定のバフのスタック数だけ加算します。<br>
+バフが有効でないなら新規に有効化してスタック数を加算します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>num</code>: 追加するスタック数です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">owner.AddReadyBufStack&lt;T&gt;(num, init);
+</code></pre>
+<p>次の幕に有効なバフから特定のバフのスタック数だけ加算します。<br>
+バフが有効でないなら<code>init</code>を実行して有効化します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>num</code>: 追加するスタック数です。</li>
+<li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+<li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
+</ul>
+<hr>
+<pre><code class="lang-cs">owner.AddReadyBufStack&lt;T&gt;(num);
+</code></pre>
+<p>次の幕に有効なバフから特定のバフのスタック数だけ加算します。<br>
+バフが有効でないなら新規に有効化してスタック数を加算します。</p>
+<ul>
+<li><code>owner</code>: 取得対象です。</li>
+<li><code>num</code>: 追加するスタック数です。</li>
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 </ul>
 

@@ -615,6 +615,56 @@ references:
   commentId: T:DeviceOfHermes.BattleBufExtension
   fullName: DeviceOfHermes.BattleBufExtension
   nameWithType: BattleBufExtension
+- uid: DeviceOfHermes.BattleBufExtension.AddBufStack*
+  name: AddBufStack
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddBufStack_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.AddBufStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.AddBufStack
+  nameWithType: BattleBufExtension.AddBufStack
+- uid: DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32)
+  name: AddBufStack<T>(BattleUnitModel, int)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddBufStack__1_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32)
+  name.vb: AddBufStack(Of T)(BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.BattleBufExtension.AddBufStack<T>(BattleUnitModel, int)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer)
+  nameWithType: BattleBufExtension.AddBufStack<T>(BattleUnitModel, int)
+  nameWithType.vb: BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer)
+- uid: DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
+  name: AddBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddBufStack__1_BattleUnitModel_System_Int32_System_Func_BattleUnitBuf__
+  commentId: M:DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
+  name.vb: AddBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
+  fullName: DeviceOfHermes.BattleBufExtension.AddBufStack<T>(BattleUnitModel, int, System.Func<BattleUnitBuf>)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer, System.Func(Of BattleUnitBuf))
+  nameWithType: BattleBufExtension.AddBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
+  nameWithType.vb: BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
+- uid: DeviceOfHermes.BattleBufExtension.AddReadyBufStack*
+  name: AddReadyBufStack
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddReadyBufStack_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.AddReadyBufStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.AddReadyBufStack
+  nameWithType: BattleBufExtension.AddReadyBufStack
+- uid: DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32)
+  name: AddReadyBufStack<T>(BattleUnitModel, int)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddReadyBufStack__1_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32)
+  name.vb: AddReadyBufStack(Of T)(BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer)
+  nameWithType: BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int)
+  nameWithType.vb: BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer)
+- uid: DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
+  name: AddReadyBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddReadyBufStack__1_BattleUnitModel_System_Int32_System_Func_BattleUnitBuf__
+  commentId: M:DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
+  name.vb: AddReadyBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
+  fullName: DeviceOfHermes.BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int, System.Func<BattleUnitBuf>)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer, System.Func(Of BattleUnitBuf))
+  nameWithType: BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
+  nameWithType.vb: BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
 - uid: DeviceOfHermes.BattleBufExtension.GetBuf*
   name: GetBuf
   href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBuf_
@@ -663,6 +713,54 @@ references:
   fullName.vb: DeviceOfHermes.BattleBufExtension.GetBuf(Of T)(BattleUnitModel)
   nameWithType: BattleBufExtension.GetBuf<T>(BattleUnitModel?)
   nameWithType.vb: BattleBufExtension.GetBuf(Of T)(BattleUnitModel)
+- uid: DeviceOfHermes.BattleBufExtension.GetReadyBuf*
+  name: GetReadyBuf
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetReadyBuf_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.GetReadyBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.GetReadyBuf
+  nameWithType: BattleBufExtension.GetReadyBuf
+- uid: DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull*
+  name: GetReadyBufAndInitIfNull
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetReadyBufAndInitIfNull_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull
+  nameWithType: BattleBufExtension.GetReadyBufAndInitIfNull
+- uid: DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull``1(BattleUnitModel,System.Func{``0})
+  name: GetReadyBufAndInitIfNull<T>(BattleUnitModel, Func<T>)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetReadyBufAndInitIfNull__1_BattleUnitModel_System_Func___0__
+  commentId: M:DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull``1(BattleUnitModel,System.Func{``0})
+  name.vb: GetReadyBufAndInitIfNull(Of T)(BattleUnitModel, Func(Of T))
+  fullName: DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull<T>(BattleUnitModel, System.Func<T>)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.GetReadyBufAndInitIfNull(Of T)(BattleUnitModel, System.Func(Of T))
+  nameWithType: BattleBufExtension.GetReadyBufAndInitIfNull<T>(BattleUnitModel, Func<T>)
+  nameWithType.vb: BattleBufExtension.GetReadyBufAndInitIfNull(Of T)(BattleUnitModel, Func(Of T))
+- uid: DeviceOfHermes.BattleBufExtension.GetReadyBufStack*
+  name: GetReadyBufStack
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetReadyBufStack_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.GetReadyBufStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.GetReadyBufStack
+  nameWithType: BattleBufExtension.GetReadyBufStack
+- uid: DeviceOfHermes.BattleBufExtension.GetReadyBufStack``1(BattleUnitModel)
+  name: GetReadyBufStack<T>(BattleUnitModel?)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetReadyBufStack__1_BattleUnitModel_
+  commentId: M:DeviceOfHermes.BattleBufExtension.GetReadyBufStack``1(BattleUnitModel)
+  name.vb: GetReadyBufStack(Of T)(BattleUnitModel)
+  fullName: DeviceOfHermes.BattleBufExtension.GetReadyBufStack<T>(BattleUnitModel?)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.GetReadyBufStack(Of T)(BattleUnitModel)
+  nameWithType: BattleBufExtension.GetReadyBufStack<T>(BattleUnitModel?)
+  nameWithType.vb: BattleBufExtension.GetReadyBufStack(Of T)(BattleUnitModel)
+- uid: DeviceOfHermes.BattleBufExtension.GetReadyBuf``1(BattleUnitModel)
+  name: GetReadyBuf<T>(BattleUnitModel?)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetReadyBuf__1_BattleUnitModel_
+  commentId: M:DeviceOfHermes.BattleBufExtension.GetReadyBuf``1(BattleUnitModel)
+  name.vb: GetReadyBuf(Of T)(BattleUnitModel)
+  fullName: DeviceOfHermes.BattleBufExtension.GetReadyBuf<T>(BattleUnitModel?)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.GetReadyBuf(Of T)(BattleUnitModel)
+  nameWithType: BattleBufExtension.GetReadyBuf<T>(BattleUnitModel?)
+  nameWithType.vb: BattleBufExtension.GetReadyBuf(Of T)(BattleUnitModel)
 - uid: DeviceOfHermes.BattleBufExtension.RemoveBuf*
   name: RemoveBuf
   href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_RemoveBuf_
@@ -711,6 +809,22 @@ references:
   fullName.vb: DeviceOfHermes.BattleBufExtension.TryGetBuf(Of T)(BattleUnitModel, T)
   nameWithType: BattleBufExtension.TryGetBuf<T>(BattleUnitModel?, out T?)
   nameWithType.vb: BattleBufExtension.TryGetBuf(Of T)(BattleUnitModel, T)
+- uid: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf*
+  name: TryGetReadyBuf
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_TryGetReadyBuf_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.TryGetReadyBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf
+  nameWithType: BattleBufExtension.TryGetReadyBuf
+- uid: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf``1(BattleUnitModel,``0@)
+  name: TryGetReadyBuf<T>(BattleUnitModel?, out T?)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_TryGetReadyBuf__1_BattleUnitModel___0__
+  commentId: M:DeviceOfHermes.BattleBufExtension.TryGetReadyBuf``1(BattleUnitModel,``0@)
+  name.vb: TryGetReadyBuf(Of T)(BattleUnitModel, T)
+  fullName: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf<T>(BattleUnitModel?, out T?)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
+  nameWithType: BattleBufExtension.TryGetReadyBuf<T>(BattleUnitModel?, out T?)
+  nameWithType.vb: BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
 - uid: DeviceOfHermes.CustomDice
   name: DeviceOfHermes.CustomDice
   href: api/DeviceOfHermes.CustomDice.html

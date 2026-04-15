@@ -64,6 +64,54 @@ public static class BattleBufExtension
         return buf;
     }
 
+    /// <summary>Get ready unitbuf if found</summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    /// <returns>Returns T if found</returns>
+    public static T? GetReadyBuf<T>(this BattleUnitModel? model)
+        where T : BattleUnitBuf
+    {
+        return model?.bufListDetail?.GetReadyReadyBufList().Find(buf => buf is T && !buf.IsDestroyed()) as T;
+    }
+
+    /// <summary>Try get ready unitbuf</summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <param name="buf">Get resut if found</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    /// <returns>Unitbuf is found</returns>
+    public static bool TryGetReadyBuf<T>(this BattleUnitModel? model, [NotNullWhen(true)] out T? buf)
+        where T : BattleUnitBuf
+    {
+        var res = model.GetReadyBuf<T>();
+
+        buf = res as T;
+
+        return res is not null;
+    }
+
+    /// <summary>Get ready unitBuf if found, otherwise initialize by Func</summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <param name="bufMake">New instance constructor</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    /// <returns>Returns T</returns>
+    /// <remarks>
+    /// Try get the <typeparamref name="T"/> is failed, run <paramref name="bufMake"/> and initialize buf.
+    /// </remarks>
+    public static T GetReadyBufAndInitIfNull<T>(this BattleUnitModel model, Func<T> bufMake)
+        where T : BattleUnitBuf
+    {
+        if (!model.TryGetReadyBuf<T>(out var buf))
+        {
+            var newBuf = bufMake();
+
+            model.bufListDetail.AddBuf(newBuf);
+
+            return newBuf;
+        }
+
+        return buf;
+    }
+
     /// <summary>Remove specific buf if found</summary>
     /// <param name="model">A target of retrieves</param>
     /// <typeparam name="T">A target unitBuf</typeparam>
@@ -112,6 +160,15 @@ public static class BattleBufExtension
         return model?.GetBuf<T>()?.stack;
     }
 
+    /// <summary>Get stack number of specified ready unitBuf</summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    public static int? GetReadyBufStack<T>(this BattleUnitModel? model)
+        where T : BattleUnitBuf
+    {
+        return model?.GetReadyBuf<T>()?.stack;
+    }
+
     /// <summary>Add buf stacks if <typeparamref name="T"/> is null then initialize by <paramref name="bufMake"/></summary>
     /// <param name="model">A target of retrieves</param>
     /// <param name="stack">A number of addition stacks</param>
@@ -133,6 +190,31 @@ public static class BattleBufExtension
         where T : BattleUnitBuf, new()
     {
         var buf = model.GetBufAndInitIfNull(() => new T());
+
+        buf.stack += stack;
+    }
+
+    /// <summary>Add buf stacks if <typeparamref name="T"/> is null then initialize by <paramref name="bufMake"/></summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <param name="stack">A number of addition stacks</param>
+    /// <param name="bufMake">New instance constructor</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    public static void AddReadyBufStack<T>(this BattleUnitModel model, int stack, Func<BattleUnitBuf> bufMake)
+        where T : BattleUnitBuf
+    {
+        var buf = model.GetReadyBufAndInitIfNull(bufMake);
+
+        buf.stack += stack;
+    }
+
+    /// <summary>Add buf stacks if <typeparamref name="T"/> is null then initialize <c>new T()</c></summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <param name="stack">A number of addition stacks</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    public static void AddReadyBufStack<T>(this BattleUnitModel model, int stack)
+        where T : BattleUnitBuf, new()
+    {
+        var buf = model.GetReadyBufAndInitIfNull(() => new T());
 
         buf.stack += stack;
     }
