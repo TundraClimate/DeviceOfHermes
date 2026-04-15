@@ -825,6 +825,18 @@ references:
   fullName.vb: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
   nameWithType: BattleBufExtension.TryGetReadyBuf<T>(BattleUnitModel?, out T?)
   nameWithType.vb: BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
+- uid: DeviceOfHermes.BattleTickAction
+  name: BattleTickAction
+  href: api/DeviceOfHermes.BattleTickAction.html
+  commentId: T:DeviceOfHermes.BattleTickAction
+  fullName: DeviceOfHermes.BattleTickAction
+  nameWithType: BattleTickAction
+- uid: DeviceOfHermes.BattleTickAction.OnTick
+  name: OnTick
+  href: api/DeviceOfHermes.BattleTickAction.html#DeviceOfHermes_BattleTickAction_OnTick
+  commentId: E:DeviceOfHermes.BattleTickAction.OnTick
+  fullName: DeviceOfHermes.BattleTickAction.OnTick
+  nameWithType: BattleTickAction.OnTick
 - uid: DeviceOfHermes.CustomDice
   name: DeviceOfHermes.CustomDice
   href: api/DeviceOfHermes.CustomDice.html
@@ -2526,6 +2538,22 @@ references:
   fullName.vb: System.Extension.Collect(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: Extension.Collect<T>(IEnumerable<T>)
   nameWithType.vb: Extension.Collect(Of T)(IEnumerable(Of T))
+- uid: System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel,LOR_DiceSystem.DiceBehaviour,System.Int32)
+  name: CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, int)
+  href: api/System.Extension.html#System_Extension_CreateBattleDiceBehavior_BattlePlayingCardDataInUnitModel_LOR_DiceSystem_DiceBehaviour_System_Int32_
+  commentId: M:System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel,LOR_DiceSystem.DiceBehaviour,System.Int32)
+  name.vb: CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, Integer)
+  fullName: System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, LOR_DiceSystem.DiceBehaviour, int)
+  fullName.vb: System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, LOR_DiceSystem.DiceBehaviour, Integer)
+  nameWithType: Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, int)
+  nameWithType.vb: Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, Integer)
+- uid: System.Extension.CreateBattleDiceBehavior*
+  name: CreateBattleDiceBehavior
+  href: api/System.Extension.html#System_Extension_CreateBattleDiceBehavior_
+  commentId: Overload:System.Extension.CreateBattleDiceBehavior
+  isSpec: "True"
+  fullName: System.Extension.CreateBattleDiceBehavior
+  nameWithType: Extension.CreateBattleDiceBehavior
 - uid: System.Extension.CreatePlayingCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,BattleUnitModel,System.Int32,System.Int32,System.Collections.Generic.List{BattleUnitModel})
   name: CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel?, int, int, List<BattleUnitModel>?)
   href: api/System.Extension.html#System_Extension_CreatePlayingCard_BattleUnitModel_LOR_DiceSystem_DiceCardXmlInfo_BattleUnitModel_System_Int32_System_Int32_System_Collections_Generic_List_BattleUnitModel__

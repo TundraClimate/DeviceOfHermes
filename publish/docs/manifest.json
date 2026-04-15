@@ -180,6 +180,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.BattleTickAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.BattleTickAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.BattleTickAction",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.BattleTickAction.yml\" sourcestartlinenumber=\"1\">Manage tick actions in battle</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.CustomDice.RevengeDice.yml",
       "output": {
         ".html": {
@@ -603,6 +617,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/battle-ammobuf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/battle-tickaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battle-tickaction.html"
         }
       },
       "version": ""
