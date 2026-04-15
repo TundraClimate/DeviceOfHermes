@@ -141,14 +141,15 @@ owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
 それの代わりに<code>BattleAmmoBuf</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="gainbyreload"><code>GainByReload</code></h3>
 <pre><code class="lang-cs">public override int GainByReload =&gt; this.DefaultStack;
 </code></pre>
 <p>リロードで獲得するスタック数を指定するプロパティです。</p>
-<hr>
+<h3 id="diceblockwithnotconsumable"><code>DiceBlockWithNotConsumable</code></h3>
 <pre><code class="lang-cs">public override bool DiceBlockWithNotConsumable =&gt; true;
 </code></pre>
 <p>弾丸を消耗できないとき、対象の攻撃ダイスをブロックするか指定するプロパティです。</p>
-<hr>
+<h3 id="onbeforeconsumeint"><code>OnBeforeConsume(int)</code></h3>
 <pre><code class="lang-cs">public override void OnBeforeConsume(ref require)
 {
 }
@@ -158,7 +159,7 @@ owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
 <ul>
 <li><code>require</code>: 弾丸を消耗しようとする値です。</li>
 </ul>
-<hr>
+<h3 id="onconsumeint"><code>OnConsume(int)</code></h3>
 <pre><code class="lang-cs">public override void OnConsume(int consumed)
 {
 }
@@ -167,14 +168,14 @@ owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
 <ul>
 <li><code>consumed</code>: 消耗された弾丸の値です。</li>
 </ul>
-<hr>
+<h3 id="oncancelled"><code>OnCancelled()</code></h3>
 <pre><code class="lang-cs">public override void OnCancelled()
 {
 }
 </code></pre>
 <p>攻撃がブロックされたときに実行されます。<br>
 <code>DiceBlockWithNotConsumable</code>がtrueでない場合は実行されません。</p>
-<hr>
+<h3 id="isconsumableint"><code>IsConsumable(int)</code></h3>
 <pre><code class="lang-cs">public override bool IsConsumable(num)
 {
     return base.stack != 0 &amp;&amp; base.stack &gt;= num;
@@ -184,7 +185,7 @@ owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
 <ul>
 <li><code>num</code>: 消耗できるか確認する値です。</li>
 </ul>
-<hr>
+<h3 id="onreload"><code>OnReload()</code></h3>
 <pre><code class="lang-cs">public override bool OnReload()
 {
     return true;
@@ -192,14 +193,14 @@ owner.ReloadAmmo&lt;BattleUnitBuf_Ammo&gt;();
 </code></pre>
 <p>弾丸がリロードされたときに実行されます。<br>
 falseを返した場合はリロードがキャンセルされます。</p>
-<hr>
+<h3 id="reload"><code>Reload()</code></h3>
 <pre><code class="lang-cs">buf.Reload();
 </code></pre>
 <p>弾丸をリロードします。</p>
 <ul>
 <li><code>buf</code>: 対象の弾丸バフです。</li>
 </ul>
-<hr>
+<h3 id="consumeint"><code>Consume(int)</code></h3>
 <pre><code class="lang-cs">buf.Consume(num);
 </code></pre>
 <p>弾丸を消耗します。</p>
@@ -207,7 +208,7 @@ falseを返した場合はリロードがキャンセルされます。</p>
 <li><code>buf</code>: 対象の弾丸バフです。</li>
 <li><code>num</code>: 消耗する弾丸の数です。</li>
 </ul>
-<hr>
+<h3 id="consumedstack"><code>ConsumedStack</code></h3>
 <pre><code class="lang-cs">var consumed = buf.ConsumedStack;
 
 </code></pre>
@@ -216,7 +217,7 @@ falseを返した場合はリロードがキャンセルされます。</p>
 <ul>
 <li><code>buf</code>: 対象の弾丸バフです。</li>
 </ul>
-<hr>
+<h3 id="losedstack"><code>LosedStack</code></h3>
 <pre><code class="lang-cs">var losed = buf.LosedStack;
 </code></pre>
 <p>消耗によって失った弾丸の数です。<br>
@@ -224,7 +225,7 @@ falseを返した場合はリロードがキャンセルされます。</p>
 <ul>
 <li><code>buf</code>: 対象の弾丸バフです。</li>
 </ul>
-<hr>
+<h3 id="reloadammobuft"><code>ReloadAmmoBuf&lt;T&gt;</code></h3>
 <pre><code class="lang-cs">class BattleUnitBuf_Reload : ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;
 {
 }
@@ -236,7 +237,7 @@ owner.bufListDetail.AddBuf(new ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;());
 <ul>
 <li><code>T</code>: 対象の弾丸バフの型です。</li>
 </ul>
-<hr>
+<h3 id="consumeammotint"><code>ConsumeAmmo&lt;T&gt;(int)</code></h3>
 <pre><code class="lang-cs">owner.ConsumeAmmo&lt;T&gt;(num);
 </code></pre>
 <p>弾丸を消耗します。<br>
@@ -245,7 +246,7 @@ owner.bufListDetail.AddBuf(new ReloadAmmoBuf&lt;BattleUnitBuf_Ammo&gt;());
 <li><code>T</code>: 対象の弾丸バフの型です。</li>
 <li><code>num</code>: 消耗する弾丸の数です。</li>
 </ul>
-<hr>
+<h3 id="reloadammot"><code>ReloadAmmo&lt;T&gt;()</code></h3>
 <pre><code class="lang-cs">owner.ReloadAmmo&lt;T&gt;();
 </code></pre>
 <p>弾丸をリロードします。<br>

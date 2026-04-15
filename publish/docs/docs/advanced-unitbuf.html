@@ -113,22 +113,23 @@
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
 それの代わりに<code>AdvancedUnitBuf</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="defaultstack"><code>DefaultStack</code></h3>
 <pre><code class="lang-cs">public override int DefaultStack { get =&gt; 0; }
 </code></pre>
 <p>バフが付与されたときのデフォルトのスタック数を指定できます。</p>
-<hr>
+<h3 id="isinstant"><code>IsInstant</code></h3>
 <pre><code class="lang-cs">public override bool IsInstant { get =&gt; false; }
 </code></pre>
 <p>バフが即時適用型か指定します。<br>
 trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</code>が実行されます。</p>
-<hr>
+<h3 id="oninstant"><code>OnInstant()</code></h3>
 <pre><code class="lang-cs">public override void OnInstant()
 {
 }
 </code></pre>
 <p>即時適用型のバフが付与されたときに実行されます。<br>
 <code>IsInstant</code>がfalseであるならば実行されません。</p>
-<hr>
+<h3 id="onotherinstantadvancedunitbuf"><code>OnOtherInstant(AdvancedUnitBuf)</code></h3>
 <pre><code class="lang-cs">public override void OnOtherInstant(AdvancedUnitBuf instant)
 {
 }
@@ -137,7 +138,7 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <ul>
 <li><code>instant</code>: 付与された他のバフです。</li>
 </ul>
-<hr>
+<h3 id="onstackchangeint"><code>OnStackChange(int)</code></h3>
 <pre><code class="lang-cs">public override void OnStackChange(int last)
 {
 }

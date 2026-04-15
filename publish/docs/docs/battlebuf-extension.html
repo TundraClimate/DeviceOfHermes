@@ -123,6 +123,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2, () =&gt; new BattleUnit
 owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="getbuft"><code>GetBuf&lt;T&gt;()</code></h3>
 <pre><code class="lang-cs">var getBuf = owner.GetBuf&lt;T&gt;();
 </code></pre>
 <p>現在有効な特定バフを取得します。有効でないならばnullを返します。</p>
@@ -130,7 +131,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>owner</code>: 取得対象です。</li>
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 </ul>
-<hr>
+<h3 id="trygetbuftout-battleunitbuf"><code>TryGetBuf&lt;T&gt;(out BattleUnitBuf)</code></h3>
 <pre><code class="lang-cs">if (owner.TryGetBuf&lt;T&gt;(out var tryGetBuf))
 {
 }
@@ -141,7 +142,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 <li><code>tryGetBuf</code>: 取得したバフです。falseを返した場合はnullになります。</li>
 </ul>
-<hr>
+<h3 id="getbufandinitifnulltfuncbattleunitbuf"><code>GetBufAndInitIfNull&lt;T&gt;(Func&lt;BattleUnitBuf&gt;)</code></h3>
 <pre><code class="lang-cs">var getOrInit = owner.GetBufAndInitIfNull&lt;T&gt;(init);
 </code></pre>
 <p>現在な有効な特定バフを取得します。取得に失敗した場合は<code>init</code>を実行して有効化したものを返します。</p>
@@ -150,7 +151,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 <li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
 </ul>
-<hr>
+<h3 id="getreadybuft"><code>GetReadyBuf&lt;T&gt;()</code></h3>
 <pre><code class="lang-cs">var getReadyBuf = owner.GetReadyBuf&lt;T&gt;();
 </code></pre>
 <p>次の幕に有効な特定バフを取得します。有効でないならばnullを返します。</p>
@@ -158,7 +159,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>owner</code>: 取得対象です。</li>
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 </ul>
-<hr>
+<h3 id="trygetreadybuftour-battleunitbuf"><code>TryGetReadyBuf&lt;T&gt;(our BattleUnitBuf)</code></h3>
 <pre><code class="lang-cs">if (owner.TryGetReadyBuf&lt;T&gt;(out var tryGetReadyBuf))
 {
 }
@@ -169,7 +170,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 <li><code>tryGetReadyBuf</code>: 取得したバフです。falseを返した場合はnullになります。</li>
 </ul>
-<hr>
+<h3 id="getreadybufandinitifnulltfuncbattleunitbuf"><code>GetReadyBufAndInitIfNull&lt;T&gt;(Func&lt;BattleUnitBuf&gt;)</code></h3>
 <pre><code class="lang-cs">var getOrInitReady = owner.GetReadyBufAndInitIfNull&lt;T&gt;(init);
 </code></pre>
 <p>次の幕に有効な特定バフを取得します。取得に失敗した場合は<code>init</code>を実行して有効化したものを返します。</p>
@@ -178,7 +179,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 <li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
 </ul>
-<hr>
+<h3 id="removebuft"><code>RemoveBuf&lt;T&gt;()</code></h3>
 <pre><code class="lang-cs">owner.RemoveBuf&lt;T&gt;();
 </code></pre>
 <p>現在有効なバフから特定のバフのみ消去します。</p>
@@ -186,7 +187,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>owner</code>: 消去対象です。</li>
 <li><code>T</code>: 消去対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 </ul>
-<hr>
+<h3 id="removebufiffuncbattleunitbuf-bool"><code>RemoveBufIf(Func&lt;BattleUnitBuf, bool&gt;)</code></h3>
 <pre><code class="lang-cs">owner.RemoveBufIf(cond);
 </code></pre>
 <p>現在有効なバフから条件式に合致したバフだけ消去します。</p>
@@ -194,7 +195,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>owner</code>: 消去対象です。</li>
 <li><code>cond(BattleUnitBuf): bool</code>: 条件式です。trueを返した<code>BattleUnitBuf</code>を消去します。</li>
 </ul>
-<hr>
+<h3 id="getbufstackt"><code>GetBufStack&lt;T&gt;()</code></h3>
 <pre><code class="lang-cs">var stack = owner.GetBufStack&lt;T&gt;() ?? 0;
 </code></pre>
 <p>現在有効なバフから特定のバフのスタック数を取得します。特定のバフが有効でないならnullを返します。</p>
@@ -202,15 +203,15 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>owner</code>: 取得対象です。</li>
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 </ul>
-<hr>
-<pre><code class="lang-cs">var readyStack = owner.GetBufStack&lt;T&gt;() ?? 0;
+<h3 id="getreadybufstackt"><code>GetReadyBufStack&lt;T&gt;()</code></h3>
+<pre><code class="lang-cs">var readyStack = owner.GetReadyBufStack&lt;T&gt;() ?? 0;
 </code></pre>
 <p>次の幕に有効なバフから特定のバフのスタック数を取得します。特定のバフが有効でないならnullを返します。</p>
 <ul>
 <li><code>owner</code>: 取得対象です。</li>
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 </ul>
-<hr>
+<h3 id="addbufstacktint-funcbattleunitbuf"><code>AddBufStack&lt;T&gt;(int, Func&lt;BattleUnitBuf&gt;)</code></h3>
 <pre><code class="lang-cs">owner.AddBufStack&lt;T&gt;(num, init);
 </code></pre>
 <p>現在有効なバフから特定のバフのスタック数だけ加算します。<br>
@@ -221,7 +222,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 <li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
 </ul>
-<hr>
+<h3 id="addbufstacktint"><code>AddBufStack&lt;T&gt;(int)</code></h3>
 <pre><code class="lang-cs">owner.AddBufStack&lt;T&gt;(num);
 </code></pre>
 <p>現在有効なバフから特定のバフのスタック数だけ加算します。<br>
@@ -231,7 +232,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>num</code>: 追加するスタック数です。</li>
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 </ul>
-<hr>
+<h3 id="addreadybufstacktint-funcbattleunitbuf-bool"><code>AddReadyBufStack&lt;T&gt;(int, Func&lt;BattleUnitBuf, bool&gt;)</code></h3>
 <pre><code class="lang-cs">owner.AddReadyBufStack&lt;T&gt;(num, init);
 </code></pre>
 <p>次の幕に有効なバフから特定のバフのスタック数だけ加算します。<br>
@@ -242,7 +243,7 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
 <li><code>init: T</code>: <code>T</code>自体のインスタンスを返す関数です。バフを取得できたなら実行されません。</li>
 </ul>
-<hr>
+<h3 id="addreadybufstacktint"><code>AddReadyBufStack&lt;T&gt;(int)</code></h3>
 <pre><code class="lang-cs">owner.AddReadyBufStack&lt;T&gt;(num);
 </code></pre>
 <p>次の幕に有効なバフから特定のバフのスタック数だけ加算します。<br>

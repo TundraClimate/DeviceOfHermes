@@ -112,19 +112,20 @@
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
 それの代わりに<code>AdvancedDiceBase</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="onaddtokeeped"><code>OnAddToKeeped()</code></h3>
 <pre><code class="lang-cs">public override void OnAddToKeeped()
 {
 }
 </code></pre>
 <p>反撃ダイス等でこのダイスが<code>BattleKeepedCardDataInUnitModel</code>に追加されたときに実行されます。</p>
-<hr>
+<h3 id="iskeeps"><code>IsKeeps()</code></h3>
 <pre><code class="lang-cs">public override bool IsKeeps()
 {
     return false;
 }
 </code></pre>
 <p>反撃ダイス等でこのダイスが<code>BattleKeepedCardDataInUnitModel</code>に追加されるかどうかを返します。</p>
-<hr>
+<h3 id="getparryingresultparryingresult"><code>GetParryingResult(ParryingResult)</code></h3>
 <pre><code class="lang-cs">public override ParryingResult GetParryingResult(ParryingResult origin)
 {
     return origin;

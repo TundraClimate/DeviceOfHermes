@@ -96,6 +96,7 @@
 </code></pre>
 <p>この例は、<code>&quot;Image.png&quot;</code>からSpriteを作成して取得するコードです。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="createspritestring-float"><code>CreateSprite(string, float)</code></h3>
 <pre><code class="lang-cs">var sprite = Artwork.CreateSprite(path, pixPerUnit);
 </code></pre>
 <p>Spriteを<code>path</code>にある画像ファイルから作成します。</p>
@@ -103,7 +104,7 @@
 <li><code>path</code>: 画像ファイルの場所を示すパスです。</li>
 <li><code>pixPerUnit</code>: Unityが使用する1ユニットあたりのピクセル量です。</li>
 </ul>
-<hr>
+<h3 id="createspritebyte-float"><code>CreateSprite(byte[], float)</code></h3>
 <pre><code class="lang-cs">var sprite = Artwork.CreateSprite(bytes, pixPerUnit);
 </code></pre>
 <p>Spriteを<code>bytes</code>から作成します。</p>
@@ -111,7 +112,7 @@
 <li><code>bytes</code>: 画像ファイルなどから読み出したデータです。</li>
 <li><code>pixPerUnit</code>: Unityが使用する1ユニットあたりのピクセル量です。</li>
 </ul>
-<hr>
+<h3 id="setbattleunitbufspritestring-sprite-bool"><code>SetBattleUnitBufSprite(string, Sprite, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.SetBattleUnitBufSprite(id, sprite, replace);
 </code></pre>
 <p>バフ効果に使用されるSpriteを追加・変更します。</p>
@@ -120,7 +121,7 @@
 <li><code>sprite</code>: 追加及び変更するために使用するSprite。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
-<hr>
+<h3 id="setbattleunitbufspritestring-bool"><code>SetBattleUnitBufSprite(string, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.SetBattleUnitBufSprite(imgPath, replace);
 </code></pre>
 <p>バフ効果に使用されるSpriteを追加・変更します。</p>
@@ -128,7 +129,7 @@
 <li><code>imgPath</code>: Spriteに使用するファイルの場所。ファイル名がIDになります。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
-<hr>
+<h3 id="setbattleunitbufspritestring-string-bool"><code>SetBattleUnitBufSprite(string, string, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.SetBattleUnitBufSprite(id, imgPath, replace);
 </code></pre>
 <p>バフ効果に使用されるSpriteを追加・変更します。</p>
@@ -137,7 +138,7 @@
 <li><code>imgPath</code>: Spriteに使用するファイルの場所。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
-<hr>
+<h3 id="loadbattleunitbufspritesstring-bool"><code>LoadBattleUnitBufSprites(string, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.LoadBattleUnitBufSprites(rootDirPath, replace);
 </code></pre>
 <p>フォルダ内の全ての画像ファイルをバフ効果のSpriteとして追加します。</p>
@@ -145,7 +146,7 @@
 <li><code>rootDirPath</code>: 対象のフォルダです。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
-<hr>
+<h3 id="setstoryiconspriteuiiconmanagericonset-bool"><code>SetStoryIconSprite(UIIconManager.IconSet, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.SetStoryIconSprite(icon, replace);
 </code></pre>
 <p>ストーリーのアイコンに使われるSpriteを追加・変更します。</p>
@@ -153,7 +154,7 @@
 <li><code>icon</code>: 対象の<code>IconSet</code>です。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
-<hr>
+<h3 id="setstoryiconspritestring-sprite-sprite-bool"><code>SetStoryIconSprite(string, Sprite, Sprite, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.SetStoryIconSprite(type, icon, iconGlow, replace);
 </code></pre>
 <p>ストーリーのアイコンに使われるSpriteを追加・変更します。</p>
@@ -163,7 +164,7 @@
 <li><code>iconGlow</code>: 上部に表示されるSpriteです。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
-<hr>
+<h3 id="setstoryiconspritestring-string-string-bool"><code>SetStoryIconSprite(string, string, string, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.SetStoryIconSprite(icon, iconGlow, type, replace);
 </code></pre>
 <p>ストーリーのアイコンに使われるSpriteを追加・変更します。</p>
@@ -173,7 +174,7 @@
 <li><code>type</code>: アイコン固有のIDを上書きするIDです。</li>
 <li><code>replace</code>: 同じIDのSpriteが存在する場合、無視して置き換えるか。デフォルトはfalse。</li>
 </ul>
-<hr>
+<h3 id="loadstoryiconspritesstring-string-bool"><code>LoadStoryIconSprites(string, string, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.LoadStoryIconSprites(rootDirPath, glowSuffix, replace);
 </code></pre>
 <p>フォルダ内の全ての画像ファイルをストーリーアイコンのSpriteとして追加します。</p>

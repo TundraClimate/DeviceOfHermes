@@ -106,16 +106,17 @@
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
 それの代わりに<code>AdvancedCardBase</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="isclashable"><code>IsClashable</code></h3>
 <pre><code class="lang-cs">public override bool IsClashable =&gt; true;
 </code></pre>
 <p>マッチ可能かを指定するプロパティです。<br>
 falseを指定するとマッチ不可になります。</p>
-<hr>
+<h3 id="isignorespeedbymatch"><code>IsIgnoreSpeedByMatch</code></h3>
 <pre><code class="lang-cs">public override bool IsIgnoreSpeedByMatch =&gt; false;
 </code></pre>
 <p>速度を無視してマッチできるかを指定するプロパティです。<br>
 trueを返すとマッチに速度を参照しなくなります。</p>
-<hr>
+<h3 id="candiscardbyabilitybattledicecardmodel"><code>CanDiscardByAbility(BattleDiceCardModel)</code></h3>
 <pre><code class="lang-cs">public override bool CanDiscardByAbility(BattleDiceCardModel self)
 {
 }

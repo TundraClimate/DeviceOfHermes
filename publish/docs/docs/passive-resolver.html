@@ -99,20 +99,21 @@ PassiveResolver.AddRestrict(PassiveResolver.Conflict(new LorId(250322), new LorI
 <p><code>LockAlways</code>は指定したIDのパッシブを帰属不可にします。<br>
 <code>Conflict</code>は指定したID同士で重複できないようにします。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="addrestrictfunclistpassivexmlinfo-passivexmlinfo-bool"><code>AddRestrict(Func&lt;List&lt;PassiveXmlInfo&gt;, PassiveXmlInfo, bool&gt;)</code></h3>
 <pre><code class="lang-cs">PassiveResolver.AddRestrict(restrict);
 </code></pre>
 <p>帰属制約を追加します。</p>
 <ul>
 <li><code>restrict(List&lt;PassiveXmlInfo&gt;, PassiveXmlInfo): bool</code>: 保有しているパッシブから制限を与えるか決める関数です。trueを返すと帰属を制限できます。</li>
 </ul>
-<hr>
+<h3 id="lockalwayslorid"><code>LockAlways(LorId)</code></h3>
 <pre><code class="lang-cs">PassiveResolver.LockAlways(id);
 </code></pre>
 <p>特定のIDのパッシブは常に帰属できないという制約です。</p>
 <ul>
 <li><code>id</code>: 制約を与えるパッシブのIDです。</li>
 </ul>
-<hr>
+<h3 id="lockiflorid-funclistpassivexmlinfo-bool"><code>LockIf(LorId, Func&lt;List&lt;PassiveXmlInfo&gt;, bool&gt;)</code></h3>
 <pre><code class="lang-cs">PassiveResolver.LockIf(id, cond);
 </code></pre>
 <p>特定のIDのパッシブは一定条件下では帰属できないという制約です。</p>
@@ -120,7 +121,7 @@ PassiveResolver.AddRestrict(PassiveResolver.Conflict(new LorId(250322), new LorI
 <li><code>id</code>: 制約を与えるパッシブのIDです。</li>
 <li><code>cond(List&lt;PassiveXmlInfo&gt;): bool</code>: 保有しているパッシブから制限を与えるか決める関数です。trueを返すと帰属を制限できます。</li>
 </ul>
-<hr>
+<h3 id="lockifexistslorid-params-lorid"><code>LockIfExists(LorId, params LorId[])</code></h3>
 <pre><code class="lang-cs">PassiveResolver.LockIfExists(id, passives...);
 </code></pre>
 <p>特定のIDのパッシブはまた別の特定のIDのパッシブが帰属されているなら帰属できないという制約です。</p>
@@ -128,7 +129,7 @@ PassiveResolver.AddRestrict(PassiveResolver.Conflict(new LorId(250322), new LorI
 <li><code>id</code>: 制約を与えるパッシブのIDです。</li>
 <li><code>params passives</code>: 帰属制限をするためのパッシブのIDです。</li>
 </ul>
-<hr>
+<h3 id="conflictparams-lorid"><code>Conflict(params LorId[])</code></h3>
 <pre><code class="lang-cs">PassiveResolver.Conflict(cand...);
 </code></pre>
 <p>幾つかのIDのパッシブは重複できないという制約です。</p>

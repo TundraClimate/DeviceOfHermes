@@ -100,6 +100,7 @@ VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) =&gt; owner.
 <p>強制的に上限値を変える場合は<code>SetMaxForcely</code>を使用します。<br>
 条件付きの上限値を変更する場合は<code>AddMaxIf</code>を使用します。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="setmaxforcelytint"><code>SetMaxForcely&lt;T&gt;(int)</code></h3>
 <pre><code class="lang-cs">VannilaUnitBuf.SetMaxForcely&lt;T&gt;(max);
 </code></pre>
 <p>バフの上限値を強制的に変更します。</p>
@@ -107,7 +108,7 @@ VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) =&gt; owner.
 <li><code>T</code>: 変更する対象のバフです。<code>bufType</code>がNoneで無いことが必要です。</li>
 <li><code>max</code>: 強制的に変更する最大値です。</li>
 </ul>
-<hr>
+<h3 id="setmaxiftint-funcbattleunitbuf-battleunitmodel-bool"><code>SetMaxIf&lt;T&gt;(int, Func&lt;BattleUnitBuf, BattleUnitModel, bool&gt;)</code></h3>
 <pre><code class="lang-cs">VannilaUnitBuf.SetMaxIf&lt;T&gt;(max, cond);
 </code></pre>
 <p>バフの上限値の設定を初期化します。</p>
@@ -116,7 +117,7 @@ VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) =&gt; owner.
 <li><code>max</code>: 強制的に変更する最大値です。</li>
 <li><code>cond(BattleUnitBuf, BattleUnitModel?): bool</code>: 対象のバフとバフの保有者から、上限値が適用されるかの条件式です。trueを返した場合のみ上限が適用されます。</li>
 </ul>
-<hr>
+<h3 id="addmaxiftint-funcbattleunitbuf-battleunitmodel-bool"><code>AddMaxIf&lt;T&gt;(int, Func&lt;BattleUnitBuf, BattleUnitModel, bool&gt;)</code></h3>
 <pre><code class="lang-cs">VannilaUnitBuf.AddMaxIf&lt;T&gt;(max, cond);
 </code></pre>
 <p>バフの上限値の設定を追加します。</p>

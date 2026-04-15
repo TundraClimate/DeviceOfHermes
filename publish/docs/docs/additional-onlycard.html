@@ -96,9 +96,11 @@
 </code></pre>
 <p>この例はオリヴィエのコアページ(ID: 260004)にクレッシェンド(ID: 705011)を追加するコードです。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="constructorlorid"><code>Constructor(LorId)</code></h3>
 <pre><code class="lang-cs">var onlyCard = new AdditonalOnlyCard(new LorId(&quot;あなたのMODID&quot;, 1));
 </code></pre>
 <p>あなたのMODのID:1のコアページを対象に準備します。まだ追加はされません。</p>
+<h3 id="addcardsparams-lorid"><code>AddCards(params LorId[])</code></h3>
 <pre><code class="lang-cs">onlyCard.AddCards(new LorId(&quot;あなたのMODID&quot;, 1));
 </code></pre>
 <p>あなたのMODのID:1のバトルページを対象に専用ページとして追加します。</p>

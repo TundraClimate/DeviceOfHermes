@@ -93,6 +93,7 @@
 <p>テキストデータをゲームに追加します。<br>
 また、翻訳が適用されるタイミングに実行される処理を追加出来ます。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="onloadlocalize"><code>OnLoadLocalize</code></h3>
 <pre><code class="lang-cs">TextModel.OnLoadLocalize += lang =&gt; 
 {
 }
@@ -101,7 +102,7 @@
 <ul>
 <li><code>lang</code>: 対象の言語です。<code>en | jp | kr | cn | trcn</code>の5種類があります。</li>
 </ul>
-<hr>
+<h3 id="setbattleeffecttextlor_xmlbattleeffecttext-bool"><code>SetBattleEffectText(LOR_XML.BattleEffectText, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBattleEffectText(text, replace);
 </code></pre>
 <p>ページ情報横に表示される情報テキストを追加・変更します。</p>
@@ -109,7 +110,7 @@
 <li><code>text</code>: 追加する<code>BattleEffectText</code>です。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setbattleeffecttextslistlor_xmlbattleeffecttext-bool"><code>SetBattleEffectTexts(List&lt;LOR_XML.BattleEffectText&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBattleEffectTexts(texts, replace);
 </code></pre>
 <p>ページ情報横に表示される情報テキストを追加・変更します。</p>
@@ -117,7 +118,7 @@
 <li><code>texts</code>: 追加する<code>BattleEffectText</code>のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setbattlecardabilitydesclor_xmlbattlecardabilitydesc-bool"><code>SetBattleCardAbilityDesc(LOR_XML.BattleCardAbilityDesc, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBattleCardAbilityDesc(desc, replace);
 </code></pre>
 <p>ページ効果のテキストを追加・変更します。</p>
@@ -125,7 +126,7 @@
 <li><code>desc</code>: 追加する<code>BattleCardAbilityDesc</code>です。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setbattlecardabilitydescslistlor_xmlbattlecardabilitydesc-bool"><code>SetBattleCardAbilityDescs(List&lt;LOR_XML.BattleCardAbilityDesc&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBattleCardAbilityDescs(descs, replace);
 </code></pre>
 <p>ページ効果のテキストを追加・変更します。</p>
@@ -133,7 +134,7 @@
 <li><code>descs</code>: 追加する<code>BattleCardAbilityDesc</code>のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setbattlecarddesclor_xmlbattlecarddesc-string-bool"><code>SetBattleCardDesc(LOR_XML.BattleCardDesc, string, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBattleCardDesc(desc, pid, replace);
 </code></pre>
 <p>ページタイトル含めページのテキストを追加・変更します。</p>
@@ -142,7 +143,7 @@
 <li><code>pid</code>: 属するパッケージのIDです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setbattlecarddescslistlor_xmlbattlecarddesc-bool"><code>SetBattleCardDescs(List&lt;LOR_XML.BattleCardDesc&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBattleCardDescs(descs, replace);
 </code></pre>
 <p>ページタイトル含めページのテキストを追加・変更します。</p>
@@ -150,7 +151,7 @@
 <li><code>descs</code>: 追加する<code>BattleCardDesc</code>とpidのタプルリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setcharacterdialoglor_xmlbattledialogcharacter-string-bool"><code>SetCharacterDialog(LOR_XML.BattleDialogCharacter, string, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetCharacterDialog(character, groupName, replace);
 </code></pre>
 <p>特定グループのキャラクターのセリフを追加・変更します。</p>
@@ -159,7 +160,7 @@
 <li><code>groupName</code>: キャラクターが所属するグループです。MOD環境は<code>Workshop</code>です。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setcharacterdialogslistlor_xmlbattledialogcharacter-string-bool"><code>SetCharacterDialogs(List&lt;LOR_XML.BattleDialogCharacter&gt;, string, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetCharacterDialogs(characters, groupName, replace);
 </code></pre>
 <p>特定グループのキャラクターのセリフを追加・変更します。</p>
@@ -168,7 +169,7 @@
 <li><code>groupName</code>: キャラクターが所属するグループです。MOD環境は<code>Workshop</code>です。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setbookdesclor_xmlbookdesc-string-bool"><code>SetBookDesc(LOR_XML.BookDesc, string, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBookDesc(desc, pid, replace);
 </code></pre>
 <p>特定の本のストーリーを追加・変更します</p>
@@ -177,7 +178,7 @@
 <li><code>pid</code>: その本が所属するパッケージのIDです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setbookdescslitlor_xmlbookdesc-bool"><code>SetBookDescs(Lit&lt;LOR_XML.BookDesc&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetBookDescs(descs, replace);
 </code></pre>
 <p>特定の本のストーリーを追加・変更します</p>
@@ -185,7 +186,7 @@
 <li><code>desc</code>: 追加する<code>BookDesc</code>のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setcharacternamelorid-string-bool"><code>SetCharacterName(LorId, string, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetCharacterName(id, name, replace);
 </code></pre>
 <p>特定のキャラクター名を追加・変更します。<br>
@@ -195,7 +196,7 @@ MOD由来のキャラクターは変更のみ可能です。</p>
 <li><code>name</code>: 新しいキャラクターの名称です。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setcharacternamelistlorid-string-bool"><code>SetCharacterName(List&lt;(LorId, string)&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetCharacterNames(names, replace);
 </code></pre>
 <p>特定のキャラクター名を追加・変更します。<br>
@@ -204,7 +205,7 @@ MOD由来のキャラクターは変更のみ可能です。</p>
 <li><code>names</code>: キャラクターのIDと名称のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setstagenamelorid-string-bool"><code>SetStageName(LorId, string, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetStageName(id, name, replace);
 </code></pre>
 <p>特定のステージ名を追加・変更します。<br>
@@ -214,7 +215,7 @@ MOD由来のステージは変更のみ可能です。</p>
 <li><code>name</code>: 新しいステージの名称です。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setstagenameslistlorid-string-bool"><code>SetStageNames(List&lt;(LorId, string)&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetStageNames(names, replace);
 </code></pre>
 <p>特定のステージ名を追加・変更します。<br>
@@ -223,7 +224,7 @@ MOD由来のステージは変更のみ可能です。</p>
 <li><code>names</code>: ステージのIDと名称のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setpassivedesclor_xmlpassivedesc-bool"><code>SetPassiveDesc(LOR_XML.PassiveDesc, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetPassiveDesc(desc, replace);
 </code></pre>
 <p>特定のパッシブのテキストを追加・変更します。</p>
@@ -231,7 +232,7 @@ MOD由来のステージは変更のみ可能です。</p>
 <li><code>desc</code>: 追加・変更する<code>PassiveDesc</code>です。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setpassivedescslistpassivedesc-bool"><code>SetPassiveDescs(List&lt;PassiveDesc&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetPassiveDescs(descs, replace);
 </code></pre>
 <p>特定のパッシブのテキストを追加・変更します。</p>
@@ -239,7 +240,7 @@ MOD由来のステージは変更のみ可能です。</p>
 <li><code>descs</code>: 追加・変更する<code>PassiveDesc</code>のリストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="setdropbooknamelorid-string"><code>SetDropBookName(LorId, string)</code></h3>
 <pre><code class="lang-cs">TextModel.SetDropBookName(id, name);
 </code></pre>
 <p>特定の本の名前を変更します。</p>
@@ -247,14 +248,14 @@ MOD由来のステージは変更のみ可能です。</p>
 <li><code>id</code>: 本固有のIDです。</li>
 <li><code>name</code>: 変更する名称です。</li>
 </ul>
-<hr>
+<h3 id="setdropbooknameslistlorid-string"><code>SetDropBookNames(List&lt;(LorId, string)&gt;)</code></h3>
 <pre><code class="lang-cs">TextModel.SetDropBookNames(names);
 </code></pre>
 <p>特定の本の名前を変更します。</p>
 <ul>
 <li><code>names</code>: 変更する名称とIDのリストです。</li>
 </ul>
-<hr>
+<h3 id="settextdatastring-string-bool"><code>SetTextData(string, string, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetTextData(id, data, replace);
 </code></pre>
 <p>テキストデータを追加・変更します。</p>
@@ -263,7 +264,7 @@ MOD由来のステージは変更のみ可能です。</p>
 <li><code>data</code>: テキストです。</li>
 <li><code>replace</code>: 重複する要素が存在する場合に置き換えるかどうかです。</li>
 </ul>
-<hr>
+<h3 id="settextdataliststring-string-bool"><code>SetTextData(List&lt;(string, string)&gt;, bool)</code></h3>
 <pre><code class="lang-cs">TextModel.SetTextData(data, replace);
 </code></pre>
 <p>テキストデータを追加・変更します。</p>
