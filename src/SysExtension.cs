@@ -264,4 +264,16 @@ public static class Extension
 
         return playcard;
     }
+
+    extension(Faction faction)
+    {
+        /// <summary>Get alive units on faction</summary>
+        public List<BattleUnitModel> GetAlives()
+        {
+            return BattleObjectManager.instance.GetAliveList(faction);
+        }
+
+        /// <summary>Get alive units on faction</summary>
+        public List<BattleUnitModel> AliveUnits => faction.GetAlives();
+    }
 }
