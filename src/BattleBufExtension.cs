@@ -15,7 +15,7 @@ public static class BattleBufExtension
     public static T? GetBuf<T>(this BattleUnitModel? model)
         where T : BattleUnitBuf
     {
-        return model?.bufListDetail?.GetActivatedBufList().Find(buf => buf is T) as T;
+        return model?.bufListDetail?.GetActivatedBufList().Find(buf => buf is T && !buf.IsDestroyed()) as T;
     }
 
     /// <summary>Try get unitbuf</summary>
@@ -110,5 +110,30 @@ public static class BattleBufExtension
         where T : BattleUnitBuf
     {
         return model?.GetBuf<T>()?.stack;
+    }
+
+    /// <summary>Add buf stacks if <typeparamref name="T"/> is null then initialize by <paramref name="bufMake"/></summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <param name="stack">A number of addition stacks</param>
+    /// <param name="bufMake">New instance constructor</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    public static void AddBufStack<T>(this BattleUnitModel model, int stack, Func<BattleUnitBuf> bufMake)
+        where T : BattleUnitBuf
+    {
+        var buf = model.GetBufAndInitIfNull(bufMake);
+
+        buf.stack += stack;
+    }
+
+    /// <summary>Add buf stacks if <typeparamref name="T"/> is null then initialize <c>new T()</c></summary>
+    /// <param name="model">A target of retrieves</param>
+    /// <param name="stack">A number of addition stacks</param>
+    /// <typeparam name="T">A target unitBuf</typeparam>
+    public static void AddBufStack<T>(this BattleUnitModel model, int stack)
+        where T : BattleUnitBuf, new()
+    {
+        var buf = model.GetBufAndInitIfNull(() => new T());
+
+        buf.stack += stack;
     }
 }
