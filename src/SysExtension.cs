@@ -205,6 +205,31 @@ public static class Extension
         return Path.GetDirectoryName(ty.Assembly.Location);
     }
 
+    /// <summary>Creates new <see cref="BattleDiceBehavior"/></summary>
+    public static BattleDiceBehavior CreateBattleDiceBehavior(
+        this BattlePlayingCardDataInUnitModel playcard,
+        DiceBehaviour behaviour,
+        int idx = -1
+    )
+    {
+        var beh = new BattleDiceBehavior()
+        {
+            card = playcard,
+            behaviourInCard = behaviour,
+            abilityList = string.IsNullOrEmpty(behaviour.Script) ?
+                new() : [AssemblyManager.Instance.CreateInstance_DiceCardAbility(behaviour.Script)],
+        };
+
+        foreach (var abi in beh.abilityList)
+        {
+            abi.behavior = beh;
+        }
+
+        beh.SetIndex(0 > idx ? playcard?.cardBehaviorQueue?.Last()?.Index ?? 0 : idx);
+
+        return beh;
+    }
+
     /// <summary>Creates new <see cref="BattlePlayingCardDataInUnitModel"/></summary>
     public static BattlePlayingCardDataInUnitModel CreatePlayingCard(
         this BattleUnitModel owner,
@@ -244,22 +269,7 @@ public static class Extension
 
         foreach (var (i, beh) in cardInfo.DiceBehaviourList.Enumerate())
         {
-            var dbeh = new BattleDiceBehavior()
-            {
-                card = playcard,
-                behaviourInCard = beh.Copy(),
-                abilityList = string.IsNullOrEmpty(beh.Script) ?
-                    new() : [AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script)],
-            };
-
-            foreach (var abi in dbeh.abilityList)
-            {
-                abi.behavior = dbeh;
-            }
-
-            dbeh.SetIndex(i);
-
-            playcard.cardBehaviorQueue.Enqueue(dbeh);
+            playcard.cardBehaviorQueue.Enqueue(playcard.CreateBattleDiceBehavior(beh, i));
         }
 
         return playcard;
