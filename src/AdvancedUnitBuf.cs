@@ -21,8 +21,24 @@ public class AdvancedUnitBuf : BattleUnitBuf
         harmony.CreateClassProcessor(typeof(UnitBufPatch.OriginalAdvInit)).Patch();
         harmony.CreateClassProcessor(typeof(UnitBufPatch.PatchAddBufInitializer)).Patch();
         harmony.CreateClassProcessor(typeof(UnitBufPatch.PatchAddBufWdInitializer)).Patch();
-        harmony.CreateClassProcessor(typeof(UnitBufPatch.PatchObserver)).Patch();
-        harmony.CreateClassProcessor(typeof(UnitBufPatch.PatchInstant)).Patch();
+
+        BattleTickAction.OnTick += () =>
+        {
+            var alives = BattleObjectManager.instance.GetAliveList();
+
+            foreach (var unit in alives)
+            {
+                foreach (var buf in unit.bufListDetail?.GetActivatedBufList() ?? new())
+                {
+                    if (buf is AdvancedUnitBuf advBuf && advBuf.stack != advBuf.lastStack)
+                    {
+                        advBuf.OnStackChange(advBuf.lastStack);
+
+                        advBuf.lastStack = advBuf.stack;
+                    }
+                }
+            }
+        };
     }
 
     /// <summary>Initialize UnitBuf</summary>
@@ -81,6 +97,35 @@ internal class UnitBufPatch
     [HarmonyPatch(typeof(BattleUnitBufListDetail), "AddBuf")]
     internal static class PatchAddBufInitializer
     {
+        static bool Prefix(BattleUnitBufListDetail __instance, BattleUnitBuf buf, BattleUnitModel ____self)
+        {
+            if (!__instance.CanAddBuf(buf))
+            {
+                return false;
+            }
+
+            if (buf is AdvancedUnitBuf adv && adv.IsInstant)
+            {
+                adv.Init(____self);
+                adv.OnInstant();
+
+                foreach (var unit in BattleObjectManager.instance.GetAliveList())
+                {
+                    foreach (var otherBuf in unit?.bufListDetail?.GetActivatedBufList() ?? new())
+                    {
+                        if (otherBuf is AdvancedUnitBuf otherAdv)
+                        {
+                            otherAdv.OnOtherInstant(adv);
+                        }
+                    }
+                }
+
+                return false;
+            }
+
+            return true;
+        }
+
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             var inject = AccessTools.Method(typeof(PatchAddBufInitializer), "Init");
@@ -139,61 +184,6 @@ internal class UnitBufPatch
             {
                 OriginalAdvInit.Init(advInstance, owner);
             }
-        }
-    }
-
-    [HarmonyPatch(typeof(StageController), "OnFixedUpdate")]
-    internal static class PatchObserver
-    {
-        static void Postfix()
-        {
-            var alives = BattleObjectManager.instance.GetAliveList();
-
-            foreach (var unit in alives)
-            {
-                foreach (var buf in unit.bufListDetail?.GetActivatedBufList() ?? new())
-                {
-                    if (buf is AdvancedUnitBuf advBuf && advBuf.stack != advBuf.lastStack)
-                    {
-                        advBuf.OnStackChange(advBuf.lastStack);
-
-                        advBuf.lastStack = advBuf.stack;
-                    }
-                }
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(BattleUnitBufListDetail), "AddBuf")]
-    internal static class PatchInstant
-    {
-        static bool Prefix(BattleUnitBufListDetail __instance, BattleUnitBuf buf, BattleUnitModel ____self)
-        {
-            if (!__instance.CanAddBuf(buf))
-            {
-                return false;
-            }
-
-            if (buf is AdvancedUnitBuf adv && adv.IsInstant)
-            {
-                adv.Init(____self);
-                adv.OnInstant();
-
-                foreach (var unit in BattleObjectManager.instance.GetAliveList())
-                {
-                    foreach (var otherBuf in unit?.bufListDetail?.GetActivatedBufList() ?? new())
-                    {
-                        if (otherBuf is AdvancedUnitBuf otherAdv)
-                        {
-                            otherAdv.OnOtherInstant(adv);
-                        }
-                    }
-                }
-
-                return false;
-            }
-
-            return true;
         }
     }
 }
