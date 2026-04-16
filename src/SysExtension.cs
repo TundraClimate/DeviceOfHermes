@@ -1,4 +1,5 @@
 using LOR_DiceSystem;
+using HarmonyLib;
 
 namespace System;
 
@@ -285,5 +286,14 @@ public static class Extension
 
         /// <summary>Get alive units on faction</summary>
         public List<BattleUnitModel> AliveUnits => faction.GetAlives();
+    }
+
+    extension(BattleUnitBuf buf)
+    {
+        /// <summary>Get keywordId</summary>
+        public string KeywordId => (string)typeof(BattleUnitBuf).Property("keywordId").GetValue(buf);
+
+        /// <summary>Get keywordIconId</summary>
+        public string KeywordIconId => (string)typeof(BattleUnitBuf).Property("keywordIconId").GetValue(buf);
     }
 }
