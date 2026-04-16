@@ -1,3 +1,4 @@
+using System.Text;
 using LOR_DiceSystem;
 using HarmonyLib;
 
@@ -295,5 +296,22 @@ public static class Extension
 
         /// <summary>Get keywordIconId</summary>
         public string KeywordIconId => (string)typeof(BattleUnitBuf).Property("keywordIconId").GetValue(buf);
+
+        /// <summary>Creates pretty string</summary>
+        public string ToPrettyString()
+        {
+            var builder = new StringBuilder();
+
+            builder.AppendLine($"{buf.GetType().Name}");
+            builder.AppendLine($"KeywordId: {buf.KeywordId}");
+            builder.AppendLine($"BufType: {buf.bufType}");
+            builder.AppendLine($"PositiveType: {buf.positiveType}");
+            builder.AppendLine($"Displayed Name: {buf.bufActivatedNameWithStack}");
+            builder.AppendLine($"Displayed Desc: {buf.bufActivatedText}");
+            builder.AppendLine($"Hide: {buf.Hide}");
+            builder.AppendLine($"Destroyed: {buf.IsDestroyed()}");
+
+            return builder.ToString();
+        }
     }
 }
