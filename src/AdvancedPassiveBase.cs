@@ -1,4 +1,5 @@
 using System.Reflection.Emit;
+using System.Runtime.CompilerServices;
 using HarmonyLib;
 
 namespace DeviceOfHermes.AdvancedBase;
@@ -26,6 +27,8 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         harmony.CreateClassProcessor(typeof(PassivePatch.PatchOnDynamicParrying)).Patch();
         harmony.CreateClassProcessor(typeof(PassivePatch.PatchCanDiscard)).Patch();
         harmony.CreateClassProcessor(typeof(PassivePatch.PatchOnChangeTarget)).Patch();
+
+        BattleTickAction.OnTick += OnTick;
     }
 
     /// <summary>Unit on round start before <see cref="PassiveAbilityBase.OnRoundStart"/></summary>
@@ -35,6 +38,16 @@ public class AdvancedPassiveBase : PassiveAbilityBase
 
     /// <summary>Unit on round start after <see cref="PassiveAbilityBase.OnRoundStartAfter"/></summary>
     public virtual void OnRoundStartLast()
+    {
+    }
+
+    /// <summary>Unit on activate bufs</summary>
+    public virtual void OnActivatedBuf(BattleUnitBuf activate)
+    {
+    }
+
+    /// <summary>Unit on change buf stack</summary>
+    public virtual void OnChangeBufStack(BattleUnitBuf changed, int last)
     {
     }
 
@@ -77,6 +90,69 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     public virtual bool CanDiscardByAbility(BattleDiceCardModel card)
     {
         return true;
+    }
+
+    static void OnTick()
+    {
+        var alives = BattleObjectManager.instance.GetAliveList();
+
+        foreach (var unit in alives)
+        {
+            var passives = unit.passiveDetail.PassiveList.FilterMap(p => p is AdvancedPassiveBase ap ? ap : null).ToList();
+
+            if (passives.Count == 0)
+            {
+                continue;
+            }
+
+            List<BattleUnitBuf> activatedBufs = new();
+
+            var lastBufs = _lastBufList.GetValue(unit, _ => new());
+            var actives = unit.bufListDetail.GetActivatedBufList();
+
+            foreach (var buf in actives)
+            {
+                if (!lastBufs.Contains(buf))
+                {
+                    activatedBufs.Add(buf);
+                }
+
+                var lastStack = _lastBufStack.GetValue(buf, _ => new());
+
+                if (buf.stack != lastStack.value)
+                {
+                    foreach (var p in passives)
+                    {
+                        p?.OnChangeBufStack(buf, lastStack.value);
+                    }
+
+                    lastStack.value = buf.stack;
+                }
+            }
+
+            foreach (var p in passives)
+            {
+                foreach (var buf in activatedBufs)
+                {
+                    p?.OnActivatedBuf(buf);
+                }
+            }
+
+            if (activatedBufs.Count != 0)
+            {
+                lastBufs.Clear();
+                lastBufs.AddRange(actives);
+            }
+        }
+    }
+
+    private static ConditionalWeakTable<BattleUnitModel, List<BattleUnitBuf>> _lastBufList = new();
+
+    private static ConditionalWeakTable<BattleUnitBuf, BufStack> _lastBufStack = new();
+
+    private class BufStack
+    {
+        public int value = -1;
     }
 }
 

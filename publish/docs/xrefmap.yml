@@ -232,6 +232,35 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch
   nameWithType: AdvancedPassiveBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf(BattleUnitBuf)
+  name: OnActivatedBuf(BattleUnitBuf)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnActivatedBuf_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf(BattleUnitBuf)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf(BattleUnitBuf)
+  nameWithType: AdvancedPassiveBase.OnActivatedBuf(BattleUnitBuf)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf*
+  name: OnActivatedBuf
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnActivatedBuf_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf
+  nameWithType: AdvancedPassiveBase.OnActivatedBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf,System.Int32)
+  name: OnChangeBufStack(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChangeBufStack_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf,System.Int32)
+  name.vb: OnChangeBufStack(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf, Integer)
+  nameWithType: AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf, int)
+  nameWithType.vb: AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack*
+  name: OnChangeBufStack
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChangeBufStack_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack
+  nameWithType: AdvancedPassiveBase.OnChangeBufStack
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
   name: OnRoundStartFirst()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartFirst
