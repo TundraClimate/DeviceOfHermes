@@ -22,23 +22,7 @@ public class AdvancedUnitBuf : BattleUnitBuf
         harmony.CreateClassProcessor(typeof(UnitBufPatch.PatchAddBufInitializer)).Patch();
         harmony.CreateClassProcessor(typeof(UnitBufPatch.PatchAddBufWdInitializer)).Patch();
 
-        BattleTickAction.OnTick += () =>
-        {
-            var alives = BattleObjectManager.instance.GetAliveList();
-
-            foreach (var unit in alives)
-            {
-                foreach (var buf in unit.bufListDetail?.GetActivatedBufList() ?? new())
-                {
-                    if (buf is AdvancedUnitBuf advBuf && advBuf.stack != advBuf.lastStack)
-                    {
-                        advBuf.OnStackChange(advBuf.lastStack);
-
-                        advBuf.lastStack = advBuf.stack;
-                    }
-                }
-            }
-        };
+        BattleTickAction.OnTick += OnTick;
     }
 
     /// <summary>Initialize UnitBuf</summary>
@@ -79,6 +63,24 @@ public class AdvancedUnitBuf : BattleUnitBuf
     /// <summary>Unitbuf stack on changed</summary>
     public virtual void OnStackChange(int last)
     {
+    }
+
+    internal static void OnTick()
+    {
+        var alives = BattleObjectManager.instance.GetAliveList();
+
+        foreach (var unit in alives)
+        {
+            foreach (var buf in unit.bufListDetail?.GetActivatedBufList() ?? new())
+            {
+                if (buf is AdvancedUnitBuf advBuf && advBuf.stack != advBuf.lastStack)
+                {
+                    advBuf.OnStackChange(advBuf.lastStack);
+
+                    advBuf.lastStack = advBuf.stack;
+                }
+            }
+        }
     }
 
     internal int lastStack;
