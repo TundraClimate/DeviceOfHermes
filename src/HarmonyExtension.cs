@@ -35,6 +35,12 @@ public static class HarmonyExtension
             return AccessTools.Property(ty, name);
         }
 
+        /// <summary>Access field</summary>
+        public FieldInfo Field(string name)
+        {
+            return AccessTools.Field(ty, name);
+        }
+
         /// <summary>Returns FieldRefAccess</summary>
         public AccessTools.FieldRef<object, F> FieldRefAccess<F>(string name)
         {
