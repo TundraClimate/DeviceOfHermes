@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 using UnityEngine.UI;
 using HarmonyLib;
+using HarmonyExtension;
 using LOR_DiceSystem;
 
 namespace DeviceOfHermes;

@@ -1,6 +1,7 @@
 using System.Text;
 using LOR_XML;
 using HarmonyLib;
+using HarmonyExtension;
 
 internal class DynamicAbility
 {

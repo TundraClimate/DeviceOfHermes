@@ -1,5 +1,6 @@
 using System.Reflection.Emit;
 using HarmonyLib;
+using HarmonyExtension;
 
 namespace DeviceOfHermes.AdvancedBase;
 

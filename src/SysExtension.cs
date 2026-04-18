@@ -1,6 +1,6 @@
 using System.Text;
 using LOR_DiceSystem;
-using HarmonyLib;
+using HarmonyExtension;
 
 namespace System;
 

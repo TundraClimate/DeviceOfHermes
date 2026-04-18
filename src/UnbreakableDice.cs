@@ -1,5 +1,6 @@
 using LOR_DiceSystem;
 using HarmonyLib;
+using HarmonyExtension;
 using UnityEngine;
 using DeviceOfHermes.AdvancedBase;
 
