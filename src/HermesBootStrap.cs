@@ -15,8 +15,6 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
-        Load1FrameworkLoaders();
-
         DynamicAbility.Init();
 
         return "";
@@ -42,58 +40,6 @@ internal class HermesBootStrap : DiceCardAbilityBase
         {
             Hermes.Say($"Load by DeviceOfHermes: {path}");
             Assembly.LoadFrom(path);
-        }
-    }
-
-    private static void Load1FrameworkLoaders()
-    {
-        try
-        {
-            var contents = Mod.ModContentManager.Instance.GetAllMods();
-
-            foreach (var content in contents)
-            {
-                var modDir = content.dirInfo.FullName;
-                var flDir = Path.Combine(modDir, "Assemblies", "1FrameworkAssemblies");
-
-                if (Directory.Exists(flDir))
-                {
-                    var files = Directory.GetFiles(flDir);
-
-                    Hermes.Say($"Find the preload files: In {flDir}");
-
-                    foreach (var file in files)
-                    {
-                        if (!File.Exists(file))
-                        {
-                            continue;
-                        }
-
-                        if (Path.GetExtension(file) != ".dll")
-                        {
-                            Hermes.Say($"Non-assembly skip: {file}");
-
-                            continue;
-                        }
-
-                        var addsAsm = AssemblyName.GetAssemblyName(file);
-
-                        var find = AppDomain.CurrentDomain.GetAssemblies()
-                            .Any(asm => AssemblyName.ReferenceMatchesDefinition(asm.GetName(), addsAsm));
-
-                        if (!find)
-                        {
-                            Hermes.Say($"Load by DeviceOfHermes: {file}");
-                            Assembly.LoadFrom(file);
-                        }
-                    }
-                }
-            }
-        }
-        catch (Exception e)
-        {
-            Hermes.Say($"Error by loadings 1FrameworkLoader files: {e.Message}", MessageLevel.Error);
-            Hermes.Say($"Stacktrace: {e.StackTrace}");
         }
     }
 
