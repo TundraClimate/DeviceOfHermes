@@ -4,7 +4,16 @@
   <Workshop>
     <ID>DeviceOfHermes</ID>
     <Title>DeviceOfHermes</Title>
-    <Description>DeviceOfHermes</Description>
+    <Description>The modding tool by Hermes.
+
+A first time on loaded, A Mod using DeviceOfHermes throws TypeInitializationException sometimes.
+This error is normal spec on DeviceOfHermes.
+
+By start game with ignoring the errors then DeviceOfHermes modifies load order since it needs first-load than other mods.
+From after that on game will loads correct orders.
+
+最初のロード時にTypeInitializationExceptionが発生する場合がありますが、これは正常な仕様です。
+エラーを無視し、タイトル画面へ進むことでそれ以降エラーが発生しなくなります。</Description>
     <Tag />
     <PreviewImage>thumbnail.png</PreviewImage>
   </Workshop>
