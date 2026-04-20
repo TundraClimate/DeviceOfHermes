@@ -107,6 +107,21 @@
     {
         return origin;
     }
+
+    public override int GetDiceFinalResultValue(int origin)
+    {
+        return origin;
+    }
+
+    public override int GetFinalResultDamageValue(int origin)
+    {
+        return origin;
+    }
+
+    public override int GetFinalResultBreakDamageValue(int origin)
+    {
+        return origin;
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
@@ -136,6 +151,36 @@
 この処理はプレイヤー側の結果が優先されます。</p>
 <ul>
 <li><code>origin</code>: 変更前のマッチ結果です。</li>
+</ul>
+<h3 id="getdicefinalresultvalueint"><code>GetDiceFinalResultValue(int)</code></h3>
+<pre><code class="lang-cs">public override int GetDiceFinalResultValue(int origin)
+{
+    return origin;
+}
+</code></pre>
+<p>最終威力をこのメソッドが返した値に変更します。</p>
+<ul>
+<li><code>origin</code>: 変更前の最終威力です。</li>
+</ul>
+<h3 id="getfinalresultdamagevalueint"><code>GetFinalResultDamageValue(int)</code></h3>
+<pre><code class="lang-cs">public override int GetFinalResultDamageValue(int origin)
+{
+    return origin;
+}
+</code></pre>
+<p>最終ダメージ量をこのメソッドが返した値に変更します。</p>
+<ul>
+<li><code>origin</code>: 変更前の最終ダメージ量です。</li>
+</ul>
+<h3 id="getfinalresultbreakdamagevalueint"><code>GetFinalResultBreakDamageValue(int)</code></h3>
+<pre><code class="lang-cs">public override int GetFinalResultBreakDamageValue(int origin)
+{
+    return origin;
+}
+</code></pre>
+<p>最終混乱ダメージ量をこのメソッドが返した値に変更します。</p>
+<ul>
+<li><code>origin</code>: 変更前の最終混乱ダメージ量です。</li>
 </ul>
 
 </article>

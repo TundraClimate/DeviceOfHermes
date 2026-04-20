@@ -1,4 +1,6 @@
+using System.Reflection.Emit;
 using HarmonyLib;
+using HarmonyExtension;
 using LOR_DiceSystem;
 
 namespace DeviceOfHermes.AdvancedBase;
@@ -23,6 +25,8 @@ public class AdvancedDiceBase : DiceCardAbilityBase
         harmony.CreateClassProcessor(typeof(DicePatch.PatchOnAddKeep)).Patch();
         harmony.CreateClassProcessor(typeof(DicePatch.PatchOnAddKeepForDef)).Patch();
         harmony.CreateClassProcessor(typeof(DicePatch.PatchParryingResult)).Patch();
+        harmony.CreateClassProcessor(typeof(DicePatch.PatchDiceResultValue)).Patch();
+        harmony.CreateClassProcessor(typeof(DicePatch.PatchDiceDamageValue)).Patch();
     }
 
     /// <summary>Dice on move to keeped</summary>
@@ -40,6 +44,27 @@ public class AdvancedDiceBase : DiceCardAbilityBase
     /// <summary>Returns dice parrying result</summary>
     /// <returns>A result of parrying with this dice</returns>
     public virtual ParryingResult GetParryingResult(ParryingResult origin)
+    {
+        return origin;
+    }
+
+    /// <summary>Returns dice final result value</summary>
+    /// <returns>A result value of override</returns>
+    public virtual int GetDiceFinalResultValue(int origin)
+    {
+        return origin;
+    }
+
+    /// <summary>Returns dice final damage value</summary>
+    /// <returns>A damage value of override</returns>
+    public virtual int GetFinalResultDamageValue(int origin)
+    {
+        return origin;
+    }
+
+    /// <summary>Returns dice final break damage value</summary>
+    /// <returns>A break damage value of override</returns>
+    public virtual int GetFinalResultBreakDamageValue(int origin)
     {
         return origin;
     }
@@ -229,6 +254,93 @@ static class DicePatch
             {
                 return AdvancedDiceBase.ParryingResult.Draw;
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "UpdateDiceFinalValue")]
+    internal class PatchDiceResultValue
+    {
+        static Exception Finalizer(Exception __exception, BattleDiceBehavior __instance, ref int ____diceFinalResultValue)
+        {
+            foreach (var abi in __instance.abilityList)
+            {
+                if (abi is AdvancedDiceBase adv)
+                {
+                    ____diceFinalResultValue = adv.GetDiceFinalResultValue(____diceFinalResultValue);
+                }
+            }
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "GiveDamage")]
+    internal class PatchDiceDamageValue
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(
+                CodeMatch.IsLdloc(),
+                new CodeMatch(OpCodes.Ldc_I4_0),
+                new CodeMatch(OpCodes.Ldarg_0),
+                CodeMatch.Calls(typeof(BattleDiceBehavior).Method("get_owner")),
+                new CodeMatch(OpCodes.Ldc_I4_0),
+                CodeMatch.Calls(typeof(BattleUnitModel).Method("TakeDamage"))
+            )
+                .Advance(1)
+                .Insert(
+                    new CodeInstruction(OpCodes.Ldarg_0),
+                    new CodeInstruction(OpCodes.Call, typeof(PatchDiceDamageValue).Method("ChangeDamage"))
+                );
+
+            matcher.MatchStartForward(
+                CodeMatch.IsLdloc(),
+                new CodeMatch(OpCodes.Ldc_I4_0),
+                new CodeMatch(OpCodes.Ldarg_0),
+                CodeMatch.Calls(typeof(BattleDiceBehavior).Method("get_owner")),
+                CodeMatch.IsLdloc(),
+                new CodeMatch(OpCodes.Ldc_I4_0),
+                CodeMatch.Calls(typeof(BattleUnitModel).Method("TakeBreakDamage"))
+            )
+                .Advance(1)
+                .Insert(
+                    new CodeInstruction(OpCodes.Ldarg_0),
+                    new CodeInstruction(OpCodes.Call, typeof(PatchDiceDamageValue).Method("ChangeBreakDamage"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static int ChangeDamage(int origin, BattleDiceBehavior instance)
+        {
+            var res = origin;
+
+            foreach (var abi in instance.abilityList)
+            {
+                if (abi is AdvancedDiceBase adv)
+                {
+                    res = adv.GetFinalResultDamageValue(res);
+                }
+            }
+
+            return res;
+        }
+
+        static int ChangeBreakDamage(int origin, BattleDiceBehavior instance)
+        {
+            var res = origin;
+
+            foreach (var abi in instance.abilityList)
+            {
+                if (abi is AdvancedDiceBase adv)
+                {
+                    res = adv.GetFinalResultBreakDamageValue(res);
+                }
+            }
+
+            return res;
         }
     }
 }

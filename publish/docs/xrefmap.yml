@@ -105,6 +105,54 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   nameWithType: AdvancedDiceBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue(System.Int32)
+  name: GetDiceFinalResultValue(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetDiceFinalResultValue_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue(System.Int32)
+  name.vb: GetDiceFinalResultValue(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue(Integer)
+  nameWithType: AdvancedDiceBase.GetDiceFinalResultValue(int)
+  nameWithType.vb: AdvancedDiceBase.GetDiceFinalResultValue(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue*
+  name: GetDiceFinalResultValue
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetDiceFinalResultValue_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue
+  nameWithType: AdvancedDiceBase.GetDiceFinalResultValue
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(System.Int32)
+  name: GetFinalResultBreakDamageValue(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetFinalResultBreakDamageValue_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(System.Int32)
+  name.vb: GetFinalResultBreakDamageValue(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(Integer)
+  nameWithType: AdvancedDiceBase.GetFinalResultBreakDamageValue(int)
+  nameWithType.vb: AdvancedDiceBase.GetFinalResultBreakDamageValue(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue*
+  name: GetFinalResultBreakDamageValue
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetFinalResultBreakDamageValue_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue
+  nameWithType: AdvancedDiceBase.GetFinalResultBreakDamageValue
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue(System.Int32)
+  name: GetFinalResultDamageValue(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetFinalResultDamageValue_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue(System.Int32)
+  name.vb: GetFinalResultDamageValue(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue(Integer)
+  nameWithType: AdvancedDiceBase.GetFinalResultDamageValue(int)
+  nameWithType.vb: AdvancedDiceBase.GetFinalResultDamageValue(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue*
+  name: GetFinalResultDamageValue
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetFinalResultDamageValue_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue
+  nameWithType: AdvancedDiceBase.GetFinalResultDamageValue
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetParryingResult(DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult)
   name: GetParryingResult(ParryingResult)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetParryingResult_DeviceOfHermes_AdvancedBase_AdvancedDiceBase_ParryingResult_
@@ -2431,6 +2479,18 @@ references:
   fullName.vb: DeviceOfHermes.VannilaUnitBuf.SetMaxIf(Of T)(Integer, System.Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
   nameWithType: VannilaUnitBuf.SetMaxIf<T>(int, Func<BattleUnitBuf, BattleUnitModel?, bool>)
   nameWithType.vb: VannilaUnitBuf.SetMaxIf(Of T)(Integer, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+- uid: HarmonyExtension
+  name: HarmonyExtension
+  href: api/HarmonyExtension.html
+  commentId: N:HarmonyExtension
+  fullName: HarmonyExtension
+  nameWithType: HarmonyExtension
+- uid: HarmonyExtension.HarmonyExtension
+  name: HarmonyExtension
+  href: api/HarmonyExtension.HarmonyExtension.html
+  commentId: T:HarmonyExtension.HarmonyExtension
+  fullName: HarmonyExtension.HarmonyExtension
+  nameWithType: HarmonyExtension
 - uid: System
   name: System
   href: api/System.html
