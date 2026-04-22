@@ -1,3 +1,4 @@
+using System.Reflection.Emit;
 using System.Reflection;
 using HarmonyLib;
 
@@ -14,10 +15,40 @@ public static class HarmonyExtension
             return new CodeMatch(instruction => instruction.Calls(method));
         }
 
+        /// <summary>Is Ldarg</summary>
+        public static CodeMatch IsLdarg()
+        {
+            return new CodeMatch(instruction => instruction.IsLdarg());
+        }
+
         /// <summary>Is Ldloc</summary>
         public static CodeMatch IsLdloc()
         {
             return new CodeMatch(instruction => instruction.IsLdloc());
+        }
+
+        /// <summary>Is Ldfld</summary>
+        public static CodeMatch IsLdfld()
+        {
+            return new CodeMatch(instruction => instruction.opcode == OpCodes.Ldfld);
+        }
+
+        /// <summary>Is Starg</summary>
+        public static CodeMatch IsStarg()
+        {
+            return new CodeMatch(instruction => instruction.IsStarg());
+        }
+
+        /// <summary>Is Stloc</summary>
+        public static CodeMatch IsStloc()
+        {
+            return new CodeMatch(instruction => instruction.IsStloc());
+        }
+
+        /// <summary>Is Stfld</summary>
+        public static CodeMatch IsStfld()
+        {
+            return new CodeMatch(instruction => instruction.opcode == OpCodes.Stfld);
         }
     }
 
