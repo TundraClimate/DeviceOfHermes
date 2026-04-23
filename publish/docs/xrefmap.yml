@@ -309,6 +309,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack
   nameWithType: AdvancedPassiveBase.OnChangeBufStack
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard(BattlePlayingCardDataInUnitModel)
+  name: OnDropCard(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnDropCard_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard(BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedPassiveBase.OnDropCard(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard*
+  name: OnDropCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnDropCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard
+  nameWithType: AdvancedPassiveBase.OnDropCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
   name: OnRoundStartFirst()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartFirst

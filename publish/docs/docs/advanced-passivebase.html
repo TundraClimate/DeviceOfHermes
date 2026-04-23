@@ -134,6 +134,10 @@
     public override void OnChangeBufStack(BattleUnitBuf changed, int last)
     {
     }
+
+    public override void OnDropCard(BattlePlayingCardDataInUnitModel playcard)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -224,6 +228,15 @@ falseを返すとそのページが捨てられるのをキャンセルするこ
 <ul>
 <li><code>changed</code>: 変更されたバフです。</li>
 <li><code>last</code>: 最後に記録されたバフのスタック数です。</li>
+</ul>
+<h3 id="ondropcardbattleplayingcarddatainunitmodel"><code>OnDropCard(BattlePlayingCardDataInUnitModel)</code></h3>
+<pre><code class="lang-cs">public override void OnDropCard(BattlePlayingCardDataInUnitModel playcard)
+{
+}
+</code></pre>
+<p>自らのページが使用完了しなかった場合に実行されます。</p>
+<ul>
+<li><code>playcard</code>: 使用完了できなかったページです。</li>
 </ul>
 
 </article>

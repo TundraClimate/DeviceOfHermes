@@ -81,6 +81,12 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return true;
     }
 
+    /// <summary>On dropped card</summary>
+    /// <param name="playcard">A card of dropped</param>
+    public virtual void OnDropCard(BattlePlayingCardDataInUnitModel playcard)
+    {
+    }
+
     static void OnTick()
     {
         var alives = BattleObjectManager.instance.GetAliveList();

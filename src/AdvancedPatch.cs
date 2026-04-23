@@ -16,7 +16,6 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnDynamicParrying));
         Patch(typeof(PatchOnChangeTarget));
         Patch(typeof(PatchCanDiscard));
-
         Patch(typeof(PatchOnAddKeeps1));
         Patch(typeof(PatchOnAddKeeps2));
         Patch(typeof(PatchOnAddKeep));
@@ -24,15 +23,14 @@ internal static class AdvancedPatch
         Patch(typeof(PatchParryingResult));
         Patch(typeof(PatchDiceResultValue));
         Patch(typeof(PatchDiceDamageValue));
-
         Patch(typeof(PatchOnRoundStartFirst));
         Patch(typeof(PatchOnBattleLast));
         Patch(typeof(PatchOnRoundStartLast));
         Patch(typeof(PatchCanDiscard));
-
         Patch(typeof(OriginalAdvInit));
         Patch(typeof(PatchAddBufInitializer));
         Patch(typeof(PatchAddBufWdInitializer));
+        Patch(typeof(PatchUnusedRemove));
     }
 
     public static void Init()
@@ -41,7 +39,6 @@ internal static class AdvancedPatch
 
     private static void Patch(Type type)
     {
-        Hermes.Say($"Patch: {type.Name}");
         harmony.CreateClassProcessor(type).Patch();
     }
 
@@ -191,15 +188,15 @@ internal static class AdvancedPatch
                 return true;
             }
 
-            var selfPassives = self?.passiveDetail?.PassiveList?.Filter(passive => passive is AdvancedPassiveBase);
-            var targetPassives = target?.passiveDetail?.PassiveList?.Filter(passive => passive is AdvancedPassiveBase);
+            var selfPassives = self?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>();
+            var targetPassives = target?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>();
 
-            if (selfPassives?.Any(p => ((AdvancedPassiveBase)p).IsIgnoreSpeedByMatch(selfCard, targetCard)) == true)
+            if (selfPassives?.Any(p => p.IsIgnoreSpeedByMatch(selfCard, targetCard)) == true)
             {
                 return true;
             }
 
-            if (targetPassives?.Any(p => ((AdvancedPassiveBase)p).IsIgnoreSpeedByMatch(targetCard, selfCard)) == true)
+            if (targetPassives?.Any(p => p.IsIgnoreSpeedByMatch(targetCard, selfCard)) == true)
             {
                 return true;
             }
@@ -227,9 +224,9 @@ internal static class AdvancedPatch
                     cancel.Add(card);
                 }
 
-                foreach (var passive in ____self.passiveDetail.PassiveList)
+                foreach (var passive in ____self.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
                 {
-                    if (passive is AdvancedPassiveBase ap && !ap.CanDiscardByAbility(card))
+                    if (!passive.CanDiscardByAbility(card))
                     {
                         if (!cancel.Contains(card))
                         {
@@ -452,12 +449,9 @@ internal static class AdvancedPatch
         {
             var res = origin;
 
-            foreach (var abi in instance.abilityList)
+            foreach (var abi in instance.abilityList.OfType<AdvancedDiceBase>())
             {
-                if (abi is AdvancedDiceBase adv)
-                {
-                    res = adv.GetFinalResultDamageValue(res);
-                }
+                res = abi.GetFinalResultDamageValue(res);
             }
 
             return res;
@@ -467,12 +461,9 @@ internal static class AdvancedPatch
         {
             var res = origin;
 
-            foreach (var abi in instance.abilityList)
+            foreach (var abi in instance.abilityList.OfType<AdvancedDiceBase>())
             {
-                if (abi is AdvancedDiceBase adv)
-                {
-                    res = adv.GetFinalResultBreakDamageValue(res);
-                }
+                res = abi.GetFinalResultBreakDamageValue(res);
             }
 
             return res;
@@ -484,12 +475,9 @@ internal static class AdvancedPatch
     {
         static void Prefix(BattleUnitModel __instance)
         {
-            foreach (var passive in __instance.passiveDetail.PassiveList)
+            foreach (var passive in __instance.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
             {
-                if (passive is AdvancedPassiveBase)
-                {
-                    ((AdvancedPassiveBase)passive).OnRoundStartFirst();
-                }
+                passive.OnRoundStartFirst();
             }
         }
     }
@@ -499,12 +487,9 @@ internal static class AdvancedPatch
     {
         static void Postfix(BattleUnitModel __instance)
         {
-            foreach (var passive in __instance.passiveDetail.PassiveList)
+            foreach (var passive in __instance.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
             {
-                if (passive is AdvancedPassiveBase)
-                {
-                    ((AdvancedPassiveBase)passive).OnRoundStartLast();
-                }
+                passive.OnRoundStartLast();
             }
         }
     }
@@ -520,9 +505,9 @@ internal static class AdvancedPatch
 
                 foreach (var unit in all)
                 {
-                    foreach (var passive in unit.passiveDetail.PassiveList)
+                    foreach (var passive in unit.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
                     {
-                        if (passive is AdvancedPassiveBase && !((AdvancedPassiveBase)passive).IsAllowRoundEnd())
+                        if (!passive.IsAllowRoundEnd())
                         {
                             ____phase = StageController.StagePhase.SetCurrentDiceAction;
                         }
@@ -557,12 +542,16 @@ internal static class AdvancedPatch
 
                 foreach (var unit in BattleObjectManager.instance.GetAliveList())
                 {
-                    foreach (var otherBuf in unit?.bufListDetail?.GetActivatedBufList() ?? new())
+                    var otherBufs = unit?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
+
+                    if (otherBufs is null)
                     {
-                        if (otherBuf is AdvancedUnitBuf otherAdv)
-                        {
-                            otherAdv.OnOtherInstant(adv);
-                        }
+                        continue;
+                    }
+
+                    foreach (var otherBuf in otherBufs)
+                    {
+                        otherBuf.OnOtherInstant(adv);
                     }
                 }
 
@@ -629,6 +618,44 @@ internal static class AdvancedPatch
             if (instance is AdvancedUnitBuf advInstance)
             {
                 OriginalAdvInit.Init(advInstance, owner);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(StageController), "RemoveUnusedCards")]
+    class PatchUnusedRemove
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var target = typeof(List<BattlePlayingCardDataInUnitModel>).Method("Remove");
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(
+                CodeMatch.IsLdarg(),
+                CodeMatch.IsLdfld(),
+                CodeMatch.IsLdloc(),
+                CodeMatch.Calls(target),
+                new CodeMatch(i => i.opcode == OpCodes.Pop)
+            )
+                .Advance(1)
+                .Insert(
+                    new CodeInstruction(OpCodes.Ldloc_3),
+                    new CodeInstruction(OpCodes.Call, typeof(PatchUnusedRemove).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattlePlayingCardDataInUnitModel playcard)
+        {
+            var passives = playcard.owner?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>();
+
+            if (passives is not null)
+            {
+                foreach (var p in passives)
+                {
+                    p.OnDropCard(playcard);
+                }
             }
         }
     }
