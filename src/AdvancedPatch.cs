@@ -303,17 +303,29 @@ internal static class AdvancedPatch
             BattleParryingManager.ParryingTeam teamB
         )
         {
-            var enemyAdvAbility = teamA?.playingCard?.currentBehavior?.abilityList?
-                .Find(abi => abi is AdvancedDiceBase)?
-                .Let(adv => (AdvancedDiceBase)adv);
-            var librarianAdvAbility = teamB?.playingCard?.currentBehavior?.abilityList?
-                .Find(abi => abi is AdvancedDiceBase)?
-                .Let(adv => (AdvancedDiceBase)adv);
+            var enemyAdvAbility = teamA?.playingCard?.currentBehavior?.abilityList?.OfType<AdvancedDiceBase>();
+            var librarianAdvAbility = teamB?.playingCard?.currentBehavior?.abilityList?.OfType<AdvancedDiceBase>();
 
             var enemyOrigin = ParseTo(__result, Faction.Enemy);
             var librarianOrigin = ParseTo(__result, Faction.Player);
-            var enemyResult = enemyAdvAbility?.GetParryingResult(enemyOrigin) ?? enemyOrigin;
-            var librarianResult = librarianAdvAbility?.GetParryingResult(librarianOrigin) ?? librarianOrigin;
+            var enemyResult = enemyOrigin;
+            var librarianResult = librarianOrigin;
+
+            if (enemyAdvAbility is not null)
+            {
+                foreach (var eaa in enemyAdvAbility)
+                {
+                    enemyResult = eaa.GetParryingResult(enemyOrigin);
+                }
+            }
+
+            if (librarianAdvAbility is not null)
+            {
+                foreach (var laa in librarianAdvAbility)
+                {
+                    librarianResult = laa.GetParryingResult(librarianOrigin);
+                }
+            }
 
             if (enemyOrigin != enemyResult)
             {
