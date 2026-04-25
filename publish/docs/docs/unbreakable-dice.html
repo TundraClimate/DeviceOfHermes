@@ -92,7 +92,8 @@
 <h1 id="unbreakabledice">UnbreakableDice</h1>
 <p>特殊な攻撃ダイスです。<br>
 マッチ敗北時に保存され、敵のページ使用終了時に再使用します。<br>
-ただし、出目範囲が最低値に固定され、ページ効果が消滅します。</p>
+ただし、出目範囲が最低値に固定され、ページ効果が消滅します。<br>
+また、再使用するページは再使用前のページの速度ダイスをターゲットしている他のページに自動でマッチします。</p>
 <p>例:</p>
 <pre><code class="lang-cs">class DiceCardAbility_Unbreakable : UnbreakableDice
 {

@@ -125,7 +125,13 @@ internal class PatchUnbreakableDice
                 var target = queue.Peek().card.target;
                 var speed = queue.Peek().card.speedDiceResultValue;
 
-                var playcard = owner.CreatePlayingCard(xmlInfo, target, speedDiceResultValue: speed)
+                var usedSlot = queue.Peek().card.slotOrder;
+                var earlyTarget = queue.Peek().card.targetSlotOrder;
+                var targetSlot = StageController.Instance.GetAllCards()
+                    .Find(c => c.owner == target && c.targetSlotOrder == usedSlot && c.slotOrder != earlyTarget)?
+                    .Let(c => c.slotOrder) ?? -1;
+
+                var playcard = owner.CreatePlayingCard(xmlInfo, target, targetSlotOrder: targetSlot, speedDiceResultValue: speed)
                     .Also(it =>
                     {
                         it.cardBehaviorQueue = new();
