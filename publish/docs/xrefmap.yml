@@ -1711,6 +1711,44 @@ references:
   commentId: F:DeviceOfHermes.ScheduleTiming.UseCard
   fullName: DeviceOfHermes.ScheduleTiming.UseCard
   nameWithType: ScheduleTiming.UseCard
+- uid: DeviceOfHermes.StageLibrarianList
+  name: StageLibrarianList
+  href: api/DeviceOfHermes.StageLibrarianList.html
+  commentId: T:DeviceOfHermes.StageLibrarianList
+  fullName: DeviceOfHermes.StageLibrarianList
+  nameWithType: StageLibrarianList
+- uid: DeviceOfHermes.StageLibrarianList.AddUnit(LorId,LorId,System.String)
+  name: AddUnit(LorId, LorId, string?)
+  href: api/DeviceOfHermes.StageLibrarianList.html#DeviceOfHermes_StageLibrarianList_AddUnit_LorId_LorId_System_String_
+  commentId: M:DeviceOfHermes.StageLibrarianList.AddUnit(LorId,LorId,System.String)
+  name.vb: AddUnit(LorId, LorId, String)
+  fullName: DeviceOfHermes.StageLibrarianList.AddUnit(LorId, LorId, string?)
+  fullName.vb: DeviceOfHermes.StageLibrarianList.AddUnit(LorId, LorId, String)
+  nameWithType: StageLibrarianList.AddUnit(LorId, LorId, string?)
+  nameWithType.vb: StageLibrarianList.AddUnit(LorId, LorId, String)
+- uid: DeviceOfHermes.StageLibrarianList.AddUnit*
+  name: AddUnit
+  href: api/DeviceOfHermes.StageLibrarianList.html#DeviceOfHermes_StageLibrarianList_AddUnit_
+  commentId: Overload:DeviceOfHermes.StageLibrarianList.AddUnit
+  isSpec: "True"
+  fullName: DeviceOfHermes.StageLibrarianList.AddUnit
+  nameWithType: StageLibrarianList.AddUnit
+- uid: DeviceOfHermes.StageLibrarianList.SetUnit(LorId,System.Int32,LorId,System.String)
+  name: SetUnit(LorId, int, LorId, string?)
+  href: api/DeviceOfHermes.StageLibrarianList.html#DeviceOfHermes_StageLibrarianList_SetUnit_LorId_System_Int32_LorId_System_String_
+  commentId: M:DeviceOfHermes.StageLibrarianList.SetUnit(LorId,System.Int32,LorId,System.String)
+  name.vb: SetUnit(LorId, Integer, LorId, String)
+  fullName: DeviceOfHermes.StageLibrarianList.SetUnit(LorId, int, LorId, string?)
+  fullName.vb: DeviceOfHermes.StageLibrarianList.SetUnit(LorId, Integer, LorId, String)
+  nameWithType: StageLibrarianList.SetUnit(LorId, int, LorId, string?)
+  nameWithType.vb: StageLibrarianList.SetUnit(LorId, Integer, LorId, String)
+- uid: DeviceOfHermes.StageLibrarianList.SetUnit*
+  name: SetUnit
+  href: api/DeviceOfHermes.StageLibrarianList.html#DeviceOfHermes_StageLibrarianList_SetUnit_
+  commentId: Overload:DeviceOfHermes.StageLibrarianList.SetUnit
+  isSpec: "True"
+  fullName: DeviceOfHermes.StageLibrarianList.SetUnit
+  nameWithType: StageLibrarianList.SetUnit
 - uid: DeviceOfHermes.StyleExtension
   name: StyleExtension
   href: api/DeviceOfHermes.StyleExtension.html

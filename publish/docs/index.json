@@ -124,6 +124,11 @@
     "title": "Enum ScheduleTiming | DeviceOfHermes",
     "summary": "Enum ScheduleTiming Namespace DeviceOfHermes Assembly DeviceOfHermes.dll A timing of scheduled public enum ScheduleTiming Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Fields EndBattle = 4 EndBattle RollSpeedDice = 1 RollSpeedDice RoundEnd = 5 RoundEnd RoundStart = 0 RoundStart StartBattle = 2 StartBattle UseCard = 3 UseCard"
   },
+  "api/DeviceOfHermes.StageLibrarianList.html": {
+    "href": "api/DeviceOfHermes.StageLibrarianList.html",
+    "title": "Class StageLibrarianList | DeviceOfHermes",
+    "summary": "Class StageLibrarianList Namespace DeviceOfHermes Assembly DeviceOfHermes.dll A util of stage librarian list public class StageLibrarianList Inheritance object StageLibrarianList Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Methods AddUnit(LorId, LorId, string?) Add unit to head public static void AddUnit(LorId stageId, LorId bookId, string? name = null) Parameters stageId LorId bookId LorId name string SetUnit(LorId, int, LorId, string?) Set unit in index public static void SetUnit(LorId stageId, int idx, LorId bookId, string? name = null) Parameters stageId LorId idx int bookId LorId name string"
+  },
   "api/DeviceOfHermes.StyleExtension.html": {
     "href": "api/DeviceOfHermes.StyleExtension.html",
     "title": "Class StyleExtension | DeviceOfHermes",
@@ -142,7 +147,7 @@
   "api/DeviceOfHermes.html": {
     "href": "api/DeviceOfHermes.html",
     "title": "Namespace DeviceOfHermes | DeviceOfHermes",
-    "summary": "Namespace DeviceOfHermes Classes AdditonalOnlyCard OnlyCard manage helper AdvancedTakeDamage The useful TakeDamage BattleBufExtension Additional battleunitbuf extension BattleTickAction Manage tick actions in battle CustomDiceSprite Supplies dice sprite customizer HermesConstants The constants used by DoH PassiveResolver Resolver the passive attribute succession ScheduleRunner In battle scheduler StyleExtension Styled text methods UnitUIExtension The extensions of ui on unit model VannilaUnitBuf Modify the vannila unitbufs Enums ScheduleTiming A timing of scheduled"
+    "summary": "Namespace DeviceOfHermes Classes AdditonalOnlyCard OnlyCard manage helper AdvancedTakeDamage The useful TakeDamage BattleBufExtension Additional battleunitbuf extension BattleTickAction Manage tick actions in battle CustomDiceSprite Supplies dice sprite customizer HermesConstants The constants used by DoH PassiveResolver Resolver the passive attribute succession ScheduleRunner In battle scheduler StageLibrarianList A util of stage librarian list StyleExtension Styled text methods UnitUIExtension The extensions of ui on unit model VannilaUnitBuf Modify the vannila unitbufs Enums ScheduleTiming A timing of scheduled"
   },
   "api/HarmonyExtension.HarmonyExtension.html": {
     "href": "api/HarmonyExtension.HarmonyExtension.html",
@@ -274,10 +279,15 @@
     "title": "using DeviceOfHermes; | DeviceOfHermes",
     "summary": "using DeviceOfHermes; 名前空間DeviceOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 ScheduleRunner 戦闘中の各イベントのタイミングに行う処理を追加します。 例: ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () => Hermes.Say(\"Round started\")); この例はOnRoundStartのタイミングにログを出力するコードです。 Timings enum ScheduleTiming { RoundStart, RollSpeedDice, StartBattle, UseCard, EndBattle, RoundEnd, } Specified usage AddSchedule(ScheduleTiming, Action) ScheduleRunner.AddSchedule(timing, invokeFn); 各タイミングに実行する処理を追加します。 timing: 追加するタイミングです。 invokeFn: 追加する処理です。"
   },
+  "docs/stagelibrarian-list.html": {
+    "href": "docs/stagelibrarian-list.html",
+    "title": "using DeviceOfHermes; | DeviceOfHermes",
+    "summary": "using DeviceOfHermes; 名前空間DeviceOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 StageLibrarianList 接待に参加するキャラクターを設定します。 // あなたのMODのID=1の接待で左端のキャラクターをあなたのMODのID=1のコアページに変更します StageLibrarianList.SetUnit(new LorId(\"あなたのMODのID\", 1), 0, new LorId(\"あなたのMODのID\", 1), \"キャラクターの名前\"); // あなたのMODのID=1の接待で左端にあなたのMODのID=1のコアページのキャラクターを追加します StageLibrarianList.AddUnit(new LorId(\"あなたのMODのID\", 1), new LorId(\"あなたのMODのID\", 1), \"キャラクターの名前\"); Specified usage SetUnit(LorId, int, LorId, string) StageLibrarianList.SetUnit(stageId, idx, bookId, name); stageIdの接待でidxの位置のキャラクターを変更します。 stageId: 対応する接待のIDです。 idx: キャラクターの位置です。 bookId: 使用するコアページのIDです。 name: 指定される名前です。 AddUnit(stageId, LorId, string) StageLibrarianList.AddUnit(stageId, bookId, name); stageIdの接待で左端からキャラクターを追加します。 溢れたキャラクターは表示されません。 stageId: 対応する接待のIDです。 bookId: 使用するコアページのIDです。 name: 指定される名前です。"
+  },
   "docs/table-of-content.html": {
     "href": "docs/table-of-content.html",
     "title": "目次・案内 | DeviceOfHermes",
-    "summary": "目次・案内 using DeviceOfHermes; 専用ページを新たに追加したいなら... AdditionalOnlyCard 攻撃属性のダメージを追加で与えたいなら... AdvancedTakeDamage 毎Tick実行される処理を追加したいなら... BattleTickAction バフ・デバフの扱いを簡単にしたいなら... BattleBufExtension ページ上のダイス画像を書き換えたいなら... CustomDiceSprite パッシブの帰属可否を管理したいなら... PassiveResolver 戦闘中のイベントを監視したいなら... ScheduleRunner キャラクターに関する表示を扱いたいなら... UnitUIExtension バニラ環境のバフ・デバフを編集したいなら... VannilaUnitBuf using DeviceOfHermes.AdvancedBase; より効果の増えたページアビリティを作るには... AdvancedCardBase より効果の増えたダイスアビリティを作るには... AdvancedDiceBase より効果の増えたパッシブアビリティを作るには... AdvancedPassiveBase より効果の増えたバフ・デバフを作るには... AdvancedUnitBuf 弾丸をバフとして管理するには... BattleAmmoBuf using DeviceOfHermes.CustomDice; 反撃ダイスをリンバス式にするには... RevengeDice \"破壊不能ダイス\"を追加するには... UnbreakableDice using DeviceOfHermes.Resource; 画像ファイルをゲーム内で読み込むには... Artwork XMLファイルをゲームから読み込むには... ReadXmlParser 翻訳データをゲームに追加するには... TextModel Hijack System コマンドからスクリプトを作成するには... DynamicAbility"
+    "summary": "目次・案内 using DeviceOfHermes; 専用ページを新たに追加したいなら... AdditionalOnlyCard 攻撃属性のダメージを追加で与えたいなら... AdvancedTakeDamage 毎Tick実行される処理を追加したいなら... BattleTickAction バフ・デバフの扱いを簡単にしたいなら... BattleBufExtension ページ上のダイス画像を書き換えたいなら... CustomDiceSprite パッシブの帰属可否を管理したいなら... PassiveResolver 戦闘中のイベントを監視したいなら... ScheduleRunner 接待で使用できるキャラクターを管理したいなら... StageLibrarianList キャラクターに関する表示を扱いたいなら... UnitUIExtension バニラ環境のバフ・デバフを編集したいなら... VannilaUnitBuf using DeviceOfHermes.AdvancedBase; より効果の増えたページアビリティを作るには... AdvancedCardBase より効果の増えたダイスアビリティを作るには... AdvancedDiceBase より効果の増えたパッシブアビリティを作るには... AdvancedPassiveBase より効果の増えたバフ・デバフを作るには... AdvancedUnitBuf 弾丸をバフとして管理するには... BattleAmmoBuf using DeviceOfHermes.CustomDice; 反撃ダイスをリンバス式にするには... RevengeDice \"破壊不能ダイス\"を追加するには... UnbreakableDice using DeviceOfHermes.Resource; 画像ファイルをゲーム内で読み込むには... Artwork XMLファイルをゲームから読み込むには... ReadXmlParser 翻訳データをゲームに追加するには... TextModel Hijack System コマンドからスクリプトを作成するには... DynamicAbility"
   },
   "docs/textmodel.html": {
     "href": "docs/textmodel.html",

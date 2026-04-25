@@ -362,6 +362,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.StageLibrarianList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.StageLibrarianList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.StageLibrarianList",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.StageLibrarianList.yml\" sourcestartlinenumber=\"1\">A util of stage librarian list</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.StyleExtension.yml",
       "output": {
         ".html": {
@@ -725,6 +739,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/schedule-runner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/stagelibrarian-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/stagelibrarian-list.html"
         }
       },
       "version": ""
