@@ -2,6 +2,7 @@ using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 using GameSave;
+using DeviceOfHermes.CustomDice;
 
 internal class HermesBootStrap : DiceCardAbilityBase
 {
@@ -16,6 +17,9 @@ internal class HermesBootStrap : DiceCardAbilityBase
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
         DynamicAbility.Init();
+
+        new RevengeDice();
+        new UnbreakableDice();
 
         return "";
     }
