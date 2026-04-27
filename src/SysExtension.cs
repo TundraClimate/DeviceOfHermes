@@ -1,6 +1,8 @@
 using System.Text;
 using LOR_DiceSystem;
 using HarmonyExtension;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace System;
 
@@ -312,6 +314,105 @@ public static class Extension
             builder.AppendLine($"Destroyed: {buf.IsDestroyed()}");
 
             return builder.ToString();
+        }
+    }
+
+    extension(GameObject ob)
+    {
+        /// <summary>Adds new child object to self </summary>
+        public GameObject AddChildObject(string? name = null, string? layerName = null)
+        {
+            var go = string.IsNullOrEmpty(name) ? new GameObject() : new GameObject(name);
+
+            if (layerName is not null)
+            {
+                go.layer = LayerMask.NameToLayer(layerName);
+            }
+
+            go.transform.SetParent(ob.transform, false);
+
+            return go;
+        }
+
+        /// <summary>Move to anchor</summary>
+        public GameObject MoveTo(Vector2 anchor)
+        {
+            var rect = ob.GetComponent<RectTransform>() switch
+            {
+                RectTransform rt => rt,
+                null => ob.AddComponent<RectTransform>(),
+            };
+
+            rect.Let(rt =>
+            {
+                rt.anchorMin = rt.anchorMax = anchor;
+                rt.offsetMin = rt.offsetMax = rt.anchoredPosition = Vector2.zero;
+            });
+
+            return ob;
+        }
+
+        /// <summary>Add container to self</summary>
+        public GameObject AddContainer(Action<GameObject> f)
+        {
+            var container = ob.AddChildObject(layerName: LayerMask.LayerToName(ob.layer));
+
+            f(container);
+
+            return ob;
+        }
+
+        /// <summary>Set image with Sprite</summary>
+        public Image SetImage(Sprite sprite, Vector2? sizeDelta = null)
+        {
+            var image = ob.GetComponent<Image>() switch
+            {
+                Image img => img,
+                null => ob.AddComponent<Image>(),
+            };
+
+            return image.Also(img =>
+            {
+                img.sprite = sprite;
+
+                if (sizeDelta is null)
+                {
+                    img.SetNativeSize();
+                }
+                else
+                {
+                    img.rectTransform.sizeDelta = sizeDelta.Value;
+                }
+            });
+        }
+    }
+
+    extension(CanvasGroup cg)
+    {
+        /// <summary>Enable CanvasGroup</summary>
+        public void Enable()
+        {
+            cg.interactable = true;
+            cg.blocksRaycasts = true;
+        }
+
+        /// <summary>Disable CanvasGroup</summary>
+        public void Disable()
+        {
+            cg.interactable = false;
+            cg.blocksRaycasts = false;
+        }
+
+        /// <summary>Show CanvasGroup</summary>
+        public void Show()
+        {
+            cg.alpha = 1f;
+        }
+
+        /// <summary>Hide CanvasGroup</summary>
+        public void Hide()
+        {
+            cg.alpha = 0f;
         }
     }
 }
