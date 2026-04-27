@@ -1,7 +1,5 @@
 using System.Text;
-using System.Runtime.CompilerServices;
 using LOR_DiceSystem;
-using UnityEngine;
 using HarmonyExtension;
 
 namespace System;
@@ -314,41 +312,6 @@ public static class Extension
             builder.AppendLine($"Destroyed: {buf.IsDestroyed()}");
 
             return builder.ToString();
-        }
-    }
-
-    private static ConditionalWeakTable<BattleManagerUI, Dictionary<string, MonoBehaviour>> AddionalUI = new();
-
-    extension(BattleManagerUI battleManagerUI)
-    {
-        /// <summary>Add behaviour to BattleManagerUI</summary>
-        public void AddBehaviour<T>(string name)
-            where T : MonoBehaviour
-        {
-            var val = AddionalUI.GetValue(battleManagerUI, _ => new());
-
-            if (!val.ContainsKey(name))
-            {
-                var go = new GameObject(name);
-
-                go.transform.SetParent(battleManagerUI.gameObject.transform);
-
-                var behaviour = go.AddComponent<T>();
-
-                val.Add(name, behaviour);
-            }
-        }
-
-        /// <summary>Get behaviour from BattleManagerUI</summary>
-        public T? GetBehaviour<T>(string name)
-            where T : MonoBehaviour
-        {
-            if (AddionalUI.GetValue(BattleManagerUI.Instance, _ => new()).TryGetValue(name, out var res))
-            {
-                return res as T;
-            }
-
-            return null;
         }
     }
 }

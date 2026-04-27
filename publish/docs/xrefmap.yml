@@ -927,6 +927,44 @@ references:
   commentId: E:DeviceOfHermes.BattleTickAction.OnTick
   fullName: DeviceOfHermes.BattleTickAction.OnTick
   nameWithType: BattleTickAction.OnTick
+- uid: DeviceOfHermes.BattleUIBehaviour
+  name: BattleUIBehaviour
+  href: api/DeviceOfHermes.BattleUIBehaviour.html
+  commentId: T:DeviceOfHermes.BattleUIBehaviour
+  fullName: DeviceOfHermes.BattleUIBehaviour
+  nameWithType: BattleUIBehaviour
+- uid: DeviceOfHermes.BattleUIBehaviour.OnRoundStart
+  name: OnRoundStart()
+  href: api/DeviceOfHermes.BattleUIBehaviour.html#DeviceOfHermes_BattleUIBehaviour_OnRoundStart
+  commentId: M:DeviceOfHermes.BattleUIBehaviour.OnRoundStart
+  fullName: DeviceOfHermes.BattleUIBehaviour.OnRoundStart()
+  nameWithType: BattleUIBehaviour.OnRoundStart()
+- uid: DeviceOfHermes.BattleUIBehaviour.OnRoundStart*
+  name: OnRoundStart
+  href: api/DeviceOfHermes.BattleUIBehaviour.html#DeviceOfHermes_BattleUIBehaviour_OnRoundStart_
+  commentId: Overload:DeviceOfHermes.BattleUIBehaviour.OnRoundStart
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleUIBehaviour.OnRoundStart
+  nameWithType: BattleUIBehaviour.OnRoundStart
+- uid: DeviceOfHermes.BattleUIBehaviour.OnStartBattle
+  name: OnStartBattle()
+  href: api/DeviceOfHermes.BattleUIBehaviour.html#DeviceOfHermes_BattleUIBehaviour_OnStartBattle
+  commentId: M:DeviceOfHermes.BattleUIBehaviour.OnStartBattle
+  fullName: DeviceOfHermes.BattleUIBehaviour.OnStartBattle()
+  nameWithType: BattleUIBehaviour.OnStartBattle()
+- uid: DeviceOfHermes.BattleUIBehaviour.OnStartBattle*
+  name: OnStartBattle
+  href: api/DeviceOfHermes.BattleUIBehaviour.html#DeviceOfHermes_BattleUIBehaviour_OnStartBattle_
+  commentId: Overload:DeviceOfHermes.BattleUIBehaviour.OnStartBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleUIBehaviour.OnStartBattle
+  nameWithType: BattleUIBehaviour.OnStartBattle
+- uid: DeviceOfHermes.BattleUIBehaviourExtension
+  name: BattleUIBehaviourExtension
+  href: api/DeviceOfHermes.BattleUIBehaviourExtension.html
+  commentId: T:DeviceOfHermes.BattleUIBehaviourExtension
+  fullName: DeviceOfHermes.BattleUIBehaviourExtension
+  nameWithType: BattleUIBehaviourExtension
 - uid: DeviceOfHermes.CustomDice
   name: DeviceOfHermes.CustomDice
   href: api/DeviceOfHermes.CustomDice.html
