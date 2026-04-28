@@ -713,6 +713,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/battleui-behaviour.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battleui-behaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/custom-dicesprite.md",
       "output": {
         ".html": {

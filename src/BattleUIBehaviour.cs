@@ -1,6 +1,7 @@
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 using HarmonyLib;
 using HarmonyExtension;
 
@@ -16,6 +17,29 @@ public class BattleUIBehaviour : MonoBehaviour
         harmony.CreateClassProcessor(typeof(PatchOnRoundStart)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnStartBattle)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnetimeInvoke)).Patch();
+    }
+
+    /// <summary>Init ui with Canvas</summary>
+    public Canvas InitUI(int order = 1000)
+    {
+        gameObject.layer = LayerMask.NameToLayer("UI");
+
+        var canvas = gameObject.AddComponent<Canvas>().Also(c =>
+        {
+            c.transform.SetParent(gameObject.transform);
+            c.renderMode = RenderMode.ScreenSpaceCamera;
+            c.worldCamera = BattleScene.Instance.overlayCamera;
+            c.sortingOrder = order;
+            c.planeDistance = 3f;
+        });
+
+        gameObject.AddComponent<CanvasScaler>().Also(s =>
+        {
+            s.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            s.referenceResolution = new Vector2(1920f, 1080f);
+        });
+
+        return canvas;
     }
 
     /// <summary>Runs on Round start</summary>

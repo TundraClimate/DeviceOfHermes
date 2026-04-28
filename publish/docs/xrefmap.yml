@@ -933,6 +933,22 @@ references:
   commentId: T:DeviceOfHermes.BattleUIBehaviour
   fullName: DeviceOfHermes.BattleUIBehaviour
   nameWithType: BattleUIBehaviour
+- uid: DeviceOfHermes.BattleUIBehaviour.InitUI(System.Int32)
+  name: InitUI(int)
+  href: api/DeviceOfHermes.BattleUIBehaviour.html#DeviceOfHermes_BattleUIBehaviour_InitUI_System_Int32_
+  commentId: M:DeviceOfHermes.BattleUIBehaviour.InitUI(System.Int32)
+  name.vb: InitUI(Integer)
+  fullName: DeviceOfHermes.BattleUIBehaviour.InitUI(int)
+  fullName.vb: DeviceOfHermes.BattleUIBehaviour.InitUI(Integer)
+  nameWithType: BattleUIBehaviour.InitUI(int)
+  nameWithType.vb: BattleUIBehaviour.InitUI(Integer)
+- uid: DeviceOfHermes.BattleUIBehaviour.InitUI*
+  name: InitUI
+  href: api/DeviceOfHermes.BattleUIBehaviour.html#DeviceOfHermes_BattleUIBehaviour_InitUI_
+  commentId: Overload:DeviceOfHermes.BattleUIBehaviour.InitUI
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleUIBehaviour.InitUI
+  nameWithType: BattleUIBehaviour.InitUI
 - uid: DeviceOfHermes.BattleUIBehaviour.OnRoundStart
   name: OnRoundStart()
   href: api/DeviceOfHermes.BattleUIBehaviour.html#DeviceOfHermes_BattleUIBehaviour_OnRoundStart
