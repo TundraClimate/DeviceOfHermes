@@ -117,6 +117,8 @@
     }
 }
 </code></pre>
+<pre><code class="lang-cs">BattleManagerUI.Instance.AddBehaviour&lt;ExampleUI&gt;(&quot;exampleUI&quot;);
+</code></pre>
 <p>この例は画面の中心に<code>Panel.png</code>の画像を表示します。</p>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="onroundstart"><code>OnRoundStart()</code></h3>
@@ -137,6 +139,21 @@
 <p>UI用にGameObjectを初期化し、Canvasを返します。</p>
 <ul>
 <li><code>order</code>: CanvasのsortingOrderです。値が大きいほど手前に表示されます。</li>
+</ul>
+<h3 id="addbehaviourtstring"><code>AddBehaviour&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">BattleManagerUI.Instance.AddBehaviour&lt;T&gt;(name);
+</code></pre>
+<p><code>BattleManagerUI</code>にMonoBehaviourを追加します。</p>
+<ul>
+<li><code>name</code>: 同時に作成されるGameObjectの名称です。</li>
+</ul>
+<h3 id="getbehaviourtstring"><code>GetBehaviour&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">BattleManagerUI.Instance.GetBehaviour&lt;T&gt;(name);
+</code></pre>
+<p><code>AddBehaviour</code>によって追加されたBehaviourを取得します。<br>
+OnInitializeMod時点では初期化されておらず、nullを返す点を留意してください。</p>
+<ul>
+<li><code>name</code>: 同時に作成されるGameObjectの名称です。</li>
 </ul>
 
 </article>
