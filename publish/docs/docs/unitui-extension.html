@@ -95,6 +95,8 @@
 <pre><code class="lang-cs">owner.Say(&quot;は...&quot;);
 
 owner.view.Say(&quot;ルール違反だ！&quot;, 1f);
+
+owner.view.AddEffect(sprite, new Vector2(0.5f, 0.52f), 3f);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="saystring"><code>Say(string)</code></h3>
@@ -115,6 +117,18 @@ owner.view.Say(&quot;ルール違反だ！&quot;, 1f);
 <li><code>duration</code>: フェードイン・アウトを除いた表示時間です。</li>
 <li><code>overhead</code>: テキストを表示する高さです。デフォルトは<code>3.2f</code>です。</li>
 <li><code>scale</code>: テキストのサイズ比です。デフォルトは<code>0.7f</code>です。</li>
+</ul>
+<h3 id="addeffectsprite-vector2-float-float-vector2"><code>AddEffect(Sprite, Vector2, float, float, Vector2)</code></h3>
+<pre><code class="lang-cs">owner.view.AddEffect(sprite, pos, duration, feed, sizeDelta);
+</code></pre>
+<p>キャラクターを中心としたエフェクトを画像から描画し、フェードアウトさせます。
+<code>pos</code>は<code>Vector2(0.5f, 0.52f)</code>程度がキャラクターに重なる地点です。</p>
+<ul>
+<li><code>sprite</code>: 描画するSpriteです。</li>
+<li><code>pos</code>: 描画する場所です。(0, 0)から(1, 1)の範囲でなければなりません。</li>
+<li><code>duration</code>: 描画する秒数です。</li>
+<li><code>feed</code>: フェードアウトに所要する秒数です。</li>
+<li><code>sizeDelta</code>: 描画サイズです。省略可能。</li>
 </ul>
 
 </article>

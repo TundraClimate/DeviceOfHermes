@@ -4,17 +4,27 @@ using UnityEngine;
 using TMPro;
 using HarmonyLib;
 using HarmonyExtension;
+using DeviceOfHermes.UI;
 
 namespace DeviceOfHermes;
 
 /// <summary>The extensions of ui on unit model</summary>
 public static class UnitUIExtension
 {
-    static UnitUIExtension()
+    internal static void Init()
     {
         var harmony = new Harmony("DeviceOfHermes.UnitUIExtension");
 
         harmony.CreateClassProcessor(typeof(PatchUpdator)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchOnAddUnit)).Patch();
+
+        ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () =>
+        {
+            foreach (var image in _images)
+            {
+                UnityEngine.Object.Destroy(image);
+            }
+        });
     }
 
     /// <summary>Says by unit on character dialog</summary>
@@ -104,6 +114,30 @@ public static class UnitUIExtension
         yield break;
     }
 
+    /// <summary>Add effect to unit canvas</summary>
+    public static void AddEffect(this BattleUnitView view, Sprite effectImg, Vector2 pos, float duration = 1f, float feed = 0f, Vector2? sizeDelta = null)
+    {
+        if (!_unitRootCanvas.TryGetValue(view, out var go))
+        {
+            return;
+        }
+
+        go.AddContainer(image =>
+        {
+            var img = image.Also(i => i.name = effectImg.name)
+                .MoveTo(pos)
+                .SetImage(effectImg, sizeDelta);
+
+            if (sizeDelta is null)
+            {
+                img.transform.localScale *= 0.01f;
+            }
+
+            _images.Add(img.gameObject);
+            img.StartCoroutine(CommonCoroutine.ImageFadeoutAndDestroy(img, duration, feed));
+        });
+    }
+
     [HarmonyPatch(typeof(BattleDialogUI), "Update")]
     class PatchUpdator
     {
@@ -119,7 +153,27 @@ public static class UnitUIExtension
         }
     }
 
+    [HarmonyPatch(typeof(BattleObjectLayer), "AddUnit")]
+    class PatchOnAddUnit
+    {
+        static void Postfix(BattleUnitModel model)
+        {
+            _unitRootCanvas.GetValue(
+                model.view,
+                _ => model.view.characterRotationCenter.gameObject.AddChildObject("BattleEffect", "Effect")
+                    .Also(go =>
+                    {
+                        go.AddComponent<Canvas>();
+                    })
+            );
+        }
+    }
+
     private static ConditionalWeakTable<BattleUnitView, DialogContext> _table = new();
+
+    private static ConditionalWeakTable<BattleUnitView, GameObject> _unitRootCanvas = new();
+
+    private static List<GameObject> _images = new();
 
     private static AccessTools.FieldRef<BattleDialogUI, TextMeshProUGUI> _txtAbnormalityDlg
         = typeof(BattleDialogUI).FieldRefAccess<TextMeshProUGUI>("_txtAbnormalityDlg");
