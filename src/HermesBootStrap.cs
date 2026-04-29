@@ -2,7 +2,7 @@ using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 using GameSave;
-using DeviceOfHermes;
+using DeviceOfHermes.UI;
 using DeviceOfHermes.CustomDice;
 
 internal class HermesBootStrap : DiceCardAbilityBase

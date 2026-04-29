@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using HarmonyLib;
 using HarmonyExtension;
 using LOR_DiceSystem;
+using UI;
 
 namespace DeviceOfHermes;
 
@@ -91,12 +92,12 @@ internal static class CustomDicePatch
         }
     }
 
-    [HarmonyPatch(typeof(UI.UIOriginCardSlot), "SetData")]
+    [HarmonyPatch(typeof(UIOriginCardSlot), "SetData")]
     public class PatchOriginCardSlot
     {
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            var ldfld = AccessTools.Field(typeof(UI.UIOriginCardSlot), "img_BehaviourIcons");
+            var ldfld = AccessTools.Field(typeof(UIOriginCardSlot), "img_BehaviourIcons");
             var target = AccessTools.Method(typeof(Image), "set_sprite", [typeof(Sprite)]);
             var inject = AccessTools.Method(typeof(PatchOriginCardSlot), "InjectMethod");
 
@@ -139,10 +140,10 @@ internal static class CustomDicePatch
         }
     }
 
-    [HarmonyPatch(typeof(UI.UIDetailCardSlot), "SetData")]
+    [HarmonyPatch(typeof(UIDetailCardSlot), "SetData")]
     public class PatchDetailCardSlot
     {
-        static void Postfix(DiceCardItemModel cardmodel, List<UI.UIDetailCardDescSlot> ___rightDescSlotList)
+        static void Postfix(DiceCardItemModel cardmodel, List<UIDetailCardDescSlot> ___rightDescSlotList)
         {
             if (cardmodel is null)
             {

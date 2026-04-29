@@ -2499,6 +2499,66 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.StyleExtension.Yellow
   nameWithType: StyleExtension.Yellow
+- uid: DeviceOfHermes.UI
+  name: DeviceOfHermes.UI
+  href: api/DeviceOfHermes.UI.html
+  commentId: N:DeviceOfHermes.UI
+  fullName: DeviceOfHermes.UI
+  nameWithType: DeviceOfHermes.UI
+- uid: DeviceOfHermes.UI.BattleUIBehaviour
+  name: BattleUIBehaviour
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html
+  commentId: T:DeviceOfHermes.UI.BattleUIBehaviour
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour
+  nameWithType: BattleUIBehaviour
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.InitUI(System.Int32)
+  name: InitUI(int)
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_InitUI_System_Int32_
+  commentId: M:DeviceOfHermes.UI.BattleUIBehaviour.InitUI(System.Int32)
+  name.vb: InitUI(Integer)
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.InitUI(int)
+  fullName.vb: DeviceOfHermes.UI.BattleUIBehaviour.InitUI(Integer)
+  nameWithType: BattleUIBehaviour.InitUI(int)
+  nameWithType.vb: BattleUIBehaviour.InitUI(Integer)
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.InitUI*
+  name: InitUI
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_InitUI_
+  commentId: Overload:DeviceOfHermes.UI.BattleUIBehaviour.InitUI
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.InitUI
+  nameWithType: BattleUIBehaviour.InitUI
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.OnRoundStart
+  name: OnRoundStart()
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_OnRoundStart
+  commentId: M:DeviceOfHermes.UI.BattleUIBehaviour.OnRoundStart
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.OnRoundStart()
+  nameWithType: BattleUIBehaviour.OnRoundStart()
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.OnRoundStart*
+  name: OnRoundStart
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_OnRoundStart_
+  commentId: Overload:DeviceOfHermes.UI.BattleUIBehaviour.OnRoundStart
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.OnRoundStart
+  nameWithType: BattleUIBehaviour.OnRoundStart
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.OnStartBattle
+  name: OnStartBattle()
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_OnStartBattle
+  commentId: M:DeviceOfHermes.UI.BattleUIBehaviour.OnStartBattle
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.OnStartBattle()
+  nameWithType: BattleUIBehaviour.OnStartBattle()
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.OnStartBattle*
+  name: OnStartBattle
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_OnStartBattle_
+  commentId: Overload:DeviceOfHermes.UI.BattleUIBehaviour.OnStartBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.OnStartBattle
+  nameWithType: BattleUIBehaviour.OnStartBattle
+- uid: DeviceOfHermes.UI.BattleUIBehaviourExtension
+  name: BattleUIBehaviourExtension
+  href: api/DeviceOfHermes.UI.BattleUIBehaviourExtension.html
+  commentId: T:DeviceOfHermes.UI.BattleUIBehaviourExtension
+  fullName: DeviceOfHermes.UI.BattleUIBehaviourExtension
+  nameWithType: BattleUIBehaviourExtension
 - uid: DeviceOfHermes.UnitUIExtension
   name: UnitUIExtension
   href: api/DeviceOfHermes.UnitUIExtension.html

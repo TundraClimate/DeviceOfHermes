@@ -5,14 +5,14 @@ using UnityEngine.UI;
 using HarmonyLib;
 using HarmonyExtension;
 
-namespace DeviceOfHermes;
+namespace DeviceOfHermes.UI;
 
 /// <summary>A behaviour for BattleManagerUI</summary>
 public class BattleUIBehaviour : MonoBehaviour
 {
     internal static void Init()
     {
-        var harmony = new Harmony("DeviceOfHermes.BattleUIBehaviour");
+        var harmony = new Harmony("DeviceOfHermes.UI.BattleUIBehaviour");
 
         harmony.CreateClassProcessor(typeof(PatchOnRoundStart)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnStartBattle)).Patch();
