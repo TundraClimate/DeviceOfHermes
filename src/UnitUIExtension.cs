@@ -17,14 +17,6 @@ public static class UnitUIExtension
 
         harmony.CreateClassProcessor(typeof(PatchUpdator)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnAddUnit)).Patch();
-
-        ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () =>
-        {
-            foreach (var image in _images)
-            {
-                UnityEngine.Object.Destroy(image);
-            }
-        });
     }
 
     /// <summary>Says by unit on character dialog</summary>
@@ -133,8 +125,8 @@ public static class UnitUIExtension
                 img.transform.localScale *= 0.01f;
             }
 
-            _images.Add(img.gameObject);
-            img.StartCoroutine(CommonCoroutine.ImageFadeoutAndDestroy(img, duration, feed));
+            img.StartCoroutine(CommonCoroutine.ImageFadeout(img, duration, feed));
+            UnityEngine.Object.Destroy(img, duration + feed);
         });
     }
 
@@ -172,8 +164,6 @@ public static class UnitUIExtension
     private static ConditionalWeakTable<BattleUnitView, DialogContext> _table = new();
 
     private static ConditionalWeakTable<BattleUnitView, GameObject> _unitRootCanvas = new();
-
-    private static List<GameObject> _images = new();
 
     private static AccessTools.FieldRef<BattleDialogUI, TextMeshProUGUI> _txtAbnormalityDlg
         = typeof(BattleDialogUI).FieldRefAccess<TextMeshProUGUI>("_txtAbnormalityDlg");

@@ -45,16 +45,6 @@ public class CommonCoroutine
         cg.alpha = 0;
     }
 
-    /// <summary>Fadeout CanvasGroup and destroy</summary>
-    public static IEnumerator CanvasGroupFadeoutAndDestroy(CanvasGroup cg, float wait, float duration)
-    {
-        yield return CanvasGroupFadeout(cg, wait, duration);
-
-        var go = cg.gameObject;
-
-        UnityEngine.Object.Destroy(go);
-    }
-
     /// <summary>Fadein Image</summary>
     public static IEnumerator ImageFadein(Image image, float duration)
     {
@@ -103,15 +93,5 @@ public class CommonCoroutine
 
         color.a = 0;
         image.color = color;
-    }
-
-    /// <summary>Fadeout Image and destroy</summary>
-    public static IEnumerator ImageFadeoutAndDestroy(Image image, float wait, float duration)
-    {
-        yield return ImageFadeout(image, wait, duration);
-
-        var go = image.gameObject;
-
-        UnityEngine.Object.Destroy(go);
     }
 }
