@@ -1,5 +1,6 @@
 using System.Text;
 using LOR_DiceSystem;
+using HarmonyLib;
 using HarmonyExtension;
 using UnityEngine;
 using UnityEngine.UI;
@@ -192,16 +193,19 @@ public static class Extension
         };
     }
 
-    /// <summary>Returns unit hands with filter</summary>
-    public static List<BattleDiceCardModel> GetHands(this BattleUnitModel? owner, Func<BattleDiceCardModel, bool>? filter = null)
+    /// <summary>Returns unit hands</summary>
+    public static List<BattleDiceCardModel> GetHands(this BattleUnitModel? owner)
     {
-        List<BattleDiceCardModel> list = new();
-        var f = filter ??= _ => true;
+        if (owner is not null)
+        {
+            return _unitHands(owner.allyCardDetail);
+        }
 
-        owner?.allyCardDetail?.GetHand()?.Filter(f)?.Let(hands => list.AddRange(hands));
-
-        return list;
+        return new();
     }
+
+    static AccessTools.FieldRef<BattleAllyCardDetail, List<BattleDiceCardModel>> _unitHands
+        = typeof(BattleAllyCardDetail).FieldRefAccess<List<BattleDiceCardModel>>("_cardInHand");
 
     /// <summary>Returns directory of ty found assembly</summary>
     public static string GetAsmDirectory(this Type ty)
