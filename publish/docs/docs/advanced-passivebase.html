@@ -138,6 +138,11 @@
     public override void OnDropCard(BattlePlayingCardDataInUnitModel playcard)
     {
     }
+
+    public override int DrawCardAddr()
+    {
+        return 0;
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -238,6 +243,13 @@ falseを返すとそのページが捨てられるのをキャンセルするこ
 <ul>
 <li><code>playcard</code>: 使用完了できなかったページです。</li>
 </ul>
+<h3 id="drawcardaddr"><code>DrawCardAddr()</code></h3>
+<pre><code class="lang-cs">public override int DrawCardAddr()
+{
+    return 0;
+}
+</code></pre>
+<p>幕開始時のドローに加算する枚数を指定します。</p>
 
 </article>
 
