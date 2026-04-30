@@ -235,6 +235,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility
   nameWithType: AdvancedPassiveBase.CanDiscardByAbility
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
+  name: DrawCardAddr()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_DrawCardAddr
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr()
+  nameWithType: AdvancedPassiveBase.DrawCardAddr()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr*
+  name: DrawCardAddr
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_DrawCardAddr_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
+  nameWithType: AdvancedPassiveBase.DrawCardAddr
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd
   name: IsAllowRoundEnd()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsAllowRoundEnd
@@ -3000,15 +3013,15 @@ references:
   isSpec: "True"
   fullName: System.Extension.GetAsmDirectory
   nameWithType: Extension.GetAsmDirectory
-- uid: System.Extension.GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
-  name: GetHands(BattleUnitModel?, Func<BattleDiceCardModel, bool>?)
-  href: api/System.Extension.html#System_Extension_GetHands_BattleUnitModel_System_Func_BattleDiceCardModel_System_Boolean__
-  commentId: M:System.Extension.GetHands(BattleUnitModel,System.Func{BattleDiceCardModel,System.Boolean})
-  name.vb: GetHands(BattleUnitModel, Func(Of BattleDiceCardModel, Boolean))
-  fullName: System.Extension.GetHands(BattleUnitModel?, System.Func<BattleDiceCardModel, bool>?)
-  fullName.vb: System.Extension.GetHands(BattleUnitModel, System.Func(Of BattleDiceCardModel, Boolean))
-  nameWithType: Extension.GetHands(BattleUnitModel?, Func<BattleDiceCardModel, bool>?)
-  nameWithType.vb: Extension.GetHands(BattleUnitModel, Func(Of BattleDiceCardModel, Boolean))
+- uid: System.Extension.GetHands(BattleUnitModel)
+  name: GetHands(BattleUnitModel?)
+  href: api/System.Extension.html#System_Extension_GetHands_BattleUnitModel_
+  commentId: M:System.Extension.GetHands(BattleUnitModel)
+  name.vb: GetHands(BattleUnitModel)
+  fullName: System.Extension.GetHands(BattleUnitModel?)
+  fullName.vb: System.Extension.GetHands(BattleUnitModel)
+  nameWithType: Extension.GetHands(BattleUnitModel?)
+  nameWithType.vb: Extension.GetHands(BattleUnitModel)
 - uid: System.Extension.GetHands*
   name: GetHands
   href: api/System.Extension.html#System_Extension_GetHands_

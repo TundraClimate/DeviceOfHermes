@@ -87,6 +87,12 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>Addr number of draw cards</summary>
+    public virtual int DrawCardAddr()
+    {
+        return 0;
+    }
+
     static void OnTick()
     {
         var alives = BattleObjectManager.instance.GetAliveList();

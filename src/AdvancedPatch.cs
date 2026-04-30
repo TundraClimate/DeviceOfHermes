@@ -31,6 +31,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchAddBufInitializer));
         Patch(typeof(PatchAddBufWdInitializer));
         Patch(typeof(PatchUnusedRemove));
+        Patch(typeof(PatchOnDrawCardPhase));
     }
 
     public static void Init()
@@ -669,6 +670,45 @@ internal static class AdvancedPatch
                     p.OnDropCard(playcard);
                 }
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(StageController), "DrawCardPhase")]
+    class PatchOnDrawCardPhase
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var target = typeof(BattleUnitEmotionDetail).Method("DrawCardAdder");
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(
+                CodeMatch.Calls(target),
+                new CodeMatch(i => i.opcode == OpCodes.Add),
+                CodeMatch.IsStloc()
+            )
+                .Advance(1)
+                .Insert(
+                    new CodeInstruction(OpCodes.Ldloc_3),
+                    new CodeInstruction(OpCodes.Ldloc_2),
+                    new CodeInstruction(OpCodes.Call, typeof(PatchOnDrawCardPhase).Method("InjectMethod")),
+                    new CodeInstruction(OpCodes.Add),
+                    new CodeInstruction(OpCodes.Stloc_3)
+                );
+
+            return matcher.Instructions();
+        }
+
+        static int InjectMethod(BattleUnitModel owner)
+        {
+            var res = 0;
+            var passives = owner.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>();
+
+            foreach (var p in passives)
+            {
+                res += p.DrawCardAddr();
+            }
+
+            return res;
         }
     }
 }
