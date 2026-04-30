@@ -1,7 +1,5 @@
-using System.Reflection.Emit;
 using LOR_DiceSystem;
 using HarmonyLib;
-using HarmonyExtension;
 using UnityEngine;
 using DeviceOfHermes.AdvancedBase;
 
@@ -142,47 +140,60 @@ internal class PatchRevengeDice
     [HarmonyPatch(typeof(StageController), "ActivateStartBattleEffectPhase")]
     public class PatchStandbyResolve
     {
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        static Exception Finalizer(Exception __exception, List<BattlePlayingCardDataInUnitModel> ____allCardList)
         {
-            var target = typeof(BattleKeepedCardDataInUnitModel).Method("AddBehaviours", [typeof(BattleDiceCardModel), typeof(List<BattleDiceBehavior>)]);
-            var inject = typeof(PatchStandbyResolve).Method("InjectMethod");
-
-            var matcher = new CodeMatcher(instructions);
-
-            matcher.MatchStartForward(CodeMatch.Calls(target))
-                .Insert(new CodeInstruction(OpCodes.Call, inject));
-
-            return matcher.Instructions();
-        }
-
-        static List<BattleDiceBehavior> InjectMethod(List<BattleDiceBehavior> standbyDices)
-        {
-            List<BattleDiceBehavior> solved = new();
-            List<BattleDiceBehavior> revenges = new();
-            BattleUnitModel? owner = null;
-
-            foreach (var dice in standbyDices)
+            foreach (var card in ____allCardList)
             {
-                if (dice.abilityList.Exists(abi => abi is RevengeDice))
-                {
-                    owner = dice.owner;
+                var behs = card.card.CreateDiceCardBehaviorList();
 
-                    revenges.Add(dice);
-                }
-                else
+                List<BattleDiceBehavior> revenges = new();
+                BattleUnitModel? owner = null;
+
+                foreach (var dice in behs)
                 {
-                    solved.Add(dice);
+                    if (dice.Type is BehaviourType.Standby && dice.Detail is BehaviourDetail.Slash or BehaviourDetail.Penetrate or BehaviourDetail.Hit && dice.abilityList.Exists(abi => abi is RevengeDice))
+                    {
+                        dice.card = card;
+                        owner = dice.owner;
+
+                        revenges.Add(dice);
+                    }
+                }
+
+                if (owner is not null)
+                {
+                    var xmlInfo = revenges[0].card.card.XmlData;
+
+                    RevengeDice.AddRevengeCard(owner, xmlInfo, revenges);
                 }
             }
 
-            if (owner is not null)
+            foreach (var unit in BattleObjectManager.instance.GetAliveList())
             {
-                var xmlInfo = revenges[0].card.card.XmlData;
+                if (unit?.cardSlotDetail?.keepCard?.cardBehaviorQueue is null)
+                {
+                    continue;
+                }
 
-                RevengeDice.AddRevengeCard(owner, xmlInfo, revenges);
+                List<BattleDiceBehavior> behs = new();
+
+                foreach (var dice in unit.cardSlotDetail.keepCard.cardBehaviorQueue)
+                {
+                    if (!dice.abilityList.Exists(abi => abi is RevengeDice))
+                    {
+                        behs.Add(dice);
+                    }
+                }
+
+                unit.cardSlotDetail.keepCard.cardBehaviorQueue.Clear();
+
+                foreach (var dice in behs)
+                {
+                    unit.cardSlotDetail.keepCard.cardBehaviorQueue.Enqueue(dice);
+                }
             }
 
-            return solved;
+            return __exception;
         }
     }
 
