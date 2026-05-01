@@ -45,12 +45,7 @@ public static class UnitUIExtension
         txtAbnormalityDlg.fontMaterial.SetColor("_GlowColor", new Color(0, 0, 0, 0));
         txtAbnormalityDlg.color = new Color(255, 255, 255, 255);
 
-        if (routine != null)
-        {
-            dialog.StopCoroutine(routine);
-            routine = null;
-            canvas.enabled = false;
-        }
+        dialog.StopAllCoroutines();
 
         if (_table.TryGetValue(view, out var ctx))
         {
@@ -66,7 +61,6 @@ public static class UnitUIExtension
         }
 
         canvas.enabled = true;
-        cg.blocksRaycasts = true;
         routine = dialog.StartCoroutine(Routine(canvas, cg, duration, view, scale));
     }
 
@@ -76,30 +70,11 @@ public static class UnitUIExtension
 
         cg.transform.localScale = new Vector3(scale, scale, 1f);
 
-        float elapsed = 0f;
-
-        while (elapsed < 1f)
-        {
-            elapsed += Time.deltaTime * 5f;
-            cg.alpha = elapsed;
-            yield return null;
-        }
-
-        yield return YieldCache.WaitForSeconds(duration);
-
-        elapsed = 0f;
-
-        while (elapsed < 1f)
-        {
-            elapsed += Time.deltaTime * 5f;
-            cg.alpha = 1f - elapsed;
-            yield return null;
-        }
+        yield return CommonCoroutine.CanvasGroupFadein(cg, 0.2f);
+        yield return CommonCoroutine.CanvasGroupFadeout(cg, duration, 0.2f);
 
         cg.transform.localScale = reScale;
         canvas.enabled = false;
-        cg.interactable = false;
-        cg.blocksRaycasts = false;
 
         _table.Remove(vRef);
 
