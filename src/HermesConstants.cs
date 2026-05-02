@@ -15,6 +15,11 @@ public static class HermesConstants
         UnbreakableSlash = Artwork.CreateSprite(LoadBytes("unbreakable_slash.png"), pixPerUnit: 100f)!;
         UnbreakablePenetrate = Artwork.CreateSprite(LoadBytes("unbreakable_penetrate.png"), pixPerUnit: 100f)!;
         UnbreakableHit = Artwork.CreateSprite(LoadBytes("unbreakable_hit.png"), pixPerUnit: 100f)!;
+        SecondlySlash = Artwork.CreateSprite(LoadBytes("secondly_slash.png"), pixPerUnit: 100f)!;
+        SecondlyPenetrate = Artwork.CreateSprite(LoadBytes("secondly_penetrate.png"), pixPerUnit: 100f)!;
+        SecondlyHit = Artwork.CreateSprite(LoadBytes("secondly_hit.png"), pixPerUnit: 100f)!;
+        SecondlyGuard = Artwork.CreateSprite(LoadBytes("secondly_guard.png"), pixPerUnit: 100f)!;
+        SecondlyEvasion = Artwork.CreateSprite(LoadBytes("secondly_evade.png"), pixPerUnit: 100f)!;
     }
 
     private static byte[] LoadBytes(string name)
@@ -49,4 +54,19 @@ public static class HermesConstants
 
     /// A sprite used by <see cref="DeviceOfHermes.CustomDice.UnbreakableDice"/>
     public static Sprite UnbreakableHit;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.SecondlyDice"/>
+    public static Sprite SecondlySlash;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.SecondlyDice"/>
+    public static Sprite SecondlyPenetrate;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.SecondlyDice"/>
+    public static Sprite SecondlyHit;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.SecondlyDice"/>
+    public static Sprite SecondlyGuard;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.SecondlyDice"/>
+    public static Sprite SecondlyEvasion;
 }

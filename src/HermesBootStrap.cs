@@ -24,6 +24,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
         new RevengeDice();
         new UnbreakableDice();
+        new SecondlyDice();
 
         return "";
     }
