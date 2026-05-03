@@ -60,6 +60,8 @@ public class SecondlyDice : AdvancedDiceBase
         harmony.CreateClassProcessor(typeof(PatchDecision)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnParryingResultDecided)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnEndAction)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchSetBehaviourResult)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchOnDiceRollen)).Patch();
     }
 
     /// <summary>Add secondly dice</summary>
@@ -73,6 +75,10 @@ public class SecondlyDice : AdvancedDiceBase
     private class CardModelAdditFields
     {
         public BattleDiceBehavior? _tempBehavior;
+
+        public BattleDiceBehavior? _tempSecondly;
+
+        public Dictionary<int, BattleDiceBehavior> _uiBehaviorDict = new();
 
         public Queue<BattleDiceBehavior> _secondlyDiceQueue = new();
 
@@ -90,9 +96,19 @@ public class SecondlyDice : AdvancedDiceBase
                 playingCard.currentBehavior = Mem.Take(ref _tempBehavior);
             }
 
-            if (!IsBonusDice() && _secondlyDiceQueue.Count != 0)
+            if (IsBonusDice())
             {
-                _secondlyDiceQueue.Dequeue();
+                var dice = _secondlyDiceQueue.Peek();
+
+                _uiBehaviorDict.TryAdd(dice.Index, dice);
+                _tempSecondly = dice;
+            }
+            else if (_secondlyDiceQueue.Count != 0)
+            {
+                var dice = _secondlyDiceQueue.Dequeue();
+
+                _uiBehaviorDict.TryAdd(dice.Index, dice);
+                _tempSecondly = dice;
             }
         }
     }
@@ -284,6 +300,156 @@ public class SecondlyDice : AdvancedDiceBase
             if (_table.TryGetValue(____teamEnemy.playingCard, out var librarianAdditFields))
             {
                 librarianAdditFields.EndAction(____teamLibrarian.playingCard);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleParryingManager), "SetBehaviourResultData")]
+    class PatchSetBehaviourResult
+    {
+        static void Postfix(BattleParryingManager __instance, BattleParryingManager.ParryingTeam team, BattleParryingManager.ParryingTeam opponentTeam, BattleCardTotalResult result)
+        {
+            if (team.playingCard is null)
+            {
+                return;
+            }
+
+            if (!_table.TryGetValue(team.playingCard, out var additFields))
+            {
+                return;
+            }
+
+            var beh = Mem.Take(ref additFields._tempSecondly);
+
+            if (beh is null)
+            {
+                return;
+            }
+
+            var diceBehaviourResultData = default(DiceBehaviourResultData);
+            var parryingDiceType = beh.Detail switch
+            {
+                BehaviourDetail.Slash or BehaviourDetail.Penetrate or BehaviourDetail.Hit => BattleParryingManager.ParryingDiceType.Attack,
+                _ => BattleParryingManager.ParryingDiceType.Defense,
+            };
+
+            if (parryingDiceType != BattleParryingManager.ParryingDiceType.Attack)
+            {
+                if (parryingDiceType == BattleParryingManager.ParryingDiceType.Defense)
+                {
+                    diceBehaviourResultData.actionType = ActionType.Def;
+                }
+            }
+            else
+            {
+                diceBehaviourResultData.actionType = ActionType.Atk;
+            }
+            if (diceBehaviourResultData.actionType == ActionType.Def && !opponentTeam.DiceExists())
+            {
+                diceBehaviourResultData.skip = true;
+                result.SetSkip(DiceUITiming.Start);
+            }
+            else
+            {
+                diceBehaviourResultData.skip = false;
+            }
+
+            diceBehaviourResultData.passingEvasion = false;
+            diceBehaviourResultData.BreakState = false;
+
+            diceBehaviourResultData.passingEvasion = beh.passingEvasion;
+            diceBehaviourResultData.BreakState = beh.breakState;
+
+            diceBehaviourResultData.behaviourDetail = beh.Detail;
+
+            if (beh.card.card.GetSpec().Ranged == CardRange.Far)
+            {
+                diceBehaviourResultData.range = CardRange.Far;
+            }
+            else
+            {
+                diceBehaviourResultData.range = CardRange.Near;
+            }
+
+            diceBehaviourResultData.actionDetail = MotionConverter.MotionToAction(beh.behaviourInCard.MotionDetail);
+
+            if (beh.behaviourInCard.MotionDetailDefault != MotionDetail.N && !beh.owner.customBook.ContainsCategory(beh.card.card.GetCategory()))
+            {
+                diceBehaviourResultData.actionDetail = MotionConverter.MotionToAction(beh.behaviourInCard.MotionDetail);
+            }
+
+            diceBehaviourResultData.actionStartDir = ActionDirection.Front;
+
+            var decidedResult = _decidedResultRef(__instance);
+
+            if (decidedResult == BattleParryingManager.ParryingDecisionResult.Draw)
+            {
+                diceBehaviourResultData.result = Result.Draw;
+            }
+            else if (decidedResult == BattleParryingManager.ParryingDecisionResult.WinEnemy)
+            {
+                if (beh.owner.faction is Faction.Enemy)
+                {
+                    diceBehaviourResultData.result = Result.Win;
+                }
+                else
+                {
+                    diceBehaviourResultData.result = Result.Lose;
+                }
+            }
+            else if (beh.owner.faction is Faction.Player)
+            {
+                diceBehaviourResultData.result = Result.Win;
+            }
+            else
+            {
+                diceBehaviourResultData.result = Result.Lose;
+            }
+
+            if (diceBehaviourResultData.result == Result.Lose && opponentTeam.GetBehaviourType() == BehaviourType.Atk && diceBehaviourResultData.range != CardRange.Far)
+            {
+                diceBehaviourResultData.actionDetail = ActionDetail.Damaged;
+            }
+
+            result.SetBehaviourResult(diceBehaviourResultData);
+        }
+    }
+
+    [HarmonyPatch(typeof(RencounterManager), "PrintActivatedAbility")]
+    class PatchOnDiceRollen
+    {
+        static void Prefix(
+            BattleCardBehaviourResult ____currentEnemyBehaviourResult,
+            BattleCardBehaviourResult ____currentLibrarianBehaviourResult,
+            BattleUnitView ____enemy,
+            BattleUnitView ____librarian
+        )
+        {
+            PrepareDice(____currentEnemyBehaviourResult, ____enemy);
+            PrepareDice(____currentLibrarianBehaviourResult, ____librarian);
+        }
+
+        static void PrepareDice(BattleCardBehaviourResult result, BattleUnitView view)
+        {
+            var playCard = result.playingCard;
+
+            if (playCard is null)
+            {
+                return;
+            }
+
+            if (!_table.TryGetValue(playCard, out var additFields))
+            {
+                return;
+            }
+
+            if (additFields._uiBehaviorDict.TryGetValue(result.behaviourIdx, out var beh))
+            {
+                view.diceActionUI.currentDice.PrepareDice(new BattleDiceBehaviourUI(beh));
+                view.diceActionUI.currentDice.SetDiceFace(beh.DiceResultValue);
+                view.diceActionUI.currentDice.SetDiceValue(true, beh.DiceResultValue);
+
+                additFields._uiBehaviorDict.Remove(result.behaviourIdx);
             }
         }
     }

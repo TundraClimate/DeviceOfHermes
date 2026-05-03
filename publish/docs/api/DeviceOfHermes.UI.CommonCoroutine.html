@@ -166,24 +166,63 @@ Class CommonCoroutine  <a class="header-action link-secondary" title="View sourc
 </h2>
 
 
-  <a id="DeviceOfHermes_UI_CommonCoroutine_ImageFadeout_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadeout*"></a>
+  <a id="DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadein_" data-uid="DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein*"></a>
 
-  <h3 id="DeviceOfHermes_UI_CommonCoroutine_ImageFadeout_UnityEngine_UI_Image_System_Single_System_Single_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadeout(UnityEngine.UI.Image,System.Single,System.Single)">
-  ImageFadeout(Image, float, float)
+  <h3 id="DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadein_UnityEngine_CanvasGroup_System_Single_" data-uid="DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup,System.Single)">
+  CanvasGroupFadein(CanvasGroup, float)
   <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CommonCoroutine.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Fadeout Image</p>
+  <div class="markdown level1 summary"><p>Fadein CanvasGroup</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator ImageFadeout(Image image, float wait, float duration)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator CanvasGroupFadein(CanvasGroup cg, float duration)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>image</code> <span class="xref">Image</span></dt>
+    <dt><code>cg</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadeout_" data-uid="DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout*"></a>
+
+  <h3 id="DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadeout_UnityEngine_CanvasGroup_System_Single_System_Single_" data-uid="DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup,System.Single,System.Single)">
+  CanvasGroupFadeout(CanvasGroup, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CommonCoroutine.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fadeout CanvasGroup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CanvasGroupFadeout(CanvasGroup cg, float wait, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cg</code> <span class="xref">CanvasGroup</span></dt>
     <dd></dd>
     <dt><code>wait</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
@@ -207,19 +246,58 @@ Class CommonCoroutine  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="DeviceOfHermes_UI_CommonCoroutine_ImageFadeoutAndDestroy_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy*"></a>
+  <a id="DeviceOfHermes_UI_CommonCoroutine_ImageFadein_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadein*"></a>
 
-  <h3 id="DeviceOfHermes_UI_CommonCoroutine_ImageFadeoutAndDestroy_UnityEngine_UI_Image_System_Single_System_Single_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy(UnityEngine.UI.Image,System.Single,System.Single)">
-  ImageFadeoutAndDestroy(Image, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CommonCoroutine.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <h3 id="DeviceOfHermes_UI_CommonCoroutine_ImageFadein_UnityEngine_UI_Image_System_Single_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadein(UnityEngine.UI.Image,System.Single)">
+  ImageFadein(Image, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CommonCoroutine.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Fadeout Image and destroy</p>
+  <div class="markdown level1 summary"><p>Fadein Image</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator ImageFadeoutAndDestroy(Image image, float wait, float duration)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator ImageFadein(Image image, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <span class="xref">Image</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_UI_CommonCoroutine_ImageFadeout_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadeout*"></a>
+
+  <h3 id="DeviceOfHermes_UI_CommonCoroutine_ImageFadeout_UnityEngine_UI_Image_System_Single_System_Single_" data-uid="DeviceOfHermes.UI.CommonCoroutine.ImageFadeout(UnityEngine.UI.Image,System.Single,System.Single)">
+  ImageFadeout(Image, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/CommonCoroutine.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fadeout Image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ImageFadeout(Image image, float wait, float duration)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

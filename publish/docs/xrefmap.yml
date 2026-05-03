@@ -1054,6 +1054,28 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge
   nameWithType: RevengeDice.OnRevenge
+- uid: DeviceOfHermes.CustomDice.SecondlyDice
+  name: SecondlyDice
+  href: api/DeviceOfHermes.CustomDice.SecondlyDice.html
+  commentId: T:DeviceOfHermes.CustomDice.SecondlyDice
+  fullName: DeviceOfHermes.CustomDice.SecondlyDice
+  nameWithType: SecondlyDice
+- uid: DeviceOfHermes.CustomDice.SecondlyDice.AddSecondlyDice(BattlePlayingCardDataInUnitModel,System.Collections.Generic.List{BattleDiceBehavior})
+  name: AddSecondlyDice(BattlePlayingCardDataInUnitModel, params List<BattleDiceBehavior>)
+  href: api/DeviceOfHermes.CustomDice.SecondlyDice.html#DeviceOfHermes_CustomDice_SecondlyDice_AddSecondlyDice_BattlePlayingCardDataInUnitModel_System_Collections_Generic_List_BattleDiceBehavior__
+  commentId: M:DeviceOfHermes.CustomDice.SecondlyDice.AddSecondlyDice(BattlePlayingCardDataInUnitModel,System.Collections.Generic.List{BattleDiceBehavior})
+  name.vb: AddSecondlyDice(BattlePlayingCardDataInUnitModel, List(Of BattleDiceBehavior))
+  fullName: DeviceOfHermes.CustomDice.SecondlyDice.AddSecondlyDice(BattlePlayingCardDataInUnitModel, params System.Collections.Generic.List<BattleDiceBehavior>)
+  fullName.vb: DeviceOfHermes.CustomDice.SecondlyDice.AddSecondlyDice(BattlePlayingCardDataInUnitModel, System.Collections.Generic.List(Of BattleDiceBehavior))
+  nameWithType: SecondlyDice.AddSecondlyDice(BattlePlayingCardDataInUnitModel, params List<BattleDiceBehavior>)
+  nameWithType.vb: SecondlyDice.AddSecondlyDice(BattlePlayingCardDataInUnitModel, List(Of BattleDiceBehavior))
+- uid: DeviceOfHermes.CustomDice.SecondlyDice.AddSecondlyDice*
+  name: AddSecondlyDice
+  href: api/DeviceOfHermes.CustomDice.SecondlyDice.html#DeviceOfHermes_CustomDice_SecondlyDice_AddSecondlyDice_
+  commentId: Overload:DeviceOfHermes.CustomDice.SecondlyDice.AddSecondlyDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.SecondlyDice.AddSecondlyDice
+  nameWithType: SecondlyDice.AddSecondlyDice
 - uid: DeviceOfHermes.CustomDice.UnbreakableDice
   name: UnbreakableDice
   href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html
@@ -1132,6 +1154,36 @@ references:
   commentId: F:DeviceOfHermes.HermesConstants.RevengeDiceSlash
   fullName: DeviceOfHermes.HermesConstants.RevengeDiceSlash
   nameWithType: HermesConstants.RevengeDiceSlash
+- uid: DeviceOfHermes.HermesConstants.SecondlyEvasion
+  name: SecondlyEvasion
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_SecondlyEvasion
+  commentId: F:DeviceOfHermes.HermesConstants.SecondlyEvasion
+  fullName: DeviceOfHermes.HermesConstants.SecondlyEvasion
+  nameWithType: HermesConstants.SecondlyEvasion
+- uid: DeviceOfHermes.HermesConstants.SecondlyGuard
+  name: SecondlyGuard
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_SecondlyGuard
+  commentId: F:DeviceOfHermes.HermesConstants.SecondlyGuard
+  fullName: DeviceOfHermes.HermesConstants.SecondlyGuard
+  nameWithType: HermesConstants.SecondlyGuard
+- uid: DeviceOfHermes.HermesConstants.SecondlyHit
+  name: SecondlyHit
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_SecondlyHit
+  commentId: F:DeviceOfHermes.HermesConstants.SecondlyHit
+  fullName: DeviceOfHermes.HermesConstants.SecondlyHit
+  nameWithType: HermesConstants.SecondlyHit
+- uid: DeviceOfHermes.HermesConstants.SecondlyPenetrate
+  name: SecondlyPenetrate
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_SecondlyPenetrate
+  commentId: F:DeviceOfHermes.HermesConstants.SecondlyPenetrate
+  fullName: DeviceOfHermes.HermesConstants.SecondlyPenetrate
+  nameWithType: HermesConstants.SecondlyPenetrate
+- uid: DeviceOfHermes.HermesConstants.SecondlySlash
+  name: SecondlySlash
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_SecondlySlash
+  commentId: F:DeviceOfHermes.HermesConstants.SecondlySlash
+  fullName: DeviceOfHermes.HermesConstants.SecondlySlash
+  nameWithType: HermesConstants.SecondlySlash
 - uid: DeviceOfHermes.HermesConstants.UnbreakableHit
   name: UnbreakableHit
   href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakableHit
@@ -2578,6 +2630,54 @@ references:
   commentId: T:DeviceOfHermes.UI.CommonCoroutine
   fullName: DeviceOfHermes.UI.CommonCoroutine
   nameWithType: CommonCoroutine
+- uid: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup,System.Single)
+  name: CanvasGroupFadein(CanvasGroup, float)
+  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadein_UnityEngine_CanvasGroup_System_Single_
+  commentId: M:DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup,System.Single)
+  name.vb: CanvasGroupFadein(CanvasGroup, Single)
+  fullName: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup, float)
+  fullName.vb: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup, Single)
+  nameWithType: CommonCoroutine.CanvasGroupFadein(CanvasGroup, float)
+  nameWithType.vb: CommonCoroutine.CanvasGroupFadein(CanvasGroup, Single)
+- uid: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein*
+  name: CanvasGroupFadein
+  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadein_
+  commentId: Overload:DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadein
+  nameWithType: CommonCoroutine.CanvasGroupFadein
+- uid: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup,System.Single,System.Single)
+  name: CanvasGroupFadeout(CanvasGroup, float, float)
+  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadeout_UnityEngine_CanvasGroup_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup,System.Single,System.Single)
+  name.vb: CanvasGroupFadeout(CanvasGroup, Single, Single)
+  fullName: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup, float, float)
+  fullName.vb: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup, Single, Single)
+  nameWithType: CommonCoroutine.CanvasGroupFadeout(CanvasGroup, float, float)
+  nameWithType.vb: CommonCoroutine.CanvasGroupFadeout(CanvasGroup, Single, Single)
+- uid: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout*
+  name: CanvasGroupFadeout
+  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_CanvasGroupFadeout_
+  commentId: Overload:DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CommonCoroutine.CanvasGroupFadeout
+  nameWithType: CommonCoroutine.CanvasGroupFadeout
+- uid: DeviceOfHermes.UI.CommonCoroutine.ImageFadein(UnityEngine.UI.Image,System.Single)
+  name: ImageFadein(Image, float)
+  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_ImageFadein_UnityEngine_UI_Image_System_Single_
+  commentId: M:DeviceOfHermes.UI.CommonCoroutine.ImageFadein(UnityEngine.UI.Image,System.Single)
+  name.vb: ImageFadein(Image, Single)
+  fullName: DeviceOfHermes.UI.CommonCoroutine.ImageFadein(UnityEngine.UI.Image, float)
+  fullName.vb: DeviceOfHermes.UI.CommonCoroutine.ImageFadein(UnityEngine.UI.Image, Single)
+  nameWithType: CommonCoroutine.ImageFadein(Image, float)
+  nameWithType.vb: CommonCoroutine.ImageFadein(Image, Single)
+- uid: DeviceOfHermes.UI.CommonCoroutine.ImageFadein*
+  name: ImageFadein
+  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_ImageFadein_
+  commentId: Overload:DeviceOfHermes.UI.CommonCoroutine.ImageFadein
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CommonCoroutine.ImageFadein
+  nameWithType: CommonCoroutine.ImageFadein
 - uid: DeviceOfHermes.UI.CommonCoroutine.ImageFadeout(UnityEngine.UI.Image,System.Single,System.Single)
   name: ImageFadeout(Image, float, float)
   href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_ImageFadeout_UnityEngine_UI_Image_System_Single_System_Single_
@@ -2594,22 +2694,6 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UI.CommonCoroutine.ImageFadeout
   nameWithType: CommonCoroutine.ImageFadeout
-- uid: DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy(UnityEngine.UI.Image,System.Single,System.Single)
-  name: ImageFadeoutAndDestroy(Image, float, float)
-  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_ImageFadeoutAndDestroy_UnityEngine_UI_Image_System_Single_System_Single_
-  commentId: M:DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy(UnityEngine.UI.Image,System.Single,System.Single)
-  name.vb: ImageFadeoutAndDestroy(Image, Single, Single)
-  fullName: DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy(UnityEngine.UI.Image, float, float)
-  fullName.vb: DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy(UnityEngine.UI.Image, Single, Single)
-  nameWithType: CommonCoroutine.ImageFadeoutAndDestroy(Image, float, float)
-  nameWithType.vb: CommonCoroutine.ImageFadeoutAndDestroy(Image, Single, Single)
-- uid: DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy*
-  name: ImageFadeoutAndDestroy
-  href: api/DeviceOfHermes.UI.CommonCoroutine.html#DeviceOfHermes_UI_CommonCoroutine_ImageFadeoutAndDestroy_
-  commentId: Overload:DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy
-  isSpec: "True"
-  fullName: DeviceOfHermes.UI.CommonCoroutine.ImageFadeoutAndDestroy
-  nameWithType: CommonCoroutine.ImageFadeoutAndDestroy
 - uid: DeviceOfHermes.UnitUIExtension
   name: UnitUIExtension
   href: api/DeviceOfHermes.UnitUIExtension.html
