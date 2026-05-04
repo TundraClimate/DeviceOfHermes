@@ -1,5 +1,6 @@
 using System.Reflection;
 using HarmonyLib;
+using HarmonyExtension;
 using UnityEngine;
 using GameSave;
 using DeviceOfHermes;
@@ -18,6 +19,8 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
+        LoadPreloadAssemblies();
+
         UnitUIExtension.Init();
         DynamicAbility.Init();
         BattleUIBehaviour.Init();
@@ -29,13 +32,57 @@ internal class HermesBootStrap : DiceCardAbilityBase
         return "";
     }
 
-    private static void LoadNotExists(string depsPath)
+    private static void LoadPreloadAssemblies()
+    {
+        try
+        {
+            var popupInstance = UnityEngine.Object.FindObjectOfType<EntryScene>().modPopup;
+            var contents = (List<UI.ModSlotData>)typeof(UI.UIModPopup).Field("dataList").GetValue(popupInstance);
+
+            contents.RemoveAll(mod => mod is null || !mod.IsActivated);
+
+            foreach (var content in contents)
+            {
+                var modDir = content.ModInfo.dirInfo.FullName;
+                var flDir = Path.Combine(modDir, "Assemblies", "DoHAssemblies");
+
+                if (Directory.Exists(flDir))
+                {
+                    var files = Directory.GetFiles(flDir);
+
+                    foreach (var file in files)
+                    {
+                        LoadNotExists(file);
+                    }
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Hermes.Say($"Error by loadings DoHAssemblies files: {e.Message}", MessageLevel.Error);
+            Hermes.Say($"Stacktrace: {e.StackTrace}");
+        }
+    }
+
+    private static void LoadNotExistsFromDeps(string depsPath)
     {
         var path = Path.Combine(DepsPath, depsPath);
 
+        LoadNotExists(path);
+    }
+
+    private static void LoadNotExists(string path)
+    {
         if (!File.Exists(path))
         {
             Hermes.Say($"A file '{path}' is not exists");
+
+            return;
+        }
+
+        if (Path.GetExtension(path) != ".dll")
+        {
+            Hermes.Say($"A file '{path}' is not dll");
 
             return;
         }
