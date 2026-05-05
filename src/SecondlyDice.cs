@@ -326,6 +326,11 @@ public class SecondlyDice : AdvancedDiceBase
                 return;
             }
 
+            if (!opponentTeam.DiceExists())
+            {
+                return;
+            }
+
             var diceBehaviourResultData = default(DiceBehaviourResultData);
             var parryingDiceType = beh.Detail switch
             {
@@ -344,16 +349,8 @@ public class SecondlyDice : AdvancedDiceBase
             {
                 diceBehaviourResultData.actionType = ActionType.Atk;
             }
-            if (diceBehaviourResultData.actionType == ActionType.Def && !opponentTeam.DiceExists())
-            {
-                diceBehaviourResultData.skip = true;
-                result.SetSkip(DiceUITiming.Start);
-            }
-            else
-            {
-                diceBehaviourResultData.skip = false;
-            }
 
+            diceBehaviourResultData.skip = false;
             diceBehaviourResultData.passingEvasion = false;
             diceBehaviourResultData.BreakState = false;
 
