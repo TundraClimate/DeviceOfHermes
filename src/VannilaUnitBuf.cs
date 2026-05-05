@@ -88,7 +88,7 @@ public class VannilaUnitBuf
     {
         if (_forcelyMax.TryGetValue(__instance.bufType, out var max))
         {
-            __instance.stack = max.Min(__instance.stack + addedStack);
+            __instance.stack = max.Min(__instance.stack);
 
             return false;
         }
@@ -109,7 +109,7 @@ public class VannilaUnitBuf
 
                 if (cond(__instance, _owner))
                 {
-                    __instance.stack = max.Min(__instance.stack + addedStack);
+                    __instance.stack = max.Min(__instance.stack);
 
                     return false;
                 }
