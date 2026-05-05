@@ -320,6 +320,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.RencounterEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.RencounterEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.RencounterEvent",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.RencounterEvent.yml\" sourcestartlinenumber=\"1\">An enum of events on rencounter</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.RencounterEventExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.RencounterEventExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.RencounterEventExtension",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.RencounterEventExtension.yml\" sourcestartlinenumber=\"1\">An extension of events on rencounter</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Resource.Artwork.yml",
       "output": {
         ".html": {
@@ -827,6 +855,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/read-xmlparser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/rencounter-event.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/rencounter-event.html"
         }
       },
       "version": ""

@@ -1285,6 +1285,82 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.PassiveResolver.LockIfExists
   nameWithType: PassiveResolver.LockIfExists
+- uid: DeviceOfHermes.RencounterEvent
+  name: RencounterEvent
+  href: api/DeviceOfHermes.RencounterEvent.html
+  commentId: T:DeviceOfHermes.RencounterEvent
+  fullName: DeviceOfHermes.RencounterEvent
+  nameWithType: RencounterEvent
+- uid: DeviceOfHermes.RencounterEvent.AfterAction
+  name: AfterAction
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_AfterAction
+  commentId: F:DeviceOfHermes.RencounterEvent.AfterAction
+  fullName: DeviceOfHermes.RencounterEvent.AfterAction
+  nameWithType: RencounterEvent.AfterAction
+- uid: DeviceOfHermes.RencounterEvent.EndCardAction
+  name: EndCardAction
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_EndCardAction
+  commentId: F:DeviceOfHermes.RencounterEvent.EndCardAction
+  fullName: DeviceOfHermes.RencounterEvent.EndCardAction
+  nameWithType: RencounterEvent.EndCardAction
+- uid: DeviceOfHermes.RencounterEvent.PrintDamagedEffect
+  name: PrintDamagedEffect
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_PrintDamagedEffect
+  commentId: F:DeviceOfHermes.RencounterEvent.PrintDamagedEffect
+  fullName: DeviceOfHermes.RencounterEvent.PrintDamagedEffect
+  nameWithType: RencounterEvent.PrintDamagedEffect
+- uid: DeviceOfHermes.RencounterEvent.PrintEffect
+  name: PrintEffect
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_PrintEffect
+  commentId: F:DeviceOfHermes.RencounterEvent.PrintEffect
+  fullName: DeviceOfHermes.RencounterEvent.PrintEffect
+  nameWithType: RencounterEvent.PrintEffect
+- uid: DeviceOfHermes.RencounterEvent.Rolldice
+  name: Rolldice
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_Rolldice
+  commentId: F:DeviceOfHermes.RencounterEvent.Rolldice
+  fullName: DeviceOfHermes.RencounterEvent.Rolldice
+  nameWithType: RencounterEvent.Rolldice
+- uid: DeviceOfHermes.RencounterEvent.SucceedAtk
+  name: SucceedAtk
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_SucceedAtk
+  commentId: F:DeviceOfHermes.RencounterEvent.SucceedAtk
+  fullName: DeviceOfHermes.RencounterEvent.SucceedAtk
+  nameWithType: RencounterEvent.SucceedAtk
+- uid: DeviceOfHermes.RencounterEvent.TakeDamaged
+  name: TakeDamaged
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_TakeDamaged
+  commentId: F:DeviceOfHermes.RencounterEvent.TakeDamaged
+  fullName: DeviceOfHermes.RencounterEvent.TakeDamaged
+  nameWithType: RencounterEvent.TakeDamaged
+- uid: DeviceOfHermes.RencounterEvent.UseCard
+  name: UseCard
+  href: api/DeviceOfHermes.RencounterEvent.html#DeviceOfHermes_RencounterEvent_UseCard
+  commentId: F:DeviceOfHermes.RencounterEvent.UseCard
+  fullName: DeviceOfHermes.RencounterEvent.UseCard
+  nameWithType: RencounterEvent.UseCard
+- uid: DeviceOfHermes.RencounterEventExtension
+  name: RencounterEventExtension
+  href: api/DeviceOfHermes.RencounterEventExtension.html
+  commentId: T:DeviceOfHermes.RencounterEventExtension
+  fullName: DeviceOfHermes.RencounterEventExtension
+  nameWithType: RencounterEventExtension
+- uid: DeviceOfHermes.RencounterEventExtension.AddRencounterEvent(BattleUnitModel,DeviceOfHermes.RencounterEvent,System.Action)
+  name: AddRencounterEvent(BattleUnitModel?, RencounterEvent, Action)
+  href: api/DeviceOfHermes.RencounterEventExtension.html#DeviceOfHermes_RencounterEventExtension_AddRencounterEvent_BattleUnitModel_DeviceOfHermes_RencounterEvent_System_Action_
+  commentId: M:DeviceOfHermes.RencounterEventExtension.AddRencounterEvent(BattleUnitModel,DeviceOfHermes.RencounterEvent,System.Action)
+  name.vb: AddRencounterEvent(BattleUnitModel, RencounterEvent, Action)
+  fullName: DeviceOfHermes.RencounterEventExtension.AddRencounterEvent(BattleUnitModel?, DeviceOfHermes.RencounterEvent, System.Action)
+  fullName.vb: DeviceOfHermes.RencounterEventExtension.AddRencounterEvent(BattleUnitModel, DeviceOfHermes.RencounterEvent, System.Action)
+  nameWithType: RencounterEventExtension.AddRencounterEvent(BattleUnitModel?, RencounterEvent, Action)
+  nameWithType.vb: RencounterEventExtension.AddRencounterEvent(BattleUnitModel, RencounterEvent, Action)
+- uid: DeviceOfHermes.RencounterEventExtension.AddRencounterEvent*
+  name: AddRencounterEvent
+  href: api/DeviceOfHermes.RencounterEventExtension.html#DeviceOfHermes_RencounterEventExtension_AddRencounterEvent_
+  commentId: Overload:DeviceOfHermes.RencounterEventExtension.AddRencounterEvent
+  isSpec: "True"
+  fullName: DeviceOfHermes.RencounterEventExtension.AddRencounterEvent
+  nameWithType: RencounterEventExtension.AddRencounterEvent
 - uid: DeviceOfHermes.Resource
   name: DeviceOfHermes.Resource
   href: api/DeviceOfHermes.Resource.html
