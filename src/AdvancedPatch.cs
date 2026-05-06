@@ -419,67 +419,27 @@ internal static class AdvancedPatch
         }
     }
 
-    [HarmonyPatch(typeof(BattleDiceBehavior), "GiveDamage")]
+    [HarmonyPatch(typeof(BattleUnitModel), "TakeDamage")]
     class PatchDiceDamageValue
     {
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        static void Prefix(ref int v, DamageType type, BattleUnitModel attacker)
         {
-            var matcher = new CodeMatcher(instructions);
-
-            matcher.MatchStartForward(
-                CodeMatch.IsLdloc(),
-                new CodeMatch(OpCodes.Ldc_I4_0),
-                new CodeMatch(OpCodes.Ldarg_0),
-                CodeMatch.Calls(typeof(BattleDiceBehavior).Method("get_owner")),
-                new CodeMatch(OpCodes.Ldc_I4_0),
-                CodeMatch.Calls(typeof(BattleUnitModel).Method("TakeDamage"))
-            )
-                .Advance(1)
-                .Insert(
-                    new CodeInstruction(OpCodes.Ldarg_0),
-                    new CodeInstruction(OpCodes.Call, typeof(PatchDiceDamageValue).Method("ChangeDamage"))
-                );
-
-            matcher.MatchStartForward(
-                CodeMatch.IsLdloc(),
-                new CodeMatch(OpCodes.Ldc_I4_0),
-                new CodeMatch(OpCodes.Ldarg_0),
-                CodeMatch.Calls(typeof(BattleDiceBehavior).Method("get_owner")),
-                CodeMatch.IsLdloc(),
-                new CodeMatch(OpCodes.Ldc_I4_0),
-                CodeMatch.Calls(typeof(BattleUnitModel).Method("TakeBreakDamage"))
-            )
-                .Advance(1)
-                .Insert(
-                    new CodeInstruction(OpCodes.Ldarg_0),
-                    new CodeInstruction(OpCodes.Call, typeof(PatchDiceDamageValue).Method("ChangeBreakDamage"))
-                );
-
-            return matcher.Instructions();
-        }
-
-        static int ChangeDamage(int origin, BattleDiceBehavior instance)
-        {
-            var res = origin;
-
-            foreach (var abi in instance.abilityList.OfType<AdvancedDiceBase>())
+            if (attacker is not null && type is DamageType.Attack)
             {
-                res = abi.GetFinalResultDamageValue(res);
+                var abilities = attacker.currentDiceAction?.currentBehavior?.abilityList?.OfType<AdvancedDiceBase>();
+
+                if (abilities is not null)
+                {
+                    var res = v;
+
+                    foreach (var abi in abilities)
+                    {
+                        res = abi.GetFinalResultDamageValue(res);
+                    }
+
+                    v = res;
+                }
             }
-
-            return res;
-        }
-
-        static int ChangeBreakDamage(int origin, BattleDiceBehavior instance)
-        {
-            var res = origin;
-
-            foreach (var abi in instance.abilityList.OfType<AdvancedDiceBase>())
-            {
-                res = abi.GetFinalResultBreakDamageValue(res);
-            }
-
-            return res;
         }
     }
 

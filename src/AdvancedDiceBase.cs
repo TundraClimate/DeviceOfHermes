@@ -46,13 +46,6 @@ public class AdvancedDiceBase : DiceCardAbilityBase
         return origin;
     }
 
-    /// <summary>Returns dice final break damage value</summary>
-    /// <returns>A break damage value of override</returns>
-    public virtual int GetFinalResultBreakDamageValue(int origin)
-    {
-        return origin;
-    }
-
     /// <summary>A result of parrying</summary>
     /// <remarks>That uses only the <see cref="GetParryingResult(ParryingResult)"/></remarks>
     public enum ParryingResult
