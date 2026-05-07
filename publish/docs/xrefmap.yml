@@ -121,22 +121,6 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue
   nameWithType: AdvancedDiceBase.GetDiceFinalResultValue
-- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(System.Int32)
-  name: GetFinalResultBreakDamageValue(int)
-  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetFinalResultBreakDamageValue_System_Int32_
-  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(System.Int32)
-  name.vb: GetFinalResultBreakDamageValue(Integer)
-  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(int)
-  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue(Integer)
-  nameWithType: AdvancedDiceBase.GetFinalResultBreakDamageValue(int)
-  nameWithType.vb: AdvancedDiceBase.GetFinalResultBreakDamageValue(Integer)
-- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue*
-  name: GetFinalResultBreakDamageValue
-  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetFinalResultBreakDamageValue_
-  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue
-  isSpec: "True"
-  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultBreakDamageValue
-  nameWithType: AdvancedDiceBase.GetFinalResultBreakDamageValue
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetFinalResultDamageValue(System.Int32)
   name: GetFinalResultDamageValue(int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetFinalResultDamageValue_System_Int32_
