@@ -7,7 +7,7 @@ namespace DeviceOfHermes;
 
 internal class DynamicAbilityParser
 {
-    public static Token.DynamicAbility? Parse(string script)
+    public static Token.DynamicAbility Parse(string script)
     {
         var stream = new ParseStream(script);
         var res = stream.Parse<Token.DynamicAbility>();
@@ -32,6 +32,13 @@ internal class DynamicAbilityParser
         }
 
         return res;
+    }
+
+    public static bool TryParse(string script, [NotNullWhen(true)] out Token.DynamicAbility? res)
+    {
+        var stream = new ParseStream(script);
+
+        return stream.TryParse<Token.DynamicAbility>(out res);
     }
 }
 
