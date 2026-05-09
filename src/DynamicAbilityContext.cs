@@ -1,8 +1,25 @@
 using System.Text;
 using LOR_XML;
+using HarmonyLib;
 using DeviceOfHermes.Resource;
 
 namespace DeviceOfHermes;
+
+/// <summary>The config of DynamicAbility</summary>
+public static class DynamicAbilityCfg
+{
+    /// <summary>Add the buf routing</summary>
+    public static void AddBattleUnitBufRoute<T>(string key)
+        where T : BattleUnitBuf
+    {
+        if (!BattleUnitBufCompats.TryAdd(key, typeof(T)))
+        {
+            BattleUnitBufCompats[key] = typeof(T);
+        }
+    }
+
+    internal static Dictionary<string, Type> BattleUnitBufCompats = new();
+}
 
 internal class DynamicAbilityContext
 {
@@ -438,24 +455,43 @@ internal static class Command
         {
             var target = isSelf ? self.owner : self.currentDiceAction?.target;
 
+            if (target is null)
+            {
+                return;
+            }
+
             if (bufName.StartsWith("KeywordBuf_") && Enum.TryParse<KeywordBuf>(bufName.StripPrefix("KeywordBuf_"), out var keyword))
             {
                 if (turn == 1)
                 {
-                    target?.bufListDetail?.AddKeywordBufByCard(keyword, stack, self.owner);
+                    target.bufListDetail?.AddKeywordBufByCard(keyword, stack, self.owner);
                 }
                 else if (turn == 2)
                 {
-                    target?.bufListDetail?.AddKeywordBufNextNextByCard(keyword, stack, self.owner);
+                    target.bufListDetail?.AddKeywordBufNextNextByCard(keyword, stack, self.owner);
                 }
                 else
                 {
-                    target?.bufListDetail?.AddKeywordBufThisRoundByCard(keyword, stack, self.owner);
+                    target.bufListDetail?.AddKeywordBufThisRoundByCard(keyword, stack, self.owner);
                 }
+            }
+            else if (DynamicAbilityCfg.BattleUnitBufCompats.TryGetValue(bufName, out var resType))
+            {
+                var buf = target.bufListDetail?.GetActivatedBufList()?.Find(buf => buf.GetType() == resType && !buf.IsDestroyed());
+
+                if (buf is null)
+                {
+                    buf = Activator.CreateInstance(resType, AccessTools.all, null, [], null) as BattleUnitBuf
+                        ?? throw new InvalidOperationException($"UnitBuf the '{resType.Name}' has not empty constructor");
+
+                    target.bufListDetail?.AddBuf(buf);
+                }
+
+                buf.stack += stack;
             }
             else
             {
-                throw new NotImplementedException();
+                throw new InvalidOperationException($"Keyword the '{bufName}' is not compatible");
             }
         };
     }
