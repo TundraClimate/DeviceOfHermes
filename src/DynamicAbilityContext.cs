@@ -1,3 +1,4 @@
+using System.Text;
 using LOR_XML;
 using DeviceOfHermes.Resource;
 
@@ -52,6 +53,103 @@ internal class DynamicAbilityContext
 
     }
 
+    protected void DebugMode(Token.DynamicAbility token)
+    {
+        var builder = new StringBuilder();
+
+        builder.AppendLine($"ContextType: {token.prefix.inner}");
+        builder.AppendLine($"ContextName: {token.name.inner}");
+
+        foreach (var fn in token.fn)
+        {
+            builder.AppendLine($"Func:");
+            builder.AppendLine($"  Name: {fn.name.inner}");
+
+            if (fn.inner.Length != 0)
+            {
+                builder.AppendLine($"  Argument:");
+
+                foreach (var argument in fn.inner)
+                {
+                    builder.AppendLine($"    Type: {argument.type}");
+
+                    switch (argument.type)
+                    {
+                        case Token.ArgumentType.String:
+                            builder.AppendLine($"    Value: {((Token.String)argument.inner).inner}");
+
+                            break;
+                        case Token.ArgumentType.Number:
+                            builder.AppendLine($"    Value: {((Token.Number)argument.inner).inner}");
+
+                            break;
+                        case Token.ArgumentType.KeyValue:
+                            var kv = (Token.KeyValue)argument.inner;
+
+                            builder.AppendLine($"    Key: {kv.key.inner}");
+
+                            switch (kv.type)
+                            {
+                                case Token.ValueType.String:
+                                    builder.AppendLine($"    Value: {((Token.String)kv.value).inner}");
+
+                                    break;
+                                case Token.ValueType.Number:
+                                    builder.AppendLine($"    Value: {((Token.Number)kv.value).inner}");
+
+                                    break;
+                            }
+
+                            break;
+                        case Token.ArgumentType.Fn:
+                            var func = (Token.Fn)argument.inner;
+
+                            builder.AppendLine($"    Name: {func.name.inner}");
+
+                            foreach (var arg in func.inner)
+                            {
+                                builder.AppendLine($"      Type: {arg.type}");
+
+                                switch (arg.type)
+                                {
+                                    case Token.ArgumentType.String:
+                                        builder.AppendLine($"      Value: {((Token.String)arg.inner).inner}");
+
+                                        break;
+                                    case Token.ArgumentType.Number:
+                                        builder.AppendLine($"      Value: {((Token.Number)arg.inner).inner}");
+
+                                        break;
+                                    case Token.ArgumentType.KeyValue:
+                                        var keyv = (Token.KeyValue)arg.inner;
+
+                                        builder.AppendLine($"      Key: {keyv.key.inner}");
+
+                                        switch (keyv.type)
+                                        {
+                                            case Token.ValueType.String:
+                                                builder.AppendLine($"      Value: {((Token.String)keyv.value).inner}");
+
+                                                break;
+                                            case Token.ValueType.Number:
+                                                builder.AppendLine($"      Value: {((Token.Number)keyv.value).inner}");
+
+                                                break;
+                                        }
+
+                                        break;
+                                }
+                            }
+
+                            break;
+                    }
+                }
+            }
+        }
+
+        Hermes.Say(builder.ToString());
+    }
+
     private Dictionary<int, Action<Instance>> _procs = new();
 }
 
@@ -81,6 +179,13 @@ internal class CardAbilityContext : DynamicAbilityContext
                 continue;
             }
 
+            if (fn.name.inner is "debug" or "Debug")
+            {
+                DebugMode(token);
+
+                continue;
+            }
+
             var timing = fn.name.inner switch
             {
                 "uc" or "UseCard" => InvokeTimingCard.UseCard,
@@ -93,7 +198,8 @@ internal class CardAbilityContext : DynamicAbilityContext
                 "sa" or "SucceedAttack" => InvokeTimingCard.SucceedAttack,
                 "rd" or "RollDice" => InvokeTimingCard.RollDice,
                 _ => throw new InvalidOperationException($"A function '{fn.name.inner}' is not supported"),
-            };
+            }
+        ;
 
             Action<Instance> root = _ => { };
 
@@ -134,6 +240,13 @@ internal class DiceAbilityContext : DynamicAbilityContext
                 continue;
             }
 
+            if (fn.name.inner is "debug" or "Debug")
+            {
+                DebugMode(token);
+
+                continue;
+            }
+
             var timing = fn.name.inner switch
             {
                 "wp" or "WinParrying" => InvokeTimingDice.WinParrying,
@@ -163,16 +276,23 @@ internal class DiceAbilityContext : DynamicAbilityContext
 
 internal class Instance
 {
-    public BattleUnitModel owner { get; private set; }
+    public BattleUnitModel? owner { get; private set; }
+
+    public BattlePlayingCardDataInUnitModel? currentDiceAction { get; set; }
+
+    public BattleDiceBehavior? currentBehavior { get; set; }
 
     public Instance(DiceCardSelfAbilityBase ability)
     {
         owner = ability.owner;
+        currentDiceAction = ability.card;
     }
 
     public Instance(DiceCardAbilityBase ability)
     {
         owner = ability.owner;
+        currentDiceAction = ability.behavior?.card;
+        currentBehavior = ability.behavior;
     }
 }
 
@@ -185,6 +305,7 @@ internal static class Command
             Token.ArgumentType.String => ConvertFrom((Token.String)argument.inner),
             Token.ArgumentType.Number => ConvertFrom((Token.Number)argument.inner),
             Token.ArgumentType.KeyValue => ConvertFrom((Token.KeyValue)argument.inner),
+            Token.ArgumentType.Fn => ConvertFrom((Token.Fn)argument.inner),
             _ => throw new InvalidCastException(),
         };
     }
@@ -205,8 +326,41 @@ internal static class Command
 
         Action<Instance> res = name switch
         {
-            "light" => RecoverPlayPoint(CastTo<Token.Number>(kv).inner),
+            "log" or "Log" => Log(CastTo<Token.String>(kv).inner),
+            "light" or "Light" => RecoverPlayPoint(CastTo<Token.Number>(kv).inner),
+            "draw" or "Draw" => DrawCard(CastTo<Token.Number>(kv).inner),
+            "heal" or "Heal" => HealHP(CastTo<Token.Number>(kv).inner),
+            "bheal" or "HealBreak" => HealBP(CastTo<Token.Number>(kv).inner),
             _ => throw new InvalidOperationException($"The '{name}' is not supported with KeyValue"),
+        };
+
+        return res;
+    }
+
+    public static Action<Instance> ConvertFrom(Token.Fn fn)
+    {
+        var name = fn.name.inner;
+
+        Action<Instance> res = name switch
+        {
+            "statbonus" or "StatBonus" => CastTo<Token.String>(fn, 0).inner switch
+            {
+                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }),
+                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }),
+                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }),
+                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }),
+                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }),
+                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }),
+                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }),
+                _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'stat' Fn"),
+            },
+            "gain" or "Gain" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
+            "gainr" or "GainReady" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
+            "gainrr" or "GainReadyReady" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
+            "inf" or "Inflict" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
+            "infr" or "InflictReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
+            "infrr" or "InflictReadyReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
+            _ => throw new InvalidOperationException($"The '{name}' is not supported with Fn"),
         };
 
         return res;
@@ -225,5 +379,84 @@ internal static class Command
         throw new InvalidOperationException($"Value '{token.key.inner}' expected {expected}, found the '{token.value.GetType().Name}'");
     }
 
-    public static Action<Instance> RecoverPlayPoint(int num) => self => self.owner.cardSlotDetail.RecoverPlayPointByCard(num);
+    public static T CastTo<T>(Token.Fn token, int idx)
+        where T : Token
+    {
+        if (idx >= token.inner.Length)
+        {
+            throw new InvalidOperationException($"Argument not enough on '{token.name}', required idx:{idx} access");
+        }
+
+        var expected = token.inner[idx].type;
+
+        if (token.inner[idx].inner is T match)
+        {
+            return match;
+        }
+
+        throw new InvalidOperationException($"Value '{token.name.inner}[{idx}]' expected {expected}, found the '{token.inner[idx].inner.GetType().Name}'");
+    }
+
+    public static Action<Instance> Log(string txt) => _ => Hermes.Say(txt);
+
+    public static Action<Instance> RecoverPlayPoint(int num) => self => self.owner?.cardSlotDetail?.RecoverPlayPointByCard(num);
+
+    public static Action<Instance> DrawCard(int num) => self => self.owner?.allyCardDetail?.DrawCards(num);
+
+    public static Action<Instance> HealHP(int num) => self => self.owner?.RecoverHP(num);
+
+    public static Action<Instance> HealBP(int num) => self => self.owner?.breakDetail?.RecoverBreak(num);
+
+    public static Action<Instance> ApplyDiceStat(DiceStatBonus stat)
+    {
+        return self =>
+        {
+            if (self.currentBehavior is not null)
+            {
+                self.currentBehavior.ApplyDiceStatBonus(stat);
+            }
+            else
+            {
+                self.currentDiceAction?.ApplyDiceStatBonus(_ => true, stat);
+            }
+        };
+    }
+
+    public static Action<Instance> GainBuf(string bufName, int stack, int turn)
+    {
+        return AddBuf(true, bufName, stack, turn);
+    }
+
+    public static Action<Instance> InflictBuf(string bufName, int stack, int turn)
+    {
+        return AddBuf(false, bufName, stack, turn);
+    }
+
+    public static Action<Instance> AddBuf(bool isSelf, string bufName, int stack, int turn)
+    {
+        return self =>
+        {
+            var target = isSelf ? self.owner : self.currentDiceAction?.target;
+
+            if (bufName.StartsWith("KeywordBuf_") && Enum.TryParse<KeywordBuf>(bufName.StripPrefix("KeywordBuf_"), out var keyword))
+            {
+                if (turn == 1)
+                {
+                    target?.bufListDetail?.AddKeywordBufByCard(keyword, stack, self.owner);
+                }
+                else if (turn == 2)
+                {
+                    target?.bufListDetail?.AddKeywordBufNextNextByCard(keyword, stack, self.owner);
+                }
+                else
+                {
+                    target?.bufListDetail?.AddKeywordBufThisRoundByCard(keyword, stack, self.owner);
+                }
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+        };
+    }
 }

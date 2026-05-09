@@ -9,6 +9,11 @@ internal class DynamicAbilityParser
 {
     public static Token.DynamicAbility Parse(string script)
     {
+        if (_cache.TryGetValue(script, out var cached))
+        {
+            return cached;
+        }
+
         var stream = new ParseStream(script);
         var res = stream.Parse<Token.DynamicAbility>();
 
@@ -31,15 +36,28 @@ internal class DynamicAbilityParser
             throw new InvalidOperationException(builder.ToString());
         }
 
+        _cache.Add(script, res);
+
         return res;
     }
 
     public static bool TryParse(string script, [NotNullWhen(true)] out Token.DynamicAbility? res)
     {
-        var stream = new ParseStream(script);
+        try
+        {
+            res = Parse(script);
 
-        return stream.TryParse<Token.DynamicAbility>(out res);
+            return true;
+        }
+        catch
+        {
+            res = null;
+
+            return false;
+        }
     }
+
+    private static Dictionary<string, Token.DynamicAbility> _cache = new();
 }
 
 internal class Token
@@ -332,13 +350,14 @@ internal class Token
         String,
         Number,
         KeyValue,
+        Fn,
     }
 
     public class Argument(ArgumentType type, Token inner) : Token
     {
         public ArgumentType type = type;
 
-        // String || Number || KeyValue
+        // String || Number || KeyValue || Fn
         public Token inner = inner;
 
         Token? Parse(ParseStream stream)
@@ -360,8 +379,18 @@ internal class Token
             }
             else
             {
-                type = ArgumentType.KeyValue;
-                inner = stream.Parse<KeyValue>();
+                var forked = stream.Fork();
+
+                if (forked.TryParse<Ident>(out var input) && forked.Peek() == '(')
+                {
+                    type = ArgumentType.Fn;
+                    inner = stream.Parse<Fn>();
+                }
+                else
+                {
+                    type = ArgumentType.KeyValue;
+                    inner = stream.Parse<KeyValue>();
+                }
             }
 
             if (inner is null)
@@ -381,6 +410,11 @@ internal class ParseStream(string script)
     public ParseStream Fork(string script)
     {
         return new ParseStream(script) { Error = Error, _mergin = _cursor - script.Length };
+    }
+
+    public ParseStream Fork()
+    {
+        return Fork(_script.Substring(_cursor + 1));
     }
 
     public void SetError(string msg)
