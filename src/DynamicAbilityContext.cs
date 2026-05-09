@@ -100,24 +100,6 @@ internal class DynamicAbilityContext
                             builder.AppendLine($"    Value: {((Token.Number)argument.inner).inner}");
 
                             break;
-                        case Token.ArgumentType.KeyValue:
-                            var kv = (Token.KeyValue)argument.inner;
-
-                            builder.AppendLine($"    Key: {kv.key.inner}");
-
-                            switch (kv.type)
-                            {
-                                case Token.ValueType.String:
-                                    builder.AppendLine($"    Value: {((Token.String)kv.value).inner}");
-
-                                    break;
-                                case Token.ValueType.Number:
-                                    builder.AppendLine($"    Value: {((Token.Number)kv.value).inner}");
-
-                                    break;
-                            }
-
-                            break;
                         case Token.ArgumentType.Fn:
                             var func = (Token.Fn)argument.inner;
 
@@ -135,24 +117,6 @@ internal class DynamicAbilityContext
                                         break;
                                     case Token.ArgumentType.Number:
                                         builder.AppendLine($"      Value: {((Token.Number)arg.inner).inner}");
-
-                                        break;
-                                    case Token.ArgumentType.KeyValue:
-                                        var keyv = (Token.KeyValue)arg.inner;
-
-                                        builder.AppendLine($"      Key: {keyv.key.inner}");
-
-                                        switch (keyv.type)
-                                        {
-                                            case Token.ValueType.String:
-                                                builder.AppendLine($"      Value: {((Token.String)keyv.value).inner}");
-
-                                                break;
-                                            case Token.ValueType.Number:
-                                                builder.AppendLine($"      Value: {((Token.Number)keyv.value).inner}");
-
-                                                break;
-                                        }
 
                                         break;
                                 }
@@ -321,7 +285,6 @@ internal static class Command
         {
             Token.ArgumentType.String => ConvertFrom((Token.String)argument.inner),
             Token.ArgumentType.Number => ConvertFrom((Token.Number)argument.inner),
-            Token.ArgumentType.KeyValue => ConvertFrom((Token.KeyValue)argument.inner),
             Token.ArgumentType.Fn => ConvertFrom((Token.Fn)argument.inner),
             _ => throw new InvalidCastException(),
         };
@@ -337,29 +300,17 @@ internal static class Command
         throw new NotImplementedException();
     }
 
-    public static Action<Instance> ConvertFrom(Token.KeyValue kv)
-    {
-        var name = kv.key.inner;
-
-        Action<Instance> res = name switch
-        {
-            "log" or "Log" => Log(CastTo<Token.String>(kv).inner),
-            "light" or "Light" => RecoverPlayPoint(CastTo<Token.Number>(kv).inner),
-            "draw" or "Draw" => DrawCard(CastTo<Token.Number>(kv).inner),
-            "heal" or "Heal" => HealHP(CastTo<Token.Number>(kv).inner),
-            "bheal" or "HealBreak" => HealBP(CastTo<Token.Number>(kv).inner),
-            _ => throw new InvalidOperationException($"The '{name}' is not supported with KeyValue"),
-        };
-
-        return res;
-    }
-
     public static Action<Instance> ConvertFrom(Token.Fn fn)
     {
         var name = fn.name.inner;
 
         Action<Instance> res = name switch
         {
+            "log" or "Log" => Log(CastTo<Token.String>(fn, 0).inner),
+            "light" or "Light" => RecoverPlayPoint(CastTo<Token.Number>(fn, 0).inner),
+            "draw" or "Draw" => DrawCard(CastTo<Token.Number>(fn, 0).inner),
+            "heal" or "Heal" => HealHP(CastTo<Token.Number>(fn, 0).inner),
+            "bheal" or "HealBreak" => HealBP(CastTo<Token.Number>(fn, 0).inner),
             "statbonus" or "StatBonus" => CastTo<Token.String>(fn, 0).inner switch
             {
                 "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }),
@@ -381,19 +332,6 @@ internal static class Command
         };
 
         return res;
-    }
-
-    public static T CastTo<T>(Token.KeyValue token)
-        where T : Token
-    {
-        var expected = token.type;
-
-        if (token.value is T match)
-        {
-            return match;
-        }
-
-        throw new InvalidOperationException($"Value '{token.key.inner}' expected {expected}, found the '{token.value.GetType().Name}'");
     }
 
     public static T CastTo<T>(Token.Fn token, int idx)

@@ -1114,6 +1114,28 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDiceSprite.AddSequence
   nameWithType: CustomDiceSprite.AddSequence
+- uid: DeviceOfHermes.DynamicAbilityCfg
+  name: DynamicAbilityCfg
+  href: api/DeviceOfHermes.DynamicAbilityCfg.html
+  commentId: T:DeviceOfHermes.DynamicAbilityCfg
+  fullName: DeviceOfHermes.DynamicAbilityCfg
+  nameWithType: DynamicAbilityCfg
+- uid: DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute*
+  name: AddBattleUnitBufRoute
+  href: api/DeviceOfHermes.DynamicAbilityCfg.html#DeviceOfHermes_DynamicAbilityCfg_AddBattleUnitBufRoute_
+  commentId: Overload:DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute
+  isSpec: "True"
+  fullName: DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute
+  nameWithType: DynamicAbilityCfg.AddBattleUnitBufRoute
+- uid: DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute``1(System.String)
+  name: AddBattleUnitBufRoute<T>(string)
+  href: api/DeviceOfHermes.DynamicAbilityCfg.html#DeviceOfHermes_DynamicAbilityCfg_AddBattleUnitBufRoute__1_System_String_
+  commentId: M:DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute``1(System.String)
+  name.vb: AddBattleUnitBufRoute(Of T)(String)
+  fullName: DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute<T>(string)
+  fullName.vb: DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute(Of T)(String)
+  nameWithType: DynamicAbilityCfg.AddBattleUnitBufRoute<T>(string)
+  nameWithType.vb: DynamicAbilityCfg.AddBattleUnitBufRoute(Of T)(String)
 - uid: DeviceOfHermes.HermesConstants
   name: HermesConstants
   href: api/DeviceOfHermes.HermesConstants.html

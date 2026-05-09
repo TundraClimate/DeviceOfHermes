@@ -89,50 +89,122 @@
 
 <p>コマンドからページ・ダイス効果を生成します。</p>
 <p>例:</p>
-<pre><code class="lang-xml">&lt;Script&gt;dohc_DynamicCard_uc(draw1light1)_desc([使用時] 光を1回復。ページを1枚引く)&lt;/Script&gt;
-Script=&quot;dohd_DynamicDice_sa(draw1)_desc([的中] ページを1枚引く)&quot;
+<pre><code class="lang-xml">&lt;Script&gt;Card-TestMOD_ResourcePage-UseCard(light(5), draw(5))-Desc('[使用時] 光を5回復し、ページを5枚引く')&lt;/Script&gt;
+Script=&quot;Dice-TestMOD_Bleeding-SucceedAttack(infr('KeywordBuf_Bleeding', 8))-Desc('[的中] 次の幕 出血8を付与')&quot;
 </code></pre>
+<h2 id="syntax">Syntax</h2>
+<p>基本構文: <code>{PREFIX}-{ABILITY_NAME}-{OPTION...}</code></p>
+<p><strong>PREFIX</strong>:<br>
+このスクリプトがページ効果であるか、ダイス効果であるかを指定します。<br>
+ページ効果の場合は、<code>Card</code>・<code>DOHC</code>・<code>dohc</code>のいずれかが指定に使用できます。<br>
+ダイス効果の場合は、<code>Dice</code>・<code>DOHD</code>・<code>dohd</code>のいずれかが指定に使用できます。</p>
+<p><strong>ABILITY_NAME</strong>:<br>
+Abilityを区別するために使用される固有の文字列です。<br>
+Localizeにて主に使用され、重複した場合はより後に設定したページ/ダイス説明文に統一されます。</p>
+<p><strong>OPTION</strong>:<br>
+Abilityに対して指定する固有要素です。<br>
+<code>オプション名1(オプション内容1)-オプション名2(オプション内容2)</code>のように指定します。<br>
+詳細は下記を参照してください。</p>
+<h2 id="types">Types</h2>
+<p>オプション内で指定する値の種類を以下に示します。</p>
+<h3 id="string"><code>String</code></h3>
+<p>文字列です。<br>
+<code>'</code>で囲っている場合に<code>String</code>として解釈されます。</p>
+<p>例: <code>'ここに文字列'</code></p>
+<h3 id="number"><code>Number</code></h3>
+<p>符号付き整数値です。<br>
+<code>+</code>・<code>-</code>などの符号は省略可能です。</p>
+<p>例: <code>1</code>、<code>-1</code></p>
+<h3 id="fn"><code>Fn</code></h3>
+<p>関数です。<br>
+上記の<code>String</code>や<code>Number</code>を引数に指定して構成されます。<br>
+引数同士は<code>,</code>で区切ることが出来ます。</p>
+<p>例: <code>log('Card used')</code>、<code>draw(3)</code>、<code>statbonus('dmg', 100)</code></p>
+<h2 id="options">Options</h2>
+<h3 id="usecardfn"><code>UseCard(Fn...)</code></h3>
+<p>対象: Card</p>
+<p>ページ使用時の効果を設定します。</p>
+<h3 id="startbattlefn"><code>StartBattle(Fn...)</code></h3>
+<p>対象: Card</p>
+<p>戦闘開始時の効果を設定します。</p>
+<h3 id="startparryingfn"><code>StartParrying(Fn...)</code></h3>
+<p>対象: Card</p>
+<p>マッチ開始時の効果を設定します。</p>
+<h3 id="startonesidefn"><code>StartOneSide(Fn...)</code></h3>
+<p>対象: Card</p>
+<p>一方攻撃開始時の効果を設定します。</p>
+<h3 id="winparryingfn"><code>WinParrying(Fn...)</code></h3>
+<p>対象: Card/Dice</p>
+<p>マッチ勝利時の効果を設定します。</p>
+<h3 id="loseparryingfn"><code>LoseParrying(Fn...)</code></h3>
+<p>対象: Card/Dice</p>
+<p>マッチ敗北時の効果を設定します。</p>
+<h3 id="beforerolldicefn"><code>BeforeRollDice(Fn...)</code></h3>
+<p>対象: Card/Dice</p>
+<p>ダイスを振る前の効果を設定します。</p>
+<h3 id="succeedattackfn"><code>SucceedAttack(Fn...)</code></h3>
+<p>対象: Card/Dice</p>
+<p>的中時の効果を設定します。</p>
+<h3 id="rolldicefn"><code>RollDice(Fn...)</code></h3>
+<p>対象: Card/Dice</p>
+<p>ダイスを振ったときの効果を設定します。</p>
+<h2 id="option-funcs">Option Funcs</h2>
+<h3 id="logstring"><code>log(String)</code></h3>
+<p>ログを出力します。<br>
+<code>UnityEngine.Debug.Log</code>を使用します。</p>
+<h3 id="lightnumber"><code>light(Number)</code></h3>
+<p>光を回復します。</p>
+<h3 id="drawnumber"><code>draw(Number)</code></h3>
+<p>ページを引きます。</p>
+<h3 id="healnumber"><code>heal(Number)</code></h3>
+<p>体力を回復します。</p>
+<h3 id="bhealnumber"><code>bheal(Number)</code></h3>
+<p>混乱抵抗値を回復します。</p>
+<h3 id="statbonusstring-number"><code>statbonus(String, Number)</code></h3>
+<p><code>DiceStatBonus</code>を適用します。<br>
+第一引数に指定する文字列は<code>DiceStatBonus</code>の対象フィールド名です。</p>
+<h3 id="gainstring-number"><code>gain(String, Number)</code></h3>
+<p>バフをこの幕に獲得します。<br>
+第一引数に指定する値はバフ名で、<code>KeywordBuf_</code>で開始した場合は<code>KeywordBuf</code>が使用され、<br>
+それ以外の場合は<code>DynamicAbilityCfg</code>から検索します。</p>
+<h3 id="gainrstring-number"><code>gainr(String, Number)</code></h3>
+<p>バフを次の幕に獲得します。<br>
+第一引数に指定する値はバフ名で、<code>KeywordBuf_</code>で開始した場合は<code>KeywordBuf</code>が使用され、<br>
+それ以外の場合は<code>DynamicAbilityCfg</code>から検索します。</p>
+<h3 id="gainrrstring-number"><code>gainrr(String, Number)</code></h3>
+<p>バフを次の次の幕に獲得します。<br>
+第一引数に指定する値はバフ名で、<code>KeywordBuf_</code>で開始した場合は<code>KeywordBuf</code>が使用され、<br>
+それ以外の場合は<code>DynamicAbilityCfg</code>から検索します。</p>
+<h3 id="infstring-number"><code>inf(String, Number)</code></h3>
+<p>バフをこの幕に付与します。
+第一引数に指定する値はバフ名で、<code>KeywordBuf_</code>で開始した場合は<code>KeywordBuf</code>が使用され、<br>
+それ以外の場合は<code>DynamicAbilityCfg</code>から検索します。</p>
+<h3 id="infrstring-number"><code>infr(String, Number)</code></h3>
+<p>バフを次の幕に付与します。
+第一引数に指定する値はバフ名で、<code>KeywordBuf_</code>で開始した場合は<code>KeywordBuf</code>が使用され、<br>
+それ以外の場合は<code>DynamicAbilityCfg</code>から検索します。</p>
+<h3 id="infrrstring-number"><code>infrr(String, Number)</code></h3>
+<p>バフを次の次の幕に付与します。
+第一引数に指定する値はバフ名で、<code>KeywordBuf_</code>で開始した場合は<code>KeywordBuf</code>が使用され、<br>
+それ以外の場合は<code>DynamicAbilityCfg</code>から検索します。</p>
+<h2 id="special-options">Special Options</h2>
+<h3 id="descstring"><code>Desc(String)</code></h3>
+<p>対象: Card/Dice</p>
+<p>効果説明文を設定します。</p>
+<h3 id="debug"><code>Debug()</code></h3>
+<p>対象: Card/Dice</p>
+<p>デバッグ用です。<br>
+情報を出力します。</p>
+<h1 id="dynamicabilitycfg">DynamicAbilityCfg</h1>
+<p><code>DynamicAbility</code>の設定を行います。</p>
 <h2 id="specified-usage">Specified usage</h2>
-<p>コマンドは<code>&quot;_&quot;</code>で区切った複数の要素で構成されています。</p>
-<p>第一区間は<code>DOHC</code>もしくは<code>DOHD</code>のみをコマンドとして認識し、この2種類以外が指定された場合は通常のScriptとして処理されます。<br>
-<code>DOHC</code>は<code>DiceCardSelfAbility</code>に、<code>DOHD</code>は<code>DiceCardAbility</code>用のコマンドです。<br>
-この文字列は大文字・小文字を区別しません。<code>dohc</code>や<code>dohd</code>もコマンドとして使用可能です。</p>
-<p>第二区間はアビリティ名を指定します。これは既存のものを指定するのではなく、新規かつ他と重複しない名称である必要があります。<br>
-これはIDとしての意味を持ち、LocalizationManager等で指定するときにはこのIDを指定することでターゲットして指定することが出来ます。</p>
-<p>第三区間以降は実際の処理を組み上げるコマンドになっています。<br>
-コマンドは現在、</p>
+<h3 id="addbattleunitbufroutetstring"><code>AddBattleUnitBufRoute&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">DynamicAbilityCfg.AddBattleUnitBufRoute&lt;T&gt;(name);
+</code></pre>
+<p>自作した<code>BattleUnitBuf</code>を<code>DynamicAbility</code>で使用できるようにするための対応表を追加します。</p>
 <ul>
-<li><code>uc()</code>: OnUseCard</li>
-<li><code>sb()</code>: OnStartBattle</li>
-<li><code>sp()</code>: OnStartParrying</li>
-<li><code>so()</code>: OnStartOneSideAction</li>
-<li><code>wp()</code>: OnWinParrying/OnWinParryingAtk|Def</li>
-<li><code>lp()</code>: OnLoseParrying</li>
-<li><code>brd()</code>: BeforeRollDice</li>
-<li><code>sa()</code>: SucceedAttack</li>
-<li><code>rd()</code>: RollDice</li>
-<li><code>desc()</code>: Desc</li>
-</ul>
-<p>これらに対応しており、<code>()</code>の中の文字列をそれぞれ指定することで処理を追加することが出来ます。</p>
-<p>コマンドに指定する文字列は以下の値の組み合わせです。ただし<code>desc()</code>のみは例外で、文字列をそのまま指定する方法になります。</p>
-<ul>
-<li><code>light{N}</code>: 光を回復します。<code>{N}</code>は回復する光の値です。(例: <code>light2</code>)</li>
-<li><code>draw{N}</code>: ページを引きます。<code>{N}</code>は引くページの枚数です。(例: <code>draw1</code>)</li>
-<li><code>gain{B}{N}</code>: <code>KeywordBuf</code>を獲得します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>gainstrength1</code>)</li>
-<li><code>ngain{B}{N}</code>: 次の幕に<code>KeywordBuf</code>を獲得します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>gainstrength1</code>)</li>
-<li><code>nngain{B}{N}</code>: 次の次の幕に<code>KeywordBuf</code>を獲得します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>gainstrength1</code>)</li>
-<li><code>inf{B}{N}</code>: <code>KeywordBuf</code>を付与します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>infstrength1</code>)</li>
-<li><code>ninf{B}{N}</code>: 次の幕に<code>KeywordBuf</code>を付与します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>ninfstrength1</code>)</li>
-<li><code>nninf{B}{N}</code>: 次の次の幕に<code>KeywordBuf</code>を付与します。<code>{B}</code>は<code>KeywordBuf</code>で、<code>{N}</code>は獲得する値です。(例: <code>nninfstrength1</code>)</li>
-<li><code>heal{N}</code>: 体力を回復します。<code>{N}</code>は回復する値です。(例: <code>heal99</code>)</li>
-<li><code>bheal{N}</code>: 混乱抵抗値を回復します。<code>{N}</code>は回復する値です。(例: <code>bheal99</code>)</li>
-<li><code>admg{N}</code>: DiceStatBonusにダメージ量を追加します。<code>{N}</code>はボーナス量です。(例: <code>admg1</code>)</li>
-<li><code>abdmg{N}</code>: DiceStatBonusに混乱ダメージ量を追加します。<code>{N}</code>はボーナス量です。(例: <code>abdmg1</code>)</li>
-<li><code>apow{N}</code>: DiceStatBonusに威力を追加します。<code>{N}</code>はボーナス量です。(例: <code>apow1</code>)</li>
-<li><code>adr{N}</code>: DiceStatBonusにダメージレートを追加します。<code>{N}</code>はボーナス量です。(例: <code>adr10</code>)</li>
-<li><code>abdr{N}</code>: DiceStatBonusに混乱ダメージレートを追加します。<code>{N}</code>はボーナス量です。(例: <code>abdr10</code>)</li>
-<li><code>amin{N}</code>: DiceStatBonusに最低値を追加します。<code>{N}</code>はボーナス量です。(例: <code>amin9</code>)</li>
-<li><code>amax{N}</code>: DiceStatBonusに最大値を追加します。<code>{N}</code>はボーナス量です。(例: <code>amax10</code>)</li>
+<li><code>T</code>: 対象の<code>BattleUnitBuf</code>です。</li>
+<li><code>name</code>: <code>DynamicAbility</code>側で指定する名前です。</li>
 </ul>
 
 </article>

@@ -90,8 +90,6 @@ internal class Token
 
             if (stream.Remaining > 0)
             {
-                stream.SetError("Found unnecessary section");
-
                 return null;
             }
 
@@ -141,7 +139,7 @@ internal class Token
             {
                 var peeked = stream.Peek();
 
-                if (peeked is '-' or '(' or ')' or '[' or ']' or '{' or '}' or ' ' or (>= '0' and <= '9') or '\'')
+                if (peeked is '-' or '(' or ')' or '[' or ']' or '{' or '}' or ' ' or '\'')
                 {
                     break;
                 }
@@ -248,57 +246,30 @@ internal class Token
         }
     }
 
-    public enum ValueType
+    public class FnSeparator : Token
     {
-        String,
-        Number,
+        Token? Parse(ParseStream stream) => stream.Parse(',')?.Let(_ => new FnSeparator());
     }
 
-    public class KeyValue(Ident key, ValueType type, Token value) : Token
+    public class Space : Token
     {
-        public Ident key = key;
-
-        public ValueType type = type;
-
-        // String || Number
-        public Token value = value;
-
         Token? Parse(ParseStream stream)
         {
-            if (!stream.TryParse<Ident>(out var key))
-                return null;
-
-            ValueType type;
-            var peeked = stream.Peek();
-
-            if (peeked == '\'')
+            while (stream.Remaining > 0)
             {
-                type = ValueType.String;
-            }
-            else if (peeked is '+' or '-' || peeked is >= '0' and <= '9')
-            {
-                type = ValueType.Number;
-            }
-            else
-            {
-                stream.SetError("Value type should be String or Number");
+                var peeked = stream.Peek();
 
-                return null;
+                if (peeked == ' ')
+                {
+                    stream.Parse(peeked.Value);
+
+                    continue;
+                }
+
+                break;
             }
 
-            Token? value = type switch
-            {
-                ValueType.String => stream.Parse<String>(),
-                ValueType.Number => stream.Parse<Number>(),
-                _ => null,
-            };
-
-            if (value is null)
-            {
-                return null;
-            }
-
-            return new KeyValue(key, type, value);
+            return new Space();
         }
     }
 
@@ -329,15 +300,18 @@ internal class Token
 
             List<Argument> args = new();
 
-            while (paren.TryParse<Argument>(out var argument))
+            if (paren.TryParse<Argument>(out var a))
             {
-                args.Add(argument);
+                args.Add(a);
+
+                while (paren.TryParse<FnSeparator>(out var _) && paren.TryParse<Space>(out var _) && paren.TryParse<Argument>(out var argument))
+                {
+                    args.Add(argument);
+                }
             }
 
             if (paren.Remaining > 0)
             {
-                paren.SetError("Found unnecessary argument");
-
                 return null;
             }
 
@@ -349,7 +323,6 @@ internal class Token
     {
         String,
         Number,
-        KeyValue,
         Fn,
     }
 
@@ -357,7 +330,7 @@ internal class Token
     {
         public ArgumentType type = type;
 
-        // String || Number || KeyValue || Fn
+        // String || Number || Fn
         public Token inner = inner;
 
         Token? Parse(ParseStream stream)
@@ -379,18 +352,8 @@ internal class Token
             }
             else
             {
-                var forked = stream.Fork();
-
-                if (forked.TryParse<Ident>(out var input) && forked.Peek() == '(')
-                {
-                    type = ArgumentType.Fn;
-                    inner = stream.Parse<Fn>();
-                }
-                else
-                {
-                    type = ArgumentType.KeyValue;
-                    inner = stream.Parse<KeyValue>();
-                }
+                type = ArgumentType.Fn;
+                inner = stream.Parse<Fn>();
             }
 
             if (inner is null)
