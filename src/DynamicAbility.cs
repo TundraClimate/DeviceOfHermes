@@ -99,6 +99,9 @@ internal class DynamicCardAbility(CardAbilityContext ctx) : DiceCardSelfAbilityB
     public override void OnStartOneSideAction()
         => ctx.RunProcess((int)InvokeTimingCard.StartOneSide, new Instance(this));
 
+    public override void OnEndBattle()
+        => ctx.RunProcess((int)InvokeTimingCard.EndBattle, new Instance(this));
+
     public override void OnWinParryingAtk()
         => ctx.RunProcess((int)InvokeTimingCard.WinParrying, new Instance(this));
 
@@ -108,8 +111,14 @@ internal class DynamicCardAbility(CardAbilityContext ctx) : DiceCardSelfAbilityB
     public override void OnLoseParrying()
         => ctx.RunProcess((int)InvokeTimingCard.LoseParrying, new Instance(this));
 
+    public override void OnDrawParrying()
+        => ctx.RunProcess((int)InvokeTimingCard.DrawParrying, new Instance(this));
+
     public override void BeforeRollDice(BattleDiceBehavior behavior)
         => ctx.RunProcess((int)InvokeTimingCard.BeforeRollDice, new Instance(this) { currentBehavior = behavior });
+
+    public override void BeforeGiveDamage(BattleDiceBehavior behavior)
+        => ctx.RunProcess((int)InvokeTimingCard.BeforeGiveDamage, new Instance(this) { currentBehavior = behavior });
 
     public override void OnSucceedAttack(BattleDiceBehavior behavior)
         => ctx.RunProcess((int)InvokeTimingCard.SucceedAttack, new Instance(this) { currentBehavior = behavior });
@@ -128,8 +137,14 @@ internal class DynamicDiceAbility(DiceAbilityContext ctx) : DiceCardAbilityBase
     public override void OnLoseParrying()
         => ctx.RunProcess((int)InvokeTimingDice.LoseParrying, new Instance(this));
 
+    public override void OnDrawParrying()
+        => ctx.RunProcess((int)InvokeTimingDice.DrawParrying, new Instance(this));
+
     public override void BeforeRollDice()
         => ctx.RunProcess((int)InvokeTimingDice.BeforeRollDice, new Instance(this));
+
+    public override void BeforeGiveDamage()
+        => ctx.RunProcess((int)InvokeTimingDice.BeforeGiveDamage, new Instance(this));
 
     public override void OnSucceedAttack(BattleUnitModel target)
         => ctx.RunProcess((int)InvokeTimingDice.SucceedAttack, new Instance(this));
