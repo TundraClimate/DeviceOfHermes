@@ -152,6 +152,20 @@ internal enum InvokeTimingCard
 
 internal class CardAbilityContext : DynamicAbilityContext
 {
+    public static CardAbilityContext Create(Token.DynamicAbility token)
+    {
+        if (_cache.TryGetValue(token, out var res))
+        {
+            return res;
+        }
+
+        var newInstance = new CardAbilityContext(token);
+
+        _cache.Add(token, newInstance);
+
+        return newInstance;
+    }
+
     public CardAbilityContext(Token.DynamicAbility token) : base(token)
     {
         foreach (var fn in token.fn)
@@ -185,8 +199,7 @@ internal class CardAbilityContext : DynamicAbilityContext
                 "sa" or "SucceedAttack" => InvokeTimingCard.SucceedAttack,
                 "rd" or "RollDice" => InvokeTimingCard.RollDice,
                 _ => throw new InvalidOperationException($"A function '{fn.name.inner}' is not supported"),
-            }
-        ;
+            };
 
             Action<Instance> root = _ => { };
 
@@ -203,6 +216,8 @@ internal class CardAbilityContext : DynamicAbilityContext
     {
         AddProcess((int)timing, procs);
     }
+
+    private static Dictionary<Token.DynamicAbility, CardAbilityContext> _cache = new();
 }
 
 internal enum InvokeTimingDice
@@ -218,6 +233,20 @@ internal enum InvokeTimingDice
 
 internal class DiceAbilityContext : DynamicAbilityContext
 {
+    public static DiceAbilityContext Create(Token.DynamicAbility token)
+    {
+        if (_cache.TryGetValue(token, out var res))
+        {
+            return res;
+        }
+
+        var newInstance = new DiceAbilityContext(token);
+
+        _cache.Add(token, newInstance);
+
+        return newInstance;
+    }
+
     public DiceAbilityContext(Token.DynamicAbility token) : base(token)
     {
         foreach (var fn in token.fn)
@@ -263,6 +292,8 @@ internal class DiceAbilityContext : DynamicAbilityContext
     {
         AddProcess((int)timing, procs);
     }
+
+    private static Dictionary<Token.DynamicAbility, DiceAbilityContext> _cache = new();
 }
 
 internal class Instance

@@ -29,7 +29,7 @@ internal class DynamicAbility
 
             try
             {
-                var res = new CardAbilityContext(DynamicAbilityParser.Parse(name));
+                var res = CardAbilityContext.Create(DynamicAbilityParser.Parse(name));
 
                 __result = new DynamicCardAbility(res);
             }
@@ -59,7 +59,7 @@ internal class DynamicAbility
 
             try
             {
-                var res = new DiceAbilityContext(DynamicAbilityParser.Parse(name));
+                var res = DiceAbilityContext.Create(DynamicAbilityParser.Parse(name));
 
                 __result = new DynamicDiceAbility(res);
             }
