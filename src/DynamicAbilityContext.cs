@@ -300,7 +300,7 @@ internal class Instance
 {
     public BattleUnitModel? owner { get; private set; }
 
-    public BattlePlayingCardDataInUnitModel? currentDiceAction { get; set; }
+    public BattlePlayingCardDataInUnitModel? currentDiceAction { get; private set; }
 
     public BattleDiceBehavior? currentBehavior { get; set; }
 
@@ -364,7 +364,21 @@ internal static class Command
                 "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }),
                 "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }),
                 "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }),
-                _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'stat' Fn"),
+                _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'statbonus' Fn"),
+            },
+            "estatbonus" or "EnemyStatBonus" => CastTo<Token.String>(fn, 0).inner switch
+            {
+                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }, false),
+                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }, false),
+                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }, false),
+                "face" => ApplyDiceStat(new DiceStatBonus() { face = CastTo<Token.Number>(fn, 1).inner }, false),
+                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }, false),
+                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }, false),
+                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }, false),
+                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }, false),
+                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }, false),
+                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }, false),
+                _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'estatbonus' Fn"),
             },
             "gain" or "Gain" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
             "gainr" or "GainReady" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
@@ -410,17 +424,31 @@ internal static class Command
 
     public static Action<Instance> HealBP(int num) => self => self.owner?.breakDetail?.RecoverBreak(num);
 
-    public static Action<Instance> ApplyDiceStat(DiceStatBonus stat)
+    public static Action<Instance> ApplyDiceStat(DiceStatBonus stat, bool isSelf = true)
     {
         return self =>
         {
             if (self.currentBehavior is not null)
             {
-                self.currentBehavior.ApplyDiceStatBonus(stat);
+                if (isSelf)
+                {
+                    self.currentBehavior.ApplyDiceStatBonus(stat);
+                }
+                else
+                {
+                    self.currentBehavior.TargetDice?.ApplyDiceStatBonus(stat);
+                }
             }
             else
             {
-                self.currentDiceAction?.ApplyDiceStatBonus(_ => true, stat);
+                if (isSelf)
+                {
+                    self.currentDiceAction?.ApplyDiceStatBonus(_ => true, stat);
+                }
+                else
+                {
+                    self.currentDiceAction?.target?.currentDiceAction?.ApplyDiceStatBonus(_ => true, stat);
+                }
             }
         };
     }
