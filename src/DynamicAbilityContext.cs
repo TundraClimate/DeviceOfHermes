@@ -386,6 +386,12 @@ internal static class Command
             "inf" or "Inflict" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
             "infr" or "InflictReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
             "infrr" or "InflictReadyReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
+            "allgain" or "AllGain" => AllGainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
+            "allgainr" or "AllGainReady" => AllGainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
+            "allgainrr" or "AllGainReadyReady" => AllGainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
+            "allinf" or "AllInflict" => AllInflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
+            "allinfr" or "AllInflictReady" => AllInflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
+            "allinfrr" or "AllInflictReadyReady" => AllInflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
             "takedmg" or "TakeDamage" => TakeDamage(true, CastTo<Token.Number>(fn, 0).inner),
             "givedmg" or "GiveDamage" => TakeDamage(false, CastTo<Token.Number>(fn, 0).inner),
             "takebdmg" or "TakeBreakDamage" => TakeBreakDamage(true, CastTo<Token.Number>(fn, 0).inner),
@@ -463,6 +469,53 @@ internal static class Command
         return AddBuf(false, bufName, stack, turn);
     }
 
+    public static Action<Instance> AllGainBuf(string bufName, int stack, int turn)
+    {
+        return AddBufAll(true, bufName, stack, turn);
+    }
+
+    public static Action<Instance> AllInflictBuf(string bufName, int stack, int turn)
+    {
+        return AddBufAll(false, bufName, stack, turn);
+    }
+
+    private static void AddBufImpl(BattleUnitModel target, string bufName, int stack, int turn, BattleUnitModel? owner)
+    {
+        if (bufName.StartsWith("KeywordBuf_") && Enum.TryParse<KeywordBuf>(bufName.StripPrefix("KeywordBuf_"), out var keyword))
+        {
+            if (turn == 1)
+            {
+                target.bufListDetail?.AddKeywordBufByCard(keyword, stack, owner);
+            }
+            else if (turn == 2)
+            {
+                target.bufListDetail?.AddKeywordBufNextNextByCard(keyword, stack, owner);
+            }
+            else
+            {
+                target.bufListDetail?.AddKeywordBufThisRoundByCard(keyword, stack, owner);
+            }
+        }
+        else if (DynamicAbilityCfg.BattleUnitBufCompats.TryGetValue(bufName, out var resType))
+        {
+            var buf = target.bufListDetail?.GetActivatedBufList()?.Find(buf => buf.GetType() == resType && !buf.IsDestroyed());
+
+            if (buf is null)
+            {
+                buf = Activator.CreateInstance(resType, AccessTools.all, null, [], null) as BattleUnitBuf
+                    ?? throw new InvalidOperationException($"UnitBuf the '{resType.Name}' has not empty constructor");
+
+                target.bufListDetail?.AddBuf(buf);
+            }
+
+            buf.stack += stack;
+        }
+        else
+        {
+            throw new InvalidOperationException($"Keyword the '{bufName}' is not compatible");
+        }
+    }
+
     public static Action<Instance> AddBuf(bool isSelf, string bufName, int stack, int turn)
     {
         return self =>
@@ -474,38 +527,24 @@ internal static class Command
                 return;
             }
 
-            if (bufName.StartsWith("KeywordBuf_") && Enum.TryParse<KeywordBuf>(bufName.StripPrefix("KeywordBuf_"), out var keyword))
+            AddBufImpl(target, bufName, stack, turn, self.owner);
+        };
+    }
+
+    public static Action<Instance> AddBufAll(bool isSelf, string bufName, int stack, int turn)
+    {
+        return self =>
+        {
+            if (self.owner is null)
             {
-                if (turn == 1)
-                {
-                    target.bufListDetail?.AddKeywordBufByCard(keyword, stack, self.owner);
-                }
-                else if (turn == 2)
-                {
-                    target.bufListDetail?.AddKeywordBufNextNextByCard(keyword, stack, self.owner);
-                }
-                else
-                {
-                    target.bufListDetail?.AddKeywordBufThisRoundByCard(keyword, stack, self.owner);
-                }
+                return;
             }
-            else if (DynamicAbilityCfg.BattleUnitBufCompats.TryGetValue(bufName, out var resType))
+
+            var targets = (isSelf ? self.owner.faction : self.owner.faction.FaceTo()).GetAlives();
+
+            foreach (var target in targets)
             {
-                var buf = target.bufListDetail?.GetActivatedBufList()?.Find(buf => buf.GetType() == resType && !buf.IsDestroyed());
-
-                if (buf is null)
-                {
-                    buf = Activator.CreateInstance(resType, AccessTools.all, null, [], null) as BattleUnitBuf
-                        ?? throw new InvalidOperationException($"UnitBuf the '{resType.Name}' has not empty constructor");
-
-                    target.bufListDetail?.AddBuf(buf);
-                }
-
-                buf.stack += stack;
-            }
-            else
-            {
-                throw new InvalidOperationException($"Keyword the '{bufName}' is not compatible");
+                AddBufImpl(target, bufName, stack, turn, self.owner);
             }
         };
     }
