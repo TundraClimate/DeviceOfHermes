@@ -372,6 +372,10 @@ internal static class Command
             "inf" or "Inflict" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
             "infr" or "InflictReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
             "infrr" or "InflictReadyReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
+            "takedmg" or "TakeDamage" => TakeDamage(true, CastTo<Token.Number>(fn, 0).inner),
+            "givedmg" or "GiveDamage" => TakeDamage(false, CastTo<Token.Number>(fn, 0).inner),
+            "takebdmg" or "TakeBreakDamage" => TakeBreakDamage(true, CastTo<Token.Number>(fn, 0).inner),
+            "givebdmg" or "GiveBreakDamage" => TakeBreakDamage(false, CastTo<Token.Number>(fn, 0).inner),
             _ => throw new InvalidOperationException($"The '{name}' is not supported with Fn"),
         };
 
@@ -475,6 +479,36 @@ internal static class Command
             {
                 throw new InvalidOperationException($"Keyword the '{bufName}' is not compatible");
             }
+        };
+    }
+
+    public static Action<Instance> TakeDamage(bool isSelf, int dmg)
+    {
+        return self =>
+        {
+            var target = isSelf ? self.owner : self.currentDiceAction?.target;
+
+            if (target is null)
+            {
+                return;
+            }
+
+            target.TakeDamage(dmg, attacker: self.owner);
+        };
+    }
+
+    public static Action<Instance> TakeBreakDamage(bool isSelf, int dmg)
+    {
+        return self =>
+        {
+            var target = isSelf ? self.owner : self.currentDiceAction?.target;
+
+            if (target is null)
+            {
+                return;
+            }
+
+            target.TakeBreakDamage(dmg, attacker: self.owner);
         };
     }
 }
