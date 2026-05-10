@@ -30,7 +30,7 @@ internal class DynamicAbilityContext
         Name = token.name.inner;
     }
 
-    protected void AddProcess(int timing, Action<Instance> procs)
+    protected void AddProcess(int timing, Action<AbilityInstance> procs)
     {
         if (_procs.ContainsKey(timing))
         {
@@ -42,7 +42,7 @@ internal class DynamicAbilityContext
         }
     }
 
-    public void RunProcess(int timing, Instance instance)
+    public void RunProcess(int timing, AbilityInstance instance)
     {
         if (_procs.TryGetValue(timing, out var proc))
         {
@@ -131,7 +131,7 @@ internal class DynamicAbilityContext
         Hermes.Say(builder.ToString());
     }
 
-    private Dictionary<int, Action<Instance>> _procs = new();
+    private Dictionary<int, Action<AbilityInstance>> _procs = new();
 }
 
 internal enum InvokeTimingCard
@@ -201,18 +201,18 @@ internal class CardAbilityContext : DynamicAbilityContext
                 _ => throw new InvalidOperationException($"A function '{fn.name.inner}' is not supported"),
             };
 
-            Action<Instance> root = _ => { };
+            Action<AbilityInstance> root = _ => { };
 
             foreach (var argument in fn.inner)
             {
-                root += Command.ConvertFrom(argument);
+                root += ContextCommand.ConvertFrom(argument);
             }
 
             AddProcess(timing, root);
         }
     }
 
-    private void AddProcess(InvokeTimingCard timing, Action<Instance> procs)
+    private void AddProcess(InvokeTimingCard timing, Action<AbilityInstance> procs)
     {
         AddProcess((int)timing, procs);
     }
@@ -277,18 +277,18 @@ internal class DiceAbilityContext : DynamicAbilityContext
                 _ => throw new InvalidOperationException($"A function '{fn.name.inner}' is not supported"),
             };
 
-            Action<Instance> root = _ => { };
+            Action<AbilityInstance> root = _ => { };
 
             foreach (var argument in fn.inner)
             {
-                root += Command.ConvertFrom(argument);
+                root += ContextCommand.ConvertFrom(argument);
             }
 
             AddProcess(timing, root);
         }
     }
 
-    private void AddProcess(InvokeTimingDice timing, Action<Instance> procs)
+    private void AddProcess(InvokeTimingDice timing, Action<AbilityInstance> procs)
     {
         AddProcess((int)timing, procs);
     }
@@ -296,7 +296,7 @@ internal class DiceAbilityContext : DynamicAbilityContext
     private static Dictionary<Token.DynamicAbility, DiceAbilityContext> _cache = new();
 }
 
-internal class Instance
+internal class AbilityInstance
 {
     public BattleUnitModel? owner { get; private set; }
 
@@ -304,13 +304,13 @@ internal class Instance
 
     public BattleDiceBehavior? currentBehavior { get; set; }
 
-    public Instance(DiceCardSelfAbilityBase ability)
+    public AbilityInstance(DiceCardSelfAbilityBase ability)
     {
         owner = ability.owner;
         currentDiceAction = ability.card;
     }
 
-    public Instance(DiceCardAbilityBase ability)
+    public AbilityInstance(DiceCardAbilityBase ability)
     {
         owner = ability.owner;
         currentDiceAction = ability.behavior?.card;
@@ -318,9 +318,9 @@ internal class Instance
     }
 }
 
-internal static class Command
+internal static class ContextCommand
 {
-    public static Action<Instance> ConvertFrom(Token.Argument argument)
+    public static Action<AbilityInstance> ConvertFrom(Token.Argument argument)
     {
         return argument.type switch
         {
@@ -331,78 +331,86 @@ internal static class Command
         };
     }
 
-    public static Action<Instance> ConvertFrom(Token.String str)
+    public static Action<AbilityInstance> ConvertFrom(Token.String str)
     {
         throw new NotImplementedException();
     }
 
-    public static Action<Instance> ConvertFrom(Token.Number num)
+    public static Action<AbilityInstance> ConvertFrom(Token.Number num)
     {
         throw new NotImplementedException();
     }
 
-    public static Action<Instance> ConvertFrom(Token.Fn fn)
+    public static Action<AbilityInstance> ConvertFrom(Token.Fn fn)
     {
         var name = fn.name.inner;
 
-        Action<Instance> res = name switch
+        Action<AbilityInstance> res = name switch
         {
-            "log" or "Log" => Log(CastTo<Token.String>(fn, 0).inner),
-            "light" or "Light" => RecoverPlayPoint(CastTo<Token.Number>(fn, 0).inner),
-            "draw" or "Draw" => DrawCard(CastTo<Token.Number>(fn, 0).inner),
-            "card" or "GetCard" => GetCard(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner),
-            "cardexhaust" or "GetCardExhaust" => GetCardExhaust(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner),
-            "heal" or "Heal" => HealHP(CastTo<Token.Number>(fn, 0).inner),
-            "bheal" or "HealBreak" => HealBP(CastTo<Token.Number>(fn, 0).inner),
-            "statbonus" or "StatBonus" => CastTo<Token.String>(fn, 0).inner switch
+            "log" or "Log" => Log(fn.CastToStr(0)),
+            "light" or "Light" => RecoverPlayPoint(fn.CastToNum(0)),
+            "draw" or "Draw" => DrawCard(fn.CastToNum(0)),
+            "card" or "GetCard" => GetCard(fn.CastToStr(0), fn.CastToNum(1)),
+            "cardexhaust" or "GetCardExhaust" => GetCardExhaust(fn.CastToStr(0), fn.CastToNum(1)),
+            "heal" or "Heal" => HealHP(fn.CastToNum(0)),
+            "bheal" or "HealBreak" => HealBP(fn.CastToNum(0)),
+            "statbonus" or "StatBonus" => fn.CastToStr(0) switch
             {
-                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "face" => ApplyDiceStat(new DiceStatBonus() { face = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'statbonus' Fn"),
+                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "power" => ApplyDiceStat(new DiceStatBonus() { power = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "face" => ApplyDiceStat(new DiceStatBonus() { face = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "min" => ApplyDiceStat(new DiceStatBonus() { min = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "max" => ApplyDiceStat(new DiceStatBonus() { max = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                _ => throw new InvalidOperationException($"The '{fn.CastToStr(0)}' is not supported on 'statbonus' Fn"),
             },
-            "estatbonus" or "EnemyStatBonus" => CastTo<Token.String>(fn, 0).inner switch
+            "estatbonus" or "EnemyStatBonus" => fn.CastToStr(0) switch
             {
-                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "face" => ApplyDiceStat(new DiceStatBonus() { face = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
-                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "power" => ApplyDiceStat(new DiceStatBonus() { power = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "face" => ApplyDiceStat(new DiceStatBonus() { face = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "min" => ApplyDiceStat(new DiceStatBonus() { min = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "max" => ApplyDiceStat(new DiceStatBonus() { max = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
+                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = fn.CastToNum(1) }, true, fn.TryCastToNum(2) ?? -1),
                 _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'estatbonus' Fn"),
             },
-            "gain" or "Gain" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
-            "gainr" or "GainReady" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
-            "gainrr" or "GainReadyReady" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
-            "inf" or "Inflict" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
-            "infr" or "InflictReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
-            "infrr" or "InflictReadyReady" => InflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
-            "allgain" or "AllGain" => AllGainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
-            "allgainr" or "AllGainReady" => AllGainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
-            "allgainrr" or "AllGainReadyReady" => AllGainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
-            "allinf" or "AllInflict" => AllInflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
-            "allinfr" or "AllInflictReady" => AllInflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 1),
-            "allinfrr" or "AllInflictReadyReady" => AllInflictBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 2),
-            "takedmg" or "TakeDamage" => TakeDamage(true, CastTo<Token.Number>(fn, 0).inner),
-            "givedmg" or "GiveDamage" => TakeDamage(false, CastTo<Token.Number>(fn, 0).inner),
-            "takebdmg" or "TakeBreakDamage" => TakeBreakDamage(true, CastTo<Token.Number>(fn, 0).inner),
-            "givebdmg" or "GiveBreakDamage" => TakeBreakDamage(false, CastTo<Token.Number>(fn, 0).inner),
+            "gain" or "Gain" => GainBuf(fn.CastToStr(0), fn.CastToNum(1), 0),
+            "gainr" or "GainReady" => GainBuf(fn.CastToStr(0), fn.CastToNum(1), 1),
+            "gainrr" or "GainReadyReady" => GainBuf(fn.CastToStr(0), fn.CastToNum(1), 2),
+            "inf" or "Inflict" => InflictBuf(fn.CastToStr(0), fn.CastToNum(1), 0),
+            "infr" or "InflictReady" => InflictBuf(fn.CastToStr(0), fn.CastToNum(1), 1),
+            "infrr" or "InflictReadyReady" => InflictBuf(fn.CastToStr(0), fn.CastToNum(1), 2),
+            "allgain" or "AllGain" => AllGainBuf(fn.CastToStr(0), fn.CastToNum(1), 0),
+            "allgainr" or "AllGainReady" => AllGainBuf(fn.CastToStr(0), fn.CastToNum(1), 1),
+            "allgainrr" or "AllGainReadyReady" => AllGainBuf(fn.CastToStr(0), fn.CastToNum(1), 2),
+            "allinf" or "AllInflict" => AllInflictBuf(fn.CastToStr(0), fn.CastToNum(1), 0),
+            "allinfr" or "AllInflictReady" => AllInflictBuf(fn.CastToStr(0), fn.CastToNum(1), 1),
+            "allinfrr" or "AllInflictReadyReady" => AllInflictBuf(fn.CastToStr(0), fn.CastToNum(1), 2),
+            "takedmg" or "TakeDamage" => TakeDamage(true, fn.CastToNum(0)),
+            "givedmg" or "GiveDamage" => TakeDamage(false, fn.CastToNum(0)),
+            "takebdmg" or "TakeBreakDamage" => TakeBreakDamage(true, fn.CastToNum(0)),
+            "givebdmg" or "GiveBreakDamage" => TakeBreakDamage(false, fn.CastToNum(0)),
             _ => throw new InvalidOperationException($"The '{name}' is not supported with Fn"),
         };
 
         return res;
     }
+
+    private static string CastToStr(this Token.Fn token, int idx) => CastTo<Token.String>(token, idx).inner;
+
+    private static int CastToNum(this Token.Fn token, int idx) => CastTo<Token.Number>(token, idx).inner;
+
+    private static string? TryCastToStr(this Token.Fn token, int idx) => TryCastTo<Token.String>(token, idx)?.inner;
+
+    private static int? TryCastToNum(this Token.Fn token, int idx) => TryCastTo<Token.Number>(token, idx)?.inner;
 
     public static T CastTo<T>(Token.Fn token, int idx)
         where T : Token
@@ -435,71 +443,56 @@ internal static class Command
         }
     }
 
-    public static Action<Instance> Log(string txt) => _ => Hermes.Say(txt);
+    public static Action<AbilityInstance> Log(string txt) => _ => Hermes.Say(txt);
 
-    public static Action<Instance> RecoverPlayPoint(int num) => self => self.owner?.cardSlotDetail?.RecoverPlayPointByCard(num);
+    public static Action<AbilityInstance> RecoverPlayPoint(int num) => self => self.owner?.cardSlotDetail?.RecoverPlayPointByCard(num);
 
-    public static Action<Instance> DrawCard(int num) => self => self.owner?.allyCardDetail?.DrawCards(num);
+    public static Action<AbilityInstance> DrawCard(int num) => self => self.owner?.allyCardDetail?.DrawCards(num);
 
-    public static Action<Instance> HealHP(int num) => self => self.owner?.RecoverHP(num);
+    public static Action<AbilityInstance> HealHP(int num) => self => self.owner?.RecoverHP(num);
 
-    public static Action<Instance> HealBP(int num) => self => self.owner?.breakDetail?.RecoverBreak(num);
+    public static Action<AbilityInstance> HealBP(int num) => self => self.owner?.breakDetail?.RecoverBreak(num);
 
-    public static Action<Instance> GetCard(string pid, int id) => self => self.owner?.allyCardDetail?.AddNewCard(new LorId(pid, id));
+    public static Action<AbilityInstance> GetCard(string pid, int id) => self => self.owner?.allyCardDetail?.AddNewCard(new LorId(pid, id));
 
-    public static Action<Instance> GetCardExhaust(string pid, int id)
+    public static Action<AbilityInstance> GetCardExhaust(string pid, int id)
         => self => self.owner?.allyCardDetail?.AddNewCard(new LorId(pid, id)).exhaust = true;
 
-    public static Action<Instance> ApplyDiceStat(DiceStatBonus stat, bool isSelf, int idx)
+    public static Action<AbilityInstance> ApplyDiceStat(DiceStatBonus stat, bool isSelf, int idx) => self =>
     {
-        return self =>
+        if (self.currentBehavior is not null && idx == -1)
         {
-            if (self.currentBehavior is not null && idx == -1)
+            if (isSelf)
             {
-                if (isSelf)
-                {
-                    self.currentBehavior.ApplyDiceStatBonus(stat);
-                }
-                else
-                {
-                    self.currentBehavior.TargetDice?.ApplyDiceStatBonus(stat);
-                }
+                self.currentBehavior.ApplyDiceStatBonus(stat);
             }
             else
             {
-                var matcher = idx == -1 ? _ => true : DiceMatch.DiceByIdx(idx);
-
-                if (isSelf)
-                {
-                    self.currentDiceAction?.ApplyDiceStatBonus(matcher, stat);
-                }
-                else
-                {
-                    self.currentDiceAction?.target?.currentDiceAction?.ApplyDiceStatBonus(matcher, stat);
-                }
+                self.currentBehavior.TargetDice?.ApplyDiceStatBonus(stat);
             }
-        };
-    }
+        }
+        else
+        {
+            var matcher = idx == -1 ? _ => true : DiceMatch.DiceByIdx(idx);
 
-    public static Action<Instance> GainBuf(string bufName, int stack, int turn)
-    {
-        return AddBuf(true, bufName, stack, turn);
-    }
+            if (isSelf)
+            {
+                self.currentDiceAction?.ApplyDiceStatBonus(matcher, stat);
+            }
+            else
+            {
+                self.currentDiceAction?.target?.currentDiceAction?.ApplyDiceStatBonus(matcher, stat);
+            }
+        }
+    };
 
-    public static Action<Instance> InflictBuf(string bufName, int stack, int turn)
-    {
-        return AddBuf(false, bufName, stack, turn);
-    }
+    public static Action<AbilityInstance> GainBuf(string bufName, int stack, int turn) => AddBuf(true, bufName, stack, turn);
 
-    public static Action<Instance> AllGainBuf(string bufName, int stack, int turn)
-    {
-        return AddBufAll(true, bufName, stack, turn);
-    }
+    public static Action<AbilityInstance> InflictBuf(string bufName, int stack, int turn) => AddBuf(false, bufName, stack, turn);
 
-    public static Action<Instance> AllInflictBuf(string bufName, int stack, int turn)
-    {
-        return AddBufAll(false, bufName, stack, turn);
-    }
+    public static Action<AbilityInstance> AllGainBuf(string bufName, int stack, int turn) => AddBufAll(true, bufName, stack, turn);
+
+    public static Action<AbilityInstance> AllInflictBuf(string bufName, int stack, int turn) => AddBufAll(false, bufName, stack, turn);
 
     private static void AddBufImpl(BattleUnitModel target, string bufName, int stack, int turn, BattleUnitModel? owner)
     {
@@ -538,66 +531,54 @@ internal static class Command
         }
     }
 
-    public static Action<Instance> AddBuf(bool isSelf, string bufName, int stack, int turn)
+    public static Action<AbilityInstance> AddBuf(bool isSelf, string bufName, int stack, int turn) => self =>
     {
-        return self =>
+        var target = isSelf ? self.owner : self.currentDiceAction?.target;
+
+        if (target is null)
         {
-            var target = isSelf ? self.owner : self.currentDiceAction?.target;
+            return;
+        }
 
-            if (target is null)
-            {
-                return;
-            }
+        AddBufImpl(target, bufName, stack, turn, self.owner);
+    };
 
+    public static Action<AbilityInstance> AddBufAll(bool isSelf, string bufName, int stack, int turn) => self =>
+    {
+        if (self.owner is null)
+        {
+            return;
+        }
+
+        var targets = (isSelf ? self.owner.faction : self.owner.faction.FaceTo()).GetAlives();
+
+        foreach (var target in targets)
+        {
             AddBufImpl(target, bufName, stack, turn, self.owner);
-        };
-    }
+        }
+    };
 
-    public static Action<Instance> AddBufAll(bool isSelf, string bufName, int stack, int turn)
+    public static Action<AbilityInstance> TakeDamage(bool isSelf, int dmg) => self =>
     {
-        return self =>
+        var target = isSelf ? self.owner : self.currentDiceAction?.target;
+
+        if (target is null)
         {
-            if (self.owner is null)
-            {
-                return;
-            }
+            return;
+        }
 
-            var targets = (isSelf ? self.owner.faction : self.owner.faction.FaceTo()).GetAlives();
+        target.TakeDamage(dmg, attacker: self.owner);
+    };
 
-            foreach (var target in targets)
-            {
-                AddBufImpl(target, bufName, stack, turn, self.owner);
-            }
-        };
-    }
-
-    public static Action<Instance> TakeDamage(bool isSelf, int dmg)
+    public static Action<AbilityInstance> TakeBreakDamage(bool isSelf, int dmg) => self =>
     {
-        return self =>
+        var target = isSelf ? self.owner : self.currentDiceAction?.target;
+
+        if (target is null)
         {
-            var target = isSelf ? self.owner : self.currentDiceAction?.target;
+            return;
+        }
 
-            if (target is null)
-            {
-                return;
-            }
-
-            target.TakeDamage(dmg, attacker: self.owner);
-        };
-    }
-
-    public static Action<Instance> TakeBreakDamage(bool isSelf, int dmg)
-    {
-        return self =>
-        {
-            var target = isSelf ? self.owner : self.currentDiceAction?.target;
-
-            if (target is null)
-            {
-                return;
-            }
-
-            target.TakeBreakDamage(dmg, attacker: self.owner);
-        };
-    }
+        target.TakeBreakDamage(dmg, attacker: self.owner);
+    };
 }
