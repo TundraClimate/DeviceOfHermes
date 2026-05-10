@@ -356,30 +356,30 @@ internal static class Command
             "bheal" or "HealBreak" => HealBP(CastTo<Token.Number>(fn, 0).inner),
             "statbonus" or "StatBonus" => CastTo<Token.String>(fn, 0).inner switch
             {
-                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }),
-                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }),
-                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }),
-                "face" => ApplyDiceStat(new DiceStatBonus() { face = CastTo<Token.Number>(fn, 1).inner }),
-                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }),
-                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }),
-                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }),
-                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }),
-                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }),
-                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }),
+                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "face" => ApplyDiceStat(new DiceStatBonus() { face = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }, true, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
                 _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'statbonus' Fn"),
             },
             "estatbonus" or "EnemyStatBonus" => CastTo<Token.String>(fn, 0).inner switch
             {
-                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }, false),
-                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }, false),
-                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }, false),
-                "face" => ApplyDiceStat(new DiceStatBonus() { face = CastTo<Token.Number>(fn, 1).inner }, false),
-                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }, false),
-                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }, false),
-                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }, false),
-                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }, false),
-                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }, false),
-                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }, false),
+                "dmg" => ApplyDiceStat(new DiceStatBonus() { dmg = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "breakDmg" => ApplyDiceStat(new DiceStatBonus() { breakDmg = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "power" => ApplyDiceStat(new DiceStatBonus() { power = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "face" => ApplyDiceStat(new DiceStatBonus() { face = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "dmgRate" => ApplyDiceStat(new DiceStatBonus() { dmgRate = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "breakRate" => ApplyDiceStat(new DiceStatBonus() { breakRate = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "min" => ApplyDiceStat(new DiceStatBonus() { min = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "max" => ApplyDiceStat(new DiceStatBonus() { max = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "guardBreakAdder" => ApplyDiceStat(new DiceStatBonus() { guardBreakAdder = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
+                "guardBreakMultiplier" => ApplyDiceStat(new DiceStatBonus() { guardBreakMultiplier = CastTo<Token.Number>(fn, 1).inner }, false, TryCastTo<Token.Number>(fn, 2)?.inner ?? -1),
                 _ => throw new InvalidOperationException($"The '{CastTo<Token.String>(fn, 0).inner}' is not supported on 'estatbonus' Fn"),
             },
             "gain" or "Gain" => GainBuf(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner, 0),
@@ -422,6 +422,19 @@ internal static class Command
         throw new InvalidOperationException($"Value '{token.name.inner}[{idx}]' expected {expected}, found the '{token.inner[idx].inner.GetType().Name}'");
     }
 
+    public static T? TryCastTo<T>(Token.Fn token, int idx)
+        where T : Token
+    {
+        try
+        {
+            return CastTo<T>(token, idx);
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
     public static Action<Instance> Log(string txt) => _ => Hermes.Say(txt);
 
     public static Action<Instance> RecoverPlayPoint(int num) => self => self.owner?.cardSlotDetail?.RecoverPlayPointByCard(num);
@@ -437,11 +450,11 @@ internal static class Command
     public static Action<Instance> GetCardExhaust(string pid, int id)
         => self => self.owner?.allyCardDetail?.AddNewCard(new LorId(pid, id)).exhaust = true;
 
-    public static Action<Instance> ApplyDiceStat(DiceStatBonus stat, bool isSelf = true)
+    public static Action<Instance> ApplyDiceStat(DiceStatBonus stat, bool isSelf, int idx)
     {
         return self =>
         {
-            if (self.currentBehavior is not null)
+            if (self.currentBehavior is not null && idx == -1)
             {
                 if (isSelf)
                 {
@@ -454,13 +467,15 @@ internal static class Command
             }
             else
             {
+                var matcher = idx == -1 ? _ => true : DiceMatch.DiceByIdx(idx);
+
                 if (isSelf)
                 {
-                    self.currentDiceAction?.ApplyDiceStatBonus(_ => true, stat);
+                    self.currentDiceAction?.ApplyDiceStatBonus(matcher, stat);
                 }
                 else
                 {
-                    self.currentDiceAction?.target?.currentDiceAction?.ApplyDiceStatBonus(_ => true, stat);
+                    self.currentDiceAction?.target?.currentDiceAction?.ApplyDiceStatBonus(matcher, stat);
                 }
             }
         };
