@@ -350,6 +350,8 @@ internal static class Command
             "log" or "Log" => Log(CastTo<Token.String>(fn, 0).inner),
             "light" or "Light" => RecoverPlayPoint(CastTo<Token.Number>(fn, 0).inner),
             "draw" or "Draw" => DrawCard(CastTo<Token.Number>(fn, 0).inner),
+            "card" or "GetCard" => GetCard(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner),
+            "cardexhaust" or "GetCardExhaust" => GetCardExhaust(CastTo<Token.String>(fn, 0).inner, CastTo<Token.Number>(fn, 1).inner),
             "heal" or "Heal" => HealHP(CastTo<Token.Number>(fn, 0).inner),
             "bheal" or "HealBreak" => HealBP(CastTo<Token.Number>(fn, 0).inner),
             "statbonus" or "StatBonus" => CastTo<Token.String>(fn, 0).inner switch
@@ -429,6 +431,11 @@ internal static class Command
     public static Action<Instance> HealHP(int num) => self => self.owner?.RecoverHP(num);
 
     public static Action<Instance> HealBP(int num) => self => self.owner?.breakDetail?.RecoverBreak(num);
+
+    public static Action<Instance> GetCard(string pid, int id) => self => self.owner?.allyCardDetail?.AddNewCard(new LorId(pid, id));
+
+    public static Action<Instance> GetCardExhaust(string pid, int id)
+        => self => self.owner?.allyCardDetail?.AddNewCard(new LorId(pid, id)).exhaust = true;
 
     public static Action<Instance> ApplyDiceStat(DiceStatBonus stat, bool isSelf = true)
     {
