@@ -222,6 +222,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.CommonCoroutine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.CommonCoroutine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.CommonCoroutine",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.CommonCoroutine.yml\" sourcestartlinenumber=\"1\">A list of Coroutines</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.CustomDice.RevengeDice.yml",
       "output": {
         ".html": {
@@ -303,6 +317,76 @@
       "IsMRef": true,
       "Title": "DeviceOfHermes.DynamicAbilityCfg",
       "Summary": "<p sourcefile=\"api/DeviceOfHermes.DynamicAbilityCfg.yml\" sourcestartlinenumber=\"1\">The config of DynamicAbility</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.EasyAreaEffect.MoveOpts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.EasyAreaEffect.MoveOpts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.EasyAreaEffect.MoveOpts",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.EasyAreaEffect.MoveOpts.yml\" sourcestartlinenumber=\"1\">MoveTo Options</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.EasyAreaEffect.Stage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.EasyAreaEffect.Stage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.EasyAreaEffect.Stage",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.EasyAreaEffect.Stage.yml\" sourcestartlinenumber=\"1\">Stage helper</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.EasyAreaEffect.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.EasyAreaEffect.Unit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.EasyAreaEffect.Unit",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.EasyAreaEffect.Unit.yml\" sourcestartlinenumber=\"1\">Unit helper</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.EasyAreaEffect.Victims.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.EasyAreaEffect.Victims.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.EasyAreaEffect.Victims",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.EasyAreaEffect.Victims.yml\" sourcestartlinenumber=\"1\">A wrapper of List&lt;BattleFarAreaPlayManager.VictimInfo&gt;</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.EasyAreaEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.EasyAreaEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.EasyAreaEffect",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.EasyAreaEffect.yml\" sourcestartlinenumber=\"1\">A helper of FarAreaEffect</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -729,6 +813,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/additional-onlycard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-areaeffect.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-areaeffect.html"
         }
       },
       "version": ""

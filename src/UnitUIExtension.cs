@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using HarmonyLib;
 using HarmonyExtension;
-using DeviceOfHermes.UI;
 
 namespace DeviceOfHermes;
 

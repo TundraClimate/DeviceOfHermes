@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DeviceOfHermes.UI;
+namespace DeviceOfHermes;
 
 /// <summary>A list of Coroutines</summary>
 public class CommonCoroutine
@@ -93,5 +93,43 @@ public class CommonCoroutine
 
         color.a = 0;
         image.color = color;
+    }
+
+    /// <summary>Move unit</summary>
+    public static IEnumerator UnitMoving(BattleUnitView view, Vector3 src, Vector3 dst, float duration, float speedMul = 1f)
+    {
+        var elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime * speedMul;
+
+            var t = elapsed / duration;
+
+            view.WorldPosition = Vector3.Lerp(src, dst, t);
+
+            yield return null;
+        }
+
+        view.WorldPosition = dst;
+    }
+
+    /// <summary>Move unit with easing</summary>
+    public static IEnumerator UnitEaseMoving(BattleUnitView view, Vector3 src, Vector3 dst, float duration, float speedMul = 1f)
+    {
+        var elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime * speedMul;
+
+            var t = 1f - Mathf.Pow(1f - elapsed / duration, 3f);
+
+            view.WorldPosition = Vector3.Lerp(src, dst, t);
+
+            yield return null;
+        }
+
+        view.WorldPosition = dst;
     }
 }

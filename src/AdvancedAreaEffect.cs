@@ -10,6 +10,8 @@ public class AdvancedAreaEffect : FarAreaEffect
         {
             _init = true;
 
+            DefenseVictims = defenseVictims;
+
             _actions.Push(ActionSeq(attacker, victims));
         }
 
@@ -69,5 +71,8 @@ public class AdvancedAreaEffect : FarAreaEffect
 
     /// <summary>Included deltaTime</summary>
     protected float DeltaTime { get; private set; }
+
+    /// <summary>Included defenseVictims</summary>
+    protected List<BattleFarAreaPlayManager.VictimInfo> DefenseVictims { get; private set; } = new();
 }
 

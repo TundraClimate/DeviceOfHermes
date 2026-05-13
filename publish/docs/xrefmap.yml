@@ -978,6 +978,108 @@ references:
   commentId: T:DeviceOfHermes.BattleUIBehaviourExtension
   fullName: DeviceOfHermes.BattleUIBehaviourExtension
   nameWithType: BattleUIBehaviourExtension
+- uid: DeviceOfHermes.CommonCoroutine
+  name: CommonCoroutine
+  href: api/DeviceOfHermes.CommonCoroutine.html
+  commentId: T:DeviceOfHermes.CommonCoroutine
+  fullName: DeviceOfHermes.CommonCoroutine
+  nameWithType: CommonCoroutine
+- uid: DeviceOfHermes.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup,System.Single)
+  name: CanvasGroupFadein(CanvasGroup, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_CanvasGroupFadein_UnityEngine_CanvasGroup_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup,System.Single)
+  name.vb: CanvasGroupFadein(CanvasGroup, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.CanvasGroupFadein(UnityEngine.CanvasGroup, Single)
+  nameWithType: CommonCoroutine.CanvasGroupFadein(CanvasGroup, float)
+  nameWithType.vb: CommonCoroutine.CanvasGroupFadein(CanvasGroup, Single)
+- uid: DeviceOfHermes.CommonCoroutine.CanvasGroupFadein*
+  name: CanvasGroupFadein
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_CanvasGroupFadein_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.CanvasGroupFadein
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.CanvasGroupFadein
+  nameWithType: CommonCoroutine.CanvasGroupFadein
+- uid: DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup,System.Single,System.Single)
+  name: CanvasGroupFadeout(CanvasGroup, float, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_CanvasGroupFadeout_UnityEngine_CanvasGroup_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup,System.Single,System.Single)
+  name.vb: CanvasGroupFadeout(CanvasGroup, Single, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup, float, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout(UnityEngine.CanvasGroup, Single, Single)
+  nameWithType: CommonCoroutine.CanvasGroupFadeout(CanvasGroup, float, float)
+  nameWithType.vb: CommonCoroutine.CanvasGroupFadeout(CanvasGroup, Single, Single)
+- uid: DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout*
+  name: CanvasGroupFadeout
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_CanvasGroupFadeout_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout
+  nameWithType: CommonCoroutine.CanvasGroupFadeout
+- uid: DeviceOfHermes.CommonCoroutine.ImageFadein(UnityEngine.UI.Image,System.Single)
+  name: ImageFadein(Image, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_ImageFadein_UnityEngine_UI_Image_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.ImageFadein(UnityEngine.UI.Image,System.Single)
+  name.vb: ImageFadein(Image, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.ImageFadein(UnityEngine.UI.Image, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.ImageFadein(UnityEngine.UI.Image, Single)
+  nameWithType: CommonCoroutine.ImageFadein(Image, float)
+  nameWithType.vb: CommonCoroutine.ImageFadein(Image, Single)
+- uid: DeviceOfHermes.CommonCoroutine.ImageFadein*
+  name: ImageFadein
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_ImageFadein_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.ImageFadein
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.ImageFadein
+  nameWithType: CommonCoroutine.ImageFadein
+- uid: DeviceOfHermes.CommonCoroutine.ImageFadeout(UnityEngine.UI.Image,System.Single,System.Single)
+  name: ImageFadeout(Image, float, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_ImageFadeout_UnityEngine_UI_Image_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.ImageFadeout(UnityEngine.UI.Image,System.Single,System.Single)
+  name.vb: ImageFadeout(Image, Single, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.ImageFadeout(UnityEngine.UI.Image, float, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.ImageFadeout(UnityEngine.UI.Image, Single, Single)
+  nameWithType: CommonCoroutine.ImageFadeout(Image, float, float)
+  nameWithType.vb: CommonCoroutine.ImageFadeout(Image, Single, Single)
+- uid: DeviceOfHermes.CommonCoroutine.ImageFadeout*
+  name: ImageFadeout
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_ImageFadeout_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.ImageFadeout
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.ImageFadeout
+  nameWithType: CommonCoroutine.ImageFadeout
+- uid: DeviceOfHermes.CommonCoroutine.UnitEaseMoving(BattleUnitView,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  name: UnitEaseMoving(BattleUnitView, Vector3, Vector3, float, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_UnitEaseMoving_BattleUnitView_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.UnitEaseMoving(BattleUnitView,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  name.vb: UnitEaseMoving(BattleUnitView, Vector3, Vector3, Single, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.UnitEaseMoving(BattleUnitView, UnityEngine.Vector3, UnityEngine.Vector3, float, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.UnitEaseMoving(BattleUnitView, UnityEngine.Vector3, UnityEngine.Vector3, Single, Single)
+  nameWithType: CommonCoroutine.UnitEaseMoving(BattleUnitView, Vector3, Vector3, float, float)
+  nameWithType.vb: CommonCoroutine.UnitEaseMoving(BattleUnitView, Vector3, Vector3, Single, Single)
+- uid: DeviceOfHermes.CommonCoroutine.UnitEaseMoving*
+  name: UnitEaseMoving
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_UnitEaseMoving_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.UnitEaseMoving
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.UnitEaseMoving
+  nameWithType: CommonCoroutine.UnitEaseMoving
+- uid: DeviceOfHermes.CommonCoroutine.UnitMoving(BattleUnitView,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  name: UnitMoving(BattleUnitView, Vector3, Vector3, float, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_UnitMoving_BattleUnitView_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.UnitMoving(BattleUnitView,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  name.vb: UnitMoving(BattleUnitView, Vector3, Vector3, Single, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.UnitMoving(BattleUnitView, UnityEngine.Vector3, UnityEngine.Vector3, float, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.UnitMoving(BattleUnitView, UnityEngine.Vector3, UnityEngine.Vector3, Single, Single)
+  nameWithType: CommonCoroutine.UnitMoving(BattleUnitView, Vector3, Vector3, float, float)
+  nameWithType.vb: CommonCoroutine.UnitMoving(BattleUnitView, Vector3, Vector3, Single, Single)
+- uid: DeviceOfHermes.CommonCoroutine.UnitMoving*
+  name: UnitMoving
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_UnitMoving_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.UnitMoving
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.UnitMoving
+  nameWithType: CommonCoroutine.UnitMoving
 - uid: DeviceOfHermes.CustomDice
   name: DeviceOfHermes.CustomDice
   href: api/DeviceOfHermes.CustomDice.html
@@ -1136,6 +1238,475 @@ references:
   fullName.vb: DeviceOfHermes.DynamicAbilityCfg.AddBattleUnitBufRoute(Of T)(String)
   nameWithType: DynamicAbilityCfg.AddBattleUnitBufRoute<T>(string)
   nameWithType.vb: DynamicAbilityCfg.AddBattleUnitBufRoute(Of T)(String)
+- uid: DeviceOfHermes.EasyAreaEffect
+  name: EasyAreaEffect
+  href: api/DeviceOfHermes.EasyAreaEffect.html
+  commentId: T:DeviceOfHermes.EasyAreaEffect
+  fullName: DeviceOfHermes.EasyAreaEffect
+  nameWithType: EasyAreaEffect
+- uid: DeviceOfHermes.EasyAreaEffect.ActionSeq(BattleUnitModel,System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo})
+  name: ActionSeq(BattleUnitModel, List<VictimInfo>)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_ActionSeq_BattleUnitModel_System_Collections_Generic_List_BattleFarAreaPlayManager_VictimInfo__
+  commentId: M:DeviceOfHermes.EasyAreaEffect.ActionSeq(BattleUnitModel,System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo})
+  name.vb: ActionSeq(BattleUnitModel, List(Of VictimInfo))
+  fullName: DeviceOfHermes.EasyAreaEffect.ActionSeq(BattleUnitModel, System.Collections.Generic.List<BattleFarAreaPlayManager.VictimInfo>)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.ActionSeq(BattleUnitModel, System.Collections.Generic.List(Of BattleFarAreaPlayManager.VictimInfo))
+  nameWithType: EasyAreaEffect.ActionSeq(BattleUnitModel, List<BattleFarAreaPlayManager.VictimInfo>)
+  nameWithType.vb: EasyAreaEffect.ActionSeq(BattleUnitModel, List(Of BattleFarAreaPlayManager.VictimInfo))
+- uid: DeviceOfHermes.EasyAreaEffect.ActionSeq*
+  name: ActionSeq
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_ActionSeq_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.ActionSeq
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.ActionSeq
+  nameWithType: EasyAreaEffect.ActionSeq
+- uid: DeviceOfHermes.EasyAreaEffect.AddTask(System.Collections.IEnumerator)
+  name: AddTask(IEnumerator)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_AddTask_System_Collections_IEnumerator_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.AddTask(System.Collections.IEnumerator)
+  fullName: DeviceOfHermes.EasyAreaEffect.AddTask(System.Collections.IEnumerator)
+  nameWithType: EasyAreaEffect.AddTask(IEnumerator)
+- uid: DeviceOfHermes.EasyAreaEffect.AddTask*
+  name: AddTask
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_AddTask_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.AddTask
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.AddTask
+  nameWithType: EasyAreaEffect.AddTask
+- uid: DeviceOfHermes.EasyAreaEffect.ChangeMotion(ActionDetail)
+  name: ChangeMotion(ActionDetail)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_ChangeMotion_ActionDetail_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.ChangeMotion(ActionDetail)
+  fullName: DeviceOfHermes.EasyAreaEffect.ChangeMotion(ActionDetail)
+  nameWithType: EasyAreaEffect.ChangeMotion(ActionDetail)
+- uid: DeviceOfHermes.EasyAreaEffect.ChangeMotion*
+  name: ChangeMotion
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_ChangeMotion_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.ChangeMotion
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.ChangeMotion
+  nameWithType: EasyAreaEffect.ChangeMotion
+- uid: DeviceOfHermes.EasyAreaEffect.FollowUnit(Faction)
+  name: FollowUnit(Faction)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_FollowUnit_Faction_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.FollowUnit(Faction)
+  fullName: DeviceOfHermes.EasyAreaEffect.FollowUnit(Faction)
+  nameWithType: EasyAreaEffect.FollowUnit(Faction)
+- uid: DeviceOfHermes.EasyAreaEffect.FollowUnit(System.Collections.Generic.List{BattleUnitModel})
+  name: FollowUnit(params List<BattleUnitModel>)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_FollowUnit_System_Collections_Generic_List_BattleUnitModel__
+  commentId: M:DeviceOfHermes.EasyAreaEffect.FollowUnit(System.Collections.Generic.List{BattleUnitModel})
+  name.vb: FollowUnit(List(Of BattleUnitModel))
+  fullName: DeviceOfHermes.EasyAreaEffect.FollowUnit(params System.Collections.Generic.List<BattleUnitModel>)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.FollowUnit(System.Collections.Generic.List(Of BattleUnitModel))
+  nameWithType: EasyAreaEffect.FollowUnit(params List<BattleUnitModel>)
+  nameWithType.vb: EasyAreaEffect.FollowUnit(List(Of BattleUnitModel))
+- uid: DeviceOfHermes.EasyAreaEffect.FollowUnit(System.Collections.Generic.List{DeviceOfHermes.EasyAreaEffect.Unit})
+  name: FollowUnit(params List<Unit>)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_FollowUnit_System_Collections_Generic_List_DeviceOfHermes_EasyAreaEffect_Unit__
+  commentId: M:DeviceOfHermes.EasyAreaEffect.FollowUnit(System.Collections.Generic.List{DeviceOfHermes.EasyAreaEffect.Unit})
+  name.vb: FollowUnit(List(Of Unit))
+  fullName: DeviceOfHermes.EasyAreaEffect.FollowUnit(params System.Collections.Generic.List<DeviceOfHermes.EasyAreaEffect.Unit>)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.FollowUnit(System.Collections.Generic.List(Of DeviceOfHermes.EasyAreaEffect.Unit))
+  nameWithType: EasyAreaEffect.FollowUnit(params List<EasyAreaEffect.Unit>)
+  nameWithType.vb: EasyAreaEffect.FollowUnit(List(Of EasyAreaEffect.Unit))
+- uid: DeviceOfHermes.EasyAreaEffect.FollowUnit*
+  name: FollowUnit
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_FollowUnit_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.FollowUnit
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.FollowUnit
+  nameWithType: EasyAreaEffect.FollowUnit
+- uid: DeviceOfHermes.EasyAreaEffect.GetAction_Easy(DeviceOfHermes.EasyAreaEffect.Unit,DeviceOfHermes.EasyAreaEffect.Victims)
+  name: GetAction_Easy(Unit, Victims)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_GetAction_Easy_DeviceOfHermes_EasyAreaEffect_Unit_DeviceOfHermes_EasyAreaEffect_Victims_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.GetAction_Easy(DeviceOfHermes.EasyAreaEffect.Unit,DeviceOfHermes.EasyAreaEffect.Victims)
+  fullName: DeviceOfHermes.EasyAreaEffect.GetAction_Easy(DeviceOfHermes.EasyAreaEffect.Unit, DeviceOfHermes.EasyAreaEffect.Victims)
+  nameWithType: EasyAreaEffect.GetAction_Easy(EasyAreaEffect.Unit, EasyAreaEffect.Victims)
+- uid: DeviceOfHermes.EasyAreaEffect.GetAction_Easy*
+  name: GetAction_Easy
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_GetAction_Easy_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.GetAction_Easy
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.GetAction_Easy
+  nameWithType: EasyAreaEffect.GetAction_Easy
+- uid: DeviceOfHermes.EasyAreaEffect.GiveDamage(DeviceOfHermes.EasyAreaEffect.Unit,System.Boolean)
+  name: GiveDamage(Unit, bool)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_GiveDamage_DeviceOfHermes_EasyAreaEffect_Unit_System_Boolean_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.GiveDamage(DeviceOfHermes.EasyAreaEffect.Unit,System.Boolean)
+  name.vb: GiveDamage(Unit, Boolean)
+  fullName: DeviceOfHermes.EasyAreaEffect.GiveDamage(DeviceOfHermes.EasyAreaEffect.Unit, bool)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.GiveDamage(DeviceOfHermes.EasyAreaEffect.Unit, Boolean)
+  nameWithType: EasyAreaEffect.GiveDamage(EasyAreaEffect.Unit, bool)
+  nameWithType.vb: EasyAreaEffect.GiveDamage(EasyAreaEffect.Unit, Boolean)
+- uid: DeviceOfHermes.EasyAreaEffect.GiveDamage*
+  name: GiveDamage
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_GiveDamage_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.GiveDamage
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.GiveDamage
+  nameWithType: EasyAreaEffect.GiveDamage
+- uid: DeviceOfHermes.EasyAreaEffect.HasIndependentAction
+  name: HasIndependentAction
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_HasIndependentAction
+  commentId: P:DeviceOfHermes.EasyAreaEffect.HasIndependentAction
+  fullName: DeviceOfHermes.EasyAreaEffect.HasIndependentAction
+  nameWithType: EasyAreaEffect.HasIndependentAction
+- uid: DeviceOfHermes.EasyAreaEffect.HasIndependentAction*
+  name: HasIndependentAction
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_HasIndependentAction_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.HasIndependentAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.HasIndependentAction
+  nameWithType: EasyAreaEffect.HasIndependentAction
+- uid: DeviceOfHermes.EasyAreaEffect.Init(BattleUnitModel,System.Object[])
+  name: Init(BattleUnitModel, params object[])
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_Init_BattleUnitModel_System_Object___
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Init(BattleUnitModel,System.Object[])
+  name.vb: Init(BattleUnitModel, ParamArray Object())
+  fullName: DeviceOfHermes.EasyAreaEffect.Init(BattleUnitModel, params object[])
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Init(BattleUnitModel, ParamArray Object())
+  nameWithType: EasyAreaEffect.Init(BattleUnitModel, params object[])
+  nameWithType.vb: EasyAreaEffect.Init(BattleUnitModel, ParamArray Object())
+- uid: DeviceOfHermes.EasyAreaEffect.Init*
+  name: Init
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_Init_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Init
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Init
+  nameWithType: EasyAreaEffect.Init
+- uid: DeviceOfHermes.EasyAreaEffect.MoveOpts
+  name: EasyAreaEffect.MoveOpts
+  href: api/DeviceOfHermes.EasyAreaEffect.MoveOpts.html
+  commentId: T:DeviceOfHermes.EasyAreaEffect.MoveOpts
+  fullName: DeviceOfHermes.EasyAreaEffect.MoveOpts
+  nameWithType: EasyAreaEffect.MoveOpts
+- uid: DeviceOfHermes.EasyAreaEffect.MoveOpts.Easing
+  name: Easing
+  href: api/DeviceOfHermes.EasyAreaEffect.MoveOpts.html#DeviceOfHermes_EasyAreaEffect_MoveOpts_Easing
+  commentId: F:DeviceOfHermes.EasyAreaEffect.MoveOpts.Easing
+  fullName: DeviceOfHermes.EasyAreaEffect.MoveOpts.Easing
+  nameWithType: EasyAreaEffect.MoveOpts.Easing
+- uid: DeviceOfHermes.EasyAreaEffect.MoveOpts.None
+  name: None
+  href: api/DeviceOfHermes.EasyAreaEffect.MoveOpts.html#DeviceOfHermes_EasyAreaEffect_MoveOpts_None
+  commentId: F:DeviceOfHermes.EasyAreaEffect.MoveOpts.None
+  fullName: DeviceOfHermes.EasyAreaEffect.MoveOpts.None
+  nameWithType: EasyAreaEffect.MoveOpts.None
+- uid: DeviceOfHermes.EasyAreaEffect.MoveTo(System.Func{UnityEngine.Vector3},System.Single,System.Single,DeviceOfHermes.EasyAreaEffect.MoveOpts)
+  name: MoveTo(Func<Vector3>, float, float, MoveOpts)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_MoveTo_System_Func_UnityEngine_Vector3__System_Single_System_Single_DeviceOfHermes_EasyAreaEffect_MoveOpts_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.MoveTo(System.Func{UnityEngine.Vector3},System.Single,System.Single,DeviceOfHermes.EasyAreaEffect.MoveOpts)
+  name.vb: MoveTo(Func(Of Vector3), Single, Single, MoveOpts)
+  fullName: DeviceOfHermes.EasyAreaEffect.MoveTo(System.Func<UnityEngine.Vector3>, float, float, DeviceOfHermes.EasyAreaEffect.MoveOpts)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.MoveTo(System.Func(Of UnityEngine.Vector3), Single, Single, DeviceOfHermes.EasyAreaEffect.MoveOpts)
+  nameWithType: EasyAreaEffect.MoveTo(Func<Vector3>, float, float, EasyAreaEffect.MoveOpts)
+  nameWithType.vb: EasyAreaEffect.MoveTo(Func(Of Vector3), Single, Single, EasyAreaEffect.MoveOpts)
+- uid: DeviceOfHermes.EasyAreaEffect.MoveTo*
+  name: MoveTo
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_MoveTo_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.MoveTo
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.MoveTo
+  nameWithType: EasyAreaEffect.MoveTo
+- uid: DeviceOfHermes.EasyAreaEffect.PlayDiceEffect(System.String,DeviceOfHermes.EasyAreaEffect.Unit,System.Single,System.Single)
+  name: PlayDiceEffect(string, Unit, float, float)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_PlayDiceEffect_System_String_DeviceOfHermes_EasyAreaEffect_Unit_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.PlayDiceEffect(System.String,DeviceOfHermes.EasyAreaEffect.Unit,System.Single,System.Single)
+  name.vb: PlayDiceEffect(String, Unit, Single, Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.PlayDiceEffect(string, DeviceOfHermes.EasyAreaEffect.Unit, float, float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.PlayDiceEffect(String, DeviceOfHermes.EasyAreaEffect.Unit, Single, Single)
+  nameWithType: EasyAreaEffect.PlayDiceEffect(string, EasyAreaEffect.Unit, float, float)
+  nameWithType.vb: EasyAreaEffect.PlayDiceEffect(String, EasyAreaEffect.Unit, Single, Single)
+- uid: DeviceOfHermes.EasyAreaEffect.PlayDiceEffect*
+  name: PlayDiceEffect
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_PlayDiceEffect_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.PlayDiceEffect
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.PlayDiceEffect
+  nameWithType: EasyAreaEffect.PlayDiceEffect
+- uid: DeviceOfHermes.EasyAreaEffect.PlaySound(System.String,System.Boolean,System.Single)
+  name: PlaySound(string, bool, float)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_PlaySound_System_String_System_Boolean_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.PlaySound(System.String,System.Boolean,System.Single)
+  name.vb: PlaySound(String, Boolean, Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.PlaySound(string, bool, float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.PlaySound(String, Boolean, Single)
+  nameWithType: EasyAreaEffect.PlaySound(string, bool, float)
+  nameWithType.vb: EasyAreaEffect.PlaySound(String, Boolean, Single)
+- uid: DeviceOfHermes.EasyAreaEffect.PlaySound*
+  name: PlaySound
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_PlaySound_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.PlaySound
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.PlaySound
+  nameWithType: EasyAreaEffect.PlaySound
+- uid: DeviceOfHermes.EasyAreaEffect.Stage
+  name: EasyAreaEffect.Stage
+  href: api/DeviceOfHermes.EasyAreaEffect.Stage.html
+  commentId: T:DeviceOfHermes.EasyAreaEffect.Stage
+  fullName: DeviceOfHermes.EasyAreaEffect.Stage
+  nameWithType: EasyAreaEffect.Stage
+- uid: DeviceOfHermes.EasyAreaEffect.Stage.Center
+  name: Center
+  href: api/DeviceOfHermes.EasyAreaEffect.Stage.html#DeviceOfHermes_EasyAreaEffect_Stage_Center
+  commentId: P:DeviceOfHermes.EasyAreaEffect.Stage.Center
+  fullName: DeviceOfHermes.EasyAreaEffect.Stage.Center
+  nameWithType: EasyAreaEffect.Stage.Center
+- uid: DeviceOfHermes.EasyAreaEffect.Stage.Center*
+  name: Center
+  href: api/DeviceOfHermes.EasyAreaEffect.Stage.html#DeviceOfHermes_EasyAreaEffect_Stage_Center_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Stage.Center
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Stage.Center
+  nameWithType: EasyAreaEffect.Stage.Center
+- uid: DeviceOfHermes.EasyAreaEffect.Unit
+  name: EasyAreaEffect.Unit
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html
+  commentId: T:DeviceOfHermes.EasyAreaEffect.Unit
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit
+  nameWithType: EasyAreaEffect.Unit
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.#ctor(BattleFarAreaPlayManager.VictimInfo)
+  name: Unit(VictimInfo)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit__ctor_BattleFarAreaPlayManager_VictimInfo_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.#ctor(BattleFarAreaPlayManager.VictimInfo)
+  name.vb: New(VictimInfo)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Unit(BattleFarAreaPlayManager.VictimInfo)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.New(BattleFarAreaPlayManager.VictimInfo)
+  nameWithType: EasyAreaEffect.Unit.Unit(BattleFarAreaPlayManager.VictimInfo)
+  nameWithType.vb: EasyAreaEffect.Unit.New(BattleFarAreaPlayManager.VictimInfo)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.#ctor(BattleUnitModel)
+  name: Unit(BattleUnitModel)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit__ctor_BattleUnitModel_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.#ctor(BattleUnitModel)
+  name.vb: New(BattleUnitModel)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Unit(BattleUnitModel)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.New(BattleUnitModel)
+  nameWithType: EasyAreaEffect.Unit.Unit(BattleUnitModel)
+  nameWithType.vb: EasyAreaEffect.Unit.New(BattleUnitModel)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.#ctor*
+  name: Unit
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit__ctor_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Unit
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.New
+  nameWithType: EasyAreaEffect.Unit.Unit
+  nameWithType.vb: EasyAreaEffect.Unit.New
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.All
+  name: All
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_All
+  commentId: P:DeviceOfHermes.EasyAreaEffect.Unit.All
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.All
+  nameWithType: EasyAreaEffect.Unit.All
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.All*
+  name: All
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_All_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.All
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.All
+  nameWithType: EasyAreaEffect.Unit.All
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Back(DeviceOfHermes.EasyAreaEffect.Unit,System.Single)
+  name: Back(Unit, float)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Back_DeviceOfHermes_EasyAreaEffect_Unit_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.Back(DeviceOfHermes.EasyAreaEffect.Unit,System.Single)
+  name.vb: Back(Unit, Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Back(DeviceOfHermes.EasyAreaEffect.Unit, float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.Back(DeviceOfHermes.EasyAreaEffect.Unit, Single)
+  nameWithType: EasyAreaEffect.Unit.Back(EasyAreaEffect.Unit, float)
+  nameWithType.vb: EasyAreaEffect.Unit.Back(EasyAreaEffect.Unit, Single)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Back(System.Single)
+  name: Back(float)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Back_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.Back(System.Single)
+  name.vb: Back(Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Back(float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.Back(Single)
+  nameWithType: EasyAreaEffect.Unit.Back(float)
+  nameWithType.vb: EasyAreaEffect.Unit.Back(Single)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Back*
+  name: Back
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Back_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.Back
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Back
+  nameWithType: EasyAreaEffect.Unit.Back
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Center(DeviceOfHermes.EasyAreaEffect.Unit,System.Single)
+  name: Center(Unit, float)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Center_DeviceOfHermes_EasyAreaEffect_Unit_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.Center(DeviceOfHermes.EasyAreaEffect.Unit,System.Single)
+  name.vb: Center(Unit, Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Center(DeviceOfHermes.EasyAreaEffect.Unit, float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.Center(DeviceOfHermes.EasyAreaEffect.Unit, Single)
+  nameWithType: EasyAreaEffect.Unit.Center(EasyAreaEffect.Unit, float)
+  nameWithType.vb: EasyAreaEffect.Unit.Center(EasyAreaEffect.Unit, Single)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Center(System.Single)
+  name: Center(float)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Center_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.Center(System.Single)
+  name.vb: Center(Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Center(float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.Center(Single)
+  nameWithType: EasyAreaEffect.Unit.Center(float)
+  nameWithType.vb: EasyAreaEffect.Unit.Center(Single)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Center*
+  name: Center
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Center_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.Center
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Center
+  nameWithType: EasyAreaEffect.Unit.Center
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Front(DeviceOfHermes.EasyAreaEffect.Unit,System.Single)
+  name: Front(Unit, float)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Front_DeviceOfHermes_EasyAreaEffect_Unit_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.Front(DeviceOfHermes.EasyAreaEffect.Unit,System.Single)
+  name.vb: Front(Unit, Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Front(DeviceOfHermes.EasyAreaEffect.Unit, float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.Front(DeviceOfHermes.EasyAreaEffect.Unit, Single)
+  nameWithType: EasyAreaEffect.Unit.Front(EasyAreaEffect.Unit, float)
+  nameWithType.vb: EasyAreaEffect.Unit.Front(EasyAreaEffect.Unit, Single)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Front(System.Single)
+  name: Front(float)
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Front_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Unit.Front(System.Single)
+  name.vb: Front(Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Front(float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Unit.Front(Single)
+  nameWithType: EasyAreaEffect.Unit.Front(float)
+  nameWithType.vb: EasyAreaEffect.Unit.Front(Single)
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.Front*
+  name: Front
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_Front_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.Front
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.Front
+  nameWithType: EasyAreaEffect.Unit.Front
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.faction
+  name: faction
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_faction
+  commentId: P:DeviceOfHermes.EasyAreaEffect.Unit.faction
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.faction
+  nameWithType: EasyAreaEffect.Unit.faction
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.faction*
+  name: faction
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_faction_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.faction
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.faction
+  nameWithType: EasyAreaEffect.Unit.faction
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.playingCard
+  name: playingCard
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_playingCard
+  commentId: P:DeviceOfHermes.EasyAreaEffect.Unit.playingCard
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.playingCard
+  nameWithType: EasyAreaEffect.Unit.playingCard
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.playingCard*
+  name: playingCard
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_playingCard_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.playingCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.playingCard
+  nameWithType: EasyAreaEffect.Unit.playingCard
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.unitModel
+  name: unitModel
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_unitModel
+  commentId: P:DeviceOfHermes.EasyAreaEffect.Unit.unitModel
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.unitModel
+  nameWithType: EasyAreaEffect.Unit.unitModel
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.unitModel*
+  name: unitModel
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_unitModel_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.unitModel
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.unitModel
+  nameWithType: EasyAreaEffect.Unit.unitModel
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.victimInfo
+  name: victimInfo
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_victimInfo
+  commentId: P:DeviceOfHermes.EasyAreaEffect.Unit.victimInfo
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.victimInfo
+  nameWithType: EasyAreaEffect.Unit.victimInfo
+- uid: DeviceOfHermes.EasyAreaEffect.Unit.victimInfo*
+  name: victimInfo
+  href: api/DeviceOfHermes.EasyAreaEffect.Unit.html#DeviceOfHermes_EasyAreaEffect_Unit_victimInfo_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Unit.victimInfo
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Unit.victimInfo
+  nameWithType: EasyAreaEffect.Unit.victimInfo
+- uid: DeviceOfHermes.EasyAreaEffect.UpdateDirection(System.Func{UnityEngine.Vector3})
+  name: UpdateDirection(Func<Vector3>)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_UpdateDirection_System_Func_UnityEngine_Vector3__
+  commentId: M:DeviceOfHermes.EasyAreaEffect.UpdateDirection(System.Func{UnityEngine.Vector3})
+  name.vb: UpdateDirection(Func(Of Vector3))
+  fullName: DeviceOfHermes.EasyAreaEffect.UpdateDirection(System.Func<UnityEngine.Vector3>)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.UpdateDirection(System.Func(Of UnityEngine.Vector3))
+  nameWithType: EasyAreaEffect.UpdateDirection(Func<Vector3>)
+  nameWithType.vb: EasyAreaEffect.UpdateDirection(Func(Of Vector3))
+- uid: DeviceOfHermes.EasyAreaEffect.UpdateDirection*
+  name: UpdateDirection
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_UpdateDirection_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.UpdateDirection
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.UpdateDirection
+  nameWithType: EasyAreaEffect.UpdateDirection
+- uid: DeviceOfHermes.EasyAreaEffect.Victims
+  name: EasyAreaEffect.Victims
+  href: api/DeviceOfHermes.EasyAreaEffect.Victims.html
+  commentId: T:DeviceOfHermes.EasyAreaEffect.Victims
+  fullName: DeviceOfHermes.EasyAreaEffect.Victims
+  nameWithType: EasyAreaEffect.Victims
+- uid: DeviceOfHermes.EasyAreaEffect.Victims.#ctor(System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo})
+  name: Victims(List<VictimInfo>)
+  href: api/DeviceOfHermes.EasyAreaEffect.Victims.html#DeviceOfHermes_EasyAreaEffect_Victims__ctor_System_Collections_Generic_List_BattleFarAreaPlayManager_VictimInfo__
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Victims.#ctor(System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo})
+  name.vb: New(List(Of VictimInfo))
+  fullName: DeviceOfHermes.EasyAreaEffect.Victims.Victims(System.Collections.Generic.List<BattleFarAreaPlayManager.VictimInfo>)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Victims.New(System.Collections.Generic.List(Of BattleFarAreaPlayManager.VictimInfo))
+  nameWithType: EasyAreaEffect.Victims.Victims(List<BattleFarAreaPlayManager.VictimInfo>)
+  nameWithType.vb: EasyAreaEffect.Victims.New(List(Of BattleFarAreaPlayManager.VictimInfo))
+- uid: DeviceOfHermes.EasyAreaEffect.Victims.#ctor*
+  name: Victims
+  href: api/DeviceOfHermes.EasyAreaEffect.Victims.html#DeviceOfHermes_EasyAreaEffect_Victims__ctor_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Victims.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.EasyAreaEffect.Victims.Victims
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Victims.New
+  nameWithType: EasyAreaEffect.Victims.Victims
+  nameWithType.vb: EasyAreaEffect.Victims.New
+- uid: DeviceOfHermes.EasyAreaEffect.Victims.TakeRandomOne(DeviceOfHermes.EasyAreaEffect.Unit@,System.Boolean)
+  name: TakeRandomOne(out Unit?, bool)
+  href: api/DeviceOfHermes.EasyAreaEffect.Victims.html#DeviceOfHermes_EasyAreaEffect_Victims_TakeRandomOne_DeviceOfHermes_EasyAreaEffect_Unit__System_Boolean_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.Victims.TakeRandomOne(DeviceOfHermes.EasyAreaEffect.Unit@,System.Boolean)
+  name.vb: TakeRandomOne(Unit, Boolean)
+  fullName: DeviceOfHermes.EasyAreaEffect.Victims.TakeRandomOne(out DeviceOfHermes.EasyAreaEffect.Unit?, bool)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.Victims.TakeRandomOne(DeviceOfHermes.EasyAreaEffect.Unit, Boolean)
+  nameWithType: EasyAreaEffect.Victims.TakeRandomOne(out EasyAreaEffect.Unit?, bool)
+  nameWithType.vb: EasyAreaEffect.Victims.TakeRandomOne(EasyAreaEffect.Unit, Boolean)
+- uid: DeviceOfHermes.EasyAreaEffect.Victims.TakeRandomOne*
+  name: TakeRandomOne
+  href: api/DeviceOfHermes.EasyAreaEffect.Victims.html#DeviceOfHermes_EasyAreaEffect_Victims_TakeRandomOne_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.Victims.TakeRandomOne
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.Victims.TakeRandomOne
+  nameWithType: EasyAreaEffect.Victims.TakeRandomOne
+- uid: DeviceOfHermes.EasyAreaEffect.WaitForSecs(System.Single)
+  name: WaitForSecs(float)
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_WaitForSecs_System_Single_
+  commentId: M:DeviceOfHermes.EasyAreaEffect.WaitForSecs(System.Single)
+  name.vb: WaitForSecs(Single)
+  fullName: DeviceOfHermes.EasyAreaEffect.WaitForSecs(float)
+  fullName.vb: DeviceOfHermes.EasyAreaEffect.WaitForSecs(Single)
+  nameWithType: EasyAreaEffect.WaitForSecs(float)
+  nameWithType.vb: EasyAreaEffect.WaitForSecs(Single)
+- uid: DeviceOfHermes.EasyAreaEffect.WaitForSecs*
+  name: WaitForSecs
+  href: api/DeviceOfHermes.EasyAreaEffect.html#DeviceOfHermes_EasyAreaEffect_WaitForSecs_
+  commentId: Overload:DeviceOfHermes.EasyAreaEffect.WaitForSecs
+  isSpec: "True"
+  fullName: DeviceOfHermes.EasyAreaEffect.WaitForSecs
+  nameWithType: EasyAreaEffect.WaitForSecs
 - uid: DeviceOfHermes.HermesConstants
   name: HermesConstants
   href: api/DeviceOfHermes.HermesConstants.html
