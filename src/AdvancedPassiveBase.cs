@@ -93,6 +93,24 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return 0;
     }
 
+    /// <summary>On unit clicked</summary>
+    public virtual void OnClickUnit(ClickType ty)
+    {
+    }
+
+    /// <summary>The type of OnClick</summary>
+    public enum ClickType
+    {
+        /// <summary>Left</summary>
+        Left,
+
+        /// <summary>Right</summary>
+        Right,
+
+        /// <summary>Middle</summary>
+        Middle,
+    }
+
     static void OnTick()
     {
         var alives = BattleObjectManager.instance.GetAliveList();

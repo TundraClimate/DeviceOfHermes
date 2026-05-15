@@ -68,6 +68,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.ClickType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.ClickType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.ClickType",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.ClickType.yml\" sourcestartlinenumber=\"1\">The type of OnClick</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.yml",
       "output": {
         ".html": {

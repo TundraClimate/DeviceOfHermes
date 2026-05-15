@@ -143,6 +143,10 @@
     {
         return 0;
     }
+
+    public override void OnClickUnit(ClickType ty)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -250,6 +254,15 @@ falseを返すとそのページが捨てられるのをキャンセルするこ
 }
 </code></pre>
 <p>幕開始時のドローに加算する枚数を指定します。</p>
+<h3 id="onclickunitclicktype"><code>OnClickUnit(ClickType)</code></h3>
+<pre><code class="lang-cs">public override void OnClickUnit(ClickType ty)
+{
+}
+</code></pre>
+<p>パッシブを保有するユニットをクリックしたときに実行されます。</p>
+<ul>
+<li><code>ty</code>: クリックの種類です。(Left/Right/Middle)</li>
+</ul>
 
 </article>
 

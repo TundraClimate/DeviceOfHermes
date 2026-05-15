@@ -1,5 +1,6 @@
 using System.Reflection.Emit;
 using LOR_DiceSystem;
+using UI;
 using HarmonyLib;
 using HarmonyExtension;
 using UnityEngine;
@@ -36,6 +37,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchUnusedRemove));
         Patch(typeof(PatchOnDrawCardPhase));
         Patch(typeof(PatchOnSetBuf));
+        Patch(typeof(PatchOnUnitClick));
     }
 
     public static void Init()
@@ -725,6 +727,31 @@ internal static class AdvancedPatch
                 {
                     clickable.SetBuf(advBuf);
                 }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitInteractor), "OnPointerClick")]
+    class PatchOnUnitClick
+    {
+        static void Prefix(BaseEventData data, BattleUnitView ____view)
+        {
+            var passives = ____view?.model?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>();
+
+            switch (UIControlManager.GetInpuTypeOf(data))
+            {
+                case InputType.LeftClick:
+                    passives?.Foreach(p => p.OnClickUnit(AdvancedPassiveBase.ClickType.Left));
+
+                    break;
+                case InputType.RightClick:
+                    passives?.Foreach(p => p.OnClickUnit(AdvancedPassiveBase.ClickType.Right));
+
+                    break;
+                case InputType.WheelClick:
+                    passives?.Foreach(p => p.OnClickUnit(AdvancedPassiveBase.ClickType.Middle));
+
+                    break;
             }
         }
     }
