@@ -16,6 +16,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
         var harmony = new Harmony("DeviceOfHermes.Boot");
 
         harmony.CreateClassProcessor(typeof(SaveModifierPatch.PatchOnStart)).Patch();
+        harmony.CreateClassProcessor(typeof(SaveModifierPatch.PatchGetErr)).Patch();
 
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
@@ -154,6 +155,20 @@ internal class HermesBootStrap : DiceCardAbilityBase
                 newModSave.AddData("lastActivated", actives);
 
                 SaveManager.Instance.SaveData(SavePath, newModSave);
+            }
+        }
+
+        [HarmonyPatch(typeof(Mod.ModContentManager), "GetErrorLogs")]
+        public class PatchGetErr
+        {
+            static Exception Finalizer(Exception __exception, List<string> __result)
+            {
+                if (__result is not null)
+                {
+                    __result.RemoveAll(txt => txt.Contains("1FrameworkPriorityLoader"));
+                }
+
+                return __exception;
             }
         }
     }
