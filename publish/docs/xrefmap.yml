@@ -351,6 +351,30 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
   nameWithType: AdvancedUnitBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType
+  name: AdvancedUnitBuf.ClickType
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType
+  nameWithType: AdvancedUnitBuf.ClickType
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Left
+  name: Left
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_ClickType_Left
+  commentId: F:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Left
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Left
+  nameWithType: AdvancedUnitBuf.ClickType.Left
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Middle
+  name: Middle
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_ClickType_Middle
+  commentId: F:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Middle
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Middle
+  nameWithType: AdvancedUnitBuf.ClickType.Middle
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Right
+  name: Right
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_ClickType_Right
+  commentId: F:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Right
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.Right
+  nameWithType: AdvancedUnitBuf.ClickType.Right
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack
   name: DefaultStack
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_DefaultStack
@@ -390,6 +414,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
   nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType)
+  name: OnClick(ClickType)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnClick_DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_ClickType_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType)
+  nameWithType: AdvancedUnitBuf.OnClick(AdvancedUnitBuf.ClickType)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick*
+  name: OnClick
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnClick_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick
+  nameWithType: AdvancedUnitBuf.OnClick
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
   name: OnInstant()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnInstant

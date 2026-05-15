@@ -108,6 +108,10 @@
     public override void OnStackChange(int last)
     {
     }
+
+    public override void OnClick(ClickType ty)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
@@ -146,6 +150,15 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <p>バフのスタック数が変更されたときに実行されます。</p>
 <ul>
 <li><code>last</code>: 変更される前のスタック数です。</li>
+</ul>
+<h3 id="onclickclicktype"><code>OnClick(ClickType)</code></h3>
+<pre><code class="lang-cs">public override void OnClick(ClickType ty)
+{
+}
+</code></pre>
+<p>バフのアイコンがクリックされたときに実行されます。</p>
+<ul>
+<li><code>ty</code>: クリックの種類です。(Left/Right/Middle)</li>
 </ul>
 
 </article>

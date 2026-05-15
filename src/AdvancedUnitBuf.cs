@@ -57,6 +57,24 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>Unitbuf icon on clicked</summary>
+    public virtual void OnClick(ClickType ty)
+    {
+    }
+
+    /// <summary>The clicktype for OnClick</summary>
+    public enum ClickType
+    {
+        /// <summary>Left</summary>
+        Left,
+
+        /// <summary>Right</summary>
+        Right,
+
+        /// <summary>Middle</summary>
+        Middle,
+    }
+
     internal static void OnTick()
     {
         var alives = BattleObjectManager.instance.GetAliveList();

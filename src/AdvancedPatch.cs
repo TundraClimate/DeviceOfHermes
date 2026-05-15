@@ -2,6 +2,9 @@ using System.Reflection.Emit;
 using LOR_DiceSystem;
 using HarmonyLib;
 using HarmonyExtension;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace DeviceOfHermes.AdvancedBase;
 
@@ -32,6 +35,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchAddBufWdInitializer));
         Patch(typeof(PatchUnusedRemove));
         Patch(typeof(PatchOnDrawCardPhase));
+        Patch(typeof(PatchOnSetBuf));
     }
 
     public static void Init()
@@ -669,6 +673,59 @@ internal static class AdvancedPatch
             }
 
             return res;
+        }
+    }
+
+    class Clickable : MonoBehaviour, IPointerClickHandler
+    {
+        public void SetBuf(AdvancedUnitBuf buf)
+        {
+            _buf = buf;
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            switch (eventData.button)
+            {
+                case PointerEventData.InputButton.Left:
+                    _buf?.OnClick(AdvancedUnitBuf.ClickType.Left);
+
+                    break;
+                case PointerEventData.InputButton.Right:
+                    _buf?.OnClick(AdvancedUnitBuf.ClickType.Right);
+
+                    break;
+                case PointerEventData.InputButton.Middle:
+                    _buf?.OnClick(AdvancedUnitBuf.ClickType.Middle);
+
+                    break;
+            }
+        }
+
+        private AdvancedUnitBuf? _buf;
+    }
+
+    [HarmonyPatch(typeof(BattleUnitBottomStatUI), "SetBufs")]
+    class PatchOnSetBuf
+    {
+        static void Postfix(BattleBufUIDataList bufDataList, Image[] ___bufIcons)
+        {
+            var bufs = bufDataList.bufActivatedList.Concat(bufDataList.bufReadyList);
+
+            foreach (var (i, bufIcon) in ___bufIcons.Enumerate())
+            {
+                var clickable = bufIcon.gameObject.GetComponent<Clickable>();
+
+                if (clickable is null)
+                {
+                    clickable = bufIcon.gameObject.AddComponent<Clickable>();
+                }
+
+                if (bufs.ElementAtOrDefault(i) is BattleBufUIData data && data.buf is AdvancedUnitBuf advBuf)
+                {
+                    clickable.SetBuf(advBuf);
+                }
+            }
         }
     }
 }
