@@ -66,6 +66,11 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return false;
     }
 
+    /// <summary>On Round end before</summary>
+    public virtual void OnPreRoundEnd()
+    {
+    }
+
     /// <summary>Is allows round end</summary>
     /// <returns>Is allows if true</returns>
     public virtual bool IsAllowRoundEnd()

@@ -480,16 +480,19 @@ internal static class AdvancedPatch
         {
             if (____phase == StageController.StagePhase.RoundEndPhase)
             {
-                var all = BattleObjectManager.instance.GetAliveList(false);
+                var all = BattleObjectManager.instance.GetAliveList(false)
+                    .Map(unit => unit.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>()).Flatten();
 
-                foreach (var unit in all)
+                foreach (var passive in all)
                 {
-                    foreach (var passive in unit.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
+                    passive.OnPreRoundEnd();
+                }
+
+                foreach (var passive in all)
+                {
+                    if (!passive.IsAllowRoundEnd())
                     {
-                        if (!passive.IsAllowRoundEnd())
-                        {
-                            ____phase = StageController.StagePhase.SetCurrentDiceAction;
-                        }
+                        ____phase = StageController.StagePhase.SetCurrentDiceAction;
                     }
                 }
             }

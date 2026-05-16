@@ -356,6 +356,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard
   nameWithType: AdvancedPassiveBase.OnDropCard
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
+  name: OnPreRoundEnd()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnPreRoundEnd
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd()
+  nameWithType: AdvancedPassiveBase.OnPreRoundEnd()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd*
+  name: OnPreRoundEnd
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnPreRoundEnd_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
+  nameWithType: AdvancedPassiveBase.OnPreRoundEnd
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
   name: OnRoundStartFirst()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartFirst
