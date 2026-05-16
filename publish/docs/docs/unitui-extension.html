@@ -118,8 +118,8 @@ owner.view.AddEffect(sprite, new Vector2(0.5f, 0.52f), 3f);
 <li><code>overhead</code>: テキストを表示する高さです。デフォルトは<code>3.2f</code>です。</li>
 <li><code>scale</code>: テキストのサイズ比です。デフォルトは<code>0.7f</code>です。</li>
 </ul>
-<h3 id="addeffectsprite-vector2-float-float-vector2"><code>AddEffect(Sprite, Vector2, float, float, Vector2)</code></h3>
-<pre><code class="lang-cs">owner.view.AddEffect(sprite, pos, duration, feed, sizeDelta);
+<h3 id="addeffectsprite-vector2-float-float-vector2-float"><code>AddEffect(Sprite, Vector2, float, float, Vector2, float)</code></h3>
+<pre><code class="lang-cs">owner.view.AddEffect(sprite, pos, duration, feed, sizeDelta, sizeScale);
 </code></pre>
 <p>キャラクターを中心としたエフェクトを画像から描画し、フェードアウトさせます。
 <code>pos</code>は<code>Vector2(0.5f, 0.52f)</code>程度がキャラクターに重なる地点です。</p>
@@ -129,6 +129,7 @@ owner.view.AddEffect(sprite, new Vector2(0.5f, 0.52f), 3f);
 <li><code>duration</code>: 描画する秒数です。</li>
 <li><code>feed</code>: フェードアウトに所要する秒数です。</li>
 <li><code>sizeDelta</code>: 描画サイズです。省略可能。</li>
+<li><code>sizeScale</code>: 描画サイズ比です。省略可能。</li>
 </ul>
 
 </article>

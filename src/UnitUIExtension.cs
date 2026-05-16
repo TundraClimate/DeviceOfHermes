@@ -81,7 +81,7 @@ public static class UnitUIExtension
     }
 
     /// <summary>Add effect to unit canvas</summary>
-    public static void AddEffect(this BattleUnitView view, Sprite effectImg, Vector2 pos, float duration = 1f, float feed = 0f, Vector2? sizeDelta = null)
+    public static void AddEffect(this BattleUnitView view, Sprite effectImg, Vector2 pos, float duration = 1f, float feed = 0f, Vector2? sizeDelta = null, float sizeScale = 1f)
     {
         if (!_unitRootCanvas.TryGetValue(view, out var go))
         {
@@ -98,6 +98,8 @@ public static class UnitUIExtension
             {
                 img.transform.localScale *= 0.01f;
             }
+
+            img.transform.localScale *= sizeScale;
 
             img.StartCoroutine(CommonCoroutine.ImageFadeout(img, duration, feed));
             UnityEngine.Object.Destroy(img, duration + feed);

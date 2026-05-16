@@ -3427,15 +3427,15 @@ references:
   commentId: T:DeviceOfHermes.UnitUIExtension
   fullName: DeviceOfHermes.UnitUIExtension
   nameWithType: UnitUIExtension
-- uid: DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView,UnityEngine.Sprite,UnityEngine.Vector2,System.Single,System.Single,System.Nullable{UnityEngine.Vector2})
-  name: AddEffect(BattleUnitView, Sprite, Vector2, float, float, Vector2?)
-  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_AddEffect_BattleUnitView_UnityEngine_Sprite_UnityEngine_Vector2_System_Single_System_Single_System_Nullable_UnityEngine_Vector2__
-  commentId: M:DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView,UnityEngine.Sprite,UnityEngine.Vector2,System.Single,System.Single,System.Nullable{UnityEngine.Vector2})
-  name.vb: AddEffect(BattleUnitView, Sprite, Vector2, Single, Single, Vector2?)
-  fullName: DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView, UnityEngine.Sprite, UnityEngine.Vector2, float, float, UnityEngine.Vector2?)
-  fullName.vb: DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView, UnityEngine.Sprite, UnityEngine.Vector2, Single, Single, UnityEngine.Vector2?)
-  nameWithType: UnitUIExtension.AddEffect(BattleUnitView, Sprite, Vector2, float, float, Vector2?)
-  nameWithType.vb: UnitUIExtension.AddEffect(BattleUnitView, Sprite, Vector2, Single, Single, Vector2?)
+- uid: DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView,UnityEngine.Sprite,UnityEngine.Vector2,System.Single,System.Single,System.Nullable{UnityEngine.Vector2},System.Single)
+  name: AddEffect(BattleUnitView, Sprite, Vector2, float, float, Vector2?, float)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_AddEffect_BattleUnitView_UnityEngine_Sprite_UnityEngine_Vector2_System_Single_System_Single_System_Nullable_UnityEngine_Vector2__System_Single_
+  commentId: M:DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView,UnityEngine.Sprite,UnityEngine.Vector2,System.Single,System.Single,System.Nullable{UnityEngine.Vector2},System.Single)
+  name.vb: AddEffect(BattleUnitView, Sprite, Vector2, Single, Single, Vector2?, Single)
+  fullName: DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView, UnityEngine.Sprite, UnityEngine.Vector2, float, float, UnityEngine.Vector2?, float)
+  fullName.vb: DeviceOfHermes.UnitUIExtension.AddEffect(BattleUnitView, UnityEngine.Sprite, UnityEngine.Vector2, Single, Single, UnityEngine.Vector2?, Single)
+  nameWithType: UnitUIExtension.AddEffect(BattleUnitView, Sprite, Vector2, float, float, Vector2?, float)
+  nameWithType.vb: UnitUIExtension.AddEffect(BattleUnitView, Sprite, Vector2, Single, Single, Vector2?, Single)
 - uid: DeviceOfHermes.UnitUIExtension.AddEffect*
   name: AddEffect
   href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_AddEffect_
