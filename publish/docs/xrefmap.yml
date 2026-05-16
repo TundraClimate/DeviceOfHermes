@@ -256,6 +256,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
   nameWithType: AdvancedPassiveBase.DrawCardAddr
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.HealthStopperLine
+  name: HealthStopperLine
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_HealthStopperLine
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.HealthStopperLine
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.HealthStopperLine
+  nameWithType: AdvancedPassiveBase.HealthStopperLine
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.HealthStopperLine*
+  name: HealthStopperLine
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_HealthStopperLine_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.HealthStopperLine
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.HealthStopperLine
+  nameWithType: AdvancedPassiveBase.HealthStopperLine
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd
   name: IsAllowRoundEnd()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsAllowRoundEnd

@@ -94,6 +94,8 @@
 <p>例:</p>
 <pre><code class="lang-cs">class PassiveAbility_TestAdvPassive : AdvancedPassiveBase
 {
+    public override int? HealthStopperLine =&gt; base.HealthStopperLine;
+
     public override void OnRoundStartFirst()
     {
     }
@@ -156,6 +158,13 @@
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
 それの代わりに<code>AdvancedPassiveBase</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="healthstopperline"><code>HealthStopperLine</code></h3>
+<pre><code class="lang-cs">public override int? HealthStopperLine =&gt; value;
+</code></pre>
+<p>HPの減少のストッパーを設定します。</p>
+<ul>
+<li><code>value</code>: 保たれるHPの値です。</li>
+</ul>
 <h3 id="onroundstartfirst"><code>OnRoundStartFirst()</code></h3>
 <pre><code class="lang-cs">public override void OnRoundStartFirst()
 {

@@ -428,7 +428,7 @@ internal static class AdvancedPatch
     [HarmonyPatch(typeof(BattleUnitModel), "TakeDamage")]
     class PatchDiceDamageValue
     {
-        static void Prefix(ref int v, DamageType type, BattleUnitModel attacker)
+        static void Prefix(BattleUnitModel __instance, ref int v, DamageType type, BattleUnitModel attacker)
         {
             if (attacker is not null && type is DamageType.Attack)
             {
@@ -445,6 +445,15 @@ internal static class AdvancedPatch
 
                     v = res;
                 }
+            }
+
+            var line = __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Max(p => p.HealthStopperLine);
+
+            if (line is not null && line >= __instance.hp - v)
+            {
+                var redu = line - (int)(__instance.hp - v);
+
+                v -= redu.Value;
             }
         }
     }

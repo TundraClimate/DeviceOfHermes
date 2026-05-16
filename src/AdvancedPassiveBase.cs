@@ -20,6 +20,9 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         BattleTickAction.OnTick += OnTick;
     }
 
+    /// <summary>A stopper of health limit</summary>
+    public virtual int? HealthStopperLine => null;
+
     /// <summary>Unit on round start before <see cref="PassiveAbilityBase.OnRoundStart"/></summary>
     public virtual void OnRoundStartFirst()
     {
