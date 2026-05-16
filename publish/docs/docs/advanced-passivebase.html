@@ -96,6 +96,8 @@
 {
     public override int? HealthStopperLine =&gt; base.HealthStopperLine;
 
+    public override int DrawCardAddr =&gt; 0;
+
     public override void OnRoundStartFirst()
     {
     }
@@ -145,11 +147,6 @@
     {
     }
 
-    public override int DrawCardAddr()
-    {
-        return 0;
-    }
-
     public override void OnClickUnit(ClickType ty)
     {
     }
@@ -164,6 +161,13 @@
 <p>HPの減少のストッパーを設定します。</p>
 <ul>
 <li><code>value</code>: 保たれるHPの値です。</li>
+</ul>
+<h3 id="drawcardaddr"><code>DrawCardAddr</code></h3>
+<pre><code class="lang-cs">public override int DrawCardAddr =&gt; num;
+</code></pre>
+<p>幕開始時のドローに加算する枚数を指定します。</p>
+<ul>
+<li><code>num</code>: 加算する枚数です。</li>
 </ul>
 <h3 id="onroundstartfirst"><code>OnRoundStartFirst()</code></h3>
 <pre><code class="lang-cs">public override void OnRoundStartFirst()
@@ -266,13 +270,6 @@ falseを返すとそのページが捨てられるのをキャンセルするこ
 <ul>
 <li><code>playcard</code>: 使用完了できなかったページです。</li>
 </ul>
-<h3 id="drawcardaddr"><code>DrawCardAddr()</code></h3>
-<pre><code class="lang-cs">public override int DrawCardAddr()
-{
-    return 0;
-}
-</code></pre>
-<p>幕開始時のドローに加算する枚数を指定します。</p>
 <h3 id="onclickunitclicktype"><code>OnClickUnit(ClickType)</code></h3>
 <pre><code class="lang-cs">public override void OnClickUnit(ClickType ty)
 {

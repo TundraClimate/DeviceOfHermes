@@ -683,7 +683,7 @@ internal static class AdvancedPatch
 
             foreach (var p in passives)
             {
-                res += p.DrawCardAddr();
+                res += p.DrawCardAddr;
             }
 
             return res;

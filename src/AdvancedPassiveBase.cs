@@ -23,6 +23,9 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     /// <summary>A stopper of health limit</summary>
     public virtual int? HealthStopperLine => null;
 
+    /// <summary>Addr number of draw cards</summary>
+    public virtual int DrawCardAddr => 0;
+
     /// <summary>Unit on round start before <see cref="PassiveAbilityBase.OnRoundStart"/></summary>
     public virtual void OnRoundStartFirst()
     {
@@ -93,12 +96,6 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     /// <param name="playcard">A card of dropped</param>
     public virtual void OnDropCard(BattlePlayingCardDataInUnitModel playcard)
     {
-    }
-
-    /// <summary>Addr number of draw cards</summary>
-    public virtual int DrawCardAddr()
-    {
-        return 0;
     }
 
     /// <summary>On unit clicked</summary>

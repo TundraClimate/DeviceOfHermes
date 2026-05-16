@@ -244,11 +244,11 @@ references:
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.ClickType.Right
   nameWithType: AdvancedPassiveBase.ClickType.Right
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
-  name: DrawCardAddr()
+  name: DrawCardAddr
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_DrawCardAddr
-  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
-  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr()
-  nameWithType: AdvancedPassiveBase.DrawCardAddr()
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
+  nameWithType: AdvancedPassiveBase.DrawCardAddr
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr*
   name: DrawCardAddr
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_DrawCardAddr_
