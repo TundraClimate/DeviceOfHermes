@@ -3,7 +3,7 @@ using HarmonyLib;
 
 namespace DeviceOfHermes;
 
-///
+/// <summary>A detail of SpeedDiceBufs</summary>
 public class SpeedDiceBufDetail
 {
     static SpeedDiceBufDetail()
@@ -24,10 +24,10 @@ public class SpeedDiceBufDetail
         harmony.CreateClassProcessor(typeof(PatchOnRoundEnd)).Patch();
     }
 
-    ///
+    /// <summary>Returns activated speedDiceBufs</summary>
     public List<SpeedDiceBuf> ActivatedBufs => _activatedBufs.Map(bufs => bufs.Value).Flatten().ToList();
 
-    ///
+    /// <summary>Add buf to dice of index</summary>
     public void AddBuf(int idx, SpeedDiceBuf buf)
     {
         if (owner is null || idx >= owner.view.speedDiceSetterUI.SpeedDicesCount)
@@ -45,7 +45,7 @@ public class SpeedDiceBufDetail
         UpdateActivatedBufs();
     }
 
-    ///
+    /// <summary>Remove buf in dices</summary>
     public void RemoveBuf(SpeedDiceBuf buf)
     {
         foreach (var (_, bufs) in _activatedBufs)
@@ -56,7 +56,7 @@ public class SpeedDiceBufDetail
         UpdateActivatedBufs();
     }
 
-    ///
+    /// <summary>Remove all bufs is matches</summary>
     public void RemoveAll(Predicate<SpeedDiceBuf> matcher)
     {
         foreach (var (_, bufs) in _activatedBufs)
@@ -280,7 +280,7 @@ public class SpeedDiceBufDetail
         }
     }
 
-    ///
+    /// <summary>An onwer</summary>
     public BattleUnitModel? owner;
 
     private Dictionary<int, List<SpeedDiceBuf>> _activatedBufs = new();
@@ -502,12 +502,12 @@ public class SpeedDiceBufDetail
     }
 }
 
-///
+/// <summary>An extensions of SpeedDiceBuf for BattleUnitModel</summary>
 public static class SpeedDiceBufDetailExt
 {
     extension(BattleUnitModel owner)
     {
-        ///
+        /// <summary>An extended property of SpeedDiceBufDetail</summary>
         public SpeedDiceBufDetail speedDiceBufDetail
         {
             get
@@ -519,7 +519,7 @@ public static class SpeedDiceBufDetailExt
             }
         }
 
-        ///
+        /// <summary>An extended method of SpeedDiceBufDetail</summary>
         public SpeedDiceBufDetail GetSpeedDiceBufDetail() => owner.speedDiceBufDetail;
     }
 
