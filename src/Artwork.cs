@@ -81,6 +81,11 @@ public static class Artwork
     {
         var iconDict = BattleUnitBuf._bufIconDictionary;
 
+        if (iconDict.Count == 0)
+        {
+            new BattleUnitBuf().GetBufIcon();
+        }
+
         if (iconDict.ContainsKey(unitBufId))
         {
             if (replace)
