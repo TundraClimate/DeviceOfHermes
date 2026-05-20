@@ -174,7 +174,7 @@ public static class BattleBufExtension
     /// <param name="stack">A number of addition stacks</param>
     /// <param name="bufMake">New instance constructor</param>
     /// <typeparam name="T">A target unitBuf</typeparam>
-    public static void AddBufStack<T>(this BattleUnitModel model, int stack, Func<BattleUnitBuf> bufMake)
+    public static void AddBufStack<T>(this BattleUnitModel model, int stack, Func<T> bufMake)
         where T : BattleUnitBuf
     {
         var buf = model.GetBufAndInitIfNull(bufMake);
@@ -199,7 +199,7 @@ public static class BattleBufExtension
     /// <param name="stack">A number of addition stacks</param>
     /// <param name="bufMake">New instance constructor</param>
     /// <typeparam name="T">A target unitBuf</typeparam>
-    public static void AddReadyBufStack<T>(this BattleUnitModel model, int stack, Func<BattleUnitBuf> bufMake)
+    public static void AddReadyBufStack<T>(this BattleUnitModel model, int stack, Func<T> bufMake)
         where T : BattleUnitBuf
     {
         var buf = model.GetReadyBufAndInitIfNull(bufMake);
