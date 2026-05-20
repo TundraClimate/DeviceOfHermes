@@ -61,13 +61,18 @@ public class BattleUIBehaviour : MonoBehaviour
     {
         static void Prefix(bool ____bRoundStarted)
         {
-            if (SingletonBehavior<BattleSceneRoot>.Instance.currentMapObject.IsRunningEffect)
+            if (BattleSceneRoot.Instance?.currentMapObject?.IsRunningEffect == true)
             {
                 return;
             }
 
             if (!____bRoundStarted)
             {
+                if (BattleManagerUI.Instance is null)
+                {
+                    return;
+                }
+
                 foreach (var beh in AddionalUI.GetValue(BattleManagerUI.Instance, _ => new()).Values.OfType<BattleUIBehaviour>())
                 {
                     beh.OnRoundStart();
