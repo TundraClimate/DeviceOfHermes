@@ -100,11 +100,12 @@ internal class HermesBootStrap : DiceCardAbilityBase
         }
     }
 
-    private static string SavePath => Path.Combine(SaveManager.savePath, "ModSetting.save");
     private static string DepsPath => Path.Combine(typeof(HermesBootStrap).GetAsmDirectory(), "dependencies");
 
     private class SaveModifierPatch
     {
+        private static string SavePath => Path.Combine(SaveManager.savePath, "ModSetting.save");
+
         [HarmonyPatch(typeof(GameSceneManager), "Start")]
         public class PatchOnStart
         {
