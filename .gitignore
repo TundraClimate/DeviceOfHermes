@@ -5,7 +5,11 @@ libs/
 obj/
 docfx/
 
-build.sh
-usr.sh
+publish/DeviceOfHermes.dll
+publish/DeviceOfHermes.zip
+publish/doh_rs.dll
+
+workshop/Assemblies/dependencies/doh_rs.dll
+workshop/Assemblies/DeviceOfHermes.dll
+
 upload.sh
-doc.sh
