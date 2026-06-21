@@ -16,7 +16,7 @@ public static class HarmonyExtension
         public static CodeMatch Calls(MethodInfo method) => new CodeMatch(instruction => instruction.Calls(method));
 
         /// <summary>Is Ldarg</summary>
-        public static CodeMatch IsLdarg() => new CodeMatch(instruction => instruction.IsLdarg());
+        public static CodeMatch IsLdarg(int? num = null) => new CodeMatch(instruction => instruction.IsLdarg(num));
 
         /// <summary>Is Ldloc</summary>
         public static CodeMatch IsLdloc() => new CodeMatch(instruction => instruction.IsLdloc());
@@ -25,7 +25,7 @@ public static class HarmonyExtension
         public static CodeMatch IsLdfld() => IsOpCode(OpCodes.Ldfld);
 
         /// <summary>Is Starg</summary>
-        public static CodeMatch IsStarg() => new CodeMatch(instruction => instruction.IsStarg());
+        public static CodeMatch IsStarg(int? num = null) => new CodeMatch(instruction => instruction.IsStarg(num));
 
         /// <summary>Is Stloc</summary>
         public static CodeMatch IsStloc() => new CodeMatch(instruction => instruction.IsStloc());
