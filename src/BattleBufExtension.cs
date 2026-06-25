@@ -57,6 +57,7 @@ public static class BattleBufExtension
             var newBuf = bufMake();
 
             model.bufListDetail.AddBuf(newBuf);
+            newBuf.OnAddBuf(newBuf.stack);
 
             return newBuf;
         }
@@ -104,7 +105,7 @@ public static class BattleBufExtension
         {
             var newBuf = bufMake();
 
-            model.bufListDetail.AddBuf(newBuf);
+            model.bufListDetail.AddReadyBuf(newBuf);
 
             return newBuf;
         }
@@ -180,6 +181,7 @@ public static class BattleBufExtension
         var buf = model.GetBufAndInitIfNull(bufMake);
 
         buf.stack += stack;
+        buf.OnAddBuf(stack);
     }
 
     /// <summary>Add buf stacks if <typeparamref name="T"/> is null then initialize <c>new T()</c></summary>
@@ -192,6 +194,7 @@ public static class BattleBufExtension
         var buf = model.GetBufAndInitIfNull(() => new T());
 
         buf.stack += stack;
+        buf.OnAddBuf(stack);
     }
 
     /// <summary>Add buf stacks if <typeparamref name="T"/> is null then initialize by <paramref name="bufMake"/></summary>
