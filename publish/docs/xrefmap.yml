@@ -558,6 +558,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange
   nameWithType: AdvancedUnitBuf.OnStackChange
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle
+  name: OnStartBattle()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStartBattle
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle()
+  nameWithType: AdvancedUnitBuf.OnStartBattle()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle*
+  name: OnStartBattle
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStartBattle_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle
+  nameWithType: AdvancedUnitBuf.OnStartBattle
 - uid: DeviceOfHermes.AdvancedBase.AmmoExtension
   name: AmmoExtension
   href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html

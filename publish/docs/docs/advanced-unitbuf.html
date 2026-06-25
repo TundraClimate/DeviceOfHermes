@@ -113,6 +113,10 @@
     {
     }
 
+    public override void OnStartBattle()
+    {
+    }
+
     public override void OnStackChange(int last)
     {
     }
@@ -155,13 +159,19 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 {
 }
 </code></pre>
-<p><code>PassiveAbilityBase</code>の<code>OnRoundStart</code>より先に実行されます。</p>
+<p><code>BattleUnitBuf</code>の<code>OnRoundStart</code>より先に実行されます。</p>
 <h3 id="onroundstartlast"><code>OnRoundStartLast()</code></h3>
 <pre><code class="lang-cs">public override void OnRoundStartLast()
 {
 }
 </code></pre>
-<p><code>PassiveAbilityBase</code>の<code>OnRoundStartAfter</code>より後に実行されます。</p>
+<p><code>BattleUnitBuf</code>の<code>OnRoundStartAfter</code>より後に実行されます。</p>
+<h3 id="onstartbattle"><code>OnStartBattle()</code></h3>
+<pre><code class="lang-cs">public override void OnStartBattle()
+{
+}
+</code></pre>
+<p>戦闘開始時に実行されます。</p>
 <h3 id="onstackchangeint"><code>OnStackChange(int)</code></h3>
 <pre><code class="lang-cs">public override void OnStackChange(int last)
 {

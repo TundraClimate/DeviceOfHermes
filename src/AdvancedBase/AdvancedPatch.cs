@@ -38,6 +38,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnDrawCardPhase));
         Patch(typeof(PatchOnSetBuf));
         Patch(typeof(PatchOnUnitClick));
+        Patch(typeof(PatchOnStartBattle));
     }
 
     public static void Init()
@@ -777,6 +778,20 @@ internal static class AdvancedPatch
 
                     break;
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnStartBattle")]
+    class PatchOnStartBattle
+    {
+        static Exception Finalizer(BattleUnitModel __instance, Exception __exception)
+        {
+            __instance?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(buf =>
+            {
+                buf.OnStartBattle();
+            });
+
+            return __exception;
         }
     }
 }

@@ -62,6 +62,11 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>Unit on start battle</summary>
+    public virtual void OnStartBattle()
+    {
+    }
+
     /// <summary>Unitbuf stack on changed</summary>
     public virtual void OnStackChange(int last)
     {
