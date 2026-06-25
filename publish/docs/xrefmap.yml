@@ -516,6 +516,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant
   nameWithType: AdvancedUnitBuf.OnOtherInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartFirst
+  name: OnRoundStartFirst()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRoundStartFirst
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartFirst
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartFirst()
+  nameWithType: AdvancedUnitBuf.OnRoundStartFirst()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartFirst*
+  name: OnRoundStartFirst
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRoundStartFirst_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartFirst
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartFirst
+  nameWithType: AdvancedUnitBuf.OnRoundStartFirst
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartLast
+  name: OnRoundStartLast()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRoundStartLast
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartLast
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartLast()
+  nameWithType: AdvancedUnitBuf.OnRoundStartLast()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartLast*
+  name: OnRoundStartLast
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRoundStartLast_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartLast
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartLast
+  nameWithType: AdvancedUnitBuf.OnRoundStartLast
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange(System.Int32)
   name: OnStackChange(int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStackChange_System_Int32_
@@ -818,15 +844,15 @@ references:
   fullName.vb: DeviceOfHermes.BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer)
   nameWithType: BattleBufExtension.AddBufStack<T>(BattleUnitModel, int)
   nameWithType.vb: BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer)
-- uid: DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
-  name: AddBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
-  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddBufStack__1_BattleUnitModel_System_Int32_System_Func_BattleUnitBuf__
-  commentId: M:DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
-  name.vb: AddBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
-  fullName: DeviceOfHermes.BattleBufExtension.AddBufStack<T>(BattleUnitModel, int, System.Func<BattleUnitBuf>)
-  fullName.vb: DeviceOfHermes.BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer, System.Func(Of BattleUnitBuf))
-  nameWithType: BattleBufExtension.AddBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
-  nameWithType.vb: BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
+- uid: DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32,System.Func{``0})
+  name: AddBufStack<T>(BattleUnitModel, int, Func<T>)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddBufStack__1_BattleUnitModel_System_Int32_System_Func___0__
+  commentId: M:DeviceOfHermes.BattleBufExtension.AddBufStack``1(BattleUnitModel,System.Int32,System.Func{``0})
+  name.vb: AddBufStack(Of T)(BattleUnitModel, Integer, Func(Of T))
+  fullName: DeviceOfHermes.BattleBufExtension.AddBufStack<T>(BattleUnitModel, int, System.Func<T>)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer, System.Func(Of T))
+  nameWithType: BattleBufExtension.AddBufStack<T>(BattleUnitModel, int, Func<T>)
+  nameWithType.vb: BattleBufExtension.AddBufStack(Of T)(BattleUnitModel, Integer, Func(Of T))
 - uid: DeviceOfHermes.BattleBufExtension.AddReadyBufStack*
   name: AddReadyBufStack
   href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddReadyBufStack_
@@ -843,15 +869,15 @@ references:
   fullName.vb: DeviceOfHermes.BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer)
   nameWithType: BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int)
   nameWithType.vb: BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer)
-- uid: DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
-  name: AddReadyBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
-  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddReadyBufStack__1_BattleUnitModel_System_Int32_System_Func_BattleUnitBuf__
-  commentId: M:DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32,System.Func{BattleUnitBuf})
-  name.vb: AddReadyBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
-  fullName: DeviceOfHermes.BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int, System.Func<BattleUnitBuf>)
-  fullName.vb: DeviceOfHermes.BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer, System.Func(Of BattleUnitBuf))
-  nameWithType: BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int, Func<BattleUnitBuf>)
-  nameWithType.vb: BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer, Func(Of BattleUnitBuf))
+- uid: DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32,System.Func{``0})
+  name: AddReadyBufStack<T>(BattleUnitModel, int, Func<T>)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_AddReadyBufStack__1_BattleUnitModel_System_Int32_System_Func___0__
+  commentId: M:DeviceOfHermes.BattleBufExtension.AddReadyBufStack``1(BattleUnitModel,System.Int32,System.Func{``0})
+  name.vb: AddReadyBufStack(Of T)(BattleUnitModel, Integer, Func(Of T))
+  fullName: DeviceOfHermes.BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int, System.Func<T>)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer, System.Func(Of T))
+  nameWithType: BattleBufExtension.AddReadyBufStack<T>(BattleUnitModel, int, Func<T>)
+  nameWithType.vb: BattleBufExtension.AddReadyBufStack(Of T)(BattleUnitModel, Integer, Func(Of T))
 - uid: DeviceOfHermes.BattleBufExtension.GetBuf*
   name: GetBuf
   href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_GetBuf_
@@ -2583,6 +2609,321 @@ references:
   commentId: F:DeviceOfHermes.ScheduleTiming.UseCard
   fullName: DeviceOfHermes.ScheduleTiming.UseCard
   nameWithType: ScheduleTiming.UseCard
+- uid: DeviceOfHermes.SpeedDiceBuf
+  name: SpeedDiceBuf
+  href: api/DeviceOfHermes.SpeedDiceBuf.html
+  commentId: T:DeviceOfHermes.SpeedDiceBuf
+  fullName: DeviceOfHermes.SpeedDiceBuf
+  nameWithType: SpeedDiceBuf
+- uid: DeviceOfHermes.SpeedDiceBuf.BeforeGiveDamage(BattleDiceBehavior)
+  name: BeforeGiveDamage(BattleDiceBehavior)
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_BeforeGiveDamage_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.BeforeGiveDamage(BattleDiceBehavior)
+  fullName: DeviceOfHermes.SpeedDiceBuf.BeforeGiveDamage(BattleDiceBehavior)
+  nameWithType: SpeedDiceBuf.BeforeGiveDamage(BattleDiceBehavior)
+- uid: DeviceOfHermes.SpeedDiceBuf.BeforeGiveDamage*
+  name: BeforeGiveDamage
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_BeforeGiveDamage_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.BeforeGiveDamage
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.BeforeGiveDamage
+  nameWithType: SpeedDiceBuf.BeforeGiveDamage
+- uid: DeviceOfHermes.SpeedDiceBuf.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.BeforeRollDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.SpeedDiceBuf.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: SpeedDiceBuf.BeforeRollDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.SpeedDiceBuf.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_BeforeRollDice_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.BeforeRollDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.BeforeRollDice
+  nameWithType: SpeedDiceBuf.BeforeRollDice
+- uid: DeviceOfHermes.SpeedDiceBuf.Destroy
+  name: Destroy()
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_Destroy
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.Destroy
+  fullName: DeviceOfHermes.SpeedDiceBuf.Destroy()
+  nameWithType: SpeedDiceBuf.Destroy()
+- uid: DeviceOfHermes.SpeedDiceBuf.Destroy*
+  name: Destroy
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_Destroy_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.Destroy
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.Destroy
+  nameWithType: SpeedDiceBuf.Destroy
+- uid: DeviceOfHermes.SpeedDiceBuf.Destroyed
+  name: Destroyed
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_Destroyed
+  commentId: P:DeviceOfHermes.SpeedDiceBuf.Destroyed
+  fullName: DeviceOfHermes.SpeedDiceBuf.Destroyed
+  nameWithType: SpeedDiceBuf.Destroyed
+- uid: DeviceOfHermes.SpeedDiceBuf.Destroyed*
+  name: Destroyed
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_Destroyed_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.Destroyed
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.Destroyed
+  nameWithType: SpeedDiceBuf.Destroyed
+- uid: DeviceOfHermes.SpeedDiceBuf.GetBufIcon
+  name: GetBufIcon()
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_GetBufIcon
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.GetBufIcon
+  fullName: DeviceOfHermes.SpeedDiceBuf.GetBufIcon()
+  nameWithType: SpeedDiceBuf.GetBufIcon()
+- uid: DeviceOfHermes.SpeedDiceBuf.GetBufIcon*
+  name: GetBufIcon
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_GetBufIcon_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.GetBufIcon
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.GetBufIcon
+  nameWithType: SpeedDiceBuf.GetBufIcon
+- uid: DeviceOfHermes.SpeedDiceBuf.Index
+  name: Index
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_Index
+  commentId: F:DeviceOfHermes.SpeedDiceBuf.Index
+  fullName: DeviceOfHermes.SpeedDiceBuf.Index
+  nameWithType: SpeedDiceBuf.Index
+- uid: DeviceOfHermes.SpeedDiceBuf.OnDrawParrying(BattleDiceBehavior)
+  name: OnDrawParrying(BattleDiceBehavior)
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnDrawParrying_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnDrawParrying(BattleDiceBehavior)
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnDrawParrying(BattleDiceBehavior)
+  nameWithType: SpeedDiceBuf.OnDrawParrying(BattleDiceBehavior)
+- uid: DeviceOfHermes.SpeedDiceBuf.OnDrawParrying*
+  name: OnDrawParrying
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnDrawParrying_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnDrawParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnDrawParrying
+  nameWithType: SpeedDiceBuf.OnDrawParrying
+- uid: DeviceOfHermes.SpeedDiceBuf.OnLoseParrying(BattleDiceBehavior)
+  name: OnLoseParrying(BattleDiceBehavior)
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnLoseParrying_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnLoseParrying(BattleDiceBehavior)
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnLoseParrying(BattleDiceBehavior)
+  nameWithType: SpeedDiceBuf.OnLoseParrying(BattleDiceBehavior)
+- uid: DeviceOfHermes.SpeedDiceBuf.OnLoseParrying*
+  name: OnLoseParrying
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnLoseParrying_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnLoseParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnLoseParrying
+  nameWithType: SpeedDiceBuf.OnLoseParrying
+- uid: DeviceOfHermes.SpeedDiceBuf.OnRollDice(BattleDiceBehavior)
+  name: OnRollDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnRollDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnRollDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnRollDice(BattleDiceBehavior)
+  nameWithType: SpeedDiceBuf.OnRollDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.SpeedDiceBuf.OnRollDice*
+  name: OnRollDice
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnRollDice_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnRollDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnRollDice
+  nameWithType: SpeedDiceBuf.OnRollDice
+- uid: DeviceOfHermes.SpeedDiceBuf.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnRoundEnd
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnRoundEnd
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnRoundEnd()
+  nameWithType: SpeedDiceBuf.OnRoundEnd()
+- uid: DeviceOfHermes.SpeedDiceBuf.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnRoundEnd
+  nameWithType: SpeedDiceBuf.OnRoundEnd
+- uid: DeviceOfHermes.SpeedDiceBuf.OnStartBattle
+  name: OnStartBattle()
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnStartBattle
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnStartBattle
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnStartBattle()
+  nameWithType: SpeedDiceBuf.OnStartBattle()
+- uid: DeviceOfHermes.SpeedDiceBuf.OnStartBattle*
+  name: OnStartBattle
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnStartBattle_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnStartBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnStartBattle
+  nameWithType: SpeedDiceBuf.OnStartBattle
+- uid: DeviceOfHermes.SpeedDiceBuf.OnStartOneSideAction
+  name: OnStartOneSideAction()
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnStartOneSideAction
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnStartOneSideAction
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnStartOneSideAction()
+  nameWithType: SpeedDiceBuf.OnStartOneSideAction()
+- uid: DeviceOfHermes.SpeedDiceBuf.OnStartOneSideAction*
+  name: OnStartOneSideAction
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnStartOneSideAction_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnStartOneSideAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnStartOneSideAction
+  nameWithType: SpeedDiceBuf.OnStartOneSideAction
+- uid: DeviceOfHermes.SpeedDiceBuf.OnStartParrying
+  name: OnStartParrying()
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnStartParrying
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnStartParrying
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnStartParrying()
+  nameWithType: SpeedDiceBuf.OnStartParrying()
+- uid: DeviceOfHermes.SpeedDiceBuf.OnStartParrying*
+  name: OnStartParrying
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnStartParrying_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnStartParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnStartParrying
+  nameWithType: SpeedDiceBuf.OnStartParrying
+- uid: DeviceOfHermes.SpeedDiceBuf.OnSucceedAttack(BattleDiceBehavior)
+  name: OnSucceedAttack(BattleDiceBehavior)
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnSucceedAttack_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnSucceedAttack(BattleDiceBehavior)
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnSucceedAttack(BattleDiceBehavior)
+  nameWithType: SpeedDiceBuf.OnSucceedAttack(BattleDiceBehavior)
+- uid: DeviceOfHermes.SpeedDiceBuf.OnSucceedAttack*
+  name: OnSucceedAttack
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnSucceedAttack_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnSucceedAttack
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnSucceedAttack
+  nameWithType: SpeedDiceBuf.OnSucceedAttack
+- uid: DeviceOfHermes.SpeedDiceBuf.OnUseCard
+  name: OnUseCard()
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnUseCard
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnUseCard
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnUseCard()
+  nameWithType: SpeedDiceBuf.OnUseCard()
+- uid: DeviceOfHermes.SpeedDiceBuf.OnUseCard*
+  name: OnUseCard
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnUseCard_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnUseCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnUseCard
+  nameWithType: SpeedDiceBuf.OnUseCard
+- uid: DeviceOfHermes.SpeedDiceBuf.OnWinParrying(BattleDiceBehavior)
+  name: OnWinParrying(BattleDiceBehavior)
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnWinParrying_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.SpeedDiceBuf.OnWinParrying(BattleDiceBehavior)
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnWinParrying(BattleDiceBehavior)
+  nameWithType: SpeedDiceBuf.OnWinParrying(BattleDiceBehavior)
+- uid: DeviceOfHermes.SpeedDiceBuf.OnWinParrying*
+  name: OnWinParrying
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_OnWinParrying_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.OnWinParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.OnWinParrying
+  nameWithType: SpeedDiceBuf.OnWinParrying
+- uid: DeviceOfHermes.SpeedDiceBuf.equipped
+  name: equipped
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_equipped
+  commentId: F:DeviceOfHermes.SpeedDiceBuf.equipped
+  fullName: DeviceOfHermes.SpeedDiceBuf.equipped
+  nameWithType: SpeedDiceBuf.equipped
+- uid: DeviceOfHermes.SpeedDiceBuf.keywordIconId
+  name: keywordIconId
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_keywordIconId
+  commentId: P:DeviceOfHermes.SpeedDiceBuf.keywordIconId
+  fullName: DeviceOfHermes.SpeedDiceBuf.keywordIconId
+  nameWithType: SpeedDiceBuf.keywordIconId
+- uid: DeviceOfHermes.SpeedDiceBuf.keywordIconId*
+  name: keywordIconId
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_keywordIconId_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.keywordIconId
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.keywordIconId
+  nameWithType: SpeedDiceBuf.keywordIconId
+- uid: DeviceOfHermes.SpeedDiceBuf.keywordId
+  name: keywordId
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_keywordId
+  commentId: P:DeviceOfHermes.SpeedDiceBuf.keywordId
+  fullName: DeviceOfHermes.SpeedDiceBuf.keywordId
+  nameWithType: SpeedDiceBuf.keywordId
+- uid: DeviceOfHermes.SpeedDiceBuf.keywordId*
+  name: keywordId
+  href: api/DeviceOfHermes.SpeedDiceBuf.html#DeviceOfHermes_SpeedDiceBuf_keywordId_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBuf.keywordId
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBuf.keywordId
+  nameWithType: SpeedDiceBuf.keywordId
+- uid: DeviceOfHermes.SpeedDiceBufDetail
+  name: SpeedDiceBufDetail
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html
+  commentId: T:DeviceOfHermes.SpeedDiceBufDetail
+  fullName: DeviceOfHermes.SpeedDiceBufDetail
+  nameWithType: SpeedDiceBufDetail
+- uid: DeviceOfHermes.SpeedDiceBufDetail.ActivatedBufs
+  name: ActivatedBufs
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_ActivatedBufs
+  commentId: P:DeviceOfHermes.SpeedDiceBufDetail.ActivatedBufs
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.ActivatedBufs
+  nameWithType: SpeedDiceBufDetail.ActivatedBufs
+- uid: DeviceOfHermes.SpeedDiceBufDetail.ActivatedBufs*
+  name: ActivatedBufs
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_ActivatedBufs_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBufDetail.ActivatedBufs
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.ActivatedBufs
+  nameWithType: SpeedDiceBufDetail.ActivatedBufs
+- uid: DeviceOfHermes.SpeedDiceBufDetail.AddBuf(System.Int32,DeviceOfHermes.SpeedDiceBuf)
+  name: AddBuf(int, SpeedDiceBuf)
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_AddBuf_System_Int32_DeviceOfHermes_SpeedDiceBuf_
+  commentId: M:DeviceOfHermes.SpeedDiceBufDetail.AddBuf(System.Int32,DeviceOfHermes.SpeedDiceBuf)
+  name.vb: AddBuf(Integer, SpeedDiceBuf)
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.AddBuf(int, DeviceOfHermes.SpeedDiceBuf)
+  fullName.vb: DeviceOfHermes.SpeedDiceBufDetail.AddBuf(Integer, DeviceOfHermes.SpeedDiceBuf)
+  nameWithType: SpeedDiceBufDetail.AddBuf(int, SpeedDiceBuf)
+  nameWithType.vb: SpeedDiceBufDetail.AddBuf(Integer, SpeedDiceBuf)
+- uid: DeviceOfHermes.SpeedDiceBufDetail.AddBuf*
+  name: AddBuf
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_AddBuf_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBufDetail.AddBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.AddBuf
+  nameWithType: SpeedDiceBufDetail.AddBuf
+- uid: DeviceOfHermes.SpeedDiceBufDetail.RemoveAll(System.Predicate{DeviceOfHermes.SpeedDiceBuf})
+  name: RemoveAll(Predicate<SpeedDiceBuf>)
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_RemoveAll_System_Predicate_DeviceOfHermes_SpeedDiceBuf__
+  commentId: M:DeviceOfHermes.SpeedDiceBufDetail.RemoveAll(System.Predicate{DeviceOfHermes.SpeedDiceBuf})
+  name.vb: RemoveAll(Predicate(Of SpeedDiceBuf))
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.RemoveAll(System.Predicate<DeviceOfHermes.SpeedDiceBuf>)
+  fullName.vb: DeviceOfHermes.SpeedDiceBufDetail.RemoveAll(System.Predicate(Of DeviceOfHermes.SpeedDiceBuf))
+  nameWithType: SpeedDiceBufDetail.RemoveAll(Predicate<SpeedDiceBuf>)
+  nameWithType.vb: SpeedDiceBufDetail.RemoveAll(Predicate(Of SpeedDiceBuf))
+- uid: DeviceOfHermes.SpeedDiceBufDetail.RemoveAll*
+  name: RemoveAll
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_RemoveAll_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBufDetail.RemoveAll
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.RemoveAll
+  nameWithType: SpeedDiceBufDetail.RemoveAll
+- uid: DeviceOfHermes.SpeedDiceBufDetail.RemoveBuf(DeviceOfHermes.SpeedDiceBuf)
+  name: RemoveBuf(SpeedDiceBuf)
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_RemoveBuf_DeviceOfHermes_SpeedDiceBuf_
+  commentId: M:DeviceOfHermes.SpeedDiceBufDetail.RemoveBuf(DeviceOfHermes.SpeedDiceBuf)
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.RemoveBuf(DeviceOfHermes.SpeedDiceBuf)
+  nameWithType: SpeedDiceBufDetail.RemoveBuf(SpeedDiceBuf)
+- uid: DeviceOfHermes.SpeedDiceBufDetail.RemoveBuf*
+  name: RemoveBuf
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_RemoveBuf_
+  commentId: Overload:DeviceOfHermes.SpeedDiceBufDetail.RemoveBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.RemoveBuf
+  nameWithType: SpeedDiceBufDetail.RemoveBuf
+- uid: DeviceOfHermes.SpeedDiceBufDetail.owner
+  name: owner
+  href: api/DeviceOfHermes.SpeedDiceBufDetail.html#DeviceOfHermes_SpeedDiceBufDetail_owner
+  commentId: F:DeviceOfHermes.SpeedDiceBufDetail.owner
+  fullName: DeviceOfHermes.SpeedDiceBufDetail.owner
+  nameWithType: SpeedDiceBufDetail.owner
+- uid: DeviceOfHermes.SpeedDiceBufDetailExt
+  name: SpeedDiceBufDetailExt
+  href: api/DeviceOfHermes.SpeedDiceBufDetailExt.html
+  commentId: T:DeviceOfHermes.SpeedDiceBufDetailExt
+  fullName: DeviceOfHermes.SpeedDiceBufDetailExt
+  nameWithType: SpeedDiceBufDetailExt
 - uid: DeviceOfHermes.StageLibrarianList
   name: StageLibrarianList
   href: api/DeviceOfHermes.StageLibrarianList.html

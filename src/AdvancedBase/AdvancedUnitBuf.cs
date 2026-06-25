@@ -52,6 +52,16 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>Unit on round start before <see cref="PassiveAbilityBase.OnRoundStart"/></summary>
+    public virtual void OnRoundStartFirst()
+    {
+    }
+
+    /// <summary>Unit on round start after <see cref="PassiveAbilityBase.OnRoundStartAfter"/></summary>
+    public virtual void OnRoundStartLast()
+    {
+    }
+
     /// <summary>Unitbuf stack on changed</summary>
     public virtual void OnStackChange(int last)
     {

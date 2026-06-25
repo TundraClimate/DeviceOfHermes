@@ -467,18 +467,30 @@ internal static class AdvancedPatch
             {
                 passive.OnRoundStartFirst();
             }
+
+            foreach (var buf in __instance.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>())
+            {
+                buf.OnRoundStartFirst();
+            }
         }
     }
 
     [HarmonyPatch(typeof(BattleUnitModel), "OnRoundStart_after")]
     static class PatchOnRoundStartLast
     {
-        static void Postfix(BattleUnitModel __instance)
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance)
         {
             foreach (var passive in __instance.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
             {
                 passive.OnRoundStartLast();
             }
+
+            foreach (var buf in __instance.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>())
+            {
+                buf.OnRoundStartLast();
+            }
+
+            return __exception;
         }
     }
 

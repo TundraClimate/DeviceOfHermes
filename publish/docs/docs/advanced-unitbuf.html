@@ -105,6 +105,14 @@
     {
     }
 
+    public override void OnRoundStartFirst()
+    {
+    }
+
+    public override void OnRoundStartLast()
+    {
+    }
+
     public override void OnStackChange(int last)
     {
     }
@@ -142,6 +150,18 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <ul>
 <li><code>instant</code>: 付与された他のバフです。</li>
 </ul>
+<h3 id="onroundstartfirst"><code>OnRoundStartFirst()</code></h3>
+<pre><code class="lang-cs">public override void OnRoundStartFirst()
+{
+}
+</code></pre>
+<p><code>PassiveAbilityBase</code>の<code>OnRoundStart</code>より先に実行されます。</p>
+<h3 id="onroundstartlast"><code>OnRoundStartLast()</code></h3>
+<pre><code class="lang-cs">public override void OnRoundStartLast()
+{
+}
+</code></pre>
+<p><code>PassiveAbilityBase</code>の<code>OnRoundStartAfter</code>より後に実行されます。</p>
 <h3 id="onstackchangeint"><code>OnStackChange(int)</code></h3>
 <pre><code class="lang-cs">public override void OnStackChange(int last)
 {

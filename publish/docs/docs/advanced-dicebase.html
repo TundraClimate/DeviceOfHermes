@@ -117,6 +117,11 @@
     {
         return origin;
     }
+
+    public override int GetForceResultDamageValue(int origin)
+    {
+        return origin;
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
@@ -164,6 +169,16 @@
 }
 </code></pre>
 <p>最終ダメージ量をこのメソッドが返した値に変更します。</p>
+<ul>
+<li><code>origin</code>: 変更前の最終ダメージ量です。</li>
+</ul>
+<h3 id="getforceresultdamagevalueint"><code>GetForceResultDamageValue(int)</code></h3>
+<pre><code class="lang-cs">public override int GetForceResultDamageValue(int origin)
+{
+    return origin;
+}
+</code></pre>
+<p>全てのダメージ変更処理の後にダメージ量をこのメソッドが返した値に変更します。</p>
 <ul>
 <li><code>origin</code>: 変更前の最終ダメージ量です。</li>
 </ul>

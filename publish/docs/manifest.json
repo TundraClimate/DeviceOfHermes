@@ -558,6 +558,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.SpeedDiceBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.SpeedDiceBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.SpeedDiceBuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.SpeedDiceBuf.yml\" sourcestartlinenumber=\"1\">A buf of equips by speed dice</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.SpeedDiceBufDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.SpeedDiceBufDetail.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.SpeedDiceBufDetail",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.SpeedDiceBufDetail.yml\" sourcestartlinenumber=\"1\">A detail of SpeedDiceBufs</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.SpeedDiceBufDetailExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.SpeedDiceBufDetailExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.SpeedDiceBufDetailExt",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.SpeedDiceBufDetailExt.yml\" sourcestartlinenumber=\"1\">An extensions of SpeedDiceBuf for BattleUnitModel</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.StageLibrarianList.yml",
       "output": {
         ".html": {
