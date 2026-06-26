@@ -28,6 +28,8 @@ internal static class CustomDicePatch
         Patch(typeof(PatchOnEndAction));
         Patch(typeof(PatchSetBehaviourResult));
         Patch(typeof(PatchOnDiceRollen));
+        Patch(typeof(PatchOnDiceInit));
+        Patch(typeof(PatchOnDiceTick));
     }
 
     private static void Patch(Type ty)
@@ -613,6 +615,107 @@ internal static class CustomDicePatch
                 view.diceActionUI.currentDice.SetDiceValue(true, beh.DiceResultValue);
 
                 additFields._uiBehaviorDict.Remove(result.behaviourIdx);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleSimpleActionUI_Dice), "PrepareDice", [typeof(List<BattleCardBehaviourResult>)])]
+    class PatchOnDiceInit
+    {
+        static void Postfix(BattleSimpleActionUI_Dice __instance, List<BattleCardBehaviourResult> battleDiceBehaviorResults)
+        {
+            if (battleDiceBehaviorResults.Count <= 0)
+            {
+                return;
+            }
+
+            ChangeDiceUI(__instance, battleDiceBehaviorResults[0].behaviourRawData);
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleSimpleActionUI_Dice), "PrepareDice", [typeof(BattleDiceBehaviourUI)])]
+    class PatchOnDiceTick
+    {
+        static void Postfix(BattleSimpleActionUI_Dice __instance, BattleDiceBehaviourUI b)
+        {
+            ChangeDiceUI(__instance, b.behaviourInCard);
+        }
+    }
+
+    static void ChangeDiceUI(BattleSimpleActionUI_Dice __instance, DiceBehaviour beh)
+    {
+        var ability = AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script);
+
+        if (ability is UnbreakableDice)
+        {
+            switch (beh.Detail)
+            {
+                case BehaviourDetail.Slash:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.UnbreakableSlashBeh;
+
+                    break;
+                case BehaviourDetail.Penetrate:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.UnbreakablePenetrateBeh;
+
+                    break;
+                case BehaviourDetail.Hit:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.UnbreakableHitBeh;
+
+                    break;
+
+                default:
+                    return;
+            }
+
+            var dhsv = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (dhsv is null)
+            {
+                dhsv = __instance.img_diceFace.gameObject.AddComponent<_2dxFX_HSV>();
+            }
+
+            dhsv._HueShift = 0f;
+            dhsv._Saturation = 1.55f;
+            dhsv._ValueBrightness = 0.60f;
+        }
+        else if (ability is RevengeDice)
+        {
+            var dhsv = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (dhsv is null)
+            {
+                dhsv = __instance.img_diceFace.gameObject.AddComponent<_2dxFX_HSV>();
+            }
+
+            dhsv._HueShift = 90f;
+            dhsv._Saturation = 1.5f;
+            dhsv._ValueBrightness = 1f;
+
+            var chsv = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (chsv is null)
+            {
+                chsv = __instance.imgDetailIcon_Center.gameObject.AddComponent<_2dxFX_HSV>();
+            }
+
+            chsv._HueShift = 90f;
+            chsv._Saturation = 1.5f;
+            chsv._ValueBrightness = 1f;
+        }
+        else
+        {
+            var df = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (df is not null)
+            {
+                UnityEngine.Object.Destroy(df);
+            }
+
+            var dc = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (dc is not null)
+            {
+                UnityEngine.Object.Destroy(dc);
             }
         }
     }
