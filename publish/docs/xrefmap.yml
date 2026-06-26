@@ -1906,18 +1906,36 @@ references:
   commentId: F:DeviceOfHermes.HermesConstants.UnbreakableHit
   fullName: DeviceOfHermes.HermesConstants.UnbreakableHit
   nameWithType: HermesConstants.UnbreakableHit
+- uid: DeviceOfHermes.HermesConstants.UnbreakableHitBeh
+  name: UnbreakableHitBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakableHitBeh
+  commentId: F:DeviceOfHermes.HermesConstants.UnbreakableHitBeh
+  fullName: DeviceOfHermes.HermesConstants.UnbreakableHitBeh
+  nameWithType: HermesConstants.UnbreakableHitBeh
 - uid: DeviceOfHermes.HermesConstants.UnbreakablePenetrate
   name: UnbreakablePenetrate
   href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakablePenetrate
   commentId: F:DeviceOfHermes.HermesConstants.UnbreakablePenetrate
   fullName: DeviceOfHermes.HermesConstants.UnbreakablePenetrate
   nameWithType: HermesConstants.UnbreakablePenetrate
+- uid: DeviceOfHermes.HermesConstants.UnbreakablePenetrateBeh
+  name: UnbreakablePenetrateBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakablePenetrateBeh
+  commentId: F:DeviceOfHermes.HermesConstants.UnbreakablePenetrateBeh
+  fullName: DeviceOfHermes.HermesConstants.UnbreakablePenetrateBeh
+  nameWithType: HermesConstants.UnbreakablePenetrateBeh
 - uid: DeviceOfHermes.HermesConstants.UnbreakableSlash
   name: UnbreakableSlash
   href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakableSlash
   commentId: F:DeviceOfHermes.HermesConstants.UnbreakableSlash
   fullName: DeviceOfHermes.HermesConstants.UnbreakableSlash
   nameWithType: HermesConstants.UnbreakableSlash
+- uid: DeviceOfHermes.HermesConstants.UnbreakableSlashBeh
+  name: UnbreakableSlashBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_UnbreakableSlashBeh
+  commentId: F:DeviceOfHermes.HermesConstants.UnbreakableSlashBeh
+  fullName: DeviceOfHermes.HermesConstants.UnbreakableSlashBeh
+  nameWithType: HermesConstants.UnbreakableSlashBeh
 - uid: DeviceOfHermes.PassiveResolver
   name: PassiveResolver
   href: api/DeviceOfHermes.PassiveResolver.html
@@ -3854,6 +3872,22 @@ references:
   commentId: T:DeviceOfHermes.VannilaUnitBuf
   fullName: DeviceOfHermes.VannilaUnitBuf
   nameWithType: VannilaUnitBuf
+- uid: DeviceOfHermes.VannilaUnitBuf.AddAltIcon*
+  name: AddAltIcon
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddAltIcon_
+  commentId: Overload:DeviceOfHermes.VannilaUnitBuf.AddAltIcon
+  isSpec: "True"
+  fullName: DeviceOfHermes.VannilaUnitBuf.AddAltIcon
+  nameWithType: VannilaUnitBuf.AddAltIcon
+- uid: DeviceOfHermes.VannilaUnitBuf.AddAltIcon``1(System.String,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name: AddAltIcon<T>(string, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddAltIcon__1_System_String_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean__
+  commentId: M:DeviceOfHermes.VannilaUnitBuf.AddAltIcon``1(System.String,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name.vb: AddAltIcon(Of T)(String, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  fullName: DeviceOfHermes.VannilaUnitBuf.AddAltIcon<T>(string, System.Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  fullName.vb: DeviceOfHermes.VannilaUnitBuf.AddAltIcon(Of T)(String, System.Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  nameWithType: VannilaUnitBuf.AddAltIcon<T>(string, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  nameWithType.vb: VannilaUnitBuf.AddAltIcon(Of T)(String, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
 - uid: DeviceOfHermes.VannilaUnitBuf.AddMaxIf*
   name: AddMaxIf
   href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddMaxIf_

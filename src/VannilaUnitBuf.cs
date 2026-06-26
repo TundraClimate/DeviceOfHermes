@@ -96,7 +96,7 @@ public class VannilaUnitBuf
         return true;
     }
 
-    static bool PrefixIf(BattleUnitBuf __instance, int addedStack)
+    static bool PrefixIf(BattleUnitBuf __instance, BattleUnitModel ____owner, int addedStack)
     {
         if (_ifMax.TryGetValue(__instance.bufType, out var conds))
         {
@@ -105,9 +105,7 @@ public class VannilaUnitBuf
                 var cond = res.Item1;
                 var max = res.Item2;
 
-                var _owner = _ownerRef(__instance);
-
-                if (cond(__instance, _owner))
+                if (cond(__instance, ____owner))
                 {
                     __instance.stack = max.Min(__instance.stack);
 
@@ -119,12 +117,49 @@ public class VannilaUnitBuf
         return true;
     }
 
+    /// <summary>Add new alt icon</summary>
+    public static void AddAltIcon<T>(string altIconId, Func<BattleUnitBuf, BattleUnitModel?, bool> cond)
+        where T : BattleUnitBuf, new()
+    {
+        var target = typeof(T).Method("get_keywordIconId");
+        var t = (KeywordBuf)typeof(T).Property("bufType").GetValue(new T());
+
+        if (_altIcons.ContainsKey(t))
+        {
+            _altIcons[t].Add((cond, altIconId));
+        }
+        else
+        {
+            _altIcons.Add(t, new() { (cond, altIconId) });
+        }
+
+        if (_harmony.GetPatchedMethods().All(mes => mes != target))
+        {
+            _harmony.Patch(target, postfix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("PostfixIconId")));
+        }
+    }
+
+    static void PostfixIconId(BattleUnitBuf __instance, BattleUnitModel ____owner, ref string __result)
+    {
+        if (_altIcons.TryGetValue(__instance.bufType, out var altConds))
+        {
+            foreach (var (cond, alt) in altConds)
+            {
+                if (cond(__instance, ____owner))
+                {
+                    __result = alt;
+
+                    return;
+                }
+            }
+        }
+    }
+
     private static Dictionary<KeywordBuf, int> _forcelyMax = new();
 
     private static Dictionary<KeywordBuf, List<(Func<BattleUnitBuf, BattleUnitModel?, bool>, int)>> _ifMax = new();
 
-    private static AccessTools.FieldRef<BattleUnitBuf, BattleUnitModel?> _ownerRef =
-        typeof(BattleUnitBuf).FieldRefAccess<BattleUnitModel?>("_owner");
+    private static Dictionary<KeywordBuf, List<(Func<BattleUnitBuf, BattleUnitModel?, bool>, string)>> _altIcons = new();
 
     private static Harmony _harmony = new Harmony("DeviceOfHermes.VannilaUnitBuf");
 }
