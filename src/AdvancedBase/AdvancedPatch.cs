@@ -41,6 +41,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnStartBattle));
         Patch(typeof(PatchOnAddKeywordBuf));
         Patch(typeof(PatchGetBreakDmgRedAll));
+        Patch(typeof(PatchPlayForAuto));
     }
 
     public static void Init()
@@ -825,5 +826,60 @@ internal static class AdvancedPatch
 
             return __exception;
         }
+    }
+
+    [HarmonyPatch(typeof(BattleAllyCardDetail), "PlayTurnAutoForEnemy")]
+    class PatchPlayForAuto
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdfld(), new CodeMatch(i => i.opcode == OpCodes.Newobj))
+                .Advance(1)
+                .Insert(
+                    CodeInstruction.Arg(1),
+                    CodeInstruction.Arg(2),
+                    CodeInstruction.Call(typeof(PatchPlayForAuto).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static List<BattleDiceCardModel> InjectMethod(List<BattleDiceCardModel> list, int slot, int speed)
+        {
+            foreach (var card in list)
+            {
+                if (card.CreateDiceCardSelfAbilityScript() is AdvancedCardBase adv)
+                {
+                    var adder = adv.SpecialPriorityAdder(slot, speed);
+
+                    card.SetPriorityAdder(card.GetPriorityAdder() + adder);
+
+                    changed.Add(card);
+                }
+            }
+
+            return list;
+        }
+
+        static Exception Finalizer(Exception __exception, int currentDiceSlotIdx, int speed)
+        {
+            foreach (var card in changed)
+            {
+                if (card.CreateDiceCardSelfAbilityScript() is AdvancedCardBase adv)
+                {
+                    var adder = adv.SpecialPriorityAdder(currentDiceSlotIdx, speed);
+
+                    card.SetPriorityAdder(card.GetPriorityAdder() - adder);
+                }
+            }
+
+            changed.Clear();
+
+            return __exception;
+        }
+
+        static List<BattleDiceCardModel> changed = new();
     }
 }

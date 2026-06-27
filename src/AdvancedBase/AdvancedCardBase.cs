@@ -28,4 +28,10 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     {
         return true;
     }
+
+    /// <summary>Returns special priority</summary>
+    public virtual int SpecialPriorityAdder(int slot, int speed)
+    {
+        return 0;
+    }
 }

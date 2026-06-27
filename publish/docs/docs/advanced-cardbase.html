@@ -103,6 +103,11 @@
     public override bool CanDiscardByAbility(BattleDiceCardModel self)
     {
     }
+
+    public override int SpecialPriorityAdder(int slot, int speed)
+    {
+        return 0;
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
@@ -132,6 +137,17 @@ trueを返すとマッチに速度を参照しなくなります。</p>
 falseを返すと捨てられるのをキャンセルすることが出来ます。</p>
 <ul>
 <li><code>self</code>: この効果を持っているページ。</li>
+</ul>
+<h3 id="specialpriorityadderint-int"><code>SpecialPriorityAdder(int, int)</code></h3>
+<pre><code class="lang-cs">public override int SpecialPriorityAdder(int slot, int speed)
+{
+    return 0;
+}
+</code></pre>
+<p>特定の速度・スロットを条件にPriorityに加算される数値を返します。</p>
+<ul>
+<li><code>slot</code>: 計算に使用する速度スロットです。</li>
+<li><code>speed</code>: スロットに対応する速度です。</li>
 </ul>
 
 </article>

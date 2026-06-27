@@ -112,6 +112,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
   nameWithType: AdvancedCardBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder(System.Int32,System.Int32)
+  name: SpecialPriorityAdder(int, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_SpecialPriorityAdder_System_Int32_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder(System.Int32,System.Int32)
+  name.vb: SpecialPriorityAdder(Integer, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder(int, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder(Integer, Integer)
+  nameWithType: AdvancedCardBase.SpecialPriorityAdder(int, int)
+  nameWithType.vb: AdvancedCardBase.SpecialPriorityAdder(Integer, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder*
+  name: SpecialPriorityAdder
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_SpecialPriorityAdder_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder
+  nameWithType: AdvancedCardBase.SpecialPriorityAdder
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   name: AdvancedDiceBase
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html
