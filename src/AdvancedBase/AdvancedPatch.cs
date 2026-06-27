@@ -61,7 +61,11 @@ internal static class AdvancedPatch
             && (cardB.owner?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()
                 .All(passive => passive.IsClashable(cardB) && passive.IsClashable(cardB, cardA)) ?? true);
 
-        return isClashableA && isClashableB;
+        var isClashableC = !(cardB.isKeepedCard && cardA.cardAbility is AdvancedCardBase advAbiC && !advAbiC.IsClashableWithStandby);
+
+        var isClashableD = !(cardA.isKeepedCard && cardB.cardAbility is AdvancedCardBase advAbiD && !advAbiD.IsClashableWithStandby);
+
+        return isClashableA && isClashableB && isClashableC && isClashableD;
     }
 
     [HarmonyPatch(typeof(BattleUnitTargetArrowManagerUI), "UpdateTargetListData")]

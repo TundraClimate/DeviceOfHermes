@@ -86,6 +86,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable
   nameWithType: AdvancedCardBase.IsClashable
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashableWithStandby
+  name: IsClashableWithStandby
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsClashableWithStandby
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashableWithStandby
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashableWithStandby
+  nameWithType: AdvancedCardBase.IsClashableWithStandby
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashableWithStandby*
+  name: IsClashableWithStandby
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsClashableWithStandby_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashableWithStandby
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashableWithStandby
+  nameWithType: AdvancedCardBase.IsClashableWithStandby
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
   name: IsIgnoreSpeedByMatch
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsIgnoreSpeedByMatch

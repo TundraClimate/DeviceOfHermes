@@ -16,6 +16,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Property is card clashable</summary>
     public virtual bool IsClashable => true;
 
+    /// <summary>Property is card clashable with standby</summary>
+    public virtual bool IsClashableWithStandby => true;
+
     /// <summary>Property is card ignore speed by match</summary>
     public virtual bool IsIgnoreSpeedByMatch => false;
 

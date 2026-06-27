@@ -96,6 +96,8 @@
 {
     public override bool IsClashable =&gt; true;
 
+    public override bool IsClashableWithStandby =&gt; true;
+
     public override bool IsIgnoreSpeedByMatch =&gt; false;
 
     public override bool CanDiscardByAbility(BattleDiceCardModel self)
@@ -110,6 +112,11 @@
 <pre><code class="lang-cs">public override bool IsClashable =&gt; true;
 </code></pre>
 <p>マッチ可能かを指定するプロパティです。<br>
+falseを指定するとマッチ不可になります。</p>
+<h3 id="isclashablewithstandby"><code>IsClashableWithStandby</code></h3>
+<pre><code class="lang-cs">public override bool IsClashableWithStandby =&gt; true;
+</code></pre>
+<p>反撃とマッチ可能化を指定するプロパティです。<br>
 falseを指定するとマッチ不可になります。</p>
 <h3 id="isignorespeedbymatch"><code>IsIgnoreSpeedByMatch</code></h3>
 <pre><code class="lang-cs">public override bool IsIgnoreSpeedByMatch =&gt; false;
