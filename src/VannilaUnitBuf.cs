@@ -155,11 +155,51 @@ public class VannilaUnitBuf
         }
     }
 
+    /// <summary>Add new alt ID</summary>
+    public static void AddAltId<T>(string altId, Func<BattleUnitBuf, BattleUnitModel?, bool> cond)
+        where T : BattleUnitBuf, new()
+    {
+        var target = typeof(T).Method("get_keywordId");
+        var t = (KeywordBuf)typeof(T).Property("bufType").GetValue(new T());
+
+        if (_altIds.ContainsKey(t))
+        {
+            _altIds[t].Add((cond, altId));
+        }
+        else
+        {
+            _altIds.Add(t, new() { (cond, altId) });
+        }
+
+        if (_harmony.GetPatchedMethods().All(mes => mes != target))
+        {
+            _harmony.Patch(target, postfix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("PostfixId")));
+        }
+    }
+
+    static void PostfixId(BattleUnitBuf __instance, BattleUnitModel ____owner, ref string __result)
+    {
+        if (_altIds.TryGetValue(__instance.bufType, out var altConds))
+        {
+            foreach (var (cond, alt) in altConds)
+            {
+                if (cond(__instance, ____owner))
+                {
+                    __result = alt;
+
+                    return;
+                }
+            }
+        }
+    }
+
     private static Dictionary<KeywordBuf, int> _forcelyMax = new();
 
     private static Dictionary<KeywordBuf, List<(Func<BattleUnitBuf, BattleUnitModel?, bool>, int)>> _ifMax = new();
 
     private static Dictionary<KeywordBuf, List<(Func<BattleUnitBuf, BattleUnitModel?, bool>, string)>> _altIcons = new();
+
+    private static Dictionary<KeywordBuf, List<(Func<BattleUnitBuf, BattleUnitModel?, bool>, string)>> _altIds = new();
 
     private static Harmony _harmony = new Harmony("DeviceOfHermes.VannilaUnitBuf");
 }

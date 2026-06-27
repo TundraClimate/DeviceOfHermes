@@ -98,10 +98,13 @@
 VannilaUnitBuf.AddMaxIf&lt;BattleUnitBuf_smoke&gt;(20, (buf, owner) =&gt; owner.passiveDetail.HasPassive&lt;PassiveAbility_cigar&gt;());
 
 VannilaUnitBuf.AddAltIcon&lt;BattleUnitBuf_bleeding&gt;(&quot;AltBleeding&quot;, (buf, owner) =&gt; true);
+
+VannilaUnitBuf.AddAltId&lt;BattleUnitBuf_bleeding&gt;(&quot;AltBleeding&quot;, (buf, owner) =&gt; true);
 </code></pre>
 <p>強制的に上限値を変える場合は<code>SetMaxForcely</code>を使用します。<br>
 条件付きの上限値を変更する場合は<code>AddMaxIf</code>を使用します。</p>
-<p>バフ効果の特殊アイコンを追加する場合は<code>AddAltIcon</code>を使用します。</p>
+<p>バフ効果の特殊アイコンを追加する場合は<code>AddAltIcon</code>を使用します。<br>
+<code>KeywordId</code>ごと変更する場合は<code>AddAltId</code>を使用します。</p>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="setmaxforcelytint"><code>SetMaxForcely&lt;T&gt;(int)</code></h3>
 <pre><code class="lang-cs">VannilaUnitBuf.SetMaxForcely&lt;T&gt;(max);
@@ -137,6 +140,15 @@ VannilaUnitBuf.AddAltIcon&lt;BattleUnitBuf_bleeding&gt;(&quot;AltBleeding&quot;,
 <li><code>T</code>: 変更する対象のバフです。<code>bufType</code>がNoneで無いことが必要です。</li>
 <li><code>iconId</code>: 変更先のアイコン画像のIDです。</li>
 <li><code>cond(BattleUnitBuf, BattleUnitModel?): bool</code>: 対象のバフとバフの保有者から、バフアイコンを変更するかの条件式です。trueを返した場合のみアイコンが変更されます。</li>
+</ul>
+<h3 id="addaltidtstring-funcbattleunitbuf-battleunitmodel-bool"><code>AddAltId&lt;T&gt;(string, Func&lt;BattleUnitBuf, BattleUnitModel, bool&gt;)</code></h3>
+<pre><code class="lang-cs">VannilaUnitBuf.AddAltId&lt;T&gt;(id, cond);
+</code></pre>
+<p>バフのIDを条件付きで変更します。</p>
+<ul>
+<li><code>T</code>: 変更する対象のバフです。<code>bufType</code>がNoneで無いことが必要です。</li>
+<li><code>id</code>: 変更先のIDです。</li>
+<li><code>cond(BattleUnitBuf, BattleUnitModel?): bool</code>: 対象のバフとバフの保有者から、IDを変更するかの条件式です。trueを返した場合のみIDが変更されます。</li>
 </ul>
 
 </article>

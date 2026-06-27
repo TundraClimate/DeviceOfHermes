@@ -3888,6 +3888,22 @@ references:
   fullName.vb: DeviceOfHermes.VannilaUnitBuf.AddAltIcon(Of T)(String, System.Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
   nameWithType: VannilaUnitBuf.AddAltIcon<T>(string, Func<BattleUnitBuf, BattleUnitModel?, bool>)
   nameWithType.vb: VannilaUnitBuf.AddAltIcon(Of T)(String, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+- uid: DeviceOfHermes.VannilaUnitBuf.AddAltId*
+  name: AddAltId
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddAltId_
+  commentId: Overload:DeviceOfHermes.VannilaUnitBuf.AddAltId
+  isSpec: "True"
+  fullName: DeviceOfHermes.VannilaUnitBuf.AddAltId
+  nameWithType: VannilaUnitBuf.AddAltId
+- uid: DeviceOfHermes.VannilaUnitBuf.AddAltId``1(System.String,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name: AddAltId<T>(string, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddAltId__1_System_String_System_Func_BattleUnitBuf_BattleUnitModel_System_Boolean__
+  commentId: M:DeviceOfHermes.VannilaUnitBuf.AddAltId``1(System.String,System.Func{BattleUnitBuf,BattleUnitModel,System.Boolean})
+  name.vb: AddAltId(Of T)(String, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  fullName: DeviceOfHermes.VannilaUnitBuf.AddAltId<T>(string, System.Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  fullName.vb: DeviceOfHermes.VannilaUnitBuf.AddAltId(Of T)(String, System.Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
+  nameWithType: VannilaUnitBuf.AddAltId<T>(string, Func<BattleUnitBuf, BattleUnitModel?, bool>)
+  nameWithType.vb: VannilaUnitBuf.AddAltId(Of T)(String, Func(Of BattleUnitBuf, BattleUnitModel, Boolean))
 - uid: DeviceOfHermes.VannilaUnitBuf.AddMaxIf*
   name: AddMaxIf
   href: api/DeviceOfHermes.VannilaUnitBuf.html#DeviceOfHermes_VannilaUnitBuf_AddMaxIf_
