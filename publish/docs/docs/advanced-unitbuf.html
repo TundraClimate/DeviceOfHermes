@@ -121,6 +121,10 @@
     {
     }
 
+    public override int GetBreakDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker)
+    {
+    }
+
     public override void OnStackChange(int last)
     {
     }
@@ -203,6 +207,17 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <ul>
 <li><code>buf</code>: 付与されたバフです。</li>
 <li><code>stack</code>: 付与されたスタック数です。</li>
+</ul>
+<h3 id="getbreakdamagereductionallint-damagetype-battleunitmodel"><code>GetBreakDamageReductionAll(int, DamageType, BattleUnitModel)</code></h3>
+<pre><code class="lang-cs">public override int GetBreakDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker)
+{
+}
+</code></pre>
+<p>全ての混乱ダメージ量の軽減数値を返します。</p>
+<ul>
+<li><code>dmg</code>: 元のダメージ量です。</li>
+<li><code>dmgType</code>: ダメージの種類です。</li>
+<li><code>attacker</code>: 攻撃者です。</li>
 </ul>
 
 </article>

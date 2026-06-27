@@ -73,6 +73,12 @@ public class AdvancedUnitBuf : BattleUnitBuf
         return 0;
     }
 
+    /// <summary>Reduce all break damage</summary>
+    public virtual int GetBreakDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker)
+    {
+        return 0;
+    }
+
     /// <summary>Unitbuf stack on changed</summary>
     public virtual void OnStackChange(int last)
     {

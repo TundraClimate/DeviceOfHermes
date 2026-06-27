@@ -40,6 +40,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnUnitClick));
         Patch(typeof(PatchOnStartBattle));
         Patch(typeof(PatchOnAddKeywordBuf));
+        Patch(typeof(PatchGetBreakDmgRedAll));
     }
 
     public static void Init()
@@ -806,6 +807,19 @@ internal static class AdvancedPatch
         static Exception Finalizer(Exception __exception, BattleUnitModel __instance, ref int __result, BattleUnitBuf buf, int stack)
         {
             var num = __instance?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Sum(b => b.OnAddKeywordBufByCard(buf, stack)) ?? 0;
+
+            __result += num;
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "GetBreakDamageReductionAll")]
+    class PatchGetBreakDmgRedAll
+    {
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, ref int __result, int dmg, DamageType dmgType, BattleUnitModel attacker)
+        {
+            var num = __instance?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Sum(b => b.GetBreakDamageReductionAll(dmg, dmgType, attacker)) ?? 0;
 
             __result += num;
 

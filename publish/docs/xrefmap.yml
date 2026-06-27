@@ -464,6 +464,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.DefaultStack
   nameWithType: AdvancedUnitBuf.DefaultStack
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll(System.Int32,DamageType,BattleUnitModel)
+  name: GetBreakDamageReductionAll(int, DamageType, BattleUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetBreakDamageReductionAll_System_Int32_DamageType_BattleUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll(System.Int32,DamageType,BattleUnitModel)
+  name.vb: GetBreakDamageReductionAll(Integer, DamageType, BattleUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll(int, DamageType, BattleUnitModel)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll(Integer, DamageType, BattleUnitModel)
+  nameWithType: AdvancedUnitBuf.GetBreakDamageReductionAll(int, DamageType, BattleUnitModel)
+  nameWithType.vb: AdvancedUnitBuf.GetBreakDamageReductionAll(Integer, DamageType, BattleUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll*
+  name: GetBreakDamageReductionAll
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetBreakDamageReductionAll_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll
+  nameWithType: AdvancedUnitBuf.GetBreakDamageReductionAll
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init(BattleUnitModel)
   name: Init(BattleUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_Init_BattleUnitModel_
