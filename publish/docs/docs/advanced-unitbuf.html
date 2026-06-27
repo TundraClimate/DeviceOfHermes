@@ -117,6 +117,10 @@
     {
     }
 
+    public override int OnAddKeywordBufByCard(BattleUnitBuf buf, int stack)
+    {
+    }
+
     public override void OnStackChange(int last)
     {
     }
@@ -189,6 +193,16 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <p>バフのアイコンがクリックされたときに実行されます。</p>
 <ul>
 <li><code>ty</code>: クリックの種類です。(Left/Right/Middle)</li>
+</ul>
+<h3 id="onaddkeywordbufbycardbattleunitbuf-int"><code>OnAddKeywordBufByCard(BattleUnitBuf, int)</code></h3>
+<pre><code class="lang-cs">public override int OnAddKeywordBufByCard(BattleUnitBuf buf, int stack)
+{
+}
+</code></pre>
+<p>ページ効果によりバフが付与されたときに実行されます。</p>
+<ul>
+<li><code>buf</code>: 付与されたバフです。</li>
+<li><code>stack</code>: 付与されたスタック数です。</li>
 </ul>
 
 </article>

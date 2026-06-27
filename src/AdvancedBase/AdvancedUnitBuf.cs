@@ -67,6 +67,12 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>Unit on added keyword buf</summary>
+    public virtual int OnAddKeywordBufByCard(BattleUnitBuf buf, int stack)
+    {
+        return 0;
+    }
+
     /// <summary>Unitbuf stack on changed</summary>
     public virtual void OnStackChange(int last)
     {

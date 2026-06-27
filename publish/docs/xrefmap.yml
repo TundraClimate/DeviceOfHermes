@@ -477,6 +477,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
   nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf,System.Int32)
+  name: OnAddKeywordBufByCard(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeywordBufByCard_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf,System.Int32)
+  name.vb: OnAddKeywordBufByCard(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf, Integer)
+  nameWithType: AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf, int)
+  nameWithType.vb: AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard*
+  name: OnAddKeywordBufByCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeywordBufByCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard
+  nameWithType: AdvancedUnitBuf.OnAddKeywordBufByCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType)
   name: OnClick(ClickType)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnClick_DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_ClickType_

@@ -39,6 +39,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnSetBuf));
         Patch(typeof(PatchOnUnitClick));
         Patch(typeof(PatchOnStartBattle));
+        Patch(typeof(PatchOnAddKeywordBuf));
     }
 
     public static void Init()
@@ -790,6 +791,19 @@ internal static class AdvancedPatch
             {
                 buf.OnStartBattle();
             });
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnAddKeywordBufByCard")]
+    class PatchOnAddKeywordBuf
+    {
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, ref int __result, BattleUnitBuf buf, int stack)
+        {
+            var num = __instance?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Sum(b => b.OnAddKeywordBufByCard(buf, stack)) ?? 0;
+
+            __result += num;
 
             return __exception;
         }
