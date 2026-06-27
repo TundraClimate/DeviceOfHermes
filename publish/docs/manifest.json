@@ -166,6 +166,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.ShimPassiveBase",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.yml\" sourcestartlinenumber=\"1\">Shimmering passive base</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.AdvancedBase.yml",
       "output": {
         ".html": {
@@ -1073,6 +1087,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/secondly-dice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/shim-passivebase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/shim-passivebase.html"
         }
       },
       "version": ""
