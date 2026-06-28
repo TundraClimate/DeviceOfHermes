@@ -1446,6 +1446,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDice.RevengeDice.AddRevengeCard
   nameWithType: RevengeDice.AddRevengeCard
+- uid: DeviceOfHermes.CustomDice.RevengeDice.IsRevengeNow(BattleUnitModel)
+  name: IsRevengeNow(BattleUnitModel)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_IsRevengeNow_BattleUnitModel_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.IsRevengeNow(BattleUnitModel)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.IsRevengeNow(BattleUnitModel)
+  nameWithType: RevengeDice.IsRevengeNow(BattleUnitModel)
+- uid: DeviceOfHermes.CustomDice.RevengeDice.IsRevengeNow*
+  name: IsRevengeNow
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_IsRevengeNow_
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.IsRevengeNow
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.IsRevengeNow
+  nameWithType: RevengeDice.IsRevengeNow
 - uid: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
   name: OnBeforeRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
   href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnBeforeRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_
@@ -1472,6 +1485,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDice.RevengeDice.OnRevenge
   nameWithType: RevengeDice.OnRevenge
+- uid: DeviceOfHermes.CustomDice.RevengeDice.RemainingRevenges(BattleUnitModel)
+  name: RemainingRevenges(BattleUnitModel)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_RemainingRevenges_BattleUnitModel_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.RemainingRevenges(BattleUnitModel)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.RemainingRevenges(BattleUnitModel)
+  nameWithType: RevengeDice.RemainingRevenges(BattleUnitModel)
+- uid: DeviceOfHermes.CustomDice.RevengeDice.RemainingRevenges*
+  name: RemainingRevenges
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_RemainingRevenges_
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.RemainingRevenges
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.RemainingRevenges
+  nameWithType: RevengeDice.RemainingRevenges
 - uid: DeviceOfHermes.CustomDice.SecondlyDice
   name: SecondlyDice
   href: api/DeviceOfHermes.CustomDice.SecondlyDice.html

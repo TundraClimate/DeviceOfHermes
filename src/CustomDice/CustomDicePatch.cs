@@ -254,12 +254,12 @@ internal static class CustomDicePatch
                 return;
             }
 
-            if (RevengeDice.CurrentRevenge.ContainsKey(atkDice.owner))
+            if (RevengeDice.IsRevengeNow(atkDice.owner))
             {
                 return;
             }
 
-            if (!RevengeDice.CurrentRevenge.ContainsKey(__instance) && RevengeDice.Cards.TryGetValue(__instance, out var res))
+            if (!RevengeDice.IsRevengeNow(__instance) && RevengeDice.Cards.TryGetValue(__instance, out var res))
             {
                 if (res.Count < 1)
                 {

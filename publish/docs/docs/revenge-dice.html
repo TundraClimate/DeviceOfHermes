@@ -138,6 +138,20 @@
 <li><code>display</code>: このページとしてダイスを使用します。</li>
 <li><code>behaviors</code>: 指定した場合、ダイスが上書きされます。</li>
 </ul>
+<h3 id="isrevengenowbattleunitmodel"><code>IsRevengeNow(BattleUnitModel)</code></h3>
+<pre><code class="lang-cs">RevengeDice.IsRevengeNow(unit);
+</code></pre>
+<p><code>unit</code>が現在反撃中・もしくは反撃の直前であるならば<code>true</code>を返します。</p>
+<ul>
+<li><code>unit</code>: 対象のBattleUnitModelです。</li>
+</ul>
+<h3 id="remainingrevengesbattleunitmodel"><code>RemainingRevenges(BattleUnitModel)</code></h3>
+<pre><code class="lang-cs">int remain = RevengeDice.RemainingRevenges(unit);
+</code></pre>
+<p>残りの反撃回数です。</p>
+<ul>
+<li><code>unit</code>: 対象のBattleUnitModelです。</li>
+</ul>
 
 </article>
 

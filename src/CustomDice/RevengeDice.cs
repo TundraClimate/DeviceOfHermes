@@ -54,6 +54,23 @@ public class RevengeDice : AdvancedDiceBase
         CurrentRevenge = new();
     }
 
+    /// <summary>Is revenge now, or before revenge</summary>
+    public static bool IsRevengeNow(BattleUnitModel unit)
+    {
+        return CurrentRevenge.ContainsKey(unit);
+    }
+
+    /// <summary>Returns remaining revenges</summary>
+    public static int RemainingRevenges(BattleUnitModel unit)
+    {
+        if (!Cards.TryGetValue(unit, out var res))
+        {
+            return 0;
+        }
+
+        return res.Count;
+    }
+
     /// <summary>A unit when revenge decided</summary>
     /// <param name="card">A revenge dicecard</param>
     /// <param name="revengeBy">A dice of revenge decided</param>
