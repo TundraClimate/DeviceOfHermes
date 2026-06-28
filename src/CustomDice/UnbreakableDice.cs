@@ -53,6 +53,18 @@ public class UnbreakableDice : AdvancedDiceBase
         Stash = new();
     }
 
+    /// <summary>Returns true if dice is unbreakable</summary>
+    public static bool IsUnbreakableDice(BattleDiceBehavior beh)
+    {
+        return beh.abilityList.Any(abi => abi is UnbreakableDice);
+    }
+
+    /// <summary>Returns true if dice is breaked unbreakable</summary>
+    public static bool IsBreakedDice(BattleDiceBehavior beh)
+    {
+        return beh.abilityList.Any(abi => abi is UnbreakableDice unb && unb.IsBreaked);
+    }
+
     /// <summary>A unit when use unbreakable dices</summary>
     /// <param name="card">A unbreakable dices</param>
     public virtual void OnUseBreaked(BattlePlayingCardDataInUnitModel card)

@@ -1513,6 +1513,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreaked
   nameWithType: UnbreakableDice.IsBreaked
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreakedDice(BattleDiceBehavior)
+  name: IsBreakedDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsBreakedDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.CustomDice.UnbreakableDice.IsBreakedDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreakedDice(BattleDiceBehavior)
+  nameWithType: UnbreakableDice.IsBreakedDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreakedDice*
+  name: IsBreakedDice
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsBreakedDice_
+  commentId: Overload:DeviceOfHermes.CustomDice.UnbreakableDice.IsBreakedDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsBreakedDice
+  nameWithType: UnbreakableDice.IsBreakedDice
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsUnbreakableDice(BattleDiceBehavior)
+  name: IsUnbreakableDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsUnbreakableDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.CustomDice.UnbreakableDice.IsUnbreakableDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsUnbreakableDice(BattleDiceBehavior)
+  nameWithType: UnbreakableDice.IsUnbreakableDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.CustomDice.UnbreakableDice.IsUnbreakableDice*
+  name: IsUnbreakableDice
+  href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_IsUnbreakableDice_
+  commentId: Overload:DeviceOfHermes.CustomDice.UnbreakableDice.IsUnbreakableDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.UnbreakableDice.IsUnbreakableDice
+  nameWithType: UnbreakableDice.IsUnbreakableDice
 - uid: DeviceOfHermes.CustomDice.UnbreakableDice.OnUseBreaked(BattlePlayingCardDataInUnitModel)
   name: OnUseBreaked(BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.CustomDice.UnbreakableDice.html#DeviceOfHermes_CustomDice_UnbreakableDice_OnUseBreaked_BattlePlayingCardDataInUnitModel_
