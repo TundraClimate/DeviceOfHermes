@@ -99,6 +99,14 @@ var data = Serde.FromXmlFile&lt;Data&gt;(&quot;data.xml&quot;);
 string text = Serde.ToXmlStr(data);
 
 Hermes.Say(text);
+
+// data.jsonの中身をData型として読み込む
+var data = Serde.FromJsonFile&lt;Data&gt;(&quot;data.json&quot;);
+
+// dataをJson形式に変換して出力
+string text = Serde.ToJsonStr(data);
+
+Hermes.Say(text);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="fromxmltxmlreader"><code>FromXml&lt;T&gt;(XmlReader)</code></h3>
@@ -144,6 +152,53 @@ Hermes.Say(text);
 <pre><code class="lang-cs">Serde.ToXmlFile(value, path);
 </code></pre>
 <p>データをXMLファイルとして出力します。</p>
+<ul>
+<li><code>value</code>: 出力する値です。</li>
+<li><code>path</code>: 出力先のファイルパスです。</li>
+</ul>
+<h3 id="fromjsontjsonreader"><code>FromJson&lt;T&gt;(JsonReader)</code></h3>
+<pre><code class="lang-cs">Serde.FromJson&lt;T&gt;(reader);
+</code></pre>
+<p>任意の<code>JsonReader</code>を使用してデータを読み込みます。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>reader</code>: <code>JsonReader</code>です。</li>
+</ul>
+<h3 id="fromjsonstrtstring"><code>FromJsonStr&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">Serde.FromJsonStr&lt;T&gt;(content);
+</code></pre>
+<p>文字列をJsonファイルの中身として解釈し、データに変換します。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>content</code>: Json形式の文字列です。</li>
+</ul>
+<h3 id="fromjsonfiletstring"><code>FromJsonFile&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">Serde.FromJsonFile&lt;T&gt;(path);
+</code></pre>
+<p>指定のファイルからJsonデータを読み込みます。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>path</code>: Jsonファイルのパスです。</li>
+</ul>
+<h3 id="tojsontt-jsonwriter"><code>ToJson&lt;T&gt;(T, JsonWriter)</code></h3>
+<pre><code class="lang-cs">Serde.JsonWriter(value, writer);
+</code></pre>
+<p>データをJson形式に変換して書き込みます。</p>
+<ul>
+<li><code>value</code>: 書き込む値です。</li>
+<li><code>writer</code>: 書き込む対象です。</li>
+</ul>
+<h3 id="tojsonstrtt"><code>ToJsonStr&lt;T&gt;(T)</code></h3>
+<pre><code class="lang-cs">Serde.ToJsonStr(value);
+</code></pre>
+<p>データをJson形式の文字列に変換します。</p>
+<ul>
+<li><code>value</code>: 変換前の値です。</li>
+</ul>
+<h3 id="tojsonfilett-string"><code>ToJsonFile&lt;T&gt;(T, string)</code></h3>
+<pre><code class="lang-cs">Serde.ToJsonFile(value, path);
+</code></pre>
+<p>データをJsonファイルとして出力します。</p>
 <ul>
 <li><code>value</code>: 出力する値です。</li>
 <li><code>path</code>: 出力先のファイルパスです。</li>

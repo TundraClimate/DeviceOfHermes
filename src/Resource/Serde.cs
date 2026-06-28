@@ -1,5 +1,8 @@
 using System.Xml;
 using System.Xml.Serialization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json.Converters;
 
 namespace DeviceOfHermes.Resource;
 
@@ -109,6 +112,100 @@ public static class Serde
         using var writer = XmlWriter.Create(path, settings);
 
         ToXml(value, writer);
+    }
+
+    /// <summary>Deserialize json from reader</summary>
+    public static T? FromJson<T>(JsonReader reader)
+    {
+        var settings = new JsonSerializerSettings()
+        {
+            Formatting = Newtonsoft.Json.Formatting.Indented,
+            NullValueHandling = NullValueHandling.Ignore,
+            ContractResolver = new CamelCasePropertyNamesContractResolver(),
+        };
+
+        settings.Converters.Add(new StringEnumConverter());
+
+        var serde = JsonSerializer.Create(settings);
+
+        try
+        {
+            return serde.Deserialize<T>(reader);
+        }
+        catch (JsonException e)
+        {
+            Hermes.Say($"Json parse failed: Readed content is not deserializable", MessageLevel.Warn);
+
+            Hermes.Say(e.Message ?? "Unknown infomation", MessageLevel.Warn);
+
+            return default(T);
+        }
+    }
+
+    /// <summary>Deserialize from string json</summary>
+    public static T? FromJsonStr<T>(string content)
+    {
+        using var reader = new StringReader(content);
+
+        using var jsonReader = new JsonTextReader(reader);
+
+        return FromJson<T>(jsonReader);
+    }
+
+    /// <summary>Deserialize from json file</summary>
+    public static T? FromJsonFile<T>(string path)
+    {
+        using var reader = new StreamReader(path);
+
+        using var jsonReader = new JsonTextReader(reader);
+
+        return FromJson<T>(jsonReader);
+    }
+
+    /// <summary>Serialize json to writer</summary>
+    public static void ToJson<T>(T value, JsonWriter writer)
+    {
+        var settings = new JsonSerializerSettings()
+        {
+            Formatting = Newtonsoft.Json.Formatting.Indented,
+            NullValueHandling = NullValueHandling.Ignore,
+            ContractResolver = new CamelCasePropertyNamesContractResolver(),
+        };
+
+        settings.Converters.Add(new StringEnumConverter());
+
+        var serde = JsonSerializer.Create(settings);
+
+        try
+        {
+            serde.Serialize(writer, value);
+        }
+        catch (JsonException e)
+        {
+            Hermes.Say($"Json convert failed: value is not serializable", MessageLevel.Warn);
+
+            Hermes.Say(e.Message ?? "Unknown infomation", MessageLevel.Warn);
+        }
+    }
+
+    /// <summary>Serialize to string</summary>
+    public static string ToJsonStr<T>(T value)
+    {
+        using var sw = new StringWriter();
+        using var writer = new JsonTextWriter(sw);
+
+        ToJson(value, writer);
+
+        return sw.ToString();
+    }
+
+    /// <summary>Serialize to string</summary>
+    public static void ToJsonFile<T>(T value, string path)
+    {
+        using var sw = new StreamWriter(path);
+        using var writer = new JsonTextWriter(sw);
+
+        ToJson(value, writer);
     }
 }
 

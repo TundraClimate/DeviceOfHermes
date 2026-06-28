@@ -2505,6 +2505,54 @@ references:
   commentId: T:DeviceOfHermes.Resource.Serde
   fullName: DeviceOfHermes.Resource.Serde
   nameWithType: Serde
+- uid: DeviceOfHermes.Resource.Serde.FromJson*
+  name: FromJson
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromJson_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.FromJson
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.FromJson
+  nameWithType: Serde.FromJson
+- uid: DeviceOfHermes.Resource.Serde.FromJsonFile*
+  name: FromJsonFile
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromJsonFile_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.FromJsonFile
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.FromJsonFile
+  nameWithType: Serde.FromJsonFile
+- uid: DeviceOfHermes.Resource.Serde.FromJsonFile``1(System.String)
+  name: FromJsonFile<T>(string)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromJsonFile__1_System_String_
+  commentId: M:DeviceOfHermes.Resource.Serde.FromJsonFile``1(System.String)
+  name.vb: FromJsonFile(Of T)(String)
+  fullName: DeviceOfHermes.Resource.Serde.FromJsonFile<T>(string)
+  fullName.vb: DeviceOfHermes.Resource.Serde.FromJsonFile(Of T)(String)
+  nameWithType: Serde.FromJsonFile<T>(string)
+  nameWithType.vb: Serde.FromJsonFile(Of T)(String)
+- uid: DeviceOfHermes.Resource.Serde.FromJsonStr*
+  name: FromJsonStr
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromJsonStr_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.FromJsonStr
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.FromJsonStr
+  nameWithType: Serde.FromJsonStr
+- uid: DeviceOfHermes.Resource.Serde.FromJsonStr``1(System.String)
+  name: FromJsonStr<T>(string)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromJsonStr__1_System_String_
+  commentId: M:DeviceOfHermes.Resource.Serde.FromJsonStr``1(System.String)
+  name.vb: FromJsonStr(Of T)(String)
+  fullName: DeviceOfHermes.Resource.Serde.FromJsonStr<T>(string)
+  fullName.vb: DeviceOfHermes.Resource.Serde.FromJsonStr(Of T)(String)
+  nameWithType: Serde.FromJsonStr<T>(string)
+  nameWithType.vb: Serde.FromJsonStr(Of T)(String)
+- uid: DeviceOfHermes.Resource.Serde.FromJson``1(Newtonsoft.Json.JsonReader)
+  name: FromJson<T>(JsonReader)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromJson__1_Newtonsoft_Json_JsonReader_
+  commentId: M:DeviceOfHermes.Resource.Serde.FromJson``1(Newtonsoft.Json.JsonReader)
+  name.vb: FromJson(Of T)(JsonReader)
+  fullName: DeviceOfHermes.Resource.Serde.FromJson<T>(Newtonsoft.Json.JsonReader)
+  fullName.vb: DeviceOfHermes.Resource.Serde.FromJson(Of T)(Newtonsoft.Json.JsonReader)
+  nameWithType: Serde.FromJson<T>(JsonReader)
+  nameWithType.vb: Serde.FromJson(Of T)(JsonReader)
 - uid: DeviceOfHermes.Resource.Serde.FromXml*
   name: FromXml
   href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromXml_
@@ -2553,6 +2601,54 @@ references:
   fullName.vb: DeviceOfHermes.Resource.Serde.FromXml(Of T)(System.Xml.XmlReader)
   nameWithType: Serde.FromXml<T>(XmlReader)
   nameWithType.vb: Serde.FromXml(Of T)(XmlReader)
+- uid: DeviceOfHermes.Resource.Serde.ToJson*
+  name: ToJson
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToJson_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.ToJson
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.ToJson
+  nameWithType: Serde.ToJson
+- uid: DeviceOfHermes.Resource.Serde.ToJsonFile*
+  name: ToJsonFile
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToJsonFile_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.ToJsonFile
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.ToJsonFile
+  nameWithType: Serde.ToJsonFile
+- uid: DeviceOfHermes.Resource.Serde.ToJsonFile``1(``0,System.String)
+  name: ToJsonFile<T>(T, string)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToJsonFile__1___0_System_String_
+  commentId: M:DeviceOfHermes.Resource.Serde.ToJsonFile``1(``0,System.String)
+  name.vb: ToJsonFile(Of T)(T, String)
+  fullName: DeviceOfHermes.Resource.Serde.ToJsonFile<T>(T, string)
+  fullName.vb: DeviceOfHermes.Resource.Serde.ToJsonFile(Of T)(T, String)
+  nameWithType: Serde.ToJsonFile<T>(T, string)
+  nameWithType.vb: Serde.ToJsonFile(Of T)(T, String)
+- uid: DeviceOfHermes.Resource.Serde.ToJsonStr*
+  name: ToJsonStr
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToJsonStr_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.ToJsonStr
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.ToJsonStr
+  nameWithType: Serde.ToJsonStr
+- uid: DeviceOfHermes.Resource.Serde.ToJsonStr``1(``0)
+  name: ToJsonStr<T>(T)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToJsonStr__1___0_
+  commentId: M:DeviceOfHermes.Resource.Serde.ToJsonStr``1(``0)
+  name.vb: ToJsonStr(Of T)(T)
+  fullName: DeviceOfHermes.Resource.Serde.ToJsonStr<T>(T)
+  fullName.vb: DeviceOfHermes.Resource.Serde.ToJsonStr(Of T)(T)
+  nameWithType: Serde.ToJsonStr<T>(T)
+  nameWithType.vb: Serde.ToJsonStr(Of T)(T)
+- uid: DeviceOfHermes.Resource.Serde.ToJson``1(``0,Newtonsoft.Json.JsonWriter)
+  name: ToJson<T>(T, JsonWriter)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToJson__1___0_Newtonsoft_Json_JsonWriter_
+  commentId: M:DeviceOfHermes.Resource.Serde.ToJson``1(``0,Newtonsoft.Json.JsonWriter)
+  name.vb: ToJson(Of T)(T, JsonWriter)
+  fullName: DeviceOfHermes.Resource.Serde.ToJson<T>(T, Newtonsoft.Json.JsonWriter)
+  fullName.vb: DeviceOfHermes.Resource.Serde.ToJson(Of T)(T, Newtonsoft.Json.JsonWriter)
+  nameWithType: Serde.ToJson<T>(T, JsonWriter)
+  nameWithType.vb: Serde.ToJson(Of T)(T, JsonWriter)
 - uid: DeviceOfHermes.Resource.Serde.ToXml*
   name: ToXml
   href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToXml_
