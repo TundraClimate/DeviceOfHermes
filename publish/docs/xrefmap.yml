@@ -4034,6 +4034,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UnitUIExtension.AddEffect
   nameWithType: UnitUIExtension.AddEffect
+- uid: DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice(BattleUnitModel)
+  name: GetClickedSpeedDice(BattleUnitModel)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_GetClickedSpeedDice_BattleUnitModel_
+  commentId: M:DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice(BattleUnitModel)
+  fullName: DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice(BattleUnitModel)
+  nameWithType: UnitUIExtension.GetClickedSpeedDice(BattleUnitModel)
+- uid: DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice*
+  name: GetClickedSpeedDice
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_GetClickedSpeedDice_
+  commentId: Overload:DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice
+  nameWithType: UnitUIExtension.GetClickedSpeedDice
 - uid: DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel,System.String)
   name: Say(BattleUnitModel, string)
   href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_BattleUnitModel_System_String_

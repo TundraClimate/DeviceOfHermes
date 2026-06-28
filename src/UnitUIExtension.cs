@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using HarmonyLib;
 using HarmonyExtension;
+using LOR_BattleUnit_UI;
 
 namespace DeviceOfHermes;
 
@@ -106,6 +107,27 @@ public static class UnitUIExtension
         });
     }
 
+    /// <summary>Returns selected speeddice</summary>
+    public static int GetClickedSpeedDice(this BattleUnitModel self)
+    {
+        for (var i = 0; self.speedDiceCount > i; i++)
+        {
+            var dui = self.view?.speedDiceSetterUI?.GetSpeedDiceByIndex(i);
+
+            if (dui is null)
+            {
+                continue;
+            }
+
+            if (_isClicked(dui))
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
     [HarmonyPatch(typeof(BattleDialogUI), "Update")]
     class PatchUpdator
     {
@@ -149,6 +171,9 @@ public static class UnitUIExtension
 
     private static AccessTools.FieldRef<BattleDialogUI, Coroutine> _routine
         = typeof(BattleDialogUI).FieldRefAccess<Coroutine>("_routine");
+
+    private static AccessTools.FieldRef<SpeedDiceUI, bool> _isClicked
+        = typeof(SpeedDiceUI).FieldRefAccess<bool>("isClicked");
 
     class DialogContext
     {

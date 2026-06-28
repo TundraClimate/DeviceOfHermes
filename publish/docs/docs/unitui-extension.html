@@ -97,6 +97,8 @@
 owner.view.Say(&quot;ルール違反だ！&quot;, 1f);
 
 owner.view.AddEffect(sprite, new Vector2(0.5f, 0.52f), 3f);
+
+owner.GetClickedSpeedDice();
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="saystring"><code>Say(string)</code></h3>
@@ -131,6 +133,11 @@ owner.view.AddEffect(sprite, new Vector2(0.5f, 0.52f), 3f);
 <li><code>sizeDelta</code>: 描画サイズです。省略可能。</li>
 <li><code>sizeScale</code>: 描画サイズ比です。省略可能。</li>
 </ul>
+<h3 id="getclickedspeeddice"><code>GetClickedSpeedDice</code></h3>
+<pre><code class="lang-cs">owner.GetClickedSpeedDice();
+</code></pre>
+<p>現在選択されている速度ダイスのスロット番号を返します。<br>
+未選択の場合は-1を返します。</p>
 
 </article>
 
