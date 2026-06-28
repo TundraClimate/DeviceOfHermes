@@ -11,10 +11,6 @@ internal static class CustomDicePatch
 
     static CustomDicePatch()
     {
-    }
-
-    public static void Init()
-    {
         Patch(typeof(PatchOnUseCard));
         Patch(typeof(PatchOnEndBattle));
         Patch(typeof(PatchOnLoseParrying));
@@ -30,6 +26,10 @@ internal static class CustomDicePatch
         Patch(typeof(PatchOnDiceRollen));
         Patch(typeof(PatchOnDiceInit));
         Patch(typeof(PatchOnDiceTick));
+    }
+
+    public static void Init()
+    {
     }
 
     private static void Patch(Type ty)
