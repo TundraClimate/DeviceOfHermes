@@ -1,3 +1,4 @@
+using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
@@ -95,6 +96,7 @@ public static class Serde
     {
         var settings = new XmlWriterSettings
         {
+            Encoding = new UTF8Encoding(false),
             Indent = true,
             OmitXmlDeclaration = false,
             CloseOutput = true,
@@ -113,6 +115,7 @@ public static class Serde
     {
         var settings = new XmlWriterSettings
         {
+            Encoding = new UTF8Encoding(false),
             Indent = true,
             OmitXmlDeclaration = false,
             CloseOutput = true,
@@ -218,7 +221,8 @@ public static class Serde
     /// <summary>Serialize to string</summary>
     public static void ToJsonFile<T>(T value, string path)
     {
-        using var sw = new StreamWriter(path);
+        using var stream = File.Create(path);
+        using var sw = new StreamWriter(stream, new UTF8Encoding(false));
         using var writer = new JsonTextWriter(sw);
 
         ToJson(value, writer);
