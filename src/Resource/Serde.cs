@@ -78,7 +78,16 @@ public static class Serde
 
         ns.Add("", "");
 
-        serializer.Serialize(writer, value, ns);
+        try
+        {
+            serializer.Serialize(writer, value, ns);
+        }
+        catch (InvalidOperationException e)
+        {
+            Hermes.Say($"Json convert failed: value is not serializable", MessageLevel.Warn);
+
+            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+        }
     }
 
     /// <summary>Serialize to string</summary>
@@ -155,6 +164,13 @@ public static class Serde
     /// <summary>Deserialize from json file</summary>
     public static T? FromJsonFile<T>(string path)
     {
+        if (!File.Exists(path))
+        {
+            Hermes.Say($"Read file failed: '{path}' is not exists.", MessageLevel.Warn);
+
+            return default(T);
+        }
+
         using var reader = new StreamReader(path);
 
         using var jsonReader = new JsonTextReader(reader);
