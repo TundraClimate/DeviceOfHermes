@@ -168,6 +168,14 @@ internal static class CustomDicePatch
                         }
                     }
 
+                    if (beh.TargetDice?.card.speedDiceResultValue is int targetNum)
+                    {
+                        if (targetNum >= beh.card.speedDiceResultValue)
+                        {
+                            beh.card.speedDiceResultValue = targetNum + 1;
+                        }
+                    }
+
                     UnbreakableDice.Stash[owner].Enqueue(beh);
                 }
             }
