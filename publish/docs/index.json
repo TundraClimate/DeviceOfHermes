@@ -177,7 +177,12 @@
   "api/DeviceOfHermes.Resource.ReadXmlParser.html": {
     "href": "api/DeviceOfHermes.Resource.ReadXmlParser.html",
     "title": "Class ReadXmlParser | DeviceOfHermes",
-    "summary": "Class ReadXmlParser Namespace DeviceOfHermes.Resource Assembly DeviceOfHermes.dll A generic Xmls parser public class ReadXmlParser Inheritance object ReadXmlParser Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Examples var path = \"data.xml\"; var data = ReadXmlParser.Read<Data>(path); Methods Read<T>(string) Reads file then parse to T public static T? Read<T>(string path) Parameters path string A xml path Returns T A result of read and parse Type Parameters T Type of Parse Examples var path = \"data.xml\"; var data = ReadXmlParser.Read<Data>(path);"
+    "summary": "Class ReadXmlParser Namespace DeviceOfHermes.Resource Assembly DeviceOfHermes.dll A generic Xmls parser [Obsolete] public class ReadXmlParser Inheritance object ReadXmlParser Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Examples var path = \"data.xml\"; var data = ReadXmlParser.Read<Data>(path); Methods Read<T>(string) Reads file then parse to T public static T? Read<T>(string path) Parameters path string A xml path Returns T A result of read and parse Type Parameters T Type of Parse Examples var path = \"data.xml\"; var data = ReadXmlParser.Read<Data>(path);"
+  },
+  "api/DeviceOfHermes.Resource.Serde.html": {
+    "href": "api/DeviceOfHermes.Resource.Serde.html",
+    "title": "Class Serde | DeviceOfHermes",
+    "summary": "Class Serde Namespace DeviceOfHermes.Resource Assembly DeviceOfHermes.dll Serialize and deserialize public static class Serde Inheritance object Serde Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods FromXmlFile<T>(string) Deserialize from xml file public static T? FromXmlFile<T>(string path) Parameters path string Returns T Type Parameters T FromXmlStr<T>(string) Deserialize from string xml public static T? FromXmlStr<T>(string content) Parameters content string Returns T Type Parameters T FromXml<T>(XmlReader) Deserialize from xmlreader public static T? FromXml<T>(XmlReader reader) Parameters reader XmlReader Returns T Type Parameters T ToXmlFile<T>(T, string) Serialize to file public static void ToXmlFile<T>(T value, string path) Parameters value T path string Type Parameters T ToXmlStr<T>(T) Serialize to string public static string ToXmlStr<T>(T value) Parameters value T Returns string Type Parameters T ToXml<T>(T, XmlWriter) Serialize to writer public static void ToXml<T>(T value, XmlWriter writer) Parameters value T writer XmlWriter Type Parameters T"
   },
   "api/DeviceOfHermes.Resource.TextModel.html": {
     "href": "api/DeviceOfHermes.Resource.TextModel.html",
@@ -187,7 +192,7 @@
   "api/DeviceOfHermes.Resource.html": {
     "href": "api/DeviceOfHermes.Resource.html",
     "title": "Namespace DeviceOfHermes.Resource | DeviceOfHermes",
-    "summary": "Namespace DeviceOfHermes.Resource Classes Artwork An additional artwork loader ReadXmlParser A generic Xmls parser TextModel The localize helper"
+    "summary": "Namespace DeviceOfHermes.Resource Classes Artwork An additional artwork loader ReadXmlParser A generic Xmls parser Serde Serialize and deserialize TextModel The localize helper"
   },
   "api/DeviceOfHermes.ScheduleRunner.html": {
     "href": "api/DeviceOfHermes.ScheduleRunner.html",
@@ -409,6 +414,11 @@
     "title": "using DeviceOfHermes.CustomDice; | DeviceOfHermes",
     "summary": "using DeviceOfHermes.CustomDice; 名前空間DeviceOfHermes.CustomDiceに存在するクラスです。 この記事はこれを前提に書かれています。 SecondlyDice マッチ敗北時とこのダイスが余った時のみ振られるダイスです。 反撃ダイスのみ適用でき、戦闘開始時にそのページにストックされます。 ストックされたダイスはそのページのダイスがマッチに負けるときかマッチ後の一方攻撃のときに振られ、このとき出目で勝ったのならマッチ敗北時のダメージを打ち消しマッチ結果を勝利に変更します。 このダイスが回避の場合、マッチに勝利した場合は再利用することが出来ます。 public class DiceCardAbility_Secondly : SecondlyDice { } このクラスはDiceCardAbilityBaseを継承しています。 それの代わりにSecondlyDiceを継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。 Specified usage AddSecondlyDice(BattlePlayingCardDataInUnitModel, params List<BattleDiceBehavior>) SecondlyDice.AddSecondlyDice(card, dices); ページに対してこのダイスをストックします。 card: ストックする対象のページです。 dices: 追加するダイスです。"
   },
+  "docs/serde.html": {
+    "href": "docs/serde.html",
+    "title": "using DeviceOfHermes.Resource; | DeviceOfHermes",
+    "summary": "using DeviceOfHermes.Resource; 名前空間DeviceOfHermes.Resourceに存在するクラスです。 この記事はこれを前提に書かれています。 Serde データ型のシリアライズ・デシリアライズを行います。 XMLファイルを実データに変換したり、逆もまた可能です。 // data.xmlの中身をData型として読み込む var data = Serde.FromXmlFile<Data>(\"data.xml\"); // dataをXML形式に変換して出力 string text = Serde.ToXmlStr(data); Hermes.Say(text); Specified usage FromXml<T>(XmlReader) Serde.FromXml<T>(reader); 任意のXmlReaderを使用してデータを読み込みます。 T: この型に変換します。 reader: XmlReaderです。 FromXmlStr<T>(string) Serde.FromXmlStr<T>(content); 文字列をXMLファイルの中身として解釈し、データに変換します。 T: この型に変換します。 content: XML形式の文字列です。 FromXmlFile<T>(string) Serde.FromXmlFile<T>(path); 指定のファイルからXMLデータを読み込みます。 T: この型に変換します。 path: XMLファイルのパスです。 ToXml<T>(T, XmlWriter) Serde.ToXml(value, writer); データをXML形式に変換して書き込みます。 value: 書き込む値です。 writer: 書き込む対象です。 ToXmlStr<T>(T) Serde.ToXmlStr(value); データをXML形式の文字列に変換します。 value: 変換前の値です。 ToXmlFile<T>(T, string) Serde.ToXmlFile(value, path); データをXMLファイルとして出力します。 value: 出力する値です。 path: 出力先のファイルパスです。"
+  },
   "docs/shim-passivebase.html": {
     "href": "docs/shim-passivebase.html",
     "title": "using DeviceOfHermes.AdvancedBase; | DeviceOfHermes",
@@ -422,7 +432,7 @@
   "docs/table-of-content.html": {
     "href": "docs/table-of-content.html",
     "title": "目次・案内 | DeviceOfHermes",
-    "summary": "目次・案内 using DeviceOfHermes; 専用ページを新たに追加したいなら... AdditionalOnlyCard 広域のエフェクトを作りやすくしたいなら... AdvancedAreaEffect 攻撃属性のダメージを追加で与えたいなら... AdvancedTakeDamage 毎Tick実行される処理を追加したいなら... BattleTickAction バフ・デバフの扱いを簡単にしたいなら... BattleBufExtension ページ上のダイス画像を書き換えたいなら... CustomDiceSprite パッシブの帰属可否を管理したいなら... PassiveResolver マッチ実行中の処理を追加したいなら... RencounterEvent 戦闘中のイベントを監視したいなら... ScheduleRunner 接待で使用できるキャラクターを管理したいなら... StageLibrarianList キャラクターに関する表示を扱いたいなら... UnitUIExtension バニラ環境のバフ・デバフを編集したいなら... VannilaUnitBuf using DeviceOfHermes.AdvancedBase; より効果の増えたページアビリティを作るには... AdvancedCardBase より効果の増えたダイスアビリティを作るには... AdvancedDiceBase より効果の増えたパッシブアビリティを作るには... AdvancedPassiveBase より効果の増えたバフ・デバフを作るには... AdvancedUnitBuf 弾丸をバフとして管理するには... BattleAmmoBuf ゆらぎパッシブを簡単に作成するなら... ShimPassiveBase using DeviceOfHermes.CustomDice; 反撃ダイスをリンバス式にするには... RevengeDice 第2のダイスをページに追加するには... SecondlyDice \"破壊不能ダイス\"を追加するには... UnbreakableDice using DeviceOfHermes.Resource; 画像ファイルをゲーム内で読み込むには... Artwork XMLファイルをゲームから読み込むには... ReadXmlParser 翻訳データをゲームに追加するには... TextModel using DeviceOfHermes.UI; 戦闘中の表示UIを追加するには... BattleUIBehaviour Hijack System コマンドからスクリプトを作成するには... DynamicAbility"
+    "summary": "目次・案内 using DeviceOfHermes; 専用ページを新たに追加したいなら... AdditionalOnlyCard 広域のエフェクトを作りやすくしたいなら... AdvancedAreaEffect 攻撃属性のダメージを追加で与えたいなら... AdvancedTakeDamage 毎Tick実行される処理を追加したいなら... BattleTickAction バフ・デバフの扱いを簡単にしたいなら... BattleBufExtension ページ上のダイス画像を書き換えたいなら... CustomDiceSprite パッシブの帰属可否を管理したいなら... PassiveResolver マッチ実行中の処理を追加したいなら... RencounterEvent 戦闘中のイベントを監視したいなら... ScheduleRunner 接待で使用できるキャラクターを管理したいなら... StageLibrarianList キャラクターに関する表示を扱いたいなら... UnitUIExtension バニラ環境のバフ・デバフを編集したいなら... VannilaUnitBuf using DeviceOfHermes.AdvancedBase; より効果の増えたページアビリティを作るには... AdvancedCardBase より効果の増えたダイスアビリティを作るには... AdvancedDiceBase より効果の増えたパッシブアビリティを作るには... AdvancedPassiveBase より効果の増えたバフ・デバフを作るには... AdvancedUnitBuf 弾丸をバフとして管理するには... BattleAmmoBuf ゆらぎパッシブを簡単に作成するなら... ShimPassiveBase using DeviceOfHermes.CustomDice; 反撃ダイスをリンバス式にするには... RevengeDice 第2のダイスをページに追加するには... SecondlyDice \"破壊不能ダイス\"を追加するには... UnbreakableDice using DeviceOfHermes.Resource; 画像ファイルをゲーム内で読み込むには... Artwork XMLファイルをゲームから読み込むには... Serde 翻訳データをゲームに追加するには... TextModel using DeviceOfHermes.UI; 戦闘中の表示UIを追加するには... BattleUIBehaviour Hijack System コマンドからスクリプトを作成するには... DynamicAbility"
   },
   "docs/textmodel.html": {
     "href": "docs/textmodel.html",

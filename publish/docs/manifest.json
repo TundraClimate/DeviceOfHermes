@@ -516,6 +516,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.Serde.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.Serde.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource.Serde",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.Serde.yml\" sourcestartlinenumber=\"1\">Serialize and deserialize</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Resource.TextModel.yml",
       "output": {
         ".html": {
@@ -1087,6 +1101,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/secondly-dice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/serde.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/serde.html"
         }
       },
       "version": ""

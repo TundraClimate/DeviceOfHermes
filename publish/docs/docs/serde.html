@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.Resource | DeviceOfHermes </title>
+      <title>using DeviceOfHermes.Resource; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.Resource | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes.Resource; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/serde.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,43 +84,78 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.Resource">
+        <article data-uid="">
+<h1 id="using-deviceofhermesresource"><code>using DeviceOfHermes.Resource;</code></h1>
 
-  <h1 id="DeviceOfHermes_Resource" data-uid="DeviceOfHermes.Resource" class="text-break">Namespace DeviceOfHermes.Resource</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
+<p>名前空間<code>DeviceOfHermes.Resource</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="serde">Serde</h1>
+<p>データ型のシリアライズ・デシリアライズを行います。<br>
+XMLファイルを実データに変換したり、逆もまた可能です。</p>
+<pre><code class="lang-cs">// data.xmlの中身をData型として読み込む
+var data = Serde.FromXmlFile&lt;Data&gt;(&quot;data.xml&quot;);
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.Artwork.html">Artwork</a></dt>
-      <dd><p>An additional artwork loader</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.ReadXmlParser.html">ReadXmlParser</a></dt>
-      <dd><p>A generic Xmls parser</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.Serde.html">Serde</a></dt>
-      <dd><p>Serialize and deserialize</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.TextModel.html">TextModel</a></dt>
-      <dd><p>The localize helper</p>
-</dd>
-    </dl>
+// dataをXML形式に変換して出力
+string text = Serde.ToXmlStr(data);
 
+Hermes.Say(text);
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h3 id="fromxmltxmlreader"><code>FromXml&lt;T&gt;(XmlReader)</code></h3>
+<pre><code class="lang-cs">Serde.FromXml&lt;T&gt;(reader);
+</code></pre>
+<p>任意の<code>XmlReader</code>を使用してデータを読み込みます。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>reader</code>: <code>XmlReader</code>です。</li>
+</ul>
+<h3 id="fromxmlstrtstring"><code>FromXmlStr&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">Serde.FromXmlStr&lt;T&gt;(content);
+</code></pre>
+<p>文字列をXMLファイルの中身として解釈し、データに変換します。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>content</code>: XML形式の文字列です。</li>
+</ul>
+<h3 id="fromxmlfiletstring"><code>FromXmlFile&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">Serde.FromXmlFile&lt;T&gt;(path);
+</code></pre>
+<p>指定のファイルからXMLデータを読み込みます。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>path</code>: XMLファイルのパスです。</li>
+</ul>
+<h3 id="toxmltt-xmlwriter"><code>ToXml&lt;T&gt;(T, XmlWriter)</code></h3>
+<pre><code class="lang-cs">Serde.ToXml(value, writer);
+</code></pre>
+<p>データをXML形式に変換して書き込みます。</p>
+<ul>
+<li><code>value</code>: 書き込む値です。</li>
+<li><code>writer</code>: 書き込む対象です。</li>
+</ul>
+<h3 id="toxmlstrtt"><code>ToXmlStr&lt;T&gt;(T)</code></h3>
+<pre><code class="lang-cs">Serde.ToXmlStr(value);
+</code></pre>
+<p>データをXML形式の文字列に変換します。</p>
+<ul>
+<li><code>value</code>: 変換前の値です。</li>
+</ul>
+<h3 id="toxmlfilett-string"><code>ToXmlFile&lt;T&gt;(T, string)</code></h3>
+<pre><code class="lang-cs">Serde.ToXmlFile(value, path);
+</code></pre>
+<p>データをXMLファイルとして出力します。</p>
+<ul>
+<li><code>value</code>: 出力する値です。</li>
+<li><code>path</code>: 出力先のファイルパスです。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/serde.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 
