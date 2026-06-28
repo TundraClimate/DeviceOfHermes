@@ -682,6 +682,13 @@ internal static class CustomDicePatch
             dhsv._HueShift = 0f;
             dhsv._Saturation = 1.55f;
             dhsv._ValueBrightness = 0.60f;
+
+            var dc = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (dc is not null)
+            {
+                UnityEngine.Object.Destroy(dc);
+            }
         }
         else if (ability is RevengeDice)
         {
