@@ -153,7 +153,7 @@ internal static class CustomDicePatch
 
             if (beh is not null && owner is not null)
             {
-                if (beh.abilityList.Exists(abi => abi is UnbreakableDice adv && !adv._isBreaked))
+                if (UnbreakableDice.IsUnbreakableDice(beh) && !UnbreakableDice.IsBreakedDice(beh))
                 {
                     if (!UnbreakableDice.Stash.ContainsKey(owner))
                     {
