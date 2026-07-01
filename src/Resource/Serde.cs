@@ -2,7 +2,6 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json.Converters;
 
 namespace DeviceOfHermes.Resource;
@@ -133,7 +132,6 @@ public static class Serde
         {
             Formatting = Newtonsoft.Json.Formatting.Indented,
             NullValueHandling = NullValueHandling.Ignore,
-            ContractResolver = new CamelCasePropertyNamesContractResolver(),
         };
 
         settings.Converters.Add(new StringEnumConverter());
@@ -188,7 +186,6 @@ public static class Serde
         {
             Formatting = Newtonsoft.Json.Formatting.Indented,
             NullValueHandling = NullValueHandling.Ignore,
-            ContractResolver = new CamelCasePropertyNamesContractResolver(),
         };
 
         settings.Converters.Add(new StringEnumConverter());
