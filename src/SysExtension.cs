@@ -183,6 +183,19 @@ public static class Extension
         return it;
     }
 
+    /// <summary>Returns some if true else returns null</summary>
+    public static T? Then<T>(this bool it, Func<T> f)
+    {
+        if (it)
+        {
+            return f();
+        }
+        else
+        {
+            return default(T);
+        }
+    }
+
     /// <summary>Returns opponent</summary>
     public static Faction FaceTo(this Faction faction)
     {

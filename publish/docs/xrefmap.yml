@@ -2181,6 +2181,68 @@ references:
   commentId: F:DeviceOfHermes.HermesConstants.UnbreakableSlashBeh
   fullName: DeviceOfHermes.HermesConstants.UnbreakableSlashBeh
   nameWithType: HermesConstants.UnbreakableSlashBeh
+- uid: DeviceOfHermes.ModPackage
+  name: ModPackage
+  href: api/DeviceOfHermes.ModPackage.html
+  commentId: T:DeviceOfHermes.ModPackage
+  fullName: DeviceOfHermes.ModPackage
+  nameWithType: ModPackage
+- uid: DeviceOfHermes.ModPackage.packageId
+  name: packageId
+  href: api/DeviceOfHermes.ModPackage.html#DeviceOfHermes_ModPackage_packageId
+  commentId: P:DeviceOfHermes.ModPackage.packageId
+  fullName: DeviceOfHermes.ModPackage.packageId
+  nameWithType: ModPackage.packageId
+- uid: DeviceOfHermes.ModPackage.packageId*
+  name: packageId
+  href: api/DeviceOfHermes.ModPackage.html#DeviceOfHermes_ModPackage_packageId_
+  commentId: Overload:DeviceOfHermes.ModPackage.packageId
+  isSpec: "True"
+  fullName: DeviceOfHermes.ModPackage.packageId
+  nameWithType: ModPackage.packageId
+- uid: DeviceOfHermes.PackageInfo`1
+  name: PackageInfo<T>
+  href: api/DeviceOfHermes.PackageInfo-1.html
+  commentId: T:DeviceOfHermes.PackageInfo`1
+  name.vb: PackageInfo(Of T)
+  fullName: DeviceOfHermes.PackageInfo<T>
+  fullName.vb: DeviceOfHermes.PackageInfo(Of T)
+  nameWithType: PackageInfo<T>
+  nameWithType.vb: PackageInfo(Of T)
+- uid: DeviceOfHermes.PackageInfo`1.AsmPath
+  name: AsmPath
+  href: api/DeviceOfHermes.PackageInfo-1.html#DeviceOfHermes_PackageInfo_1_AsmPath
+  commentId: P:DeviceOfHermes.PackageInfo`1.AsmPath
+  fullName: DeviceOfHermes.PackageInfo<T>.AsmPath
+  fullName.vb: DeviceOfHermes.PackageInfo(Of T).AsmPath
+  nameWithType: PackageInfo<T>.AsmPath
+  nameWithType.vb: PackageInfo(Of T).AsmPath
+- uid: DeviceOfHermes.PackageInfo`1.AsmPath*
+  name: AsmPath
+  href: api/DeviceOfHermes.PackageInfo-1.html#DeviceOfHermes_PackageInfo_1_AsmPath_
+  commentId: Overload:DeviceOfHermes.PackageInfo`1.AsmPath
+  isSpec: "True"
+  fullName: DeviceOfHermes.PackageInfo<T>.AsmPath
+  fullName.vb: DeviceOfHermes.PackageInfo(Of T).AsmPath
+  nameWithType: PackageInfo<T>.AsmPath
+  nameWithType.vb: PackageInfo(Of T).AsmPath
+- uid: DeviceOfHermes.PackageInfo`1.Id
+  name: Id
+  href: api/DeviceOfHermes.PackageInfo-1.html#DeviceOfHermes_PackageInfo_1_Id
+  commentId: P:DeviceOfHermes.PackageInfo`1.Id
+  fullName: DeviceOfHermes.PackageInfo<T>.Id
+  fullName.vb: DeviceOfHermes.PackageInfo(Of T).Id
+  nameWithType: PackageInfo<T>.Id
+  nameWithType.vb: PackageInfo(Of T).Id
+- uid: DeviceOfHermes.PackageInfo`1.Id*
+  name: Id
+  href: api/DeviceOfHermes.PackageInfo-1.html#DeviceOfHermes_PackageInfo_1_Id_
+  commentId: Overload:DeviceOfHermes.PackageInfo`1.Id
+  isSpec: "True"
+  fullName: DeviceOfHermes.PackageInfo<T>.Id
+  fullName.vb: DeviceOfHermes.PackageInfo(Of T).Id
+  nameWithType: PackageInfo<T>.Id
+  nameWithType.vb: PackageInfo(Of T).Id
 - uid: DeviceOfHermes.PassiveResolver
   name: PassiveResolver
   href: api/DeviceOfHermes.PassiveResolver.html
@@ -2477,6 +2539,127 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite
   nameWithType: Artwork.SetStoryIconSprite
+- uid: DeviceOfHermes.Resource.EnvContainer
+  name: EnvContainer
+  href: api/DeviceOfHermes.Resource.EnvContainer.html
+  commentId: T:DeviceOfHermes.Resource.EnvContainer
+  fullName: DeviceOfHermes.Resource.EnvContainer
+  nameWithType: EnvContainer
+- uid: DeviceOfHermes.Resource.EnvContainer.AddCrate(System.String)
+  name: AddCrate(string)
+  href: api/DeviceOfHermes.Resource.EnvContainer.html#DeviceOfHermes_Resource_EnvContainer_AddCrate_System_String_
+  commentId: M:DeviceOfHermes.Resource.EnvContainer.AddCrate(System.String)
+  name.vb: AddCrate(String)
+  fullName: DeviceOfHermes.Resource.EnvContainer.AddCrate(string)
+  fullName.vb: DeviceOfHermes.Resource.EnvContainer.AddCrate(String)
+  nameWithType: EnvContainer.AddCrate(string)
+  nameWithType.vb: EnvContainer.AddCrate(String)
+- uid: DeviceOfHermes.Resource.EnvContainer.AddCrate*
+  name: AddCrate
+  href: api/DeviceOfHermes.Resource.EnvContainer.html#DeviceOfHermes_Resource_EnvContainer_AddCrate_
+  commentId: Overload:DeviceOfHermes.Resource.EnvContainer.AddCrate
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EnvContainer.AddCrate
+  nameWithType: EnvContainer.AddCrate
+- uid: DeviceOfHermes.Resource.EnvContainer.Register*
+  name: Register
+  href: api/DeviceOfHermes.Resource.EnvContainer.html#DeviceOfHermes_Resource_EnvContainer_Register_
+  commentId: Overload:DeviceOfHermes.Resource.EnvContainer.Register
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EnvContainer.Register
+  nameWithType: EnvContainer.Register
+- uid: DeviceOfHermes.Resource.EnvContainer.Register``1
+  name: Register<T>()
+  href: api/DeviceOfHermes.Resource.EnvContainer.html#DeviceOfHermes_Resource_EnvContainer_Register__1
+  commentId: M:DeviceOfHermes.Resource.EnvContainer.Register``1
+  name.vb: Register(Of T)()
+  fullName: DeviceOfHermes.Resource.EnvContainer.Register<T>()
+  fullName.vb: DeviceOfHermes.Resource.EnvContainer.Register(Of T)()
+  nameWithType: EnvContainer.Register<T>()
+  nameWithType.vb: EnvContainer.Register(Of T)()
+- uid: DeviceOfHermes.Resource.EnvContainer.Save
+  name: Save()
+  href: api/DeviceOfHermes.Resource.EnvContainer.html#DeviceOfHermes_Resource_EnvContainer_Save
+  commentId: M:DeviceOfHermes.Resource.EnvContainer.Save
+  fullName: DeviceOfHermes.Resource.EnvContainer.Save()
+  nameWithType: EnvContainer.Save()
+- uid: DeviceOfHermes.Resource.EnvContainer.Save*
+  name: Save
+  href: api/DeviceOfHermes.Resource.EnvContainer.html#DeviceOfHermes_Resource_EnvContainer_Save_
+  commentId: Overload:DeviceOfHermes.Resource.EnvContainer.Save
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EnvContainer.Save
+  nameWithType: EnvContainer.Save
+- uid: DeviceOfHermes.Resource.EnvCrate
+  name: EnvCrate
+  href: api/DeviceOfHermes.Resource.EnvCrate.html
+  commentId: T:DeviceOfHermes.Resource.EnvCrate
+  fullName: DeviceOfHermes.Resource.EnvCrate
+  nameWithType: EnvCrate
+- uid: DeviceOfHermes.Resource.EnvCrate.GetData(System.String)
+  name: GetData(string)
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_GetData_System_String_
+  commentId: M:DeviceOfHermes.Resource.EnvCrate.GetData(System.String)
+  name.vb: GetData(String)
+  fullName: DeviceOfHermes.Resource.EnvCrate.GetData(string)
+  fullName.vb: DeviceOfHermes.Resource.EnvCrate.GetData(String)
+  nameWithType: EnvCrate.GetData(string)
+  nameWithType.vb: EnvCrate.GetData(String)
+- uid: DeviceOfHermes.Resource.EnvCrate.GetData*
+  name: GetData
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_GetData_
+  commentId: Overload:DeviceOfHermes.Resource.EnvCrate.GetData
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EnvCrate.GetData
+  nameWithType: EnvCrate.GetData
+- uid: DeviceOfHermes.Resource.EnvCrate.Item(System.String)
+  name: this[string]
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_Item_System_String_
+  commentId: P:DeviceOfHermes.Resource.EnvCrate.Item(System.String)
+  name.vb: this[](String)
+  fullName: DeviceOfHermes.Resource.EnvCrate.this[string]
+  fullName.vb: DeviceOfHermes.Resource.EnvCrate.this[](String)
+  nameWithType: EnvCrate.this[string]
+  nameWithType.vb: EnvCrate.this[](String)
+- uid: DeviceOfHermes.Resource.EnvCrate.Item*
+  name: this
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_Item_
+  commentId: Overload:DeviceOfHermes.Resource.EnvCrate.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: DeviceOfHermes.Resource.EnvCrate.this
+  fullName.vb: DeviceOfHermes.Resource.EnvCrate.this[]
+  nameWithType: EnvCrate.this
+  nameWithType.vb: EnvCrate.this[]
+- uid: DeviceOfHermes.Resource.EnvCrate.Save
+  name: Save()
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_Save
+  commentId: M:DeviceOfHermes.Resource.EnvCrate.Save
+  fullName: DeviceOfHermes.Resource.EnvCrate.Save()
+  nameWithType: EnvCrate.Save()
+- uid: DeviceOfHermes.Resource.EnvCrate.Save*
+  name: Save
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_Save_
+  commentId: Overload:DeviceOfHermes.Resource.EnvCrate.Save
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EnvCrate.Save
+  nameWithType: EnvCrate.Save
+- uid: DeviceOfHermes.Resource.EnvCrate.SetData(System.String,System.String,System.Byte[])
+  name: SetData(string, string, byte[])
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_SetData_System_String_System_String_System_Byte___
+  commentId: M:DeviceOfHermes.Resource.EnvCrate.SetData(System.String,System.String,System.Byte[])
+  name.vb: SetData(String, String, Byte())
+  fullName: DeviceOfHermes.Resource.EnvCrate.SetData(string, string, byte[])
+  fullName.vb: DeviceOfHermes.Resource.EnvCrate.SetData(String, String, Byte())
+  nameWithType: EnvCrate.SetData(string, string, byte[])
+  nameWithType.vb: EnvCrate.SetData(String, String, Byte())
+- uid: DeviceOfHermes.Resource.EnvCrate.SetData*
+  name: SetData
+  href: api/DeviceOfHermes.Resource.EnvCrate.html#DeviceOfHermes_Resource_EnvCrate_SetData_
+  commentId: Overload:DeviceOfHermes.Resource.EnvCrate.SetData
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EnvCrate.SetData
+  nameWithType: EnvCrate.SetData
 - uid: DeviceOfHermes.Resource.ReadXmlParser
   name: ReadXmlParser
   href: api/DeviceOfHermes.Resource.ReadXmlParser.html
@@ -4863,6 +5046,22 @@ references:
   isSpec: "True"
   fullName: System.Extension.StripSuffix
   nameWithType: Extension.StripSuffix
+- uid: System.Extension.Then*
+  name: Then
+  href: api/System.Extension.html#System_Extension_Then_
+  commentId: Overload:System.Extension.Then
+  isSpec: "True"
+  fullName: System.Extension.Then
+  nameWithType: Extension.Then
+- uid: System.Extension.Then``1(System.Boolean,System.Func{``0})
+  name: Then<T>(bool, Func<T>)
+  href: api/System.Extension.html#System_Extension_Then__1_System_Boolean_System_Func___0__
+  commentId: M:System.Extension.Then``1(System.Boolean,System.Func{``0})
+  name.vb: Then(Of T)(Boolean, Func(Of T))
+  fullName: System.Extension.Then<T>(bool, System.Func<T>)
+  fullName.vb: System.Extension.Then(Of T)(Boolean, System.Func(Of T))
+  nameWithType: Extension.Then<T>(bool, Func<T>)
+  nameWithType.vb: Extension.Then(Of T)(Boolean, Func(Of T))
 - uid: System.Extension.TryForeach*
   name: TryForeach
   href: api/System.Extension.html#System_Extension_TryForeach_

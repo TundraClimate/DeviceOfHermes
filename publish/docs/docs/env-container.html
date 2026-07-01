@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.Resource | DeviceOfHermes </title>
+      <title>using DeviceOfHermes.Resource; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.Resource | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes.Resource; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/env-container.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,53 +84,83 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.Resource">
+        <article data-uid="">
+<h1 id="using-deviceofhermesresource"><code>using DeviceOfHermes.Resource;</code></h1>
 
-  <h1 id="DeviceOfHermes_Resource" data-uid="DeviceOfHermes.Resource" class="text-break">Namespace DeviceOfHermes.Resource</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
+<p>名前空間<code>DeviceOfHermes.Resource</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="envcontainer">EnvContainer</h1>
+<p>個人用セーブデータを管理します。</p>
+<p>例:</p>
+<pre><code class="lang-cs">// Containerを登録
+var container = EnvContainer.Register&lt;FooMOD&gt;();
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.Artwork.html">Artwork</a></dt>
-      <dd><p>An additional artwork loader</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.EnvContainer.html">EnvContainer</a></dt>
-      <dd><p>Mod enviroment container</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.EnvCrate.html">EnvCrate</a></dt>
-      <dd><p>A dataset on env</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.ReadXmlParser.html">ReadXmlParser</a></dt>
-      <dd><p>A generic Xmls parser</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.Serde.html">Serde</a></dt>
-      <dd><p>Serialize and deserialize</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.TextModel.html">TextModel</a></dt>
-      <dd><p>The localize helper</p>
-</dd>
-    </dl>
+// Crateを追加
+var crate = container.AddCrate(&quot;Crate1&quot;);
 
+// Crateにデータを追加
+crate[&quot;Value1&quot;] = &quot;Text&quot;;
+crate[&quot;Value2&quot;] = 2;
+
+// テキストに変換できないデータはバイトデータとして追加
+crate.SetData(&quot;Image1&quot;, &quot;Image1.png&quot;, new byte[0]);
+
+// 読み込み
+Hermes.Say($&quot;Value1: {crate[&quot;Value1&quot;]}&quot;);
+Hermes.Say($&quot;Value2: {crate[&quot;Value2&quot;]}&quot;);
+Hermes.Say($&quot;Image1: {crate.GetData(&quot;Image1&quot;)}&quot;);
+
+// セーブして保存
+container.Save();
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h2 id="envcontainer-1"><code>EnvContainer</code></h2>
+<h3 id="registert"><code>Register&lt;T&gt;()</code></h3>
+<pre><code class="lang-cs">EnvContainer.Register&lt;T&gt;();
+</code></pre>
+<p><code>EnvContainer</code>を登録します。</p>
+<ul>
+<li><code>T</code>: ModPackageを実装している必要があります。</li>
+</ul>
+<h3 id="addcratestring"><code>AddCrate(string)</code></h3>
+<pre><code class="lang-cs">container.AddCrate(name);
+</code></pre>
+<p><code>EnvCrate</code>を作成します。</p>
+<ul>
+<li><code>name</code>: Crateの名前です。</li>
+</ul>
+<h3 id="save"><code>Save()</code></h3>
+<pre><code class="lang-cs">container.Save();
+</code></pre>
+<p>データを保存します。</p>
+<h2 id="envcrate"><code>EnvCrate</code></h2>
+<h3 id="getdatastring"><code>GetData(string)</code></h3>
+<pre><code class="lang-cs">crate.GetData(key);
+</code></pre>
+<p>バイト列として保存しているデータを取得します。</p>
+<ul>
+<li><code>key</code>: データに紐付いている名前です。</li>
+</ul>
+<h3 id="setdatastring-string-byte"><code>SetData(string, string, byte[])</code></h3>
+<pre><code class="lang-cs">crate.SetData(key, file, data);
+</code></pre>
+<p>テキストに変換できないデータをバイト列として保存します。</p>
+<ul>
+<li><code>key</code>: データに紐づく名前です。</li>
+<li><code>file</code>: データの名前+保存形式です。(例: <code>Foo.png</code>)</li>
+</ul>
+<h3 id="save-1"><code>Save()</code></h3>
+<pre><code class="lang-cs">crate.Save();
+</code></pre>
+<p>データを保存します。</p>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/env-container.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

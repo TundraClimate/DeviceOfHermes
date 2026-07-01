@@ -243,7 +243,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_CreateBattleDiceBehavior_BattlePlayingCardDataInUnitModel_LOR_DiceSystem_DiceBehaviour_System_Int32_" data-uid="System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel,LOR_DiceSystem.DiceBehaviour,System.Int32)">
   CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates new <span class="xref">BattleDiceBehavior</span></p>
@@ -284,7 +284,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_CreatePlayingCard_BattleUnitModel_LOR_DiceSystem_DiceCardXmlInfo_BattleUnitModel_System_Int32_System_Int32_System_Collections_Generic_List_BattleUnitModel__" data-uid="System.Extension.CreatePlayingCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,BattleUnitModel,System.Int32,System.Int32,System.Collections.Generic.List{BattleUnitModel})">
   CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel?, int, int, List&lt;BattleUnitModel&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates new <span class="xref">BattlePlayingCardDataInUnitModel</span></p>
@@ -373,7 +373,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_FaceTo_Faction_" data-uid="System.Extension.FaceTo(Faction)">
   FaceTo(Faction)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns opponent</p>
@@ -629,7 +629,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_GetAsmDirectory_System_Type_" data-uid="System.Extension.GetAsmDirectory(System.Type)">
   GetAsmDirectory(Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns directory of ty found assembly</p>
@@ -666,7 +666,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_GetHands_BattleUnitModel_" data-uid="System.Extension.GetHands(BattleUnitModel)">
   GetHands(BattleUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns unit hands</p>
@@ -1064,6 +1064,50 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Extension_Then_" data-uid="System.Extension.Then*"></a>
+
+  <h3 id="System_Extension_Then__1_System_Boolean_System_Func___0__" data-uid="System.Extension.Then``1(System.Boolean,System.Func{``0})">
+  Then&lt;T&gt;(bool, Func&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/SysExtension.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns some if true else returns null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? Then&lt;T&gt;(this bool it, Func&lt;T&gt; f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>it</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
 
 
 

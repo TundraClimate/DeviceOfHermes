@@ -446,6 +446,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.ModPackage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.ModPackage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.ModPackage",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.ModPackage.yml\" sourcestartlinenumber=\"1\">A unit of mod</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.PackageInfo-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.PackageInfo-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.PackageInfo<T>",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.PackageInfo-1.yml\" sourcestartlinenumber=\"1\">A information of package</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.PassiveResolver.yml",
       "output": {
         ".html": {
@@ -499,6 +527,34 @@
       "IsMRef": true,
       "Title": "DeviceOfHermes.Resource.Artwork",
       "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.Artwork.yml\" sourcestartlinenumber=\"1\">An additional artwork loader</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.EnvContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.EnvContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource.EnvContainer",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.EnvContainer.yml\" sourcestartlinenumber=\"1\">Mod enviroment container</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.EnvCrate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.EnvCrate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource.EnvCrate",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.EnvCrate.yml\" sourcestartlinenumber=\"1\">A dataset on env</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1041,6 +1097,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/dynamic-ability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/env-container.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/env-container.html"
         }
       },
       "version": ""

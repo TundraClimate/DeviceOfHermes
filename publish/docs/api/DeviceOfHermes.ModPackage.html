@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.Resource | DeviceOfHermes </title>
+      <title>Interface ModPackage | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.Resource | DeviceOfHermes ">
+      <meta name="title" content="Interface ModPackage | DeviceOfHermes ">
       
-      
+      <meta name="description" content="A unit of mod">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/new/master/apiSpec/new?filename=DeviceOfHermes_ModPackage.md&amp;value=---%0Auid%3A%20DeviceOfHermes.ModPackage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,51 +84,93 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.Resource">
+        <article data-uid="DeviceOfHermes.ModPackage">
 
-  <h1 id="DeviceOfHermes_Resource" data-uid="DeviceOfHermes.Resource" class="text-break">Namespace DeviceOfHermes.Resource</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.Artwork.html">Artwork</a></dt>
-      <dd><p>An additional artwork loader</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.EnvContainer.html">EnvContainer</a></dt>
-      <dd><p>Mod enviroment container</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.EnvCrate.html">EnvCrate</a></dt>
-      <dd><p>A dataset on env</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.ReadXmlParser.html">ReadXmlParser</a></dt>
-      <dd><p>A generic Xmls parser</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.Serde.html">Serde</a></dt>
-      <dd><p>Serialize and deserialize</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.Resource.TextModel.html">TextModel</a></dt>
-      <dd><p>The localize helper</p>
-</dd>
-    </dl>
+
+  <h1 id="DeviceOfHermes_ModPackage" data-uid="DeviceOfHermes.ModPackage" class="text-break">
+Interface ModPackage  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ModPackage.cs/#L4"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DeviceOfHermes.html">DeviceOfHermes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DeviceOfHermes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A unit of mod</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ModPackage</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Also__1___0_System_Action___0__">Extension.Also&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Let__1___0_System_Action___0__">Extension.Let&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Extension.html#System_Extension_Let__2___0_System_Func___0___1__">Extension.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="DeviceOfHermes_ModPackage_packageId_" data-uid="DeviceOfHermes.ModPackage.packageId*"></a>
+
+  <h3 id="DeviceOfHermes_ModPackage_packageId" data-uid="DeviceOfHermes.ModPackage.packageId">
+  packageId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ModPackage.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>An id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string packageId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/ModPackage.cs/#L4" class="edit-link">Edit this page</a>
         </div>
 
 
