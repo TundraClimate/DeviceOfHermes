@@ -103,6 +103,11 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>On unit added buf</summary>
+    public virtual void OnAddBuf(BattleUnitBuf buf, int addedStack)
+    {
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {
@@ -136,6 +141,13 @@ public class AdvancedPassiveBase : PassiveAbilityBase
 
             foreach (var buf in actives)
             {
+                if (buf is AdvancedUnitBuf advBuf && advBuf.stack != advBuf.lastStack)
+                {
+                    advBuf.OnStackChange(advBuf.lastStack);
+
+                    advBuf.lastStack = advBuf.stack;
+                }
+
                 if (!lastBufs.Contains(buf))
                 {
                     activatedBufs.Add(buf);
@@ -148,9 +160,27 @@ public class AdvancedPassiveBase : PassiveAbilityBase
                     foreach (var p in passives)
                     {
                         p?.OnChangeBufStack(buf, lastStack.value);
+
+                        if (buf.stack > lastStack.value)
+                        {
+                            p?.OnAddBuf(buf, buf.stack - lastStack.value);
+                        }
                     }
 
                     lastStack.value = buf.stack;
+                }
+
+                foreach (var advBuf2 in unit.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>())
+                {
+                    if (buf.stack != lastStack.value)
+                    {
+                        advBuf2.OnStackChangeAll(buf, lastStack.value);
+
+                        if (buf.stack > lastStack.value)
+                        {
+                            advBuf2.OnAddBufAll(buf, buf.stack - lastStack.value);
+                        }
+                    }
                 }
             }
 
@@ -159,6 +189,16 @@ public class AdvancedPassiveBase : PassiveAbilityBase
                 foreach (var buf in activatedBufs)
                 {
                     p?.OnActivatedBuf(buf);
+                    p?.OnAddBuf(buf, buf.stack);
+                }
+            }
+
+            foreach (var b in unit.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>())
+            {
+                foreach (var buf in activatedBufs)
+                {
+                    b.OnStackChangeAll(buf, -1);
+                    b.OnAddBufAll(buf, buf.stack);
                 }
             }
 

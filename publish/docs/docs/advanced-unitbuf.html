@@ -129,6 +129,14 @@
     {
     }
 
+    public override void OnStackChangeAll(BattleUnitBuf buf, int last)
+    {
+    }
+
+    public override void OnAddBufAll(BattleUnitBuf buf, int addedStack)
+    {
+    }
+
     public override void OnClick(ClickType ty)
     {
     }
@@ -188,6 +196,26 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <p>バフのスタック数が変更されたときに実行されます。</p>
 <ul>
 <li><code>last</code>: 変更される前のスタック数です。</li>
+</ul>
+<h3 id="onstackchangeallbattleunitbuf-int"><code>OnStackChangeAll(BattleUnitBuf, int)</code></h3>
+<pre><code class="lang-cs">public override void OnStackChangeAll(BattleUnitBuf buf, int last)
+{
+}
+</code></pre>
+<p>保有しているなんらかのバフを獲得、もしくはスタック数の変更時に実行されます。</p>
+<ul>
+<li><code>buf</code>: 対象のバフです。</li>
+<li><code>last</code>: 変更される前のスタック数です。</li>
+</ul>
+<h3 id="onaddbufallbattleunitbuf-int"><code>OnAddBufAll(BattleUnitBuf, int)</code></h3>
+<pre><code class="lang-cs">public override void OnAddBufAll(BattleUnitBuf buf, int addedStack)
+{
+}
+</code></pre>
+<p>なんらかのバフを獲得、もしくはスタック数の増加時に実行されます。</p>
+<ul>
+<li><code>buf</code>: 対象のバフです。</li>
+<li><code>addedStack</code>: 増加したスタック量です。</li>
 </ul>
 <h3 id="onclickclicktype"><code>OnClick(ClickType)</code></h3>
 <pre><code class="lang-cs">public override void OnClick(ClickType ty)

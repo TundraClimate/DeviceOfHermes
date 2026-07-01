@@ -108,6 +108,11 @@
     {
         return 0;
     }
+
+    public override int GetFinalResultDamageValue(int origin)
+    {
+        return origin;
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
@@ -148,6 +153,16 @@ falseを返すと捨てられるのをキャンセルすることが出来ます
 <ul>
 <li><code>slot</code>: 計算に使用する速度スロットです。</li>
 <li><code>speed</code>: スロットに対応する速度です。</li>
+</ul>
+<h3 id="getfinalresultdamagevalueint"><code>GetFinalResultDamageValue(int)</code></h3>
+<pre><code class="lang-cs">public override int GetForceResultDamageValue(int origin)
+{
+    return origin;
+}
+</code></pre>
+<p>全てのダメージ変更処理の後にダメージ量をこのメソッドが返した値に変更します。</p>
+<ul>
+<li><code>origin</code>: 変更前の最終ダメージ量です。</li>
 </ul>
 
 </article>

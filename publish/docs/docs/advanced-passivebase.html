@@ -150,6 +150,10 @@
     public override void OnClickUnit(ClickType ty)
     {
     }
+
+    public override void OnAddBuf(BattleUnitBuf buf, int addedStack)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -278,6 +282,16 @@ falseを返すとそのページが捨てられるのをキャンセルするこ
 <p>パッシブを保有するユニットをクリックしたときに実行されます。</p>
 <ul>
 <li><code>ty</code>: クリックの種類です。(Left/Right/Middle)</li>
+</ul>
+<h3 id="onaddbufbattleunitbuf-int"><code>OnAddBuf(BattleUnitBuf, int)</code></h3>
+<pre><code class="lang-cs">public override void OnAddBuf(BattleUnitBuf buf, int addedStack)
+{
+}
+</code></pre>
+<p>なんらかのバフを獲得、もしくはスタック数の増加時に実行されます。</p>
+<ul>
+<li><code>buf</code>: 対象のバフです。</li>
+<li><code>addedStack</code>: 増加したスタック量です。</li>
 </ul>
 
 </article>

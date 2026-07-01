@@ -14,7 +14,6 @@ public class AdvancedUnitBuf : BattleUnitBuf
     static AdvancedUnitBuf()
     {
         AdvancedPatch.Init();
-        BattleTickAction.OnTick += OnTick;
     }
 
     /// <summary>Initialize UnitBuf</summary>
@@ -84,6 +83,16 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>All unitbufs stack on changed</summary>
+    public virtual void OnStackChangeAll(BattleUnitBuf buf, int last)
+    {
+    }
+
+    /// <summary>All unitbufs stack on added</summary>
+    public virtual void OnAddBufAll(BattleUnitBuf buf, int addedStack)
+    {
+    }
+
     /// <summary>Unitbuf icon on clicked</summary>
     public virtual void OnClick(ClickType ty)
     {
@@ -100,24 +109,6 @@ public class AdvancedUnitBuf : BattleUnitBuf
 
         /// <summary>Middle</summary>
         Middle,
-    }
-
-    internal static void OnTick()
-    {
-        var alives = BattleObjectManager.instance.GetAliveList();
-
-        foreach (var unit in alives)
-        {
-            foreach (var buf in unit.bufListDetail?.GetActivatedBufList() ?? new())
-            {
-                if (buf is AdvancedUnitBuf advBuf && advBuf.stack != advBuf.lastStack)
-                {
-                    advBuf.OnStackChange(advBuf.lastStack);
-
-                    advBuf.lastStack = advBuf.stack;
-                }
-            }
-        }
     }
 
     internal int lastStack;

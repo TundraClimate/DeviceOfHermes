@@ -73,6 +73,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility
   nameWithType: AdvancedCardBase.CanDiscardByAbility
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue(System.Int32)
+  name: GetFinalResultDamageValue(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_GetFinalResultDamageValue_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue(System.Int32)
+  name.vb: GetFinalResultDamageValue(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue(Integer)
+  nameWithType: AdvancedCardBase.GetFinalResultDamageValue(int)
+  nameWithType.vb: AdvancedCardBase.GetFinalResultDamageValue(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue*
+  name: GetFinalResultDamageValue
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_GetFinalResultDamageValue_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue
+  nameWithType: AdvancedCardBase.GetFinalResultDamageValue
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashable
   name: IsClashable
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsClashable
@@ -356,6 +372,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf
   nameWithType: AdvancedPassiveBase.OnActivatedBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf(BattleUnitBuf,System.Int32)
+  name: OnAddBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf(BattleUnitBuf, Integer)
+  nameWithType: AdvancedPassiveBase.OnAddBuf(BattleUnitBuf, int)
+  nameWithType.vb: AdvancedPassiveBase.OnAddBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf*
+  name: OnAddBuf
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddBuf_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf
+  nameWithType: AdvancedPassiveBase.OnAddBuf
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf,System.Int32)
   name: OnChangeBufStack(BattleUnitBuf, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChangeBufStack_BattleUnitBuf_System_Int32_
@@ -522,6 +554,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
   nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll(BattleUnitBuf,System.Int32)
+  name: OnAddBufAll(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddBufAll_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBufAll(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll(BattleUnitBuf, Integer)
+  nameWithType: AdvancedUnitBuf.OnAddBufAll(BattleUnitBuf, int)
+  nameWithType.vb: AdvancedUnitBuf.OnAddBufAll(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll*
+  name: OnAddBufAll
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddBufAll_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll
+  nameWithType: AdvancedUnitBuf.OnAddBufAll
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf,System.Int32)
   name: OnAddKeywordBufByCard(BattleUnitBuf, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeywordBufByCard_BattleUnitBuf_System_Int32_
@@ -619,6 +667,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChange
   nameWithType: AdvancedUnitBuf.OnStackChange
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChangeAll(BattleUnitBuf,System.Int32)
+  name: OnStackChangeAll(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStackChangeAll_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChangeAll(BattleUnitBuf,System.Int32)
+  name.vb: OnStackChangeAll(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChangeAll(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChangeAll(BattleUnitBuf, Integer)
+  nameWithType: AdvancedUnitBuf.OnStackChangeAll(BattleUnitBuf, int)
+  nameWithType.vb: AdvancedUnitBuf.OnStackChangeAll(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChangeAll*
+  name: OnStackChangeAll
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStackChangeAll_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChangeAll
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStackChangeAll
+  nameWithType: AdvancedUnitBuf.OnStackChangeAll
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle
   name: OnStartBattle()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnStartBattle
