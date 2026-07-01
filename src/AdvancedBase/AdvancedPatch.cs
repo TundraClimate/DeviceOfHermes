@@ -440,6 +440,11 @@ internal static class AdvancedPatch
         {
             if (attacker is not null && type is DamageType.Attack)
             {
+                if (attacker.currentDiceAction?.cardAbility is AdvancedCardBase advCard)
+                {
+                    v = advCard.GetFinalResultDamageValue(v);
+                }
+
                 var abilities = attacker.currentDiceAction?.currentBehavior?.abilityList?.OfType<AdvancedDiceBase>();
 
                 if (abilities is not null)

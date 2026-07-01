@@ -34,4 +34,11 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     {
         return 0;
     }
+
+    /// <summary>Returns dice final damage value</summary>
+    /// <returns>A damage value of override</returns>
+    public virtual int GetFinalResultDamageValue(int origin)
+    {
+        return origin;
+    }
 }
