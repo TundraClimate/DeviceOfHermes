@@ -404,6 +404,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack
   nameWithType: AdvancedPassiveBase.OnChangeBufStack
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChooseCard(BattleDiceCardModel)
+  name: OnChooseCard(BattleDiceCardModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChooseCard_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChooseCard(BattleDiceCardModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChooseCard(BattleDiceCardModel)
+  nameWithType: AdvancedPassiveBase.OnChooseCard(BattleDiceCardModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChooseCard*
+  name: OnChooseCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChooseCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChooseCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChooseCard
+  nameWithType: AdvancedPassiveBase.OnChooseCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnClickUnit(DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.ClickType)
   name: OnClickUnit(ClickType)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnClickUnit_DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_ClickType_

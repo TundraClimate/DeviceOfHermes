@@ -154,6 +154,11 @@
     public override void OnAddBuf(BattleUnitBuf buf, int addedStack)
     {
     }
+
+    public override bool OnChooseCard(BattleDiceCardModel card)
+    {
+        return true;
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -292,6 +297,17 @@ falseを返すとそのページが捨てられるのをキャンセルするこ
 <ul>
 <li><code>buf</code>: 対象のバフです。</li>
 <li><code>addedStack</code>: 増加したスタック量です。</li>
+</ul>
+<h3 id="onchoosecardbattledicecardmodel"><code>OnChooseCard(BattleDiceCardModel)</code></h3>
+<pre><code class="lang-cs">public override bool OnChooseCard(BattleDiceCardModel card)
+{
+    return true;
+}
+</code></pre>
+<p>使用可能なページを制限します。<br>
+falseを返すと<code>card</code>は使用不可になります。</p>
+<ul>
+<li><code>card</code>: 対象のページです。</li>
 </ul>
 
 </article>

@@ -108,6 +108,12 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>On unit choose card</summary>
+    public virtual bool OnChooseCard(BattleDiceCardModel card)
+    {
+        return true;
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

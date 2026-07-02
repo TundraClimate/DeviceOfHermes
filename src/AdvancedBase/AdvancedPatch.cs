@@ -42,6 +42,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnAddKeywordBuf));
         Patch(typeof(PatchGetBreakDmgRedAll));
         Patch(typeof(PatchPlayForAuto));
+        Patch(typeof(PatchOnChooseCard));
     }
 
     public static void Init()
@@ -886,5 +887,22 @@ internal static class AdvancedPatch
         }
 
         static List<BattleDiceCardModel> changed = new();
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "IsCardChoosable")]
+    class PatchOnChooseCard
+    {
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, ref bool __result, BattleDiceCardModel card)
+        {
+            foreach (var advPassive in __instance.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
+            {
+                if (!advPassive.OnChooseCard(card))
+                {
+                    __result = false;
+                }
+            }
+
+            return __exception;
+        }
     }
 }
