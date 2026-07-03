@@ -754,6 +754,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.UI.StoryLineMaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.UI.StoryLineMaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.UI.StoryLineMaker",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.UI.StoryLineMaker.yml\" sourcestartlinenumber=\"1\">Make storyline</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.UI.yml",
       "output": {
         ".html": {
@@ -1197,6 +1211,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/stagelibrarian-list.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/storyline-maker.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/storyline-maker.html"
         }
       },
       "version": ""

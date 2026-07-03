@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.UI | DeviceOfHermes </title>
+      <title>using DeviceOfHermes.UI; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.UI | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes.UI; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/storyline-maker.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,38 +84,69 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.UI">
+        <article data-uid="">
+<h1 id="using-deviceofhermesui"><code>using DeviceOfHermes.UI;</code></h1>
 
-  <h1 id="DeviceOfHermes_UI" data-uid="DeviceOfHermes.UI" class="text-break">Namespace DeviceOfHermes.UI</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
+<p>名前空間<code>DeviceOfHermes.UI</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="storylinemaker">StoryLineMaker</h1>
+<p>接待アイコンやラインを配置します。</p>
+<p>例:</p>
+<pre><code class="lang-cs">// 接待マップの移動上限を無効化
+StoryLineMaker.EnableUnrestrictedMap();
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviour.html">BattleUIBehaviour</a></dt>
-      <dd><p>A behaviour for BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviourExtension.html">BattleUIBehaviourExtension</a></dt>
-      <dd><p>The extensions of BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.StoryLineMaker.html">StoryLineMaker</a></dt>
-      <dd><p>Make storyline</p>
-</dd>
-    </dl>
+// (0, 0)から(100, 100)を結ぶラインを配置
+StoryLineMaker.RegisterLine(0f, 0f, 100f, 100f);
 
+// (500, 500)に&quot;FooStoryType&quot;のアイコンを配置
+StoryLineMaker.RegisterIcon(&quot;FooStoryType&quot;, 500f, 500f);
+
+// (500, 500)に&quot;FooStoryType&quot;のアイコンを楽団形式で配置
+StoryLineMaker.RegisterSpecialIcon(&quot;FooStoryType&quot;, 500f, 500f, /* 右バナーのSprite */, () =&gt; /* 接待開始のダイアログのテキスト */);
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h3 id="enableunrestrictedmap"><code>EnableUnrestrictedMap()</code></h3>
+<pre><code class="lang-cs">StoryLineMaker.EnableUnrestrictedMap();
+</code></pre>
+<p>接待アイコンの配置されているマップの上下左右の移動制限を無効化します。</p>
+<h3 id="registerlinefloat-float-float-float"><code>RegisterLine(float, float, float, float)</code></h3>
+<pre><code class="lang-cs">StoryLineMaker.RegisterLine(startX, startY, endX, endY);
+</code></pre>
+<p>開始地点と終端地点を指定してラインを配置します。</p>
+<ul>
+<li><code>startX</code>: 開始地点のX座標です。</li>
+<li><code>startY</code>: 開始地点のY座標です。</li>
+<li><code>endX</code>: 終端地点のX座標です。</li>
+<li><code>endY</code>: 終端地点のY座標です。</li>
+</ul>
+<h3 id="registericonstring-float-float"><code>RegisterIcon(string, float, float)</code></h3>
+<pre><code class="lang-cs">StoryLineMaker.RegisterIcon(storytype, x, y);
+</code></pre>
+<p>特定地点に通常のアイコンを配置します。</p>
+<ul>
+<li><code>storytype</code>: &lt;StoryType&gt;ここに指定されているテキストです。&lt;/StoryType&gt;</li>
+<li><code>x</code>: 特定地点のX座標です。</li>
+<li><code>y</code>: 特定地点のY座標です。</li>
+</ul>
+<h3 id="registerspecialiconstring-float-float-sprite-funcstring"><code>RegisterSpecialIcon(string, float, float, Sprite, Func&lt;string&gt;)</code></h3>
+<pre><code class="lang-cs">StoryLineMaker.RegisterSpecialIcon(storytype, x, y, banner, text);
+</code></pre>
+<p>特定地点に楽団形式のアイコンを配置します。</p>
+<ul>
+<li><code>storytype</code>: &lt;StoryType&gt;ここに指定されているテキストです。&lt;/StoryType&gt;</li>
+<li><code>x</code>: 特定地点のX座標です。</li>
+<li><code>y</code>: 特定地点のY座標です。</li>
+<li><code>banner</code>: 右側に表示されるバナー画像用のスプライトです。</li>
+<li><code>text</code>: 接待を開始する直前の確認ダイアログに表示される文章です。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/storyline-maker.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

@@ -4522,6 +4522,73 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UI.CommonCoroutine.ImageFadeout
   nameWithType: CommonCoroutine.ImageFadeout
+- uid: DeviceOfHermes.UI.StoryLineMaker
+  name: StoryLineMaker
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html
+  commentId: T:DeviceOfHermes.UI.StoryLineMaker
+  fullName: DeviceOfHermes.UI.StoryLineMaker
+  nameWithType: StoryLineMaker
+- uid: DeviceOfHermes.UI.StoryLineMaker.EnableUnrestrictedMap
+  name: EnableUnrestrictedMap()
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_EnableUnrestrictedMap
+  commentId: M:DeviceOfHermes.UI.StoryLineMaker.EnableUnrestrictedMap
+  fullName: DeviceOfHermes.UI.StoryLineMaker.EnableUnrestrictedMap()
+  nameWithType: StoryLineMaker.EnableUnrestrictedMap()
+- uid: DeviceOfHermes.UI.StoryLineMaker.EnableUnrestrictedMap*
+  name: EnableUnrestrictedMap
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_EnableUnrestrictedMap_
+  commentId: Overload:DeviceOfHermes.UI.StoryLineMaker.EnableUnrestrictedMap
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.StoryLineMaker.EnableUnrestrictedMap
+  nameWithType: StoryLineMaker.EnableUnrestrictedMap
+- uid: DeviceOfHermes.UI.StoryLineMaker.RegisterIcon(System.String,System.Single,System.Single)
+  name: RegisterIcon(string, float, float)
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_RegisterIcon_System_String_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.UI.StoryLineMaker.RegisterIcon(System.String,System.Single,System.Single)
+  name.vb: RegisterIcon(String, Single, Single)
+  fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterIcon(string, float, float)
+  fullName.vb: DeviceOfHermes.UI.StoryLineMaker.RegisterIcon(String, Single, Single)
+  nameWithType: StoryLineMaker.RegisterIcon(string, float, float)
+  nameWithType.vb: StoryLineMaker.RegisterIcon(String, Single, Single)
+- uid: DeviceOfHermes.UI.StoryLineMaker.RegisterIcon*
+  name: RegisterIcon
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_RegisterIcon_
+  commentId: Overload:DeviceOfHermes.UI.StoryLineMaker.RegisterIcon
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterIcon
+  nameWithType: StoryLineMaker.RegisterIcon
+- uid: DeviceOfHermes.UI.StoryLineMaker.RegisterLine(System.Single,System.Single,System.Single,System.Single)
+  name: RegisterLine(float, float, float, float)
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_RegisterLine_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.UI.StoryLineMaker.RegisterLine(System.Single,System.Single,System.Single,System.Single)
+  name.vb: RegisterLine(Single, Single, Single, Single)
+  fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterLine(float, float, float, float)
+  fullName.vb: DeviceOfHermes.UI.StoryLineMaker.RegisterLine(Single, Single, Single, Single)
+  nameWithType: StoryLineMaker.RegisterLine(float, float, float, float)
+  nameWithType.vb: StoryLineMaker.RegisterLine(Single, Single, Single, Single)
+- uid: DeviceOfHermes.UI.StoryLineMaker.RegisterLine*
+  name: RegisterLine
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_RegisterLine_
+  commentId: Overload:DeviceOfHermes.UI.StoryLineMaker.RegisterLine
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterLine
+  nameWithType: StoryLineMaker.RegisterLine
+- uid: DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon(System.String,System.Single,System.Single,UnityEngine.Sprite,System.Func{System.String})
+  name: RegisterSpecialIcon(string, float, float, Sprite, Func<string>)
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_RegisterSpecialIcon_System_String_System_Single_System_Single_UnityEngine_Sprite_System_Func_System_String__
+  commentId: M:DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon(System.String,System.Single,System.Single,UnityEngine.Sprite,System.Func{System.String})
+  name.vb: RegisterSpecialIcon(String, Single, Single, Sprite, Func(Of String))
+  fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon(string, float, float, UnityEngine.Sprite, System.Func<string>)
+  fullName.vb: DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon(String, Single, Single, UnityEngine.Sprite, System.Func(Of String))
+  nameWithType: StoryLineMaker.RegisterSpecialIcon(string, float, float, Sprite, Func<string>)
+  nameWithType.vb: StoryLineMaker.RegisterSpecialIcon(String, Single, Single, Sprite, Func(Of String))
+- uid: DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon*
+  name: RegisterSpecialIcon
+  href: api/DeviceOfHermes.UI.StoryLineMaker.html#DeviceOfHermes_UI_StoryLineMaker_RegisterSpecialIcon_
+  commentId: Overload:DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon
+  nameWithType: StoryLineMaker.RegisterSpecialIcon
 - uid: DeviceOfHermes.UnitUIExtension
   name: UnitUIExtension
   href: api/DeviceOfHermes.UnitUIExtension.html
