@@ -127,5 +127,15 @@ public static class HarmonyExtension
 
             return Literal<int>(num);
         }
+
+        /// <summary>Replace labels</summary>
+        public List<Label> ReplaceLabels(List<Label> newLabels)
+        {
+            var old = instruction.ExtractLabels();
+
+            instruction.WithLabels(newLabels);
+
+            return old;
+        }
     }
 }
