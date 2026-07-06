@@ -1,9 +1,11 @@
 using System.Reflection;
 using HarmonyExtension;
 using UnityEngine;
-using DeviceOfHermes;
+using UI;
 using DeviceOfHermes.UI;
 using DeviceOfHermes.CustomDice;
+
+namespace DeviceOfHermes.Boot;
 
 internal class HermesBootStrap : DiceCardAbilityBase
 {
@@ -33,7 +35,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
         try
         {
             var popupInstance = UnityEngine.Object.FindObjectOfType<EntryScene>().modPopup;
-            var contents = (List<UI.ModSlotData>)typeof(UI.UIModPopup).Field("dataList").GetValue(popupInstance);
+            var contents = (List<ModSlotData>)typeof(UIModPopup).Field("dataList").GetValue(popupInstance);
 
             contents.RemoveAll(mod => mod is null || !mod.IsActivated);
 

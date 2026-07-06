@@ -1,6 +1,8 @@
 using GameSave;
 using HarmonyLib;
 
+namespace DeviceOfHermes.Boot;
+
 internal static class SaveModifier
 {
     public static void Init()
