@@ -1,6 +1,5 @@
 using System.Text;
 using LOR_DiceSystem;
-using HarmonyLib;
 using HarmonyExtension;
 using UnityEngine;
 using UnityEngine.UI;
@@ -205,20 +204,6 @@ public static class Extension
             _ => Faction.Enemy,
         };
     }
-
-    /// <summary>Returns unit hands</summary>
-    public static List<BattleDiceCardModel> GetHands(this BattleUnitModel? owner)
-    {
-        if (owner is not null)
-        {
-            return _unitHands(owner.allyCardDetail);
-        }
-
-        return new();
-    }
-
-    static AccessTools.FieldRef<BattleAllyCardDetail, List<BattleDiceCardModel>> _unitHands
-        = typeof(BattleAllyCardDetail).FieldRefAccess<List<BattleDiceCardModel>>("_cardInHand");
 
     /// <summary>Returns directory of ty found assembly</summary>
     public static string GetAsmDirectory(this Type ty)

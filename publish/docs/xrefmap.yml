@@ -1677,6 +1677,12 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDiceSprite.AddSequence
   nameWithType: CustomDiceSprite.AddSequence
+- uid: DeviceOfHermes.DeckExtension
+  name: DeckExtension
+  href: api/DeviceOfHermes.DeckExtension.html
+  commentId: T:DeviceOfHermes.DeckExtension
+  fullName: DeviceOfHermes.DeckExtension
+  nameWithType: DeckExtension
 - uid: DeviceOfHermes.DynamicAbilityCfg
   name: DynamicAbilityCfg
   href: api/DeviceOfHermes.DynamicAbilityCfg.html
@@ -5037,22 +5043,6 @@ references:
   isSpec: "True"
   fullName: System.Extension.GetAsmDirectory
   nameWithType: Extension.GetAsmDirectory
-- uid: System.Extension.GetHands(BattleUnitModel)
-  name: GetHands(BattleUnitModel?)
-  href: api/System.Extension.html#System_Extension_GetHands_BattleUnitModel_
-  commentId: M:System.Extension.GetHands(BattleUnitModel)
-  name.vb: GetHands(BattleUnitModel)
-  fullName: System.Extension.GetHands(BattleUnitModel?)
-  fullName.vb: System.Extension.GetHands(BattleUnitModel)
-  nameWithType: Extension.GetHands(BattleUnitModel?)
-  nameWithType.vb: Extension.GetHands(BattleUnitModel)
-- uid: System.Extension.GetHands*
-  name: GetHands
-  href: api/System.Extension.html#System_Extension_GetHands_
-  commentId: Overload:System.Extension.GetHands
-  isSpec: "True"
-  fullName: System.Extension.GetHands
-  nameWithType: Extension.GetHands
 - uid: System.Extension.Inspect*
   name: Inspect
   href: api/System.Extension.html#System_Extension_Inspect_

@@ -348,6 +348,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.DeckExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.DeckExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.DeckExtension",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.DeckExtension.yml\" sourcestartlinenumber=\"1\">A extension of decks</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.DynamicAbilityCfg.yml",
       "output": {
         ".html": {
@@ -1101,6 +1115,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/custom-dicesprite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/deck-extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/deck-extension.html"
         }
       },
       "version": ""
