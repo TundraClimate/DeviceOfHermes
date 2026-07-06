@@ -24,9 +24,9 @@ public static class CustomDiceSprite
 
         var harmony = new Harmony("DeviceOfHermes.CustomSprite");
 
-        harmony.CreateClassProcessor(typeof(CustomDicePatch.PatchBattleDiceCardUI)).Patch();
-        harmony.CreateClassProcessor(typeof(CustomDicePatch.PatchOriginCardSlot)).Patch();
-        harmony.CreateClassProcessor(typeof(CustomDicePatch.PatchDetailCardSlot)).Patch();
+        harmony.CreateClassProcessor(typeof(CustomDiceSpritePatch.PatchBattleDiceCardUI)).Patch();
+        harmony.CreateClassProcessor(typeof(CustomDiceSpritePatch.PatchOriginCardSlot)).Patch();
+        harmony.CreateClassProcessor(typeof(CustomDiceSpritePatch.PatchDetailCardSlot)).Patch();
     }
 
     /// <summary>Add customize sequence</summary>
@@ -61,7 +61,7 @@ public static class CustomDiceSprite
     private static List<(Func<DiceBehaviour, bool>, Sprite, Color?)> _seqs;
 }
 
-internal static class CustomDicePatch
+internal static class CustomDiceSpritePatch
 {
     [HarmonyPatch(typeof(BattleDiceCardUI), "SetCard", [typeof(BattleDiceCardModel), typeof(BattleDiceCardUI.Option[])])]
     public class PatchBattleDiceCardUI

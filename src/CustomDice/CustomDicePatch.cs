@@ -9,7 +9,7 @@ internal static class CustomDicePatch
 {
     static Harmony harmony = new Harmony("DeviceOfHermes.CustomDice");
 
-    static CustomDicePatch()
+    public static void Init()
     {
         Patch(typeof(PatchOnUseCard));
         Patch(typeof(PatchOnEndBattle));
@@ -26,10 +26,6 @@ internal static class CustomDicePatch
         Patch(typeof(PatchOnDiceRollen));
         Patch(typeof(PatchOnDiceInit));
         Patch(typeof(PatchOnDiceTick));
-    }
-
-    public static void Init()
-    {
     }
 
     private static void Patch(Type ty)

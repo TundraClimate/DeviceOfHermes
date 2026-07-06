@@ -21,7 +21,7 @@ namespace DeviceOfHermes.CustomDice;
 /// </code></example>
 public class RevengeDice : AdvancedDiceBase
 {
-    static RevengeDice()
+    internal static void Init()
     {
         CustomDiceSprite.AddSequence(
             beh =>
@@ -47,11 +47,6 @@ public class RevengeDice : AdvancedDiceBase
             HermesConstants.RevengeDiceHit,
             new Color(255, 0, 200, 200)
         );
-
-        CustomDicePatch.Init();
-
-        Cards = new();
-        CurrentRevenge = new();
     }
 
     /// <summary>Is revenge now, or before revenge</summary>
@@ -130,7 +125,7 @@ public class RevengeDice : AdvancedDiceBase
         RevengeDice.Cards[unit].Enqueue(card);
     }
 
-    internal static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> Cards { get; set; }
+    internal static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> Cards { get; set; } = new();
 
-    internal static Dictionary<BattleUnitModel, BattlePlayingCardDataInUnitModel> CurrentRevenge { get; set; }
+    internal static Dictionary<BattleUnitModel, BattlePlayingCardDataInUnitModel> CurrentRevenge { get; set; } = new();
 }

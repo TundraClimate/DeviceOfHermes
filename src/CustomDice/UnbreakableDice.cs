@@ -21,7 +21,7 @@ namespace DeviceOfHermes.CustomDice;
 /// </code></example>
 public class UnbreakableDice : AdvancedDiceBase
 {
-    static UnbreakableDice()
+    internal static void Init()
     {
         CustomDiceSprite.AddSequence(
             beh =>
@@ -47,10 +47,6 @@ public class UnbreakableDice : AdvancedDiceBase
             HermesConstants.UnbreakableHit,
             new Color(180, 0, 0, 200)
         );
-
-        CustomDicePatch.Init();
-
-        Stash = new();
     }
 
     /// <summary>Returns true if dice is unbreakable</summary>
@@ -76,5 +72,5 @@ public class UnbreakableDice : AdvancedDiceBase
 
     internal bool _isBreaked = false;
 
-    internal static Dictionary<BattleUnitModel, Queue<BattleDiceBehavior>> Stash { get; set; }
+    internal static Dictionary<BattleUnitModel, Queue<BattleDiceBehavior>> Stash { get; set; } = new();
 }

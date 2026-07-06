@@ -8,7 +8,7 @@ namespace DeviceOfHermes.CustomDice;
 /// <summary>A dice of secondly in clash</summary>
 public class SecondlyDice : AdvancedDiceBase
 {
-    static SecondlyDice()
+    internal static void Init()
     {
         CustomDiceSprite.AddSequence(
             beh =>
@@ -50,8 +50,6 @@ public class SecondlyDice : AdvancedDiceBase
             HermesConstants.SecondlyEvasion,
             new Color(255, 255, 200, 200)
         );
-
-        CustomDicePatch.Init();
     }
 
     /// <summary>Add secondly dice</summary>
