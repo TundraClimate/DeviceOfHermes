@@ -1,7 +1,4 @@
-using System.Reflection;
-using HarmonyExtension;
 using UnityEngine;
-using UI;
 using DeviceOfHermes.UI;
 using DeviceOfHermes.CustomDice;
 
@@ -15,7 +12,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
     {
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
-        LoadPreloadAssemblies();
+        HermesPreloader.PreloadAssemblies();
 
         SaveModifier.Init();
         UnitUIExtension.Init();
@@ -29,73 +26,4 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
         return "";
     }
-
-    private static void LoadPreloadAssemblies()
-    {
-        try
-        {
-            var popupInstance = UnityEngine.Object.FindObjectOfType<EntryScene>().modPopup;
-            var contents = (List<ModSlotData>)typeof(UIModPopup).Field("dataList").GetValue(popupInstance);
-
-            contents.RemoveAll(mod => mod is null || !mod.IsActivated);
-
-            foreach (var content in contents)
-            {
-                var modDir = content.ModInfo.dirInfo.FullName;
-                var flDir = Path.Combine(modDir, "Assemblies", "DoHAssemblies");
-
-                if (Directory.Exists(flDir))
-                {
-                    var files = Directory.GetFiles(flDir);
-
-                    foreach (var file in files)
-                    {
-                        LoadNotExists(file);
-                    }
-                }
-            }
-        }
-        catch (Exception e)
-        {
-            Hermes.Say($"Error by loadings DoHAssemblies files: {e.Message}", MessageLevel.Error);
-            Hermes.Say($"Stacktrace: {e.StackTrace}");
-        }
-    }
-
-    private static void LoadNotExistsFromDeps(string depsPath)
-    {
-        var path = Path.Combine(DepsPath, depsPath);
-
-        LoadNotExists(path);
-    }
-
-    private static void LoadNotExists(string path)
-    {
-        if (!File.Exists(path))
-        {
-            Hermes.Say($"A file '{path}' is not exists");
-
-            return;
-        }
-
-        if (Path.GetExtension(path) != ".dll")
-        {
-            Hermes.Say($"A file '{path}' is not dll");
-
-            return;
-        }
-
-        var addsAsm = AssemblyName.GetAssemblyName(path);
-
-        var find = AppDomain.CurrentDomain.GetAssemblies()
-            .Any(asm => AssemblyName.ReferenceMatchesDefinition(asm.GetName(), addsAsm));
-
-        if (!find)
-        {
-            Hermes.Say($"Load by DeviceOfHermes: {path}");
-            Assembly.LoadFrom(path);
-        }
-    }
-
-    private static string DepsPath => Path.Combine(typeof(HermesBootStrap).GetAsmDirectory(), "dependencies");
 }

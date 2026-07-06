@@ -264,6 +264,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Boot.HermesInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Boot.HermesInitializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Boot.HermesInitializer",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Boot.HermesInitializer.yml\" sourcestartlinenumber=\"1\">ModInitializer in Hermes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Boot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Boot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Boot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.CommonCoroutine.yml",
       "output": {
         ".html": {
@@ -1145,6 +1173,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/env-container.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/hermes-preloader.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/hermes-preloader.html"
         }
       },
       "version": ""

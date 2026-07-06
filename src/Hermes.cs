@@ -1,3 +1,4 @@
+global using UnityObject = UnityEngine.Object;
 using UnityEngine;
 
 namespace System;

@@ -1387,6 +1387,31 @@ references:
   commentId: T:DeviceOfHermes.BattleUIBehaviourExtension
   fullName: DeviceOfHermes.BattleUIBehaviourExtension
   nameWithType: BattleUIBehaviourExtension
+- uid: DeviceOfHermes.Boot
+  name: DeviceOfHermes.Boot
+  href: api/DeviceOfHermes.Boot.html
+  commentId: N:DeviceOfHermes.Boot
+  fullName: DeviceOfHermes.Boot
+  nameWithType: DeviceOfHermes.Boot
+- uid: DeviceOfHermes.Boot.HermesInitializer
+  name: HermesInitializer
+  href: api/DeviceOfHermes.Boot.HermesInitializer.html
+  commentId: T:DeviceOfHermes.Boot.HermesInitializer
+  fullName: DeviceOfHermes.Boot.HermesInitializer
+  nameWithType: HermesInitializer
+- uid: DeviceOfHermes.Boot.HermesInitializer.OnInitMod
+  name: OnInitMod()
+  href: api/DeviceOfHermes.Boot.HermesInitializer.html#DeviceOfHermes_Boot_HermesInitializer_OnInitMod
+  commentId: M:DeviceOfHermes.Boot.HermesInitializer.OnInitMod
+  fullName: DeviceOfHermes.Boot.HermesInitializer.OnInitMod()
+  nameWithType: HermesInitializer.OnInitMod()
+- uid: DeviceOfHermes.Boot.HermesInitializer.OnInitMod*
+  name: OnInitMod
+  href: api/DeviceOfHermes.Boot.HermesInitializer.html#DeviceOfHermes_Boot_HermesInitializer_OnInitMod_
+  commentId: Overload:DeviceOfHermes.Boot.HermesInitializer.OnInitMod
+  isSpec: "True"
+  fullName: DeviceOfHermes.Boot.HermesInitializer.OnInitMod
+  nameWithType: HermesInitializer.OnInitMod
 - uid: DeviceOfHermes.CommonCoroutine
   name: CommonCoroutine
   href: api/DeviceOfHermes.CommonCoroutine.html
