@@ -1,6 +1,7 @@
 using UnityEngine;
 using DeviceOfHermes.UI;
 using DeviceOfHermes.CustomDice;
+using DeviceOfHermes.Data;
 
 namespace DeviceOfHermes.Boot;
 
@@ -13,6 +14,8 @@ internal class HermesBootStrap : DiceCardAbilityBase
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
         HermesPreloader.PreloadAssemblies();
+
+        OnlyCardXmlLoader.Load();
 
         SaveModifier.Init();
         UnitUIExtension.Init();

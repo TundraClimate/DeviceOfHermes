@@ -376,6 +376,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Data.OnlyCardXmlInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Data.OnlyCardXmlInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Data.OnlyCardXmlInfo",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Data.OnlyCardXmlInfo.yml\" sourcestartlinenumber=\"1\">A template of OnlyCardXml</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Data.OnlyCardXmlRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Data.OnlyCardXmlRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Data.OnlyCardXmlRoot",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Data.OnlyCardXmlRoot.yml\" sourcestartlinenumber=\"1\">A template of OnlyCardXml root</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.DeckExtension.yml",
       "output": {
         ".html": {
@@ -1207,6 +1249,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/hermes-preloader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/onlycard-data.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/onlycard-data.html"
         }
       },
       "version": ""

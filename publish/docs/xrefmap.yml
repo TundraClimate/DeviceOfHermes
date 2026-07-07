@@ -1702,6 +1702,48 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDiceSprite.AddSequence
   nameWithType: CustomDiceSprite.AddSequence
+- uid: DeviceOfHermes.Data
+  name: DeviceOfHermes.Data
+  href: api/DeviceOfHermes.Data.html
+  commentId: N:DeviceOfHermes.Data
+  fullName: DeviceOfHermes.Data
+  nameWithType: DeviceOfHermes.Data
+- uid: DeviceOfHermes.Data.OnlyCardXmlInfo
+  name: OnlyCardXmlInfo
+  href: api/DeviceOfHermes.Data.OnlyCardXmlInfo.html
+  commentId: T:DeviceOfHermes.Data.OnlyCardXmlInfo
+  fullName: DeviceOfHermes.Data.OnlyCardXmlInfo
+  nameWithType: OnlyCardXmlInfo
+- uid: DeviceOfHermes.Data.OnlyCardXmlInfo.cards
+  name: cards
+  href: api/DeviceOfHermes.Data.OnlyCardXmlInfo.html#DeviceOfHermes_Data_OnlyCardXmlInfo_cards
+  commentId: F:DeviceOfHermes.Data.OnlyCardXmlInfo.cards
+  fullName: DeviceOfHermes.Data.OnlyCardXmlInfo.cards
+  nameWithType: OnlyCardXmlInfo.cards
+- uid: DeviceOfHermes.Data.OnlyCardXmlInfo.id
+  name: id
+  href: api/DeviceOfHermes.Data.OnlyCardXmlInfo.html#DeviceOfHermes_Data_OnlyCardXmlInfo_id
+  commentId: F:DeviceOfHermes.Data.OnlyCardXmlInfo.id
+  fullName: DeviceOfHermes.Data.OnlyCardXmlInfo.id
+  nameWithType: OnlyCardXmlInfo.id
+- uid: DeviceOfHermes.Data.OnlyCardXmlInfo.pid
+  name: pid
+  href: api/DeviceOfHermes.Data.OnlyCardXmlInfo.html#DeviceOfHermes_Data_OnlyCardXmlInfo_pid
+  commentId: F:DeviceOfHermes.Data.OnlyCardXmlInfo.pid
+  fullName: DeviceOfHermes.Data.OnlyCardXmlInfo.pid
+  nameWithType: OnlyCardXmlInfo.pid
+- uid: DeviceOfHermes.Data.OnlyCardXmlRoot
+  name: OnlyCardXmlRoot
+  href: api/DeviceOfHermes.Data.OnlyCardXmlRoot.html
+  commentId: T:DeviceOfHermes.Data.OnlyCardXmlRoot
+  fullName: DeviceOfHermes.Data.OnlyCardXmlRoot
+  nameWithType: OnlyCardXmlRoot
+- uid: DeviceOfHermes.Data.OnlyCardXmlRoot.info
+  name: info
+  href: api/DeviceOfHermes.Data.OnlyCardXmlRoot.html#DeviceOfHermes_Data_OnlyCardXmlRoot_info
+  commentId: F:DeviceOfHermes.Data.OnlyCardXmlRoot.info
+  fullName: DeviceOfHermes.Data.OnlyCardXmlRoot.info
+  nameWithType: OnlyCardXmlRoot.info
 - uid: DeviceOfHermes.DeckExtension
   name: DeckExtension
   href: api/DeviceOfHermes.DeckExtension.html

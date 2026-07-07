@@ -129,6 +129,21 @@
     "title": "Class CustomDiceSprite | DeviceOfHermes",
     "summary": "Class CustomDiceSprite Namespace DeviceOfHermes Assembly DeviceOfHermes.dll Supplies dice sprite customizer public static class CustomDiceSprite Inheritance object CustomDiceSprite Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Examples CustomDiceSprite.AddSequence(() => true, yourSprite, new Color(255, 255, 255, 255)); Remarks Applies exchange sequence, the all dice sprite that cond matched change to specified sprite. Methods AddSequence(Func<DiceBehaviour, bool>, Sprite, Color?) Add customize sequence public static void AddSequence(Func<DiceBehaviour, bool> cond, Sprite map, Color? behColor = null) Parameters cond Func<DiceBehaviour, bool> Apply mapping if returns true map Sprite Sprite mapping behColor Color? Text that beside dice sprite applies color Examples CustomDiceSprite.AddSequence(() => true, yourSprite, new Color(255, 255, 255, 255));"
   },
+  "api/DeviceOfHermes.Data.OnlyCardXmlInfo.html": {
+    "href": "api/DeviceOfHermes.Data.OnlyCardXmlInfo.html",
+    "title": "Class OnlyCardXmlInfo | DeviceOfHermes",
+    "summary": "Class OnlyCardXmlInfo Namespace DeviceOfHermes.Data Assembly DeviceOfHermes.dll A template of OnlyCardXml public class OnlyCardXmlInfo Inheritance object OnlyCardXmlInfo Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Fields cards A list of onlypage public List<LorIdXml> cards Field Value List<LorIdXml> id A target of keypage id public int id Field Value int pid A target of keypage pid public string pid Field Value string"
+  },
+  "api/DeviceOfHermes.Data.OnlyCardXmlRoot.html": {
+    "href": "api/DeviceOfHermes.Data.OnlyCardXmlRoot.html",
+    "title": "Class OnlyCardXmlRoot | DeviceOfHermes",
+    "summary": "Class OnlyCardXmlRoot Namespace DeviceOfHermes.Data Assembly DeviceOfHermes.dll A template of OnlyCardXml root public class OnlyCardXmlRoot Inheritance object OnlyCardXmlRoot Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Fields info The onlycards public List<OnlyCardXmlInfo> info Field Value List<OnlyCardXmlInfo>"
+  },
+  "api/DeviceOfHermes.Data.html": {
+    "href": "api/DeviceOfHermes.Data.html",
+    "title": "Namespace DeviceOfHermes.Data | DeviceOfHermes",
+    "summary": "Namespace DeviceOfHermes.Data Classes OnlyCardXmlInfo A template of OnlyCardXml OnlyCardXmlRoot A template of OnlyCardXml root"
+  },
   "api/DeviceOfHermes.DeckExtension.html": {
     "href": "api/DeviceOfHermes.DeckExtension.html",
     "title": "Class DeckExtension | DeviceOfHermes",
@@ -449,6 +464,11 @@
     "title": "HermesPreloader | DeviceOfHermes",
     "summary": "HermesPreloader 対象のDLLファイルをDeviceOfHermesのロード時にセットで読み込む仕組みです。 MODフォルダ内、Assemblies/HermesAssemblies/フォルダに配置したDLLを対象とします。(HermesAssembliesが存在しない場合は作成してください) 同じAssemblyNameのDLLが存在する場合、有効化されている全てのMODのHermesAssembliesの中から最新のFileVersionの対象DLLのみがロードされます。 対象になる全てのDLLがロードされた後、ロードしたDLLの中からDeviceOfHermes.Boot.HermesInitializerが実装されているクラスを探します。 見つかったクラスはそれぞれ実装されているOnInitModメソッドを実行します。 HermesInitializer実装例: internal class FooInit : DeviceOfHermes.Boot.HermesInitializer { public void OnInitMod() { // ロード時にログを出力 Hermes.Say(\"Load by FooMod!\"); } }"
   },
+  "docs/onlycard-data.html": {
+    "href": "docs/onlycard-data.html",
+    "title": "OnlyCardXml | DeviceOfHermes",
+    "summary": "OnlyCardXml XMLファイルを配置することで専用ページを追加することが出来ます。 条件はDeviceOfHermesのサブスクライブのみです。 MODフォルダ/Assemblies/HermesData/OnlyCard.xmlを自動で読み込みます。 フォルダ・ファイルが存在しない場合は無視します。 OnlyCard.xmlの内容例: <?xml version=\"1.0\" encoding=\"utf-8\"?> <OnlyCardXmlRoot> <!-- MODのID=\"10000001\"のコアページを対象に --> <OnlyCard ID=\"10000001\"> <!-- MODのID=\"1\"のページを専用ページとして追加 --> <Card>1</Card> <!-- バニラのID=\"701001\"のページを専用ページとして追加 --> <Card Pid=\"@origin\">701001</Card> </OnlyCard> <!-- MODのID=\"10000002\"のコアページを対象に --> <OnlyCard ID=\"10000002\"> <!-- MODのID=\"2\"のページを専用ページとして追加 --> <Card>2</Card> </OnlyCard> </OnlyCardXmlRoot>"
+  },
   "docs/passive-resolver.html": {
     "href": "docs/passive-resolver.html",
     "title": "using DeviceOfHermes; | DeviceOfHermes",
@@ -502,7 +522,7 @@
   "docs/table-of-content.html": {
     "href": "docs/table-of-content.html",
     "title": "目次・案内 | DeviceOfHermes",
-    "summary": "目次・案内 using DeviceOfHermes; 専用ページを新たに追加したいなら... AdditionalOnlyCard 広域のエフェクトを作りやすくしたいなら... AdvancedAreaEffect 攻撃属性のダメージを追加で与えたいなら... AdvancedTakeDamage 毎Tick実行される処理を追加したいなら... BattleTickAction バフ・デバフの扱いを簡単にしたいなら... BattleBufExtension ページ上のダイス画像を書き換えたいなら... CustomDiceSprite デッキに直接アクセスをしたいなら... DeckExtension パッシブの帰属可否を管理したいなら... PassiveResolver マッチ実行中の処理を追加したいなら... RencounterEvent 戦闘中のイベントを監視したいなら... ScheduleRunner 接待で使用できるキャラクターを管理したいなら... StageLibrarianList キャラクターに関する表示を扱いたいなら... UnitUIExtension バニラ環境のバフ・デバフを編集したいなら... VannilaUnitBuf using DeviceOfHermes.AdvancedBase; より効果の増えたページアビリティを作るには... AdvancedCardBase より効果の増えたダイスアビリティを作るには... AdvancedDiceBase より効果の増えたパッシブアビリティを作るには... AdvancedPassiveBase より効果の増えたバフ・デバフを作るには... AdvancedUnitBuf 弾丸をバフとして管理するには... BattleAmmoBuf ゆらぎパッシブを簡単に作成するなら... ShimPassiveBase using DeviceOfHermes.CustomDice; 反撃ダイスをリンバス式にするには... RevengeDice 第2のダイスをページに追加するには... SecondlyDice \"破壊不能ダイス\"を追加するには... UnbreakableDice using DeviceOfHermes.Resource; 画像ファイルをゲーム内で読み込むには... Artwork XMLファイルをゲームから読み込むには... Serde 翻訳データをゲームに追加するには... TextModel 個人用セーブデータを管理するには... EnvContainer using DeviceOfHermes.UI; 戦闘中のマップを変更したいなら... BattleMapChanger 戦闘中の表示UIを追加するには... BattleUIBehaviour 接待ストーリーのアイコンを配置するには... StoryLineMaker Hijack System コマンドからスクリプトを作成するには... DynamicAbility 前提MODを作りたいなら... HermesPreloader"
+    "summary": "目次・案内 using DeviceOfHermes; 専用ページを新たに追加したいなら... AdditionalOnlyCard 広域のエフェクトを作りやすくしたいなら... AdvancedAreaEffect 攻撃属性のダメージを追加で与えたいなら... AdvancedTakeDamage 毎Tick実行される処理を追加したいなら... BattleTickAction バフ・デバフの扱いを簡単にしたいなら... BattleBufExtension ページ上のダイス画像を書き換えたいなら... CustomDiceSprite デッキに直接アクセスをしたいなら... DeckExtension パッシブの帰属可否を管理したいなら... PassiveResolver マッチ実行中の処理を追加したいなら... RencounterEvent 戦闘中のイベントを監視したいなら... ScheduleRunner 接待で使用できるキャラクターを管理したいなら... StageLibrarianList キャラクターに関する表示を扱いたいなら... UnitUIExtension バニラ環境のバフ・デバフを編集したいなら... VannilaUnitBuf using DeviceOfHermes.AdvancedBase; より効果の増えたページアビリティを作るには... AdvancedCardBase より効果の増えたダイスアビリティを作るには... AdvancedDiceBase より効果の増えたパッシブアビリティを作るには... AdvancedPassiveBase より効果の増えたバフ・デバフを作るには... AdvancedUnitBuf 弾丸をバフとして管理するには... BattleAmmoBuf ゆらぎパッシブを簡単に作成するなら... ShimPassiveBase using DeviceOfHermes.CustomDice; 反撃ダイスをリンバス式にするには... RevengeDice 第2のダイスをページに追加するには... SecondlyDice \"破壊不能ダイス\"を追加するには... UnbreakableDice using DeviceOfHermes.Data; XMLファイルから専用ページを追加するには... OnlyCardXml using DeviceOfHermes.Resource; 画像ファイルをゲーム内で読み込むには... Artwork XMLファイルをゲームから読み込むには... Serde 翻訳データをゲームに追加するには... TextModel 個人用セーブデータを管理するには... EnvContainer using DeviceOfHermes.UI; 戦闘中のマップを変更したいなら... BattleMapChanger 戦闘中の表示UIを追加するには... BattleUIBehaviour 接待ストーリーのアイコンを配置するには... StoryLineMaker Hijack System コマンドからスクリプトを作成するには... DynamicAbility 前提MODを作りたいなら... HermesPreloader"
   },
   "docs/textmodel.html": {
     "href": "docs/textmodel.html",
