@@ -4429,6 +4429,37 @@ references:
   commentId: N:DeviceOfHermes.UI
   fullName: DeviceOfHermes.UI
   nameWithType: DeviceOfHermes.UI
+- uid: DeviceOfHermes.UI.BattleMapChanger
+  name: BattleMapChanger
+  href: api/DeviceOfHermes.UI.BattleMapChanger.html
+  commentId: T:DeviceOfHermes.UI.BattleMapChanger
+  fullName: DeviceOfHermes.UI.BattleMapChanger
+  nameWithType: BattleMapChanger
+- uid: DeviceOfHermes.UI.BattleMapChanger.SetMap(MapManager,UnityEngine.AudioClip)
+  name: SetMap(MapManager, AudioClip?)
+  href: api/DeviceOfHermes.UI.BattleMapChanger.html#DeviceOfHermes_UI_BattleMapChanger_SetMap_MapManager_UnityEngine_AudioClip_
+  commentId: M:DeviceOfHermes.UI.BattleMapChanger.SetMap(MapManager,UnityEngine.AudioClip)
+  name.vb: SetMap(MapManager, AudioClip)
+  fullName: DeviceOfHermes.UI.BattleMapChanger.SetMap(MapManager, UnityEngine.AudioClip?)
+  fullName.vb: DeviceOfHermes.UI.BattleMapChanger.SetMap(MapManager, UnityEngine.AudioClip)
+  nameWithType: BattleMapChanger.SetMap(MapManager, AudioClip?)
+  nameWithType.vb: BattleMapChanger.SetMap(MapManager, AudioClip)
+- uid: DeviceOfHermes.UI.BattleMapChanger.SetMap(UnityEngine.Sprite,UnityEngine.Sprite,UnityEngine.AudioClip,System.Collections.Generic.List{System.String},System.Nullable{UnityEngine.Color})
+  name: SetMap(Sprite, Sprite, AudioClip?, List<string>?, Color?)
+  href: api/DeviceOfHermes.UI.BattleMapChanger.html#DeviceOfHermes_UI_BattleMapChanger_SetMap_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_AudioClip_System_Collections_Generic_List_System_String__System_Nullable_UnityEngine_Color__
+  commentId: M:DeviceOfHermes.UI.BattleMapChanger.SetMap(UnityEngine.Sprite,UnityEngine.Sprite,UnityEngine.AudioClip,System.Collections.Generic.List{System.String},System.Nullable{UnityEngine.Color})
+  name.vb: SetMap(Sprite, Sprite, AudioClip, List(Of String), Color?)
+  fullName: DeviceOfHermes.UI.BattleMapChanger.SetMap(UnityEngine.Sprite, UnityEngine.Sprite, UnityEngine.AudioClip?, System.Collections.Generic.List<string>?, UnityEngine.Color?)
+  fullName.vb: DeviceOfHermes.UI.BattleMapChanger.SetMap(UnityEngine.Sprite, UnityEngine.Sprite, UnityEngine.AudioClip, System.Collections.Generic.List(Of String), UnityEngine.Color?)
+  nameWithType: BattleMapChanger.SetMap(Sprite, Sprite, AudioClip?, List<string>?, Color?)
+  nameWithType.vb: BattleMapChanger.SetMap(Sprite, Sprite, AudioClip, List(Of String), Color?)
+- uid: DeviceOfHermes.UI.BattleMapChanger.SetMap*
+  name: SetMap
+  href: api/DeviceOfHermes.UI.BattleMapChanger.html#DeviceOfHermes_UI_BattleMapChanger_SetMap_
+  commentId: Overload:DeviceOfHermes.UI.BattleMapChanger.SetMap
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleMapChanger.SetMap
+  nameWithType: BattleMapChanger.SetMap
 - uid: DeviceOfHermes.UI.BattleUIBehaviour
   name: BattleUIBehaviour
   href: api/DeviceOfHermes.UI.BattleUIBehaviour.html

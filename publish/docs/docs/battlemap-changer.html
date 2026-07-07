@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.UI | DeviceOfHermes </title>
+      <title>using DeviceOfHermes.UI; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.UI | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes.UI; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battlemap-changer.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,43 +84,49 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.UI">
+        <article data-uid="">
+<h1 id="using-deviceofhermesui"><code>using DeviceOfHermes.UI;</code></h1>
 
-  <h1 id="DeviceOfHermes_UI" data-uid="DeviceOfHermes.UI" class="text-break">Namespace DeviceOfHermes.UI</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleMapChanger.html">BattleMapChanger</a></dt>
-      <dd><p>Changes battle map</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviour.html">BattleUIBehaviour</a></dt>
-      <dd><p>A behaviour for BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviourExtension.html">BattleUIBehaviourExtension</a></dt>
-      <dd><p>The extensions of BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.StoryLineMaker.html">StoryLineMaker</a></dt>
-      <dd><p>Make storyline</p>
-</dd>
-    </dl>
-
+<p>名前空間<code>DeviceOfHermes.UI</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="battlemapchanger">BattleMapChanger</h1>
+<p>戦闘中のマップを変更します。</p>
+<p><code>MapManager</code>をComponentとして保持している<code>GameObject</code>、または背景・床面の<code>Sprite</code>を指定してマップを適用することが出来ます。<br>
+<code>AudioClip</code>を指定してBGMを指定することも可能です。</p>
+<pre><code class="lang-cs">public override void OnWaveStart()
+{
+    BattleMapChanger.SetMap(/* BackGround */, /* Floor */, /* BGM */, [ /* Ids */ ], /* Dialog color */);
+}
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h3 id="setmapmapmanager-audioclip"><code>SetMap(MapManager, AudioClip?)</code></h3>
+<pre><code class="lang-cs">BattleMapChanger.SetMap(map, bgm);
+</code></pre>
+<p><code>MapManager</code>とそれに紐づくGameObjectからマップを設定します。</p>
+<ul>
+<li><code>map</code>: AddComponent済みの<code>MapManager</code>です。</li>
+<li><code>bgm</code>: BGMに使用される<code>AudioClip</code>です。指定しなかった場合はデフォルトのBGMが使われます。</li>
+</ul>
+<h3 id="setmapsprite-sprite-audioclip-liststring-color"><code>SetMap(Sprite, Sprite, AudioClip?, List&lt;string&gt;?, Color?)</code></h3>
+<pre><code class="lang-cs">BattleMapChanger.SetMap(bg, flr, bgm, dids, dcolr);
+</code></pre>
+<p>背景・底面の画像を指定してマップを設定します。<br>
+第4引数はダイアログそのものではなく<code>TextDataModel</code>のidです。</p>
+<ul>
+<li><code>bg</code>: 背景画像用のスプライトです。</li>
+<li><code>flr</code>: 底面画像用のスプライトです。</li>
+<li><code>bgm</code>: BGMに使用される<code>AudioClip</code>です。指定しなかった場合はデフォルトのBGMが使われます。</li>
+<li><code>dids</code>: 表示されるダイアログが紐付いたIdのリストです。</li>
+<li><code>dcolr</code>: ダイアログのメインカラーです。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battlemap-changer.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

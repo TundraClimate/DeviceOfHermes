@@ -754,6 +754,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.UI.BattleMapChanger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.UI.BattleMapChanger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.UI.BattleMapChanger",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.UI.BattleMapChanger.yml\" sourcestartlinenumber=\"1\">Changes battle map</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.UI.BattleUIBehaviour.yml",
       "output": {
         ".html": {
@@ -1123,6 +1137,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/battlebuf-extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/battlemap-changer.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battlemap-changer.html"
         }
       },
       "version": ""
