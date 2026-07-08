@@ -28,9 +28,17 @@ public class VannilaUnitBuf
     {
         var target = typeof(T).Method("OnAddBuf");
 
+        if (target is null)
+        {
+            target = typeof(BattleUnitBuf).Method("OnAddBuf");
+        }
+
         _forcelyMax.Add((KeywordBuf)typeof(T).Property("bufType").GetValue(new T()), max);
 
-        _harmony.Patch(target, prefix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("PrefixForcely")));
+        if (_harmony.GetPatchedMethods().All(mes => mes != target))
+        {
+            _harmony.Patch(target, prefix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("OnAddPrefix")));
+        }
     }
 
     /// <summary>Set max stack if cond</summary>
@@ -48,11 +56,16 @@ public class VannilaUnitBuf
     {
         var target = typeof(T).Method("OnAddBuf");
 
+        if (target is null)
+        {
+            target = typeof(BattleUnitBuf).Method("OnAddBuf");
+        }
+
         _ifMax.Add((KeywordBuf)typeof(T).Property("bufType").GetValue(new T()), new() { (cond, max) });
 
         if (_harmony.GetPatchedMethods().All(mes => mes != target))
         {
-            _harmony.Patch(target, prefix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("PrefixIf")));
+            _harmony.Patch(target, prefix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("OnAddPrefix")));
         }
     }
 
@@ -69,6 +82,11 @@ public class VannilaUnitBuf
         var target = typeof(T).Method("OnAddBuf");
         var kbf = (KeywordBuf)typeof(T).Property("bufType").GetValue(new T());
 
+        if (target is null)
+        {
+            target = typeof(BattleUnitBuf).Method("OnAddBuf");
+        }
+
         if (_ifMax.ContainsKey(kbf))
         {
             _ifMax[kbf].Add((cond, max));
@@ -80,24 +98,19 @@ public class VannilaUnitBuf
 
         if (_harmony.GetPatchedMethods().All(mes => mes != target))
         {
-            _harmony.Patch(target, prefix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("PrefixIf")));
+            _harmony.Patch(target, prefix: new HarmonyMethod(typeof(VannilaUnitBuf).Method("OnAddPrefix")));
         }
     }
 
-    static bool PrefixForcely(BattleUnitBuf __instance, int addedStack)
+    static bool OnAddPrefix(BattleUnitBuf __instance, BattleUnitModel ____owner, int addedStack)
     {
-        if (_forcelyMax.TryGetValue(__instance.bufType, out var max))
+        if (_forcelyMax.TryGetValue(__instance.bufType, out var fmax))
         {
-            __instance.stack = max.Min(__instance.stack);
+            __instance.stack = fmax.Min(__instance.stack);
 
             return false;
         }
 
-        return true;
-    }
-
-    static bool PrefixIf(BattleUnitBuf __instance, BattleUnitModel ____owner, int addedStack)
-    {
         if (_ifMax.TryGetValue(__instance.bufType, out var conds))
         {
             foreach (var res in conds)
