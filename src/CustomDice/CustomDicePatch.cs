@@ -18,7 +18,6 @@ internal static class CustomDicePatch
         Patch(typeof(PatchOnTakeDamage));
         Patch(typeof(PatchClearDices));
         Patch(typeof(PatchStartParrying));
-        Patch(typeof(PatchStartAction));
         Patch(typeof(PatchDecision));
         Patch(typeof(PatchOnParryingResultDecided));
         Patch(typeof(PatchOnEndAction));
@@ -326,21 +325,13 @@ internal static class CustomDicePatch
         {
             if (cardA.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is RevengeDice)))
             {
-                PatchStartAction.StartAction(StageController.Instance, cardA);
+                StageController.Instance.StartActionNoPatch(cardA);
 
                 return false;
             }
 
             return true;
         }
-    }
-
-    [HarmonyPatch(typeof(StageController), "StartAction")]
-    class PatchStartAction
-    {
-        [HarmonyReversePatch]
-        public static void StartAction(StageController instance, BattlePlayingCardDataInUnitModel card) =>
-            throw new NotImplementedException();
     }
 
     [HarmonyPatch(typeof(BattleParryingManager), "Decision")]

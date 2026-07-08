@@ -127,20 +127,6 @@ internal static class AdvancedPatch
     [HarmonyPatch(typeof(StageController), "StartParrying")]
     class PatchOnDynamicParrying
     {
-        static Action<StageController, BattlePlayingCardDataInUnitModel> startAction;
-
-        static PatchOnDynamicParrying()
-        {
-            var act = AccessTools.Method(typeof(StageController), "StartAction");
-
-            if (act is null)
-            {
-                throw new InvalidOperationException("The StageController::StartAction cannot access.");
-            }
-
-            startAction = (Action<StageController, BattlePlayingCardDataInUnitModel>)act.CreateDelegate(typeof(Action<StageController, BattlePlayingCardDataInUnitModel>));
-        }
-
         static bool Prefix(StageController __instance, BattlePlayingCardDataInUnitModel cardA, BattlePlayingCardDataInUnitModel cardB)
         {
             if (cardA is null || cardB is null)
@@ -150,7 +136,7 @@ internal static class AdvancedPatch
 
             if (!IsClashable(cardA, cardB))
             {
-                startAction(__instance, cardA);
+                __instance.StartActionNoPatch(cardA);
 
                 return false;
             }

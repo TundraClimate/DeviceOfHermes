@@ -13,6 +13,8 @@ internal class HermesBootStrap : DiceCardAbilityBase
     {
         Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
+        NoPatchMethod.Init();
+
         HermesPreloader.PreloadAssemblies();
 
         OnlyCardXmlLoader.Load();
