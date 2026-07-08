@@ -18,6 +18,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
         HermesPreloader.PreloadAssemblies();
 
         OnlyCardXmlLoader.Load();
+        FormationXmlLoader.Load();
 
         SaveModifier.Init();
         UnitUIExtension.Init();

@@ -2350,6 +2350,54 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.ModPackage.packageId
   nameWithType: ModPackage.packageId
+- uid: DeviceOfHermes.NoPatchMethod
+  name: NoPatchMethod
+  href: api/DeviceOfHermes.NoPatchMethod.html
+  commentId: T:DeviceOfHermes.NoPatchMethod
+  fullName: DeviceOfHermes.NoPatchMethod
+  nameWithType: NoPatchMethod
+- uid: DeviceOfHermes.NoPatchMethod.DieNoPatch(BattleUnitModel,BattleUnitModel,System.Boolean)
+  name: DieNoPatch(BattleUnitModel, BattleUnitModel?, bool)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_DieNoPatch_BattleUnitModel_BattleUnitModel_System_Boolean_
+  commentId: M:DeviceOfHermes.NoPatchMethod.DieNoPatch(BattleUnitModel,BattleUnitModel,System.Boolean)
+  name.vb: DieNoPatch(BattleUnitModel, BattleUnitModel, Boolean)
+  fullName: DeviceOfHermes.NoPatchMethod.DieNoPatch(BattleUnitModel, BattleUnitModel?, bool)
+  fullName.vb: DeviceOfHermes.NoPatchMethod.DieNoPatch(BattleUnitModel, BattleUnitModel, Boolean)
+  nameWithType: NoPatchMethod.DieNoPatch(BattleUnitModel, BattleUnitModel?, bool)
+  nameWithType.vb: NoPatchMethod.DieNoPatch(BattleUnitModel, BattleUnitModel, Boolean)
+- uid: DeviceOfHermes.NoPatchMethod.DieNoPatch*
+  name: DieNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_DieNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.DieNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.DieNoPatch
+  nameWithType: NoPatchMethod.DieNoPatch
+- uid: DeviceOfHermes.NoPatchMethod.StartActionNoPatch(StageController,BattlePlayingCardDataInUnitModel)
+  name: StartActionNoPatch(StageController, BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_StartActionNoPatch_StageController_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.NoPatchMethod.StartActionNoPatch(StageController,BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.NoPatchMethod.StartActionNoPatch(StageController, BattlePlayingCardDataInUnitModel)
+  nameWithType: NoPatchMethod.StartActionNoPatch(StageController, BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.NoPatchMethod.StartActionNoPatch*
+  name: StartActionNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_StartActionNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.StartActionNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.StartActionNoPatch
+  nameWithType: NoPatchMethod.StartActionNoPatch
+- uid: DeviceOfHermes.NoPatchMethod.StartParryingNoPatch(StageController,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)
+  name: StartParryingNoPatch(StageController, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_StartParryingNoPatch_StageController_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.NoPatchMethod.StartParryingNoPatch(StageController,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.NoPatchMethod.StartParryingNoPatch(StageController, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: NoPatchMethod.StartParryingNoPatch(StageController, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.NoPatchMethod.StartParryingNoPatch*
+  name: StartParryingNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_StartParryingNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.StartParryingNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.StartParryingNoPatch
+  nameWithType: NoPatchMethod.StartParryingNoPatch
 - uid: DeviceOfHermes.PackageInfo`1
   name: PackageInfo<T>
   href: api/DeviceOfHermes.PackageInfo-1.html
@@ -2810,6 +2858,44 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.EnvCrate.SetData
   nameWithType: EnvCrate.SetData
+- uid: DeviceOfHermes.Resource.Formation
+  name: Formation
+  href: api/DeviceOfHermes.Resource.Formation.html
+  commentId: T:DeviceOfHermes.Resource.Formation
+  fullName: DeviceOfHermes.Resource.Formation
+  nameWithType: Formation
+- uid: DeviceOfHermes.Resource.Formation.Add(System.String,FormationXmlInfo)
+  name: Add(string, FormationXmlInfo)
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_Add_System_String_FormationXmlInfo_
+  commentId: M:DeviceOfHermes.Resource.Formation.Add(System.String,FormationXmlInfo)
+  name.vb: Add(String, FormationXmlInfo)
+  fullName: DeviceOfHermes.Resource.Formation.Add(string, FormationXmlInfo)
+  fullName.vb: DeviceOfHermes.Resource.Formation.Add(String, FormationXmlInfo)
+  nameWithType: Formation.Add(string, FormationXmlInfo)
+  nameWithType.vb: Formation.Add(String, FormationXmlInfo)
+- uid: DeviceOfHermes.Resource.Formation.Add*
+  name: Add
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_Add_
+  commentId: Overload:DeviceOfHermes.Resource.Formation.Add
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Formation.Add
+  nameWithType: Formation.Add
+- uid: DeviceOfHermes.Resource.Formation.Get(System.String,System.Int32)
+  name: Get(string, int)
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_Get_System_String_System_Int32_
+  commentId: M:DeviceOfHermes.Resource.Formation.Get(System.String,System.Int32)
+  name.vb: Get(String, Integer)
+  fullName: DeviceOfHermes.Resource.Formation.Get(string, int)
+  fullName.vb: DeviceOfHermes.Resource.Formation.Get(String, Integer)
+  nameWithType: Formation.Get(string, int)
+  nameWithType.vb: Formation.Get(String, Integer)
+- uid: DeviceOfHermes.Resource.Formation.Get*
+  name: Get
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_Get_
+  commentId: Overload:DeviceOfHermes.Resource.Formation.Get
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Formation.Get
+  nameWithType: Formation.Get
 - uid: DeviceOfHermes.Resource.ReadXmlParser
   name: ReadXmlParser
   href: api/DeviceOfHermes.Resource.ReadXmlParser.html
