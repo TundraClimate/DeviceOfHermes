@@ -43,6 +43,9 @@ public static class HarmonyExtension
         /// <summary>Access property</summary>
         public PropertyInfo Property(string name) => AccessTools.Property(ty, name);
 
+        /// <summary>Access ctor</summary>
+        public ConstructorInfo Ctor(Type[]? parameters = null) => AccessTools.Constructor(ty, parameters);
+
         /// <summary>Access field</summary>
         public FieldInfo Field(string name) => AccessTools.Field(ty, name);
 
