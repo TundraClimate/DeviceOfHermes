@@ -4557,6 +4557,44 @@ references:
   commentId: N:DeviceOfHermes.UI
   fullName: DeviceOfHermes.UI
   nameWithType: DeviceOfHermes.UI
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardUI
+  name: BattleFloatingDiceCardUI
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html
+  commentId: T:DeviceOfHermes.UI.BattleFloatingDiceCardUI
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardUI
+  nameWithType: BattleFloatingDiceCardUI
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardUI.Init(BattleDiceCardModel)
+  name: Init(BattleDiceCardModel)
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardUI_Init_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.UI.BattleFloatingDiceCardUI.Init(BattleDiceCardModel)
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardUI.Init(BattleDiceCardModel)
+  nameWithType: BattleFloatingDiceCardUI.Init(BattleDiceCardModel)
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardUI.Init*
+  name: Init
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardUI_Init_
+  commentId: Overload:DeviceOfHermes.UI.BattleFloatingDiceCardUI.Init
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardUI.Init
+  nameWithType: BattleFloatingDiceCardUI.Init
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardUI.OnClickCallBack
+  name: OnClickCallBack
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardUI_OnClickCallBack
+  commentId: E:DeviceOfHermes.UI.BattleFloatingDiceCardUI.OnClickCallBack
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardUI.OnClickCallBack
+  nameWithType: BattleFloatingDiceCardUI.OnClickCallBack
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardUI.SetCard(BattleDiceCardModel)
+  name: SetCard(BattleDiceCardModel)
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardUI_SetCard_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.UI.BattleFloatingDiceCardUI.SetCard(BattleDiceCardModel)
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardUI.SetCard(BattleDiceCardModel)
+  nameWithType: BattleFloatingDiceCardUI.SetCard(BattleDiceCardModel)
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardUI.SetCard*
+  name: SetCard
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardUI_SetCard_
+  commentId: Overload:DeviceOfHermes.UI.BattleFloatingDiceCardUI.SetCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardUI.SetCard
+  nameWithType: BattleFloatingDiceCardUI.SetCard
 - uid: DeviceOfHermes.UI.BattleMapChanger
   name: BattleMapChanger
   href: api/DeviceOfHermes.UI.BattleMapChanger.html

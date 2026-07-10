@@ -824,6 +824,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.UI.BattleFloatingDiceCardUI",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.yml\" sourcestartlinenumber=\"1\">A ui of BattleDiceCardUI wrapper</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.UI.BattleMapChanger.yml",
       "output": {
         ".html": {
@@ -1187,6 +1201,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/battle-ammobuf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/battle-floating-dicecardui.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battle-floating-dicecardui.html"
         }
       },
       "version": ""

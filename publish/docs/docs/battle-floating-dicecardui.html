@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.UI | DeviceOfHermes </title>
+      <title>using DeviceOfHermes.UI; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.UI | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes.UI; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battle-floating-dicecardui.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,48 +84,52 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.UI">
+        <article data-uid="">
+<h1 id="using-deviceofhermesui"><code>using DeviceOfHermes.UI;</code></h1>
 
-  <h1 id="DeviceOfHermes_UI" data-uid="DeviceOfHermes.UI" class="text-break">Namespace DeviceOfHermes.UI</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
+<p>名前空間<code>DeviceOfHermes.UI</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="battlefloatingdicecardui">BattleFloatingDiceCardUI</h1>
+<p><code>BattleDiceCardUI</code>を単独で存在させるUIです。</p>
+<pre><code class="lang-cs">var ui = gameObject.AddComponent&lt;BattleFloatingDiceCardUI&gt;();
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleFloatingDiceCardUI.html">BattleFloatingDiceCardUI</a></dt>
-      <dd><p>A ui of BattleDiceCardUI wrapper</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleMapChanger.html">BattleMapChanger</a></dt>
-      <dd><p>Changes battle map</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviour.html">BattleUIBehaviour</a></dt>
-      <dd><p>A behaviour for BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviourExtension.html">BattleUIBehaviourExtension</a></dt>
-      <dd><p>The extensions of BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.StoryLineMaker.html">StoryLineMaker</a></dt>
-      <dd><p>Make storyline</p>
-</dd>
-    </dl>
+// 初期化をする
+ui.Init(BattleDiceCardModel.CreatePlayingCard(ItemXmlDataList.instance.GetCardItem(/* ページID */)));
 
+ui.OnClickCallBack += ev =&gt;
+{
+    // ページクリック時の処理
+};
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h3 id="onclickcallback"><code>OnClickCallBack</code></h3>
+<pre><code class="lang-cs">newSlot.OnClickCallBack += ev =&gt;
+{
+};
+</code></pre>
+<p>表示されたページのクリック時の処理を追加します。</p>
+<h3 id="initbattledicecardmodel"><code>Init(BattleDiceCardModel)</code></h3>
+<pre><code class="lang-cs">ui.Init(card);
+</code></pre>
+<p>表示されるページを初期化します。</p>
+<ul>
+<li><code>card</code>: 表示される<code>BattleDiceCardModel</code>です。</li>
+</ul>
+<h3 id="setcardbattledicecardmodel"><code>SetCard(BattleDiceCardModel)</code></h3>
+<pre><code class="lang-cs">ui.SetCard(card);
+</code></pre>
+<p>表示されるページを変更します。</p>
+<ul>
+<li><code>card</code>: 表示される<code>BattleDiceCardModel</code>です。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battle-floating-dicecardui.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 
