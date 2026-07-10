@@ -4557,6 +4557,63 @@ references:
   commentId: N:DeviceOfHermes.UI
   fullName: DeviceOfHermes.UI
   nameWithType: DeviceOfHermes.UI
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI
+  name: BattleFloatingDiceCardListUI
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html
+  commentId: T:DeviceOfHermes.UI.BattleFloatingDiceCardListUI
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI
+  nameWithType: BattleFloatingDiceCardListUI
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.AddCard(BattleDiceCardModel,UnityEngine.Vector2)
+  name: AddCard(BattleDiceCardModel, Vector2)
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_AddCard_BattleDiceCardModel_UnityEngine_Vector2_
+  commentId: M:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.AddCard(BattleDiceCardModel,UnityEngine.Vector2)
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.AddCard(BattleDiceCardModel, UnityEngine.Vector2)
+  nameWithType: BattleFloatingDiceCardListUI.AddCard(BattleDiceCardModel, Vector2)
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.AddCard*
+  name: AddCard
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_AddCard_
+  commentId: Overload:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.AddCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.AddCard
+  nameWithType: BattleFloatingDiceCardListUI.AddCard
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStart
+  name: OnRoundStart()
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_OnRoundStart
+  commentId: M:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStart
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStart()
+  nameWithType: BattleFloatingDiceCardListUI.OnRoundStart()
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStart*
+  name: OnRoundStart
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_OnRoundStart_
+  commentId: Overload:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStart
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStart
+  nameWithType: BattleFloatingDiceCardListUI.OnRoundStart
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStartCallBack
+  name: OnRoundStartCallBack
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_OnRoundStartCallBack
+  commentId: E:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStartCallBack
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnRoundStartCallBack
+  nameWithType: BattleFloatingDiceCardListUI.OnRoundStartCallBack
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattle
+  name: OnStartBattle()
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_OnStartBattle
+  commentId: M:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattle
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattle()
+  nameWithType: BattleFloatingDiceCardListUI.OnStartBattle()
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattle*
+  name: OnStartBattle
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_OnStartBattle_
+  commentId: Overload:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattle
+  nameWithType: BattleFloatingDiceCardListUI.OnStartBattle
+- uid: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattleCallBack
+  name: OnStartBattleCallBack
+  href: api/DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html#DeviceOfHermes_UI_BattleFloatingDiceCardListUI_OnStartBattleCallBack
+  commentId: E:DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattleCallBack
+  fullName: DeviceOfHermes.UI.BattleFloatingDiceCardListUI.OnStartBattleCallBack
+  nameWithType: BattleFloatingDiceCardListUI.OnStartBattleCallBack
 - uid: DeviceOfHermes.UI.BattleFloatingDiceCardUI
   name: BattleFloatingDiceCardUI
   href: api/DeviceOfHermes.UI.BattleFloatingDiceCardUI.html

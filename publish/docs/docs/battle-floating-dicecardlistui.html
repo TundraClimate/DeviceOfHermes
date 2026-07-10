@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.UI | DeviceOfHermes </title>
+      <title>using DeviceOfHermes.UI; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.UI | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes.UI; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battle-floating-dicecardlistui.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,53 +84,60 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.UI">
+        <article data-uid="">
+<h1 id="using-deviceofhermesui"><code>using DeviceOfHermes.UI;</code></h1>
 
-  <h1 id="DeviceOfHermes_UI" data-uid="DeviceOfHermes.UI" class="text-break">Namespace DeviceOfHermes.UI</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
+<p>名前空間<code>DeviceOfHermes.UI</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="battlefloatingdicecardlistui">BattleFloatingDiceCardListUI</h1>
+<p><code>BattleFloatingDiceCardUI</code>をまとめて管理するUIです。</p>
+<pre><code class="lang-cs">// Initializer等でUIを登録
+BattleManagerUI.Instance.AddBehaviour&lt;BattleFloatingDiceCardListUI&gt;(&quot;cards&quot;);
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html">BattleFloatingDiceCardListUI</a></dt>
-      <dd><p>A list ui of floating card</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleFloatingDiceCardUI.html">BattleFloatingDiceCardUI</a></dt>
-      <dd><p>A ui of BattleDiceCardUI wrapper</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleMapChanger.html">BattleMapChanger</a></dt>
-      <dd><p>Changes battle map</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviour.html">BattleUIBehaviour</a></dt>
-      <dd><p>A behaviour for BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviourExtension.html">BattleUIBehaviourExtension</a></dt>
-      <dd><p>The extensions of BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.StoryLineMaker.html">StoryLineMaker</a></dt>
-      <dd><p>Make storyline</p>
-</dd>
-    </dl>
+public override void OnWaveStart()
+{
+    // ページを(0.5, 0.75)地点に追加
+    _card = BattleManagerUI.Instance.GetBehaviour&lt;BattleFloatingDiceCardListUI&gt;(&quot;cards&quot;)
+        .AddCard(BattleDiceCardModel.CreatePlayingCard(ItemXmlDataList.instance.GetCardItem(701001)), new Vector2(0.5f, 0.75f));
+}
 
+public override void OnEndBattlePhase()
+{
+    // ページを破棄
+    UnityEngine.Object.Destroy(_card.gameObject);
+}
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h3 id="onroundstartcallback"><code>OnRoundStartCallBack</code></h3>
+<pre><code class="lang-cs">ui.OnRoundStartCallBack += () =&gt; 
+{
+};
+</code></pre>
+<p>幕の開始時に実行される処理を追加します。</p>
+<h3 id="onstartbattlecallback"><code>OnStartBattleCallBack</code></h3>
+<pre><code class="lang-cs">ui.OnStartBattleCallBack += () =&gt; 
+{
+};
+</code></pre>
+<p>戦闘開始時に実行される処理を追加します。</p>
+<h3 id="addcardbattledicecardmodel-vector2"><code>AddCard(BattleDiceCardModel, Vector2)</code></h3>
+<pre><code class="lang-cs">ui.AddCard(card, pos);
+</code></pre>
+<p>座標位置にページを配置します。<br>
+座標は画面左下を(0, 0)、画面右上を(1, 1)として指定する必要があります。</p>
+<p>接待を跨いでも存在し続けるため、不要なページは破棄することが推奨されます。</p>
+<ul>
+<li><code>card</code>: 配置する<code>BattleDiceCardModel</code>です。</li>
+<li><code>pos</code>: 配置場所の座標です。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battle-floating-dicecardlistui.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 
