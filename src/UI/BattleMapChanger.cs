@@ -233,7 +233,11 @@ public static class BattleMapChanger
         {
             if (_fixedMap && !_originalMap)
             {
-                ____dlgIdx %= _dialogs.Count;
+                if (_dialogs.Count > 0)
+                {
+                    ____dlgIdx %= _dialogs.Count;
+                }
+
                 _mapObject?.GetComponent<CreatureMapManager>()?.CreateDialog(_dlgColor);
 
                 return false;
