@@ -586,6 +586,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Remainder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Remainder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Remainder",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Remainder.yml\" sourcestartlinenumber=\"1\">A remainder of counting</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.RencounterEvent.yml",
       "output": {
         ".html": {
@@ -1365,6 +1379,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/read-xmlparser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/remainder.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/remainder.html"
         }
       },
       "version": ""
