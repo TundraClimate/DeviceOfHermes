@@ -67,6 +67,9 @@ public static class BattleMapChanger
         if (_prevMap is not null)
         {
             BattleSceneRoot.Instance.currentMapObject = _prevMap;
+
+            BattleSoundManager.Instance.SetEnemyTheme(_prevMap.mapBgm);
+            BattleSoundManager.Instance.ChangeEnemyTheme(0);
         }
 
         _fixedMap = false;
