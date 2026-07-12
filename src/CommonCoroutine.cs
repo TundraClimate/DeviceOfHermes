@@ -132,4 +132,39 @@ public class CommonCoroutine
 
         view.WorldPosition = dst;
     }
+
+    /// <summary>Play earthquake</summary>
+    public static IEnumerator EarthQuake(float time = 1f, float speedBase = 60f, float shake = 0.2f)
+    {
+        var cam = BattleCamManager.Instance?.EffectCam;
+
+        if (cam is null)
+        {
+            yield break;
+        }
+
+        var effect = cam.gameObject.GetComponent<CameraFilterPack_FX_EarthQuake>();
+
+        if (effect is null)
+        {
+            effect = cam.gameObject.AddComponent<CameraFilterPack_FX_EarthQuake>();
+        }
+
+        var elapsed = 0f;
+
+        while (time > elapsed)
+        {
+            elapsed += Time.deltaTime;
+
+            effect.Speed = speedBase * (1f - elapsed);
+            effect.X = shake * (1f - elapsed);
+            effect.Y = shake * (1f - elapsed);
+
+            yield return null;
+        }
+
+        UnityObject.Destroy(effect);
+
+        yield break;
+    }
 }
