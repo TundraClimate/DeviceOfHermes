@@ -13,6 +13,7 @@ public static class BattleMapChanger
         var harmony = new Harmony("DeviceOfHermes.UI.BattleMapChanger");
 
         harmony.CreateClassProcessor(typeof(PatchChangeMap)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchOnCheckEgo)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnClearMap)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnCreateDialog)).Patch();
     }
@@ -59,6 +60,8 @@ public static class BattleMapChanger
 
     private static void UnsetMap()
     {
+        BattleSceneRoot.Instance.mapList.Remove(_mapObject?.GetComponent<MapManager>());
+
         if (_mapObject is not null)
         {
             UnityObject.Destroy(_mapObject.gameObject);
@@ -114,17 +117,13 @@ public static class BattleMapChanger
             var label = matcher.Instruction.operand;
             var midLabel = generator.DefineLabel();
 
-            matcher.MatchStartForward(
-                CodeMatch.IsOpCode(OpCodes.Ldloc_0),
-                CodeMatch.IsOpCode(OpCodes.Ldloc_1),
-                CodeMatch.IsOpCode(OpCodes.Ble)
-            )
-                .Insert(
-                    CodeInstruction.Call(typeof(PatchChangeMap).Method("Pred")).WithLabels(matcher.Instruction.ReplaceLabels([midLabel])),
-                    new CodeInstruction(OpCodes.Brfalse, midLabel),
-                    CodeInstruction.Call(typeof(PatchChangeMap).Method("InjectMethod")),
-                    new CodeInstruction(OpCodes.Br, label)
-                );
+            matcher.Advance(1).Insert(
+                CodeInstruction.Call(typeof(PatchChangeMap).Method("Pred")),
+                new CodeInstruction(OpCodes.Brfalse, midLabel),
+                CodeInstruction.Call(typeof(PatchChangeMap).Method("InjectMethod")),
+                new CodeInstruction(OpCodes.Br, label),
+                new CodeInstruction(OpCodes.Nop).WithLabels(midLabel)
+            );
 
             return matcher.Instructions();
         }
@@ -217,14 +216,28 @@ public static class BattleMapChanger
             = typeof(CreatureMapManager).FieldRefAccess<List<string>>("_creatureDlgIdList");
     }
 
+    [HarmonyPatch(typeof(StageController), "CheckChangeMap")]
+    class PatchOnCheckEgo
+    {
+        static bool Prefix(ref StageController.StagePhase ____phase)
+        {
+            if (_fixedMap)
+            {
+                ____phase = StageController.StagePhase.ActivateStartBattleEffect;
+
+                return false;
+            }
+
+            return true;
+        }
+    }
+
     [HarmonyPatch(typeof(BattleSceneRoot), "ClearFloorMap")]
     class PatchOnClearMap
     {
-        static Exception Finalizer(Exception __exception)
+        static void Prefix()
         {
             UnsetMap();
-
-            return __exception;
         }
     }
 
