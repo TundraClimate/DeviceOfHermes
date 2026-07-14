@@ -24,6 +24,10 @@ public static class HarmonyExtension
         /// <summary>Is Ldfld</summary>
         public static CodeMatch IsLdfld() => IsOpCode(OpCodes.Ldfld);
 
+        /// <summary>Is Ldfld</summary>
+        public static CodeMatch IsLdfld(FieldInfo info)
+            => new CodeMatch(i => i.opcode == OpCodes.Ldfld && i.OperandIs(info));
+
         /// <summary>Is Starg</summary>
         public static CodeMatch IsStarg(int? num = null) => new CodeMatch(instruction => instruction.IsStarg(num));
 
