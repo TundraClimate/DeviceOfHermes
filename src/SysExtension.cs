@@ -1,5 +1,4 @@
 using System.Text;
-using LOR_DiceSystem;
 using HarmonyExtension;
 using UnityEngine;
 using UnityEngine.UI;
@@ -209,76 +208,6 @@ public static class Extension
     public static string GetAsmDirectory(this Type ty)
     {
         return Path.GetDirectoryName(ty.Assembly.Location);
-    }
-
-    /// <summary>Creates new <see cref="BattleDiceBehavior"/></summary>
-    public static BattleDiceBehavior CreateBattleDiceBehavior(
-        this BattlePlayingCardDataInUnitModel playcard,
-        DiceBehaviour behaviour,
-        int idx = -1
-    )
-    {
-        var beh = new BattleDiceBehavior()
-        {
-            card = playcard,
-            behaviourInCard = behaviour,
-            abilityList = string.IsNullOrEmpty(behaviour.Script) ?
-                new() : [AssemblyManager.Instance.CreateInstance_DiceCardAbility(behaviour.Script)],
-        };
-
-        foreach (var abi in beh.abilityList)
-        {
-            abi.behavior = beh;
-        }
-
-        beh.SetIndex(0 > idx ? playcard?.cardBehaviorQueue?.Last()?.Index ?? 0 : idx);
-
-        return beh;
-    }
-
-    /// <summary>Creates new <see cref="BattlePlayingCardDataInUnitModel"/></summary>
-    public static BattlePlayingCardDataInUnitModel CreatePlayingCard(
-        this BattleUnitModel owner,
-        DiceCardXmlInfo cardInfo,
-        BattleUnitModel? target = null,
-        int targetSlotOrder = -1,
-        int speedDiceResultValue = 0,
-        List<BattleUnitModel>? subTargets = null
-    )
-    {
-        var card = BattleDiceCardModel.CreatePlayingCard(cardInfo);
-
-        card.owner = owner;
-
-        var playcard = new BattlePlayingCardDataInUnitModel()
-        {
-            owner = owner,
-            card = card,
-            target = target,
-            targetSlotOrder = targetSlotOrder,
-            earlyTarget = target,
-            earlyTargetOrder = targetSlotOrder,
-            cardAbility = card.CreateDiceCardSelfAbilityScript(),
-            cardBehaviorQueue = new(),
-            speedDiceResultValue = speedDiceResultValue,
-            subTargets = subTargets?
-                .Filter(unit => unit != owner)
-                .Map(unit => new BattlePlayingCardDataInUnitModel.SubTarget()
-                {
-                    target = unit,
-                    targetSlotOrder = RandomUtil.Range(0, unit.speedDiceResult.Count)
-                })
-                .Collect()
-        };
-
-        playcard.cardAbility?.card = playcard;
-
-        foreach (var (i, beh) in cardInfo.DiceBehaviourList.Enumerate())
-        {
-            playcard.cardBehaviorQueue.Enqueue(playcard.CreateBattleDiceBehavior(beh, i));
-        }
-
-        return playcard;
     }
 
     extension(Faction faction)

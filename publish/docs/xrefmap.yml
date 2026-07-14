@@ -1347,6 +1347,12 @@ references:
   fullName.vb: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
   nameWithType: BattleBufExtension.TryGetReadyBuf<T>(BattleUnitModel?, out T?)
   nameWithType.vb: BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
+- uid: DeviceOfHermes.BattleCardExtension
+  name: BattleCardExtension
+  href: api/DeviceOfHermes.BattleCardExtension.html
+  commentId: T:DeviceOfHermes.BattleCardExtension
+  fullName: DeviceOfHermes.BattleCardExtension
+  nameWithType: BattleCardExtension
 - uid: DeviceOfHermes.BattleTickAction
   name: BattleTickAction
   href: api/DeviceOfHermes.BattleTickAction.html
@@ -5422,38 +5428,6 @@ references:
   fullName.vb: System.Extension.Collect(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: Extension.Collect<T>(IEnumerable<T>)
   nameWithType.vb: Extension.Collect(Of T)(IEnumerable(Of T))
-- uid: System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel,LOR_DiceSystem.DiceBehaviour,System.Int32)
-  name: CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, int)
-  href: api/System.Extension.html#System_Extension_CreateBattleDiceBehavior_BattlePlayingCardDataInUnitModel_LOR_DiceSystem_DiceBehaviour_System_Int32_
-  commentId: M:System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel,LOR_DiceSystem.DiceBehaviour,System.Int32)
-  name.vb: CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, Integer)
-  fullName: System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, LOR_DiceSystem.DiceBehaviour, int)
-  fullName.vb: System.Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, LOR_DiceSystem.DiceBehaviour, Integer)
-  nameWithType: Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, int)
-  nameWithType.vb: Extension.CreateBattleDiceBehavior(BattlePlayingCardDataInUnitModel, DiceBehaviour, Integer)
-- uid: System.Extension.CreateBattleDiceBehavior*
-  name: CreateBattleDiceBehavior
-  href: api/System.Extension.html#System_Extension_CreateBattleDiceBehavior_
-  commentId: Overload:System.Extension.CreateBattleDiceBehavior
-  isSpec: "True"
-  fullName: System.Extension.CreateBattleDiceBehavior
-  nameWithType: Extension.CreateBattleDiceBehavior
-- uid: System.Extension.CreatePlayingCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,BattleUnitModel,System.Int32,System.Int32,System.Collections.Generic.List{BattleUnitModel})
-  name: CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel?, int, int, List<BattleUnitModel>?)
-  href: api/System.Extension.html#System_Extension_CreatePlayingCard_BattleUnitModel_LOR_DiceSystem_DiceCardXmlInfo_BattleUnitModel_System_Int32_System_Int32_System_Collections_Generic_List_BattleUnitModel__
-  commentId: M:System.Extension.CreatePlayingCard(BattleUnitModel,LOR_DiceSystem.DiceCardXmlInfo,BattleUnitModel,System.Int32,System.Int32,System.Collections.Generic.List{BattleUnitModel})
-  name.vb: CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel, Integer, Integer, List(Of BattleUnitModel))
-  fullName: System.Extension.CreatePlayingCard(BattleUnitModel, LOR_DiceSystem.DiceCardXmlInfo, BattleUnitModel?, int, int, System.Collections.Generic.List<BattleUnitModel>?)
-  fullName.vb: System.Extension.CreatePlayingCard(BattleUnitModel, LOR_DiceSystem.DiceCardXmlInfo, BattleUnitModel, Integer, Integer, System.Collections.Generic.List(Of BattleUnitModel))
-  nameWithType: Extension.CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel?, int, int, List<BattleUnitModel>?)
-  nameWithType.vb: Extension.CreatePlayingCard(BattleUnitModel, DiceCardXmlInfo, BattleUnitModel, Integer, Integer, List(Of BattleUnitModel))
-- uid: System.Extension.CreatePlayingCard*
-  name: CreatePlayingCard
-  href: api/System.Extension.html#System_Extension_CreatePlayingCard_
-  commentId: Overload:System.Extension.CreatePlayingCard
-  isSpec: "True"
-  fullName: System.Extension.CreatePlayingCard
-  nameWithType: Extension.CreatePlayingCard
 - uid: System.Extension.Enumerate*
   name: Enumerate
   href: api/System.Extension.html#System_Extension_Enumerate_

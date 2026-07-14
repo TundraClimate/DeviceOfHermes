@@ -222,6 +222,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.BattleCardExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.BattleCardExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.BattleCardExtension",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.BattleCardExtension.yml\" sourcestartlinenumber=\"1\">A extension of BattleCard</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.BattleTickAction.yml",
       "output": {
         ".html": {
@@ -1311,6 +1325,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/battlebuf-extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/battlecard-extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battlecard-extension.html"
         }
       },
       "version": ""
