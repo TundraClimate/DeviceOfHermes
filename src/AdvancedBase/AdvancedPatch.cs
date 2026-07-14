@@ -43,6 +43,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchGetBreakDmgRedAll));
         Patch(typeof(PatchPlayForAuto));
         Patch(typeof(PatchOnChooseCard));
+        Patch(typeof(PatchOnWaveStart));
     }
 
     public static void Init()
@@ -889,6 +890,54 @@ internal static class AdvancedPatch
             }
 
             return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitPassiveDetail), "OnWaveStart")]
+    class PatchOnWaveStart
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+            var passiveList = typeof(BattleUnitPassiveDetail).Field("_passiveList");
+
+            matcher.MatchStartForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdfld(passiveList))
+                .Insert(
+                    CodeInstruction.Instance,
+                    CodeInstruction.Field(passiveList),
+                    CodeInstruction.Call(typeof(PatchOnWaveStart).Method("InjectBefore"))
+                )
+                .MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
+                .MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
+                .Insert(
+                    CodeInstruction.Instance.MoveLabelsFrom(matcher.Instruction),
+                    CodeInstruction.Field(passiveList),
+                    CodeInstruction.Call(typeof(PatchOnWaveStart).Method("InjectAfter"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectBefore(List<PassiveAbilityBase> _passiveList)
+        {
+            foreach (var p in _passiveList.OfType<AdvancedPassiveBase>())
+            {
+                if (p.isActiavted)
+                {
+                    p.OnWaveStartBefore();
+                }
+            }
+        }
+
+        static void InjectAfter(List<PassiveAbilityBase> _passiveList)
+        {
+            foreach (var p in _passiveList.OfType<AdvancedPassiveBase>())
+            {
+                if (p.isActiavted)
+                {
+                    p.OnWaveStartAfter();
+                }
+            }
         }
     }
 }

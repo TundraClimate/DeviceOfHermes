@@ -1034,6 +1034,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.RefList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.RefList-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.RefList<T>",
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.RefList-1.yml\" sourcestartlinenumber=\"1\">A list of element refs</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.RefListEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.RefListEnumerator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.RefListEnumerator<T>",
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.RefListEnumerator-1.yml\" sourcestartlinenumber=\"1\">A enumerator of RefList</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.RefListExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.RefListExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.RefListExtension",
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.RefListExtension.yml\" sourcestartlinenumber=\"1\">A extension of RefList</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/System.Collections.Generic.Walkdir.yml",
       "output": {
         ".html": {

@@ -26,6 +26,16 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     /// <summary>Addr number of draw cards</summary>
     public virtual int DrawCardAddr => 0;
 
+    /// <summary>Unit on wave start before</summary>
+    public virtual void OnWaveStartBefore()
+    {
+    }
+
+    /// <summary>Unit on wave start after</summary>
+    public virtual void OnWaveStartAfter()
+    {
+    }
+
     /// <summary>Unit on round start before <see cref="PassiveAbilityBase.OnRoundStart"/></summary>
     public virtual void OnRoundStartFirst()
     {

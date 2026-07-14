@@ -98,6 +98,14 @@
 
     public override int DrawCardAddr =&gt; 0;
 
+    public override void OnWaveStartBefore()
+    {
+    }
+
+    public override void OnWaveStartAfter()
+    {
+    }
+
     public override void OnRoundStartFirst()
     {
     }
@@ -178,6 +186,18 @@
 <ul>
 <li><code>num</code>: 加算する枚数です。</li>
 </ul>
+<h3 id="onwavestartbefore"><code>OnWaveStartBefore()</code></h3>
+<pre><code class="lang-cs">public override void OnWaveStartBefore()
+{
+}
+</code></pre>
+<p><code>PassiveAbilityBase</code>の<code>OnWaveStart</code>より先に実行されます。</p>
+<h3 id="onwavestartafter"><code>OnWaveStartAfter()</code></h3>
+<pre><code class="lang-cs">public override void OnWaveStartAfter()
+{
+}
+</code></pre>
+<p><code>PassiveAbilityBase</code>の<code>OnWaveStart</code>より後に実行されます。</p>
 <h3 id="onroundstartfirst"><code>OnRoundStartFirst()</code></h3>
 <pre><code class="lang-cs">public override void OnRoundStartFirst()
 {

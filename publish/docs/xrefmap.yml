@@ -482,6 +482,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast
   nameWithType: AdvancedPassiveBase.OnRoundStartLast
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter
+  name: OnWaveStartAfter()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnWaveStartAfter
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter()
+  nameWithType: AdvancedPassiveBase.OnWaveStartAfter()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter*
+  name: OnWaveStartAfter
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnWaveStartAfter_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter
+  nameWithType: AdvancedPassiveBase.OnWaveStartAfter
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartBefore
+  name: OnWaveStartBefore()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnWaveStartBefore
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartBefore
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartBefore()
+  nameWithType: AdvancedPassiveBase.OnWaveStartBefore()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartBefore*
+  name: OnWaveStartBefore
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnWaveStartBefore_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartBefore
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartBefore
+  nameWithType: AdvancedPassiveBase.OnWaveStartBefore
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
   name: AdvancedUnitBuf
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html
@@ -1450,6 +1476,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CommonCoroutine.CanvasGroupFadeout
   nameWithType: CommonCoroutine.CanvasGroupFadeout
+- uid: DeviceOfHermes.CommonCoroutine.EarthQuake(System.Single,System.Single,System.Single)
+  name: EarthQuake(float, float, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_EarthQuake_System_Single_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.EarthQuake(System.Single,System.Single,System.Single)
+  name.vb: EarthQuake(Single, Single, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.EarthQuake(float, float, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.EarthQuake(Single, Single, Single)
+  nameWithType: CommonCoroutine.EarthQuake(float, float, float)
+  nameWithType.vb: CommonCoroutine.EarthQuake(Single, Single, Single)
+- uid: DeviceOfHermes.CommonCoroutine.EarthQuake*
+  name: EarthQuake
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_EarthQuake_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.EarthQuake
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.EarthQuake
+  nameWithType: CommonCoroutine.EarthQuake
 - uid: DeviceOfHermes.CommonCoroutine.ImageFadein(UnityEngine.UI.Image,System.Single)
   name: ImageFadein(Image, float)
   href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_ImageFadein_UnityEngine_UI_Image_System_Single_
@@ -5172,6 +5214,154 @@ references:
   fullName.vb: System.Collections.Generic.Peekable(Of T).Peek
   nameWithType: Peekable<T>.Peek
   nameWithType.vb: Peekable(Of T).Peek
+- uid: System.Collections.Generic.RefListEnumerator`1
+  name: RefListEnumerator<T>
+  href: api/System.Collections.Generic.RefListEnumerator-1.html
+  commentId: T:System.Collections.Generic.RefListEnumerator`1
+  name.vb: RefListEnumerator(Of T)
+  fullName: System.Collections.Generic.RefListEnumerator<T>
+  fullName.vb: System.Collections.Generic.RefListEnumerator(Of T)
+  nameWithType: RefListEnumerator<T>
+  nameWithType.vb: RefListEnumerator(Of T)
+- uid: System.Collections.Generic.RefListEnumerator`1.#ctor(`0[],System.Int32)
+  name: RefListEnumerator(T[], int)
+  href: api/System.Collections.Generic.RefListEnumerator-1.html#System_Collections_Generic_RefListEnumerator_1__ctor__0___System_Int32_
+  commentId: M:System.Collections.Generic.RefListEnumerator`1.#ctor(`0[],System.Int32)
+  name.vb: New(T(), Integer)
+  fullName: System.Collections.Generic.RefListEnumerator<T>.RefListEnumerator(T[], int)
+  fullName.vb: System.Collections.Generic.RefListEnumerator(Of T).New(T(), Integer)
+  nameWithType: RefListEnumerator<T>.RefListEnumerator(T[], int)
+  nameWithType.vb: RefListEnumerator(Of T).New(T(), Integer)
+- uid: System.Collections.Generic.RefListEnumerator`1.#ctor*
+  name: RefListEnumerator
+  href: api/System.Collections.Generic.RefListEnumerator-1.html#System_Collections_Generic_RefListEnumerator_1__ctor_
+  commentId: Overload:System.Collections.Generic.RefListEnumerator`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Collections.Generic.RefListEnumerator<T>.RefListEnumerator
+  fullName.vb: System.Collections.Generic.RefListEnumerator(Of T).New
+  nameWithType: RefListEnumerator<T>.RefListEnumerator
+  nameWithType.vb: RefListEnumerator(Of T).New
+- uid: System.Collections.Generic.RefListEnumerator`1.Current
+  name: Current
+  href: api/System.Collections.Generic.RefListEnumerator-1.html#System_Collections_Generic_RefListEnumerator_1_Current
+  commentId: P:System.Collections.Generic.RefListEnumerator`1.Current
+  fullName: System.Collections.Generic.RefListEnumerator<T>.Current
+  fullName.vb: System.Collections.Generic.RefListEnumerator(Of T).Current
+  nameWithType: RefListEnumerator<T>.Current
+  nameWithType.vb: RefListEnumerator(Of T).Current
+- uid: System.Collections.Generic.RefListEnumerator`1.Current*
+  name: Current
+  href: api/System.Collections.Generic.RefListEnumerator-1.html#System_Collections_Generic_RefListEnumerator_1_Current_
+  commentId: Overload:System.Collections.Generic.RefListEnumerator`1.Current
+  isSpec: "True"
+  fullName: System.Collections.Generic.RefListEnumerator<T>.Current
+  fullName.vb: System.Collections.Generic.RefListEnumerator(Of T).Current
+  nameWithType: RefListEnumerator<T>.Current
+  nameWithType.vb: RefListEnumerator(Of T).Current
+- uid: System.Collections.Generic.RefListEnumerator`1.MoveNext
+  name: MoveNext()
+  href: api/System.Collections.Generic.RefListEnumerator-1.html#System_Collections_Generic_RefListEnumerator_1_MoveNext
+  commentId: M:System.Collections.Generic.RefListEnumerator`1.MoveNext
+  fullName: System.Collections.Generic.RefListEnumerator<T>.MoveNext()
+  fullName.vb: System.Collections.Generic.RefListEnumerator(Of T).MoveNext()
+  nameWithType: RefListEnumerator<T>.MoveNext()
+  nameWithType.vb: RefListEnumerator(Of T).MoveNext()
+- uid: System.Collections.Generic.RefListEnumerator`1.MoveNext*
+  name: MoveNext
+  href: api/System.Collections.Generic.RefListEnumerator-1.html#System_Collections_Generic_RefListEnumerator_1_MoveNext_
+  commentId: Overload:System.Collections.Generic.RefListEnumerator`1.MoveNext
+  isSpec: "True"
+  fullName: System.Collections.Generic.RefListEnumerator<T>.MoveNext
+  fullName.vb: System.Collections.Generic.RefListEnumerator(Of T).MoveNext
+  nameWithType: RefListEnumerator<T>.MoveNext
+  nameWithType.vb: RefListEnumerator(Of T).MoveNext
+- uid: System.Collections.Generic.RefListExtension
+  name: RefListExtension
+  href: api/System.Collections.Generic.RefListExtension.html
+  commentId: T:System.Collections.Generic.RefListExtension
+  fullName: System.Collections.Generic.RefListExtension
+  nameWithType: RefListExtension
+- uid: System.Collections.Generic.RefListExtension.AsRef*
+  name: AsRef
+  href: api/System.Collections.Generic.RefListExtension.html#System_Collections_Generic_RefListExtension_AsRef_
+  commentId: Overload:System.Collections.Generic.RefListExtension.AsRef
+  isSpec: "True"
+  fullName: System.Collections.Generic.RefListExtension.AsRef
+  nameWithType: RefListExtension.AsRef
+- uid: System.Collections.Generic.RefListExtension.AsRef``1(System.Collections.Generic.List{``0})
+  name: AsRef<T>(List<T>)
+  href: api/System.Collections.Generic.RefListExtension.html#System_Collections_Generic_RefListExtension_AsRef__1_System_Collections_Generic_List___0__
+  commentId: M:System.Collections.Generic.RefListExtension.AsRef``1(System.Collections.Generic.List{``0})
+  name.vb: AsRef(Of T)(List(Of T))
+  fullName: System.Collections.Generic.RefListExtension.AsRef<T>(System.Collections.Generic.List<T>)
+  fullName.vb: System.Collections.Generic.RefListExtension.AsRef(Of T)(System.Collections.Generic.List(Of T))
+  nameWithType: RefListExtension.AsRef<T>(List<T>)
+  nameWithType.vb: RefListExtension.AsRef(Of T)(List(Of T))
+- uid: System.Collections.Generic.RefList`1
+  name: RefList<T>
+  href: api/System.Collections.Generic.RefList-1.html
+  commentId: T:System.Collections.Generic.RefList`1
+  name.vb: RefList(Of T)
+  fullName: System.Collections.Generic.RefList<T>
+  fullName.vb: System.Collections.Generic.RefList(Of T)
+  nameWithType: RefList<T>
+  nameWithType.vb: RefList(Of T)
+- uid: System.Collections.Generic.RefList`1.#ctor(System.Collections.Generic.List{`0})
+  name: RefList(List<T>)
+  href: api/System.Collections.Generic.RefList-1.html#System_Collections_Generic_RefList_1__ctor_System_Collections_Generic_List__0__
+  commentId: M:System.Collections.Generic.RefList`1.#ctor(System.Collections.Generic.List{`0})
+  name.vb: New(List(Of T))
+  fullName: System.Collections.Generic.RefList<T>.RefList(System.Collections.Generic.List<T>)
+  fullName.vb: System.Collections.Generic.RefList(Of T).New(System.Collections.Generic.List(Of T))
+  nameWithType: RefList<T>.RefList(List<T>)
+  nameWithType.vb: RefList(Of T).New(List(Of T))
+- uid: System.Collections.Generic.RefList`1.#ctor*
+  name: RefList
+  href: api/System.Collections.Generic.RefList-1.html#System_Collections_Generic_RefList_1__ctor_
+  commentId: Overload:System.Collections.Generic.RefList`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Collections.Generic.RefList<T>.RefList
+  fullName.vb: System.Collections.Generic.RefList(Of T).New
+  nameWithType: RefList<T>.RefList
+  nameWithType.vb: RefList(Of T).New
+- uid: System.Collections.Generic.RefList`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/System.Collections.Generic.RefList-1.html#System_Collections_Generic_RefList_1_GetEnumerator
+  commentId: M:System.Collections.Generic.RefList`1.GetEnumerator
+  fullName: System.Collections.Generic.RefList<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.RefList(Of T).GetEnumerator()
+  nameWithType: RefList<T>.GetEnumerator()
+  nameWithType.vb: RefList(Of T).GetEnumerator()
+- uid: System.Collections.Generic.RefList`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/System.Collections.Generic.RefList-1.html#System_Collections_Generic_RefList_1_GetEnumerator_
+  commentId: Overload:System.Collections.Generic.RefList`1.GetEnumerator
+  isSpec: "True"
+  fullName: System.Collections.Generic.RefList<T>.GetEnumerator
+  fullName.vb: System.Collections.Generic.RefList(Of T).GetEnumerator
+  nameWithType: RefList<T>.GetEnumerator
+  nameWithType.vb: RefList(Of T).GetEnumerator
+- uid: System.Collections.Generic.RefList`1.Item(System.Int32)
+  name: this[int]
+  href: api/System.Collections.Generic.RefList-1.html#System_Collections_Generic_RefList_1_Item_System_Int32_
+  commentId: P:System.Collections.Generic.RefList`1.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: System.Collections.Generic.RefList<T>.this[int]
+  fullName.vb: System.Collections.Generic.RefList(Of T).this[](Integer)
+  nameWithType: RefList<T>.this[int]
+  nameWithType.vb: RefList(Of T).this[](Integer)
+- uid: System.Collections.Generic.RefList`1.Item*
+  name: this
+  href: api/System.Collections.Generic.RefList-1.html#System_Collections_Generic_RefList_1_Item_
+  commentId: Overload:System.Collections.Generic.RefList`1.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: System.Collections.Generic.RefList<T>.this
+  fullName.vb: System.Collections.Generic.RefList(Of T).this[]
+  nameWithType: RefList<T>.this
+  nameWithType.vb: RefList(Of T).this[]
 - uid: System.Collections.Generic.Walkdir
   name: Walkdir
   href: api/System.Collections.Generic.Walkdir.html
