@@ -348,6 +348,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.CustomDice.EqualDice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.CustomDice.EqualDice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.CustomDice.EqualDice",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.CustomDice.EqualDice.yml\" sourcestartlinenumber=\"1\">A dice of equal</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.CustomDice.RevengeDice.yml",
       "output": {
         ".html": {
@@ -1433,6 +1447,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/env-container.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/equal-dice.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/equal-dice.html"
         }
       },
       "version": ""

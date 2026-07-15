@@ -2,6 +2,7 @@ using System.Reflection.Emit;
 using LOR_DiceSystem;
 using HarmonyLib;
 using HarmonyExtension;
+using UnityEngine;
 
 namespace DeviceOfHermes.CustomDice;
 
@@ -23,6 +24,8 @@ internal static class CustomDicePatch
         Patch(typeof(PatchOnEndAction));
         Patch(typeof(PatchSetBehaviourResult));
         Patch(typeof(PatchOnDiceRollen));
+        Patch(typeof(PatchDiceMin));
+        Patch(typeof(PatchDiceMax));
 
         DiceUIChanger.Init();
     }
@@ -616,6 +619,64 @@ internal static class CustomDicePatch
 
                 additFields._uiBehaviorDict.Remove(result.behaviourIdx);
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "GetDiceMin")]
+    class PatchDiceMin
+    {
+        [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+        static int GetDiceMin(BattleDiceBehavior __instance) => throw new NotImplementedException();
+
+        static Exception Finalizer(Exception __exception, BattleDiceBehavior __instance, ref int __result)
+        {
+            var targetDice = __instance.TargetDice;
+
+            if (targetDice is null)
+            {
+                return __exception;
+            }
+
+            if (__instance.abilityList.Exists(abi => abi is EqualDice) || targetDice.abilityList.Exists(abi => abi is EqualDice))
+            {
+                float selfMin = GetDiceMin(__instance);
+                float enemMin = GetDiceMin(targetDice);
+
+                var num = Mathf.CeilToInt((selfMin + enemMin) / 2);
+
+                __result = num;
+            }
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "GetDiceMax")]
+    class PatchDiceMax
+    {
+        [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+        static int GetDiceMax(BattleDiceBehavior __instance) => throw new NotImplementedException();
+
+        static Exception Finalizer(Exception __exception, BattleDiceBehavior __instance, ref int __result)
+        {
+            var targetDice = __instance.TargetDice;
+
+            if (targetDice is null)
+            {
+                return __exception;
+            }
+
+            if (__instance.abilityList.Exists(abi => abi is EqualDice) || targetDice.abilityList.Exists(abi => abi is EqualDice))
+            {
+                float selfMin = GetDiceMax(__instance);
+                float enemMin = GetDiceMax(targetDice);
+
+                var num = Mathf.CeilToInt((selfMin + enemMin) / 2);
+
+                __result = num;
+            }
+
+            return __exception;
         }
     }
 

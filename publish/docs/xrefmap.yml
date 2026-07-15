@@ -1598,6 +1598,12 @@ references:
   commentId: N:DeviceOfHermes.CustomDice
   fullName: DeviceOfHermes.CustomDice
   nameWithType: DeviceOfHermes.CustomDice
+- uid: DeviceOfHermes.CustomDice.EqualDice
+  name: EqualDice
+  href: api/DeviceOfHermes.CustomDice.EqualDice.html
+  commentId: T:DeviceOfHermes.CustomDice.EqualDice
+  fullName: DeviceOfHermes.CustomDice.EqualDice
+  nameWithType: EqualDice
 - uid: DeviceOfHermes.CustomDice.RevengeDice
   name: RevengeDice
   href: api/DeviceOfHermes.CustomDice.RevengeDice.html
@@ -2325,6 +2331,66 @@ references:
   commentId: T:DeviceOfHermes.HermesConstants
   fullName: DeviceOfHermes.HermesConstants
   nameWithType: HermesConstants
+- uid: DeviceOfHermes.HermesConstants.EqualEvasion
+  name: EqualEvasion
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualEvasion
+  commentId: F:DeviceOfHermes.HermesConstants.EqualEvasion
+  fullName: DeviceOfHermes.HermesConstants.EqualEvasion
+  nameWithType: HermesConstants.EqualEvasion
+- uid: DeviceOfHermes.HermesConstants.EqualEvasionBeh
+  name: EqualEvasionBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualEvasionBeh
+  commentId: F:DeviceOfHermes.HermesConstants.EqualEvasionBeh
+  fullName: DeviceOfHermes.HermesConstants.EqualEvasionBeh
+  nameWithType: HermesConstants.EqualEvasionBeh
+- uid: DeviceOfHermes.HermesConstants.EqualGuard
+  name: EqualGuard
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualGuard
+  commentId: F:DeviceOfHermes.HermesConstants.EqualGuard
+  fullName: DeviceOfHermes.HermesConstants.EqualGuard
+  nameWithType: HermesConstants.EqualGuard
+- uid: DeviceOfHermes.HermesConstants.EqualGuardBeh
+  name: EqualGuardBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualGuardBeh
+  commentId: F:DeviceOfHermes.HermesConstants.EqualGuardBeh
+  fullName: DeviceOfHermes.HermesConstants.EqualGuardBeh
+  nameWithType: HermesConstants.EqualGuardBeh
+- uid: DeviceOfHermes.HermesConstants.EqualHit
+  name: EqualHit
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualHit
+  commentId: F:DeviceOfHermes.HermesConstants.EqualHit
+  fullName: DeviceOfHermes.HermesConstants.EqualHit
+  nameWithType: HermesConstants.EqualHit
+- uid: DeviceOfHermes.HermesConstants.EqualHitBeh
+  name: EqualHitBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualHitBeh
+  commentId: F:DeviceOfHermes.HermesConstants.EqualHitBeh
+  fullName: DeviceOfHermes.HermesConstants.EqualHitBeh
+  nameWithType: HermesConstants.EqualHitBeh
+- uid: DeviceOfHermes.HermesConstants.EqualPenetrate
+  name: EqualPenetrate
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualPenetrate
+  commentId: F:DeviceOfHermes.HermesConstants.EqualPenetrate
+  fullName: DeviceOfHermes.HermesConstants.EqualPenetrate
+  nameWithType: HermesConstants.EqualPenetrate
+- uid: DeviceOfHermes.HermesConstants.EqualPenetrateBeh
+  name: EqualPenetrateBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualPenetrateBeh
+  commentId: F:DeviceOfHermes.HermesConstants.EqualPenetrateBeh
+  fullName: DeviceOfHermes.HermesConstants.EqualPenetrateBeh
+  nameWithType: HermesConstants.EqualPenetrateBeh
+- uid: DeviceOfHermes.HermesConstants.EqualSlash
+  name: EqualSlash
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualSlash
+  commentId: F:DeviceOfHermes.HermesConstants.EqualSlash
+  fullName: DeviceOfHermes.HermesConstants.EqualSlash
+  nameWithType: HermesConstants.EqualSlash
+- uid: DeviceOfHermes.HermesConstants.EqualSlashBeh
+  name: EqualSlashBeh
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualSlashBeh
+  commentId: F:DeviceOfHermes.HermesConstants.EqualSlashBeh
+  fullName: DeviceOfHermes.HermesConstants.EqualSlashBeh
+  nameWithType: HermesConstants.EqualSlashBeh
 - uid: DeviceOfHermes.HermesConstants.RevengeDiceHit
   name: RevengeDiceHit
   href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_RevengeDiceHit
