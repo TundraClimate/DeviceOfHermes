@@ -709,6 +709,64 @@ internal static class CustomDicePatch
             chsv._Saturation = 1.5f;
             chsv._ValueBrightness = 1f;
         }
+        else if (ability is EqualDice)
+        {
+            switch (beh.Detail)
+            {
+                case BehaviourDetail.Slash:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualSlashBeh;
+
+                    break;
+                case BehaviourDetail.Penetrate:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualPenetrateBeh;
+
+                    break;
+                case BehaviourDetail.Hit:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualHitBeh;
+
+                    break;
+
+                case BehaviourDetail.Guard:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualGuardBeh;
+
+                    break;
+
+                case BehaviourDetail.Evasion:
+                    __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualEvasionBeh;
+
+                    break;
+
+                default:
+                    return;
+            }
+
+            var dhsv = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (dhsv is null)
+            {
+                dhsv = __instance.img_diceFace.gameObject.AddComponent<_2dxFX_HSV>();
+            }
+
+            if (beh.Type is BehaviourType.Atk or BehaviourType.Standby)
+            {
+                dhsv._HueShift = 140f;
+                dhsv._Saturation = 5f;
+                dhsv._ValueBrightness = 1f;
+            }
+            else
+            {
+                dhsv._HueShift = -70;
+                dhsv._Saturation = 5f;
+                dhsv._ValueBrightness = 1f;
+            }
+
+            var dc = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
+
+            if (dc is not null)
+            {
+                UnityEngine.Object.Destroy(dc);
+            }
+        }
         else
         {
             var df = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();

@@ -29,6 +29,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
         RevengeDice.Init();
         UnbreakableDice.Init();
         SecondlyDice.Init();
+        EqualDice.Init();
 
         return "";
     }
