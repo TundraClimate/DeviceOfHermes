@@ -23,6 +23,16 @@ public static class HermesConstants
         SecondlyHit = Artwork.CreateSprite(LoadBytes("secondly_hit.png"), pixPerUnit: 100f)!;
         SecondlyGuard = Artwork.CreateSprite(LoadBytes("secondly_guard.png"), pixPerUnit: 100f)!;
         SecondlyEvasion = Artwork.CreateSprite(LoadBytes("secondly_evade.png"), pixPerUnit: 100f)!;
+        EqualSlash = Artwork.CreateSprite(LoadBytes("equal_slash.png"), pixPerUnit: 100f)!;
+        EqualPenetrate = Artwork.CreateSprite(LoadBytes("equal_penetrate.png"), pixPerUnit: 100f)!;
+        EqualHit = Artwork.CreateSprite(LoadBytes("equal_hit.png"), pixPerUnit: 100f)!;
+        EqualGuard = Artwork.CreateSprite(LoadBytes("equal_guard.png"), pixPerUnit: 100f)!;
+        EqualEvasion = Artwork.CreateSprite(LoadBytes("equal_evade.png"), pixPerUnit: 100f)!;
+        EqualSlashBeh = Artwork.CreateSprite(LoadBytes("equal_slash_beh.png"), pixPerUnit: 100f)!;
+        EqualPenetrateBeh = Artwork.CreateSprite(LoadBytes("equal_penetrate_beh.png"), pixPerUnit: 100f)!;
+        EqualHitBeh = Artwork.CreateSprite(LoadBytes("equal_hit_beh.png"), pixPerUnit: 100f)!;
+        EqualGuardBeh = Artwork.CreateSprite(LoadBytes("equal_guard_beh.png"), pixPerUnit: 100f)!;
+        EqualEvasionBeh = Artwork.CreateSprite(LoadBytes("equal_evade_beh.png"), pixPerUnit: 100f)!;
     }
 
     private static byte[] LoadBytes(string name)
@@ -81,4 +91,34 @@ public static class HermesConstants
 
     /// A sprite used by <see cref="DeviceOfHermes.CustomDice.SecondlyDice"/>
     public static Sprite SecondlyEvasion;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualSlash;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualPenetrate;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualHit;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualGuard;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualEvasion;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualSlashBeh;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualPenetrateBeh;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualHitBeh;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualGuardBeh;
+
+    /// A sprite used by <see cref="DeviceOfHermes.CustomDice.EqualDice"/>
+    public static Sprite EqualEvasionBeh;
 }
