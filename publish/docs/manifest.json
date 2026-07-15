@@ -194,6 +194,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier.yml\" sourcestartlinenumber=\"1\">A delegate of KwdBufModifier</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedDiceStatBonus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedDiceStatBonus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedDiceStatBonus",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedDiceStatBonus.yml\" sourcestartlinenumber=\"1\">An advanced dice stat bonus</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.AdvancedTakeDamage.yml",
       "output": {
         ".html": {
@@ -1235,6 +1263,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/advanced-dicebase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-dicestatbonus.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-dicestatbonus.html"
         }
       },
       "version": ""

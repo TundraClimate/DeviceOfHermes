@@ -1109,6 +1109,36 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Shimmering
   nameWithType: ShimPassiveBase.Shimmering
+- uid: DeviceOfHermes.AdvancedDiceStatBonus
+  name: AdvancedDiceStatBonus
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html
+  commentId: T:DeviceOfHermes.AdvancedDiceStatBonus
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus
+  nameWithType: AdvancedDiceStatBonus
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
+  name: AdvancedDiceStatBonus.KwdBufModifier
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier.html
+  commentId: T:DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
+  nameWithType: AdvancedDiceStatBonus.KwdBufModifier
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.kwdBufModifier
+  name: kwdBufModifier
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_kwdBufModifier
+  commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.kwdBufModifier
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.kwdBufModifier
+  nameWithType: AdvancedDiceStatBonus.kwdBufModifier
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.powerMultiplier
+  name: powerMultiplier
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_powerMultiplier
+  commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.powerMultiplier
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.powerMultiplier
+  nameWithType: AdvancedDiceStatBonus.powerMultiplier
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.powerRate
+  name: powerRate
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_powerRate
+  commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.powerRate
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.powerRate
+  nameWithType: AdvancedDiceStatBonus.powerRate
 - uid: DeviceOfHermes.AdvancedTakeDamage
   name: AdvancedTakeDamage
   href: api/DeviceOfHermes.AdvancedTakeDamage.html
