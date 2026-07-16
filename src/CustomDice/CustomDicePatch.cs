@@ -218,7 +218,10 @@ internal static class CustomDicePatch
                     RevengeDice.AddRevengeCard(owner, xmlInfo, revenges);
                 }
 
-                SecondlyDice.AddSecondlyDice(card, secondlies);
+                if (secondlies.Count != 0)
+                {
+                    SecondlyDice.AddSecondlyDice(card, secondlies);
+                }
             }
 
             foreach (var unit in BattleObjectManager.instance.GetAliveList())
