@@ -720,143 +720,72 @@ internal static class CustomDicePatch
         static void ChangeDiceUI(BattleSimpleActionUI_Dice __instance, DiceBehaviour beh)
         {
             var ability = AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script);
+            var face = __instance.img_diceFace;
+            var center = __instance.imgDetailIcon_Center;
+
+            face.gameObject.GetComponent<_2dxFX_HSV>()?.Let(c => UnityObject.Destroy(c));
+            center.gameObject.GetComponent<_2dxFX_HSV>()?.Let(c => UnityObject.Destroy(c));
 
             if (ability is UnbreakableDice)
             {
-                switch (beh.Detail)
+                center.sprite = beh.Detail switch
                 {
-                    case BehaviourDetail.Slash:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.UnbreakableSlashBeh;
+                    BehaviourDetail.Slash => HermesConstants.UnbreakableSlashBeh,
+                    BehaviourDetail.Penetrate => HermesConstants.UnbreakablePenetrateBeh,
+                    BehaviourDetail.Hit => HermesConstants.UnbreakableHitBeh,
+                    _ => center.sprite,
+                };
 
-                        break;
-                    case BehaviourDetail.Penetrate:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.UnbreakablePenetrateBeh;
-
-                        break;
-                    case BehaviourDetail.Hit:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.UnbreakableHitBeh;
-
-                        break;
-
-                    default:
-                        return;
-                }
-
-                var dhsv = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (dhsv is null)
+                face.gameObject.AddComponent<_2dxFX_HSV>().Also(c =>
                 {
-                    dhsv = __instance.img_diceFace.gameObject.AddComponent<_2dxFX_HSV>();
-                }
-
-                dhsv._HueShift = 0f;
-                dhsv._Saturation = 1.55f;
-                dhsv._ValueBrightness = 0.60f;
-
-                var dc = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (dc is not null)
-                {
-                    UnityEngine.Object.Destroy(dc);
-                }
+                    c._HueShift = 0f;
+                    c._Saturation = 1.55f;
+                    c._ValueBrightness = 0.60f;
+                });
             }
             else if (ability is RevengeDice)
             {
-                var dhsv = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (dhsv is null)
+                face.gameObject.AddComponent<_2dxFX_HSV>().Also(c =>
                 {
-                    dhsv = __instance.img_diceFace.gameObject.AddComponent<_2dxFX_HSV>();
-                }
+                    c._HueShift = 90f;
+                    c._Saturation = 1.5f;
+                    c._ValueBrightness = 1f;
+                });
 
-                dhsv._HueShift = 90f;
-                dhsv._Saturation = 1.5f;
-                dhsv._ValueBrightness = 1f;
-
-                var chsv = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (chsv is null)
+                center.gameObject.AddComponent<_2dxFX_HSV>().Also(c =>
                 {
-                    chsv = __instance.imgDetailIcon_Center.gameObject.AddComponent<_2dxFX_HSV>();
-                }
-
-                chsv._HueShift = 90f;
-                chsv._Saturation = 1.5f;
-                chsv._ValueBrightness = 1f;
+                    c._HueShift = 90f;
+                    c._Saturation = 1.5f;
+                    c._ValueBrightness = 1f;
+                });
             }
             else if (ability is EqualDice)
             {
-                switch (beh.Detail)
+                center.sprite = beh.Detail switch
                 {
-                    case BehaviourDetail.Slash:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualSlashBeh;
+                    BehaviourDetail.Slash => HermesConstants.EqualSlashBeh,
+                    BehaviourDetail.Penetrate => HermesConstants.EqualPenetrateBeh,
+                    BehaviourDetail.Hit => HermesConstants.EqualHitBeh,
+                    BehaviourDetail.Guard => HermesConstants.EqualGuardBeh,
+                    BehaviourDetail.Evasion => HermesConstants.EqualEvasionBeh,
+                    _ => center.sprite,
+                };
 
-                        break;
-                    case BehaviourDetail.Penetrate:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualPenetrateBeh;
-
-                        break;
-                    case BehaviourDetail.Hit:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualHitBeh;
-
-                        break;
-
-                    case BehaviourDetail.Guard:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualGuardBeh;
-
-                        break;
-
-                    case BehaviourDetail.Evasion:
-                        __instance.imgDetailIcon_Center.sprite = HermesConstants.EqualEvasionBeh;
-
-                        break;
-
-                    default:
-                        return;
-                }
-
-                var dhsv = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (dhsv is null)
+                face.gameObject.AddComponent<_2dxFX_HSV>().Also(c =>
                 {
-                    dhsv = __instance.img_diceFace.gameObject.AddComponent<_2dxFX_HSV>();
-                }
-
-                if (beh.Type is BehaviourType.Atk or BehaviourType.Standby)
-                {
-                    dhsv._HueShift = 140f;
-                    dhsv._Saturation = 5f;
-                    dhsv._ValueBrightness = 1f;
-                }
-                else
-                {
-                    dhsv._HueShift = -70;
-                    dhsv._Saturation = 5f;
-                    dhsv._ValueBrightness = 1f;
-                }
-
-                var dc = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (dc is not null)
-                {
-                    UnityEngine.Object.Destroy(dc);
-                }
-            }
-            else
-            {
-                var df = __instance.img_diceFace.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (df is not null)
-                {
-                    UnityEngine.Object.Destroy(df);
-                }
-
-                var dc = __instance.imgDetailIcon_Center.gameObject.GetComponent<_2dxFX_HSV>();
-
-                if (dc is not null)
-                {
-                    UnityEngine.Object.Destroy(dc);
-                }
+                    if (beh.Type is BehaviourType.Atk or BehaviourType.Standby)
+                    {
+                        c._HueShift = 140f;
+                        c._Saturation = 5f;
+                        c._ValueBrightness = 1f;
+                    }
+                    else
+                    {
+                        c._HueShift = -70;
+                        c._Saturation = 5f;
+                        c._ValueBrightness = 1f;
+                    }
+                });
             }
         }
     }
