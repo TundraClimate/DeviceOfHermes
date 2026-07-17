@@ -514,6 +514,19 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
   nameWithType: AdvancedUnitBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction(BattleUnitModel)
+  name: BeforeTakeOneSideAction(BattleUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeTakeOneSideAction_BattleUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction(BattleUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction(BattleUnitModel)
+  nameWithType: AdvancedUnitBuf.BeforeTakeOneSideAction(BattleUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction*
+  name: BeforeTakeOneSideAction
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeTakeOneSideAction_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction
+  nameWithType: AdvancedUnitBuf.BeforeTakeOneSideAction
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType
   name: AdvancedUnitBuf.ClickType
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.ClickType.html

@@ -98,6 +98,12 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>On unit take oneside action</summary>
+    public virtual BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleUnitModel attacker)
+    {
+        return null;
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

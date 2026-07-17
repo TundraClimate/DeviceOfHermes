@@ -140,6 +140,11 @@
     public override void OnClick(ClickType ty)
     {
     }
+
+    public override BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleUnitModel actor)
+    {
+        return null;
+    }
 }
 </code></pre>
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
@@ -246,6 +251,17 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <li><code>dmg</code>: 元のダメージ量です。</li>
 <li><code>dmgType</code>: ダメージの種類です。</li>
 <li><code>attacker</code>: 攻撃者です。</li>
+</ul>
+<h3 id="beforetakeonesideactionbattleunitmodel"><code>BeforeTakeOneSideAction(BattleUnitModel)</code></h3>
+<pre><code class="lang-cs">public override BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleUnitModel attacker)
+{
+    return card;
+}
+</code></pre>
+<p>一方攻撃を受ける前に実行されます。<br>
+null以外を返した場合、返したページで代わりにマッチをします。</p>
+<ul>
+<li><code>attacker</code>: 一方攻撃をしている相手です。</li>
 </ul>
 
 </article>

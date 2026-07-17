@@ -17,6 +17,7 @@ internal static class AdvancedPatch
     {
         Patch(typeof(PatchTargetUI));
         Patch(typeof(PatchOnStartResolve));
+        Patch(typeof(PatchOnStartAction));
         Patch(typeof(PatchOnDynamicParrying));
         Patch(typeof(PatchOnChangeTarget));
         Patch(typeof(PatchCanDiscard));
@@ -122,6 +123,46 @@ internal static class AdvancedPatch
                     card?.targetSlotOrder = -1;
                 }
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(StageController), "StartAction")]
+    class PatchOnStartAction
+    {
+        static bool Prefix(StageController __instance, BattlePlayingCardDataInUnitModel card)
+        {
+            var bufs = card?.target?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
+
+            if (bufs is not null)
+            {
+                BattlePlayingCardDataInUnitModel? useCard = null;
+
+                foreach (var adv in bufs)
+                {
+                    var res = adv.BeforeTakeOneSideAction(card!.owner);
+
+                    if (useCard is null)
+                    {
+                        useCard = res;
+                    }
+                }
+
+                if (useCard is not null)
+                {
+                    if (useCard.owner.faction == Faction.Player)
+                    {
+                        __instance.StartParryingNoPatch(card!, useCard);
+                    }
+                    else
+                    {
+                        __instance.StartParryingNoPatch(useCard, card!);
+                    }
+
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 
