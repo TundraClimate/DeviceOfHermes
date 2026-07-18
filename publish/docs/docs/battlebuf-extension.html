@@ -121,6 +121,9 @@ owner.AddBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 
 owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2, () =&gt; new BattleUnitBuf_MyUnitBuf(owner));
 owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
+
+buf.UpdateBufIcon();
+owner.UpdateBufIcons();
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="getbuft"><code>GetBuf&lt;T&gt;()</code></h3>
@@ -252,6 +255,20 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 <li><code>owner</code>: 取得対象です。</li>
 <li><code>num</code>: 追加するスタック数です。</li>
 <li><code>T</code>: 取得対象のバフ型です。<code>BattleUnitBuf</code>である必要があります。</li>
+</ul>
+<h3 id="updatebuficon"><code>UpdateBufIcon()</code></h3>
+<pre><code class="lang-cs">buf.UpdateBufIcon();
+</code></pre>
+<p>表示されているバフアイコンを更新します。</p>
+<ul>
+<li><code>buf</code>: 対象の<code>BattleUnitBuf</code>です。</li>
+</ul>
+<h3 id="updatebuficons"><code>UpdateBufIcons()</code></h3>
+<pre><code class="lang-cs">owner.UpdateBufIcons();
+</code></pre>
+<p>表示されている全てのバフアイコンを更新します。</p>
+<ul>
+<li><code>owner</code>: 更新対象のユニットです。</li>
 </ul>
 
 </article>

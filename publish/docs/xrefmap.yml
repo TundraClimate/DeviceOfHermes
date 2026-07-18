@@ -1390,6 +1390,32 @@ references:
   fullName.vb: DeviceOfHermes.BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
   nameWithType: BattleBufExtension.TryGetReadyBuf<T>(BattleUnitModel?, out T?)
   nameWithType.vb: BattleBufExtension.TryGetReadyBuf(Of T)(BattleUnitModel, T)
+- uid: DeviceOfHermes.BattleBufExtension.UpdateBufIcon(BattleUnitBuf)
+  name: UpdateBufIcon(BattleUnitBuf)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_UpdateBufIcon_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.BattleBufExtension.UpdateBufIcon(BattleUnitBuf)
+  fullName: DeviceOfHermes.BattleBufExtension.UpdateBufIcon(BattleUnitBuf)
+  nameWithType: BattleBufExtension.UpdateBufIcon(BattleUnitBuf)
+- uid: DeviceOfHermes.BattleBufExtension.UpdateBufIcon*
+  name: UpdateBufIcon
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_UpdateBufIcon_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.UpdateBufIcon
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.UpdateBufIcon
+  nameWithType: BattleBufExtension.UpdateBufIcon
+- uid: DeviceOfHermes.BattleBufExtension.UpdateBufIcons(BattleUnitModel)
+  name: UpdateBufIcons(BattleUnitModel)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_UpdateBufIcons_BattleUnitModel_
+  commentId: M:DeviceOfHermes.BattleBufExtension.UpdateBufIcons(BattleUnitModel)
+  fullName: DeviceOfHermes.BattleBufExtension.UpdateBufIcons(BattleUnitModel)
+  nameWithType: BattleBufExtension.UpdateBufIcons(BattleUnitModel)
+- uid: DeviceOfHermes.BattleBufExtension.UpdateBufIcons*
+  name: UpdateBufIcons
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_UpdateBufIcons_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.UpdateBufIcons
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.UpdateBufIcons
+  nameWithType: BattleBufExtension.UpdateBufIcons
 - uid: DeviceOfHermes.BattleCardExtension
   name: BattleCardExtension
   href: api/DeviceOfHermes.BattleCardExtension.html

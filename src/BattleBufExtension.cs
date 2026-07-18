@@ -1,4 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
+using HarmonyLib;
+using HarmonyExtension;
 
 namespace DeviceOfHermes;
 
@@ -221,4 +223,23 @@ public static class BattleBufExtension
 
         buf.stack += stack;
     }
+
+    /// <summary>Update buf icon</summary>
+    public static void UpdateBufIcon(this BattleUnitBuf buf)
+    {
+        _iconInitRef(buf) = false;
+
+        buf.GetBufIcon();
+    }
+
+    /// <summary>Update buf icon</summary>
+    public static void UpdateBufIcons(this BattleUnitModel owner)
+    {
+        owner?.bufListDetail?.GetActivatedBufList()?
+            .Concat(owner?.bufListDetail?.GetReadyBufList())?.FilterMap(buf => buf)
+            .Foreach(buf => buf?.UpdateBufIcon());
+    }
+
+    private static AccessTools.FieldRef<BattleUnitBuf, bool> _iconInitRef
+        = typeof(BattleUnitBuf).FieldRefAccess<bool>("_iconInit");
 }
