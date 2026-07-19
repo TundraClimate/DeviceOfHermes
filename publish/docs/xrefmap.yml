@@ -2514,6 +2514,25 @@ references:
   commentId: F:DeviceOfHermes.HermesConstants.UnbreakableSlashBeh
   fullName: DeviceOfHermes.HermesConstants.UnbreakableSlashBeh
   nameWithType: HermesConstants.UnbreakableSlashBeh
+- uid: DeviceOfHermes.IComposite
+  name: IComposite
+  href: api/DeviceOfHermes.IComposite.html
+  commentId: T:DeviceOfHermes.IComposite
+  fullName: DeviceOfHermes.IComposite
+  nameWithType: IComposite
+- uid: DeviceOfHermes.IComposite.children
+  name: children
+  href: api/DeviceOfHermes.IComposite.html#DeviceOfHermes_IComposite_children
+  commentId: P:DeviceOfHermes.IComposite.children
+  fullName: DeviceOfHermes.IComposite.children
+  nameWithType: IComposite.children
+- uid: DeviceOfHermes.IComposite.children*
+  name: children
+  href: api/DeviceOfHermes.IComposite.html#DeviceOfHermes_IComposite_children_
+  commentId: Overload:DeviceOfHermes.IComposite.children
+  isSpec: "True"
+  fullName: DeviceOfHermes.IComposite.children
+  nameWithType: IComposite.children
 - uid: DeviceOfHermes.ModPackage
   name: ModPackage
   href: api/DeviceOfHermes.ModPackage.html
@@ -3688,6 +3707,31 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.TextModel.SetTextData
   nameWithType: TextModel.SetTextData
+- uid: DeviceOfHermes.RouteInterfacesAttribute
+  name: RouteInterfacesAttribute
+  href: api/DeviceOfHermes.RouteInterfacesAttribute.html
+  commentId: T:DeviceOfHermes.RouteInterfacesAttribute
+  fullName: DeviceOfHermes.RouteInterfacesAttribute
+  nameWithType: RouteInterfacesAttribute
+- uid: DeviceOfHermes.RouteInterfacesAttribute.#ctor(System.Type[])
+  name: RouteInterfacesAttribute(Type[])
+  href: api/DeviceOfHermes.RouteInterfacesAttribute.html#DeviceOfHermes_RouteInterfacesAttribute__ctor_System_Type___
+  commentId: M:DeviceOfHermes.RouteInterfacesAttribute.#ctor(System.Type[])
+  name.vb: New(Type())
+  fullName: DeviceOfHermes.RouteInterfacesAttribute.RouteInterfacesAttribute(System.Type[])
+  fullName.vb: DeviceOfHermes.RouteInterfacesAttribute.New(System.Type())
+  nameWithType: RouteInterfacesAttribute.RouteInterfacesAttribute(Type[])
+  nameWithType.vb: RouteInterfacesAttribute.New(Type())
+- uid: DeviceOfHermes.RouteInterfacesAttribute.#ctor*
+  name: RouteInterfacesAttribute
+  href: api/DeviceOfHermes.RouteInterfacesAttribute.html#DeviceOfHermes_RouteInterfacesAttribute__ctor_
+  commentId: Overload:DeviceOfHermes.RouteInterfacesAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.RouteInterfacesAttribute.RouteInterfacesAttribute
+  fullName.vb: DeviceOfHermes.RouteInterfacesAttribute.New
+  nameWithType: RouteInterfacesAttribute.RouteInterfacesAttribute
+  nameWithType.vb: RouteInterfacesAttribute.New
 - uid: DeviceOfHermes.ScheduleRunner
   name: ScheduleRunner
   href: api/DeviceOfHermes.ScheduleRunner.html

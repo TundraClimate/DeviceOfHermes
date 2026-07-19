@@ -25,6 +25,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
         DynamicAbility.Init();
         BattleUIBehaviour.Init();
 
+        CompositePatch.Init();
         CustomDicePatch.Init();
         RevengeDice.Init();
         UnbreakableDice.Init();
