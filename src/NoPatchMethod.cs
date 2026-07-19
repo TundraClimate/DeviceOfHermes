@@ -11,6 +11,7 @@ public static class NoPatchMethod
         var harmony = new Harmony("DeviceOfHermes.NoPatchMethod");
 
         harmony.CreateReversePatcher(typeof(BattleUnitModel).Method("Die"), new HarmonyMethod(typeof(NoPatchMethod).Method("DieNoPatch"))).Patch();
+        harmony.CreateReversePatcher(typeof(BattleDiceBehavior).Method("GiveDamage"), new HarmonyMethod(typeof(NoPatchMethod).Method("GiveDamageNoPatch"))).Patch();
         harmony.CreateReversePatcher(typeof(StageController).Method("StartAction"), new HarmonyMethod(typeof(NoPatchMethod).Method("StartActionNoPatch"))).Patch();
         harmony.CreateReversePatcher(typeof(StageController).Method("StartParrying"), new HarmonyMethod(typeof(NoPatchMethod).Method("StartParryingNoPatch"))).Patch();
     }
@@ -18,6 +19,11 @@ public static class NoPatchMethod
     /// <summary>No patches BattleUnitModel.Die()</summary>
     [HarmonyReversePatch(HarmonyReversePatchType.Original)]
     public static void DieNoPatch(this BattleUnitModel __instance, BattleUnitModel? attacker = null, bool callEvent = true)
+        => throw new NotImplementedException();
+
+    /// <summary>No patches BattleDiceBehavior.GiveDamage()</summary>
+    [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+    public static void GiveDamageNoPatch(this BattleDiceBehavior __instance, BattleUnitModel target)
         => throw new NotImplementedException();
 
     /// <summary>No patches StageController.StartAction()</summary>
