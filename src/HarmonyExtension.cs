@@ -36,6 +36,10 @@ public static class HarmonyExtension
 
         /// <summary>Is Stfld</summary>
         public static CodeMatch IsStfld() => IsOpCode(OpCodes.Stfld);
+
+        /// <summary>Is Stfld</summary>
+        public static CodeMatch IsStfld(FieldInfo info)
+            => new CodeMatch(i => i.opcode == OpCodes.Stfld && i.OperandIs(info));
     }
 
     extension(Type ty)
