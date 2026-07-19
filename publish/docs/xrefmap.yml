@@ -1134,6 +1134,12 @@ references:
   commentId: T:DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
   fullName: DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
   nameWithType: AdvancedDiceStatBonus.KwdBufModifier
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.highrollGlobalWeight
+  name: highrollGlobalWeight
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_highrollGlobalWeight
+  commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.highrollGlobalWeight
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.highrollGlobalWeight
+  nameWithType: AdvancedDiceStatBonus.highrollGlobalWeight
 - uid: DeviceOfHermes.AdvancedDiceStatBonus.kwdBufModifier
   name: kwdBufModifier
   href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_kwdBufModifier

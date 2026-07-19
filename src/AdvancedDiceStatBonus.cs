@@ -1,3 +1,4 @@
+using System.Reflection.Emit;
 using HarmonyLib;
 using HarmonyExtension;
 
@@ -13,6 +14,7 @@ public class AdvancedDiceStatBonus : DiceStatBonus
         harmony.CreateClassProcessor(typeof(PatchApplyDiceStat)).Patch();
         harmony.CreateClassProcessor(typeof(PatchUpdateDiceFinalValue)).Patch();
         harmony.CreateClassProcessor(typeof(PatchAddNewKeywordBuf)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchRollDice)).Patch();
     }
 
     private AdvancedDiceStatBonus CopyFrom(DiceStatBonus origin)
@@ -41,6 +43,7 @@ public class AdvancedDiceStatBonus : DiceStatBonus
         this.powerRate += bonus.powerRate;
         this.powerMultiplier *= bonus.powerMultiplier;
         this.kwdBufModifier += bonus.kwdBufModifier;
+        this.highrollGlobalWeight += bonus.highrollGlobalWeight;
     }
 
     /// <summary>Power rate</summary>
@@ -51,6 +54,9 @@ public class AdvancedDiceStatBonus : DiceStatBonus
 
     /// <summary>A keyword buf modifier</summary>
     public KwdBufModifier kwdBufModifier = (_, ref _, _) => { };
+
+    /// <summary>Highroller weight</summary>
+    public float highrollGlobalWeight = 0f;
 
     /// <summary>A delegate of KwdBufModifier</summary>
     public delegate void KwdBufModifier(BattleUnitBuf origin, ref BattleUnitBuf? result, BattleUnitModel target);
@@ -175,8 +181,52 @@ public class AdvancedDiceStatBonus : DiceStatBonus
 
             return __exception;
         }
-
-        static AccessTools.FieldRef<BattleDiceBehavior, DiceStatBonus> _statBonusRef
-            = typeof(BattleDiceBehavior).FieldRefAccess<DiceStatBonus>("_statBonus");
     }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "RollDice")]
+    class PatchRollDice
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(
+                CodeMatch.IsLdarg(0),
+                CodeMatch.IsLdloc(),
+                CodeMatch.IsLdloc(),
+                CodeMatch.IsOpCode(OpCodes.Ldc_I4_0),
+                CodeMatch.Calls(typeof(DiceStatCalculator).Method("MakeDiceResult")),
+                CodeMatch.IsStfld(typeof(BattleDiceBehavior).Field("_diceResultValue"))
+            )
+                .Advance(1)
+                .Insert(
+                    CodeInstruction.Instance,
+                    CodeInstruction.Local(0),
+                    CodeInstruction.Local(1),
+                    CodeInstruction.Call(typeof(PatchRollDice).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleDiceBehavior __instance, int min, int max)
+        {
+            var stat = _statBonusRef(__instance);
+
+            if (stat is AdvancedDiceStatBonus adv)
+            {
+                var weight = Math.Max(adv.highrollGlobalWeight + 100, 0.1f) / 100;
+                var rand = 1f - Math.Pow(RandomUtil.RangeFloat(0f, 1f), weight);
+                var res = min + (int)Math.Floor(rand * (max - min + 1));
+
+                _diceResultValueRef(__instance) = max.Min(res);
+            }
+        }
+
+        static AccessTools.FieldRef<BattleDiceBehavior, int> _diceResultValueRef
+            = typeof(BattleDiceBehavior).FieldRefAccess<int>("_diceResultValue");
+    }
+
+    static AccessTools.FieldRef<BattleDiceBehavior, DiceStatBonus> _statBonusRef
+        = typeof(BattleDiceBehavior).FieldRefAccess<DiceStatBonus>("_statBonus");
 }
