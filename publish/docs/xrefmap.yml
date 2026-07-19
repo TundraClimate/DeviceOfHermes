@@ -1134,6 +1134,12 @@ references:
   commentId: T:DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
   fullName: DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
   nameWithType: AdvancedDiceStatBonus.KwdBufModifier
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.ferocity
+  name: ferocity
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_ferocity
+  commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.ferocity
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.ferocity
+  nameWithType: AdvancedDiceStatBonus.ferocity
 - uid: DeviceOfHermes.AdvancedDiceStatBonus.highrollGlobalWeight
   name: highrollGlobalWeight
   href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_highrollGlobalWeight
@@ -2580,6 +2586,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.NoPatchMethod.DieNoPatch
   nameWithType: NoPatchMethod.DieNoPatch
+- uid: DeviceOfHermes.NoPatchMethod.GiveDamageNoPatch(BattleDiceBehavior,BattleUnitModel)
+  name: GiveDamageNoPatch(BattleDiceBehavior, BattleUnitModel)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_GiveDamageNoPatch_BattleDiceBehavior_BattleUnitModel_
+  commentId: M:DeviceOfHermes.NoPatchMethod.GiveDamageNoPatch(BattleDiceBehavior,BattleUnitModel)
+  fullName: DeviceOfHermes.NoPatchMethod.GiveDamageNoPatch(BattleDiceBehavior, BattleUnitModel)
+  nameWithType: NoPatchMethod.GiveDamageNoPatch(BattleDiceBehavior, BattleUnitModel)
+- uid: DeviceOfHermes.NoPatchMethod.GiveDamageNoPatch*
+  name: GiveDamageNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_GiveDamageNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.GiveDamageNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.GiveDamageNoPatch
+  nameWithType: NoPatchMethod.GiveDamageNoPatch
 - uid: DeviceOfHermes.NoPatchMethod.StartActionNoPatch(StageController,BattlePlayingCardDataInUnitModel)
   name: StartActionNoPatch(StageController, BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_StartActionNoPatch_StageController_BattlePlayingCardDataInUnitModel_

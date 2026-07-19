@@ -15,6 +15,7 @@ public class AdvancedDiceStatBonus : DiceStatBonus
         harmony.CreateClassProcessor(typeof(PatchUpdateDiceFinalValue)).Patch();
         harmony.CreateClassProcessor(typeof(PatchAddNewKeywordBuf)).Patch();
         harmony.CreateClassProcessor(typeof(PatchRollDice)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchGiveDamage)).Patch();
     }
 
     private AdvancedDiceStatBonus CopyFrom(DiceStatBonus origin)
@@ -44,6 +45,7 @@ public class AdvancedDiceStatBonus : DiceStatBonus
         this.powerMultiplier *= bonus.powerMultiplier;
         this.kwdBufModifier += bonus.kwdBufModifier;
         this.highrollGlobalWeight += bonus.highrollGlobalWeight;
+        this.ferocity += bonus.ferocity;
     }
 
     /// <summary>Power rate</summary>
@@ -57,6 +59,9 @@ public class AdvancedDiceStatBonus : DiceStatBonus
 
     /// <summary>Highroller weight</summary>
     public float highrollGlobalWeight = 0f;
+
+    /// <summary>Ferocity</summary>
+    public int ferocity = 0;
 
     /// <summary>A delegate of KwdBufModifier</summary>
     public delegate void KwdBufModifier(BattleUnitBuf origin, ref BattleUnitBuf? result, BattleUnitModel target);
@@ -225,6 +230,35 @@ public class AdvancedDiceStatBonus : DiceStatBonus
 
         static AccessTools.FieldRef<BattleDiceBehavior, int> _diceResultValueRef
             = typeof(BattleDiceBehavior).FieldRefAccess<int>("_diceResultValue");
+    }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "GiveDamage")]
+    class PatchGiveDamage
+    {
+        static void Prefix(ref DiceStatBonus __state, DiceStatBonus ____statBonus)
+        {
+            __state = ____statBonus;
+        }
+
+        static void Postfix(BattleDiceBehavior __instance, BattleUnitModel target, DiceStatBonus __state)
+        {
+            if (__state is AdvancedDiceStatBonus adv)
+            {
+                var fero = adv.ferocity;
+                var forcely = fero / 100;
+                var prob = fero % 100;
+
+                for (var i = 0; forcely > i; i++)
+                {
+                    __instance.GiveDamageNoPatch(target);
+                }
+
+                if (RandomUtil.Range(1, 100) <= prob)
+                {
+                    __instance.GiveDamageNoPatch(target);
+                }
+            }
+        }
     }
 
     static AccessTools.FieldRef<BattleDiceBehavior, DiceStatBonus> _statBonusRef
