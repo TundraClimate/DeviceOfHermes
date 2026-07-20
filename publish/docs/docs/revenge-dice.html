@@ -133,10 +133,21 @@
 </code></pre>
 <p>デフォルトのダイス、もしくは指定のダイスでページを作成し、反撃ページとして追加します。<br>
 戦闘中にのみ有効です。</p>
+<p>ページ効果は消滅します。</p>
 <ul>
 <li><code>unit</code>: 追加する対象です。</li>
 <li><code>display</code>: このページとしてダイスを使用します。</li>
 <li><code>behaviors</code>: 指定した場合、ダイスが上書きされます。</li>
+</ul>
+<h3 id="addrevengecardbattleunitmodel-battleplayingcarddatainunitmodel"><code>AddRevengeCard(BattleUnitModel, BattlePlayingCardDataInUnitModel)</code></h3>
+<pre><code class="lang-cs">RevengeDice.AddRevengeCard(unit, card);
+</code></pre>
+<p>既存のページを特殊反撃ページとして追加します。<br>
+戦闘中にのみ有効です。</p>
+<p>ページ効果は維持されます。</p>
+<ul>
+<li><code>unit</code>: 追加する対象です。</li>
+<li><code>card</code>: 追加対象のページです。</li>
 </ul>
 <h3 id="isrevengenowbattleunitmodel"><code>IsRevengeNow(BattleUnitModel)</code></h3>
 <pre><code class="lang-cs">RevengeDice.IsRevengeNow(unit);

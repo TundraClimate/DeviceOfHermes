@@ -87,6 +87,8 @@ public class RevengeDice : AdvancedDiceBase
     {
         var playcard = unit.CreatePlayingCard(display);
 
+        playcard.cardAbility = null;
+
         behaviors?.Let(it =>
         {
             playcard.cardBehaviorQueue = new();
