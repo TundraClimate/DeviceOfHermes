@@ -41,4 +41,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     {
         return origin;
     }
+
+    /// <summary>On card use before</summary>
+    public virtual void BeforeUseCard(ref BattlePlayingCardDataInUnitModel card)
+    {
+    }
 }

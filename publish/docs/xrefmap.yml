@@ -60,6 +60,22 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedCardBase
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase
   nameWithType: AdvancedCardBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard(BattlePlayingCardDataInUnitModel@)
+  name: BeforeUseCard(ref BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeUseCard_BattlePlayingCardDataInUnitModel__
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard(BattlePlayingCardDataInUnitModel@)
+  name.vb: BeforeUseCard(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard(ref BattlePlayingCardDataInUnitModel)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard(BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedCardBase.BeforeUseCard(ref BattlePlayingCardDataInUnitModel)
+  nameWithType.vb: AdvancedCardBase.BeforeUseCard(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard*
+  name: BeforeUseCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeUseCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard
+  nameWithType: AdvancedCardBase.BeforeUseCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility(BattleDiceCardModel)
   name: CanDiscardByAbility(BattleDiceCardModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_CanDiscardByAbility_BattleDiceCardModel_

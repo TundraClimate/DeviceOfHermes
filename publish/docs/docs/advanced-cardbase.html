@@ -113,6 +113,10 @@
     {
         return origin;
     }
+
+    public override void BeforeUseCard(ref BattlePlayingCardDataInUnitModel card)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
@@ -163,6 +167,16 @@ falseを返すと捨てられるのをキャンセルすることが出来ます
 <p>全てのダメージ変更処理の後にダメージ量をこのメソッドが返した値に変更します。</p>
 <ul>
 <li><code>origin</code>: 変更前の最終ダメージ量です。</li>
+</ul>
+<h3 id="beforeusecardref-battleplayingcarddatainunitmodel"><code>BeforeUseCard(ref BattlePlayingCardDataInUnitModel)</code></h3>
+<pre><code class="lang-cs">public override void BeforeUseCard(ref BattlePlayingCardDataInUnitModel card)
+{
+}
+</code></pre>
+<p>ベージの使用前に実行されます。<br>
+<code>card</code>に再代入した場合、そのページを代わりに使用します。</p>
+<ul>
+<li><code>card</code>: 使用しているページです。</li>
 </ul>
 
 </article>

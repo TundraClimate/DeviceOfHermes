@@ -45,6 +45,8 @@ internal static class AdvancedPatch
         Patch(typeof(PatchPlayForAuto));
         Patch(typeof(PatchOnChooseCard));
         Patch(typeof(PatchOnWaveStart));
+        Patch(typeof(PatchStartOneSidePlay));
+        Patch(typeof(PatchStartParrying));
     }
 
     public static void Init()
@@ -986,6 +988,83 @@ internal static class AdvancedPatch
                 if (p.isActiavted)
                 {
                     p.OnWaveStartAfter();
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleOneSidePlayManager), "StartOneSidePlay")]
+    class PatchStartOneSidePlay
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.Start()
+                .Insert(
+                    new CodeInstruction(OpCodes.Ldarga, 1),
+                    CodeInstruction.Call(typeof(PatchStartOneSidePlay).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(ref BattlePlayingCardDataInUnitModel card)
+        {
+            var origin = card;
+
+            if (card?.cardAbility is AdvancedCardBase adv)
+            {
+                adv.BeforeUseCard(ref card);
+
+                if (card != origin)
+                {
+                    StageController.Instance.GetAllCards().RemoveAll(c => c == origin);
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleParryingManager), "StartParrying")]
+    class PatchStartParrying
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.Start()
+                .Insert(
+                    new CodeInstruction(OpCodes.Ldarga, 1),
+                    new CodeInstruction(OpCodes.Ldarga, 2),
+                    CodeInstruction.Call(typeof(PatchStartParrying).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(ref BattlePlayingCardDataInUnitModel cardA, ref BattlePlayingCardDataInUnitModel cardB)
+        {
+            var origin = cardA;
+
+            if (cardA?.cardAbility is AdvancedCardBase advA)
+            {
+                advA.BeforeUseCard(ref cardA);
+
+                if (cardA != origin)
+                {
+                    StageController.Instance.GetAllCards().RemoveAll(c => c == origin);
+                }
+            }
+
+            origin = cardB;
+
+            if (cardB?.cardAbility is AdvancedCardBase advB)
+            {
+                advB.BeforeUseCard(ref cardB);
+
+                if (cardB != origin)
+                {
+                    StageController.Instance.GetAllCards().RemoveAll(c => c == origin);
                 }
             }
         }
