@@ -141,7 +141,7 @@
     {
     }
 
-    public override BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleUnitModel actor)
+    public override BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleUnitModel attacker)
     {
         return null;
     }
@@ -255,7 +255,7 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <h3 id="beforetakeonesideactionbattleunitmodel"><code>BeforeTakeOneSideAction(BattleUnitModel)</code></h3>
 <pre><code class="lang-cs">public override BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleUnitModel attacker)
 {
-    return card;
+    return null;
 }
 </code></pre>
 <p>一方攻撃を受ける前に実行されます。<br>

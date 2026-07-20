@@ -251,6 +251,19 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
   nameWithType: AdvancedPassiveBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction(BattleUnitModel,BattlePlayingCardDataInUnitModel)
+  name: BeforeTakeOneSideAction(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeTakeOneSideAction_BattleUnitModel_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction(BattleUnitModel,BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedPassiveBase.BeforeTakeOneSideAction(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction*
+  name: BeforeTakeOneSideAction
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeTakeOneSideAction_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction
+  nameWithType: AdvancedPassiveBase.BeforeTakeOneSideAction
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility(BattleDiceCardModel)
   name: CanDiscardByAbility(BattleDiceCardModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_CanDiscardByAbility_BattleDiceCardModel_

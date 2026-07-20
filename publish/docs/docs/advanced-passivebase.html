@@ -167,6 +167,11 @@
     {
         return true;
     }
+
+    public override BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleDiceCardModel attacker, BattlePlayingCardDataInUnitModel attackCard)
+    {
+        return null;
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -328,6 +333,18 @@ falseを返すとそのページが捨てられるのをキャンセルするこ
 falseを返すと<code>card</code>は使用不可になります。</p>
 <ul>
 <li><code>card</code>: 対象のページです。</li>
+</ul>
+<h3 id="beforetakeonesideactionbattleunitmodel-battleplayingcarddatainunitmodel"><code>BeforeTakeOneSideAction(BattleUnitModel, BattlePlayingCardDataInUnitModel)</code></h3>
+<pre><code class="lang-cs">public override BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(BattleUnitModel attacker, BattlePlayingCardDataInUnitModel attackCard)
+{
+    return null;
+}
+</code></pre>
+<p>一方攻撃を受ける前に実行されます。<br>
+null以外を返した場合、返したページで代わりにマッチをします。</p>
+<ul>
+<li><code>attacker</code>: 一方攻撃をしている相手です。</li>
+<li><code>attackCard</code>: 一方攻撃をしているページです。</li>
 </ul>
 
 </article>

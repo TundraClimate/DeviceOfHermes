@@ -124,6 +124,14 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return true;
     }
 
+    /// <summary>On unit take oneside before</summary>
+    public virtual BattlePlayingCardDataInUnitModel? BeforeTakeOneSideAction(
+        BattleUnitModel attacker, BattlePlayingCardDataInUnitModel attckCard
+    )
+    {
+        return null;
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

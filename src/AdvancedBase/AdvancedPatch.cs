@@ -131,35 +131,44 @@ internal static class AdvancedPatch
     {
         static bool Prefix(StageController __instance, BattlePlayingCardDataInUnitModel card)
         {
+            BattlePlayingCardDataInUnitModel? useCard = null;
+
+            var passives = card?.target?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>();
+
+            passives?.Foreach(adv =>
+            {
+                var res = adv.BeforeTakeOneSideAction(card!.owner, card);
+
+                if (useCard is null)
+                {
+                    useCard = res;
+                }
+            });
+
             var bufs = card?.target?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
 
-            if (bufs is not null)
+            bufs?.Foreach(adv =>
             {
-                BattlePlayingCardDataInUnitModel? useCard = null;
+                var res = adv.BeforeTakeOneSideAction(card!.owner);
 
-                foreach (var adv in bufs)
+                if (useCard is null)
                 {
-                    var res = adv.BeforeTakeOneSideAction(card!.owner);
+                    useCard = res;
+                }
+            });
 
-                    if (useCard is null)
-                    {
-                        useCard = res;
-                    }
+            if (useCard is not null)
+            {
+                if (useCard.owner.faction == Faction.Player)
+                {
+                    __instance.StartParryingNoPatch(card!, useCard);
+                }
+                else
+                {
+                    __instance.StartParryingNoPatch(useCard, card!);
                 }
 
-                if (useCard is not null)
-                {
-                    if (useCard.owner.faction == Faction.Player)
-                    {
-                        __instance.StartParryingNoPatch(card!, useCard);
-                    }
-                    else
-                    {
-                        __instance.StartParryingNoPatch(useCard, card!);
-                    }
-
-                    return false;
-                }
+                return false;
             }
 
             return true;
