@@ -1,4 +1,5 @@
 using System.Text;
+using HarmonyLib;
 using HarmonyExtension;
 using UnityEngine;
 using UnityEngine.UI;
@@ -64,6 +65,12 @@ public static class Extension
     public static IEnumerable<T> Flatten<T>(this IEnumerable<IEnumerable<T>> enumerable)
     {
         return enumerable.SelectMany(val => val);
+    }
+
+    /// <summary>Flatmap</summary>
+    public static IEnumerable<R> FlatMap<T, R>(this IEnumerable<T> enumerable, Func<T, IEnumerable<R>> pred)
+    {
+        return enumerable.Map(pred).Flatten();
     }
 
     /// <summary>Returns enumerable with index</summary>
@@ -224,6 +231,9 @@ public static class Extension
 
     extension(BattleUnitBuf buf)
     {
+        /// <summary>Get owner</summary>
+        public BattleUnitModel Owner => _ownerRef(buf);
+
         /// <summary>Get keywordId</summary>
         public string KeywordId => (string)typeof(BattleUnitBuf).Property("keywordId").GetValue(buf);
 
@@ -247,6 +257,9 @@ public static class Extension
             return builder.ToString();
         }
     }
+
+    static AccessTools.FieldRef<BattleUnitBuf, BattleUnitModel> _ownerRef
+        = typeof(BattleUnitBuf).FieldRefAccess<BattleUnitModel>("_owner");
 
     extension(GameObject ob)
     {

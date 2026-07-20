@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 namespace DeviceOfHermes.AdvancedBase;
 
 /// <summary>An advanced <see cref="PassiveAbilityBase"/></summary>
@@ -16,8 +14,7 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     static AdvancedPassiveBase()
     {
         AdvancedPatch.Init();
-
-        BattleTickAction.OnTick += OnTick;
+        BattleBufTracker.Init();
     }
 
     /// <summary>A stopper of health limit</summary>
@@ -143,103 +140,5 @@ public class AdvancedPassiveBase : PassiveAbilityBase
 
         /// <summary>Middle</summary>
         Middle,
-    }
-
-    static void OnTick()
-    {
-        var alives = BattleObjectManager.instance.GetAliveList();
-
-        foreach (var unit in alives)
-        {
-            var passives = unit.passiveDetail.PassiveList.FilterMap(p => p is AdvancedPassiveBase ap ? ap : null).ToList();
-
-            if (passives.Count == 0)
-            {
-                continue;
-            }
-
-            List<BattleUnitBuf> activatedBufs = new();
-
-            var lastBufs = _lastBufList.GetValue(unit, _ => new());
-            var actives = unit.bufListDetail.GetActivatedBufList();
-
-            foreach (var buf in actives)
-            {
-                if (buf is AdvancedUnitBuf advBuf && advBuf.stack != advBuf.lastStack)
-                {
-                    advBuf.OnStackChange(advBuf.lastStack);
-
-                    advBuf.lastStack = advBuf.stack;
-                }
-
-                if (!lastBufs.Contains(buf))
-                {
-                    activatedBufs.Add(buf);
-                }
-
-                var lastStack = _lastBufStack.GetValue(buf, _ => new());
-
-                if (buf.stack != lastStack.value)
-                {
-                    foreach (var p in passives)
-                    {
-                        p?.OnChangeBufStack(buf, lastStack.value);
-
-                        if (buf.stack > lastStack.value)
-                        {
-                            p?.OnAddBuf(buf, buf.stack - lastStack.value);
-                        }
-                    }
-
-                    lastStack.value = buf.stack;
-                }
-
-                foreach (var advBuf2 in unit.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>())
-                {
-                    if (buf.stack != lastStack.value)
-                    {
-                        advBuf2.OnStackChangeAll(buf, lastStack.value);
-
-                        if (buf.stack > lastStack.value)
-                        {
-                            advBuf2.OnAddBufAll(buf, buf.stack - lastStack.value);
-                        }
-                    }
-                }
-            }
-
-            foreach (var p in passives)
-            {
-                foreach (var buf in activatedBufs)
-                {
-                    p?.OnActivatedBuf(buf);
-                    p?.OnAddBuf(buf, buf.stack);
-                }
-            }
-
-            foreach (var b in unit.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>())
-            {
-                foreach (var buf in activatedBufs)
-                {
-                    b.OnStackChangeAll(buf, -1);
-                    b.OnAddBufAll(buf, buf.stack);
-                }
-            }
-
-            if (activatedBufs.Count != 0)
-            {
-                lastBufs.Clear();
-                lastBufs.AddRange(actives);
-            }
-        }
-    }
-
-    private static ConditionalWeakTable<BattleUnitModel, List<BattleUnitBuf>> _lastBufList = new();
-
-    private static ConditionalWeakTable<BattleUnitBuf, BufStack> _lastBufStack = new();
-
-    private class BufStack
-    {
-        public int value = -1;
     }
 }

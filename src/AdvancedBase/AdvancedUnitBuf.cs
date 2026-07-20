@@ -14,6 +14,7 @@ public class AdvancedUnitBuf : BattleUnitBuf
     static AdvancedUnitBuf()
     {
         AdvancedPatch.Init();
+        BattleBufTracker.Init();
     }
 
     /// <summary>Initialize UnitBuf</summary>
@@ -25,7 +26,6 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
         base.Init(owner);
 
-        this.lastStack = this.DefaultStack;
         this.stack = this.DefaultStack;
     }
 
@@ -116,6 +116,4 @@ public class AdvancedUnitBuf : BattleUnitBuf
         /// <summary>Middle</summary>
         Middle,
     }
-
-    internal int lastStack;
 }
