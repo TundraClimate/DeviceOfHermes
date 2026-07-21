@@ -124,6 +124,9 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 
 buf.UpdateBufIcon();
 owner.UpdateBufIcons();
+
+burn.Activate();
+bleed.Activate();
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="getbuft"><code>GetBuf&lt;T&gt;()</code></h3>
@@ -270,6 +273,14 @@ owner.UpdateBufIcons();
 <ul>
 <li><code>owner</code>: 更新対象のユニットです。</li>
 </ul>
+<h3 id="activate"><code>Activate()</code></h3>
+<pre><code class="lang-cs">burn.Activate();
+</code></pre>
+<p><code>BattleUnitBuf_burn</code>に対して1度発動させます。</p>
+<h3 id="activate-1"><code>Activate()</code></h3>
+<pre><code class="lang-cs">bleed.Activate();
+</code></pre>
+<p><code>BattleUnitBuf_bleed</code>に対して1度発動させます。</p>
 
 </article>
 

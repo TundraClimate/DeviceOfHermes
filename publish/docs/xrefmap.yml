@@ -2599,6 +2599,32 @@ references:
   commentId: T:DeviceOfHermes.NoPatchMethod
   fullName: DeviceOfHermes.NoPatchMethod
   nameWithType: NoPatchMethod
+- uid: DeviceOfHermes.NoPatchMethod.BleedingAfterDiceActionNoPatch(BattleUnitBuf_bleeding,BattleDiceBehavior)
+  name: BleedingAfterDiceActionNoPatch(BattleUnitBuf_bleeding, BattleDiceBehavior)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_BleedingAfterDiceActionNoPatch_BattleUnitBuf_bleeding_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.NoPatchMethod.BleedingAfterDiceActionNoPatch(BattleUnitBuf_bleeding,BattleDiceBehavior)
+  fullName: DeviceOfHermes.NoPatchMethod.BleedingAfterDiceActionNoPatch(BattleUnitBuf_bleeding, BattleDiceBehavior)
+  nameWithType: NoPatchMethod.BleedingAfterDiceActionNoPatch(BattleUnitBuf_bleeding, BattleDiceBehavior)
+- uid: DeviceOfHermes.NoPatchMethod.BleedingAfterDiceActionNoPatch*
+  name: BleedingAfterDiceActionNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_BleedingAfterDiceActionNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.BleedingAfterDiceActionNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.BleedingAfterDiceActionNoPatch
+  nameWithType: NoPatchMethod.BleedingAfterDiceActionNoPatch
+- uid: DeviceOfHermes.NoPatchMethod.BurnOnRoundEndNoPatch(BattleUnitBuf_burn)
+  name: BurnOnRoundEndNoPatch(BattleUnitBuf_burn)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_BurnOnRoundEndNoPatch_BattleUnitBuf_burn_
+  commentId: M:DeviceOfHermes.NoPatchMethod.BurnOnRoundEndNoPatch(BattleUnitBuf_burn)
+  fullName: DeviceOfHermes.NoPatchMethod.BurnOnRoundEndNoPatch(BattleUnitBuf_burn)
+  nameWithType: NoPatchMethod.BurnOnRoundEndNoPatch(BattleUnitBuf_burn)
+- uid: DeviceOfHermes.NoPatchMethod.BurnOnRoundEndNoPatch*
+  name: BurnOnRoundEndNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_BurnOnRoundEndNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.BurnOnRoundEndNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.BurnOnRoundEndNoPatch
+  nameWithType: NoPatchMethod.BurnOnRoundEndNoPatch
 - uid: DeviceOfHermes.NoPatchMethod.DieNoPatch(BattleUnitModel,BattleUnitModel,System.Boolean)
   name: DieNoPatch(BattleUnitModel, BattleUnitModel?, bool)
   href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_DieNoPatch_BattleUnitModel_BattleUnitModel_System_Boolean_
@@ -5722,6 +5748,22 @@ references:
   fullName.vb: System.Extension.Filter(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean))
   nameWithType: Extension.Filter<T>(IEnumerable<T>, Func<T, bool>)
   nameWithType.vb: Extension.Filter(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+- uid: System.Extension.FlatMap*
+  name: FlatMap
+  href: api/System.Extension.html#System_Extension_FlatMap_
+  commentId: Overload:System.Extension.FlatMap
+  isSpec: "True"
+  fullName: System.Extension.FlatMap
+  nameWithType: Extension.FlatMap
+- uid: System.Extension.FlatMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}})
+  name: FlatMap<T, R>(IEnumerable<T>, Func<T, IEnumerable<R>>)
+  href: api/System.Extension.html#System_Extension_FlatMap__2_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Collections_Generic_IEnumerable___1___
+  commentId: M:System.Extension.FlatMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}})
+  name.vb: FlatMap(Of T, R)(IEnumerable(Of T), Func(Of T, IEnumerable(Of R)))
+  fullName: System.Extension.FlatMap<T, R>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Collections.Generic.IEnumerable<R>>)
+  fullName.vb: System.Extension.FlatMap(Of T, R)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Collections.Generic.IEnumerable(Of R)))
+  nameWithType: Extension.FlatMap<T, R>(IEnumerable<T>, Func<T, IEnumerable<R>>)
+  nameWithType.vb: Extension.FlatMap(Of T, R)(IEnumerable(Of T), Func(Of T, IEnumerable(Of R)))
 - uid: System.Extension.Flatten*
   name: Flatten
   href: api/System.Extension.html#System_Extension_Flatten_

@@ -14,6 +14,8 @@ public static class NoPatchMethod
         harmony.CreateReversePatcher(typeof(BattleDiceBehavior).Method("GiveDamage"), new HarmonyMethod(typeof(NoPatchMethod).Method("GiveDamageNoPatch"))).Patch();
         harmony.CreateReversePatcher(typeof(StageController).Method("StartAction"), new HarmonyMethod(typeof(NoPatchMethod).Method("StartActionNoPatch"))).Patch();
         harmony.CreateReversePatcher(typeof(StageController).Method("StartParrying"), new HarmonyMethod(typeof(NoPatchMethod).Method("StartParryingNoPatch"))).Patch();
+        harmony.CreateReversePatcher(typeof(BattleUnitBuf_burn).Method("OnRoundEnd"), new HarmonyMethod(typeof(NoPatchMethod).Method("BurnOnRoundEndNoPatch"))).Patch();
+        harmony.CreateReversePatcher(typeof(BattleUnitBuf_bleeding).Method("AfterDiceAction"), new HarmonyMethod(typeof(NoPatchMethod).Method("BleedingAfterDiceActionNoPatch"))).Patch();
     }
 
     /// <summary>No patches BattleUnitModel.Die()</summary>
@@ -34,5 +36,15 @@ public static class NoPatchMethod
     /// <summary>No patches StageController.StartParrying()</summary>
     [HarmonyReversePatch(HarmonyReversePatchType.Original)]
     public static void StartParryingNoPatch(this StageController __instance, BattlePlayingCardDataInUnitModel cardA, BattlePlayingCardDataInUnitModel cardB)
+        => throw new NotImplementedException();
+
+    /// <summary>No patches BattleUnitBuf_burn.OnRoundEnd()</summary>
+    [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+    public static void BurnOnRoundEndNoPatch(this BattleUnitBuf_burn __instance)
+        => throw new NotImplementedException();
+
+    /// <summary>No patches BattleUnitBuf_bleeding.AfterDiceAction()</summary>
+    [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+    public static void BleedingAfterDiceActionNoPatch(this BattleUnitBuf_bleeding __instance, BattleDiceBehavior behavior)
         => throw new NotImplementedException();
 }

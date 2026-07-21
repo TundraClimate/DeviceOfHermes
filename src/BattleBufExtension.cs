@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using LOR_DiceSystem;
 using HarmonyLib;
 using HarmonyExtension;
 
@@ -240,6 +241,26 @@ public static class BattleBufExtension
             .Foreach(buf => buf?.UpdateBufIcon());
     }
 
+    extension(BattleUnitBuf_burn burn)
+    {
+        /// <summary>Activate Burn</summary>
+        public void Activate()
+        {
+            burn.BurnOnRoundEndNoPatch();
+        }
+    }
+
+    extension(BattleUnitBuf_bleeding bleed)
+    {
+        /// <summary>Activate Bleeding</summary>
+        public void Activate()
+        {
+            bleed.BleedingAfterDiceActionNoPatch(_mockDice);
+        }
+    }
+
     private static AccessTools.FieldRef<BattleUnitBuf, bool> _iconInitRef
         = typeof(BattleUnitBuf).FieldRefAccess<bool>("_iconInit");
+
+    private static BattleDiceBehavior _mockDice = new() { behaviourInCard = new() { Detail = BehaviourDetail.Slash } };
 }
