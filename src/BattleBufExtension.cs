@@ -259,6 +259,33 @@ public static class BattleBufExtension
         }
     }
 
+    extension(BattleUnitBuf_Decay decay)
+    {
+        /// <summary>Activate Decay</summary>
+        public void Activate()
+        {
+            decay.DecayOnRoundEndNoPatch();
+        }
+    }
+
+    extension(BattleUnitBuf_fairy fairy)
+    {
+        /// <summary>Activate fairy</summary>
+        public void Activate()
+        {
+            fairy.FairyAfterDiceActionNoPatch();
+        }
+    }
+
+    extension(BattleUnitBuf_Alriune_Debuf alriuneDebuf)
+    {
+        /// <summary>Activate fairy</summary>
+        public void Activate()
+        {
+            alriuneDebuf.AlriuneDebufOnRoundEndTheLastNoPatch();
+        }
+    }
+
     private static AccessTools.FieldRef<BattleUnitBuf, bool> _iconInitRef
         = typeof(BattleUnitBuf).FieldRefAccess<bool>("_iconInit");
 

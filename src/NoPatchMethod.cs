@@ -16,6 +16,9 @@ public static class NoPatchMethod
         harmony.CreateReversePatcher(typeof(StageController).Method("StartParrying"), new HarmonyMethod(typeof(NoPatchMethod).Method("StartParryingNoPatch"))).Patch();
         harmony.CreateReversePatcher(typeof(BattleUnitBuf_burn).Method("OnRoundEnd"), new HarmonyMethod(typeof(NoPatchMethod).Method("BurnOnRoundEndNoPatch"))).Patch();
         harmony.CreateReversePatcher(typeof(BattleUnitBuf_bleeding).Method("AfterDiceAction"), new HarmonyMethod(typeof(NoPatchMethod).Method("BleedingAfterDiceActionNoPatch"))).Patch();
+        harmony.CreateReversePatcher(typeof(BattleUnitBuf_Decay).Method("OnRoundEnd"), new HarmonyMethod(typeof(NoPatchMethod).Method("DecayOnRoundEndNoPatch"))).Patch();
+        harmony.CreateReversePatcher(typeof(BattleUnitBuf_fairy).Method("AfterDiceAction"), new HarmonyMethod(typeof(NoPatchMethod).Method("FairyAfterDiceActionNoPatch"))).Patch();
+        harmony.CreateReversePatcher(typeof(BattleUnitBuf_Alriune_Debuf).Method("OnRoundEndTheLast"), new HarmonyMethod(typeof(NoPatchMethod).Method("AlriuneDebufOnRoundEndTheLastNoPatch"))).Patch();
     }
 
     /// <summary>No patches BattleUnitModel.Die()</summary>
@@ -46,5 +49,20 @@ public static class NoPatchMethod
     /// <summary>No patches BattleUnitBuf_bleeding.AfterDiceAction()</summary>
     [HarmonyReversePatch(HarmonyReversePatchType.Original)]
     public static void BleedingAfterDiceActionNoPatch(this BattleUnitBuf_bleeding __instance, BattleDiceBehavior behavior)
+        => throw new NotImplementedException();
+
+    /// <summary>No patches BattleUnitBuf_Decay.OnRoundEnd()</summary>
+    [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+    public static void DecayOnRoundEndNoPatch(this BattleUnitBuf_Decay __instance)
+        => throw new NotImplementedException();
+
+    /// <summary>No patches BattleUnitBuf_fairy.AfterDiceAction()</summary>
+    [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+    public static void FairyAfterDiceActionNoPatch(this BattleUnitBuf_fairy __instance)
+        => throw new NotImplementedException();
+
+    /// <summary>No patches BattleUnitBuf_Alriune_Debuf.OnRoundEndTheLast()</summary>
+    [HarmonyReversePatch(HarmonyReversePatchType.Original)]
+    public static void AlriuneDebufOnRoundEndTheLastNoPatch(this BattleUnitBuf_Alriune_Debuf __instance)
         => throw new NotImplementedException();
 }

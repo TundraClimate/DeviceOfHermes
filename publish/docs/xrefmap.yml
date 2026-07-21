@@ -2599,6 +2599,19 @@ references:
   commentId: T:DeviceOfHermes.NoPatchMethod
   fullName: DeviceOfHermes.NoPatchMethod
   nameWithType: NoPatchMethod
+- uid: DeviceOfHermes.NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch(BattleUnitBuf_Alriune_Debuf)
+  name: AlriuneDebufOnRoundEndTheLastNoPatch(BattleUnitBuf_Alriune_Debuf)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_AlriuneDebufOnRoundEndTheLastNoPatch_BattleUnitBuf_Alriune_Debuf_
+  commentId: M:DeviceOfHermes.NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch(BattleUnitBuf_Alriune_Debuf)
+  fullName: DeviceOfHermes.NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch(BattleUnitBuf_Alriune_Debuf)
+  nameWithType: NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch(BattleUnitBuf_Alriune_Debuf)
+- uid: DeviceOfHermes.NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch*
+  name: AlriuneDebufOnRoundEndTheLastNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_AlriuneDebufOnRoundEndTheLastNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch
+  nameWithType: NoPatchMethod.AlriuneDebufOnRoundEndTheLastNoPatch
 - uid: DeviceOfHermes.NoPatchMethod.BleedingAfterDiceActionNoPatch(BattleUnitBuf_bleeding,BattleDiceBehavior)
   name: BleedingAfterDiceActionNoPatch(BattleUnitBuf_bleeding, BattleDiceBehavior)
   href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_BleedingAfterDiceActionNoPatch_BattleUnitBuf_bleeding_BattleDiceBehavior_
@@ -2625,6 +2638,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.NoPatchMethod.BurnOnRoundEndNoPatch
   nameWithType: NoPatchMethod.BurnOnRoundEndNoPatch
+- uid: DeviceOfHermes.NoPatchMethod.DecayOnRoundEndNoPatch(BattleUnitBuf_Decay)
+  name: DecayOnRoundEndNoPatch(BattleUnitBuf_Decay)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_DecayOnRoundEndNoPatch_BattleUnitBuf_Decay_
+  commentId: M:DeviceOfHermes.NoPatchMethod.DecayOnRoundEndNoPatch(BattleUnitBuf_Decay)
+  fullName: DeviceOfHermes.NoPatchMethod.DecayOnRoundEndNoPatch(BattleUnitBuf_Decay)
+  nameWithType: NoPatchMethod.DecayOnRoundEndNoPatch(BattleUnitBuf_Decay)
+- uid: DeviceOfHermes.NoPatchMethod.DecayOnRoundEndNoPatch*
+  name: DecayOnRoundEndNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_DecayOnRoundEndNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.DecayOnRoundEndNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.DecayOnRoundEndNoPatch
+  nameWithType: NoPatchMethod.DecayOnRoundEndNoPatch
 - uid: DeviceOfHermes.NoPatchMethod.DieNoPatch(BattleUnitModel,BattleUnitModel,System.Boolean)
   name: DieNoPatch(BattleUnitModel, BattleUnitModel?, bool)
   href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_DieNoPatch_BattleUnitModel_BattleUnitModel_System_Boolean_
@@ -2641,6 +2667,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.NoPatchMethod.DieNoPatch
   nameWithType: NoPatchMethod.DieNoPatch
+- uid: DeviceOfHermes.NoPatchMethod.FairyAfterDiceActionNoPatch(BattleUnitBuf_fairy)
+  name: FairyAfterDiceActionNoPatch(BattleUnitBuf_fairy)
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_FairyAfterDiceActionNoPatch_BattleUnitBuf_fairy_
+  commentId: M:DeviceOfHermes.NoPatchMethod.FairyAfterDiceActionNoPatch(BattleUnitBuf_fairy)
+  fullName: DeviceOfHermes.NoPatchMethod.FairyAfterDiceActionNoPatch(BattleUnitBuf_fairy)
+  nameWithType: NoPatchMethod.FairyAfterDiceActionNoPatch(BattleUnitBuf_fairy)
+- uid: DeviceOfHermes.NoPatchMethod.FairyAfterDiceActionNoPatch*
+  name: FairyAfterDiceActionNoPatch
+  href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_FairyAfterDiceActionNoPatch_
+  commentId: Overload:DeviceOfHermes.NoPatchMethod.FairyAfterDiceActionNoPatch
+  isSpec: "True"
+  fullName: DeviceOfHermes.NoPatchMethod.FairyAfterDiceActionNoPatch
+  nameWithType: NoPatchMethod.FairyAfterDiceActionNoPatch
 - uid: DeviceOfHermes.NoPatchMethod.GiveDamageNoPatch(BattleDiceBehavior,BattleUnitModel)
   name: GiveDamageNoPatch(BattleDiceBehavior, BattleUnitModel)
   href: api/DeviceOfHermes.NoPatchMethod.html#DeviceOfHermes_NoPatchMethod_GiveDamageNoPatch_BattleDiceBehavior_BattleUnitModel_
