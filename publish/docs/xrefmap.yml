@@ -1181,6 +1181,12 @@ references:
   commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.kwdBufModifier
   fullName: DeviceOfHermes.AdvancedDiceStatBonus.kwdBufModifier
   nameWithType: AdvancedDiceStatBonus.kwdBufModifier
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.noHit
+  name: noHit
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_noHit
+  commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.noHit
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.noHit
+  nameWithType: AdvancedDiceStatBonus.noHit
 - uid: DeviceOfHermes.AdvancedDiceStatBonus.powerMultiplier
   name: powerMultiplier
   href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_powerMultiplier

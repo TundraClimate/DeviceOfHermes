@@ -46,6 +46,11 @@ public class AdvancedDiceStatBonus : DiceStatBonus
         this.kwdBufModifier += bonus.kwdBufModifier;
         this.highrollGlobalWeight += bonus.highrollGlobalWeight;
         this.ferocity += bonus.ferocity;
+
+        if (bonus.noHit)
+        {
+            this.noHit = true;
+        }
     }
 
     /// <summary>Power rate</summary>
@@ -62,6 +67,9 @@ public class AdvancedDiceStatBonus : DiceStatBonus
 
     /// <summary>Ferocity</summary>
     public int ferocity = 0;
+
+    /// <summary>Is hit attack</summary>
+    public bool noHit = false;
 
     /// <summary>A delegate of KwdBufModifier</summary>
     public delegate void KwdBufModifier(BattleUnitBuf origin, ref BattleUnitBuf? result, BattleUnitModel target);
@@ -235,9 +243,16 @@ public class AdvancedDiceStatBonus : DiceStatBonus
     [HarmonyPatch(typeof(BattleDiceBehavior), "GiveDamage")]
     class PatchGiveDamage
     {
-        static void Prefix(ref DiceStatBonus __state, DiceStatBonus ____statBonus)
+        static bool Prefix(ref DiceStatBonus __state, DiceStatBonus ____statBonus)
         {
             __state = ____statBonus;
+
+            if (____statBonus is AdvancedDiceStatBonus adv && adv.noHit)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         static void Postfix(BattleDiceBehavior __instance, BattleUnitModel target, DiceStatBonus __state)
