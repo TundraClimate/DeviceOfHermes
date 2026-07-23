@@ -3,20 +3,20 @@ using DeviceOfHermes.Resource;
 
 namespace DeviceOfHermes.Data;
 
-internal static class FormationXmlLoader
+internal static class EmotionCardXmlLoader
 {
     public static void Load()
     {
         foreach (var mod in HermesPreloader.ActiveMods)
         {
-            var file = Path.Combine(mod.dirInfo.FullName, "Assemblies", "HermesData", "Formation.xml");
+            var file = Path.Combine(mod.dirInfo.FullName, "Assemblies", "HermesData", "EmotionCard.xml");
 
             if (!File.Exists(file))
             {
                 continue;
             }
 
-            var root = Serde.FromXmlFile<FormationXmlRoot>(file);
+            var root = Serde.FromXmlFile<EmotionCardXmlRoot>(file);
 
             if (root is null)
             {
@@ -25,9 +25,9 @@ internal static class FormationXmlLoader
 
             var pid = mod.invInfo.workshopInfo.uniqueId;
 
-            foreach (var info in root.list)
+            foreach (var info in root.emotionCardXmlList)
             {
-                Formation.Add(pid, info);
+                EmotionCard.Add(pid, info);
             }
         }
     }

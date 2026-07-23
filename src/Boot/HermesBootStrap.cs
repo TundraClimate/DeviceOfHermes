@@ -21,6 +21,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
         OnlyCardXmlLoader.Load();
         FormationXmlLoader.Load();
+        EmotionCardXmlLoader.Load();
 
         TextModel.Init();
         Localizer.Init();

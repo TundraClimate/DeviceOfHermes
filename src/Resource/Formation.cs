@@ -6,7 +6,7 @@ using HarmonyExtension;
 namespace DeviceOfHermes.Resource;
 
 /// <summary>A formation additional data</summary>
-public class Formation
+public static class Formation
 {
     static Formation()
     {
