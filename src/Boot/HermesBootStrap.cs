@@ -18,20 +18,24 @@ internal class HermesBootStrap : DiceCardAbilityBase
         NoPatchMethod.Init();
 
         HermesPreloader.PreloadAssemblies();
+        SaveModifier.Init();
 
         OnlyCardXmlLoader.Load();
         FormationXmlLoader.Load();
         EmotionCardXmlLoader.Load();
 
         TextModel.Init();
+        Artwork.Init();
+        AbnoCardArtworkLoader.Load();
+
         Localizer.Init();
 
-        SaveModifier.Init();
-        UnitUIExtension.Init();
-        DynamicAbility.Init();
         BattleUIBehaviour.Init();
 
         CompositePatch.Init();
+        DynamicAbility.Init();
+        UnitUIExtension.Init();
+
         CustomDicePatch.Init();
         RevengeDice.Init();
         UnbreakableDice.Init();

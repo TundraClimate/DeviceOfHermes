@@ -14,7 +14,7 @@ namespace DeviceOfHermes.Resource;
 /// </code></example>
 public static class Artwork
 {
-    static Artwork()
+    internal static void Init()
     {
         var harmony = new Harmony("DeviceOfHermes.Resource.Artwork");
 
