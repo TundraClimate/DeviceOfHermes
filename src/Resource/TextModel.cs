@@ -32,6 +32,37 @@ public static class TextModel
     /// <remarks>Game start, language reset or etc.</remarks>
     public static event Action<string> OnLoadLocalize = lang => { };
 
+    /// <summary>Set AbnormalityCard with card</summary>
+    public static void SetAbnormalityCard(AbnormalityCard card, bool replace = false)
+    {
+        ref var dict = ref AbnoCardsDict;
+
+        if (dict.ContainsKey(card.id))
+        {
+            if (replace)
+            {
+                dict[card.id] = card;
+            }
+            else
+            {
+                Hermes.Say($"Skipped: AbnormalityCard the '{card.id}' is already exists.", MessageLevel.Warn);
+            }
+
+            return;
+        }
+
+        dict.Add(card.id, card);
+    }
+
+    /// <summary>Set AbnormalityCard with cards</summary>
+    public static void SetAbnormalityCards(List<AbnormalityCard> cards, bool replace = false)
+    {
+        foreach (var card in cards)
+        {
+            SetAbnormalityCard(card, replace);
+        }
+    }
+
     /// <summary>Set BattleEffectText with text</summary>
     /// <param name="text">A dataset of <see cref="BattleEffectText"/></param>
     /// <param name="replace">Is replace if contains same text ID</param>
@@ -727,6 +758,12 @@ public static class TextModel
             SetTextData(id, text, replace);
         }
     }
+
+    private static ref Dictionary<string, AbnormalityCard> AbnoCardsDict =>
+        ref _abnoCards(AbnormalityCardDescXmlList.Instance);
+
+    private static AccessTools.FieldRef<AbnormalityCardDescXmlList, Dictionary<string, AbnormalityCard>> _abnoCards
+        = typeof(AbnormalityCardDescXmlList).FieldRefAccess<Dictionary<string, AbnormalityCard>>("_dictionary");
 
     private static ref Dictionary<string, BattleEffectText> EffectTextDict =>
         ref _effTxtRef(BattleEffectTextsXmlList.Instance);
