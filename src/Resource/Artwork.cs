@@ -65,6 +65,54 @@ public static class Artwork
         return CreateSprite(fileBytes, pixPerUnit);
     }
 
+    /// <summary>Set AbnoCard artwork</summary>
+    public static void SetAbnoCardArtwork(string name, Sprite sprite)
+    {
+        _abnoArtworks[name] = sprite;
+    }
+
+    /// <summary>Set AbnoCard artwork by path</summary>
+    public static void SetAbnoCardArtwork(string imgPath, string? name = null)
+    {
+        if (!File.Exists(imgPath))
+        {
+            Hermes.Say($"Skipped: Specified imgPath the '{imgPath}' is incorrect path.", MessageLevel.Warn);
+
+            return;
+        }
+
+        name ??= Path.GetFileNameWithoutExtension(imgPath);
+
+        var sprite = CreateSprite(imgPath);
+
+        if (sprite is null)
+        {
+            Hermes.Say($"Skipped: Specified data the '{imgPath}' is incorrect data.", MessageLevel.Warn);
+
+            return;
+        }
+
+        SetAbnoCardArtwork(name, sprite);
+    }
+
+    /// <summary>Set AbnoCard artworks by path</summary>
+    public static void LoadAbnoCardArtworks(string rootDirPath)
+    {
+        if (!Directory.Exists(rootDirPath))
+        {
+            Hermes.Say($"Skipped: The rootDirPath '{rootDirPath}' is not exists.", MessageLevel.Warn);
+
+            return;
+        }
+
+        var paths = Walkdir.GetFilesRecursive(rootDirPath);
+
+        foreach (var path in paths)
+        {
+            SetAbnoCardArtwork(path);
+        }
+    }
+
     /// <summary>Set <see cref="BattleUnitBuf"/> with id</summary>
     /// <param name="unitBufId">Specific ID</param>
     /// <param name="sprite">A sprite that shown</param>
@@ -347,10 +395,17 @@ public static class Artwork
         }
     }
 
+    internal static bool TryGetAbnoCardArtwork(string name, out Sprite res)
+    {
+        return _abnoArtworks.TryGetValue(name, out res);
+    }
+
     private static readonly FieldRef<UISpriteDataManager, Dictionary<string, UIIconManager.IconSet>> _storyIconRef =
         typeof(UISpriteDataManager).FieldRefAccess<Dictionary<string, UIIconManager.IconSet>>("StoryIconDic");
 
     private static List<(UIIconManager.IconSet, bool)>? _initializeStoryIconStash = new();
+
+    private static Dictionary<string, Sprite> _abnoArtworks = new();
 
     private class PatchArtwork
     {
