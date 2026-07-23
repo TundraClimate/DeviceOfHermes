@@ -20,7 +20,7 @@ namespace DeviceOfHermes.Resource;
 /// </code></example>
 public static class TextModel
 {
-    static TextModel()
+    internal static void Init()
     {
         var harmony = new Harmony("DeviceOfHermes.Resource.TextModel");
 

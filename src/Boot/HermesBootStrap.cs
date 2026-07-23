@@ -1,7 +1,9 @@
 using UnityEngine;
 using DeviceOfHermes.UI;
 using DeviceOfHermes.CustomDice;
+using DeviceOfHermes.Resource;
 using DeviceOfHermes.Data;
+using DeviceOfHermes.Localize;
 
 namespace DeviceOfHermes.Boot;
 
@@ -19,6 +21,9 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
         OnlyCardXmlLoader.Load();
         FormationXmlLoader.Load();
+
+        TextModel.Init();
+        Localizer.Init();
 
         SaveModifier.Init();
         UnitUIExtension.Init();
