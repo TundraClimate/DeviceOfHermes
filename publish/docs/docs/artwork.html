@@ -112,6 +112,30 @@
 <li><code>bytes</code>: 画像ファイルなどから読み出したデータです。</li>
 <li><code>pixPerUnit</code>: Unityが使用する1ユニットあたりのピクセル量です。</li>
 </ul>
+<h3 id="setabnocardartworkstring-sprite"><code>SetAbnoCardArtwork(string, Sprite)</code></h3>
+<pre><code class="lang-cs">Artwork.SetAbnoCardArtwork(name, sprite);
+</code></pre>
+<p><code>Sprite</code>を名前付きで幻想体ページ画像として追加・変更します。</p>
+<ul>
+<li><code>name</code>: 紐付ける名前です。</li>
+<li><code>sprite</code>: 追加する<code>Sprite</code>です。</li>
+</ul>
+<h3 id="setabnocardartworkstring-string"><code>SetAbnoCardArtwork(string, string)</code></h3>
+<pre><code class="lang-cs">Artwork.SetAbnoCardArtwork(path, name);
+</code></pre>
+<p>指定したパスの画像を幻想体ページ画像読み込んで追加・変更します。<br>
+拡張子を覗いたファイル名がそのまま名前になります。</p>
+<ul>
+<li><code>path</code>: 指定のファイルパスです。</li>
+<li><code>name</code>: 名前を別で指定する場合に指定する名前です。</li>
+</ul>
+<h3 id="loadabnocardartworksstring"><code>LoadAbnoCardArtworks(string)</code></h3>
+<pre><code class="lang-cs">Artwork.LoadAbnoCardArtworks(rootDirPath);
+</code></pre>
+<p>指定したフォルダに含まれる全てのファイルを幻想体ページ画像として読み込みます。</p>
+<ul>
+<li><code>rootDirPath</code>: 指定のフォルダパスです。</li>
+</ul>
 <h3 id="setbattleunitbufspritestring-sprite-bool"><code>SetBattleUnitBufSprite(string, Sprite, bool)</code></h3>
 <pre><code class="lang-cs">Artwork.SetBattleUnitBufSprite(id, sprite, replace);
 </code></pre>

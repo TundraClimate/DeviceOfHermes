@@ -3028,6 +3028,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Artwork.CreateSprite
   nameWithType: Artwork.CreateSprite
+- uid: DeviceOfHermes.Resource.Artwork.LoadAbnoCardArtworks(System.String)
+  name: LoadAbnoCardArtworks(string)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadAbnoCardArtworks_System_String_
+  commentId: M:DeviceOfHermes.Resource.Artwork.LoadAbnoCardArtworks(System.String)
+  name.vb: LoadAbnoCardArtworks(String)
+  fullName: DeviceOfHermes.Resource.Artwork.LoadAbnoCardArtworks(string)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.LoadAbnoCardArtworks(String)
+  nameWithType: Artwork.LoadAbnoCardArtworks(string)
+  nameWithType.vb: Artwork.LoadAbnoCardArtworks(String)
+- uid: DeviceOfHermes.Resource.Artwork.LoadAbnoCardArtworks*
+  name: LoadAbnoCardArtworks
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadAbnoCardArtworks_
+  commentId: Overload:DeviceOfHermes.Resource.Artwork.LoadAbnoCardArtworks
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Artwork.LoadAbnoCardArtworks
+  nameWithType: Artwork.LoadAbnoCardArtworks
 - uid: DeviceOfHermes.Resource.Artwork.LoadBattleUnitBufSprites(System.String,System.Boolean)
   name: LoadBattleUnitBufSprites(string, bool)
   href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_LoadBattleUnitBufSprites_System_String_System_Boolean_
@@ -3060,6 +3076,31 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Artwork.LoadStoryIconSprites
   nameWithType: Artwork.LoadStoryIconSprites
+- uid: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(System.String,System.String)
+  name: SetAbnoCardArtwork(string, string?)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetAbnoCardArtwork_System_String_System_String_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(System.String,System.String)
+  name.vb: SetAbnoCardArtwork(String, String)
+  fullName: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(string, string?)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(String, String)
+  nameWithType: Artwork.SetAbnoCardArtwork(string, string?)
+  nameWithType.vb: Artwork.SetAbnoCardArtwork(String, String)
+- uid: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(System.String,UnityEngine.Sprite)
+  name: SetAbnoCardArtwork(string, Sprite)
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetAbnoCardArtwork_System_String_UnityEngine_Sprite_
+  commentId: M:DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(System.String,UnityEngine.Sprite)
+  name.vb: SetAbnoCardArtwork(String, Sprite)
+  fullName: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(string, UnityEngine.Sprite)
+  fullName.vb: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork(String, UnityEngine.Sprite)
+  nameWithType: Artwork.SetAbnoCardArtwork(string, Sprite)
+  nameWithType.vb: Artwork.SetAbnoCardArtwork(String, Sprite)
+- uid: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork*
+  name: SetAbnoCardArtwork
+  href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetAbnoCardArtwork_
+  commentId: Overload:DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Artwork.SetAbnoCardArtwork
+  nameWithType: Artwork.SetAbnoCardArtwork
 - uid: DeviceOfHermes.Resource.Artwork.SetBattleUnitBufSprite(System.String,System.Boolean)
   name: SetBattleUnitBufSprite(string, bool)
   href: api/DeviceOfHermes.Resource.Artwork.html#DeviceOfHermes_Resource_Artwork_SetBattleUnitBufSprite_System_String_System_Boolean_
@@ -3128,6 +3169,44 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite
   nameWithType: Artwork.SetStoryIconSprite
+- uid: DeviceOfHermes.Resource.EmotionCard
+  name: EmotionCard
+  href: api/DeviceOfHermes.Resource.EmotionCard.html
+  commentId: T:DeviceOfHermes.Resource.EmotionCard
+  fullName: DeviceOfHermes.Resource.EmotionCard
+  nameWithType: EmotionCard
+- uid: DeviceOfHermes.Resource.EmotionCard.Add(System.String,EmotionCardXmlInfo)
+  name: Add(string, EmotionCardXmlInfo)
+  href: api/DeviceOfHermes.Resource.EmotionCard.html#DeviceOfHermes_Resource_EmotionCard_Add_System_String_EmotionCardXmlInfo_
+  commentId: M:DeviceOfHermes.Resource.EmotionCard.Add(System.String,EmotionCardXmlInfo)
+  name.vb: Add(String, EmotionCardXmlInfo)
+  fullName: DeviceOfHermes.Resource.EmotionCard.Add(string, EmotionCardXmlInfo)
+  fullName.vb: DeviceOfHermes.Resource.EmotionCard.Add(String, EmotionCardXmlInfo)
+  nameWithType: EmotionCard.Add(string, EmotionCardXmlInfo)
+  nameWithType.vb: EmotionCard.Add(String, EmotionCardXmlInfo)
+- uid: DeviceOfHermes.Resource.EmotionCard.Add*
+  name: Add
+  href: api/DeviceOfHermes.Resource.EmotionCard.html#DeviceOfHermes_Resource_EmotionCard_Add_
+  commentId: Overload:DeviceOfHermes.Resource.EmotionCard.Add
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EmotionCard.Add
+  nameWithType: EmotionCard.Add
+- uid: DeviceOfHermes.Resource.EmotionCard.Get(System.String,System.Int32)
+  name: Get(string, int)
+  href: api/DeviceOfHermes.Resource.EmotionCard.html#DeviceOfHermes_Resource_EmotionCard_Get_System_String_System_Int32_
+  commentId: M:DeviceOfHermes.Resource.EmotionCard.Get(System.String,System.Int32)
+  name.vb: Get(String, Integer)
+  fullName: DeviceOfHermes.Resource.EmotionCard.Get(string, int)
+  fullName.vb: DeviceOfHermes.Resource.EmotionCard.Get(String, Integer)
+  nameWithType: EmotionCard.Get(string, int)
+  nameWithType.vb: EmotionCard.Get(String, Integer)
+- uid: DeviceOfHermes.Resource.EmotionCard.Get*
+  name: Get
+  href: api/DeviceOfHermes.Resource.EmotionCard.html#DeviceOfHermes_Resource_EmotionCard_Get_
+  commentId: Overload:DeviceOfHermes.Resource.EmotionCard.Get
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.EmotionCard.Get
+  nameWithType: EmotionCard.Get
 - uid: DeviceOfHermes.Resource.EnvContainer
   name: EnvContainer
   href: api/DeviceOfHermes.Resource.EnvContainer.html
@@ -3519,6 +3598,38 @@ references:
   commentId: E:DeviceOfHermes.Resource.TextModel.OnLoadLocalize
   fullName: DeviceOfHermes.Resource.TextModel.OnLoadLocalize
   nameWithType: TextModel.OnLoadLocalize
+- uid: DeviceOfHermes.Resource.TextModel.SetAbnormalityCard(LOR_XML.AbnormalityCard,System.Boolean)
+  name: SetAbnormalityCard(AbnormalityCard, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetAbnormalityCard_LOR_XML_AbnormalityCard_System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetAbnormalityCard(LOR_XML.AbnormalityCard,System.Boolean)
+  name.vb: SetAbnormalityCard(AbnormalityCard, Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetAbnormalityCard(LOR_XML.AbnormalityCard, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetAbnormalityCard(LOR_XML.AbnormalityCard, Boolean)
+  nameWithType: TextModel.SetAbnormalityCard(AbnormalityCard, bool)
+  nameWithType.vb: TextModel.SetAbnormalityCard(AbnormalityCard, Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetAbnormalityCard*
+  name: SetAbnormalityCard
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetAbnormalityCard_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetAbnormalityCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetAbnormalityCard
+  nameWithType: TextModel.SetAbnormalityCard
+- uid: DeviceOfHermes.Resource.TextModel.SetAbnormalityCards(System.Collections.Generic.List{LOR_XML.AbnormalityCard},System.Boolean)
+  name: SetAbnormalityCards(List<AbnormalityCard>, bool)
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetAbnormalityCards_System_Collections_Generic_List_LOR_XML_AbnormalityCard__System_Boolean_
+  commentId: M:DeviceOfHermes.Resource.TextModel.SetAbnormalityCards(System.Collections.Generic.List{LOR_XML.AbnormalityCard},System.Boolean)
+  name.vb: SetAbnormalityCards(List(Of AbnormalityCard), Boolean)
+  fullName: DeviceOfHermes.Resource.TextModel.SetAbnormalityCards(System.Collections.Generic.List<LOR_XML.AbnormalityCard>, bool)
+  fullName.vb: DeviceOfHermes.Resource.TextModel.SetAbnormalityCards(System.Collections.Generic.List(Of LOR_XML.AbnormalityCard), Boolean)
+  nameWithType: TextModel.SetAbnormalityCards(List<AbnormalityCard>, bool)
+  nameWithType.vb: TextModel.SetAbnormalityCards(List(Of AbnormalityCard), Boolean)
+- uid: DeviceOfHermes.Resource.TextModel.SetAbnormalityCards*
+  name: SetAbnormalityCards
+  href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetAbnormalityCards_
+  commentId: Overload:DeviceOfHermes.Resource.TextModel.SetAbnormalityCards
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.TextModel.SetAbnormalityCards
+  nameWithType: TextModel.SetAbnormalityCards
 - uid: DeviceOfHermes.Resource.TextModel.SetBattleCardAbilityDesc(LOR_XML.BattleCardAbilityDesc,System.Boolean)
   name: SetBattleCardAbilityDesc(BattleCardAbilityDesc, bool)
   href: api/DeviceOfHermes.Resource.TextModel.html#DeviceOfHermes_Resource_TextModel_SetBattleCardAbilityDesc_LOR_XML_BattleCardAbilityDesc_System_Boolean_
@@ -5223,6 +5334,140 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UI.CommonCoroutine.ImageFadeout
   nameWithType: CommonCoroutine.ImageFadeout
+- uid: DeviceOfHermes.UI.CommonLevelUpUI
+  name: CommonLevelUpUI
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html
+  commentId: T:DeviceOfHermes.UI.CommonLevelUpUI
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI
+  nameWithType: CommonLevelUpUI
+- uid: DeviceOfHermes.UI.CommonLevelUpUI.#ctor(System.String)
+  name: CommonLevelUpUI(string)
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html#DeviceOfHermes_UI_CommonLevelUpUI__ctor_System_String_
+  commentId: M:DeviceOfHermes.UI.CommonLevelUpUI.#ctor(System.String)
+  name.vb: New(String)
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI.CommonLevelUpUI(string)
+  fullName.vb: DeviceOfHermes.UI.CommonLevelUpUI.New(String)
+  nameWithType: CommonLevelUpUI.CommonLevelUpUI(string)
+  nameWithType.vb: CommonLevelUpUI.New(String)
+- uid: DeviceOfHermes.UI.CommonLevelUpUI.#ctor*
+  name: CommonLevelUpUI
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html#DeviceOfHermes_UI_CommonLevelUpUI__ctor_
+  commentId: Overload:DeviceOfHermes.UI.CommonLevelUpUI.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI.CommonLevelUpUI
+  fullName.vb: DeviceOfHermes.UI.CommonLevelUpUI.New
+  nameWithType: CommonLevelUpUI.CommonLevelUpUI
+  nameWithType.vb: CommonLevelUpUI.New
+- uid: DeviceOfHermes.UI.CommonLevelUpUI.Drop(LevelUpUI)
+  name: Drop(LevelUpUI)
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html#DeviceOfHermes_UI_CommonLevelUpUI_Drop_LevelUpUI_
+  commentId: M:DeviceOfHermes.UI.CommonLevelUpUI.Drop(LevelUpUI)
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI.Drop(LevelUpUI)
+  nameWithType: CommonLevelUpUI.Drop(LevelUpUI)
+- uid: DeviceOfHermes.UI.CommonLevelUpUI.Drop*
+  name: Drop
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html#DeviceOfHermes_UI_CommonLevelUpUI_Drop_
+  commentId: Overload:DeviceOfHermes.UI.CommonLevelUpUI.Drop
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI.Drop
+  nameWithType: CommonLevelUpUI.Drop
+- uid: DeviceOfHermes.UI.CommonLevelUpUI.Init(LevelUpUI)
+  name: Init(LevelUpUI)
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html#DeviceOfHermes_UI_CommonLevelUpUI_Init_LevelUpUI_
+  commentId: M:DeviceOfHermes.UI.CommonLevelUpUI.Init(LevelUpUI)
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI.Init(LevelUpUI)
+  nameWithType: CommonLevelUpUI.Init(LevelUpUI)
+- uid: DeviceOfHermes.UI.CommonLevelUpUI.Init*
+  name: Init
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html#DeviceOfHermes_UI_CommonLevelUpUI_Init_
+  commentId: Overload:DeviceOfHermes.UI.CommonLevelUpUI.Init
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI.Init
+  nameWithType: CommonLevelUpUI.Init
+- uid: DeviceOfHermes.UI.CommonLevelUpUI.icon
+  name: icon
+  href: api/DeviceOfHermes.UI.CommonLevelUpUI.html#DeviceOfHermes_UI_CommonLevelUpUI_icon
+  commentId: F:DeviceOfHermes.UI.CommonLevelUpUI.icon
+  fullName: DeviceOfHermes.UI.CommonLevelUpUI.icon
+  nameWithType: CommonLevelUpUI.icon
+- uid: DeviceOfHermes.UI.CustomLevelUpUI
+  name: CustomLevelUpUI
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html
+  commentId: T:DeviceOfHermes.UI.CustomLevelUpUI
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI
+  nameWithType: CustomLevelUpUI
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.Drop(LevelUpUI)
+  name: Drop(LevelUpUI)
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_Drop_LevelUpUI_
+  commentId: M:DeviceOfHermes.UI.CustomLevelUpUI.Drop(LevelUpUI)
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.Drop(LevelUpUI)
+  nameWithType: CustomLevelUpUI.Drop(LevelUpUI)
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.Drop*
+  name: Drop
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_Drop_
+  commentId: Overload:DeviceOfHermes.UI.CustomLevelUpUI.Drop
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.Drop
+  nameWithType: CustomLevelUpUI.Drop
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.Init(LevelUpUI)
+  name: Init(LevelUpUI)
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_Init_LevelUpUI_
+  commentId: M:DeviceOfHermes.UI.CustomLevelUpUI.Init(LevelUpUI)
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.Init(LevelUpUI)
+  nameWithType: CustomLevelUpUI.Init(LevelUpUI)
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.Init*
+  name: Init
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_Init_
+  commentId: Overload:DeviceOfHermes.UI.CustomLevelUpUI.Init
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.Init
+  nameWithType: CustomLevelUpUI.Init
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.OnSelect(EmotionCardXmlInfo)
+  name: OnSelect(EmotionCardXmlInfo)
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_OnSelect_EmotionCardXmlInfo_
+  commentId: M:DeviceOfHermes.UI.CustomLevelUpUI.OnSelect(EmotionCardXmlInfo)
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.OnSelect(EmotionCardXmlInfo)
+  nameWithType: CustomLevelUpUI.OnSelect(EmotionCardXmlInfo)
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.OnSelect*
+  name: OnSelect
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_OnSelect_
+  commentId: Overload:DeviceOfHermes.UI.CustomLevelUpUI.OnSelect
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.OnSelect
+  nameWithType: CustomLevelUpUI.OnSelect
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.OpenLevelUpUI(DeviceOfHermes.UI.CustomLevelUpUI,System.Int32,System.Func{System.Collections.Generic.List{EmotionCardXmlInfo}})
+  name: OpenLevelUpUI(CustomLevelUpUI, int, Func<List<EmotionCardXmlInfo>>)
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_OpenLevelUpUI_DeviceOfHermes_UI_CustomLevelUpUI_System_Int32_System_Func_System_Collections_Generic_List_EmotionCardXmlInfo___
+  commentId: M:DeviceOfHermes.UI.CustomLevelUpUI.OpenLevelUpUI(DeviceOfHermes.UI.CustomLevelUpUI,System.Int32,System.Func{System.Collections.Generic.List{EmotionCardXmlInfo}})
+  name.vb: OpenLevelUpUI(CustomLevelUpUI, Integer, Func(Of List(Of EmotionCardXmlInfo)))
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.OpenLevelUpUI(DeviceOfHermes.UI.CustomLevelUpUI, int, System.Func<System.Collections.Generic.List<EmotionCardXmlInfo>>)
+  fullName.vb: DeviceOfHermes.UI.CustomLevelUpUI.OpenLevelUpUI(DeviceOfHermes.UI.CustomLevelUpUI, Integer, System.Func(Of System.Collections.Generic.List(Of EmotionCardXmlInfo)))
+  nameWithType: CustomLevelUpUI.OpenLevelUpUI(CustomLevelUpUI, int, Func<List<EmotionCardXmlInfo>>)
+  nameWithType.vb: CustomLevelUpUI.OpenLevelUpUI(CustomLevelUpUI, Integer, Func(Of List(Of EmotionCardXmlInfo)))
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.OpenLevelUpUI*
+  name: OpenLevelUpUI
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_OpenLevelUpUI_
+  commentId: Overload:DeviceOfHermes.UI.CustomLevelUpUI.OpenLevelUpUI
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.OpenLevelUpUI
+  nameWithType: CustomLevelUpUI.OpenLevelUpUI
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.QueueLevelUp(DeviceOfHermes.UI.CustomLevelUpUI,System.Int32,System.Func{System.Collections.Generic.List{EmotionCardXmlInfo}})
+  name: QueueLevelUp(CustomLevelUpUI, int, Func<List<EmotionCardXmlInfo>>)
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_QueueLevelUp_DeviceOfHermes_UI_CustomLevelUpUI_System_Int32_System_Func_System_Collections_Generic_List_EmotionCardXmlInfo___
+  commentId: M:DeviceOfHermes.UI.CustomLevelUpUI.QueueLevelUp(DeviceOfHermes.UI.CustomLevelUpUI,System.Int32,System.Func{System.Collections.Generic.List{EmotionCardXmlInfo}})
+  name.vb: QueueLevelUp(CustomLevelUpUI, Integer, Func(Of List(Of EmotionCardXmlInfo)))
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.QueueLevelUp(DeviceOfHermes.UI.CustomLevelUpUI, int, System.Func<System.Collections.Generic.List<EmotionCardXmlInfo>>)
+  fullName.vb: DeviceOfHermes.UI.CustomLevelUpUI.QueueLevelUp(DeviceOfHermes.UI.CustomLevelUpUI, Integer, System.Func(Of System.Collections.Generic.List(Of EmotionCardXmlInfo)))
+  nameWithType: CustomLevelUpUI.QueueLevelUp(CustomLevelUpUI, int, Func<List<EmotionCardXmlInfo>>)
+  nameWithType.vb: CustomLevelUpUI.QueueLevelUp(CustomLevelUpUI, Integer, Func(Of List(Of EmotionCardXmlInfo)))
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.QueueLevelUp*
+  name: QueueLevelUp
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_QueueLevelUp_
+  commentId: Overload:DeviceOfHermes.UI.CustomLevelUpUI.QueueLevelUp
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.QueueLevelUp
+  nameWithType: CustomLevelUpUI.QueueLevelUp
 - uid: DeviceOfHermes.UI.StoryLineMaker
   name: StoryLineMaker
   href: api/DeviceOfHermes.UI.StoryLineMaker.html

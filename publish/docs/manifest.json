@@ -712,6 +712,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Resource.EmotionCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Resource.EmotionCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Resource.EmotionCard",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Resource.EmotionCard.yml\" sourcestartlinenumber=\"1\">A emotion card data</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Resource.EnvContainer.yml",
       "output": {
         ".html": {
@@ -1003,6 +1017,34 @@
       "IsMRef": true,
       "Title": "DeviceOfHermes.UI.CommonCoroutine",
       "Summary": "<p sourcefile=\"api/DeviceOfHermes.UI.CommonCoroutine.yml\" sourcestartlinenumber=\"1\">A list of Coroutines</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.UI.CommonLevelUpUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.UI.CommonLevelUpUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.UI.CommonLevelUpUI",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.UI.CommonLevelUpUI.yml\" sourcestartlinenumber=\"1\">A ui of common levelup</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.UI.CustomLevelUpUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.UI.CustomLevelUpUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.UI.CustomLevelUpUI",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.UI.CustomLevelUpUI.yml\" sourcestartlinenumber=\"1\">Customized levelup ui</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1441,6 +1483,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/common-levelupui.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/common-levelupui.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/composite.md",
       "output": {
         ".html": {
@@ -1455,6 +1507,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/custom-dicesprite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/custom-levelupui.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/custom-levelupui.html"
         }
       },
       "version": ""
