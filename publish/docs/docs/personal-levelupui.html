@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace DeviceOfHermes.UI | DeviceOfHermes </title>
+      <title>using DeviceOfHermes.UI; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace DeviceOfHermes.UI | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes.UI; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/personal-levelupui.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,68 +84,41 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="DeviceOfHermes.UI">
+        <article data-uid="">
+<h1 id="using-deviceofhermesui"><code>using DeviceOfHermes.UI;</code></h1>
 
-  <h1 id="DeviceOfHermes_UI" data-uid="DeviceOfHermes.UI" class="text-break">Namespace DeviceOfHermes.UI</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleFloatingDiceCardListUI.html">BattleFloatingDiceCardListUI</a></dt>
-      <dd><p>A list ui of floating card</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleFloatingDiceCardUI.html">BattleFloatingDiceCardUI</a></dt>
-      <dd><p>A ui of BattleDiceCardUI wrapper</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleMapChanger.html">BattleMapChanger</a></dt>
-      <dd><p>Changes battle map</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviour.html">BattleUIBehaviour</a></dt>
-      <dd><p>A behaviour for BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.BattleUIBehaviourExtension.html">BattleUIBehaviourExtension</a></dt>
-      <dd><p>The extensions of BattleManagerUI</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.CommonLevelUpUI.html">CommonLevelUpUI</a></dt>
-      <dd><p>A ui of common levelup</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.CustomLevelUpUI.html">CustomLevelUpUI</a></dt>
-      <dd><p>Customized levelup ui</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.PersonalLevelUpUI.html">PersonalLevelUpUI</a></dt>
-      <dd><p>A ui of personal levelup ui</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DeviceOfHermes.UI.StoryLineMaker.html">StoryLineMaker</a></dt>
-      <dd><p>Make storyline</p>
-</dd>
-    </dl>
-
+<p>名前空間<code>DeviceOfHermes.UI</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="personallevelupui">PersonalLevelUpUI</h1>
+<p>ユニットに紐付けてUIを起動するために実装された<code>CustomLevelUpUI</code>です。</p>
+<pre><code class="lang-cs">CustomLevelUpUI.QueueLevelUp(new PersonalLevelUpUI(owner) { name = /* UIのタイトル */, icon = /* 階層位置に位置するSprite */ }, /* ページ選択段階 */, /* ページリスト */);
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h3 id="ctorbattleunitmodel"><code>Ctor(BattleUnitModel)</code></h3>
+<pre><code class="lang-cs">new PersonalLevelUpUI(owner);
+</code></pre>
+<p>紐付けるユニットを設定します。</p>
+<ul>
+<li><code>owner</code>: 紐付ける対象ユニットです。</li>
+</ul>
+<h3 id="name"><code>name</code></h3>
+<p>UI左上に表示されるタイトル文章を指定します。</p>
+<ul>
+<li><code>title</code>: 指定対象です。</li>
+</ul>
+<h3 id="icon"><code>icon</code></h3>
+<p>UI左上に表示されるアイコンの画像を指定します。</p>
+<ul>
+<li><code>icon</code>: 対象の<code>Sprite</code>です。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/personal-levelupui.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

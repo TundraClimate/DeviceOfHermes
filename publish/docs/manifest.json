@@ -1048,6 +1048,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.UI.PersonalLevelUpUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.UI.PersonalLevelUpUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.UI.PersonalLevelUpUI",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.UI.PersonalLevelUpUI.yml\" sourcestartlinenumber=\"1\">A ui of personal levelup ui</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.UI.StoryLineMaker.yml",
       "output": {
         ".html": {
@@ -1597,6 +1611,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/passive-resolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/personal-levelupui.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/personal-levelupui.html"
         }
       },
       "version": ""
