@@ -16,7 +16,7 @@ public class SecondlyDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Slash &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is SecondlyDice,
             HermesConstants.SecondlySlash,
-            new Color(255, 255, 200, 200)
+            new Color32(255, 255, 200, 200)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -24,7 +24,7 @@ public class SecondlyDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Penetrate &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is SecondlyDice,
             HermesConstants.SecondlyPenetrate,
-            new Color(255, 255, 200, 200)
+            new Color32(255, 255, 200, 200)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -32,7 +32,7 @@ public class SecondlyDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Hit &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is SecondlyDice,
             HermesConstants.SecondlyHit,
-            new Color(255, 255, 200, 200)
+            new Color32(255, 255, 200, 200)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -40,7 +40,7 @@ public class SecondlyDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Guard &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is SecondlyDice,
             HermesConstants.SecondlyGuard,
-            new Color(255, 255, 200, 200)
+            new Color32(255, 255, 200, 200)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -48,7 +48,7 @@ public class SecondlyDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Evasion &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is SecondlyDice,
             HermesConstants.SecondlyEvasion,
-            new Color(255, 255, 200, 200)
+            new Color32(255, 255, 200, 200)
         );
     }
 

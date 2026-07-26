@@ -29,7 +29,7 @@ public class RevengeDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Slash &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is RevengeDice,
             HermesConstants.RevengeDiceSlash,
-            new Color(255, 0, 200, 200)
+            new Color32(255, 0, 200, 200)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -37,7 +37,7 @@ public class RevengeDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Penetrate &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is RevengeDice,
             HermesConstants.RevengeDicePenetrate,
-            new Color(255, 0, 200, 200)
+            new Color32(255, 0, 200, 200)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -45,7 +45,7 @@ public class RevengeDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Hit &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is RevengeDice,
             HermesConstants.RevengeDiceHit,
-            new Color(255, 0, 200, 200)
+            new Color32(255, 0, 200, 200)
         );
     }
 

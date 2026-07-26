@@ -29,7 +29,7 @@ public class UnbreakableDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Slash &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is UnbreakableDice,
             HermesConstants.UnbreakableSlash,
-            new Color(180, 0, 0, 200)
+            new Color32(180, 0, 0, 250)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -37,7 +37,7 @@ public class UnbreakableDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Penetrate &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is UnbreakableDice,
             HermesConstants.UnbreakablePenetrate,
-            new Color(180, 0, 0, 200)
+            new Color32(180, 0, 0, 250)
         );
         CustomDiceSprite.AddSequence(
             beh =>
@@ -45,7 +45,7 @@ public class UnbreakableDice : AdvancedDiceBase
                 beh.Detail is BehaviourDetail.Hit &&
                 AssemblyManager.Instance.CreateInstance_DiceCardAbility(beh.Script) is UnbreakableDice,
             HermesConstants.UnbreakableHit,
-            new Color(180, 0, 0, 200)
+            new Color32(180, 0, 0, 250)
         );
     }
 
