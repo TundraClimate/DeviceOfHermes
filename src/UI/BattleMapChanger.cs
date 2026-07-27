@@ -74,6 +74,7 @@ public static class BattleMapChanger
             BattleSoundManager.Instance.SetEnemyTheme(_prevMap.mapBgm);
         }
 
+        _mapObject = null;
         _fixedMap = false;
         _map = null;
         _originalMap = false;
