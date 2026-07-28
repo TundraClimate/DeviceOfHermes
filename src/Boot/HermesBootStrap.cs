@@ -13,34 +13,42 @@ internal class HermesBootStrap : DiceCardAbilityBase
 
     private static string OnBoot()
     {
-        Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
+        try
+        {
+            Application.logMessageReceived += Hermes.CreateCleanLog("Output.hermes.log");
 
-        NoPatchMethod.Init();
+            NoPatchMethod.Init();
 
-        HermesPreloader.PreloadAssemblies();
-        SaveModifier.Init();
+            HermesPreloader.PreloadAssemblies();
+            SaveModifier.Init();
 
-        OnlyCardXmlLoader.Load();
-        FormationXmlLoader.Load();
-        EmotionCardXmlLoader.Load();
+            OnlyCardXmlLoader.Load();
+            FormationXmlLoader.Load();
+            EmotionCardXmlLoader.Load();
 
-        TextModel.Init();
-        Artwork.Init();
-        AbnoCardArtworkLoader.Load();
+            TextModel.Init();
+            Artwork.Init();
+            AbnoCardArtworkLoader.Load();
 
-        Localizer.Init();
+            Localizer.Init();
 
-        BattleUIBehaviour.Init();
+            BattleUIBehaviour.Init();
 
-        CompositePatch.Init();
-        DynamicAbility.Init();
-        UnitUIExtension.Init();
+            CompositePatch.Init();
+            DynamicAbility.Init();
+            UnitUIExtension.Init();
 
-        CustomDicePatch.Init();
-        RevengeDice.Init();
-        UnbreakableDice.Init();
-        SecondlyDice.Init();
-        EqualDice.Init();
+            CustomDicePatch.Init();
+            RevengeDice.Init();
+            UnbreakableDice.Init();
+            SecondlyDice.Init();
+            EqualDice.Init();
+        }
+        catch (Exception e)
+        {
+            Mod.ModContentManager.Instance.AddErrorLog($"-BootStrap Err-");
+            Mod.ModContentManager.Instance.AddErrorLog($"{e}");
+        }
 
         return "";
     }
