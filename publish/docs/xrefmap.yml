@@ -3356,22 +3356,6 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Formation.Add
   nameWithType: Formation.Add
-- uid: DeviceOfHermes.Resource.Formation.AddLibrarian(System.String,FormationXmlInfo)
-  name: AddLibrarian(string, FormationXmlInfo)
-  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_AddLibrarian_System_String_FormationXmlInfo_
-  commentId: M:DeviceOfHermes.Resource.Formation.AddLibrarian(System.String,FormationXmlInfo)
-  name.vb: AddLibrarian(String, FormationXmlInfo)
-  fullName: DeviceOfHermes.Resource.Formation.AddLibrarian(string, FormationXmlInfo)
-  fullName.vb: DeviceOfHermes.Resource.Formation.AddLibrarian(String, FormationXmlInfo)
-  nameWithType: Formation.AddLibrarian(string, FormationXmlInfo)
-  nameWithType.vb: Formation.AddLibrarian(String, FormationXmlInfo)
-- uid: DeviceOfHermes.Resource.Formation.AddLibrarian*
-  name: AddLibrarian
-  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_AddLibrarian_
-  commentId: Overload:DeviceOfHermes.Resource.Formation.AddLibrarian
-  isSpec: "True"
-  fullName: DeviceOfHermes.Resource.Formation.AddLibrarian
-  nameWithType: Formation.AddLibrarian
 - uid: DeviceOfHermes.Resource.Formation.AddLibrarianMap(System.String,System.Int32,System.Int32)
   name: AddLibrarianMap(string, int, int)
   href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_AddLibrarianMap_System_String_System_Int32_System_Int32_
@@ -3404,22 +3388,6 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Formation.Get
   nameWithType: Formation.Get
-- uid: DeviceOfHermes.Resource.Formation.GetLibrarian(System.String,System.Int32)
-  name: GetLibrarian(string, int)
-  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_GetLibrarian_System_String_System_Int32_
-  commentId: M:DeviceOfHermes.Resource.Formation.GetLibrarian(System.String,System.Int32)
-  name.vb: GetLibrarian(String, Integer)
-  fullName: DeviceOfHermes.Resource.Formation.GetLibrarian(string, int)
-  fullName.vb: DeviceOfHermes.Resource.Formation.GetLibrarian(String, Integer)
-  nameWithType: Formation.GetLibrarian(string, int)
-  nameWithType.vb: Formation.GetLibrarian(String, Integer)
-- uid: DeviceOfHermes.Resource.Formation.GetLibrarian*
-  name: GetLibrarian
-  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_GetLibrarian_
-  commentId: Overload:DeviceOfHermes.Resource.Formation.GetLibrarian
-  isSpec: "True"
-  fullName: DeviceOfHermes.Resource.Formation.GetLibrarian
-  nameWithType: Formation.GetLibrarian
 - uid: DeviceOfHermes.Resource.ReadXmlParser
   name: ReadXmlParser
   href: api/DeviceOfHermes.Resource.ReadXmlParser.html

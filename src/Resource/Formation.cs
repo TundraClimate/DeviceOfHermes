@@ -13,6 +13,7 @@ public static class Formation
         var harmony = new Harmony("DeviceOfHermes.Resource.Formation");
 
         harmony.CreateClassProcessor(typeof(PatchStageWaveInit)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchStageFloorInit)).Patch();
     }
 
     /// <summary>Add new info</summary>
@@ -39,6 +40,12 @@ public static class Formation
         }
 
         return null;
+    }
+
+    /// <summary>Add new librarian and stage mapping</summary>
+    public static void AddLibrarianMap(string pid, int stage, int formation)
+    {
+        _libsMapping[new LorId(pid, stage)] = new LorId(pid, formation);
     }
 
     [HarmonyPatch(typeof(StageWaveModel), "Init")]
@@ -74,5 +81,27 @@ public static class Formation
         }
     }
 
+    [HarmonyPatch(typeof(StageLibraryFloorModel), "Init")]
+    class PatchStageFloorInit
+    {
+        static Exception Finalizer(Exception __exception, StageModel stage, LibraryFloorModel ____floorModel)
+        {
+            if (_data.GetValue(FormationXmlList.Instance, _ => new()).Values.Flatten().Contains(____floorModel.appliedFormation?.XmlInfo))
+            {
+                ____floorModel.SetFormation(null);
+            }
+
+            if (_libsMapping.TryGetValue(stage.ClassInfo.id, out var form)
+                && Get(form.packageId, form.id) is FormationXmlInfo formation)
+            {
+                ____floorModel.SetFormation(new FormationModel(formation));
+            }
+
+            return __exception;
+        }
+    }
+
     private static ConditionalWeakTable<FormationXmlList, Dictionary<string, List<FormationXmlInfo>>> _data = new();
+
+    private static Dictionary<LorId, LorId> _libsMapping = new();
 }

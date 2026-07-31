@@ -116,7 +116,14 @@
 
 &lt;/FormationXmlRoot&gt;
 </code></pre>
-<p>この方法で追加したフォーメーションが有効なのは同じPackageIdで追加された接待のみです。</p>
+<p>この方法で追加したフォーメーションが有効なのは同じPackageIdで追加された接待のみです。<br>
+また、<code>AddLibrarianMap</code>を実行することで特定の接待でのみ司書側のフォーメーションを設定できます。</p>
+<pre><code class="lang-cs">// ファイルの頭に必要
+using DeviceOfHermes.Resource;
+
+// 接待と司書のフォーメーションを紐付ける
+Formation.AddLibrarianMap(&quot;MODのID&quot;, /* 接待のID */, /* フォーメーションのID */);
+</code></pre>
 
 </article>
 
