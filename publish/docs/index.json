@@ -104,6 +104,11 @@
     "title": "Class BattleUIBehaviourExtension | DeviceOfHermes",
     "summary": "Class BattleUIBehaviourExtension Namespace DeviceOfHermes Assembly DeviceOfHermes.dll The extensions of BattleManagerUI public static class BattleUIBehaviourExtension Inheritance object BattleUIBehaviourExtension Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object)"
   },
+  "api/DeviceOfHermes.BattleUnitExtension.html": {
+    "href": "api/DeviceOfHermes.BattleUnitExtension.html",
+    "title": "Class BattleUnitExtension | DeviceOfHermes",
+    "summary": "Class BattleUnitExtension Namespace DeviceOfHermes Assembly DeviceOfHermes.dll A extension of BattleUnit public static class BattleUnitExtension Inheritance object BattleUnitExtension Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object)"
+  },
   "api/DeviceOfHermes.Boot.HermesInitializer.html": {
     "href": "api/DeviceOfHermes.Boot.HermesInitializer.html",
     "title": "Interface HermesInitializer | DeviceOfHermes",
@@ -267,7 +272,7 @@
   "api/DeviceOfHermes.Resource.Formation.html": {
     "href": "api/DeviceOfHermes.Resource.Formation.html",
     "title": "Class Formation | DeviceOfHermes",
-    "summary": "Class Formation Namespace DeviceOfHermes.Resource Assembly DeviceOfHermes.dll A formation additional data public static class Formation Inheritance object Formation Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods Add(string, FormationXmlInfo) Add new info public static void Add(string pid, FormationXmlInfo info) Parameters pid string info FormationXmlInfo Get(string, int) Get info matches id public static FormationXmlInfo? Get(string pid, int id) Parameters pid string id int Returns FormationXmlInfo"
+    "summary": "Class Formation Namespace DeviceOfHermes.Resource Assembly DeviceOfHermes.dll A formation additional data public static class Formation Inheritance object Formation Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods Add(string, FormationXmlInfo) Add new info public static void Add(string pid, FormationXmlInfo info) Parameters pid string info FormationXmlInfo AddLibrarian(string, FormationXmlInfo) Add new librarian info public static void AddLibrarian(string pid, FormationXmlInfo info) Parameters pid string info FormationXmlInfo AddLibrarianMap(string, int, int) Add new librarian and stage mapping public static void AddLibrarianMap(string pid, int stage, int formation) Parameters pid string stage int formation int Get(string, int) Get info matches id public static FormationXmlInfo? Get(string pid, int id) Parameters pid string id int Returns FormationXmlInfo GetLibrarian(string, int) Get info matches id from librarians public static FormationXmlInfo? GetLibrarian(string pid, int id) Parameters pid string id int Returns FormationXmlInfo"
   },
   "api/DeviceOfHermes.Resource.ReadXmlParser.html": {
     "href": "api/DeviceOfHermes.Resource.ReadXmlParser.html",
@@ -397,7 +402,7 @@
   "api/DeviceOfHermes.html": {
     "href": "api/DeviceOfHermes.html",
     "title": "Namespace DeviceOfHermes | DeviceOfHermes",
-    "summary": "Namespace DeviceOfHermes Classes AdditonalOnlyCard OnlyCard manage helper AdvancedDiceStatBonus An advanced dice stat bonus AdvancedTakeDamage The useful TakeDamage BattleBufExtension Additional battleunitbuf extension BattleCardExtension A extension of BattleCard BattleTickAction Manage tick actions in battle CommonCoroutine A list of Coroutines CustomDiceSprite Supplies dice sprite customizer DeckExtension A extension of decks DynamicAbilityCfg The config of DynamicAbility EasyAreaEffect A helper of FarAreaEffect EasyAreaEffect.Stage Stage helper EasyAreaEffect.Unit Unit helper EasyAreaEffect.Victims A wrapper of List<BattleFarAreaPlayManager.VictimInfo> HermesConstants The constants used by DoH NoPatchMethod A extension with Non-patched methods PackageInfo<T> A information of package PassiveResolver Resolver the passive attribute succession Remainder A remainder of counting RencounterEventExtension An extension of events on rencounter RouteInterfacesAttribute Interface router ScheduleRunner In battle scheduler SpeedDiceBuf A buf of equips by speed dice SpeedDiceBufDetail A detail of SpeedDiceBufs SpeedDiceBufDetailExt An extensions of SpeedDiceBuf for BattleUnitModel StageLibrarianList A util of stage librarian list StyleExtension Styled text methods UnitUIExtension The extensions of ui on unit model VannilaUnitBuf Modify the vannila unitbufs Interfaces IComposite Composite marker ModPackage A unit of mod Enums EasyAreaEffect.MoveOpts MoveTo Options RencounterEvent An enum of events on rencounter ScheduleTiming A timing of scheduled Delegates AdvancedDiceStatBonus.KwdBufModifier A delegate of KwdBufModifier"
+    "summary": "Namespace DeviceOfHermes Classes AdditonalOnlyCard OnlyCard manage helper AdvancedDiceStatBonus An advanced dice stat bonus AdvancedTakeDamage The useful TakeDamage BattleBufExtension Additional battleunitbuf extension BattleCardExtension A extension of BattleCard BattleTickAction Manage tick actions in battle BattleUnitExtension A extension of BattleUnit CommonCoroutine A list of Coroutines CustomDiceSprite Supplies dice sprite customizer DeckExtension A extension of decks DynamicAbilityCfg The config of DynamicAbility EasyAreaEffect A helper of FarAreaEffect EasyAreaEffect.Stage Stage helper EasyAreaEffect.Unit Unit helper EasyAreaEffect.Victims A wrapper of List<BattleFarAreaPlayManager.VictimInfo> HermesConstants The constants used by DoH NoPatchMethod A extension with Non-patched methods PackageInfo<T> A information of package PassiveResolver Resolver the passive attribute succession Remainder A remainder of counting RencounterEventExtension An extension of events on rencounter RouteInterfacesAttribute Interface router ScheduleRunner In battle scheduler SpeedDiceBuf A buf of equips by speed dice SpeedDiceBufDetail A detail of SpeedDiceBufs SpeedDiceBufDetailExt An extensions of SpeedDiceBuf for BattleUnitModel StageLibrarianList A util of stage librarian list StyleExtension Styled text methods UnitUIExtension The extensions of ui on unit model VannilaUnitBuf Modify the vannila unitbufs Interfaces IComposite Composite marker ModPackage A unit of mod Enums EasyAreaEffect.MoveOpts MoveTo Options RencounterEvent An enum of events on rencounter ScheduleTiming A timing of scheduled Delegates AdvancedDiceStatBonus.KwdBufModifier A delegate of KwdBufModifier"
   },
   "api/HarmonyExtension.HarmonyExtension.html": {
     "href": "api/HarmonyExtension.HarmonyExtension.html",
@@ -408,6 +413,21 @@
     "href": "api/HarmonyExtension.html",
     "title": "Namespace HarmonyExtension | DeviceOfHermes",
     "summary": "Namespace HarmonyExtension Classes HarmonyExtension Harmony extensions"
+  },
+  "api/System.Collections.Generic.DeferredList-1.html": {
+    "href": "api/System.Collections.Generic.DeferredList-1.html",
+    "title": "Struct DeferredList<T> | DeviceOfHermes",
+    "summary": "Struct DeferredList<T> Namespace System.Collections.Generic Assembly DeviceOfHermes.dll A list of deferred public struct DeferredList<T> : IEnumerable<T>, IEnumerable Type Parameters T Implements IEnumerable<T> IEnumerable Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Extension.Collect<T>(IEnumerable<T>) Extension.Enumerate<T>(IEnumerable<T>) Extension.FilterMap<T, V>(IEnumerable<T>, Func<T, V>) Extension.Filter<T>(IEnumerable<T>, Func<T, bool>) Extension.FlatMap<T, R>(IEnumerable<T>, Func<T, IEnumerable<R>>) Extension.Fold<T, R>(IEnumerable<T>, R, Func<R, T, R>) Extension.Foreach<T>(IEnumerable<T>, Action<T>) Extension.Inspect<T>(IEnumerable<T>, Action<T>) Extension.Map<T, V>(IEnumerable<T>, Func<T, V>) Extension.Reduce<T>(IEnumerable<T>, Func<T, T, T>) Extension.TryForeach<T, R>(IEnumerable<T>, Func<T, R?>) Constructors DeferredList(List<T>) A list of deferred public DeferredList(List<T> items) Parameters items List<T> Methods Add(T) Adds Adding pending list public void Add(T item) Parameters item T GetEnumerator() Impls GetEnumerator public IEnumerator<T> GetEnumerator() Returns IEnumerator<T> Remove(T) Adds Removing pending list public void Remove(T item) Parameters item T"
+  },
+  "api/System.Collections.Generic.DeferredListEnumerator-1.html": {
+    "href": "api/System.Collections.Generic.DeferredListEnumerator-1.html",
+    "title": "Struct DeferredListEnumerator<T> | DeviceOfHermes",
+    "summary": "Struct DeferredListEnumerator<T> Namespace System.Collections.Generic Assembly DeviceOfHermes.dll A enumerator of DeferredList public struct DeferredListEnumerator<T> : IEnumerator<T>, IDisposable, IEnumerator Type Parameters T Implements IEnumerator<T> IDisposable IEnumerator Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Constructors DeferredListEnumerator(List<T>, int, List<T>, List<T>) A enumerator of DeferredList public DeferredListEnumerator(List<T> items, int remains, List<T> adds, List<T> rms) Parameters items List<T> remains int adds List<T> rms List<T> Properties Current Impls Current public T Current { get; } Property Value T Methods Dispose() Impls Dispose public void Dispose() MoveNext() Impls MoveNext public bool MoveNext() Returns bool Reset() Impls Reset public void Reset()"
+  },
+  "api/System.Collections.Generic.DeferredListExtension.html": {
+    "href": "api/System.Collections.Generic.DeferredListExtension.html",
+    "title": "Class DeferredListExtension | DeviceOfHermes",
+    "summary": "Class DeferredListExtension Namespace System.Collections.Generic Assembly DeviceOfHermes.dll A extension of DeferredList public static class DeferredListExtension Inheritance object DeferredListExtension Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods AsDefer<T>(List<T>, out DeferredList<T>) Creates DeferredList public static DeferredList<T> AsDefer<T>(this List<T> list, out DeferredList<T> self) Parameters list List<T> self DeferredList<T> Returns DeferredList<T> Type Parameters T"
   },
   "api/System.Collections.Generic.Peekable-1.html": {
     "href": "api/System.Collections.Generic.Peekable-1.html",
@@ -437,7 +457,7 @@
   "api/System.Collections.Generic.html": {
     "href": "api/System.Collections.Generic.html",
     "title": "Namespace System.Collections.Generic | DeviceOfHermes",
-    "summary": "Namespace System.Collections.Generic Classes Peekable<T> Provides a wrapper over an enumerator that supports peeking the next element without consuming it. RefListExtension A extension of RefList Walkdir Provides utilities for recursively walking directories. Structs RefListEnumerator<T> A enumerator of RefList RefList<T> A list of element refs"
+    "summary": "Namespace System.Collections.Generic Classes DeferredListExtension A extension of DeferredList Peekable<T> Provides a wrapper over an enumerator that supports peeking the next element without consuming it. RefListExtension A extension of RefList Walkdir Provides utilities for recursively walking directories. Structs DeferredListEnumerator<T> A enumerator of DeferredList DeferredList<T> A list of deferred RefListEnumerator<T> A enumerator of RefList RefList<T> A list of element refs"
   },
   "api/System.Extension.html": {
     "href": "api/System.Extension.html",
@@ -548,6 +568,11 @@
     "href": "docs/battleui-behaviour.html",
     "title": "using DeviceOfHermes.UI; | DeviceOfHermes",
     "summary": "using DeviceOfHermes.UI; 名前空間DeviceOfHermes.UIに存在するクラスです。 この記事はこれを前提に書かれています。 BattleUIBehaviour 拡張型MonoBehaviourです。 class ExampleUI : BattleUIBehaviour { void Awake() { InitUI(); } void Start() { gameObject.AddContainer(head => { head.Also(s => s.name = \"Panel\") .MoveTo(new Vector2(0.5f, 0.5f)) .SetImage(Artwork.CreateSprite(Path.Combine(typeof(ExampleUI).GetAsmDirectory(), \"Artwork\", \"Panel.png\"))); }); } public override OnRoundStart() { } public override OnStartBattle() { } } BattleManagerUI.Instance.AddBehaviour<ExampleUI>(\"exampleUI\"); この例は画面の中心にPanel.pngの画像を表示します。 Specified usage OnRoundStart() public override OnRoundStart() { } 幕の開始時に実行されます。 OnStartBattle() public override OnStartBattle() { } 戦闘開始時に実行されます。 InitUI(int) InitUI(order); UI用にGameObjectを初期化し、Canvasを返します。 order: CanvasのsortingOrderです。値が大きいほど手前に表示されます。 AddBehaviour<T>(string) BattleManagerUI.Instance.AddBehaviour<T>(name); BattleManagerUIにMonoBehaviourを追加します。 name: 同時に作成されるGameObjectの名称です。 GetBehaviour<T>(string) BattleManagerUI.Instance.GetBehaviour<T>(name); AddBehaviourによって追加されたBehaviourを取得します。 OnInitializeMod時点では初期化されておらず、nullを返す点を留意してください。 name: 同時に作成されるGameObjectの名称です。"
+  },
+  "docs/battleunit-extension.html": {
+    "href": "docs/battleunit-extension.html",
+    "title": "using DeviceOfHermes; | DeviceOfHermes",
+    "summary": "using DeviceOfHermes; 名前空間DeviceOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 BattleUnitExtension ユニット関連の拡張メソッドです。 ※ メソッドの呼び出し時点でユニット上限が10まで拡充されます。 // ID=43005のユニットで残りの配置枠を埋めます。 while (StageController.Instance.TryAddNewEnemy(new LorId(43005))) { Hermes.Say($\"Add id=43005 unit\"); } // UIを更新 BattleObjectManager.instance.InitUI(); Specified usage TryAddNewEnemy(LorId, int) StageController.Instance.TryAddNewEnemy(id, idx) 敵ユニットを追加します。 idxを省略した場合、indexが連番になるよう調整してユニットを配置します。 配置に失敗した場合、falseを返します。 id: 配置するユニットのIDです。 idx: 省略可能。配置するindexです。"
   },
   "docs/common-levelupui.html": {
     "href": "docs/common-levelupui.html",

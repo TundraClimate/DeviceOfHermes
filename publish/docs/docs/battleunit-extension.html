@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace System.Collections.Generic | DeviceOfHermes </title>
+      <title>using DeviceOfHermes; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace System.Collections.Generic | DeviceOfHermes ">
+      <meta name="title" content="using DeviceOfHermes; | DeviceOfHermes ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battleunit-extension.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,67 +84,42 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="System.Collections.Generic">
+        <article data-uid="">
+<h1 id="using-deviceofhermes"><code>using DeviceOfHermes;</code></h1>
 
-  <h1 id="System_Collections_Generic" data-uid="System.Collections.Generic" class="text-break">Namespace System.Collections.Generic</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
+<p>名前空間<code>DeviceOfHermes</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="battleunitextension">BattleUnitExtension</h1>
+<p>ユニット関連の拡張メソッドです。</p>
+<p>※ メソッドの呼び出し時点でユニット上限が10まで拡充されます。</p>
+<pre><code class="lang-cs">// ID=43005のユニットで残りの配置枠を埋めます。
+while (StageController.Instance.TryAddNewEnemy(new LorId(43005)))
+{
+    Hermes.Say($&quot;Add id=43005 unit&quot;);
+}
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.DeferredListExtension.html">DeferredListExtension</a></dt>
-      <dd><p>A extension of DeferredList</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.Peekable-1.html">Peekable&lt;T&gt;</a></dt>
-      <dd><p>Provides a wrapper over an enumerator that supports peeking the next element
-without consuming it.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.RefListExtension.html">RefListExtension</a></dt>
-      <dd><p>A extension of RefList</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.Walkdir.html">Walkdir</a></dt>
-      <dd><p>Provides utilities for recursively walking directories.</p>
-</dd>
-    </dl>
-    <h3 id="structs">
-Structs
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.DeferredListEnumerator-1.html">DeferredListEnumerator&lt;T&gt;</a></dt>
-      <dd><p>A enumerator of DeferredList</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.DeferredList-1.html">DeferredList&lt;T&gt;</a></dt>
-      <dd><p>A list of deferred</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.RefListEnumerator-1.html">RefListEnumerator&lt;T&gt;</a></dt>
-      <dd><p>A enumerator of RefList</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="System.Collections.Generic.RefList-1.html">RefList&lt;T&gt;</a></dt>
-      <dd><p>A list of element refs</p>
-</dd>
-    </dl>
-
+// UIを更新
+BattleObjectManager.instance.InitUI();
+</code></pre>
+<h2 id="specified-usage">Specified usage</h2>
+<h3 id="tryaddnewenemylorid-int"><code>TryAddNewEnemy(LorId, int)</code></h3>
+<pre><code class="lang-cs">StageController.Instance.TryAddNewEnemy(id, idx)
+</code></pre>
+<p>敵ユニットを追加します。<br>
+<code>idx</code>を省略した場合、indexが連番になるよう調整してユニットを配置します。<br>
+配置に失敗した場合、falseを返します。</p>
+<ul>
+<li><code>id</code>: 配置するユニットのIDです。</li>
+<li><code>idx</code>: 省略可能。配置するindexです。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/battleunit-extension.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

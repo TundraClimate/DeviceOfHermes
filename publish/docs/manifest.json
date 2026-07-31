@@ -306,6 +306,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.BattleUnitExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.BattleUnitExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.BattleUnitExtension",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.BattleUnitExtension.yml\" sourcestartlinenumber=\"1\">A extension of BattleUnit</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Boot.HermesInitializer.yml",
       "output": {
         ".html": {
@@ -1160,6 +1174,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.DeferredList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.DeferredList-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.DeferredList<T>",
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.DeferredList-1.yml\" sourcestartlinenumber=\"1\">A list of deferred</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.DeferredListEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.DeferredListEnumerator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.DeferredListEnumerator<T>",
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.DeferredListEnumerator-1.yml\" sourcestartlinenumber=\"1\">A enumerator of DeferredList</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.DeferredListExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.DeferredListExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.DeferredListExtension",
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.DeferredListExtension.yml\" sourcestartlinenumber=\"1\">A extension of DeferredList</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/System.Collections.Generic.Peekable-1.yml",
       "output": {
         ".html": {
@@ -1491,6 +1547,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/battleui-behaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/battleunit-extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/battleunit-extension.html"
         }
       },
       "version": ""

@@ -1535,6 +1535,12 @@ references:
   commentId: T:DeviceOfHermes.BattleUIBehaviourExtension
   fullName: DeviceOfHermes.BattleUIBehaviourExtension
   nameWithType: BattleUIBehaviourExtension
+- uid: DeviceOfHermes.BattleUnitExtension
+  name: BattleUnitExtension
+  href: api/DeviceOfHermes.BattleUnitExtension.html
+  commentId: T:DeviceOfHermes.BattleUnitExtension
+  fullName: DeviceOfHermes.BattleUnitExtension
+  nameWithType: BattleUnitExtension
 - uid: DeviceOfHermes.Boot
   name: DeviceOfHermes.Boot
   href: api/DeviceOfHermes.Boot.html
@@ -3350,6 +3356,38 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Formation.Add
   nameWithType: Formation.Add
+- uid: DeviceOfHermes.Resource.Formation.AddLibrarian(System.String,FormationXmlInfo)
+  name: AddLibrarian(string, FormationXmlInfo)
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_AddLibrarian_System_String_FormationXmlInfo_
+  commentId: M:DeviceOfHermes.Resource.Formation.AddLibrarian(System.String,FormationXmlInfo)
+  name.vb: AddLibrarian(String, FormationXmlInfo)
+  fullName: DeviceOfHermes.Resource.Formation.AddLibrarian(string, FormationXmlInfo)
+  fullName.vb: DeviceOfHermes.Resource.Formation.AddLibrarian(String, FormationXmlInfo)
+  nameWithType: Formation.AddLibrarian(string, FormationXmlInfo)
+  nameWithType.vb: Formation.AddLibrarian(String, FormationXmlInfo)
+- uid: DeviceOfHermes.Resource.Formation.AddLibrarian*
+  name: AddLibrarian
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_AddLibrarian_
+  commentId: Overload:DeviceOfHermes.Resource.Formation.AddLibrarian
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Formation.AddLibrarian
+  nameWithType: Formation.AddLibrarian
+- uid: DeviceOfHermes.Resource.Formation.AddLibrarianMap(System.String,System.Int32,System.Int32)
+  name: AddLibrarianMap(string, int, int)
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_AddLibrarianMap_System_String_System_Int32_System_Int32_
+  commentId: M:DeviceOfHermes.Resource.Formation.AddLibrarianMap(System.String,System.Int32,System.Int32)
+  name.vb: AddLibrarianMap(String, Integer, Integer)
+  fullName: DeviceOfHermes.Resource.Formation.AddLibrarianMap(string, int, int)
+  fullName.vb: DeviceOfHermes.Resource.Formation.AddLibrarianMap(String, Integer, Integer)
+  nameWithType: Formation.AddLibrarianMap(string, int, int)
+  nameWithType.vb: Formation.AddLibrarianMap(String, Integer, Integer)
+- uid: DeviceOfHermes.Resource.Formation.AddLibrarianMap*
+  name: AddLibrarianMap
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_AddLibrarianMap_
+  commentId: Overload:DeviceOfHermes.Resource.Formation.AddLibrarianMap
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Formation.AddLibrarianMap
+  nameWithType: Formation.AddLibrarianMap
 - uid: DeviceOfHermes.Resource.Formation.Get(System.String,System.Int32)
   name: Get(string, int)
   href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_Get_System_String_System_Int32_
@@ -3366,6 +3404,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Formation.Get
   nameWithType: Formation.Get
+- uid: DeviceOfHermes.Resource.Formation.GetLibrarian(System.String,System.Int32)
+  name: GetLibrarian(string, int)
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_GetLibrarian_System_String_System_Int32_
+  commentId: M:DeviceOfHermes.Resource.Formation.GetLibrarian(System.String,System.Int32)
+  name.vb: GetLibrarian(String, Integer)
+  fullName: DeviceOfHermes.Resource.Formation.GetLibrarian(string, int)
+  fullName.vb: DeviceOfHermes.Resource.Formation.GetLibrarian(String, Integer)
+  nameWithType: Formation.GetLibrarian(string, int)
+  nameWithType.vb: Formation.GetLibrarian(String, Integer)
+- uid: DeviceOfHermes.Resource.Formation.GetLibrarian*
+  name: GetLibrarian
+  href: api/DeviceOfHermes.Resource.Formation.html#DeviceOfHermes_Resource_Formation_GetLibrarian_
+  commentId: Overload:DeviceOfHermes.Resource.Formation.GetLibrarian
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Formation.GetLibrarian
+  nameWithType: Formation.GetLibrarian
 - uid: DeviceOfHermes.Resource.ReadXmlParser
   name: ReadXmlParser
   href: api/DeviceOfHermes.Resource.ReadXmlParser.html
@@ -5781,6 +5835,203 @@ references:
   commentId: N:System.Collections.Generic
   fullName: System.Collections.Generic
   nameWithType: System.Collections.Generic
+- uid: System.Collections.Generic.DeferredListEnumerator`1
+  name: DeferredListEnumerator<T>
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html
+  commentId: T:System.Collections.Generic.DeferredListEnumerator`1
+  name.vb: DeferredListEnumerator(Of T)
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T)
+  nameWithType: DeferredListEnumerator<T>
+  nameWithType.vb: DeferredListEnumerator(Of T)
+- uid: System.Collections.Generic.DeferredListEnumerator`1.#ctor(System.Collections.Generic.List{`0},System.Int32,System.Collections.Generic.List{`0},System.Collections.Generic.List{`0})
+  name: DeferredListEnumerator(List<T>, int, List<T>, List<T>)
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1__ctor_System_Collections_Generic_List__0__System_Int32_System_Collections_Generic_List__0__System_Collections_Generic_List__0__
+  commentId: M:System.Collections.Generic.DeferredListEnumerator`1.#ctor(System.Collections.Generic.List{`0},System.Int32,System.Collections.Generic.List{`0},System.Collections.Generic.List{`0})
+  name.vb: New(List(Of T), Integer, List(Of T), List(Of T))
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.DeferredListEnumerator(System.Collections.Generic.List<T>, int, System.Collections.Generic.List<T>, System.Collections.Generic.List<T>)
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).New(System.Collections.Generic.List(Of T), Integer, System.Collections.Generic.List(Of T), System.Collections.Generic.List(Of T))
+  nameWithType: DeferredListEnumerator<T>.DeferredListEnumerator(List<T>, int, List<T>, List<T>)
+  nameWithType.vb: DeferredListEnumerator(Of T).New(List(Of T), Integer, List(Of T), List(Of T))
+- uid: System.Collections.Generic.DeferredListEnumerator`1.#ctor*
+  name: DeferredListEnumerator
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1__ctor_
+  commentId: Overload:System.Collections.Generic.DeferredListEnumerator`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.DeferredListEnumerator
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).New
+  nameWithType: DeferredListEnumerator<T>.DeferredListEnumerator
+  nameWithType.vb: DeferredListEnumerator(Of T).New
+- uid: System.Collections.Generic.DeferredListEnumerator`1.Current
+  name: Current
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_Current
+  commentId: P:System.Collections.Generic.DeferredListEnumerator`1.Current
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.Current
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).Current
+  nameWithType: DeferredListEnumerator<T>.Current
+  nameWithType.vb: DeferredListEnumerator(Of T).Current
+- uid: System.Collections.Generic.DeferredListEnumerator`1.Current*
+  name: Current
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_Current_
+  commentId: Overload:System.Collections.Generic.DeferredListEnumerator`1.Current
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.Current
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).Current
+  nameWithType: DeferredListEnumerator<T>.Current
+  nameWithType.vb: DeferredListEnumerator(Of T).Current
+- uid: System.Collections.Generic.DeferredListEnumerator`1.Dispose
+  name: Dispose()
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_Dispose
+  commentId: M:System.Collections.Generic.DeferredListEnumerator`1.Dispose
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.Dispose()
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).Dispose()
+  nameWithType: DeferredListEnumerator<T>.Dispose()
+  nameWithType.vb: DeferredListEnumerator(Of T).Dispose()
+- uid: System.Collections.Generic.DeferredListEnumerator`1.Dispose*
+  name: Dispose
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_Dispose_
+  commentId: Overload:System.Collections.Generic.DeferredListEnumerator`1.Dispose
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.Dispose
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).Dispose
+  nameWithType: DeferredListEnumerator<T>.Dispose
+  nameWithType.vb: DeferredListEnumerator(Of T).Dispose
+- uid: System.Collections.Generic.DeferredListEnumerator`1.MoveNext
+  name: MoveNext()
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_MoveNext
+  commentId: M:System.Collections.Generic.DeferredListEnumerator`1.MoveNext
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.MoveNext()
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).MoveNext()
+  nameWithType: DeferredListEnumerator<T>.MoveNext()
+  nameWithType.vb: DeferredListEnumerator(Of T).MoveNext()
+- uid: System.Collections.Generic.DeferredListEnumerator`1.MoveNext*
+  name: MoveNext
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_MoveNext_
+  commentId: Overload:System.Collections.Generic.DeferredListEnumerator`1.MoveNext
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.MoveNext
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).MoveNext
+  nameWithType: DeferredListEnumerator<T>.MoveNext
+  nameWithType.vb: DeferredListEnumerator(Of T).MoveNext
+- uid: System.Collections.Generic.DeferredListEnumerator`1.Reset
+  name: Reset()
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_Reset
+  commentId: M:System.Collections.Generic.DeferredListEnumerator`1.Reset
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.Reset()
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).Reset()
+  nameWithType: DeferredListEnumerator<T>.Reset()
+  nameWithType.vb: DeferredListEnumerator(Of T).Reset()
+- uid: System.Collections.Generic.DeferredListEnumerator`1.Reset*
+  name: Reset
+  href: api/System.Collections.Generic.DeferredListEnumerator-1.html#System_Collections_Generic_DeferredListEnumerator_1_Reset_
+  commentId: Overload:System.Collections.Generic.DeferredListEnumerator`1.Reset
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredListEnumerator<T>.Reset
+  fullName.vb: System.Collections.Generic.DeferredListEnumerator(Of T).Reset
+  nameWithType: DeferredListEnumerator<T>.Reset
+  nameWithType.vb: DeferredListEnumerator(Of T).Reset
+- uid: System.Collections.Generic.DeferredListExtension
+  name: DeferredListExtension
+  href: api/System.Collections.Generic.DeferredListExtension.html
+  commentId: T:System.Collections.Generic.DeferredListExtension
+  fullName: System.Collections.Generic.DeferredListExtension
+  nameWithType: DeferredListExtension
+- uid: System.Collections.Generic.DeferredListExtension.AsDefer*
+  name: AsDefer
+  href: api/System.Collections.Generic.DeferredListExtension.html#System_Collections_Generic_DeferredListExtension_AsDefer_
+  commentId: Overload:System.Collections.Generic.DeferredListExtension.AsDefer
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredListExtension.AsDefer
+  nameWithType: DeferredListExtension.AsDefer
+- uid: System.Collections.Generic.DeferredListExtension.AsDefer``1(System.Collections.Generic.List{``0},System.Collections.Generic.DeferredList{``0}@)
+  name: AsDefer<T>(List<T>, out DeferredList<T>)
+  href: api/System.Collections.Generic.DeferredListExtension.html#System_Collections_Generic_DeferredListExtension_AsDefer__1_System_Collections_Generic_List___0__System_Collections_Generic_DeferredList___0___
+  commentId: M:System.Collections.Generic.DeferredListExtension.AsDefer``1(System.Collections.Generic.List{``0},System.Collections.Generic.DeferredList{``0}@)
+  name.vb: AsDefer(Of T)(List(Of T), DeferredList(Of T))
+  fullName: System.Collections.Generic.DeferredListExtension.AsDefer<T>(System.Collections.Generic.List<T>, out System.Collections.Generic.DeferredList<T>)
+  fullName.vb: System.Collections.Generic.DeferredListExtension.AsDefer(Of T)(System.Collections.Generic.List(Of T), System.Collections.Generic.DeferredList(Of T))
+  nameWithType: DeferredListExtension.AsDefer<T>(List<T>, out DeferredList<T>)
+  nameWithType.vb: DeferredListExtension.AsDefer(Of T)(List(Of T), DeferredList(Of T))
+- uid: System.Collections.Generic.DeferredList`1
+  name: DeferredList<T>
+  href: api/System.Collections.Generic.DeferredList-1.html
+  commentId: T:System.Collections.Generic.DeferredList`1
+  name.vb: DeferredList(Of T)
+  fullName: System.Collections.Generic.DeferredList<T>
+  fullName.vb: System.Collections.Generic.DeferredList(Of T)
+  nameWithType: DeferredList<T>
+  nameWithType.vb: DeferredList(Of T)
+- uid: System.Collections.Generic.DeferredList`1.#ctor(System.Collections.Generic.List{`0})
+  name: DeferredList(List<T>)
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1__ctor_System_Collections_Generic_List__0__
+  commentId: M:System.Collections.Generic.DeferredList`1.#ctor(System.Collections.Generic.List{`0})
+  name.vb: New(List(Of T))
+  fullName: System.Collections.Generic.DeferredList<T>.DeferredList(System.Collections.Generic.List<T>)
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).New(System.Collections.Generic.List(Of T))
+  nameWithType: DeferredList<T>.DeferredList(List<T>)
+  nameWithType.vb: DeferredList(Of T).New(List(Of T))
+- uid: System.Collections.Generic.DeferredList`1.#ctor*
+  name: DeferredList
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1__ctor_
+  commentId: Overload:System.Collections.Generic.DeferredList`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Collections.Generic.DeferredList<T>.DeferredList
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).New
+  nameWithType: DeferredList<T>.DeferredList
+  nameWithType.vb: DeferredList(Of T).New
+- uid: System.Collections.Generic.DeferredList`1.Add(`0)
+  name: Add(T)
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1_Add__0_
+  commentId: M:System.Collections.Generic.DeferredList`1.Add(`0)
+  fullName: System.Collections.Generic.DeferredList<T>.Add(T)
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).Add(T)
+  nameWithType: DeferredList<T>.Add(T)
+  nameWithType.vb: DeferredList(Of T).Add(T)
+- uid: System.Collections.Generic.DeferredList`1.Add*
+  name: Add
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1_Add_
+  commentId: Overload:System.Collections.Generic.DeferredList`1.Add
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredList<T>.Add
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).Add
+  nameWithType: DeferredList<T>.Add
+  nameWithType.vb: DeferredList(Of T).Add
+- uid: System.Collections.Generic.DeferredList`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1_GetEnumerator
+  commentId: M:System.Collections.Generic.DeferredList`1.GetEnumerator
+  fullName: System.Collections.Generic.DeferredList<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).GetEnumerator()
+  nameWithType: DeferredList<T>.GetEnumerator()
+  nameWithType.vb: DeferredList(Of T).GetEnumerator()
+- uid: System.Collections.Generic.DeferredList`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1_GetEnumerator_
+  commentId: Overload:System.Collections.Generic.DeferredList`1.GetEnumerator
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredList<T>.GetEnumerator
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).GetEnumerator
+  nameWithType: DeferredList<T>.GetEnumerator
+  nameWithType.vb: DeferredList(Of T).GetEnumerator
+- uid: System.Collections.Generic.DeferredList`1.Remove(`0)
+  name: Remove(T)
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1_Remove__0_
+  commentId: M:System.Collections.Generic.DeferredList`1.Remove(`0)
+  fullName: System.Collections.Generic.DeferredList<T>.Remove(T)
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).Remove(T)
+  nameWithType: DeferredList<T>.Remove(T)
+  nameWithType.vb: DeferredList(Of T).Remove(T)
+- uid: System.Collections.Generic.DeferredList`1.Remove*
+  name: Remove
+  href: api/System.Collections.Generic.DeferredList-1.html#System_Collections_Generic_DeferredList_1_Remove_
+  commentId: Overload:System.Collections.Generic.DeferredList`1.Remove
+  isSpec: "True"
+  fullName: System.Collections.Generic.DeferredList<T>.Remove
+  fullName.vb: System.Collections.Generic.DeferredList(Of T).Remove
+  nameWithType: DeferredList<T>.Remove
+  nameWithType.vb: DeferredList(Of T).Remove
 - uid: System.Collections.Generic.Peekable`1
   name: Peekable<T>
   href: api/System.Collections.Generic.Peekable-1.html
