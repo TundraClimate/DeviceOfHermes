@@ -1,3 +1,4 @@
+using HarmonyExtension;
 using UI;
 using UnityEngine;
 
@@ -16,25 +17,67 @@ public static class BattleUnitExtension
     extension(StageController controller)
     {
         /// <summary>Applies new enemy unit</summary>
-        public bool TryAddNewEnemy(LorId id, int idx = -1)
+        public bool TryAddNewEnemy(LorId id, int idx = -1, int height = -1)
         {
             if (idx <= -1)
             {
                 idx = BattleObjectManager.instance.GetList(Faction.Enemy).Max(u => u.index) + 1;
             }
 
-            var isValid = idx >= BattleManagerUI.Instance.ui_unitListInfoSummary.enemyProfileArray.Length
+            var isInvalid = idx >= BattleManagerUI.Instance.ui_unitListInfoSummary.enemyProfileArray.Length
                 && idx >= controller.GetCurrentWaveModel().GetFormation().PostionList.Count;
 
-            if (isValid)
+            if (isInvalid)
             {
                 return false;
             }
 
-            UICharacterRenderer.Instance.SetCharacter(controller.AddNewUnit(Faction.Enemy, id, idx).UnitData.unitData, idx);
+            UICharacterRenderer.Instance.SetCharacter(controller.AddNewUnit(Faction.Enemy, id, idx, height).UnitData.unitData, idx);
 
             return true;
         }
+
+        /// <summary>Applies new librarian unit</summary>
+        public bool TryAddNewLibrarian(LorId id, int idx = -1, int height = -1)
+        {
+            if (idx <= -1)
+            {
+                idx = BattleObjectManager.instance.GetList(Faction.Player).Max(u => u.index) + 1;
+            }
+
+            var isInvalid = idx >= BattleManagerUI.Instance.ui_unitListInfoSummary.allyProfileArray.Length
+                && idx >= controller.GetCurrentStageFloorModel().GetFormation().PostionList.Count;
+
+            if (isInvalid)
+            {
+                return false;
+            }
+
+            UICharacterRenderer.Instance.SetCharacter(AddNewLibrarian(controller, id, idx, height).UnitData.unitData, idx);
+
+            return true;
+        }
+    }
+
+    private static BattleUnitModel AddNewLibrarian(StageController __instance, LorId id, int index, int height = -1)
+    {
+        var data = EnemyUnitClassInfoList.Instance.GetData(id);
+        var unitModel = new UnitDataModel(new LorId(data.workshopID, data.bookId[0]), __instance.CurrentFloor, false);
+
+        unitModel.SetByEnemyUnitClassInfo(data);
+
+        var unit = new UnitBattleDataModel(__instance.GetStageModel(), unitModel).Also(u => u.Init());
+
+        if (height > -1)
+        {
+            unit.unitData.customizeData.height = height;
+        }
+
+        BattleObjectManager.instance.UnregisterUnitByIndex(Faction.Player, index);
+
+        return (BattleUnitModel)typeof(StageController)
+            .Method("CreateLibrarianUnit", [typeof(SephirahType), typeof(UnitBattleDataModel), typeof(int)])
+            .Invoke(__instance, [__instance.CurrentFloor, unit, index]);
     }
 
     static void AddUnitInfoUI()

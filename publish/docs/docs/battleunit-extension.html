@@ -92,8 +92,14 @@
 <h1 id="battleunitextension">BattleUnitExtension</h1>
 <p>ユニット関連の拡張メソッドです。</p>
 <p>※ メソッドの呼び出し時点でユニット上限が10まで拡充されます。</p>
-<pre><code class="lang-cs">// ID=43005のユニットで残りの配置枠を埋めます。
+<pre><code class="lang-cs">// ID=43005のユニットで残りの敵配置枠を埋めます。
 while (StageController.Instance.TryAddNewEnemy(new LorId(43005)))
+{
+    Hermes.Say($&quot;Add id=43005 unit&quot;);
+}
+
+// ID=43005のユニットで残りの味方配置枠を埋めます。
+while (StageController.Instance.TryAddNewLibrarian(new LorId(43005)))
 {
     Hermes.Say($&quot;Add id=43005 unit&quot;);
 }
@@ -102,8 +108,8 @@ while (StageController.Instance.TryAddNewEnemy(new LorId(43005)))
 BattleObjectManager.instance.InitUI();
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
-<h3 id="tryaddnewenemylorid-int"><code>TryAddNewEnemy(LorId, int)</code></h3>
-<pre><code class="lang-cs">StageController.Instance.TryAddNewEnemy(id, idx)
+<h3 id="tryaddnewenemylorid-int-int"><code>TryAddNewEnemy(LorId, int, int)</code></h3>
+<pre><code class="lang-cs">StageController.Instance.TryAddNewEnemy(id, idx, height)
 </code></pre>
 <p>敵ユニットを追加します。<br>
 <code>idx</code>を省略した場合、indexが連番になるよう調整してユニットを配置します。<br>
@@ -111,6 +117,16 @@ BattleObjectManager.instance.InitUI();
 <ul>
 <li><code>id</code>: 配置するユニットのIDです。</li>
 <li><code>idx</code>: 省略可能。配置するindexです。</li>
+<li><code>height</code>: 省略可能。ユニットの垂直距離を変更します。</li>
+</ul>
+<h3 id="tryaddnewlibrarianlorid-int-int"><code>TryAddNewLibrarian(LorId, int, int)</code></h3>
+<p>味方ユニットを追加します。<br>
+<code>idx</code>を省略した場合、indexが連番になるよう調整してユニットを配置します。<br>
+配置に失敗した場合、falseを返します。</p>
+<ul>
+<li><code>id</code>: 配置するユニットのIDです。</li>
+<li><code>idx</code>: 省略可能。配置するindexです。</li>
+<li><code>height</code>: 省略可能。ユニットの垂直距離を変更します。</li>
 </ul>
 
 </article>
