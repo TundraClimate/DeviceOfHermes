@@ -161,6 +161,11 @@ internal static class AdvancedPatch
 
             if (useCard is not null)
             {
+                if (!IsClashable(card!, useCard))
+                {
+                    return true;
+                }
+
                 if (useCard.owner.faction == Faction.Player)
                 {
                     __instance.StartParryingNoPatch(card!, useCard);
