@@ -280,6 +280,11 @@ internal static class CustomDicePatch
                 var speed = atkDice.card.speedDiceResultValue + 1;
                 var target = atkDice.owner;
 
+                if (playcard.speedDiceResultValue >= speed)
+                {
+                    speed = playcard.speedDiceResultValue;
+                }
+
                 playcard.Let(it =>
                 {
                     it.target = target;
