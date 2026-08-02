@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Reflection.Emit;
 using LOR_DiceSystem;
 using UI;
@@ -554,10 +555,19 @@ internal static class AdvancedPatch
         }
     }
 
-    [HarmonyPatch(typeof(StageController), "SetCurrentDiceActionPhase")]
+    [HarmonyPatch]
     static class PatchOnBattleLast
     {
-        static void Postfix(ref StageController.StagePhase ____phase)
+        static IEnumerable<MethodInfo> TargetMethods()
+        {
+            yield return typeof(StageController).Method("SetCurrentDiceActionPhase");
+            yield return typeof(StageController).Method("MoveUnitPhase");
+            yield return typeof(StageController).Method("CheckFarAreaPlayPhase");
+            yield return typeof(StageController).Method("WaitUnitArrivePhase");
+            yield return typeof(StageController).Method("ActivateStartBattleEffectPhase");
+        }
+
+        static Exception Finalizer(Exception __exception, ref StageController.StagePhase ____phase)
         {
             if (____phase == StageController.StagePhase.RoundEndPhase)
             {
@@ -577,6 +587,8 @@ internal static class AdvancedPatch
                     }
                 }
             }
+
+            return __exception;
         }
     }
 
