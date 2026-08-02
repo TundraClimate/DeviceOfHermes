@@ -145,6 +145,10 @@
     {
         return null;
     }
+
+    public override void OnRecoverHp(int recoverAmount)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
@@ -262,6 +266,15 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 null以外を返した場合、返したページで代わりにマッチをします。</p>
 <ul>
 <li><code>attacker</code>: 一方攻撃をしている相手です。</li>
+</ul>
+<h3 id="onrecoverhpint"><code>OnRecoverHp(int)</code></h3>
+<pre><code class="lang-cs">public override void OnRecoverHp(int recoverAmount)
+{
+}
+</code></pre>
+<p>体力を回復したときに実行されます。</p>
+<ul>
+<li><code>recoverAmount</code>: 回復した値です。</li>
 </ul>
 
 </article>

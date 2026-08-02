@@ -50,6 +50,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchStartParrying));
         Patch(typeof(PatchDie));
         Patch(typeof(PatchExtinct));
+        Patch(typeof(PatchOnRecoverHp));
     }
 
     public static void Init()
@@ -1126,6 +1127,34 @@ internal static class AdvancedPatch
             }
 
             return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnRecoverHp")]
+    class PatchOnRecoverHp
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(
+                CodeMatch.IsLdarg(0),
+                CodeMatch.IsLdfld(typeof(BattleUnitModel).Field("passiveDetail")),
+                CodeMatch.IsLdarg(1),
+                CodeMatch.Calls(typeof(BattleUnitPassiveDetail).Method("OnRecoverHp"))
+            )
+                .Advance(1)
+                .Insert(CodeInstruction.Instance, CodeInstruction.Arg(1), CodeInstruction.Call(typeof(PatchOnRecoverHp).Method("InjectMethod")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleUnitModel __instance, int amount)
+        {
+            foreach (var buf in __instance.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>())
+            {
+                buf.OnRecoverHp(amount);
+            }
         }
     }
 }
