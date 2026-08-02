@@ -23,6 +23,9 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     /// <summary>Addr number of draw cards</summary>
     public virtual int DrawCardAddr => 0;
 
+    /// <summary>Is instead of extinct from die</summary>
+    public virtual bool IsDieInsteadOfExtinction => false;
+
     /// <summary>Unit on wave start before</summary>
     public virtual void OnWaveStartBefore()
     {
@@ -127,6 +130,11 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     )
     {
         return null;
+    }
+
+    /// <summary>On unit extinct</summary>
+    public virtual void OnExtinct()
+    {
     }
 
     /// <summary>The type of OnClick</summary>

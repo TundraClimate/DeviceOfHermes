@@ -375,6 +375,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable
   nameWithType: AdvancedPassiveBase.IsClashable
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsDieInsteadOfExtinction
+  name: IsDieInsteadOfExtinction
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsDieInsteadOfExtinction
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsDieInsteadOfExtinction
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsDieInsteadOfExtinction
+  nameWithType: AdvancedPassiveBase.IsDieInsteadOfExtinction
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsDieInsteadOfExtinction*
+  name: IsDieInsteadOfExtinction
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsDieInsteadOfExtinction_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsDieInsteadOfExtinction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsDieInsteadOfExtinction
+  nameWithType: AdvancedPassiveBase.IsDieInsteadOfExtinction
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)
   name: IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsIgnoreSpeedByMatch_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel_
@@ -472,6 +485,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard
   nameWithType: AdvancedPassiveBase.OnDropCard
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct
+  name: OnExtinct()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnExtinct
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct()
+  nameWithType: AdvancedPassiveBase.OnExtinct()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct*
+  name: OnExtinct
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnExtinct_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct
+  nameWithType: AdvancedPassiveBase.OnExtinct
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
   name: OnPreRoundEnd()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnPreRoundEnd

@@ -47,6 +47,8 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnWaveStart));
         Patch(typeof(PatchStartOneSidePlay));
         Patch(typeof(PatchStartParrying));
+        Patch(typeof(PatchDie));
+        Patch(typeof(PatchExtinct));
     }
 
     public static void Init()
@@ -1072,6 +1074,46 @@ internal static class AdvancedPatch
                     StageController.Instance.GetAllCards().RemoveAll(c => c == origin);
                 }
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "Die")]
+    class PatchDie
+    {
+        static bool Prefix(BattleUnitModel __instance)
+        {
+            var insteadOfExtinct = false;
+
+            foreach (var p in __instance.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>())
+            {
+                if (p.IsDieInsteadOfExtinction && !insteadOfExtinct)
+                {
+                    insteadOfExtinct = true;
+                }
+            }
+
+            if (insteadOfExtinct)
+            {
+                __instance.Extinct(true);
+
+                return false;
+            }
+
+            return true;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "Extinct")]
+    class PatchExtinct
+    {
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, bool b)
+        {
+            if (b)
+            {
+                __instance.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>().Foreach(p => p.OnExtinct());
+            }
+
+            return __exception;
         }
     }
 }
