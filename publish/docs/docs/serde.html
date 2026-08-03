@@ -107,6 +107,14 @@ var data = Serde.FromJsonFile&lt;Data&gt;(&quot;data.json&quot;);
 string text = Serde.ToJsonStr(data);
 
 Hermes.Say(text);
+
+// data.tomlの中身をData型として読み込む
+var data = Serde.FromTomlFile&lt;Data&gt;(&quot;data.toml&quot;);
+
+// dataをToml形式に変換して出力
+string text = Serde.ToTomlStr(data);
+
+Hermes.Say(text);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="fromxmltxmlreader"><code>FromXml&lt;T&gt;(XmlReader)</code></h3>
@@ -199,6 +207,37 @@ Hermes.Say(text);
 <pre><code class="lang-cs">Serde.ToJsonFile(value, path);
 </code></pre>
 <p>データをJsonファイルとして出力します。</p>
+<ul>
+<li><code>value</code>: 出力する値です。</li>
+<li><code>path</code>: 出力先のファイルパスです。</li>
+</ul>
+<h3 id="fromtomlstrtstring"><code>FromTomlStr&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">Serde.FromTomlStr&lt;T&gt;(content);
+</code></pre>
+<p>文字列をTomlファイルの中身として解釈し、データに変換します。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>content</code>: Toml形式の文字列です。</li>
+</ul>
+<h3 id="fromtomlfiletstring"><code>FromTomlFile&lt;T&gt;(string)</code></h3>
+<pre><code class="lang-cs">Serde.FromTomlFile&lt;T&gt;(path);
+</code></pre>
+<p>指定のファイルからTomlデータを読み込みます。</p>
+<ul>
+<li><code>T</code>: この型に変換します。</li>
+<li><code>path</code>: Tomlファイルのパスです。</li>
+</ul>
+<h3 id="totomlstrtt"><code>ToTomlStr&lt;T&gt;(T)</code></h3>
+<pre><code class="lang-cs">Serde.ToTomlStr(value);
+</code></pre>
+<p>データをToml形式の文字列に変換します。</p>
+<ul>
+<li><code>value</code>: 変換前の値です。</li>
+</ul>
+<h3 id="totomlfilett-string"><code>ToTomlFile&lt;T&gt;(T, string)</code></h3>
+<pre><code class="lang-cs">Serde.ToTomlFile(value, path);
+</code></pre>
+<p>データをTomlファイルとして出力します。</p>
 <ul>
 <li><code>value</code>: 出力する値です。</li>
 <li><code>path</code>: 出力先のファイルパスです。</li>

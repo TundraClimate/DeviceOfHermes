@@ -3538,6 +3538,38 @@ references:
   fullName.vb: DeviceOfHermes.Resource.Serde.FromJson(Of T)(Newtonsoft.Json.JsonReader)
   nameWithType: Serde.FromJson<T>(JsonReader)
   nameWithType.vb: Serde.FromJson(Of T)(JsonReader)
+- uid: DeviceOfHermes.Resource.Serde.FromTomlFile*
+  name: FromTomlFile
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromTomlFile_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.FromTomlFile
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.FromTomlFile
+  nameWithType: Serde.FromTomlFile
+- uid: DeviceOfHermes.Resource.Serde.FromTomlFile``1(System.String)
+  name: FromTomlFile<T>(string)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromTomlFile__1_System_String_
+  commentId: M:DeviceOfHermes.Resource.Serde.FromTomlFile``1(System.String)
+  name.vb: FromTomlFile(Of T)(String)
+  fullName: DeviceOfHermes.Resource.Serde.FromTomlFile<T>(string)
+  fullName.vb: DeviceOfHermes.Resource.Serde.FromTomlFile(Of T)(String)
+  nameWithType: Serde.FromTomlFile<T>(string)
+  nameWithType.vb: Serde.FromTomlFile(Of T)(String)
+- uid: DeviceOfHermes.Resource.Serde.FromTomlStr*
+  name: FromTomlStr
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromTomlStr_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.FromTomlStr
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.FromTomlStr
+  nameWithType: Serde.FromTomlStr
+- uid: DeviceOfHermes.Resource.Serde.FromTomlStr``1(System.String)
+  name: FromTomlStr<T>(string)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromTomlStr__1_System_String_
+  commentId: M:DeviceOfHermes.Resource.Serde.FromTomlStr``1(System.String)
+  name.vb: FromTomlStr(Of T)(String)
+  fullName: DeviceOfHermes.Resource.Serde.FromTomlStr<T>(string)
+  fullName.vb: DeviceOfHermes.Resource.Serde.FromTomlStr(Of T)(String)
+  nameWithType: Serde.FromTomlStr<T>(string)
+  nameWithType.vb: Serde.FromTomlStr(Of T)(String)
 - uid: DeviceOfHermes.Resource.Serde.FromXml*
   name: FromXml
   href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_FromXml_
@@ -3634,6 +3666,38 @@ references:
   fullName.vb: DeviceOfHermes.Resource.Serde.ToJson(Of T)(T, Newtonsoft.Json.JsonWriter)
   nameWithType: Serde.ToJson<T>(T, JsonWriter)
   nameWithType.vb: Serde.ToJson(Of T)(T, JsonWriter)
+- uid: DeviceOfHermes.Resource.Serde.ToTomlFile*
+  name: ToTomlFile
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToTomlFile_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.ToTomlFile
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.ToTomlFile
+  nameWithType: Serde.ToTomlFile
+- uid: DeviceOfHermes.Resource.Serde.ToTomlFile``1(``0,System.String)
+  name: ToTomlFile<T>(T, string)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToTomlFile__1___0_System_String_
+  commentId: M:DeviceOfHermes.Resource.Serde.ToTomlFile``1(``0,System.String)
+  name.vb: ToTomlFile(Of T)(T, String)
+  fullName: DeviceOfHermes.Resource.Serde.ToTomlFile<T>(T, string)
+  fullName.vb: DeviceOfHermes.Resource.Serde.ToTomlFile(Of T)(T, String)
+  nameWithType: Serde.ToTomlFile<T>(T, string)
+  nameWithType.vb: Serde.ToTomlFile(Of T)(T, String)
+- uid: DeviceOfHermes.Resource.Serde.ToTomlStr*
+  name: ToTomlStr
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToTomlStr_
+  commentId: Overload:DeviceOfHermes.Resource.Serde.ToTomlStr
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Serde.ToTomlStr
+  nameWithType: Serde.ToTomlStr
+- uid: DeviceOfHermes.Resource.Serde.ToTomlStr``1(``0)
+  name: ToTomlStr<T>(T)
+  href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToTomlStr__1___0_
+  commentId: M:DeviceOfHermes.Resource.Serde.ToTomlStr``1(``0)
+  name.vb: ToTomlStr(Of T)(T)
+  fullName: DeviceOfHermes.Resource.Serde.ToTomlStr<T>(T)
+  fullName.vb: DeviceOfHermes.Resource.Serde.ToTomlStr(Of T)(T)
+  nameWithType: Serde.ToTomlStr<T>(T)
+  nameWithType.vb: Serde.ToTomlStr(Of T)(T)
 - uid: DeviceOfHermes.Resource.Serde.ToXml*
   name: ToXml
   href: api/DeviceOfHermes.Resource.Serde.html#DeviceOfHermes_Resource_Serde_ToXml_

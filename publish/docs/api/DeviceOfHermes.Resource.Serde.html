@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_Resource_Serde" data-uid="DeviceOfHermes.Resource.Serde" class="text-break">
-Class Serde  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class Serde  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_FromJsonFile__1_System_String_" data-uid="DeviceOfHermes.Resource.Serde.FromJsonFile``1(System.String)">
   FromJsonFile&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserialize from json file</p>
@@ -199,7 +199,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_FromJsonStr__1_System_String_" data-uid="DeviceOfHermes.Resource.Serde.FromJsonStr``1(System.String)">
   FromJsonStr&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserialize from string json</p>
@@ -241,7 +241,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_FromJson__1_Newtonsoft_Json_JsonReader_" data-uid="DeviceOfHermes.Resource.Serde.FromJson``1(Newtonsoft.Json.JsonReader)">
   FromJson&lt;T&gt;(JsonReader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserialize json from reader</p>
@@ -279,11 +279,95 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="DeviceOfHermes_Resource_Serde_FromTomlFile_" data-uid="DeviceOfHermes.Resource.Serde.FromTomlFile*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_Serde_FromTomlFile__1_System_String_" data-uid="DeviceOfHermes.Resource.Serde.FromTomlFile``1(System.String)">
+  FromTomlFile&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserialize from toml file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? FromTomlFile&lt;T&gt;(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_Resource_Serde_FromTomlStr_" data-uid="DeviceOfHermes.Resource.Serde.FromTomlStr*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_Serde_FromTomlStr__1_System_String_" data-uid="DeviceOfHermes.Resource.Serde.FromTomlStr``1(System.String)">
+  FromTomlStr&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserialize from string toml</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? FromTomlStr&lt;T&gt;(string content)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="DeviceOfHermes_Resource_Serde_FromXmlFile_" data-uid="DeviceOfHermes.Resource.Serde.FromXmlFile*"></a>
 
   <h3 id="DeviceOfHermes_Resource_Serde_FromXmlFile__1_System_String_" data-uid="DeviceOfHermes.Resource.Serde.FromXmlFile``1(System.String)">
   FromXmlFile&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserialize from xml file</p>
@@ -325,7 +409,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_FromXmlStr__1_System_String_" data-uid="DeviceOfHermes.Resource.Serde.FromXmlStr``1(System.String)">
   FromXmlStr&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserialize from string xml</p>
@@ -367,7 +451,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_FromXml__1_System_Xml_XmlReader_" data-uid="DeviceOfHermes.Resource.Serde.FromXml``1(System.Xml.XmlReader)">
   FromXml&lt;T&gt;(XmlReader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserialize from xmlreader</p>
@@ -409,7 +493,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_ToJsonFile__1___0_System_String_" data-uid="DeviceOfHermes.Resource.Serde.ToJsonFile``1(``0,System.String)">
   ToJsonFile&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serialize to string</p>
@@ -448,7 +532,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_ToJsonStr__1___0_" data-uid="DeviceOfHermes.Resource.Serde.ToJsonStr``1(``0)">
   ToJsonStr&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serialize to string</p>
@@ -490,7 +574,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_ToJson__1___0_Newtonsoft_Json_JsonWriter_" data-uid="DeviceOfHermes.Resource.Serde.ToJson``1(``0,Newtonsoft.Json.JsonWriter)">
   ToJson&lt;T&gt;(T, JsonWriter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serialize json to writer</p>
@@ -525,11 +609,92 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="DeviceOfHermes_Resource_Serde_ToTomlFile_" data-uid="DeviceOfHermes.Resource.Serde.ToTomlFile*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_Serde_ToTomlFile__1___0_System_String_" data-uid="DeviceOfHermes.Resource.Serde.ToTomlFile``1(``0,System.String)">
+  ToTomlFile&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serialize to file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToTomlFile&lt;T&gt;(T value, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_Resource_Serde_ToTomlStr_" data-uid="DeviceOfHermes.Resource.Serde.ToTomlStr*"></a>
+
+  <h3 id="DeviceOfHermes_Resource_Serde_ToTomlStr__1___0_" data-uid="DeviceOfHermes.Resource.Serde.ToTomlStr``1(``0)">
+  ToTomlStr&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serialize to string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToTomlStr&lt;T&gt;(T value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="DeviceOfHermes_Resource_Serde_ToXmlFile_" data-uid="DeviceOfHermes.Resource.Serde.ToXmlFile*"></a>
 
   <h3 id="DeviceOfHermes_Resource_Serde_ToXmlFile__1___0_System_String_" data-uid="DeviceOfHermes.Resource.Serde.ToXmlFile``1(``0,System.String)">
   ToXmlFile&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serialize to file</p>
@@ -568,7 +733,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_ToXmlStr__1___0_" data-uid="DeviceOfHermes.Resource.Serde.ToXmlStr``1(``0)">
   ToXmlStr&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serialize to string</p>
@@ -610,7 +775,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="DeviceOfHermes_Resource_Serde_ToXml__1___0_System_Xml_XmlWriter_" data-uid="DeviceOfHermes.Resource.Serde.ToXml``1(``0,System.Xml.XmlWriter)">
   ToXml&lt;T&gt;(T, XmlWriter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serialize to writer</p>
@@ -649,7 +814,7 @@ Class Serde  <a class="header-action link-secondary" title="View source" href="h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Resource/Serde.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

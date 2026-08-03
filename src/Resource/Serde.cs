@@ -3,6 +3,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using Nett;
 
 namespace DeviceOfHermes.Resource;
 
@@ -84,7 +85,7 @@ public static class Serde
         }
         catch (InvalidOperationException e)
         {
-            Hermes.Say($"Json convert failed: value is not serializable", MessageLevel.Warn);
+            Hermes.Say($"Xml convert failed: value is not serializable", MessageLevel.Warn);
 
             Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
         }
@@ -223,6 +224,79 @@ public static class Serde
         using var writer = new JsonTextWriter(sw);
 
         ToJson(value, writer);
+    }
+
+    /// <summary>Deserialize from string toml</summary>
+    public static T? FromTomlStr<T>(string content)
+    {
+        try
+        {
+            return Toml.ReadString<T>(content);
+        }
+        catch (Exception e)
+        {
+            Hermes.Say($"Toml parse failed: Readed content is not deserializable", MessageLevel.Warn);
+
+            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+
+            return default(T);
+        }
+    }
+
+    /// <summary>Deserialize from toml file</summary>
+    public static T? FromTomlFile<T>(string path)
+    {
+        if (!File.Exists(path))
+        {
+            Hermes.Say($"Read file failed: '{path}' is not exists.", MessageLevel.Warn);
+
+            return default(T);
+        }
+
+        try
+        {
+            return Toml.ReadFile<T>(path);
+        }
+        catch (Exception e)
+        {
+            Hermes.Say($"Toml parse failed: Readed content is not deserializable", MessageLevel.Warn);
+
+            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+
+            return default(T);
+        }
+    }
+
+    /// <summary>Serialize to string</summary>
+    public static string ToTomlStr<T>(T value)
+    {
+        try
+        {
+            return Toml.WriteString(value);
+        }
+        catch (Exception e)
+        {
+            Hermes.Say($"Toml convert failed: value is not serializable", MessageLevel.Warn);
+
+            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+
+            return "";
+        }
+    }
+
+    /// <summary>Serialize to file</summary>
+    public static void ToTomlFile<T>(T value, string path)
+    {
+        try
+        {
+            Toml.WriteFile(value, path);
+        }
+        catch (Exception e)
+        {
+            Hermes.Say($"Toml convert failed: value is not serializable", MessageLevel.Warn);
+
+            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+        }
     }
 }
 
