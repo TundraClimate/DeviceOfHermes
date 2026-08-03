@@ -137,6 +137,11 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>On unit recover play point</summary>
+    public virtual void OnRecoverPP(int gain)
+    {
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

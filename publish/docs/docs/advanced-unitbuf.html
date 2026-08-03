@@ -149,6 +149,10 @@
     public override void OnRecoverHp(int recoverAmount)
     {
     }
+
+    public override void OnRecoverPP(int gain)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
@@ -275,6 +279,15 @@ null以外を返した場合、返したページで代わりにマッチをし�
 <p>体力を回復したときに実行されます。</p>
 <ul>
 <li><code>recoverAmount</code>: 回復した値です。</li>
+</ul>
+<h3 id="onrecoverppint"><code>OnRecoverPP(int)</code></h3>
+<pre><code class="lang-cs">public override void OnRecoverPP(int gain)
+{
+}
+</code></pre>
+<p>光を回復したときに実行されます。</p>
+<ul>
+<li><code>gain</code>: 回復しようとした値です。</li>
 </ul>
 
 </article>

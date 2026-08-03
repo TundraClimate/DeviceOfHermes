@@ -109,6 +109,11 @@ public class AdvancedUnitBuf : BattleUnitBuf
         return null;
     }
 
+    /// <summary>On unit recover play point</summary>
+    public virtual void OnRecoverPP(int gain)
+    {
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

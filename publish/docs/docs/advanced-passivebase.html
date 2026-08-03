@@ -178,6 +178,10 @@
     public override void OnExtinct()
     {
     }
+
+    public override void OnRecoverPP(int gain)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -365,6 +369,15 @@ null以外を返した場合、返したページで代わりにマッチをし�
 }
 </code></pre>
 <p><code>Extinct(true)</code>が適用されたときに実行されます。</p>
+<h3 id="onrecoverppint"><code>OnRecoverPP(int)</code></h3>
+<pre><code class="lang-cs">public override void OnRecoverPP(int gain)
+{
+}
+</code></pre>
+<p>光を回復したときに実行されます。</p>
+<ul>
+<li><code>gain</code>: 回復しようとした値です。</li>
+</ul>
 
 </article>
 

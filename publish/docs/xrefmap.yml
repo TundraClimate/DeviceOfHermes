@@ -511,6 +511,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
   nameWithType: AdvancedPassiveBase.OnPreRoundEnd
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP(System.Int32)
+  name: OnRecoverPP(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRecoverPP_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP(System.Int32)
+  name.vb: OnRecoverPP(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP(Integer)
+  nameWithType: AdvancedPassiveBase.OnRecoverPP(int)
+  nameWithType.vb: AdvancedPassiveBase.OnRecoverPP(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP*
+  name: OnRecoverPP
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRecoverPP_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP
+  nameWithType: AdvancedPassiveBase.OnRecoverPP
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst
   name: OnRoundStartFirst()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartFirst
@@ -748,6 +764,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverHp
   nameWithType: AdvancedUnitBuf.OnRecoverHp
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverPP(System.Int32)
+  name: OnRecoverPP(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRecoverPP_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverPP(System.Int32)
+  name.vb: OnRecoverPP(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverPP(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverPP(Integer)
+  nameWithType: AdvancedUnitBuf.OnRecoverPP(int)
+  nameWithType.vb: AdvancedUnitBuf.OnRecoverPP(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverPP*
+  name: OnRecoverPP
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRecoverPP_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverPP
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverPP
+  nameWithType: AdvancedUnitBuf.OnRecoverPP
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRoundStartFirst
   name: OnRoundStartFirst()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRoundStartFirst

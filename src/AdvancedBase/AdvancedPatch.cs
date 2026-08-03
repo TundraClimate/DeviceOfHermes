@@ -51,6 +51,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchDie));
         Patch(typeof(PatchExtinct));
         Patch(typeof(PatchOnRecoverHp));
+        Patch(typeof(PatchOnRecoverPP));
     }
 
     public static void Init()
@@ -1156,5 +1157,26 @@ internal static class AdvancedPatch
                 buf.OnRecoverHp(amount);
             }
         }
+    }
+
+    [HarmonyPatch]
+    class PatchOnRecoverPP
+    {
+        static IEnumerable<MethodInfo> TargetMethods()
+        {
+            yield return typeof(BattlePlayingCardSlotDetail).Method("RecoverPlayPoint");
+            yield return typeof(BattlePlayingCardSlotDetail).Method("RecoverPlayPointByCard");
+        }
+
+        static Exception Finalizer(Exception __exception, BattlePlayingCardSlotDetail __instance, int value)
+        {
+            _selfRef(__instance)?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(p => p.OnRecoverPP(value));
+            _selfRef(__instance)?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(b => b.OnRecoverPP(value));
+
+            return __exception;
+        }
+
+        static AccessTools.FieldRef<BattlePlayingCardSlotDetail, BattleUnitModel> _selfRef
+            = typeof(BattlePlayingCardSlotDetail).FieldRefAccess<BattleUnitModel>("_self");
     }
 }
