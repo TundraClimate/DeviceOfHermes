@@ -1653,6 +1653,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/hermes-config.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/hermes-config.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/hermes-preloader.md",
       "output": {
         ".html": {
