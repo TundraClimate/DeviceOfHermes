@@ -1,0 +1,2 @@
+# 自動でAssemblies/内のパッチを当てるかどうか
+auto-patch = false;
