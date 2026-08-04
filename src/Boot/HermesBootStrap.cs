@@ -55,3 +55,30 @@ internal class HermesBootStrap : DiceCardAbilityBase
         return "";
     }
 }
+
+internal class Initializer : ModInitializer
+{
+    public override void OnInitializeMod()
+    {
+        try
+        {
+            AutoPatchAllMod();
+        }
+        catch (Exception e)
+        {
+            Mod.ModContentManager.Instance.AddErrorLog($"-Initializer Err-");
+            Mod.ModContentManager.Instance.AddErrorLog($"{e}");
+        }
+    }
+
+    void AutoPatchAllMod()
+    {
+        foreach (var (conf, mod) in HermesConfigLoader.ConfigDict.Values)
+        {
+            if (conf.AutoHarmonyPatch)
+            {
+                AutoPatcher.PatchAll(mod);
+            }
+        }
+    }
+}

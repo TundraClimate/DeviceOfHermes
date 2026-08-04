@@ -1,3 +1,4 @@
+using Mod;
 using DeviceOfHermes.Resource;
 
 namespace DeviceOfHermes.Boot;
@@ -27,13 +28,13 @@ internal static class HermesConfigLoader
 
                     if (conf is not null)
                     {
-                        ConfigDict[pid] = conf;
+                        ConfigDict[pid] = (conf, mod);
 
                         continue;
                     }
                 }
 
-                ConfigDict[pid] = new();
+                ConfigDict[pid] = (new(), mod);
             }
             catch (Exception)
             {
@@ -44,5 +45,5 @@ internal static class HermesConfigLoader
         }
     }
 
-    public static Dictionary<string, HermesConfig> ConfigDict = new();
+    public static Dictionary<string, (HermesConfig, ModContentInfo)> ConfigDict = new();
 }
