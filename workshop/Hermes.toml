@@ -1,2 +1,28 @@
 # 自動でAssemblies/内のパッチを当てるかどうか
-auto-patch = false;
+auto-patch = false
+
+[data]
+
+# 専用ページをロードするファイルのパス
+# 下の行頭の#を消すことでロードするようになる
+#onlycard = "Data/OnlyCard.xml"
+
+# フォーメーションをロードするファイルのパス
+# 下の行頭の#を消すことでロードするようになる
+#formation = "Data/Formation.xml"
+
+# 幻想体ページをロードするファイルのパス
+# 下の行頭の#を消すことでロードするようになる
+#emotioncard = "Data/EmotionCard.xml"
+
+[localize]
+
+# 幻想体ページのローカライズをロードするフォルダのパス
+# 下の行頭の#を消すことでロードするようになる
+#abnocard = "LocalizeBase/{0}/AbnoCard"
+
+[resource]
+
+# 幻想体ページの画像データをロードするフォルダのパス
+# 下の行頭の#を消すことでロードするようになる
+#abnocard-artwork = "Resource/AbnoCardArtwork"

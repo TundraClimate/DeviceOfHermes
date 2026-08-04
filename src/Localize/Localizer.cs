@@ -14,14 +14,15 @@ internal static class Localizer
     {
         foreach (var mod in HermesPreloader.ActiveMods)
         {
-            var localize = Path.Combine(mod.dirInfo.FullName, "Assemblies", "HermesLocalize", lang);
-
-            if (!Directory.Exists(localize))
+            if (!HermesConfigLoader.GetConfig(mod.invInfo.workshopInfo.uniqueId, out var conf))
             {
                 continue;
             }
 
-            AbnoCardLocalizer.Load(localize);
+            if (conf.localize.AbnoCard.Trim() is string abnocard && !string.IsNullOrEmpty(abnocard))
+            {
+                AbnoCardLocalizer.Load(Path.Combine(mod.dirInfo.FullName, string.Format(abnocard, lang)));
+            }
         }
     }
 }

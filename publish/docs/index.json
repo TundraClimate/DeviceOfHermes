@@ -617,12 +617,12 @@
   "docs/formation-data.html": {
     "href": "docs/formation-data.html",
     "title": "FormationXml | DeviceOfHermes",
-    "summary": "FormationXml XMLファイルを配置することでフォーメーションを追加することが出来ます。 条件はDeviceOfHermesのサブスクライブのみです。 MODフォルダ/Assemblies/HermesData/Formation.xmlを自動で読み込みます。 フォルダ・ファイルが存在しない場合は無視します。 Formation.xmlの内容例: <?xml version=\"1.0\" encoding=\"utf-8\" ?> <FormationXmlRoot> <!-- ID=\"100\"でフォーメーションを追加 --> <Formation ID=\"100\"> <Position> <Vector x=\"12\" y=\"0\"/> </Position> <Position> <Vector x=\"6\" y=\"-12\"/> </Position> <Position> <Vector x=\"5\" y=\"12\"/> </Position> <Position> <Vector x=\"18\" y=\"12\"/> </Position> <Position> <Vector x=\"17\" y=\"-12\"/> </Position> </Formation> </FormationXmlRoot> この方法で追加したフォーメーションが有効なのは同じPackageIdで追加された接待のみです。 また、AddLibrarianMapを実行することで特定の接待でのみ司書側のフォーメーションを設定できます。 // ファイルの頭に必要 using DeviceOfHermes.Resource; // 接待と司書のフォーメーションを紐付ける Formation.AddLibrarianMap(\"MODのID\", /* 接待のID */, /* フォーメーションのID */);"
+    "summary": "FormationXml XMLファイルを配置することでフォーメーションを追加することが出来ます。 条件はDeviceOfHermesのサブスクライブのみです。 HermesConfigに従って読み込みます。 フォルダ・ファイルが存在しない場合は無視します。 Formation.xmlの内容例: <?xml version=\"1.0\" encoding=\"utf-8\" ?> <FormationXmlRoot> <!-- ID=\"100\"でフォーメーションを追加 --> <Formation ID=\"100\"> <Position> <Vector x=\"12\" y=\"0\"/> </Position> <Position> <Vector x=\"6\" y=\"-12\"/> </Position> <Position> <Vector x=\"5\" y=\"12\"/> </Position> <Position> <Vector x=\"18\" y=\"12\"/> </Position> <Position> <Vector x=\"17\" y=\"-12\"/> </Position> </Formation> </FormationXmlRoot> この方法で追加したフォーメーションが有効なのは同じPackageIdで追加された接待のみです。 また、AddLibrarianMapを実行することで特定の接待でのみ司書側のフォーメーションを設定できます。 // ファイルの頭に必要 using DeviceOfHermes.Resource; // 接待と司書のフォーメーションを紐付ける Formation.AddLibrarianMap(\"MODのID\", /* 接待のID */, /* フォーメーションのID */);"
   },
   "docs/hermes-config.html": {
     "href": "docs/hermes-config.html",
     "title": "HermesConfig | DeviceOfHermes",
-    "summary": "HermesConfig DeviceOfHermes用の設定ファイルです。 MODフォルダ内のHermes.tomlを対象として読み込みます。 存在しない場合はデフォルト設定を使用します。 最新のデフォルト設定はDeviceOfHermesのMODフォルダ内をのHermes.tomlを参照してください。 デフォルト設定: # 自動でAssemblies/内のパッチを当てるかどうか # trueにすると自動でパッチを当てます auto-patch = false"
+    "summary": "HermesConfig DeviceOfHermes用の設定ファイルです。 MODフォルダ内のHermes.tomlを対象として読み込みます。 存在しない場合はデフォルト設定を使用します。 最新のデフォルト設定はDeviceOfHermesのMODフォルダ内をのHermes.tomlを参照してください。 デフォルト設定: # 自動でAssemblies/内のパッチを当てるかどうか # trueにすると自動でパッチを当てます auto-patch = false [data] # 専用ページをロードするファイルのパス # 下の行頭の#を消すことでロードするようになる #onlycard = \"Data/OnlyCard.xml\" # フォーメーションをロードするファイルのパス # 下の行頭の#を消すことでロードするようになる #formation = \"Data/Formation.xml\" # 幻想体ページをロードするファイルのパス # 下の行頭の#を消すことでロードするようになる #emotioncard = \"Data/EmotionCard.xml\" [localize] # 幻想体ページのローカライズをロードするフォルダのパス # 下の行頭の#を消すことでロードするようになる #abnocard = \"LocalizeBase/{0}/AbnoCard\" [resource] # 幻想体ページの画像データをロードするフォルダのパス # 下の行頭の#を消すことでロードするようになる #abnocard-artwork = \"Resource/AbnoCardArtwork\""
   },
   "docs/hermes-preloader.html": {
     "href": "docs/hermes-preloader.html",
@@ -632,7 +632,7 @@
   "docs/onlycard-data.html": {
     "href": "docs/onlycard-data.html",
     "title": "OnlyCardXml | DeviceOfHermes",
-    "summary": "OnlyCardXml XMLファイルを配置することで専用ページを追加することが出来ます。 条件はDeviceOfHermesのサブスクライブのみです。 MODフォルダ/Assemblies/HermesData/OnlyCard.xmlを自動で読み込みます。 フォルダ・ファイルが存在しない場合は無視します。 OnlyCard.xmlの内容例: <?xml version=\"1.0\" encoding=\"utf-8\"?> <OnlyCardXmlRoot> <!-- MODのID=\"10000001\"のコアページを対象に --> <OnlyCard ID=\"10000001\"> <!-- MODのID=\"1\"のページを専用ページとして追加 --> <Card>1</Card> <!-- バニラのID=\"701001\"のページを専用ページとして追加 --> <Card Pid=\"@origin\">701001</Card> </OnlyCard> <!-- MODのID=\"10000002\"のコアページを対象に --> <OnlyCard ID=\"10000002\"> <!-- MODのID=\"2\"のページを専用ページとして追加 --> <Card>2</Card> </OnlyCard> </OnlyCardXmlRoot>"
+    "summary": "OnlyCardXml XMLファイルを配置することで専用ページを追加することが出来ます。 条件はDeviceOfHermesのサブスクライブのみです。 HermesConfigに従って読み込みます。 フォルダ・ファイルが存在しない場合は無視します。 OnlyCard.xmlの内容例: <?xml version=\"1.0\" encoding=\"utf-8\"?> <OnlyCardXmlRoot> <!-- MODのID=\"10000001\"のコアページを対象に --> <OnlyCard ID=\"10000001\"> <!-- MODのID=\"1\"のページを専用ページとして追加 --> <Card>1</Card> <!-- バニラのID=\"701001\"のページを専用ページとして追加 --> <Card Pid=\"@origin\">701001</Card> </OnlyCard> <!-- MODのID=\"10000002\"のコアページを対象に --> <OnlyCard ID=\"10000002\"> <!-- MODのID=\"2\"のページを専用ページとして追加 --> <Card>2</Card> </OnlyCard> </OnlyCardXmlRoot>"
   },
   "docs/passive-resolver.html": {
     "href": "docs/passive-resolver.html",

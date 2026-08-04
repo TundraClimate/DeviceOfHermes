@@ -9,7 +9,19 @@ internal static class OnlyCardXmlLoader
     {
         foreach (var mod in HermesPreloader.ActiveMods)
         {
-            var file = Path.Combine(mod.dirInfo.FullName, "Assemblies", "HermesData", "OnlyCard.xml");
+            if (!HermesConfigLoader.GetConfig(mod.invInfo.workshopInfo.uniqueId, out var conf))
+            {
+                continue;
+            }
+
+            var path = conf.data.OnlyCard.Trim();
+
+            if (string.IsNullOrEmpty(path))
+            {
+                continue;
+            }
+
+            var file = Path.Combine(mod.dirInfo.FullName, path);
 
             if (!File.Exists(file))
             {

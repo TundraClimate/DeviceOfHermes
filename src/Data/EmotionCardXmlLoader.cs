@@ -9,7 +9,19 @@ internal static class EmotionCardXmlLoader
     {
         foreach (var mod in HermesPreloader.ActiveMods)
         {
-            var file = Path.Combine(mod.dirInfo.FullName, "Assemblies", "HermesData", "EmotionCard.xml");
+            if (!HermesConfigLoader.GetConfig(mod.invInfo.workshopInfo.uniqueId, out var conf))
+            {
+                continue;
+            }
+
+            var path = conf.data.EmotionCard.Trim();
+
+            if (string.IsNullOrEmpty(path))
+            {
+                continue;
+            }
+
+            var file = Path.Combine(mod.dirInfo.FullName, path);
 
             if (!File.Exists(file))
             {

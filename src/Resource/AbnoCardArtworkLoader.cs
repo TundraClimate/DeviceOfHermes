@@ -17,7 +17,19 @@ internal static class AbnoCardArtworkLoader
 
         foreach (var mod in HermesPreloader.ActiveMods)
         {
-            var files = Path.Combine(mod.dirInfo.FullName, "Assemblies", "HermesResource", "AbnoCardArtwork");
+            if (!HermesConfigLoader.GetConfig(mod.invInfo.workshopInfo.uniqueId, out var conf))
+            {
+                continue;
+            }
+
+            var path = conf.resource.AbnoCardArtwork.Trim();
+
+            if (string.IsNullOrEmpty(path))
+            {
+                continue;
+            }
+
+            var files = Path.Combine(mod.dirInfo.FullName, path);
 
             if (!Directory.Exists(files))
             {

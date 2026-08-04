@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Mod;
 using DeviceOfHermes.Resource;
 
@@ -43,6 +44,20 @@ internal static class HermesConfigLoader
                 continue;
             }
         }
+    }
+
+    public static bool GetConfig(string pid, [NotNullWhen(true)] out HermesConfig? config)
+    {
+        if (!ConfigDict.TryGetValue(pid, out var res))
+        {
+            config = null;
+
+            return false;
+        }
+
+        config = res.Item1;
+
+        return true;
     }
 
     public static Dictionary<string, (HermesConfig, ModContentInfo)> ConfigDict = new();

@@ -7,11 +7,14 @@ internal static class AbnoCardLocalizer
 {
     public static void Load(string localizeDirPath)
     {
-        var files = Path.Combine(localizeDirPath, "AbnoCard");
+        if (!Directory.Exists(localizeDirPath))
+        {
+            return;
+        }
 
         List<AbnormalityCard> data = new();
 
-        foreach (var file in Walkdir.GetFilesRecursive(files))
+        foreach (var file in Walkdir.GetFilesRecursive(localizeDirPath))
         {
             var root = Serde.FromXmlFile<AbnormalityCardsRoot>(file);
 

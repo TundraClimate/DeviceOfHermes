@@ -9,7 +9,19 @@ internal static class FormationXmlLoader
     {
         foreach (var mod in HermesPreloader.ActiveMods)
         {
-            var file = Path.Combine(mod.dirInfo.FullName, "Assemblies", "HermesData", "Formation.xml");
+            if (!HermesConfigLoader.GetConfig(mod.invInfo.workshopInfo.uniqueId, out var conf))
+            {
+                continue;
+            }
+
+            var path = conf.data.Formation.Trim();
+
+            if (string.IsNullOrEmpty(path))
+            {
+                continue;
+            }
+
+            var file = Path.Combine(mod.dirInfo.FullName, path);
 
             if (!File.Exists(file))
             {
