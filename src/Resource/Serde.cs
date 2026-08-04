@@ -237,7 +237,7 @@ public static class Serde
         {
             Hermes.Say($"Toml parse failed: Readed content is not deserializable", MessageLevel.Warn);
 
-            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+            Hermes.Say(e.Message ?? "Unknown infomation", MessageLevel.Warn);
 
             return default(T);
         }
@@ -261,7 +261,7 @@ public static class Serde
         {
             Hermes.Say($"Toml parse failed: Readed content is not deserializable", MessageLevel.Warn);
 
-            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+            Hermes.Say(e.Message ?? "Unknown infomation", MessageLevel.Warn);
 
             return default(T);
         }
@@ -278,7 +278,7 @@ public static class Serde
         {
             Hermes.Say($"Toml convert failed: value is not serializable", MessageLevel.Warn);
 
-            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+            Hermes.Say(e.Message ?? "Unknown infomation", MessageLevel.Warn);
 
             return "";
         }
@@ -295,7 +295,7 @@ public static class Serde
         {
             Hermes.Say($"Toml convert failed: value is not serializable", MessageLevel.Warn);
 
-            Hermes.Say(e.InnerException?.Message ?? "Unknown infomation", MessageLevel.Warn);
+            Hermes.Say(e.Message ?? "Unknown infomation", MessageLevel.Warn);
         }
     }
 }
