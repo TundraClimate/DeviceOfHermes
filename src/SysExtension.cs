@@ -56,9 +56,9 @@ public static class Extension
     }
 
     /// <summary>Renamed by Select Where</summary>
-    public static IEnumerable<V> FilterMap<T, V>(this IEnumerable<T> enumerable, Func<T, V> pred)
+    public static IEnumerable<V> FilterMap<T, V>(this IEnumerable<T> enumerable, Func<T, V?> pred)
     {
-        return enumerable.Select(val => pred(val)).Where(val => val is not null);
+        return enumerable.Select(val => pred(val)).Where(val => val is not null).Select(val => val!);
     }
 
     /// <summary>SelectMany and less 1 depth</summary>
