@@ -93,10 +93,29 @@
 <p>ゆらぎ用に改良された<code>PassiveAbilityBase</code>です。</p>
 <pre><code class="lang-cs">public class PassiveAbility_MyShimmering : ShimPassiveBase
 {
+    // MODのIDをセットする
     public override void Init() =&gt; PackageId = &quot;MyPackageId&quot;;
 
-    public override void ApplyPattern()
+    // パターンを適用する
+    public override void ApplyPattern() =&gt; Patterns.ApplyNextPattern(this);
+
+    // パターンを設定する
+    protected override PatternList Patterns =&gt; new(true)
     {
+        // 1幕目: idが1, 2, 3のページをセット
+        // 速度ダイスが余ればidが4のページで埋める
+        new(1, 2, 3) { filler = Filler.All(new LorId(&quot;MyPackageId&quot;, 4)) },
+
+        // 2幕目: idが4, 5, 6のページをセット
+        // 速度ダイスが余ればid1とid2のページを順番にセットする
+        new(4, 5, 6) { filler = Filler.Const(new LorId(&quot;MyPackageId&quot;, 1), new LorId(&quot;MyPackageId&quot;, 2)) },
+    };
+
+    // 速度ダイス数を調整
+    public override int SpeedDiceNumAdder()
+    {
+        // 速度ダイスを合計5個にする
+        return base.owner.emotionDetail.EmotionLevel &gt;= 4 ? 3 : 4;
     }
 }
 </code></pre>
@@ -120,6 +139,17 @@
 <pre><code class="lang-cs">int pat = Elapsed % 3;
 </code></pre>
 <p>経過幕数が記録されます。</p>
+<h3 id="patterns"><code>Patterns</code></h3>
+<pre><code class="lang-cs">protected override PatternList Patterns =&gt; new(loop)
+{
+    info...
+};
+</code></pre>
+<p>行動パターンを設定します。</p>
+<ul>
+<li><code>loop</code>: trueならパターンを繰り返します。</li>
+<li><code>info</code>: 幕ごとに使用するページリストです。</li>
+</ul>
 <h3 id="shimmering"><code>Shimmering()</code></h3>
 <pre><code class="lang-cs">Shimmering()
 </code></pre>
@@ -132,6 +162,14 @@
 <ul>
 <li><code>id</code>: ページのIDです。</li>
 <li><code>vannila</code>: バニラページのIDを使用するかどうかです。基本値はfalse。</li>
+</ul>
+<h3 id="addcardlorid"><code>AddCard(LorId)</code></h3>
+<pre><code class="lang-cs">AddCard(lorid);
+</code></pre>
+<p>ページを手元に追加します。<br>
+<code>LorId</code>をそのまま使用します。</p>
+<ul>
+<li><code>lorid</code>: ページのIDです。</li>
 </ul>
 <h3 id="onstartturn"><code>OnStartTurn()</code></h3>
 <pre><code class="lang-cs">OnStartTurn();

@@ -166,6 +166,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.yml\" sourcestartlinenumber=\"1\">A filler</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.yml\" sourcestartlinenumber=\"1\">A information of pattern</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.yml\" sourcestartlinenumber=\"1\">A list of pattern</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.yml",
       "output": {
         ".html": {

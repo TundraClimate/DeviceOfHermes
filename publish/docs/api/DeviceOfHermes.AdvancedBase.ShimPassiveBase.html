@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase" class="text-break">
-Class ShimPassiveBase  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L4"><i class="bi bi-code-slash"></i></a>
+Class ShimPassiveBase  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -631,7 +631,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase__ctor" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.#ctor">
   ShimPassiveBase()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Construct with initializer</p>
@@ -662,7 +662,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_Elapsed" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.Elapsed">
   Elapsed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A turn of elapsed</p>
@@ -670,7 +670,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Elapsed { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Elapsed { get; }</code></pre>
   </div>
 
 
@@ -694,7 +694,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_PackageId" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.PackageId">
   PackageId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>PackageId setter</p>
@@ -722,15 +722,79 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_Patterns_" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_Patterns" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns">
+  Patterns
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A list of patterns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ShimPassiveBase.PatternList Patterns { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DeviceOfHermes.AdvancedBase.ShimPassiveBase.html">ShimPassiveBase</a>.<a class="xref" href="DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html">PatternList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
 
   <a id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_AddCard_" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard*"></a>
 
+  <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_AddCard_LorId_" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard(LorId)">
+  AddCard(LorId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds temp card to hand</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCard(LorId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">LorId</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_AddCard_" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard*"></a>
+
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_AddCard_System_Int32_System_Boolean_" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard(System.Int32,System.Boolean)">
   AddCard(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds temp card to hand</p>
@@ -764,7 +828,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_ApplyPattern" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.ApplyPattern">
   ApplyPattern()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Applies hand pattern</p>
@@ -791,7 +855,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_Init" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.Init">
   Init()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Init shimmering passive</p>
@@ -818,7 +882,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_OnRoundStartAfter" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.OnRoundStartAfter">
   OnRoundStartAfter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Override</p>
@@ -845,7 +909,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_OnStartTurn" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.OnStartTurn">
   OnStartTurn()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Processes on turn start</p>
@@ -872,7 +936,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_ShimPassiveBase_Shimmering" data-uid="DeviceOfHermes.AdvancedBase.ShimPassiveBase.Shimmering">
   Shimmering()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clear all cards, gain full light</p>
@@ -899,7 +963,7 @@ Class ShimPassiveBase  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L4" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/AdvancedBase/ShimPassiveBase.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

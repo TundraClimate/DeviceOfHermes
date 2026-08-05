@@ -1118,6 +1118,12 @@ references:
   fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.New
   nameWithType: ShimPassiveBase.ShimPassiveBase
   nameWithType.vb: ShimPassiveBase.New
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard(LorId)
+  name: AddCard(LorId)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_AddCard_LorId_
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard(LorId)
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard(LorId)
+  nameWithType: ShimPassiveBase.AddCard(LorId)
 - uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.AddCard(System.Int32,System.Boolean)
   name: AddCard(int, bool)
   href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_AddCard_System_Int32_System_Boolean_
@@ -1160,6 +1166,60 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Elapsed
   nameWithType: ShimPassiveBase.Elapsed
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler
+  name: ShimPassiveBase.Filler
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html
+  commentId: T:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler
+  nameWithType: ShimPassiveBase.Filler
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.#ctor(System.Func{System.Int32,LorId})
+  name: Filler(Func<int, LorId>)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Filler__ctor_System_Func_System_Int32_LorId__
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.#ctor(System.Func{System.Int32,LorId})
+  name.vb: New(Func(Of Integer, LorId))
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Filler(System.Func<int, LorId>)
+  fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.New(System.Func(Of Integer, LorId))
+  nameWithType: ShimPassiveBase.Filler.Filler(Func<int, LorId>)
+  nameWithType.vb: ShimPassiveBase.Filler.New(Func(Of Integer, LorId))
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.#ctor*
+  name: Filler
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Filler__ctor_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Filler
+  fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.New
+  nameWithType: ShimPassiveBase.Filler.Filler
+  nameWithType.vb: ShimPassiveBase.Filler.New
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.All(LorId)
+  name: All(LorId)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Filler_All_LorId_
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.All(LorId)
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.All(LorId)
+  nameWithType: ShimPassiveBase.Filler.All(LorId)
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.All*
+  name: All
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Filler_All_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.All
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.All
+  nameWithType: ShimPassiveBase.Filler.All
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Const(System.Collections.Generic.List{LorId})
+  name: Const(params List<LorId>)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Filler_Const_System_Collections_Generic_List_LorId__
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Const(System.Collections.Generic.List{LorId})
+  name.vb: Const(List(Of LorId))
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Const(params System.Collections.Generic.List<LorId>)
+  fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Const(System.Collections.Generic.List(Of LorId))
+  nameWithType: ShimPassiveBase.Filler.Const(params List<LorId>)
+  nameWithType.vb: ShimPassiveBase.Filler.Const(List(Of LorId))
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Const*
+  name: Const
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Filler_Const_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Const
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Filler.Const
+  nameWithType: ShimPassiveBase.Filler.Const
 - uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Init
   name: Init()
   href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Init
@@ -1212,6 +1272,114 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PackageId
   nameWithType: ShimPassiveBase.PackageId
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo
+  name: ShimPassiveBase.PatternInfo
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.html
+  commentId: T:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo
+  nameWithType: ShimPassiveBase.PatternInfo
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.#ctor(System.Collections.Generic.List{System.Object})
+  name: PatternInfo(params List<object>)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternInfo__ctor_System_Collections_Generic_List_System_Object__
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.#ctor(System.Collections.Generic.List{System.Object})
+  name.vb: New(List(Of Object))
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.PatternInfo(params System.Collections.Generic.List<object>)
+  fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.New(System.Collections.Generic.List(Of Object))
+  nameWithType: ShimPassiveBase.PatternInfo.PatternInfo(params List<object>)
+  nameWithType.vb: ShimPassiveBase.PatternInfo.New(List(Of Object))
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.#ctor*
+  name: PatternInfo
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternInfo__ctor_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.PatternInfo
+  fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.New
+  nameWithType: ShimPassiveBase.PatternInfo.PatternInfo
+  nameWithType.vb: ShimPassiveBase.PatternInfo.New
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.filler
+  name: filler
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternInfo_filler
+  commentId: F:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.filler
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo.filler
+  nameWithType: ShimPassiveBase.PatternInfo.filler
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList
+  name: ShimPassiveBase.PatternList
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html
+  commentId: T:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList
+  nameWithType: ShimPassiveBase.PatternList
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.#ctor(System.Boolean)
+  name: PatternList(bool)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList__ctor_System_Boolean_
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.PatternList(bool)
+  fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.New(Boolean)
+  nameWithType: ShimPassiveBase.PatternList.PatternList(bool)
+  nameWithType.vb: ShimPassiveBase.PatternList.New(Boolean)
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.#ctor*
+  name: PatternList
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList__ctor_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.PatternList
+  fullName.vb: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.New
+  nameWithType: ShimPassiveBase.PatternList.PatternList
+  nameWithType.vb: ShimPassiveBase.PatternList.New
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.Add(DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo)
+  name: Add(PatternInfo)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList_Add_DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternInfo_
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.Add(DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo)
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.Add(DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternInfo)
+  nameWithType: ShimPassiveBase.PatternList.Add(ShimPassiveBase.PatternInfo)
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.Add*
+  name: Add
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList_Add_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.Add
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.Add
+  nameWithType: ShimPassiveBase.PatternList.Add
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.ApplyNextPattern(DeviceOfHermes.AdvancedBase.ShimPassiveBase)
+  name: ApplyNextPattern(ShimPassiveBase)
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList_ApplyNextPattern_DeviceOfHermes_AdvancedBase_ShimPassiveBase_
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.ApplyNextPattern(DeviceOfHermes.AdvancedBase.ShimPassiveBase)
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.ApplyNextPattern(DeviceOfHermes.AdvancedBase.ShimPassiveBase)
+  nameWithType: ShimPassiveBase.PatternList.ApplyNextPattern(ShimPassiveBase)
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.ApplyNextPattern*
+  name: ApplyNextPattern
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList_ApplyNextPattern_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.ApplyNextPattern
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.ApplyNextPattern
+  nameWithType: ShimPassiveBase.PatternList.ApplyNextPattern
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.GetEnumerator
+  name: GetEnumerator()
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList_GetEnumerator
+  commentId: M:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.GetEnumerator
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.GetEnumerator()
+  nameWithType: ShimPassiveBase.PatternList.GetEnumerator()
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.GetEnumerator*
+  name: GetEnumerator
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_PatternList_GetEnumerator_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.GetEnumerator
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.GetEnumerator
+  nameWithType: ShimPassiveBase.PatternList.GetEnumerator
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
+  name: Patterns
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Patterns
+  commentId: P:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
+  nameWithType: ShimPassiveBase.Patterns
+- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns*
+  name: Patterns
+  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Patterns_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
+  nameWithType: ShimPassiveBase.Patterns
 - uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Shimmering
   name: Shimmering()
   href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Shimmering
@@ -6454,13 +6622,13 @@ references:
   fullName: System.Extension.FilterMap
   nameWithType: Extension.FilterMap
 - uid: System.Extension.FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  name: FilterMap<T, V>(IEnumerable<T>, Func<T, V>)
+  name: FilterMap<T, V>(IEnumerable<T>, Func<T, V?>)
   href: api/System.Extension.html#System_Extension_FilterMap__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   commentId: M:System.Extension.FilterMap``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   name.vb: FilterMap(Of T, V)(IEnumerable(Of T), Func(Of T, V))
-  fullName: System.Extension.FilterMap<T, V>(System.Collections.Generic.IEnumerable<T>, System.Func<T, V>)
+  fullName: System.Extension.FilterMap<T, V>(System.Collections.Generic.IEnumerable<T>, System.Func<T, V?>)
   fullName.vb: System.Extension.FilterMap(Of T, V)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, V))
-  nameWithType: Extension.FilterMap<T, V>(IEnumerable<T>, Func<T, V>)
+  nameWithType: Extension.FilterMap<T, V>(IEnumerable<T>, Func<T, V?>)
   nameWithType.vb: Extension.FilterMap(Of T, V)(IEnumerable(Of T), Func(Of T, V))
 - uid: System.Extension.Filter``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   name: Filter<T>(IEnumerable<T>, Func<T, bool>)
