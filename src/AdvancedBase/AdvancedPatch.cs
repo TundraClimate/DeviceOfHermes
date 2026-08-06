@@ -52,6 +52,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchExtinct));
         Patch(typeof(PatchOnRecoverHp));
         Patch(typeof(PatchOnRecoverPP));
+        Patch(typeof(PatchGetCardBufIcon));
     }
 
     public static void Init()
@@ -1178,5 +1179,27 @@ internal static class AdvancedPatch
 
         static AccessTools.FieldRef<BattlePlayingCardSlotDetail, BattleUnitModel> _selfRef
             = typeof(BattlePlayingCardSlotDetail).FieldRefAccess<BattleUnitModel>("_self");
+    }
+
+    [HarmonyPatch(typeof(BattleDiceCardBuf), "GetBufIcon")]
+    class PatchGetCardBufIcon
+    {
+        static Exception Finalizer(Exception __exception, ref Sprite __result, BattleDiceCardBuf __instance)
+        {
+            if (__result is null && __instance is AdvancedCardBuf adv)
+            {
+                new BattleUnitBuf().GetBufIcon();
+
+                if (BattleUnitBuf._bufIconDictionary is Dictionary<string, Sprite> dict)
+                {
+                    dict.TryGetValue(_kwdIconIdRef(__instance), out __result);
+                }
+            }
+
+            return __exception;
+        }
+
+        static AccessTools.FieldRef<BattleDiceCardBuf, string> _kwdIconIdRef
+            = typeof(BattleDiceCardBuf).FieldRefAccess<string>("keywordIconId");
     }
 }

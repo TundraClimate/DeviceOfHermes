@@ -160,6 +160,12 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder
   nameWithType: AdvancedCardBase.SpecialPriorityAdder
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf
+  name: AdvancedCardBuf
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html
+  commentId: T:DeviceOfHermes.AdvancedBase.AdvancedCardBuf
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf
+  nameWithType: AdvancedCardBuf
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   name: AdvancedDiceBase
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html

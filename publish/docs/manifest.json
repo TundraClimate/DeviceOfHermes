@@ -40,6 +40,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBase.AdvancedCardBuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.yml\" sourcestartlinenumber=\"1\">An advanced DiceCardBuf</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.yml",
       "output": {
         ".html": {
@@ -1449,6 +1463,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/advanced-cardbase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-cardbuf.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-cardbuf.html"
         }
       },
       "version": ""
