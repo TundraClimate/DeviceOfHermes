@@ -53,6 +53,8 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnRecoverHp));
         Patch(typeof(PatchOnRecoverPP));
         Patch(typeof(PatchGetCardBufIcon));
+        Patch(typeof(PatchBeforeRollDice));
+        Patch(typeof(PatchOnSucceedAttack));
     }
 
     public static void Init()
@@ -865,6 +867,25 @@ internal static class AdvancedPatch
                 buf.OnStartBattle();
             });
 
+            StageController.Instance.GetAllCards()
+                .Filter(card => card.owner == __instance)?
+                .FlatMap(card => card.card.GetBufList())?
+                .OfType<AdvancedCardBuf>()?
+                .Foreach(buf =>
+                {
+                    buf.OnStartBattle();
+                });
+
+            __instance?.allyCardDetail?.Hand()?.FlatMap(card => card.GetBufList())?.OfType<AdvancedCardBuf>()?.Foreach(buf =>
+            {
+                buf.OnStartBattle_inHand();
+            });
+
+            __instance?.allyCardDetail?.GetAllDeck()?.FlatMap(card => card.GetBufList())?.OfType<AdvancedCardBuf>()?.Foreach(buf =>
+            {
+                buf.OnStartBattle_inDeck();
+            });
+
             return __exception;
         }
     }
@@ -1192,14 +1213,61 @@ internal static class AdvancedPatch
 
                 if (BattleUnitBuf._bufIconDictionary is Dictionary<string, Sprite> dict)
                 {
-                    dict.TryGetValue(_kwdIconIdRef(__instance), out __result);
+                    dict.TryGetValue((string)typeof(BattleDiceCardBuf).Property("keywordIconId").GetValue(__instance), out __result);
                 }
             }
 
             return __exception;
         }
+    }
 
-        static AccessTools.FieldRef<BattleDiceCardBuf, string> _kwdIconIdRef
-            = typeof(BattleDiceCardBuf).FieldRefAccess<string>("keywordIconId");
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "BeforeRollDice")]
+    class PatchBeforeRollDice
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
+                .Insert(
+                    CodeInstruction.Instance,
+                    CodeInstruction.Arg(1),
+                    CodeInstruction.Call(typeof(PatchBeforeRollDice).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattlePlayingCardDataInUnitModel __instance, BattleDiceBehavior behavior)
+        {
+            __instance?.card?.GetBufList()?.OfType<AdvancedCardBuf>()?.Foreach(buf => buf.BeforeRollDice(behavior));
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnSucceedAttack")]
+    class PatchOnSucceedAttack
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
+                .Insert(
+                    CodeInstruction.Instance,
+                    CodeInstruction.Arg(1),
+                    CodeInstruction.Call(typeof(PatchOnSucceedAttack).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattlePlayingCardDataInUnitModel __instance, BattleDiceBehavior behavior)
+        {
+            __instance?.card?.GetBufList()?.OfType<AdvancedCardBuf>()?.Foreach(buf => buf.OnSuccessAttack(behavior));
+
+            __instance?.owner?.allyCardDetail?.Hand()?.FlatMap(card => card.GetBufList().OfType<AdvancedCardBuf>())?.Foreach(buf => buf.OnSuccessAttack_inHand(behavior));
+
+            __instance?.owner?.allyCardDetail?.GetAllDeck()?.FlatMap(card => card.GetBufList().OfType<AdvancedCardBuf>())?.Foreach(buf => buf.OnSuccessAttack_inDeck(behavior));
+        }
     }
 }

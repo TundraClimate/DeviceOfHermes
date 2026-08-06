@@ -94,6 +94,34 @@
 <pre><code class="lang-cs">public class DiceCardBuf_AdvCardBuf : AdvancedCardBuf
 {
     protected override string keywordIconId =&gt; &quot;アイコンのID&quot;;
+
+    public override void OnStartBattle()
+    {
+    }
+
+    public override void OnStartBattle_inHand()
+    {
+    }
+
+    public override void OnStartBattle_inDeck()
+    {
+    }
+
+    public override void BeforeRollDice(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void OnSuccessAttack(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void OnSuccessAttack_inHand(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void OnSuccessAttack_inDeck(BattleDiceBehavior behavior)
+    {
+    }
 }
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
@@ -104,6 +132,62 @@
 アイコンはユニットバフと同じ方法で追加することが出来ます。</p>
 <ul>
 <li><code>id</code>: バフアイコンのIDです。</li>
+</ul>
+<h3 id="onstartbattle"><code>OnStartBattle()</code></h3>
+<pre><code class="lang-cs">public override void OnStartBattle()
+{
+}
+</code></pre>
+<p>バフの付与されたページをセットして戦闘を開始したときに実行されます。</p>
+<h3 id="onstartbattle_inhand"><code>OnStartBattle_inHand()</code></h3>
+<pre><code class="lang-cs">public override void OnStartBattle_inHand()
+{
+}
+</code></pre>
+<p>戦闘を開始したときに実行されます。<br>
+手札に存在するページ全てを対象にします。</p>
+<h3 id="onstartbattle_indeck"><code>OnStartBattle_inDeck()</code></h3>
+<pre><code class="lang-cs">public override void OnStartBattle_inDeck()
+{
+}
+</code></pre>
+<p>戦闘を開始したときに実行されます。<br>
+デッキ内に存在しているページ全てを対象にします。</p>
+<h3 id="beforerolldicebattledicebehavior"><code>BeforeRollDice(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDice(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p>バフが付与されたページでダイスを振る前に実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="onsuccessattackbattledicebehavior"><code>OnSuccessAttack(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnSuccessAttack(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p>バフが付与されたページでダイスが的中したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="onsuccessattack_inhandbattledicebehavior"><code>OnSuccessAttack_inHand(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnSuccessAttack_inHand(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p>ダイスが的中したときに手札のページを対象に実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="onsuccessattack_indeckbattledicebehavior"><code>OnSuccessAttack_inDeck(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnSuccessAttack_inDeck(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p>ダイスが的中したときにデッキのページを対象に実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
 </ul>
 
 </article>
