@@ -81,7 +81,7 @@ internal class Initializer : ModInitializer
             var assemblies = Path.Combine(mod.dirInfo.FullName, "Assemblies");
             var dohName = typeof(HermesBootStrap).Assembly.GetName();
 
-            if (Directory.Exists(assemblies) && Directory.GetFiles(assemblies).Filter(file => Path.GetExtension(file) == ".dll").Any(file => AssemblyName.ReferenceMatchesDefinition(AssemblyName.GetAssemblyName(file), dohName)))
+            if (Directory.Exists(assemblies) && Walkdir.GetFilesRecursive(assemblies).Filter(file => Path.GetExtension(file) == ".dll").Any(file => AssemblyName.ReferenceMatchesDefinition(AssemblyName.GetAssemblyName(file), dohName)))
             {
                 var pid = mod.invInfo.workshopInfo.uniqueId;
 
