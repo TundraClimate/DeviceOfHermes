@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEngine;
 using DeviceOfHermes.UI;
 using DeviceOfHermes.CustomDice;
@@ -62,12 +63,58 @@ internal class Initializer : ModInitializer
     {
         try
         {
+            CheckHermesAssemblyIncludes();
+            CheckHermesAssemblySubs();
             AutoPatchAllMod();
         }
         catch (Exception e)
         {
             Mod.ModContentManager.Instance.AddErrorLog($"-Initializer Err-");
             Mod.ModContentManager.Instance.AddErrorLog($"{e}");
+        }
+    }
+
+    void CheckHermesAssemblyIncludes()
+    {
+        foreach (var mod in HermesPreloader.ActiveMods)
+        {
+            var assemblies = Path.Combine(mod.dirInfo.FullName, "Assemblies");
+            var dohName = typeof(HermesBootStrap).Assembly.GetName();
+
+            if (Directory.Exists(assemblies) && Directory.GetFiles(assemblies).Filter(file => Path.GetExtension(file) == ".dll").Any(file => AssemblyName.ReferenceMatchesDefinition(AssemblyName.GetAssemblyName(file), dohName)))
+            {
+                var pid = mod.invInfo.workshopInfo.uniqueId;
+
+                if (pid != "DeviceOfHermes")
+                {
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                    Mod.ModContentManager.Instance.AddErrorLog($"Found invalid DeviceOfHermes Assembly in {pid}");
+                }
+            }
+        }
+    }
+
+    void CheckHermesAssemblySubs()
+    {
+        if (Path.GetDirectoryName(Path.GetDirectoryName(typeof(HermesBootStrap).GetAsmDirectory())) is not "3689874580" and "workshop")
+        {
+            var logs = (List<string>)typeof(Mod.ModContentManager).GetField("_logs", HarmonyLib.AccessTools.all).GetValue(Mod.ModContentManager.Instance);
+
+            logs.Insert(0, $"Game cannot <b>Start!!!</b>");
+            logs.Insert(0, $"DeviceOfHermes only valids the workshop mod ID=3689874580");
+            logs.Insert(0, $"Loaded DeviceOfHermes is the <b>NOT</b> valid");
+            logs.Insert(0, $"<b>===FATAL FATAL FATAL FATAL FATAL ===</b>");
+
+            new GameObject().AddComponent<DestroyApp>();
         }
     }
 
@@ -81,4 +128,20 @@ internal class Initializer : ModInitializer
             }
         }
     }
+
+    class DestroyApp : MonoBehaviour
+    {
+        void Awake()
+        {
+            StartCoroutine(DestroyAppRouine());
+        }
+
+        System.Collections.IEnumerator DestroyAppRouine()
+        {
+            yield return new WaitForSeconds(5);
+
+            Application.Quit();
+        }
+    };
+
 }
