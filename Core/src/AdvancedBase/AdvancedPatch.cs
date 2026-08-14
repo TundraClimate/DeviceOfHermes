@@ -7,6 +7,7 @@ using HarmonyExtension;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using DeviceOfHermes.CustomDice;
 
 namespace DeviceOfHermes.AdvancedBase;
 
@@ -169,7 +170,7 @@ internal static class AdvancedPatch
 
             if (useCard is not null)
             {
-                if (!IsClashable(card!, useCard))
+                if (!IsClashable(card!, useCard) || card!.cardBehaviorQueue.Any(q => q.abilityList.Exists(abi => abi is RevengeDice)))
                 {
                     return true;
                 }
