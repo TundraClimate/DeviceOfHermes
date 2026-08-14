@@ -3,11 +3,11 @@
 cd $(dirname $0)
 source "$PWD/.env"
 
-dotnet build ".\\$ID.csproj" -c Debug -nologo
+dotnet build -c Debug -nologo
 
 mkdir "$PWD/workshop/Assemblies/dependencies/"
 
-mv "$PWD/bin/Debug/net48/$ID.dll" "$PWD/publish/$ID.dll"
+mv "$PWD/Core/bin/Debug/net48/$ID.dll" "$PWD/publish/$ID.dll"
 cp "$PWD/publish/$ID.dll" "$PWD/workshop/Assemblies"
 
 rm "$PWD/publish/$ID.zip"

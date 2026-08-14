@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="Core/DeviceOfHermes.csproj" />
+  </Folder>
+</Solution>
