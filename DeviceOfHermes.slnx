@@ -2,4 +2,7 @@
   <Folder Name="/Core/">
     <Project Path="Core/DeviceOfHermes.csproj" />
   </Folder>
+  <Folder Name="/LimbufOfHermes/">
+    <Project Path="LimbufOfHermes/LimbufOfHermes.csproj" />
+  </Folder>
 </Solution>
