@@ -24,6 +24,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_Libs Include=".\libs\*.dll" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="@(_Libs->'%(Filename)')">
+      <HintPath>%(_Libs.FullPath)</HintPath>
+      <Private>false</Private>
+    </Reference>
+
     <ProjectReference Include="../Core/DeviceOfHermes.csproj" />
   </ItemGroup>
 </Project>

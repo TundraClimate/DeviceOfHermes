@@ -5,6 +5,8 @@ libs/
 obj/
 docfx/
 
+libs
+
 publish/DeviceOfHermes.dll
 publish/LimbufOfHermes.dll
 publish/DeviceOfHermes.zip
