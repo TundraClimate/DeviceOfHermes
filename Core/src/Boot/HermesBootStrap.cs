@@ -66,6 +66,7 @@ internal class Initializer : ModInitializer
             CheckHermesAssemblyIncludes();
             CheckHermesAssemblySubs();
             AutoPatchAllMod();
+            KeywordBufExtendAll();
         }
         catch (Exception e)
         {
@@ -126,6 +127,14 @@ internal class Initializer : ModInitializer
             {
                 AutoPatcher.PatchAll(mod);
             }
+        }
+    }
+
+    void KeywordBufExtendAll()
+    {
+        foreach (var asm in AppDomain.CurrentDomain.GetAssemblies())
+        {
+            KeywordBufExtender.ExtendAll(asm);
         }
     }
 

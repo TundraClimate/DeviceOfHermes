@@ -670,6 +670,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.KeywordBufAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.KeywordBufAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.KeywordBufAttribute",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.KeywordBufAttribute.yml\" sourcestartlinenumber=\"1\">An attribute the KeywordBufExtender uses</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.KeywordBufExtendAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.KeywordBufExtendAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.KeywordBufExtendAttribute",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.KeywordBufExtendAttribute.yml\" sourcestartlinenumber=\"1\">An attribute the KeywordBufExtender uses</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.KeywordBufExtender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.KeywordBufExtender.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.KeywordBufExtender",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.KeywordBufExtender.yml\" sourcestartlinenumber=\"1\">An extender of KeywordBuf</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.ModPackage.yml",
       "output": {
         ".html": {
@@ -1733,6 +1775,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/hermes-preloader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/keywordbuf-extender.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/keywordbuf-extender.html"
         }
       },
       "version": ""

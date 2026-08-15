@@ -6,10 +6,12 @@ obj/
 docfx/
 
 publish/DeviceOfHermes.dll
+publish/LimbufOfHermes.dll
 publish/DeviceOfHermes.zip
 publish/doh_rs.dll
 
 workshop/Assemblies/dependencies/doh_rs.dll
 workshop/Assemblies/DeviceOfHermes.dll
+workshop/Assemblies/HermesAssemblies/LimbufOfHermes.dll
 
 upload.sh

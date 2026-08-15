@@ -2925,6 +2925,56 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.IComposite.children
   nameWithType: IComposite.children
+- uid: DeviceOfHermes.KeywordBufAttribute
+  name: KeywordBufAttribute
+  href: api/DeviceOfHermes.KeywordBufAttribute.html
+  commentId: T:DeviceOfHermes.KeywordBufAttribute
+  fullName: DeviceOfHermes.KeywordBufAttribute
+  nameWithType: KeywordBufAttribute
+- uid: DeviceOfHermes.KeywordBufAttribute.#ctor(System.Type)
+  name: KeywordBufAttribute(Type)
+  href: api/DeviceOfHermes.KeywordBufAttribute.html#DeviceOfHermes_KeywordBufAttribute__ctor_System_Type_
+  commentId: M:DeviceOfHermes.KeywordBufAttribute.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: DeviceOfHermes.KeywordBufAttribute.KeywordBufAttribute(System.Type)
+  fullName.vb: DeviceOfHermes.KeywordBufAttribute.New(System.Type)
+  nameWithType: KeywordBufAttribute.KeywordBufAttribute(Type)
+  nameWithType.vb: KeywordBufAttribute.New(Type)
+- uid: DeviceOfHermes.KeywordBufAttribute.#ctor*
+  name: KeywordBufAttribute
+  href: api/DeviceOfHermes.KeywordBufAttribute.html#DeviceOfHermes_KeywordBufAttribute__ctor_
+  commentId: Overload:DeviceOfHermes.KeywordBufAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.KeywordBufAttribute.KeywordBufAttribute
+  fullName.vb: DeviceOfHermes.KeywordBufAttribute.New
+  nameWithType: KeywordBufAttribute.KeywordBufAttribute
+  nameWithType.vb: KeywordBufAttribute.New
+- uid: DeviceOfHermes.KeywordBufExtendAttribute
+  name: KeywordBufExtendAttribute
+  href: api/DeviceOfHermes.KeywordBufExtendAttribute.html
+  commentId: T:DeviceOfHermes.KeywordBufExtendAttribute
+  fullName: DeviceOfHermes.KeywordBufExtendAttribute
+  nameWithType: KeywordBufExtendAttribute
+- uid: DeviceOfHermes.KeywordBufExtender
+  name: KeywordBufExtender
+  href: api/DeviceOfHermes.KeywordBufExtender.html
+  commentId: T:DeviceOfHermes.KeywordBufExtender
+  fullName: DeviceOfHermes.KeywordBufExtender
+  nameWithType: KeywordBufExtender
+- uid: DeviceOfHermes.KeywordBufExtender.ExtendProps(System.Type)
+  name: ExtendProps(Type)
+  href: api/DeviceOfHermes.KeywordBufExtender.html#DeviceOfHermes_KeywordBufExtender_ExtendProps_System_Type_
+  commentId: M:DeviceOfHermes.KeywordBufExtender.ExtendProps(System.Type)
+  fullName: DeviceOfHermes.KeywordBufExtender.ExtendProps(System.Type)
+  nameWithType: KeywordBufExtender.ExtendProps(Type)
+- uid: DeviceOfHermes.KeywordBufExtender.ExtendProps*
+  name: ExtendProps
+  href: api/DeviceOfHermes.KeywordBufExtender.html#DeviceOfHermes_KeywordBufExtender_ExtendProps_
+  commentId: Overload:DeviceOfHermes.KeywordBufExtender.ExtendProps
+  isSpec: "True"
+  fullName: DeviceOfHermes.KeywordBufExtender.ExtendProps
+  nameWithType: KeywordBufExtender.ExtendProps
 - uid: DeviceOfHermes.ModPackage
   name: ModPackage
   href: api/DeviceOfHermes.ModPackage.html
