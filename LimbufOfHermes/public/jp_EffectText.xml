@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<BattleEffectTextRoot>
+    <effectTextList>
+
+        <BattleEffectText ID="LimbufOfHermes_Rupture">
+            <Name>破裂</Name>
+            <Desc>被ダメージ時、破裂の値だけ物理追加ダメージを受ける。</Desc>
+        </BattleEffectText>
+
+    </effectTextList>
+</BattleEffectTextRoot>

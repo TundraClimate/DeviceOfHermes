@@ -1,3 +1,5 @@
+using System.Text;
+using LOR_XML;
 using DeviceOfHermes.Boot;
 using DeviceOfHermes.Resource;
 
@@ -8,6 +10,8 @@ internal class LimbufBootStrap : HermesInitializer
     public void OnInitMod()
     {
         LoadAllBufIcons();
+
+        TextModel.OnLoadLocalize += OnLocalize;
     }
 
     static void LoadAllBufIcons()
@@ -23,6 +27,23 @@ internal class LimbufBootStrap : HermesInitializer
 
             Artwork.SetBattleUnitBufSprite(id, Artwork.CreateSprite(data)!);
         }
+    }
+
+    static void OnLocalize(string lang)
+    {
+        lang = lang.ToLower();
+
+        LocalizeEffectText(lang);
+    }
+
+    static void LocalizeEffectText(string lang)
+    {
+        var data = _manifest.FirstOrDefault((name) => name.Key.EndsWith($"{lang}_EffectText.xml")).Value;
+
+        var text = Encoding.UTF8.GetString(data);
+        var xml = Serde.FromXmlStr<BattleEffectTextRoot>(text);
+
+        TextModel.SetBattleEffectTexts(xml!.effectTextList, true);
     }
 
     static Dictionary<string, byte[]> InitEmbeds()
