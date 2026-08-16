@@ -56,6 +56,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchGetCardBufIcon));
         Patch(typeof(PatchBeforeRollDice));
         Patch(typeof(PatchOnSucceedAttack));
+        Patch(typeof(PatchOnAddNewKeywordBuf));
     }
 
     public static void Init()
@@ -1269,6 +1270,56 @@ internal static class AdvancedPatch
             __instance?.owner?.allyCardDetail?.Hand()?.FlatMap(card => card.GetBufList().OfType<AdvancedCardBuf>())?.Foreach(buf => buf.OnSuccessAttack_inHand(behavior));
 
             __instance?.owner?.allyCardDetail?.GetAllDeck()?.FlatMap(card => card.GetBufList().OfType<AdvancedCardBuf>())?.Foreach(buf => buf.OnSuccessAttack_inDeck(behavior));
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitBufListDetail), "AddNewKeywordBufInList")]
+    class PatchOnAddNewKeywordBuf
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.End()
+                .MatchEndBackwards(CodeMatch.Calls(typeof(BattleUnitBuf).Method("Init")))
+                .Advance(1)
+                .Insert(
+                    new CodeInstruction(OpCodes.Ldloca, 1),
+                    CodeInstruction.Local(2),
+                    CodeInstruction.Call(typeof(PatchOnAddNewKeywordBuf).Method("InjectMethod")),
+                    CodeInstruction.SetLocal(2)
+                );
+
+            return matcher.Instructions();
+        }
+
+        static BattleUnitBuf? InjectMethod(ref List<BattleUnitBuf> bufs, BattleUnitBuf target)
+        {
+            if (target is AdvancedUnitBuf adv && adv.IsInstant)
+            {
+                adv.OnInstant();
+
+                foreach (var unit in BattleObjectManager.instance.GetAliveList())
+                {
+                    var otherBufs = unit?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
+
+                    if (otherBufs is null)
+                    {
+                        continue;
+                    }
+
+                    foreach (var otherBuf in otherBufs)
+                    {
+                        otherBuf.OnOtherInstant(adv);
+                    }
+                }
+
+                bufs.Remove(target);
+
+                return null;
+            }
+
+            return target;
         }
     }
 }
