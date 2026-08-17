@@ -19,6 +19,10 @@ public class LimKeywordBuf
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_TremorBurst))]
     public static KeywordBuf TremorBurst { get; private set; }
 
+    /// <summary>ConsumeTremor KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_ConsumeTremor))]
+    public static KeywordBuf ConsumeTremor { get; private set; }
+
     /// <summary>Sinking KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Sinking))]
     public static KeywordBuf Sinking { get; private set; }

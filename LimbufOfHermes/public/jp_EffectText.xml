@@ -7,5 +7,15 @@
             <Desc>被ダメージ時、破裂の値だけ物理追加ダメージを受ける。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Tremor">
+            <Name>振動</Name>
+            <Desc>振動爆発を受けるとき、振動の値だけ混乱追加ダメージを受ける。</Desc>
+        </BattleEffectText>
+
+        <BattleEffectText ID="LimbufOfHermes_TremorBurst">
+            <Name>振動爆発</Name>
+            <Desc>対象の振動の値だけ混乱追加ダメージを与える。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
