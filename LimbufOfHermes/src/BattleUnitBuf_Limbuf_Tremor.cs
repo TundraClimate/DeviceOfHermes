@@ -17,6 +17,16 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     {
         get
         {
+            if (this is BattleUnitBuf_Limbuf_TremorSuperposition)
+            {
+                return false;
+            }
+
+            if (IsEntangled())
+            {
+                return true;
+            }
+
             return !active;
         }
     }
@@ -27,6 +37,12 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     /// <summary>Consume tremor</summary>
     public void Consume(int num)
         => (base._owner?.bufListDetail?.GetActivatedBuf(LimKeywordBuf.Tremor) as BattleUnitBuf_Limbuf_Tremor)?.ChangeStack(s => s - num);
+
+    /// <summary>Tremor is entangled</summary>
+    public bool IsEntangled()
+    {
+        return base._owner.bufListDetail.HasBuf<BattleUnitBuf_Limbuf_TremorSuperposition>();
+    }
 
     /// <summary>Impl OnStackChange</summary>
     public override void OnStackChangeAll(BattleUnitBuf buf, int last)
@@ -43,10 +59,19 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
             });
     }
 
+    /// <summary>Impl OnAddBuf</summary>
+    public override void OnAddBuf(int addedStack)
+    {
+        if (this.GetType() != typeof(BattleUnitBuf_Limbuf_Tremor) && 0 >= this.TremorStack)
+        {
+            Destroy();
+        }
+    }
+
     /// <summary>Impl OnOtherInstant</summary>
     public override void OnOtherInstant(AdvancedUnitBuf instant)
     {
-        if (!active)
+        if (!active || this.GetType() == typeof(BattleUnitBuf_Limbuf_Tremor) && IsEntangled())
         {
             return;
         }

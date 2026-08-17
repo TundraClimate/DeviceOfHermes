@@ -17,5 +17,23 @@
             <Desc>対象の振動の値だけ混乱追加ダメージを与える。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_TremorConversion">
+            <Name>振幅変換</Name>
+            <Desc>対象の振動を別タイプの振動に変換。変換時、既存振動の値は維持される。</Desc>
+        </BattleEffectText>
+
+        <BattleEffectText ID="LimbufOfHermes_TremorEntangle">
+            <Name>振幅絡縺</Name>
+            <Desc>絡縺させる振動効果と、対象の振動系効果を振動-重畳に合算。絡縺時、振動の値が維持される。
+振動-重畳に振幅変換発動時、変換させる振動効果が絡縺で適用される。
+
+幕の終了時、振動に変換される</Desc>
+        </BattleEffectText>
+
+        <BattleEffectText ID="LimbufOfHermes_TremorSuperposition">
+            <Name>振動-重畳</Name>
+            <Desc>振幅絡縺を通じて得られる。振幅変換時、振動-重畳に該当特殊振動が追加される</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
