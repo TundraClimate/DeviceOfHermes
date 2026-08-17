@@ -134,7 +134,16 @@ internal class Initializer : ModInitializer
     {
         foreach (var asm in AppDomain.CurrentDomain.GetAssemblies())
         {
-            KeywordBufExtender.ExtendAll(asm);
+            try
+            {
+                KeywordBufExtender.ExtendAll(asm);
+            }
+            catch (Exception)
+            {
+                Hermes.Say($"Skip Assembly: {asm.FullName}", MessageLevel.Warn);
+
+                continue;
+            }
         }
     }
 
