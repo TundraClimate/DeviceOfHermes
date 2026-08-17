@@ -1272,6 +1272,272 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_AlvDown",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvDown.yml\" sourcestartlinenumber=\"1\">A unit buf the AlvDown</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvUp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvUp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_AlvUp",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvUp.yml\" sourcestartlinenumber=\"1\">A unit buf the AlvUp</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.yml\" sourcestartlinenumber=\"1\">A unit buf the consumes tremor</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_DlvDown",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvDown.yml\" sourcestartlinenumber=\"1\">A unit buf the DlvDown</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvUp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvUp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_DlvUp",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvUp.yml\" sourcestartlinenumber=\"1\">A unit buf the DlvUp</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Poise",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.yml\" sourcestartlinenumber=\"1\">A unit buf the Poise</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture.yml\" sourcestartlinenumber=\"1\">A unit buf the Rupture</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.yml\" sourcestartlinenumber=\"1\">A unit buf the Sinking</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.yml\" sourcestartlinenumber=\"1\">A unit buf the Tremor</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurst",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurst.yml\" sourcestartlinenumber=\"1\">A unit buf the Tremor</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorConversion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_TremorConversion",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorConversion.yml\" sourcestartlinenumber=\"1\">A unit buf the Tremor conversion</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorEntangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorEntangle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_TremorEntangle",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorEntangle.yml\" sourcestartlinenumber=\"1\">A unit buf the Tremor entangle</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.yml\" sourcestartlinenumber=\"1\">A unit buf the Tremor</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.Boot.EtcDataXmlInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.Boot.EtcDataXmlInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.Boot.EtcDataXmlInfo",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.Boot.EtcDataXmlInfo.yml\" sourcestartlinenumber=\"1\">Localize template</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.Boot.EtcDataXmlRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.Boot.EtcDataXmlRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.Boot.EtcDataXmlRoot",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.Boot.EtcDataXmlRoot.yml\" sourcestartlinenumber=\"1\">Localize template</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.Boot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.Boot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.Boot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.LimKeywordBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.LimKeywordBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.LimKeywordBuf",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.LimKeywordBuf.yml\" sourcestartlinenumber=\"1\">A Keyword list of Limbus buff</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.LimbufBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.LimbufBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.LimbufBase",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.LimbufBase.yml\" sourcestartlinenumber=\"1\">A unit buf base</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/System.Collections.Generic.DeferredList-1.yml",
       "output": {
         ".html": {
@@ -1785,6 +2051,86 @@
       "output": {
         ".html": {
           "relative_path": "docs/keywordbuf-extender.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-alvdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-alvdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-alvup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-alvup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-dlvdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-dlvdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-dlvup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-dlvup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-poise.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-poise.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-rupture.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-rupture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-sinking.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-sinking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-tremor.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-tremor.html"
         }
       },
       "version": ""

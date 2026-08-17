@@ -4,7 +4,8 @@
 
         <BattleEffectText ID="LimbufOfHermes_Rupture">
             <Name>破裂</Name>
-            <Desc>被ダメージ時、破裂の値だけ物理追加ダメージを受ける。</Desc>
+            <Desc>被ダメージ時、破裂の値だけ物理追加ダメージを受ける。
+効果発動後、値が2/3に減少。(端数切り捨て)</Desc>
         </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_Tremor">

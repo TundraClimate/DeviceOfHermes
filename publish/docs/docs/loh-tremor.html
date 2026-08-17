@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>using LimbufOfHermes; | DeviceOfHermes </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="using LimbufOfHermes; | DeviceOfHermes ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/loh-tremor.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DeviceOfHermes">
+            DeviceOfHermes
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="using-limbufofhermes"><code>using LimbufOfHermes;</code></h1>
+
+<p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="tremor">Tremor</h1>
+<p>リンバスの&quot;振動&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>振動爆発を受けるとき、振動の値だけ混乱追加ダメージを受ける。</p>
+</blockquote>
+<pre><code class="lang-cs">// targetに振動を7付与
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Tremor, 7, owner);
+
+// 振動爆発
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorBurst, 1, owner);
+
+// 振動を5消耗
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ConsumeTremor, 5, owner);
+</code></pre>
+<h2 id="special-tremor">Special Tremor</h2>
+<p>特殊振動を作成することが出来ます。<br>
+<code>BattleUnitBuf_Limbuf_Tremor</code>を継承したクラスが必要になります。</p>
+<pre><code class="lang-cs">class SpecialTremor : BattleUnitBuf_Limbuf_Tremor
+{
+    // keywordIdは各自設定してください
+    protected override string keywordId =&gt; &quot;SpecialTremor&quot;;
+}
+</code></pre>
+<p><code>bufType</code>は<code>None</code>、もしくは重複しないKeywordBufを作成・使用してください。<br>
+<a href="keywordbuf-extender.html">KeywordBufExtender</a>等を使用してください。</p>
+<pre><code class="lang-cs">class SpecialTremor : BattleUnitBuf_Limbuf_Tremor
+{
+    // Noneを使用する場合、自動スタッキングが機能しません
+    // public override KeywordBuf bufType =&gt; KeywordBuf.None;
+
+    // KeywordBufExtender等を使用してKeywordBufを作成することを推奨します
+    public override KeywordBuf bufType =&gt; MyKeywordBuf.SpecialTremor;
+}
+</code></pre>
+<p>振動爆発時の処理は、<code>OnTremorBurst()</code>を実装して設定することが出来ます。</p>
+<pre><code class="lang-cs">class SpecialTremor : BattleUnitBuf_Limbuf_Tremor
+{
+    public override KeywordBuf bufType =&gt; MyKeywordBuf.SpecialTremor;
+
+    public override void OnTremorBurst(int stack)
+    {
+        // &quot;振動の値だけ混乱追加ダメージを受ける。&quot;の処理
+        base.OnTremorBurst(stack);
+
+        // 追加の処理をここに追記する
+    }
+}
+</code></pre>
+<h2 id="tremorconversion">TremorConversion</h2>
+<p>振幅変換も可能です。<br>
+直前で特殊振動を付与している必要があります。</p>
+<blockquote>
+<p>対象の振動を別タイプの振動に変換。変換時、既存振動の値は維持される。</p>
+</blockquote>
+<pre><code class="lang-cs">// 特殊振動を付与する(値は自動で揃うため、1の付与で良い)
+target.bufListDetail.AddKeywordBufThisRoundByCard(MyKeywordBuf.SpecialTremor, 1, owner);
+
+// 振幅変換する
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorConversion, 1, owner);
+</code></pre>
+<h2 id="tremorentangle">TremorEntangle</h2>
+<p>振幅絡縺を行うことが出来ます。<br>
+直前で特殊振動を付与している必要があります。</p>
+<blockquote>
+<p>絡縺させる振動効果と、対象の振動系効果を振動-重畳に合算。絡縺時、振動の値が維持される。
+振動-重畳に振幅変換発動時、変換させる振動効果が絡縺で適用される。</p>
+<p>幕の終了時、振動に変換される</p>
+</blockquote>
+<pre><code class="lang-cs">// 特殊振動を付与する(値は自動で揃うため、1の付与で良い)
+target.bufListDetail.AddKeywordBufThisRoundByCard(MyKeywordBuf.SpecialTremor, 1, owner);
+
+// 振幅絡縺する
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorEntangle, 1, owner);
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/loh-tremor.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
