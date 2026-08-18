@@ -42,14 +42,14 @@ public static class RencounterEventExtension
         Action<BattleCardBehaviourResult.BehaviourEvent> f = e switch
         {
             RencounterEvent.SucceedAtk => owner.battleCardResultLog.SetSucceedAtkEvent,
-            RencounterEvent.Rolldice => owner.battleCardResultLog.SetSucceedAtkEvent,
-            RencounterEvent.AfterAction => owner.battleCardResultLog.SetSucceedAtkEvent,
-            RencounterEvent.TakeDamaged => owner.battleCardResultLog.SetSucceedAtkEvent,
-            RencounterEvent.UseCard => owner.battleCardResultLog.SetSucceedAtkEvent,
-            RencounterEvent.EndCardAction => owner.battleCardResultLog.SetSucceedAtkEvent,
-            RencounterEvent.PrintEffect => owner.battleCardResultLog.SetSucceedAtkEvent,
-            RencounterEvent.PrintDamagedEffect => owner.battleCardResultLog.SetSucceedAtkEvent,
-            _ => owner.battleCardResultLog.SetSucceedDefEvent,
+            RencounterEvent.Rolldice => owner.battleCardResultLog.SetRolldiceEvent,
+            RencounterEvent.AfterAction => owner.battleCardResultLog.SetAfterActionEvent,
+            RencounterEvent.TakeDamaged => owner.battleCardResultLog.SetTakeDamagedEvent,
+            RencounterEvent.UseCard => owner.battleCardResultLog.SetUseCardEvent,
+            RencounterEvent.EndCardAction => owner.battleCardResultLog.SetEndCardActionEvent,
+            RencounterEvent.PrintEffect => owner.battleCardResultLog.SetPrintEffectEvent,
+            RencounterEvent.PrintDamagedEffect => owner.battleCardResultLog.SetPrintDamagedEffectEvent,
+            _ => owner.battleCardResultLog.SetPrintEffectEvent,
         };
 
         f(new BattleCardBehaviourResult.BehaviourEvent(action));
