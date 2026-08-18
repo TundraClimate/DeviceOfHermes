@@ -138,15 +138,10 @@ public static class KeywordBufExtender
         {
             var matcher = new CodeMatcher(instructions);
 
-            matcher.MatchStartForward(
-                CodeMatch.IsLdloc(),
-                CodeMatch.IsOpCode(OpCodes.Brfalse),
-                CodeMatch.IsLdarg(0), CodeMatch.IsLdloc(),
-                CodeMatch.Calls(typeof(BattleUnitBufListDetail).Method("CanAddBuf")),
-                CodeMatch.IsOpCode(OpCodes.Brtrue)
-            )
+            matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Switch))
+                .Advance(1)
                 .Insert(
-                    new CodeInstruction(OpCodes.Ldloca, 2).MoveLabelsFrom(matcher.Instruction),
+                    new CodeInstruction(OpCodes.Ldloca, 2),
                     CodeInstruction.Local(3),
                     CodeInstruction.Call(typeof(PatchOnAddKeywordBuf).Method("InjectMethod"))
                 );
