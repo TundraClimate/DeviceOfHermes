@@ -13,7 +13,6 @@ public class AdvancedPassiveBase : PassiveAbilityBase
 {
     static AdvancedPassiveBase()
     {
-        AdvancedPatch.Init();
         BattleBufTracker.Init();
     }
 

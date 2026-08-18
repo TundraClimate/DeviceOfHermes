@@ -13,7 +13,6 @@ public class AdvancedUnitBuf : BattleUnitBuf
 {
     static AdvancedUnitBuf()
     {
-        AdvancedPatch.Init();
         BattleBufTracker.Init();
     }
 

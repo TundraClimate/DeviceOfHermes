@@ -11,8 +11,6 @@ namespace DeviceOfHermes.AdvancedBase;
 /// </code></example>
 public class AdvancedCardBase : DiceCardSelfAbilityBase
 {
-    static AdvancedCardBase() => AdvancedPatch.Init();
-
     /// <summary>Property is card clashable</summary>
     public virtual bool IsClashable => true;
 

@@ -11,8 +11,6 @@ namespace DeviceOfHermes.AdvancedBase;
 /// </code></example>
 public class AdvancedDiceBase : DiceCardAbilityBase
 {
-    static AdvancedDiceBase() => AdvancedPatch.Init();
-
     /// <summary>Dice on move to keeped</summary>
     public virtual void OnAddToKeeped()
     {

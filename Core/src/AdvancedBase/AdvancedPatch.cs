@@ -15,7 +15,7 @@ internal static class AdvancedPatch
 {
     private static Harmony harmony = new Harmony("DeviceOfHermes.AdvancedBase");
 
-    static AdvancedPatch()
+    public static void Init()
     {
         Patch(typeof(PatchTargetUI));
         Patch(typeof(PatchOnStartResolve));
@@ -59,13 +59,16 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnAddNewKeywordBuf));
     }
 
-    public static void Init()
-    {
-    }
-
     private static void Patch(Type type)
     {
-        harmony.CreateClassProcessor(type).Patch();
+        try
+        {
+            harmony.CreateClassProcessor(type).Patch();
+        }
+        catch (Exception e)
+        {
+            Hermes.Say($"DeviceOfHermes Patch failed: {e}");
+        }
     }
 
     public static bool IsClashable(BattlePlayingCardDataInUnitModel cardA, BattlePlayingCardDataInUnitModel cardB)

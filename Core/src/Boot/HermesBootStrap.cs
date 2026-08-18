@@ -1,5 +1,6 @@
 using System.Reflection;
 using UnityEngine;
+using DeviceOfHermes.AdvancedBase;
 using DeviceOfHermes.UI;
 using DeviceOfHermes.CustomDice;
 using DeviceOfHermes.Resource;
@@ -40,6 +41,8 @@ internal class HermesBootStrap : DiceCardAbilityBase
             CompositePatch.Init();
             DynamicAbility.Init();
             UnitUIExtension.Init();
+
+            AdvancedPatch.Init();
 
             CustomDicePatch.Init();
             RevengeDice.Init();
