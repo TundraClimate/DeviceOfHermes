@@ -68,6 +68,7 @@ internal class Initializer : ModInitializer
         {
             CheckHermesAssemblyIncludes();
             CheckHermesAssemblySubs();
+            LoadOtherDependencies();
             AutoPatchAllMod();
             KeywordBufExtendAll();
         }
@@ -165,4 +166,22 @@ internal class Initializer : ModInitializer
         }
     };
 
+    void LoadOtherDependencies()
+    {
+        var asms = AppDomain.CurrentDomain.GetAssemblies();
+        var deps = Path.Combine(typeof(HermesBootStrap).GetAsmDirectory(), "dependencies");
+
+        foreach (var file in Directory.GetFiles(deps))
+        {
+            if (!asms.Any(asm => AssemblyName.ReferenceMatchesDefinition(asm.GetName(), AssemblyName.GetAssemblyName(file))))
+            {
+                var loaded = Assembly.LoadFrom(file);
+
+                if (loaded.GetTypes().FirstOrDefault(ty => ty.IsSubclassOf(typeof(ModInitializer))) is Type ty)
+                {
+                    (Activator.CreateInstance(ty) as ModInitializer)?.OnInitializeMod();
+                }
+            }
+        }
+    }
 }

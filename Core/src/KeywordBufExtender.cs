@@ -1,7 +1,8 @@
 using System.Reflection;
-using System.Reflection.Emit;
 using HarmonyLib;
 using HarmonyExtension;
+using EnumExtenderV2;
+using AutoKeywordUtil;
 
 namespace DeviceOfHermes;
 
@@ -52,114 +53,36 @@ public static class KeywordBufExtender
 
     private static Dictionary<PropertyInfo, Type> _mapping = new();
 
-    private static Dictionary<KeywordBuf, Type> _dict = new();
-
     [HarmonyPatch(typeof(GameSceneManager), "Start")]
     class PatchOnGameStart
     {
         static Exception Finalizer(Exception __exception)
         {
-            var next = 94;
-            var detail = new BattleUnitBufListDetail(new(0));
-
-            foreach (var (prop, ty) in _mapping)
+            foreach (var (prop, target) in _mapping)
             {
-            BEFORE: try
+                var isValid = prop.GetGetMethod(true)?.Let(getter => getter.IsStatic && getter.ReturnType == typeof(KeywordBuf)) == true
+                    && prop.GetGetMethod(true) is not null;
+
+                if (!isValid)
                 {
-                    if (next > 999)
-                    {
-                        Hermes.Say($"KeywordBufExtender timeout: TOO long");
-
-                        break;
-                    }
-
-                    var res = addNewKeywordBufInList(detail, BufReadyType.NextRound, (KeywordBuf)next++);
-
-                    if (res is null)
-                    {
-                        var getter = prop.GetGetMethod(true);
-
-                        if (getter is null)
-                        {
-                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} has not getter", MessageLevel.Warn);
-
-                            continue;
-                        }
-
-                        if (prop.GetSetMethod(true) is null)
-                        {
-                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} has not setter", MessageLevel.Warn);
-
-                            continue;
-                        }
-
-                        if (!getter.IsStatic)
-                        {
-                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} is not static", MessageLevel.Warn);
-
-                            continue;
-                        }
-
-                        if (getter.ReturnType != typeof(KeywordBuf))
-                        {
-                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} is not returns KeywordBuf", MessageLevel.Warn);
-
-                            continue;
-                        }
-
-                        prop.SetValue(null, (KeywordBuf)next - 1, AccessTools.all, null, null, null);
-                        _dict[(KeywordBuf)next - 1] = ty;
-
-                        continue;
-                    }
-
-                    goto BEFORE;
+                    continue;
                 }
-                catch (Exception)
+
+                var key = $"TundraClimate_DeviceOfHermes_KeywordBufExtender_{prop.DeclaringType.Assembly.GetName().Name}_{prop.DeclaringType.Name}_{prop.Name}__{target.Name}";
+
+                if (EnumExtender.TryGetValueOf(key, out KeywordBuf res)
+                    || EnumExtender.TryFindUnnamedValue((KeywordBuf)94, null, false, out res)
+                    && EnumExtender.TryAddName(key, res, false)
+                )
                 {
-                    goto BEFORE;
+                    prop.SetValue(null, res, AccessTools.all, null, null, null);
+
+                    typeof(AutoKeywordUtils).Method(nameof(AutoKeywordUtils.RegisterKeywordBuf))
+                        .MakeGenericMethod(target).Invoke(null, null);
                 }
             }
-
-            _harmony.CreateClassProcessor(typeof(PatchOnAddKeywordBuf)).Patch();
 
             return __exception;
-        }
-
-        static Func<BattleUnitBufListDetail, BufReadyType, KeywordBuf, BattleUnitBuf> addNewKeywordBufInList
-            = (Func<BattleUnitBufListDetail, BufReadyType, KeywordBuf, BattleUnitBuf>)typeof(BattleUnitBufListDetail).Method("AddNewKeywordBufInList")
-                .CreateDelegate(typeof(Func<BattleUnitBufListDetail, BufReadyType, KeywordBuf, BattleUnitBuf>));
-    }
-
-    [HarmonyPatch(typeof(BattleUnitBufListDetail), "AddNewKeywordBufInList")]
-    class PatchOnAddKeywordBuf
-    {
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
-        {
-            var matcher = new CodeMatcher(instructions);
-
-            matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Switch))
-                .Advance(1)
-                .Insert(
-                    new CodeInstruction(OpCodes.Ldloca, 2),
-                    CodeInstruction.Local(3),
-                    CodeInstruction.Call(typeof(PatchOnAddKeywordBuf).Method("InjectMethod"))
-                );
-
-            return matcher.Instructions();
-        }
-
-        static void InjectMethod(ref BattleUnitBuf? buf, KeywordBuf bufType)
-        {
-            if (buf is not null)
-            {
-                return;
-            }
-
-            if (_dict.TryGetValue(bufType, out var res))
-            {
-                buf = Activator.CreateInstance(res) as BattleUnitBuf;
-            }
         }
     }
 }
