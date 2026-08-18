@@ -39,7 +39,7 @@ public static class KeywordBufExtender
     {
         var props = target.GetProperties(AccessTools.all);
 
-        foreach (var kwd in props.Filter(info => info.GetMethod?.ReturnType == typeof(KeywordBuf) && info.SetMethod?.IsStatic == true))
+        foreach (var kwd in props)
         {
             if (kwd.GetCustomAttribute<KeywordBufAttribute>() is KeywordBufAttribute attr)
             {
@@ -66,12 +66,47 @@ public static class KeywordBufExtender
             {
             BEFORE: try
                 {
-                    var res = addNewKeywordBufInList(detail, BufReadyType.NextRound, (KeywordBuf)next);
+                    if (next > 999)
+                    {
+                        Hermes.Say($"KeywordBufExtender timeout: TOO long");
 
-                    next += 1;
+                        break;
+                    }
+
+                    var res = addNewKeywordBufInList(detail, BufReadyType.NextRound, (KeywordBuf)next++);
 
                     if (res is null)
                     {
+                        var getter = prop.GetGetMethod(true);
+
+                        if (getter is null)
+                        {
+                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} has not getter", MessageLevel.Warn);
+
+                            continue;
+                        }
+
+                        if (prop.GetSetMethod(true) is null)
+                        {
+                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} has not setter", MessageLevel.Warn);
+
+                            continue;
+                        }
+
+                        if (!getter.IsStatic)
+                        {
+                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} is not static", MessageLevel.Warn);
+
+                            continue;
+                        }
+
+                        if (getter.ReturnType != typeof(KeywordBuf))
+                        {
+                            Hermes.Say($"KeywordBufExtender skip one: {prop.DeclaringType.Assembly.GetName().Name}.{prop.DeclaringType.FullName}.{prop.Name} is not returns KeywordBuf", MessageLevel.Warn);
+
+                            continue;
+                        }
+
                         prop.SetValue(null, (KeywordBuf)next - 1, AccessTools.all, null, null, null);
                         _dict[(KeywordBuf)next - 1] = ty;
 
