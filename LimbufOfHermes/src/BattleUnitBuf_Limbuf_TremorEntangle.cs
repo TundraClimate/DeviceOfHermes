@@ -26,19 +26,14 @@ public sealed class BattleUnitBuf_Limbuf_TremorEntangle : LimbufBase
 
         if (StageController.Instance.IsLogState())
         {
-            base._owner.AddRencounterEvent(RencounterEvent.PrintEffect, () =>
-            {
-                OnActivate(this.stack);
-
-                base._owner.UpdateBufIcons();
-            });
+            base._owner.AddRencounterEvent(RencounterEvent.PrintEffect, () => OnActivate(this.stack));
         }
         else
         {
             OnActivate(this.stack);
-
-            base._owner.UpdateBufIcons();
         }
+
+        base._owner.UpdateBufIcons();
     }
 
     /// <summary>Impl OnActivate</summary>
