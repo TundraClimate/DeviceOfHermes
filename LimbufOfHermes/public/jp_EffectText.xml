@@ -36,5 +36,13 @@
             <Desc>振幅絡縺を通じて得られる。振幅変換時、振動-重畳に該当特殊振動が追加される</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Sinking">
+            <Name>沈潜</Name>
+            <Desc>最大値: 99
+
+値が増加するにつれてダイスの素の威力が低い出目になりやすくなる。
+幕の終了時、値が最大値なら次の幕にパニック状態となりこの効果が除去される。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>

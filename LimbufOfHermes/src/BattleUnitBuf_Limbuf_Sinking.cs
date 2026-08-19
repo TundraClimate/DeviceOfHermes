@@ -8,4 +8,29 @@ public class BattleUnitBuf_Limbuf_Sinking : LimbufBase
 
     /// <summary>Impl bufType</summary>
     public override KeywordBuf bufType => LimKeywordBuf.Sinking;
+
+    /// <summary>Impl positiveType</summary>
+    public override BufPositiveType positiveType => BufPositiveType.Negative;
+
+    /// <summary>Impl OnAddBuf</summary>
+    public override void OnAddBuf(int addedStack)
+    {
+        if (base._owner.IsImmune(this.bufType))
+        {
+            Destroy();
+        }
+
+        this.stack = 99.Min(this.stack);
+    }
+
+    /// <summary>Impl BeforeRollDice</summary>
+    public override void BeforeRollDice(BattleDiceBehavior behavior)
+    {
+        if (base._owner.IsImmune(this.bufType))
+        {
+            return;
+        }
+
+        behavior.ApplyDiceStatBonus(new AdvancedDiceStatBonus { highrollGlobalWeight = -this.stack });
+    }
 }
