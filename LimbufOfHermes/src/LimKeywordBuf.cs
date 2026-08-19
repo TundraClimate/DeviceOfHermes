@@ -39,6 +39,10 @@ public class LimKeywordBuf
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Sinking))]
     public static KeywordBuf Sinking { get; private set; }
 
+    /// <summary>Panic KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Panic))]
+    public static KeywordBuf Panic { get; private set; }
+
     /// <summary>Poise KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Poise))]
     public static KeywordBuf Poise { get; private set; }

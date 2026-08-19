@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace LimbufOfHermes;
 
 /// <summary>A unit buf base</summary>
@@ -25,4 +27,6 @@ public class LimbufBase : AdvancedUnitBuf
     public virtual void OnActivate(int stack)
     {
     }
+
+    internal static AssetBundle bundle = AssetBundle.LoadFromStream(typeof(LimbufBase).Assembly.GetManifestResourceStream("LimbufOfHermes.public.limbuf.assetbundle"));
 }

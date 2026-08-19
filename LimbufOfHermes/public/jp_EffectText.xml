@@ -44,5 +44,13 @@
 幕の終了時、値が最大値なら次の幕にパニック状態となりこの効果が除去される。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Panic">
+            <Name>パニック</Name>
+            <Desc>この効果は沈潜を99得ている状態と同じだけの状態異常効果を受ける。
+
+この幕の間沈潜を獲得することが出来ない。
+幕の終了時に除去される。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>

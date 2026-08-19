@@ -15,7 +15,7 @@ public class BattleUnitBuf_Limbuf_Sinking : LimbufBase
     /// <summary>Impl OnAddBuf</summary>
     public override void OnAddBuf(int addedStack)
     {
-        if (base._owner.IsImmune(this.bufType))
+        if (base._owner.IsImmune(this.bufType) || base._owner.bufListDetail.HasBuf<BattleUnitBuf_Limbuf_Panic>())
         {
             Destroy();
         }
@@ -32,5 +32,16 @@ public class BattleUnitBuf_Limbuf_Sinking : LimbufBase
         }
 
         behavior.ApplyDiceStatBonus(new AdvancedDiceStatBonus { highrollGlobalWeight = -this.stack });
+    }
+
+    /// <summary>Impl OnRoundEndTheLast</summary>
+    public override void OnRoundEndTheLast()
+    {
+        if (this.stack == 99)
+        {
+            Destroy();
+
+            base._owner.bufListDetail.AddKeywordBufByEtc(LimKeywordBuf.Panic, 1);
+        }
     }
 }
