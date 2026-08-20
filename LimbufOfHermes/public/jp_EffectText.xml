@@ -52,5 +52,11 @@
 幕の終了時に除去される。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_SinkingDeluge">
+            <Name>沈潜殺到</Name>
+            <Desc>(沈潜 * 2)の混乱ダメージを与え、沈潜を除去する。
+この効果で超過した混乱ダメージは物理ダメージとして与える。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
