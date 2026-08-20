@@ -40,36 +40,14 @@ internal class TremorBurstEffect : MonoBehaviour
 {
     public static void ApplyUnit(BattleUnitModel owner, BattleUnitBuf self)
     {
-        var go = owner.view.characterRotationCenter.gameObject.AddChildObject("TremorBurst", "Effect");
-
-        var effect = UnityObject.Instantiate<DamageTextEffect>(AttackEffectManager.Instance.damagedTextPrefab, owner.view.damageTextEffectRoot);
-
-        effect.maxEffect = false;
-        effect.isAtk = true;
-
-        var color = AttackEffectManager.Instance.damageRwbpTextColor[2];
-
-        effect.img_resistIcon.sprite = self.GetBufIcon();
-        effect.img_resistIcon.color = new Color32(200, 200, 0, 255);
-        effect.img_resistIconBg.color = new Color(0, 0, 0, 0);
-        effect.img_resistIconFg.color = new Color(0, 0, 0, 0);
-        effect.txt_resist.fontMaterial.SetColor("_UnderlayColor", color);
-        effect.txt_resist.color = new Color32(170, 170, 60, 255);
-
-        effect.txt_resist.text = TextDataModel.GetText("LimbufOfHermes_TremorBurst");
-        effect.txt_resist.transform.localPosition -= new Vector3(0, 30, 0);
-
-        AttackEffectManager.Instance.SetEffectSizeByCamZoom(effect);
-        AttackEffectManager.Instance.SetEffectSizeByUnitHeight(owner, effect);
+        owner.CreateTextEffect(
+            TextDataModel.GetText("LimbufOfHermes_TremorBurst"),
+            self.GetBufIcon(),
+            AttackEffectManager.Instance.damageRwbpTextColor[2],
+            new Color32(200, 200, 0, 255)
+        );
 
         SoundEffectManager.Instance.PlayClip("creature/quitegirl_hit", false, 10f, null).source.pitch = 3.2f;
-
-        go.AddComponent<AutoDestruct>().Let(target =>
-        {
-            target.time = 1f;
-
-            target.StartCoroutine(RingingRoutine(go));
-        });
     }
 
     static IEnumerator RingingRoutine(GameObject target)

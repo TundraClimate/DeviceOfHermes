@@ -64,23 +64,11 @@ public class BattleUnitBuf_Limbuf_SinkingDeluge : LimbufBase
     /// <summary>Impl OnActivate</summary>
     public override void OnActivate(int stack)
     {
-        var owner = base._owner;
-        var effect = UnityObject.Instantiate<DamageTextEffect>(AttackEffectManager.Instance.damagedTextPrefab, owner.view.damageTextEffectRoot);
-
-        effect.maxEffect = false;
-        effect.isAtk = true;
-
-        effect.img_resistIcon.sprite = this.GetBufIcon();
-        effect.img_resistIcon.color = new Color32(0, 0, 200, 255);
-        effect.img_resistIconBg.color = new Color(0, 0, 0, 0);
-        effect.img_resistIconFg.color = new Color(0, 0, 0, 0);
-        effect.txt_resist.fontMaterial.SetColor("_UnderlayColor", new Color32(60, 60, 170, 255));
-        effect.txt_resist.color = new Color32(60, 60, 170, 255);
-
-        effect.txt_resist.text = TextDataModel.GetText("LimbufOfHermes_SinkingDeluge");
-        effect.txt_resist.transform.localPosition -= new Vector3(0, 30, 0);
-
-        AttackEffectManager.Instance.SetEffectSizeByCamZoom(effect);
-        AttackEffectManager.Instance.SetEffectSizeByUnitHeight(owner, effect);
+        base._owner.CreateTextEffect(
+            TextDataModel.GetText("LimbufOfHermes_SinkingDeluge"),
+            this.GetBufIcon(),
+            new Color32(60, 60, 170, 255),
+            new Color32(0, 0, 200, 255)
+        );
     }
 }

@@ -52,25 +52,11 @@ public sealed class BattleUnitBuf_Limbuf_TremorConversion : LimbufBase
     /// <summary>Impl OnActivate</summary>
     public override void OnActivate(int stack)
     {
-        var owner = base._owner;
-        var effect = UnityObject.Instantiate<DamageTextEffect>(AttackEffectManager.Instance.damagedTextPrefab, owner.view.damageTextEffectRoot);
-
-        effect.maxEffect = false;
-        effect.isAtk = true;
-
-        var color = AttackEffectManager.Instance.damageRwbpTextColor[2];
-
-        effect.img_resistIcon.sprite = this.GetBufIcon();
-        effect.img_resistIcon.color = new Color32(200, 200, 0, 255);
-        effect.img_resistIconBg.color = new Color(0, 0, 0, 0);
-        effect.img_resistIconFg.color = new Color(0, 0, 0, 0);
-        effect.txt_resist.fontMaterial.SetColor("_UnderlayColor", color);
-        effect.txt_resist.color = new Color32(60, 170, 170, 255);
-
-        effect.txt_resist.text = TextDataModel.GetText("LimbufOfHermes_TremorConversion");
-        effect.txt_resist.transform.localPosition -= new Vector3(0, 30, 0);
-
-        AttackEffectManager.Instance.SetEffectSizeByCamZoom(effect);
-        AttackEffectManager.Instance.SetEffectSizeByUnitHeight(owner, effect);
+        base._owner.CreateTextEffect(
+            TextDataModel.GetText("LimbufOfHermes_TremorConversion"),
+            this.GetBufIcon(),
+            new Color32(60, 170, 170, 255),
+            new Color32(200, 200, 0, 255)
+        );
     }
 }
