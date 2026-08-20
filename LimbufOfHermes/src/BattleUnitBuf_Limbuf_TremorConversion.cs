@@ -1,5 +1,4 @@
 using UnityEngine;
-using Sound;
 
 namespace LimbufOfHermes;
 
@@ -73,7 +72,5 @@ public sealed class BattleUnitBuf_Limbuf_TremorConversion : LimbufBase
 
         AttackEffectManager.Instance.SetEffectSizeByCamZoom(effect);
         AttackEffectManager.Instance.SetEffectSizeByUnitHeight(owner, effect);
-
-        SoundEffectManager.Instance.PlayClip("creature/quitegirl_hit", false, 10f, null).source.pitch = 3.2f;
     }
 }
