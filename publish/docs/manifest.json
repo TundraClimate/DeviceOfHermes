@@ -1342,6 +1342,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Panic",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.yml\" sourcestartlinenumber=\"1\">A unit buf the panic</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.yml",
       "output": {
         ".html": {
@@ -1381,6 +1395,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.yml\" sourcestartlinenumber=\"1\">A unit buf the Sinking</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.yml\" sourcestartlinenumber=\"1\">A unit buf the SinkingDeluge</p>\n"
     },
     {
       "type": "ManagedReference",

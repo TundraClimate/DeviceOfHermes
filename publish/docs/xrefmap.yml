@@ -6413,6 +6413,106 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_DlvUp.keywordId
   nameWithType: BattleUnitBuf_Limbuf_DlvUp.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic
+  name: BattleUnitBuf_Limbuf_Panic
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic
+  nameWithType: BattleUnitBuf_Limbuf_Panic
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.BeforeRollDice(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_Panic.BeforeRollDice(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_BeforeRollDice_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.BeforeRollDice
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.BeforeRollDice
+  nameWithType: BattleUnitBuf_Limbuf_Panic.BeforeRollDice
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.DefaultStack
+  name: DefaultStack
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_DefaultStack
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.DefaultStack
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.DefaultStack
+  nameWithType: BattleUnitBuf_Limbuf_Panic.DefaultStack
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.DefaultStack*
+  name: DefaultStack
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_DefaultStack_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.DefaultStack
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.DefaultStack
+  nameWithType: BattleUnitBuf_Limbuf_Panic.DefaultStack
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
+  name: Init(BattleUnitModel)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_Init_BattleUnitModel_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
+  nameWithType: BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init*
+  name: Init
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_Init_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init
+  nameWithType: BattleUnitBuf_Limbuf_Panic.Init
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnAddBufAll(BattleUnitBuf,System.Int32)
+  name: OnAddBufAll(BattleUnitBuf, int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_OnAddBufAll_BattleUnitBuf_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnAddBufAll(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBufAll(BattleUnitBuf, Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnAddBufAll(BattleUnitBuf, int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnAddBufAll(BattleUnitBuf, Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Panic.OnAddBufAll(BattleUnitBuf, int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Panic.OnAddBufAll(BattleUnitBuf, Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnAddBufAll*
+  name: OnAddBufAll
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_OnAddBufAll_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnAddBufAll
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnAddBufAll
+  nameWithType: BattleUnitBuf_Limbuf_Panic.OnAddBufAll
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_Panic.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_Panic.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Panic.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Panic.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Panic.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Panic.keywordId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise
   name: BattleUnitBuf_Limbuf_Poise
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html
@@ -6512,6 +6612,48 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking
   nameWithType: BattleUnitBuf_Limbuf_Sinking
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.BeforeRollDice(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.BeforeRollDice(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_BeforeRollDice_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.BeforeRollDice
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.BeforeRollDice
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.BeforeRollDice
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnAddBuf(System.Int32)
+  name: OnAddBuf(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_OnAddBuf_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnAddBuf(System.Int32)
+  name.vb: OnAddBuf(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnAddBuf(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnAddBuf(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.OnAddBuf(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Sinking.OnAddBuf(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnAddBuf*
+  name: OnAddBuf
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_OnAddBuf_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnAddBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnAddBuf
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.OnAddBuf
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast
+  name: OnRoundEndTheLast()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_OnRoundEndTheLast
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast()
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast*
+  name: OnRoundEndTheLast
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_OnRoundEndTheLast_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.bufType
   name: bufType
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_bufType
@@ -6538,6 +6680,106 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.keywordId
   nameWithType: BattleUnitBuf_Limbuf_Sinking.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge
+  name: BattleUnitBuf_Limbuf_SinkingDeluge
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant
+  name: IsInstant
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_IsInstant
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant*
+  name: IsInstant
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_IsInstant_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.IsInstant
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate(System.Int32)
+  name: OnActivate(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_OnActivate_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate(System.Int32)
+  name.vb: OnActivate(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate*
+  name: OnActivate
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_OnActivate_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.OnActivate
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant
+  name: OnInstant()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_OnInstant
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant()
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant*
+  name: OnInstant
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_OnInstant_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.OnInstant
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.bufType
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.bufType
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SinkingDeluge_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor
   name: BattleUnitBuf_Limbuf_Tremor
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html
@@ -7105,6 +7347,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.DlvUp
   nameWithType: LimKeywordBuf.DlvUp
+- uid: LimbufOfHermes.LimKeywordBuf.Panic
+  name: Panic
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Panic
+  commentId: P:LimbufOfHermes.LimKeywordBuf.Panic
+  fullName: LimbufOfHermes.LimKeywordBuf.Panic
+  nameWithType: LimKeywordBuf.Panic
+- uid: LimbufOfHermes.LimKeywordBuf.Panic*
+  name: Panic
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Panic_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.Panic
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.Panic
+  nameWithType: LimKeywordBuf.Panic
 - uid: LimbufOfHermes.LimKeywordBuf.Poise
   name: Poise
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Poise
@@ -7144,6 +7399,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.Sinking
   nameWithType: LimKeywordBuf.Sinking
+- uid: LimbufOfHermes.LimKeywordBuf.SinkingDeluge
+  name: SinkingDeluge
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_SinkingDeluge
+  commentId: P:LimbufOfHermes.LimKeywordBuf.SinkingDeluge
+  fullName: LimbufOfHermes.LimKeywordBuf.SinkingDeluge
+  nameWithType: LimKeywordBuf.SinkingDeluge
+- uid: LimbufOfHermes.LimKeywordBuf.SinkingDeluge*
+  name: SinkingDeluge
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_SinkingDeluge_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.SinkingDeluge
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.SinkingDeluge
+  nameWithType: LimKeywordBuf.SinkingDeluge
 - uid: LimbufOfHermes.LimKeywordBuf.Tremor
   name: Tremor
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Tremor

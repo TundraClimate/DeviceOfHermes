@@ -90,7 +90,31 @@
 <p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。<br>
 この記事はこれを前提に書かれています。</p>
 <h1 id="sinking">Sinking</h1>
-<p>WIP</p>
+<p>リンバスの&quot;沈潜&quot;をLoR風に作成したバフです。</p>
+<blockquote>
+<p>最大値: 99</p>
+<p>値が増加するにつれてダイスの素の威力が低い出目になりやすくなる。
+幕の終了時、値が最大値なら次の幕にパニック状態となりこの効果が除去される。</p>
+</blockquote>
+<pre><code class="lang-cs">// targetに沈潜を7付与
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Sinking, 7, owner);
+</code></pre>
+<h2 id="panic">Panic</h2>
+<p>パニック状態:</p>
+<blockquote>
+<p>この効果は沈潜を99得ている状態と同じだけの状態異常効果を受ける。</p>
+<p>この幕の間沈潜を獲得することが出来ない。
+幕の終了時に除去される。</p>
+</blockquote>
+<h2 id="sinkingdeluge">SinkingDeluge</h2>
+<p>沈潜殺到をLoR風に再現したバフです。</p>
+<blockquote>
+<p>(沈潜 * 2)の混乱ダメージを与え、沈潜を除去する。
+この効果で超過した混乱ダメージは物理ダメージとして与える。</p>
+</blockquote>
+<pre><code class="lang-cs">// 沈潜殺到
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.SinkingDeluge, 1, owner);
+</code></pre>
 
 </article>
 
