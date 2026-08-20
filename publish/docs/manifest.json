@@ -1566,6 +1566,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/System.Box-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Box-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Box<T>",
+      "Summary": "<p sourcefile=\"api/System.Box-1.yml\" sourcestartlinenumber=\"1\">A reference wrapper</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/System.Collections.Generic.DeferredList-1.yml",
       "output": {
         ".html": {

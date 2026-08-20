@@ -99,6 +99,8 @@ owner.view.Say(&quot;ルール違反だ！&quot;, 1f);
 owner.view.AddEffect(sprite, new Vector2(0.5f, 0.52f), 3f);
 
 owner.GetClickedSpeedDice();
+
+owner.CreateEffectText(&quot;沈潜殺到&quot;, SinkingDeluge);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="saystring"><code>Say(string)</code></h3>
@@ -138,6 +140,16 @@ owner.GetClickedSpeedDice();
 </code></pre>
 <p>現在選択されている速度ダイスのスロット番号を返します。<br>
 未選択の場合は-1を返します。</p>
+<h3 id="createeffecttextstring-sprite-color-color"><code>CreateEffectText(string, Sprite?, Color?, Color?)</code></h3>
+<pre><code class="lang-cs">owner.CreateEffectText(text, sprite, textColor, spriteColor);
+</code></pre>
+<p>ダメージテキストのテキスト部分を表示します。</p>
+<ul>
+<li><code>text</code>: 表示するテキストです。</li>
+<li><code>sprite</code>: テキスト左に表示する画像です。</li>
+<li><code>textColor</code>: テキストの色です。</li>
+<li><code>spriteColor</code>: 画像の色です。</li>
+</ul>
 
 </article>
 

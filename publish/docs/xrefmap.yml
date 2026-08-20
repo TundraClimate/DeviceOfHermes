@@ -6108,6 +6108,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UnitUIExtension.AddEffect
   nameWithType: UnitUIExtension.AddEffect
+- uid: DeviceOfHermes.UnitUIExtension.CreateTextEffect(BattleUnitModel,System.String,UnityEngine.Sprite,System.Nullable{UnityEngine.Color},System.Nullable{UnityEngine.Color})
+  name: CreateTextEffect(BattleUnitModel, string, Sprite?, Color?, Color?)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_CreateTextEffect_BattleUnitModel_System_String_UnityEngine_Sprite_System_Nullable_UnityEngine_Color__System_Nullable_UnityEngine_Color__
+  commentId: M:DeviceOfHermes.UnitUIExtension.CreateTextEffect(BattleUnitModel,System.String,UnityEngine.Sprite,System.Nullable{UnityEngine.Color},System.Nullable{UnityEngine.Color})
+  name.vb: CreateTextEffect(BattleUnitModel, String, Sprite, Color?, Color?)
+  fullName: DeviceOfHermes.UnitUIExtension.CreateTextEffect(BattleUnitModel, string, UnityEngine.Sprite?, UnityEngine.Color?, UnityEngine.Color?)
+  fullName.vb: DeviceOfHermes.UnitUIExtension.CreateTextEffect(BattleUnitModel, String, UnityEngine.Sprite, UnityEngine.Color?, UnityEngine.Color?)
+  nameWithType: UnitUIExtension.CreateTextEffect(BattleUnitModel, string, Sprite?, Color?, Color?)
+  nameWithType.vb: UnitUIExtension.CreateTextEffect(BattleUnitModel, String, Sprite, Color?, Color?)
+- uid: DeviceOfHermes.UnitUIExtension.CreateTextEffect*
+  name: CreateTextEffect
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_CreateTextEffect_
+  commentId: Overload:DeviceOfHermes.UnitUIExtension.CreateTextEffect
+  isSpec: "True"
+  fullName: DeviceOfHermes.UnitUIExtension.CreateTextEffect
+  nameWithType: UnitUIExtension.CreateTextEffect
 - uid: DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice(BattleUnitModel)
   name: GetClickedSpeedDice(BattleUnitModel)
   href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_GetClickedSpeedDice_BattleUnitModel_
@@ -7521,6 +7537,42 @@ references:
   commentId: N:System
   fullName: System
   nameWithType: System
+- uid: System.Box`1
+  name: Box<T>
+  href: api/System.Box-1.html
+  commentId: T:System.Box`1
+  name.vb: Box(Of T)
+  fullName: System.Box<T>
+  fullName.vb: System.Box(Of T)
+  nameWithType: Box<T>
+  nameWithType.vb: Box(Of T)
+- uid: System.Box`1.#ctor(`0)
+  name: Box(T)
+  href: api/System.Box-1.html#System_Box_1__ctor__0_
+  commentId: M:System.Box`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: System.Box<T>.Box(T)
+  fullName.vb: System.Box(Of T).New(T)
+  nameWithType: Box<T>.Box(T)
+  nameWithType.vb: Box(Of T).New(T)
+- uid: System.Box`1.#ctor*
+  name: Box
+  href: api/System.Box-1.html#System_Box_1__ctor_
+  commentId: Overload:System.Box`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Box<T>.Box
+  fullName.vb: System.Box(Of T).New
+  nameWithType: Box<T>.Box
+  nameWithType.vb: Box(Of T).New
+- uid: System.Box`1.value
+  name: value
+  href: api/System.Box-1.html#System_Box_1_value
+  commentId: F:System.Box`1.value
+  fullName: System.Box<T>.value
+  fullName.vb: System.Box(Of T).value
+  nameWithType: Box<T>.value
+  nameWithType.vb: Box(Of T).value
 - uid: System.Collections.Generic
   name: System.Collections.Generic
   href: api/System.Collections.Generic.html

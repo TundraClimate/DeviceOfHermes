@@ -128,6 +128,41 @@ public static class UnitUIExtension
         return -1;
     }
 
+    /// <summary>Creates new unit-floating text</summary>
+    public static void CreateTextEffect(
+        this BattleUnitModel owner,
+        string text,
+        Sprite? sprite = null,
+        Color? textColor = null,
+        Color? spriteColor = null
+    )
+    {
+        var go = owner.view.characterRotationCenter.gameObject.AddChildObject("TextEffect", "Effect");
+
+        var effect = UnityObject.Instantiate<DamageTextEffect>(AttackEffectManager.Instance.damagedTextPrefab, owner.view.damageTextEffectRoot);
+
+        effect.maxEffect = false;
+        effect.isAtk = true;
+
+        textColor ??= new Color(1, 1, 1, 1);
+        spriteColor ??= new Color(1, 1, 1, 1);
+
+        effect.img_resistIcon.sprite = sprite;
+        effect.img_resistIcon.color = spriteColor.Value;
+        effect.img_resistIconBg.color = Color.clear;
+        effect.img_resistIconFg.color = Color.clear;
+        effect.txt_resist.fontMaterial.SetColor("_UnderlayColor", textColor.Value);
+        effect.txt_resist.color = textColor.Value;
+
+        effect.txt_resist.text = text;
+        effect.txt_resist.transform.localPosition -= new Vector3(0, 30, 0);
+
+        AttackEffectManager.Instance.SetEffectSizeByCamZoom(effect);
+        AttackEffectManager.Instance.SetEffectSizeByUnitHeight(owner, effect);
+
+        go.AddComponent<AutoDestruct>().time = 1f;
+    }
+
     [HarmonyPatch(typeof(BattleDialogUI), "Update")]
     class PatchUpdator
     {
