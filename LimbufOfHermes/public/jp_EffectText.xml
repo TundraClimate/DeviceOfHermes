@@ -65,5 +65,30 @@
 クリティカル発動後、この効果の値が3/4に減少する。(端数切り捨て)</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_DlvDown">
+            <Name>防御レベル減少</Name>
+            <Desc>被ダメージ、被混乱ダメージ{0}%上昇(最大50%)。
+値5毎に守備ダイスの最大値1減少(最大5)。
+幕の終了時に除去される。</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_AlvDown">
+          <Name>攻撃レベル減少</Name>
+          <Desc>与ダメージ、与混乱ダメージ{0}%減少(最大50%)。
+値5毎に攻撃ダイスの最大値1減少(最大5)。
+幕の終了時に除去される。</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_DlvUp">
+          <Name>防御レベル上昇</Name>
+          <Desc>被ダメージ、被混乱ダメージ{0}%減少(最大50%)。
+値5毎に守備ダイスの最大値1上昇(最大5)。
+幕の終了時に除去される。</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_AlvUp">
+          <Name>攻撃レベル上昇</Name>
+          <Desc>与ダメージ、与混乱ダメージ{0}%上昇(最大50%)。
+値5毎に攻撃ダイスの最大値1上昇(最大5)。
+幕の終了時に除去される。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
