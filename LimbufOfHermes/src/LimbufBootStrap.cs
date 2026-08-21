@@ -1,6 +1,7 @@
 global using UnityObject = UnityEngine.Object;
 using System.Text;
 using LOR_XML;
+using HarmonyLib;
 using DeviceOfHermes.Boot;
 using DeviceOfHermes.Resource;
 
@@ -11,6 +12,8 @@ internal class LimbufBootStrap : HermesInitializer
     public void OnInitMod()
     {
         LoadAllBufIcons();
+
+        Harmony.CreateAndPatchAll(typeof(LimbufBootStrap).Assembly, "LimbufOfHermes");
 
         TextModel.OnLoadLocalize += OnLocalize;
     }

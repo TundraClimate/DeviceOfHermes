@@ -58,5 +58,12 @@
 この効果で超過した混乱ダメージは物理ダメージとして与える。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Poise">
+            <Name>呼吸</Name>
+            <Desc>攻撃ダイス判定時、(呼吸 * 5)%の確率でクリティカルを与える。
+クリティカル発動時は与えるダメージが20%増加する。
+クリティカル発動後、この効果の値が3/4に減少する。(端数切り捨て)</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
