@@ -57,6 +57,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchBeforeRollDice));
         Patch(typeof(PatchOnSucceedAttack));
         Patch(typeof(PatchOnAddNewKeywordBuf));
+        Patch(typeof(PatchOnSucceedAreaAttack));
     }
 
     private static void Patch(Type type)
@@ -1323,6 +1324,31 @@ internal static class AdvancedPatch
             }
 
             return target;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnSucceedAreaAttack")]
+    class PatchOnSucceedAreaAttack
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
+                .Insert(
+                    CodeInstruction.Instance,
+                    CodeInstruction.Arg(1),
+                    CodeInstruction.Arg(2),
+                    CodeInstruction.Call(typeof(PatchOnSucceedAreaAttack).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleUnitModel __instance, BattleDiceBehavior behavior, BattleUnitModel target)
+        {
+            __instance.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>().Filter(buf => !buf.IsDestroyed())
+                .Foreach(buf => buf.OnSuccessAreaAttack(behavior, target));
         }
     }
 }

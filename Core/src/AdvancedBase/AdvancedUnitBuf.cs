@@ -113,6 +113,11 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>On unit success area attack</summary>
+    public virtual void OnSuccessAreaAttack(BattleDiceBehavior behavior, BattleUnitModel target)
+    {
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

@@ -153,6 +153,10 @@
     public override void OnRecoverPP(int gain)
     {
     }
+    
+    public override void OnSuccessAreaAttack(BattleDiceBehavior behavior, BattleUnitModel target)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
@@ -288,6 +292,16 @@ null以外を返した場合、返したページで代わりにマッチをし�
 <p>光を回復したときに実行されます。</p>
 <ul>
 <li><code>gain</code>: 回復しようとした値です。</li>
+</ul>
+<h3 id="onsuccessareaattackbattledicebehavior-battleunitmodel"><code>OnSuccessAreaAttack(BattleDiceBehavior, BattleUnitModel)</code></h3>
+<pre><code class="lang-cs">public override void OnSuccessAreaAttack(BattleDiceBehavior behavior, BattleUnitModel target)
+{
+}
+</code></pre>
+<p>広域攻撃が的中したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 的中したダイスです。</li>
+<li><code>target</code>: 的中した対象です。</li>
 </ul>
 
 </article>

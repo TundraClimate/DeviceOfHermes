@@ -948,6 +948,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnStartBattle
   nameWithType: AdvancedUnitBuf.OnStartBattle
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnSuccessAreaAttack(BattleDiceBehavior,BattleUnitModel)
+  name: OnSuccessAreaAttack(BattleDiceBehavior, BattleUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnSuccessAreaAttack_BattleDiceBehavior_BattleUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnSuccessAreaAttack(BattleDiceBehavior,BattleUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnSuccessAreaAttack(BattleDiceBehavior, BattleUnitModel)
+  nameWithType: AdvancedUnitBuf.OnSuccessAreaAttack(BattleDiceBehavior, BattleUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnSuccessAreaAttack*
+  name: OnSuccessAreaAttack
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnSuccessAreaAttack_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnSuccessAreaAttack
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnSuccessAreaAttack
+  nameWithType: AdvancedUnitBuf.OnSuccessAreaAttack
 - uid: DeviceOfHermes.AdvancedBase.AmmoExtension
   name: AmmoExtension
   href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html
