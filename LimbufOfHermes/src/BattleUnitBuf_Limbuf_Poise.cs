@@ -128,8 +128,11 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
 
                 var rate = (double)BookModel.GetResistRate(__instance.GetResistHP(beh.behaviourInCard.Detail));
 
-                dmg /= rate;
-                dmg *= rate + GetPoise(attacker)?.GetCriticalDamageAdder(beh) ?? 0.0;
+                if (rate > 0)
+                {
+                    dmg /= rate;
+                    dmg *= rate + GetPoise(attacker)?.GetCriticalDamageAdder(beh) ?? 0.0;
+                }
             }
         }
     }
