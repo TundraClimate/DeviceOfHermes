@@ -90,7 +90,15 @@
 <p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。<br>
 この記事はこれを前提に書かれています。</p>
 <h1 id="alvdown">AlvDown</h1>
-<p>WIP</p>
+<p>リンバスの&quot;攻撃レベル減少&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>与ダメージ、与混乱ダメージ{0}%減少(最大50%)。
+値5毎に攻撃ダイスの最大値1減少(最大5)。
+幕の終了時に除去される。</p>
+</blockquote>
+<pre><code class="lang-cs">// 攻撃レベル減少を5獲得
+owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.AlvDown, 5);
+</code></pre>
 
 </article>
 

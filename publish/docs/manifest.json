@@ -1524,6 +1524,132 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnApplyTremorBurst",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnCriticalAttack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnCriticalAttack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnCriticalAttack",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnCriticalAttack.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnPanic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnPanic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnPanic",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnPanic.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnRollCritical.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnRollCritical.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnRollCritical",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnRollCritical.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnRuptured.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnRuptured.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnRuptured",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnRuptured.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnTremorBurst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnTremorBurst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnTremorBurst",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnTremorBurst.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnTremorConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnTremorConversion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnTremorConversion",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnTremorConversion.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnTremorEntangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnTremorEntangle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnTremorEntangle",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnTremorEntangle.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.yml\" sourcestartlinenumber=\"1\">A root of interfaces</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.LimKeywordBuf.yml",
       "output": {
         ".html": {
@@ -1549,6 +1675,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.LimbufBase",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.LimbufBase.yml\" sourcestartlinenumber=\"1\">A unit buf base</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.LimbufExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.LimbufExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.LimbufExtension",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.LimbufExtension.yml\" sourcestartlinenumber=\"1\">An extension of LimbufOfHermes</p>\n"
     },
     {
       "type": "ManagedReference",

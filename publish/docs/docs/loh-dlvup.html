@@ -90,7 +90,15 @@
 <p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。<br>
 この記事はこれを前提に書かれています。</p>
 <h1 id="dlvup">DlvUp</h1>
-<p>WIP</p>
+<p>リンバスの&quot;防御レベル増加&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>被ダメージ、被混乱ダメージ{0}%減少(最大50%)。
+値5毎に守備ダイスの最大値1上昇(最大5)。
+幕の終了時に除去される。</p>
+</blockquote>
+<pre><code class="lang-cs">// 防御レベル増加を5獲得
+owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.DlvUp, 5);
+</code></pre>
 
 </article>
 

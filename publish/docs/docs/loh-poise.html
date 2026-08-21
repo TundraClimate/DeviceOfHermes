@@ -90,7 +90,29 @@
 <p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。<br>
 この記事はこれを前提に書かれています。</p>
 <h1 id="poise">Poise</h1>
-<p>WIP</p>
+<p>リンバスの&quot;呼吸&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>攻撃ダイス判定時、(呼吸 * 5)%の確率でクリティカルを与える。
+クリティカル発動時は与えるダメージが20%増加する。
+クリティカル発動後、この効果の値が3/4に減少する。(端数切り捨て)</p>
+</blockquote>
+<pre><code class="lang-cs">// 呼吸を20獲得
+owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Poise, 20);
+
+// クリティカル倍率0.2に2.3を加算する
+owner.currentDiceAction.ApplyCritDamageAdder(2.3);
+</code></pre>
+<h2 id="events">Events</h2>
+<h3 id="ilimbufonrollcriticalonrollcriticalbattledicebehavior-behavior"><code>ILimbuf.OnRollCritical.OnRollCritical(BattleDiceBehavior behavior)</code></h3>
+<p>クリティカルがロールされたときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="ilimbufoncriticalattackoncriticalattackbattledicebehavior-behavior"><code>ILimbuf.OnCriticalAttack.OnCriticalAttack(BattleDiceBehavior behavior)</code></h3>
+<p>クリティカル的中したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
 
 </article>
 

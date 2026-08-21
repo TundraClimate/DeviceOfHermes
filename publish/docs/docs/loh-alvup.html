@@ -90,7 +90,15 @@
 <p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。<br>
 この記事はこれを前提に書かれています。</p>
 <h1 id="alvup">AlvUp</h1>
-<p>WIP</p>
+<p>リンバスの&quot;攻撃レベル増加&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>与ダメージ、与混乱ダメージ{0}%上昇(最大50%)。
+値5毎に攻撃ダイスの最大値1上昇(最大5)。
+幕の終了時に除去される。</p>
+</blockquote>
+<pre><code class="lang-cs">// 攻撃レベル増加を5獲得
+owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.AlvUp, 5);
+</code></pre>
 
 </article>
 
