@@ -34,6 +34,8 @@ public sealed class BattleUnitBuf_Limbuf_TremorConversion : LimbufBase
                     bufs.RemoveAll(all => all is BattleUnitBuf_Limbuf_Tremor && all != tremor && all != buf);
                 });
 
+            base._owner.EachPassiveOf<ILimbuf.OnTremorConversion>(i => i.OnTremorConversion());
+            base._owner.EachUnitBufOf<ILimbuf.OnTremorConversion>(i => i.OnTremorConversion());
         }
 
         if (StageController.Instance.IsLogState())

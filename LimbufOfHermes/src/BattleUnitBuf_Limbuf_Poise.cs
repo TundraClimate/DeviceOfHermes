@@ -89,11 +89,16 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
         {
             UsePoise();
         }
+
+        base._owner.EachPassiveOf<ILimbuf.OnRollCritical>(i => i.OnRollCritical(behavior));
+        base._owner.EachUnitBufOf<ILimbuf.OnRollCritical>(i => i.OnRollCritical(behavior));
     }
 
     /// <summary>On critical attcked</summary>
     public void OnCriticalAttack(BattleDiceBehavior behavior, BattleUnitModel target)
     {
+        base._owner.EachPassiveOf<ILimbuf.OnCriticalAttack>(i => i.OnCriticalAttack(behavior));
+        base._owner.EachUnitBufOf<ILimbuf.OnCriticalAttack>(i => i.OnCriticalAttack(behavior));
     }
 
     /// <summary>A damage adder of critical</summary>

@@ -33,6 +33,9 @@ public class BattleUnitBuf_Limbuf_TremorBurst : LimbufBase
     public override void OnActivate(int stack)
     {
         TremorBurstEffect.ApplyUnit(base._owner, this);
+
+        base._owner.EachPassiveOf<ILimbuf.OnApplyTremorBurst>(i => i.OnApplyTremorBurst());
+        base._owner.EachUnitBufOf<ILimbuf.OnApplyTremorBurst>(i => i.OnApplyTremorBurst());
     }
 }
 

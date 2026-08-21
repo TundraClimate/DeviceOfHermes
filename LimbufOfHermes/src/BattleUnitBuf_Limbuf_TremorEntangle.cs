@@ -21,6 +21,9 @@ public sealed class BattleUnitBuf_Limbuf_TremorEntangle : LimbufBase
         {
             base._owner.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorSuperposition, 1);
             (base._owner.bufListDetail.GetActivatedBuf(LimKeywordBuf.Tremor) as BattleUnitBuf_Limbuf_Tremor)?.active = false;
+
+            base._owner.EachPassiveOf<ILimbuf.OnTremorEntangle>(i => i.OnTremorEntangle());
+            base._owner.EachUnitBufOf<ILimbuf.OnTremorEntangle>(i => i.OnTremorEntangle());
         }
 
         if (StageController.Instance.IsLogState())

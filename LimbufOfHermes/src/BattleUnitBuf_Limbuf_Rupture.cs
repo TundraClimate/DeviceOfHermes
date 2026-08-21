@@ -22,4 +22,11 @@ public class BattleUnitBuf_Limbuf_Rupture : LimbufBase
             this.ChangeStack(s => s * 2 / 3);
         }
     }
+
+    /// <summary>Impl OnActivate</summary>
+    public override void OnActivate(int stack)
+    {
+        base._owner.EachPassiveOf<ILimbuf.OnRuptured>(i => i.OnRuptured(stack));
+        base._owner.EachUnitBufOf<ILimbuf.OnRuptured>(i => i.OnRuptured(stack));
+    }
 }

@@ -42,6 +42,9 @@ public class BattleUnitBuf_Limbuf_Sinking : LimbufBase
             Destroy();
 
             base._owner.bufListDetail.AddKeywordBufByEtc(LimKeywordBuf.Panic, 1);
+
+            base._owner.EachPassiveOf<ILimbuf.OnPanic>(i => i.OnPanic());
+            base._owner.EachUnitBufOf<ILimbuf.OnPanic>(i => i.OnPanic());
         }
     }
 }

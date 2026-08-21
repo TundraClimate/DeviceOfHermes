@@ -105,6 +105,9 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     public override void OnActivate(int stack)
     {
         this.OnTremorBurst(TremorStack);
+
+        base._owner.EachPassiveOf<ILimbuf.OnTremorBurst>(i => i.OnTremorBurst(stack));
+        base._owner.EachUnitBufOf<ILimbuf.OnTremorBurst>(i => i.OnTremorBurst(stack));
     }
 
     /// <summary>Unit on tremor burst</summary>
