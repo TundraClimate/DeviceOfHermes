@@ -7,6 +7,10 @@ namespace LimbufOfHermes;
 [KeywordBufExtend]
 public class LimKeywordBuf
 {
+    /// <summary>Barrier KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Barrier))]
+    public static KeywordBuf Barrier { get; private set; }
+
     /// <summary>Rupture KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Rupture))]
     public static KeywordBuf Rupture { get; private set; }

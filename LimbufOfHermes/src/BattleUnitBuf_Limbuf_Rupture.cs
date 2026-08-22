@@ -15,7 +15,7 @@ public class BattleUnitBuf_Limbuf_Rupture : LimbufBase
     /// <summary>Impl OnTakeDamageByAttack</summary>
     public override void OnTakeDamageByAttack(BattleDiceBehavior atkDice, int dmg)
     {
-        if (!base._owner.IsImmune(this.bufType))
+        if (!base._owner.IsImmune(this.bufType) && this.stack > 0)
         {
             base._owner.TakeDamage(this.stack, DamageType.Buf, null, this.bufType);
             this.OnActivate(this.stack);
