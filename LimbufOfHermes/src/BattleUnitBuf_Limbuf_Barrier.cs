@@ -37,16 +37,35 @@ public sealed class BattleUnitBuf_Limbuf_Barrier : LimbufBase
             .GetValue(BattleCharacterProfileBarrierUI.FindProfile(base._owner)!, profile =>
                 BattleCharacterProfileBarrierUI.Apply(profile)
             );
+
+        base._owner.EachPassiveOf<ILimbuf.OnTakeBarrier>(i => i.OnTakeBarrier(addedStack));
+        base._owner.EachUnitBufOf<ILimbuf.OnTakeBarrier>(i => i.OnTakeBarrier(addedStack));
     }
 
     bool IsKeepBarrier()
     {
-        return false;
+        var res = false;
+
+        void Fn(ILimbuf.IsKeepBarrier i)
+        {
+            if (i.IsKeepBarrier())
+            {
+                res = true;
+            }
+        }
+
+        base._owner.EachPassiveOf<ILimbuf.IsKeepBarrier>(Fn);
+        base._owner.EachUnitBufOf<ILimbuf.IsKeepBarrier>(Fn);
+
+        return res;
     }
 
     int ConsumeStack(int dmg)
     {
         var res = dmg - this.stack;
+
+        base._owner.EachPassiveOf<ILimbuf.OnLoseBarrier>(i => i.OnLoseBarrier(dmg.Min(this.stack)));
+        base._owner.EachUnitBufOf<ILimbuf.OnLoseBarrier>(i => i.OnLoseBarrier(dmg.Min(this.stack)));
 
         if (0 > res)
         {
@@ -57,6 +76,9 @@ public sealed class BattleUnitBuf_Limbuf_Barrier : LimbufBase
         else
         {
             ChangeStack(_ => 0);
+
+            base._owner.EachPassiveOf<ILimbuf.OnBreakBarrier>(i => i.OnBreakBarrier());
+            base._owner.EachUnitBufOf<ILimbuf.OnBreakBarrier>(i => i.OnBreakBarrier());
 
             return res;
         }

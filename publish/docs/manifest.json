@@ -1300,6 +1300,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.yml\" sourcestartlinenumber=\"1\">A barrier marker</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.yml",
       "output": {
         ".html": {
@@ -1524,6 +1538,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.IsKeepBarrier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.IsKeepBarrier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.IsKeepBarrier",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.IsKeepBarrier.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.yml",
       "output": {
         ".html": {
@@ -1538,6 +1566,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnBreakBarrier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnBreakBarrier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnBreakBarrier",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnBreakBarrier.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnCriticalAttack.yml",
       "output": {
         ".html": {
@@ -1549,6 +1591,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.ILimbuf.OnCriticalAttack",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnCriticalAttack.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnLoseBarrier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnLoseBarrier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnLoseBarrier",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnLoseBarrier.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1591,6 +1647,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.ILimbuf.OnRuptured",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnRuptured.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnTakeBarrier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnTakeBarrier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnTakeBarrier",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnTakeBarrier.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2253,6 +2323,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-alvup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-barrier.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-barrier.html"
         }
       },
       "version": ""

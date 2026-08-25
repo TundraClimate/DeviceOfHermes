@@ -6421,6 +6421,67 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AlvUp.positiveType
   nameWithType: BattleUnitBuf_Limbuf_AlvUp.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier
+  name: BattleUnitBuf_Limbuf_Barrier
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier
+  nameWithType: BattleUnitBuf_Limbuf_Barrier
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnAddBuf(System.Int32)
+  name: OnAddBuf(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_OnAddBuf_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnAddBuf(System.Int32)
+  name.vb: OnAddBuf(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnAddBuf(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnAddBuf(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.OnAddBuf(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Barrier.OnAddBuf(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnAddBuf*
+  name: OnAddBuf
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_OnAddBuf_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnAddBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnAddBuf
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.OnAddBuf
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Barrier_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Barrier.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor
   name: BattleUnitBuf_Limbuf_ConsumeTremor
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.html
@@ -7654,6 +7715,25 @@ references:
   commentId: T:LimbufOfHermes.ILimbuf
   fullName: LimbufOfHermes.ILimbuf
   nameWithType: ILimbuf
+- uid: LimbufOfHermes.ILimbuf.IsKeepBarrier
+  name: ILimbuf.IsKeepBarrier
+  href: api/LimbufOfHermes.ILimbuf.IsKeepBarrier.html
+  commentId: T:LimbufOfHermes.ILimbuf.IsKeepBarrier
+  fullName: LimbufOfHermes.ILimbuf.IsKeepBarrier
+  nameWithType: ILimbuf.IsKeepBarrier
+- uid: LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier
+  name: IsKeepBarrier()
+  href: api/LimbufOfHermes.ILimbuf.IsKeepBarrier.html#LimbufOfHermes_ILimbuf_IsKeepBarrier_IsKeepBarrier
+  commentId: M:LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier
+  fullName: LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier()
+  nameWithType: ILimbuf.IsKeepBarrier.IsKeepBarrier()
+- uid: LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier*
+  name: IsKeepBarrier
+  href: api/LimbufOfHermes.ILimbuf.IsKeepBarrier.html#LimbufOfHermes_ILimbuf_IsKeepBarrier_IsKeepBarrier_
+  commentId: Overload:LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier
+  nameWithType: ILimbuf.IsKeepBarrier.IsKeepBarrier
 - uid: LimbufOfHermes.ILimbuf.OnApplyTremorBurst
   name: ILimbuf.OnApplyTremorBurst
   href: api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.html
@@ -7673,6 +7753,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst
   nameWithType: ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst
+- uid: LimbufOfHermes.ILimbuf.OnBreakBarrier
+  name: ILimbuf.OnBreakBarrier
+  href: api/LimbufOfHermes.ILimbuf.OnBreakBarrier.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnBreakBarrier
+  fullName: LimbufOfHermes.ILimbuf.OnBreakBarrier
+  nameWithType: ILimbuf.OnBreakBarrier
+- uid: LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier
+  name: OnBreakBarrier()
+  href: api/LimbufOfHermes.ILimbuf.OnBreakBarrier.html#LimbufOfHermes_ILimbuf_OnBreakBarrier_OnBreakBarrier
+  commentId: M:LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier
+  fullName: LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier()
+  nameWithType: ILimbuf.OnBreakBarrier.OnBreakBarrier()
+- uid: LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier*
+  name: OnBreakBarrier
+  href: api/LimbufOfHermes.ILimbuf.OnBreakBarrier.html#LimbufOfHermes_ILimbuf_OnBreakBarrier_OnBreakBarrier_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier
+  nameWithType: ILimbuf.OnBreakBarrier.OnBreakBarrier
 - uid: LimbufOfHermes.ILimbuf.OnCriticalAttack
   name: ILimbuf.OnCriticalAttack
   href: api/LimbufOfHermes.ILimbuf.OnCriticalAttack.html
@@ -7692,6 +7791,28 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnCriticalAttack.OnCriticalAttack
   nameWithType: ILimbuf.OnCriticalAttack.OnCriticalAttack
+- uid: LimbufOfHermes.ILimbuf.OnLoseBarrier
+  name: ILimbuf.OnLoseBarrier
+  href: api/LimbufOfHermes.ILimbuf.OnLoseBarrier.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnLoseBarrier
+  fullName: LimbufOfHermes.ILimbuf.OnLoseBarrier
+  nameWithType: ILimbuf.OnLoseBarrier
+- uid: LimbufOfHermes.ILimbuf.OnLoseBarrier.OnLoseBarrier(System.Int32)
+  name: OnLoseBarrier(int)
+  href: api/LimbufOfHermes.ILimbuf.OnLoseBarrier.html#LimbufOfHermes_ILimbuf_OnLoseBarrier_OnLoseBarrier_System_Int32_
+  commentId: M:LimbufOfHermes.ILimbuf.OnLoseBarrier.OnLoseBarrier(System.Int32)
+  name.vb: OnLoseBarrier(Integer)
+  fullName: LimbufOfHermes.ILimbuf.OnLoseBarrier.OnLoseBarrier(int)
+  fullName.vb: LimbufOfHermes.ILimbuf.OnLoseBarrier.OnLoseBarrier(Integer)
+  nameWithType: ILimbuf.OnLoseBarrier.OnLoseBarrier(int)
+  nameWithType.vb: ILimbuf.OnLoseBarrier.OnLoseBarrier(Integer)
+- uid: LimbufOfHermes.ILimbuf.OnLoseBarrier.OnLoseBarrier*
+  name: OnLoseBarrier
+  href: api/LimbufOfHermes.ILimbuf.OnLoseBarrier.html#LimbufOfHermes_ILimbuf_OnLoseBarrier_OnLoseBarrier_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnLoseBarrier.OnLoseBarrier
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnLoseBarrier.OnLoseBarrier
+  nameWithType: ILimbuf.OnLoseBarrier.OnLoseBarrier
 - uid: LimbufOfHermes.ILimbuf.OnPanic
   name: ILimbuf.OnPanic
   href: api/LimbufOfHermes.ILimbuf.OnPanic.html
@@ -7752,6 +7873,28 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnRuptured.OnRuptured
   nameWithType: ILimbuf.OnRuptured.OnRuptured
+- uid: LimbufOfHermes.ILimbuf.OnTakeBarrier
+  name: ILimbuf.OnTakeBarrier
+  href: api/LimbufOfHermes.ILimbuf.OnTakeBarrier.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnTakeBarrier
+  fullName: LimbufOfHermes.ILimbuf.OnTakeBarrier
+  nameWithType: ILimbuf.OnTakeBarrier
+- uid: LimbufOfHermes.ILimbuf.OnTakeBarrier.OnTakeBarrier(System.Int32)
+  name: OnTakeBarrier(int)
+  href: api/LimbufOfHermes.ILimbuf.OnTakeBarrier.html#LimbufOfHermes_ILimbuf_OnTakeBarrier_OnTakeBarrier_System_Int32_
+  commentId: M:LimbufOfHermes.ILimbuf.OnTakeBarrier.OnTakeBarrier(System.Int32)
+  name.vb: OnTakeBarrier(Integer)
+  fullName: LimbufOfHermes.ILimbuf.OnTakeBarrier.OnTakeBarrier(int)
+  fullName.vb: LimbufOfHermes.ILimbuf.OnTakeBarrier.OnTakeBarrier(Integer)
+  nameWithType: ILimbuf.OnTakeBarrier.OnTakeBarrier(int)
+  nameWithType.vb: ILimbuf.OnTakeBarrier.OnTakeBarrier(Integer)
+- uid: LimbufOfHermes.ILimbuf.OnTakeBarrier.OnTakeBarrier*
+  name: OnTakeBarrier
+  href: api/LimbufOfHermes.ILimbuf.OnTakeBarrier.html#LimbufOfHermes_ILimbuf_OnTakeBarrier_OnTakeBarrier_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnTakeBarrier.OnTakeBarrier
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnTakeBarrier.OnTakeBarrier
+  nameWithType: ILimbuf.OnTakeBarrier.OnTakeBarrier
 - uid: LimbufOfHermes.ILimbuf.OnTremorBurst
   name: ILimbuf.OnTremorBurst
   href: api/LimbufOfHermes.ILimbuf.OnTremorBurst.html
@@ -7844,6 +7987,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.AlvUp
   nameWithType: LimKeywordBuf.AlvUp
+- uid: LimbufOfHermes.LimKeywordBuf.Barrier
+  name: Barrier
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Barrier
+  commentId: P:LimbufOfHermes.LimKeywordBuf.Barrier
+  fullName: LimbufOfHermes.LimKeywordBuf.Barrier
+  nameWithType: LimKeywordBuf.Barrier
+- uid: LimbufOfHermes.LimKeywordBuf.Barrier*
+  name: Barrier
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Barrier_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.Barrier
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.Barrier
+  nameWithType: LimKeywordBuf.Barrier
 - uid: LimbufOfHermes.LimKeywordBuf.ConsumeTremor
   name: ConsumeTremor
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_ConsumeTremor
