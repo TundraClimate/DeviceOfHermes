@@ -26,7 +26,7 @@ public class BattleUnitBuf_Limbuf_Shin : LimbufBase
     }
 
     /// <summary>Creates new Shin</summary>
-    public static GameObject CreateShinAura(BattleUnitModel owner, BattleUnitBuf_Limbuf_Shin? marker = null)
+    public static GameObject CreateShinAura(BattleUnitModel owner, BattleUnitBuf? marker = null)
     {
         var go = bundle.LoadAsset<GameObject>("Shin");
 
@@ -38,7 +38,7 @@ public class BattleUnitBuf_Limbuf_Shin : LimbufBase
 
     class ShinAura : MonoBehaviour
     {
-        public void Init(BattleUnitModel owner, BattleUnitBuf_Limbuf_Shin? shin)
+        public void Init(BattleUnitModel owner, BattleUnitBuf? shin)
         {
             this.owner = owner;
             this.shin = shin;
@@ -51,7 +51,7 @@ public class BattleUnitBuf_Limbuf_Shin : LimbufBase
 
             if (shin is not null)
             {
-                if (shin.IsDestroyed() || shin.Hide || !shin._owner.bufListDetail.GetActivatedBufList().Contains(shin))
+                if (shin.IsDestroyed() || shin.Hide || !shin.Owner.bufListDetail.GetActivatedBufList().Contains(shin))
                 {
                     UnityObject.Destroy(gameObject);
                 }
@@ -60,6 +60,6 @@ public class BattleUnitBuf_Limbuf_Shin : LimbufBase
 
         private BattleUnitModel? owner;
 
-        private BattleUnitBuf_Limbuf_Shin? shin;
+        private BattleUnitBuf? shin;
     }
 }

@@ -7187,15 +7187,15 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin
   nameWithType: BattleUnitBuf_Limbuf_Shin
-- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel,LimbufOfHermes.BattleUnitBuf_Limbuf_Shin)
-  name: CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin?)
-  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_CreateShinAura_BattleUnitModel_LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_
-  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel,LimbufOfHermes.BattleUnitBuf_Limbuf_Shin)
-  name.vb: CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin)
-  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, LimbufOfHermes.BattleUnitBuf_Limbuf_Shin?)
-  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, LimbufOfHermes.BattleUnitBuf_Limbuf_Shin)
-  nameWithType: BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin?)
-  nameWithType.vb: BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel,BattleUnitBuf)
+  name: CreateShinAura(BattleUnitModel, BattleUnitBuf?)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_CreateShinAura_BattleUnitModel_BattleUnitBuf_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel,BattleUnitBuf)
+  name.vb: CreateShinAura(BattleUnitModel, BattleUnitBuf)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf?)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf)
+  nameWithType: BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf?)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf)
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura*
   name: CreateShinAura
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_CreateShinAura_
