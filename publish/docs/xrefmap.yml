@@ -6723,6 +6723,77 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_DlvUp.positiveType
   nameWithType: BattleUnitBuf_Limbuf_DlvUp.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable
+  name: BattleUnitBuf_Limbuf_HitVulnerable
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction(BattleDiceBehavior)
+  name: GetDamageReduction(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_GetDamageReduction_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction*
+  name: GetDamageReduction
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_GetDamageReduction_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.GetDamageReduction
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.bufType
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.bufType
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HitVulnerable_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_HitVulnerable.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic
   name: BattleUnitBuf_Limbuf_Panic
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html
@@ -6823,6 +6894,77 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.keywordId
   nameWithType: BattleUnitBuf_Limbuf_Panic.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable
+  name: BattleUnitBuf_Limbuf_PenetrateVulnerable
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction(BattleDiceBehavior)
+  name: GetDamageReduction(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_GetDamageReduction_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction*
+  name: GetDamageReduction
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_GetDamageReduction_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.GetDamageReduction
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PenetrateVulnerable_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise
   name: BattleUnitBuf_Limbuf_Poise
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html
@@ -7213,6 +7355,77 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
   nameWithType: BattleUnitBuf_Limbuf_SinkingDeluge.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable
+  name: BattleUnitBuf_Limbuf_SlashVulnerable
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction(BattleDiceBehavior)
+  name: GetDamageReduction(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_GetDamageReduction_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction*
+  name: GetDamageReduction
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_GetDamageReduction_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.GetDamageReduction
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.bufType
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.bufType
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.html#LimbufOfHermes_BattleUnitBuf_Limbuf_SlashVulnerable_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_SlashVulnerable.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_SlashVulnerable.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor
   name: BattleUnitBuf_Limbuf_Tremor
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html
@@ -8039,6 +8252,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.DlvUp
   nameWithType: LimKeywordBuf.DlvUp
+- uid: LimbufOfHermes.LimKeywordBuf.HitVulnerable
+  name: HitVulnerable
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HitVulnerable
+  commentId: P:LimbufOfHermes.LimKeywordBuf.HitVulnerable
+  fullName: LimbufOfHermes.LimKeywordBuf.HitVulnerable
+  nameWithType: LimKeywordBuf.HitVulnerable
+- uid: LimbufOfHermes.LimKeywordBuf.HitVulnerable*
+  name: HitVulnerable
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HitVulnerable_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.HitVulnerable
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.HitVulnerable
+  nameWithType: LimKeywordBuf.HitVulnerable
 - uid: LimbufOfHermes.LimKeywordBuf.Panic
   name: Panic
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Panic
@@ -8052,6 +8278,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.Panic
   nameWithType: LimKeywordBuf.Panic
+- uid: LimbufOfHermes.LimKeywordBuf.PenetrateVulnerable
+  name: PenetrateVulnerable
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_PenetrateVulnerable
+  commentId: P:LimbufOfHermes.LimKeywordBuf.PenetrateVulnerable
+  fullName: LimbufOfHermes.LimKeywordBuf.PenetrateVulnerable
+  nameWithType: LimKeywordBuf.PenetrateVulnerable
+- uid: LimbufOfHermes.LimKeywordBuf.PenetrateVulnerable*
+  name: PenetrateVulnerable
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_PenetrateVulnerable_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.PenetrateVulnerable
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.PenetrateVulnerable
+  nameWithType: LimKeywordBuf.PenetrateVulnerable
 - uid: LimbufOfHermes.LimKeywordBuf.Poise
   name: Poise
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Poise
@@ -8104,6 +8343,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.SinkingDeluge
   nameWithType: LimKeywordBuf.SinkingDeluge
+- uid: LimbufOfHermes.LimKeywordBuf.SlashVulnerable
+  name: SlashVulnerable
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_SlashVulnerable
+  commentId: P:LimbufOfHermes.LimKeywordBuf.SlashVulnerable
+  fullName: LimbufOfHermes.LimKeywordBuf.SlashVulnerable
+  nameWithType: LimKeywordBuf.SlashVulnerable
+- uid: LimbufOfHermes.LimKeywordBuf.SlashVulnerable*
+  name: SlashVulnerable
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_SlashVulnerable_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.SlashVulnerable
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.SlashVulnerable
+  nameWithType: LimKeywordBuf.SlashVulnerable
 - uid: LimbufOfHermes.LimKeywordBuf.Tremor
   name: Tremor
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Tremor

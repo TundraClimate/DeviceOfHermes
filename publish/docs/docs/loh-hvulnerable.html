@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface ILimbuf.OnBreakBarrier | DeviceOfHermes </title>
+      <title>using LimbufOfHermes; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface ILimbuf.OnBreakBarrier | DeviceOfHermes ">
+      <meta name="title" content="using LimbufOfHermes; | DeviceOfHermes ">
       
-      <meta name="description" content="Interface">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/new/master/apiSpec/new?filename=LimbufOfHermes_ILimbuf_OnBreakBarrier.md&amp;value=---%0Auid%3A%20LimbufOfHermes.ILimbuf.OnBreakBarrier%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/loh-hvulnerable.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,90 +84,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="LimbufOfHermes.ILimbuf.OnBreakBarrier">
+        <article data-uid="">
+<h1 id="using-limbufofhermes"><code>using LimbufOfHermes;</code></h1>
 
-
-
-  <h1 id="LimbufOfHermes_ILimbuf_OnBreakBarrier" data-uid="LimbufOfHermes.ILimbuf.OnBreakBarrier" class="text-break">
-Interface ILimbuf.OnBreakBarrier  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L77"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LimbufOfHermes.html">LimbufOfHermes</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LimbufOfHermes.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Interface</p>
-</div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILimbuf.OnBreakBarrier</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="System.Extension.html#System_Extension_Also__1___0_System_Action___0__">Extension.Also&lt;T&gt;(T, Action&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="System.Extension.html#System_Extension_Let__1___0_System_Action___0__">Extension.Let&lt;T&gt;(T, Action&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="System.Extension.html#System_Extension_Let__2___0_System_Func___0___1__">Extension.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
-  </div>
-  </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="LimbufOfHermes_ILimbuf_OnBreakBarrier_OnBreakBarrier_" data-uid="LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier*"></a>
-
-  <h3 id="LimbufOfHermes_ILimbuf_OnBreakBarrier_OnBreakBarrier" data-uid="LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier">
-  OnBreakBarrier()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L80"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>On break barrier</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnBreakBarrier()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="hitvulnerable">HitVulnerable</h1>
+<p>リンバスの&quot;打撃脆弱&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>今回の幕の間、打撃属性の攻撃によって受けるダメージ量が{0}増加</p>
+</blockquote>
+<pre><code class="lang-cs">// targetに打撃脆弱を3付与
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.HitVulnerable, 3, owner);
+</code></pre>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L77" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/loh-hvulnerable.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

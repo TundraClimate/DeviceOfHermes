@@ -70,4 +70,16 @@ public class LimKeywordBuf
     /// <summary>DlvDown KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_DlvDown))]
     public static KeywordBuf DlvDown { get; private set; }
+
+    /// <summary>SlashVulnerable KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_SlashVulnerable))]
+    public static KeywordBuf SlashVulnerable { get; private set; }
+
+    /// <summary>PenetrateVulnerable KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_PenetrateVulnerable))]
+    public static KeywordBuf PenetrateVulnerable { get; private set; }
+
+    /// <summary>HitVulnerable KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_HitVulnerable))]
+    public static KeywordBuf HitVulnerable { get; private set; }
 }

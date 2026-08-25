@@ -90,5 +90,18 @@
 幕の終了時に除去される。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_SlashVulnerable">
+          <Name>斬撃脆弱</Name>
+          <Desc>今回の幕の間、斬撃属性の攻撃によって受けるダメージ量が{0}増加</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_PenetrateVulnerable">
+          <Name>貫通脆弱</Name>
+          <Desc>今回の幕の間、貫通属性の攻撃によって受けるダメージ量が{0}増加</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_HitVulnerable">
+          <Name>打撃脆弱</Name>
+          <Desc>今回の幕の間、打撃属性の攻撃によって受けるダメージ量が{0}増加</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
