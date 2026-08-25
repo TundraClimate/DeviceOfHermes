@@ -7181,6 +7181,80 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture.positiveType
   nameWithType: BattleUnitBuf_Limbuf_Rupture.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin
+  name: BattleUnitBuf_Limbuf_Shin
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin
+  nameWithType: BattleUnitBuf_Limbuf_Shin
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel,LimbufOfHermes.BattleUnitBuf_Limbuf_Shin)
+  name: CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin?)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_CreateShinAura_BattleUnitModel_LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel,LimbufOfHermes.BattleUnitBuf_Limbuf_Shin)
+  name.vb: CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, LimbufOfHermes.BattleUnitBuf_Limbuf_Shin?)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, LimbufOfHermes.BattleUnitBuf_Limbuf_Shin)
+  nameWithType: BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin?)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Shin.CreateShinAura(BattleUnitModel, BattleUnitBuf_Limbuf_Shin)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura*
+  name: CreateShinAura
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_CreateShinAura_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.CreateShinAura
+  nameWithType: BattleUnitBuf_Limbuf_Shin.CreateShinAura
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.DefaultStack
+  name: DefaultStack
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_DefaultStack
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.DefaultStack
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.DefaultStack
+  nameWithType: BattleUnitBuf_Limbuf_Shin.DefaultStack
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.DefaultStack*
+  name: DefaultStack
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_DefaultStack_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.DefaultStack
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.DefaultStack
+  nameWithType: BattleUnitBuf_Limbuf_Shin.DefaultStack
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
+  name: Init(BattleUnitModel)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_Init_BattleUnitModel_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
+  nameWithType: BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init*
+  name: Init
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_Init_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init
+  nameWithType: BattleUnitBuf_Limbuf_Shin.Init
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Shin.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Shin.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.keywordIconId
+  name: keywordIconId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_keywordIconId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.keywordIconId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.keywordIconId
+  nameWithType: BattleUnitBuf_Limbuf_Shin.keywordIconId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.keywordIconId*
+  name: keywordIconId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_keywordIconId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.keywordIconId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.keywordIconId
+  nameWithType: BattleUnitBuf_Limbuf_Shin.keywordIconId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking
   name: BattleUnitBuf_Limbuf_Sinking
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html

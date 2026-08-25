@@ -1426,6 +1426,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Shin",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.yml\" sourcestartlinenumber=\"1\">A unit buf the shin</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.yml",
       "output": {
         ".html": {
@@ -2435,6 +2449,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-rupture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-shin.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-shin.html"
         }
       },
       "version": ""
