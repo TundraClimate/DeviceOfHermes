@@ -16,6 +16,7 @@ public class BattleUIBehaviour : MonoBehaviour
 
         harmony.CreateClassProcessor(typeof(PatchOnRoundStart)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnStartBattle)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchOnEndBattle)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnetimeInvoke)).Patch();
     }
 
@@ -49,6 +50,11 @@ public class BattleUIBehaviour : MonoBehaviour
 
     /// <summary>Runs on Start battle</summary>
     public virtual void OnStartBattle()
+    {
+    }
+
+    /// <summary>Runs on End battle</summary>
+    public virtual void OnEndBattle()
     {
     }
 
@@ -102,6 +108,18 @@ public class BattleUIBehaviour : MonoBehaviour
             foreach (var beh in AddionalUI.GetValue(BattleManagerUI.Instance, _ => new()).Values.OfType<BattleUIBehaviour>())
             {
                 beh.OnStartBattle();
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(StageController), "EndBattle")]
+    class PatchOnEndBattle
+    {
+        static void Prefix()
+        {
+            foreach (var beh in AddionalUI.GetValue(BattleManagerUI.Instance, _ => new()).Values.OfType<BattleUIBehaviour>())
+            {
+                beh.OnEndBattle();
             }
         }
     }

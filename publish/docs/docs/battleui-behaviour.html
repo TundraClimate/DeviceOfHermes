@@ -115,6 +115,10 @@
     public override OnStartBattle()
     {
     }
+
+    public override OnEndBattle()
+    {
+    }
 }
 </code></pre>
 <pre><code class="lang-cs">BattleManagerUI.Instance.AddBehaviour&lt;ExampleUI&gt;(&quot;exampleUI&quot;);
@@ -133,6 +137,12 @@
 }
 </code></pre>
 <p>戦闘開始時に実行されます。</p>
+<h3 id="onendbattle"><code>OnEndBattle()</code></h3>
+<pre><code class="lang-cs">public override OnEndBattle()
+{
+}
+</code></pre>
+<p>接待終了時に実行されます。</p>
 <h3 id="inituiint"><code>InitUI(int)</code></h3>
 <pre><code class="lang-cs">InitUI(order);
 </code></pre>

@@ -5720,6 +5720,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UI.BattleUIBehaviour.InitUI
   nameWithType: BattleUIBehaviour.InitUI
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.OnEndBattle
+  name: OnEndBattle()
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_OnEndBattle
+  commentId: M:DeviceOfHermes.UI.BattleUIBehaviour.OnEndBattle
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.OnEndBattle()
+  nameWithType: BattleUIBehaviour.OnEndBattle()
+- uid: DeviceOfHermes.UI.BattleUIBehaviour.OnEndBattle*
+  name: OnEndBattle
+  href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_OnEndBattle_
+  commentId: Overload:DeviceOfHermes.UI.BattleUIBehaviour.OnEndBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.BattleUIBehaviour.OnEndBattle
+  nameWithType: BattleUIBehaviour.OnEndBattle
 - uid: DeviceOfHermes.UI.BattleUIBehaviour.OnRoundStart
   name: OnRoundStart()
   href: api/DeviceOfHermes.UI.BattleUIBehaviour.html#DeviceOfHermes_UI_BattleUIBehaviour_OnRoundStart
