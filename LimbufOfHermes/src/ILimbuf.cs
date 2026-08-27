@@ -87,6 +87,20 @@ public static class ILimbuf
         public void OnTakeBarrier(int value);
     }
 
+    /// <summary>Interface</summary>
+    public interface OnAddBloodfeast
+    {
+        /// <summary>On add bloodfeast</summary>
+        public void OnAddBloodfeast(int value);
+    }
+
+    /// <summary>Interface</summary>
+    public interface OnConsumeStageBuf
+    {
+        /// <summary>On consume stage buf</summary>
+        public void OnConsumeStageBuf(StageBuf buf, BattleUnitModel? consume, int stack);
+    }
+
     internal static void EachPassiveOf<T>(this BattleUnitModel owner, Action<T> f)
     {
         owner.passiveDetail?.PassiveList?.Filter(passive => passive.isActiavted)?.OfType<T>().Foreach(f);

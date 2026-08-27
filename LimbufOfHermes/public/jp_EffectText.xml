@@ -103,5 +103,23 @@
           <Desc>今回の幕の間、打撃属性の攻撃によって受けるダメージ量が{0}増加</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Bloodfeast">
+          <Name>血餐</Name>
+          <Desc>最大値: 999
+この舞台で発生した出血ダメージを蓄積する。
+舞台の終了時に初期化される。
+
+この数値は全キャラクターで共有される。</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_BloodfeastConsumed">
+          <Name>累計消耗血餐</Name>
+          <Desc>最大値: 999
+消耗した血餐の数値を表示する。</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_BloodfeastConsumedAll">
+          <Name>共用累計消耗血餐</Name>
+          <Desc>全キャラクター累計で消耗した血餐の数値を表示する。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>

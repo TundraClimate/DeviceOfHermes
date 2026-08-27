@@ -82,4 +82,8 @@ public class LimKeywordBuf
     /// <summary>HitVulnerable KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_HitVulnerable))]
     public static KeywordBuf HitVulnerable { get; private set; }
+
+    /// <summary>BloodfeastConsumed KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_BloodfeastConsumed))]
+    public static KeywordBuf BloodfeastConsumed { get; private set; }
 }

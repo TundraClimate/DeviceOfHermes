@@ -6495,6 +6495,108 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.positiveType
   nameWithType: BattleUnitBuf_Limbuf_Barrier.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast
+  name: BattleUnitBuf_Limbuf_Bloodfeast
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast
+  nameWithType: BattleUnitBuf_Limbuf_Bloodfeast
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.OnConsume(System.Int32,BattleUnitModel)
+  name: OnConsume(int, BattleUnitModel?)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Bloodfeast_OnConsume_System_Int32_BattleUnitModel_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.OnConsume(System.Int32,BattleUnitModel)
+  name.vb: OnConsume(Integer, BattleUnitModel)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.OnConsume(int, BattleUnitModel?)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.OnConsume(Integer, BattleUnitModel)
+  nameWithType: BattleUnitBuf_Limbuf_Bloodfeast.OnConsume(int, BattleUnitModel?)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Bloodfeast.OnConsume(Integer, BattleUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.OnConsume*
+  name: OnConsume
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Bloodfeast_OnConsume_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.OnConsume
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.OnConsume
+  nameWithType: BattleUnitBuf_Limbuf_Bloodfeast.OnConsume
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Bloodfeast_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Bloodfeast.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Bloodfeast_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Bloodfeast.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed
+  name: BattleUnitBuf_Limbuf_BloodfeastConsumed
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumed
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf(System.Int32)
+  name: OnAddBuf(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumed_OnAddBuf_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf(System.Int32)
+  name.vb: OnAddBuf(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf*
+  name: OnAddBuf
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumed_OnAddBuf_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumed.OnAddBuf
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumed_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumed_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumed.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumed_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumed_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumed.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll
+  name: BattleUnitBuf_Limbuf_BloodfeastConsumedAll
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumedAll
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumedAll_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.html#LimbufOfHermes_BattleUnitBuf_Limbuf_BloodfeastConsumedAll_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_BloodfeastConsumedAll.keywordId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor
   name: BattleUnitBuf_Limbuf_ConsumeTremor
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.html
@@ -8034,6 +8136,28 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier
   nameWithType: ILimbuf.IsKeepBarrier.IsKeepBarrier
+- uid: LimbufOfHermes.ILimbuf.OnAddBloodfeast
+  name: ILimbuf.OnAddBloodfeast
+  href: api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnAddBloodfeast
+  fullName: LimbufOfHermes.ILimbuf.OnAddBloodfeast
+  nameWithType: ILimbuf.OnAddBloodfeast
+- uid: LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast(System.Int32)
+  name: OnAddBloodfeast(int)
+  href: api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.html#LimbufOfHermes_ILimbuf_OnAddBloodfeast_OnAddBloodfeast_System_Int32_
+  commentId: M:LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast(System.Int32)
+  name.vb: OnAddBloodfeast(Integer)
+  fullName: LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast(int)
+  fullName.vb: LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast(Integer)
+  nameWithType: ILimbuf.OnAddBloodfeast.OnAddBloodfeast(int)
+  nameWithType.vb: ILimbuf.OnAddBloodfeast.OnAddBloodfeast(Integer)
+- uid: LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast*
+  name: OnAddBloodfeast
+  href: api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.html#LimbufOfHermes_ILimbuf_OnAddBloodfeast_OnAddBloodfeast_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast
+  nameWithType: ILimbuf.OnAddBloodfeast.OnAddBloodfeast
 - uid: LimbufOfHermes.ILimbuf.OnApplyTremorBurst
   name: ILimbuf.OnApplyTremorBurst
   href: api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.html
@@ -8072,6 +8196,28 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier
   nameWithType: ILimbuf.OnBreakBarrier.OnBreakBarrier
+- uid: LimbufOfHermes.ILimbuf.OnConsumeStageBuf
+  name: ILimbuf.OnConsumeStageBuf
+  href: api/LimbufOfHermes.ILimbuf.OnConsumeStageBuf.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnConsumeStageBuf
+  fullName: LimbufOfHermes.ILimbuf.OnConsumeStageBuf
+  nameWithType: ILimbuf.OnConsumeStageBuf
+- uid: LimbufOfHermes.ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf(LimbufOfHermes.StageBuf,BattleUnitModel,System.Int32)
+  name: OnConsumeStageBuf(StageBuf, BattleUnitModel?, int)
+  href: api/LimbufOfHermes.ILimbuf.OnConsumeStageBuf.html#LimbufOfHermes_ILimbuf_OnConsumeStageBuf_OnConsumeStageBuf_LimbufOfHermes_StageBuf_BattleUnitModel_System_Int32_
+  commentId: M:LimbufOfHermes.ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf(LimbufOfHermes.StageBuf,BattleUnitModel,System.Int32)
+  name.vb: OnConsumeStageBuf(StageBuf, BattleUnitModel, Integer)
+  fullName: LimbufOfHermes.ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf(LimbufOfHermes.StageBuf, BattleUnitModel?, int)
+  fullName.vb: LimbufOfHermes.ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf(LimbufOfHermes.StageBuf, BattleUnitModel, Integer)
+  nameWithType: ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf(StageBuf, BattleUnitModel?, int)
+  nameWithType.vb: ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf(StageBuf, BattleUnitModel, Integer)
+- uid: LimbufOfHermes.ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf*
+  name: OnConsumeStageBuf
+  href: api/LimbufOfHermes.ILimbuf.OnConsumeStageBuf.html#LimbufOfHermes_ILimbuf_OnConsumeStageBuf_OnConsumeStageBuf_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf
+  nameWithType: ILimbuf.OnConsumeStageBuf.OnConsumeStageBuf
 - uid: LimbufOfHermes.ILimbuf.OnCriticalAttack
   name: ILimbuf.OnCriticalAttack
   href: api/LimbufOfHermes.ILimbuf.OnCriticalAttack.html
@@ -8300,6 +8446,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.Barrier
   nameWithType: LimKeywordBuf.Barrier
+- uid: LimbufOfHermes.LimKeywordBuf.BloodfeastConsumed
+  name: BloodfeastConsumed
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_BloodfeastConsumed
+  commentId: P:LimbufOfHermes.LimKeywordBuf.BloodfeastConsumed
+  fullName: LimbufOfHermes.LimKeywordBuf.BloodfeastConsumed
+  nameWithType: LimKeywordBuf.BloodfeastConsumed
+- uid: LimbufOfHermes.LimKeywordBuf.BloodfeastConsumed*
+  name: BloodfeastConsumed
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_BloodfeastConsumed_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.BloodfeastConsumed
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.BloodfeastConsumed
+  nameWithType: LimKeywordBuf.BloodfeastConsumed
 - uid: LimbufOfHermes.LimKeywordBuf.ConsumeTremor
   name: ConsumeTremor
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_ConsumeTremor
@@ -8577,6 +8736,40 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimbufExtension.ApplyCritDamageAdder
   nameWithType: LimbufExtension.ApplyCritDamageAdder
+- uid: LimbufOfHermes.StageBuf
+  name: StageBuf
+  href: api/LimbufOfHermes.StageBuf.html
+  commentId: T:LimbufOfHermes.StageBuf
+  fullName: LimbufOfHermes.StageBuf
+  nameWithType: StageBuf
+- uid: LimbufOfHermes.StageBuf.Bloodfeast
+  name: Bloodfeast
+  href: api/LimbufOfHermes.StageBuf.html#LimbufOfHermes_StageBuf_Bloodfeast
+  commentId: F:LimbufOfHermes.StageBuf.Bloodfeast
+  fullName: LimbufOfHermes.StageBuf.Bloodfeast
+  nameWithType: StageBuf.Bloodfeast
+- uid: LimbufOfHermes.StageBufBase
+  name: StageBufBase
+  href: api/LimbufOfHermes.StageBufBase.html
+  commentId: T:LimbufOfHermes.StageBufBase
+  fullName: LimbufOfHermes.StageBufBase
+  nameWithType: StageBufBase
+- uid: LimbufOfHermes.StageBufBase.OnConsume(System.Int32,BattleUnitModel)
+  name: OnConsume(int, BattleUnitModel?)
+  href: api/LimbufOfHermes.StageBufBase.html#LimbufOfHermes_StageBufBase_OnConsume_System_Int32_BattleUnitModel_
+  commentId: M:LimbufOfHermes.StageBufBase.OnConsume(System.Int32,BattleUnitModel)
+  name.vb: OnConsume(Integer, BattleUnitModel)
+  fullName: LimbufOfHermes.StageBufBase.OnConsume(int, BattleUnitModel?)
+  fullName.vb: LimbufOfHermes.StageBufBase.OnConsume(Integer, BattleUnitModel)
+  nameWithType: StageBufBase.OnConsume(int, BattleUnitModel?)
+  nameWithType.vb: StageBufBase.OnConsume(Integer, BattleUnitModel)
+- uid: LimbufOfHermes.StageBufBase.OnConsume*
+  name: OnConsume
+  href: api/LimbufOfHermes.StageBufBase.html#LimbufOfHermes_StageBufBase_OnConsume_
+  commentId: Overload:LimbufOfHermes.StageBufBase.OnConsume
+  isSpec: "True"
+  fullName: LimbufOfHermes.StageBufBase.OnConsume
+  nameWithType: StageBufBase.OnConsume
 - uid: System
   name: System
   href: api/System.html

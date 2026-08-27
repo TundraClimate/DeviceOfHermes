@@ -6,29 +6,6 @@ using UnityEngine.EventSystems;
 
 namespace LimbufOfHermes;
 
-internal static class StageBufListDetail
-{
-    static StageBufListDetail()
-    {
-        StageBufListUI.OnCleanup += () => stageBufs.Clear();
-    }
-
-    public static void UpdateBuf<T>(int stack)
-        where T : BattleUnitBuf, new()
-    {
-        var buf = stageBufs.Find(buf => buf is T) ?? new T().Also(buf => stageBufs.Add(buf));
-
-        buf.stack = stack;
-    }
-
-    public static void UpdateUI()
-    {
-        BattleManagerUI.Instance.GetBehaviour<StageBufListUI>("stageBufList")?.UpdateBufUI(stageBufs);
-    }
-
-    static List<BattleUnitBuf> stageBufs = new();
-}
-
 internal class StageBufListUI : BattleUIBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public static event Action OnCleanup = () => { };
@@ -45,10 +22,7 @@ internal class StageBufListUI : BattleUIBehaviour, IPointerEnterHandler, IPointe
         InitUI(1003);
 
         gameObject.AddComponent<GraphicRaycaster>();
-    }
 
-    void Start()
-    {
         gameObject.AddContainer(InitOrigin);
         gameObject.AddContainer(InitExpanded);
 
@@ -59,7 +33,7 @@ internal class StageBufListUI : BattleUIBehaviour, IPointerEnterHandler, IPointe
         expanded!.Hide();
     }
 
-    public void UpdateBufUI(List<BattleUnitBuf> bufs)
+    public void UpdateBufUI(List<StageBufBase> bufs)
     {
         if (!active && bufs.Count > 0)
         {

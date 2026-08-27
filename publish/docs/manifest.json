@@ -1314,6 +1314,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Bloodfeast.yml\" sourcestartlinenumber=\"1\">A stage buf the blood feast</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumed.yml\" sourcestartlinenumber=\"1\">A stage buf the blood feast consumed</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_BloodfeastConsumedAll.yml\" sourcestartlinenumber=\"1\">A stage buf the blood feast consumed all</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.yml",
       "output": {
         ".html": {
@@ -1608,6 +1650,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnAddBloodfeast",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.yml",
       "output": {
         ".html": {
@@ -1633,6 +1689,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.ILimbuf.OnBreakBarrier",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnBreakBarrier.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnConsumeStageBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnConsumeStageBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnConsumeStageBuf",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnConsumeStageBuf.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1815,6 +1885,34 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.LimbufExtension",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.LimbufExtension.yml\" sourcestartlinenumber=\"1\">An extension of LimbufOfHermes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.StageBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.StageBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.StageBuf",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.StageBuf.yml\" sourcestartlinenumber=\"1\">A keyword list of stage buf</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.StageBufBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.StageBufBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.StageBufBase",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.StageBufBase.yml\" sourcestartlinenumber=\"1\">A base of StageBuf</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2395,6 +2493,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/loh-bloodfeast.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-bloodfeast.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/loh-dlvdown.md",
       "output": {
         ".html": {
@@ -2469,6 +2577,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-sinking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-stagebuf.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-stagebuf.html"
         }
       },
       "version": ""
