@@ -58,6 +58,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnSucceedAttack));
         Patch(typeof(PatchOnAddNewKeywordBuf));
         Patch(typeof(PatchOnSucceedAreaAttack));
+        Patch(typeof(PatchOnWaveStartInModel));
     }
 
     private static void Patch(Type type)
@@ -1349,6 +1350,22 @@ internal static class AdvancedPatch
         {
             __instance.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>().Filter(buf => !buf.IsDestroyed())
                 .Foreach(buf => buf.OnSuccessAreaAttack(behavior, target));
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnWaveStart")]
+    class PatchOnWaveStartInModel
+    {
+        static void Prefix(BattleUnitModel __instance)
+        {
+            foreach (var deckCard in __instance.allyCardDetail.Deck().AsDefer(out var self))
+            {
+                if (deckCard.CreateDiceCardSelfAbilityScript() is AdvancedCardBase adv && adv.DrawsOnWaveStart)
+                {
+                    __instance.allyCardDetail.Hand().Add(deckCard);
+                    self.Remove(deckCard);
+                }
+            }
         }
     }
 }

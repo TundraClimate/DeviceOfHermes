@@ -89,6 +89,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility
   nameWithType: AdvancedCardBase.CanDiscardByAbility
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.DrawsOnWaveStart
+  name: DrawsOnWaveStart
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_DrawsOnWaveStart
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.DrawsOnWaveStart
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.DrawsOnWaveStart
+  nameWithType: AdvancedCardBase.DrawsOnWaveStart
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.DrawsOnWaveStart*
+  name: DrawsOnWaveStart
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_DrawsOnWaveStart_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.DrawsOnWaveStart
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.DrawsOnWaveStart
+  nameWithType: AdvancedCardBase.DrawsOnWaveStart
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.GetFinalResultDamageValue(System.Int32)
   name: GetFinalResultDamageValue(int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_GetFinalResultDamageValue_System_Int32_

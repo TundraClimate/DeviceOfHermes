@@ -20,6 +20,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Property is card ignore speed by match</summary>
     public virtual bool IsIgnoreSpeedByMatch => false;
 
+    /// <summary>Is card draws on wave start</summary>
+    public virtual bool DrawsOnWaveStart => false;
+
     /// <summary>Can discard this card by ability</summary>
     /// <returns>Is card can discard</returns>
     public virtual bool CanDiscardByAbility(BattleDiceCardModel self)

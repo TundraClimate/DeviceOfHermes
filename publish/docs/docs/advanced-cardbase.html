@@ -100,6 +100,8 @@
 
     public override bool IsIgnoreSpeedByMatch =&gt; false;
 
+    public override bool DrawsOnWaveStart =&gt; false;
+
     public override bool CanDiscardByAbility(BattleDiceCardModel self)
     {
     }
@@ -137,6 +139,11 @@ falseを指定するとマッチ不可になります。</p>
 </code></pre>
 <p>速度を無視してマッチできるかを指定するプロパティです。<br>
 trueを返すとマッチに速度を参照しなくなります。</p>
+<h3 id="drawsonwavestart"><code>DrawsOnWaveStart</code></h3>
+<pre><code class="lang-cs">public override bool DrawsOnWaveStart =&gt; false;
+</code></pre>
+<p>舞台開始時に自動で抽出されるかを指定するプロパティです。<br>
+trueを返すと自動で抽出されるようになります。</p>
 <h3 id="candiscardbyabilitybattledicecardmodel"><code>CanDiscardByAbility(BattleDiceCardModel)</code></h3>
 <pre><code class="lang-cs">public override bool CanDiscardByAbility(BattleDiceCardModel self)
 {
