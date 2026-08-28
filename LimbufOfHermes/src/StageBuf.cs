@@ -5,4 +5,7 @@ public enum StageBuf
 {
     /// <summary>Bloodfeast</summary>
     Bloodfeast,
+
+    /// <summary>Scorchfield</summary>
+    Scorchfield,
 }

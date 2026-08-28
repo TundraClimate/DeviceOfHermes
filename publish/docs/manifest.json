@@ -1468,6 +1468,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.yml\" sourcestartlinenumber=\"1\">A stage buf the scorch field</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.yml",
       "output": {
         ".html": {
@@ -1661,6 +1675,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.ILimbuf.OnAddBloodfeast",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnAddScorchfield.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnAddScorchfield.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnAddScorchfield",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnAddScorchfield.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2557,6 +2585,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-rupture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-scorchfield.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-scorchfield.html"
         }
       },
       "version": ""

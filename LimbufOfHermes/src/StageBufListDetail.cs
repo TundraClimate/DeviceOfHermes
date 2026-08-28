@@ -19,6 +19,11 @@ public static class StageBufListDetail
             UpdateBuf<BattleUnitBuf_Limbuf_BloodfeastConsumedAll>(_ => 0);
         }
 
+        if (bufType is StageBuf.Scorchfield && !stageBufs.Exists(buf => buf is BattleUnitBuf_Limbuf_Scorchfield))
+        {
+            UpdateBuf<BattleUnitBuf_Limbuf_Scorchfield>(_ => BattleUnitBuf_Limbuf_Scorchfield.BurnDmgHistory.GetValue(StageController.Instance.waveHistory, _ => new(0)).value);
+        }
+
         UpdateUI();
     }
 
@@ -86,6 +91,7 @@ public static class StageBufListDetail
         var ty = buf switch
         {
             StageBuf.Bloodfeast => typeof(BattleUnitBuf_Limbuf_Bloodfeast),
+            StageBuf.Scorchfield => typeof(BattleUnitBuf_Limbuf_Scorchfield),
             _ => null,
         };
 

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum StageBuf | DeviceOfHermes </title>
+      <title>using LimbufOfHermes; | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum StageBuf | DeviceOfHermes ">
+      <meta name="title" content="using LimbufOfHermes; | DeviceOfHermes ">
       
-      <meta name="description" content="A keyword list of stage buf">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/new/master/apiSpec/new?filename=LimbufOfHermes_StageBuf.md&amp;value=---%0Auid%3A%20LimbufOfHermes.StageBuf%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/loh-scorchfield.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,70 +84,46 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="LimbufOfHermes.StageBuf">
+        <article data-uid="">
+<h1 id="using-limbufofhermes"><code>using LimbufOfHermes;</code></h1>
 
+<p>名前空間<code>LimbufOfHermes</code>に存在するクラスです。</p>
+<h1 id="scorchfield">Scorchfield</h1>
+<p>リンバスの&quot;灼熱地帯&quot;と同じような挙動をする効果です。</p>
+<blockquote>
+<p>最大値: 999
+この舞台で発生した火傷ダメージを蓄積する。
+舞台の終了時に初期化される。</p>
+<p>この数値は全キャラクターで共有される。</p>
+</blockquote>
+<pre><code class="lang-cs">// &quot;灼熱地帯&quot;を有効化する
+StageBufListDetail.ActivateStageBuf(StageBuf.Scorchfield);
 
+// &quot;灼熱地帯&quot;を100消耗出来るなら100消耗する
+// 消耗できた場合はtrueを返す
+StageBufListDetail.TryConsume(StageBuf.Scorchfield, 100, owner);
 
+// &quot;灼熱地帯&quot;を100まで消耗する
+// 実際に消耗した値を返す
+StageBufListDetail.Consume(StageBuf.Scorchfield, 100, owner);
 
-  <h1 id="LimbufOfHermes_StageBuf" data-uid="LimbufOfHermes.StageBuf" class="text-break">
-Enum StageBuf  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/StageBuf.cs/#L4"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LimbufOfHermes.html">LimbufOfHermes</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LimbufOfHermes.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>A keyword list of stage buf</p>
-</div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum StageBuf</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="System.Extension.html#System_Extension_Also__1___0_System_Action___0__">Extension.Also&lt;T&gt;(T, Action&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="System.Extension.html#System_Extension_Let__1___0_System_Action___0__">Extension.Let&lt;T&gt;(T, Action&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="System.Extension.html#System_Extension_Let__2___0_System_Func___0___1__">Extension.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
-  </div>
-  </dd></dl>
-
-  <h2 id="fields">Fields
-</h2>
-  <dl class="parameters">
-    <dt id="LimbufOfHermes_StageBuf_Bloodfeast"><code>Bloodfeast = 0</code></dt>
-  
-  <dd><p>Bloodfeast</p>
-</dd>
-    <dt id="LimbufOfHermes_StageBuf_Scorchfield"><code>Scorchfield = 1</code></dt>
-  
-  <dd><p>Scorchfield</p>
-</dd>
-  </dl>
-
-
+// &quot;灼熱地帯&quot;の現在の値を取得する
+StageBufListDetail.GetBufCount(StageBuf.Scorchfield);
+</code></pre>
+<h2 id="events">Events</h2>
+<h3 id="ilimbufonaddscorchfieldonaddscorchfieldint-stack"><code>ILimbuf.OnAddScorchfield.OnAddScorchfield(int stack)</code></h3>
+<p>灼熱地帯を取得したときに実行されます。</p>
+<ul>
+<li><code>stack</code>: 獲得した灼熱地帯数です。</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/StageBuf.cs/#L4" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/docfx/docs/loh-scorchfield.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

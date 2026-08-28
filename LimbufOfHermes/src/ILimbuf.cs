@@ -101,6 +101,13 @@ public static class ILimbuf
         public void OnConsumeStageBuf(StageBuf buf, BattleUnitModel? consume, int stack);
     }
 
+    /// <summary>Interface</summary>
+    public interface OnAddScorchfield
+    {
+        /// <summary>On add scorchfield</summary>
+        public void OnAddScorchfield(int value);
+    }
+
     internal static void EachPassiveOf<T>(this BattleUnitModel owner, Action<T> f)
     {
         owner.passiveDetail?.PassiveList?.Filter(passive => passive.isActiavted)?.OfType<T>().Foreach(f);

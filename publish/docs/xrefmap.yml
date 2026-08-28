@@ -7296,6 +7296,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture.positiveType
   nameWithType: BattleUnitBuf_Limbuf_Rupture.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield
+  name: BattleUnitBuf_Limbuf_Scorchfield
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield
+  nameWithType: BattleUnitBuf_Limbuf_Scorchfield
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Scorchfield_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Scorchfield.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Scorchfield_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Scorchfield.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Scorchfield.keywordId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin
   name: BattleUnitBuf_Limbuf_Shin
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html
@@ -8158,6 +8177,28 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnAddBloodfeast.OnAddBloodfeast
   nameWithType: ILimbuf.OnAddBloodfeast.OnAddBloodfeast
+- uid: LimbufOfHermes.ILimbuf.OnAddScorchfield
+  name: ILimbuf.OnAddScorchfield
+  href: api/LimbufOfHermes.ILimbuf.OnAddScorchfield.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnAddScorchfield
+  fullName: LimbufOfHermes.ILimbuf.OnAddScorchfield
+  nameWithType: ILimbuf.OnAddScorchfield
+- uid: LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield(System.Int32)
+  name: OnAddScorchfield(int)
+  href: api/LimbufOfHermes.ILimbuf.OnAddScorchfield.html#LimbufOfHermes_ILimbuf_OnAddScorchfield_OnAddScorchfield_System_Int32_
+  commentId: M:LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield(System.Int32)
+  name.vb: OnAddScorchfield(Integer)
+  fullName: LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield(int)
+  fullName.vb: LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield(Integer)
+  nameWithType: ILimbuf.OnAddScorchfield.OnAddScorchfield(int)
+  nameWithType.vb: ILimbuf.OnAddScorchfield.OnAddScorchfield(Integer)
+- uid: LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield*
+  name: OnAddScorchfield
+  href: api/LimbufOfHermes.ILimbuf.OnAddScorchfield.html#LimbufOfHermes_ILimbuf_OnAddScorchfield_OnAddScorchfield_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield
+  nameWithType: ILimbuf.OnAddScorchfield.OnAddScorchfield
 - uid: LimbufOfHermes.ILimbuf.OnApplyTremorBurst
   name: ILimbuf.OnApplyTremorBurst
   href: api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.html
@@ -8748,6 +8789,12 @@ references:
   commentId: F:LimbufOfHermes.StageBuf.Bloodfeast
   fullName: LimbufOfHermes.StageBuf.Bloodfeast
   nameWithType: StageBuf.Bloodfeast
+- uid: LimbufOfHermes.StageBuf.Scorchfield
+  name: Scorchfield
+  href: api/LimbufOfHermes.StageBuf.html#LimbufOfHermes_StageBuf_Scorchfield
+  commentId: F:LimbufOfHermes.StageBuf.Scorchfield
+  fullName: LimbufOfHermes.StageBuf.Scorchfield
+  nameWithType: StageBuf.Scorchfield
 - uid: LimbufOfHermes.StageBufBase
   name: StageBufBase
   href: api/LimbufOfHermes.StageBufBase.html

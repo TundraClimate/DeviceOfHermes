@@ -121,5 +121,14 @@
           <Desc>全キャラクター累計で消耗した血餐の数値を表示する。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Scorchfield">
+          <Name>灼熱地帯</Name>
+          <Desc>最大値: 999
+この舞台で発生した火傷ダメージを蓄積する。
+舞台の終了時に初期化される。
+
+この数値は全キャラクターで共有される。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
