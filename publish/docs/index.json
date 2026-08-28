@@ -1007,7 +1007,7 @@
   "docs/onlycard-data.html": {
     "href": "docs/onlycard-data.html",
     "title": "OnlyCardXml | DeviceOfHermes",
-    "summary": "OnlyCardXml XMLファイルを配置することで専用ページを追加することが出来ます。 条件はDeviceOfHermesのサブスクライブのみです。 HermesConfigに従って読み込みます。 フォルダ・ファイルが存在しない場合は無視します。 OnlyCard.xmlの内容例: <?xml version=\"1.0\" encoding=\"utf-8\"?> <OnlyCardXmlRoot> <!-- MODのID=\"10000001\"のコアページを対象に --> <OnlyCard ID=\"10000001\"> <!-- MODのID=\"1\"のページを専用ページとして追加 --> <Card>1</Card> <!-- バニラのID=\"701001\"のページを専用ページとして追加 --> <Card Pid=\"@origin\">701001</Card> </OnlyCard> <!-- MODのID=\"10000002\"のコアページを対象に --> <OnlyCard ID=\"10000002\"> <!-- MODのID=\"2\"のページを専用ページとして追加 --> <Card>2</Card> </OnlyCard> </OnlyCardXmlRoot>"
+    "summary": "OnlyCardXml XMLファイルを配置することで専用ページを追加することが出来ます。 条件はDeviceOfHermesのサブスクライブのみです。 UIに適用する場合は追加でOnlyPageオプションをページに付加する必要があります。 HermesConfigに従って読み込みます。 フォルダ・ファイルが存在しない場合は無視します。 OnlyCard.xmlの内容例: <?xml version=\"1.0\" encoding=\"utf-8\"?> <OnlyCardXmlRoot> <!-- MODのID=\"10000001\"のコアページを対象に --> <OnlyCard ID=\"10000001\"> <!-- MODのID=\"1\"のページを専用ページとして追加 --> <Card>1</Card> <!-- バニラのID=\"701001\"のページを専用ページとして追加 --> <Card Pid=\"@origin\">701001</Card> </OnlyCard> <!-- MODのID=\"10000002\"のコアページを対象に --> <OnlyCard ID=\"10000002\"> <!-- MODのID=\"2\"のページを専用ページとして追加 --> <Card>2</Card> </OnlyCard> </OnlyCardXmlRoot>"
   },
   "docs/passive-resolver.html": {
     "href": "docs/passive-resolver.html",
