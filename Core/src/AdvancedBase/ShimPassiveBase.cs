@@ -78,9 +78,6 @@ public abstract class ShimPassiveBase : AdvancedPassiveBase
     /// <summary>A turn of elapsed</summary>
     public int Elapsed { get; private set; }
 
-    /// <summary>A list of patterns</summary>
-    protected virtual PatternList Patterns { get; } = new();
-
     /// <summary>A list of pattern</summary>
     protected class PatternList(bool loop = false) : IEnumerable<PatternInfo>
     {

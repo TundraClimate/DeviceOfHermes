@@ -100,7 +100,7 @@
     public override void ApplyPattern() =&gt; Patterns.ApplyNextPattern(this);
 
     // パターンを設定する
-    protected override PatternList Patterns =&gt; new(true)
+    private PatternList Patterns = new(true)
     {
         // 1幕目: idが1, 2, 3のページをセット
         // 速度ダイスが余ればidが4のページで埋める
@@ -139,17 +139,6 @@
 <pre><code class="lang-cs">int pat = Elapsed % 3;
 </code></pre>
 <p>経過幕数が記録されます。</p>
-<h3 id="patterns"><code>Patterns</code></h3>
-<pre><code class="lang-cs">protected override PatternList Patterns =&gt; new(loop)
-{
-    info...
-};
-</code></pre>
-<p>行動パターンを設定します。</p>
-<ul>
-<li><code>loop</code>: trueならパターンを繰り返します。</li>
-<li><code>info</code>: 幕ごとに使用するページリストです。</li>
-</ul>
 <h3 id="shimmering"><code>Shimmering()</code></h3>
 <pre><code class="lang-cs">Shimmering()
 </code></pre>

@@ -1490,19 +1490,6 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.PatternList.GetEnumerator
   nameWithType: ShimPassiveBase.PatternList.GetEnumerator
-- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
-  name: Patterns
-  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Patterns
-  commentId: P:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
-  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
-  nameWithType: ShimPassiveBase.Patterns
-- uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns*
-  name: Patterns
-  href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Patterns_
-  commentId: Overload:DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
-  isSpec: "True"
-  fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Patterns
-  nameWithType: ShimPassiveBase.Patterns
 - uid: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Shimmering
   name: Shimmering()
   href: api/DeviceOfHermes.AdvancedBase.ShimPassiveBase.html#DeviceOfHermes_AdvancedBase_ShimPassiveBase_Shimmering
