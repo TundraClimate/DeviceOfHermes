@@ -164,7 +164,7 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
     {
         static void Prefix(BattleUnitModel attacker, ref AtkResist atkResist)
         {
-            if (GetPoise(attacker)?.isCritActive == true)
+            if (GetPoise(attacker)?.isCritActive == true && StageController.Instance.Phase == StageController.StagePhase.ExecuteFarAreaPlay)
             {
                 atkResist = (AtkResist)"LimbufOfHermes_Poise".GetHashCode();
             }
