@@ -14,6 +14,7 @@ public class BattleUIBehaviour : MonoBehaviour
     {
         var harmony = new Harmony("DeviceOfHermes.UI.BattleUIBehaviour");
 
+        harmony.CreateClassProcessor(typeof(PatchOnInitStage)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnRoundStart)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnStartBattle)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnEndBattle)).Patch();
@@ -43,6 +44,11 @@ public class BattleUIBehaviour : MonoBehaviour
         return canvas;
     }
 
+    /// <summary>Runs on Stage initialized</summary>
+    public virtual void OnInitialize()
+    {
+    }
+
     /// <summary>Runs on Round start</summary>
     public virtual void OnRoundStart()
     {
@@ -61,6 +67,18 @@ public class BattleUIBehaviour : MonoBehaviour
     internal static ConditionalWeakTable<BattleManagerUI, Dictionary<string, MonoBehaviour>> AddionalUI = new();
 
     internal static Dictionary<string, Type> Stored = new();
+
+    [HarmonyPatch(typeof(StageController), "StartBattle")]
+    class PatchOnInitStage
+    {
+        static void Prefix()
+        {
+            AddionalUI.GetValue(BattleManagerUI.Instance, _ => new()).Values.OfType<BattleUIBehaviour>().Foreach(ui =>
+            {
+                ui.OnInitialize();
+            });
+        }
+    }
 
     [HarmonyPatch(typeof(StageController), "RoundStartPhase_UI")]
     class PatchOnRoundStart
