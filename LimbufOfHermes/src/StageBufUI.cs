@@ -10,6 +10,13 @@ internal class StageBufListUI : BattleUIBehaviour, IPointerEnterHandler, IPointe
 {
     public static event Action OnCleanup = () => { };
 
+    public override void OnInitialize()
+    {
+        Reset();
+
+        OnCleanup.Invoke();
+    }
+
     public override void OnEndBattle()
     {
         Reset();
