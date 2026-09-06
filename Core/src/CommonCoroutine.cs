@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace DeviceOfHermes;
 
@@ -43,6 +44,50 @@ public class CommonCoroutine
         }
 
         cg.alpha = 0;
+    }
+
+    /// <summary>Fadein TextMeshProUGUI</summary>
+    public static IEnumerator TMPFadein(TextMeshProUGUI text, float wait, float duration)
+    {
+        var elapsed = 0f;
+        var color = text.color;
+
+        color.a = 0;
+
+        text.color = color;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+
+            color.a = Mathf.SmoothStep(0f, 1f, elapsed / duration);
+
+            text.color = color;
+
+            yield return null;
+        }
+
+        color.a = 1;
+        text.color = color;
+    }
+
+    /// <summary>Fadeout TextMeshProUGUI</summary>
+    public static IEnumerator TMPFadeout(TextMeshProUGUI text, float wait, float duration)
+    {
+        var elapsed = 0f;
+
+        yield return new WaitForSeconds(wait);
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+
+            text.alpha = 1f - Mathf.SmoothStep(0f, 1f, elapsed / duration);
+
+            yield return null;
+        }
+
+        text.alpha = 0;
     }
 
     /// <summary>Fadein Image</summary>
