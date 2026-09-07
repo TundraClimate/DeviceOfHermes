@@ -1918,6 +1918,135 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Boot.HermesInitializer.OnInitMod
   nameWithType: HermesInitializer.OnInitMod
+- uid: DeviceOfHermes.ChainBattleRetreatBuf
+  name: ChainBattleRetreatBuf
+  href: api/DeviceOfHermes.ChainBattleRetreatBuf.html
+  commentId: T:DeviceOfHermes.ChainBattleRetreatBuf
+  fullName: DeviceOfHermes.ChainBattleRetreatBuf
+  nameWithType: ChainBattleRetreatBuf
+- uid: DeviceOfHermes.ChainBattleRetreatBuf.OnRetreat
+  name: OnRetreat()
+  href: api/DeviceOfHermes.ChainBattleRetreatBuf.html#DeviceOfHermes_ChainBattleRetreatBuf_OnRetreat
+  commentId: M:DeviceOfHermes.ChainBattleRetreatBuf.OnRetreat
+  fullName: DeviceOfHermes.ChainBattleRetreatBuf.OnRetreat()
+  nameWithType: ChainBattleRetreatBuf.OnRetreat()
+- uid: DeviceOfHermes.ChainBattleRetreatBuf.OnRetreat*
+  name: OnRetreat
+  href: api/DeviceOfHermes.ChainBattleRetreatBuf.html#DeviceOfHermes_ChainBattleRetreatBuf_OnRetreat_
+  commentId: Overload:DeviceOfHermes.ChainBattleRetreatBuf.OnRetreat
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleRetreatBuf.OnRetreat
+  nameWithType: ChainBattleRetreatBuf.OnRetreat
+- uid: DeviceOfHermes.ChainBattleStageManager
+  name: ChainBattleStageManager
+  href: api/DeviceOfHermes.ChainBattleStageManager.html
+  commentId: T:DeviceOfHermes.ChainBattleStageManager
+  fullName: DeviceOfHermes.ChainBattleStageManager
+  nameWithType: ChainBattleStageManager
+- uid: DeviceOfHermes.ChainBattleStageManager.GetSelectedFloors
+  name: GetSelectedFloors()
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_GetSelectedFloors
+  commentId: M:DeviceOfHermes.ChainBattleStageManager.GetSelectedFloors
+  fullName: DeviceOfHermes.ChainBattleStageManager.GetSelectedFloors()
+  nameWithType: ChainBattleStageManager.GetSelectedFloors()
+- uid: DeviceOfHermes.ChainBattleStageManager.GetSelectedFloors*
+  name: GetSelectedFloors
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_GetSelectedFloors_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.GetSelectedFloors
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.GetSelectedFloors
+  nameWithType: ChainBattleStageManager.GetSelectedFloors
+- uid: DeviceOfHermes.ChainBattleStageManager.IsChainBattle
+  name: IsChainBattle
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_IsChainBattle
+  commentId: P:DeviceOfHermes.ChainBattleStageManager.IsChainBattle
+  fullName: DeviceOfHermes.ChainBattleStageManager.IsChainBattle
+  nameWithType: ChainBattleStageManager.IsChainBattle
+- uid: DeviceOfHermes.ChainBattleStageManager.IsChainBattle*
+  name: IsChainBattle
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_IsChainBattle_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.IsChainBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.IsChainBattle
+  nameWithType: ChainBattleStageManager.IsChainBattle
+- uid: DeviceOfHermes.ChainBattleStageManager.IsSephirahRemove
+  name: IsSephirahRemove
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_IsSephirahRemove
+  commentId: P:DeviceOfHermes.ChainBattleStageManager.IsSephirahRemove
+  fullName: DeviceOfHermes.ChainBattleStageManager.IsSephirahRemove
+  nameWithType: ChainBattleStageManager.IsSephirahRemove
+- uid: DeviceOfHermes.ChainBattleStageManager.IsSephirahRemove*
+  name: IsSephirahRemove
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_IsSephirahRemove_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.IsSephirahRemove
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.IsSephirahRemove
+  nameWithType: ChainBattleStageManager.IsSephirahRemove
+- uid: DeviceOfHermes.ChainBattleStageManager.IsSuppliesEnemy
+  name: IsSuppliesEnemy
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_IsSuppliesEnemy
+  commentId: P:DeviceOfHermes.ChainBattleStageManager.IsSuppliesEnemy
+  fullName: DeviceOfHermes.ChainBattleStageManager.IsSuppliesEnemy
+  nameWithType: ChainBattleStageManager.IsSuppliesEnemy
+- uid: DeviceOfHermes.ChainBattleStageManager.IsSuppliesEnemy*
+  name: IsSuppliesEnemy
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_IsSuppliesEnemy_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.IsSuppliesEnemy
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.IsSuppliesEnemy
+  nameWithType: ChainBattleStageManager.IsSuppliesEnemy
+- uid: DeviceOfHermes.ChainBattleStageManager.MaximumRearFloorNum
+  name: MaximumRearFloorNum
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_MaximumRearFloorNum
+  commentId: P:DeviceOfHermes.ChainBattleStageManager.MaximumRearFloorNum
+  fullName: DeviceOfHermes.ChainBattleStageManager.MaximumRearFloorNum
+  nameWithType: ChainBattleStageManager.MaximumRearFloorNum
+- uid: DeviceOfHermes.ChainBattleStageManager.MaximumRearFloorNum*
+  name: MaximumRearFloorNum
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_MaximumRearFloorNum_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.MaximumRearFloorNum
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.MaximumRearFloorNum
+  nameWithType: ChainBattleStageManager.MaximumRearFloorNum
+- uid: DeviceOfHermes.ChainBattleStageManager.OnArrived(BattleUnitModel)
+  name: OnArrived(BattleUnitModel)
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_OnArrived_BattleUnitModel_
+  commentId: M:DeviceOfHermes.ChainBattleStageManager.OnArrived(BattleUnitModel)
+  fullName: DeviceOfHermes.ChainBattleStageManager.OnArrived(BattleUnitModel)
+  nameWithType: ChainBattleStageManager.OnArrived(BattleUnitModel)
+- uid: DeviceOfHermes.ChainBattleStageManager.OnArrived*
+  name: OnArrived
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_OnArrived_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.OnArrived
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.OnArrived
+  nameWithType: ChainBattleStageManager.OnArrived
+- uid: DeviceOfHermes.ChainBattleStageManager.OnDead(BattleUnitModel)
+  name: OnDead(BattleUnitModel)
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_OnDead_BattleUnitModel_
+  commentId: M:DeviceOfHermes.ChainBattleStageManager.OnDead(BattleUnitModel)
+  fullName: DeviceOfHermes.ChainBattleStageManager.OnDead(BattleUnitModel)
+  nameWithType: ChainBattleStageManager.OnDead(BattleUnitModel)
+- uid: DeviceOfHermes.ChainBattleStageManager.OnDead*
+  name: OnDead
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_OnDead_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.OnDead
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.OnDead
+  nameWithType: ChainBattleStageManager.OnDead
+- uid: DeviceOfHermes.ChainBattleStageManager.OnRetreat(BattleUnitModel)
+  name: OnRetreat(BattleUnitModel)
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_OnRetreat_BattleUnitModel_
+  commentId: M:DeviceOfHermes.ChainBattleStageManager.OnRetreat(BattleUnitModel)
+  fullName: DeviceOfHermes.ChainBattleStageManager.OnRetreat(BattleUnitModel)
+  nameWithType: ChainBattleStageManager.OnRetreat(BattleUnitModel)
+- uid: DeviceOfHermes.ChainBattleStageManager.OnRetreat*
+  name: OnRetreat
+  href: api/DeviceOfHermes.ChainBattleStageManager.html#DeviceOfHermes_ChainBattleStageManager_OnRetreat_
+  commentId: Overload:DeviceOfHermes.ChainBattleStageManager.OnRetreat
+  isSpec: "True"
+  fullName: DeviceOfHermes.ChainBattleStageManager.OnRetreat
+  nameWithType: ChainBattleStageManager.OnRetreat
 - uid: DeviceOfHermes.CommonCoroutine
   name: CommonCoroutine
   href: api/DeviceOfHermes.CommonCoroutine.html
@@ -2004,6 +2133,38 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CommonCoroutine.ImageFadeout
   nameWithType: CommonCoroutine.ImageFadeout
+- uid: DeviceOfHermes.CommonCoroutine.TMPFadein(TMPro.TextMeshProUGUI,System.Single,System.Single)
+  name: TMPFadein(TextMeshProUGUI, float, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_TMPFadein_TMPro_TextMeshProUGUI_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.TMPFadein(TMPro.TextMeshProUGUI,System.Single,System.Single)
+  name.vb: TMPFadein(TextMeshProUGUI, Single, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.TMPFadein(TMPro.TextMeshProUGUI, float, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.TMPFadein(TMPro.TextMeshProUGUI, Single, Single)
+  nameWithType: CommonCoroutine.TMPFadein(TextMeshProUGUI, float, float)
+  nameWithType.vb: CommonCoroutine.TMPFadein(TextMeshProUGUI, Single, Single)
+- uid: DeviceOfHermes.CommonCoroutine.TMPFadein*
+  name: TMPFadein
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_TMPFadein_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.TMPFadein
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.TMPFadein
+  nameWithType: CommonCoroutine.TMPFadein
+- uid: DeviceOfHermes.CommonCoroutine.TMPFadeout(TMPro.TextMeshProUGUI,System.Single,System.Single)
+  name: TMPFadeout(TextMeshProUGUI, float, float)
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_TMPFadeout_TMPro_TextMeshProUGUI_System_Single_System_Single_
+  commentId: M:DeviceOfHermes.CommonCoroutine.TMPFadeout(TMPro.TextMeshProUGUI,System.Single,System.Single)
+  name.vb: TMPFadeout(TextMeshProUGUI, Single, Single)
+  fullName: DeviceOfHermes.CommonCoroutine.TMPFadeout(TMPro.TextMeshProUGUI, float, float)
+  fullName.vb: DeviceOfHermes.CommonCoroutine.TMPFadeout(TMPro.TextMeshProUGUI, Single, Single)
+  nameWithType: CommonCoroutine.TMPFadeout(TextMeshProUGUI, float, float)
+  nameWithType.vb: CommonCoroutine.TMPFadeout(TextMeshProUGUI, Single, Single)
+- uid: DeviceOfHermes.CommonCoroutine.TMPFadeout*
+  name: TMPFadeout
+  href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_TMPFadeout_
+  commentId: Overload:DeviceOfHermes.CommonCoroutine.TMPFadeout
+  isSpec: "True"
+  fullName: DeviceOfHermes.CommonCoroutine.TMPFadeout
+  nameWithType: CommonCoroutine.TMPFadeout
 - uid: DeviceOfHermes.CommonCoroutine.UnitEaseMoving(BattleUnitView,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
   name: UnitEaseMoving(BattleUnitView, Vector3, Vector3, float, float)
   href: api/DeviceOfHermes.CommonCoroutine.html#DeviceOfHermes_CommonCoroutine_UnitEaseMoving_BattleUnitView_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Single_

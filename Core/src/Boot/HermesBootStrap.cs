@@ -41,6 +41,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
             CompositePatch.Init();
             DynamicAbility.Init();
             UnitUIExtension.Init();
+            ChainBattle.Init();
 
             AdvancedPatch.Init();
 

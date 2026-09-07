@@ -404,6 +404,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.ChainBattleRetreatBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.ChainBattleRetreatBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.ChainBattleRetreatBuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.ChainBattleRetreatBuf.yml\" sourcestartlinenumber=\"1\">A buf base of retreat unit in chain battle</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.ChainBattleStageManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.ChainBattleStageManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.ChainBattleStageManager",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.ChainBattleStageManager.yml\" sourcestartlinenumber=\"1\">A base class of ChainBattle</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.CommonCoroutine.yml",
       "output": {
         ".html": {
@@ -2365,6 +2393,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/battleunit-extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/chainbattle.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/chainbattle.html"
         }
       },
       "version": ""
