@@ -116,6 +116,8 @@ public class RevengeDice : AdvancedDiceBase
             RevengeDice.Cards.Add(unit, new());
         }
 
+        playcard.ApplyDiceAbility<RevengeDice>(DiceMatch.AllDice);
+
         RevengeDice.Cards[unit].Enqueue(playcard);
     }
 
@@ -129,6 +131,8 @@ public class RevengeDice : AdvancedDiceBase
             RevengeDice.Cards.Add(unit, new());
         }
 
+        card.ApplyDiceAbility<RevengeDice>(DiceMatch.AllDice);
+
         RevengeDice.Cards[unit].Enqueue(card);
     }
 
@@ -138,4 +142,9 @@ public class RevengeDice : AdvancedDiceBase
     internal static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> Cards { get; set; } = new();
 
     internal static Dictionary<BattleUnitModel, BattlePlayingCardDataInUnitModel> CurrentRevenge { get; set; } = new();
+}
+
+/// <summary>Represents revenge card</summary>
+public interface IRevengeCard
+{
 }

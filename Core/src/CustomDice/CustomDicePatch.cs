@@ -186,8 +186,17 @@ internal static class CustomDicePatch
     {
         static Exception Finalizer(Exception __exception, List<BattlePlayingCardDataInUnitModel> ____allCardList)
         {
-            foreach (var card in ____allCardList)
+            foreach (var card in ____allCardList.AsDefer(out var list))
             {
+                if (card.cardAbility is IRevengeCard && card.owner is not null)
+                {
+                    RevengeDice.AddRevengeCard(card.owner, card);
+
+                    list.Remove(card);
+
+                    continue;
+                }
+
                 var behs = card.card.CreateDiceCardBehaviorList();
 
                 List<BattleDiceBehavior> revenges = new();
@@ -338,11 +347,18 @@ internal static class CustomDicePatch
     [HarmonyPatch(typeof(StageController), "StartParrying")]
     class PatchStartParrying
     {
-        static bool Prefix(BattlePlayingCardDataInUnitModel cardA)
+        static bool Prefix(BattlePlayingCardDataInUnitModel cardA, BattlePlayingCardDataInUnitModel cardB)
         {
             if (cardA.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is RevengeDice)))
             {
                 StageController.Instance.StartActionNoPatch(cardA);
+
+                return false;
+            }
+
+            if (cardB.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is RevengeDice)))
+            {
+                StageController.Instance.StartActionNoPatch(cardB);
 
                 return false;
             }

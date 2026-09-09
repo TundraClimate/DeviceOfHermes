@@ -2209,6 +2209,12 @@ references:
   commentId: T:DeviceOfHermes.CustomDice.EqualDice
   fullName: DeviceOfHermes.CustomDice.EqualDice
   nameWithType: EqualDice
+- uid: DeviceOfHermes.CustomDice.IRevengeCard
+  name: IRevengeCard
+  href: api/DeviceOfHermes.CustomDice.IRevengeCard.html
+  commentId: T:DeviceOfHermes.CustomDice.IRevengeCard
+  fullName: DeviceOfHermes.CustomDice.IRevengeCard
+  nameWithType: IRevengeCard
 - uid: DeviceOfHermes.CustomDice.RevengeDice
   name: RevengeDice
   href: api/DeviceOfHermes.CustomDice.RevengeDice.html

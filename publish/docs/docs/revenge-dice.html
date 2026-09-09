@@ -112,6 +112,14 @@
 </code></pre>
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
 それの代わりに<code>RevengeDice</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
+<h2 id="irevengecard">IRevengeCard</h2>
+<p>ページ効果に<code>IRevengeCard</code>を実装することで、ページ単位での反撃を戦闘開始時に追加できます。</p>
+<p>例:</p>
+<pre><code class="lang-cs">class DiceCardSelfAbility_Revenge : DiceCardSelfAbilityBase, IRevengeCard
+{
+}
+</code></pre>
+<p>この効果をページ効果として追加したページは戦闘開始時にマッチ状態が解除され、反撃を除くページがそのまま特殊反撃ページとしてスタックされます。</p>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="onbeforedeciderevengebattleplayingcarddatainunitmodel-battledicebehavior"><code>OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)</code></h3>
 <pre><code class="lang-cs">public override void OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
