@@ -276,7 +276,7 @@ internal static class CustomDicePatch
                     return;
                 }
 
-                var playcard = res.Dequeue();
+                var playcard = res.Peek();
 
                 var speed = atkDice.card.speedDiceResultValue + 1;
                 var target = atkDice.owner;
@@ -306,12 +306,17 @@ internal static class CustomDicePatch
 
                 }
 
-                foreach (var abi in playcard.cardBehaviorQueue.SelectMany(beh => beh.abilityList))
+                var abis = playcard.cardBehaviorQueue.FlatMap(beh => beh.abilityList.OfType<RevengeDice>());
+
+                abis.Foreach(rev => rev.OnBeforeRevenge(playcard, atkDice));
+
+                if (abis.All(rev => !rev.isReuse))
                 {
-                    if (abi is RevengeDice rev)
-                    {
-                        rev.OnBeforeRevenge(playcard, atkDice);
-                    }
+                    res.Dequeue();
+                }
+                else
+                {
+                    abis.Foreach(abi => abi.isReuse = false);
                 }
 
                 RevengeDice.CurrentRevenge.Add(__instance, playcard);

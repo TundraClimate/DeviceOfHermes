@@ -132,6 +132,9 @@ public class RevengeDice : AdvancedDiceBase
         RevengeDice.Cards[unit].Enqueue(card);
     }
 
+    /// <summary>Is revenge reuses</summary>
+    public bool isReuse;
+
     internal static Dictionary<BattleUnitModel, Queue<BattlePlayingCardDataInUnitModel>> Cards { get; set; } = new();
 
     internal static Dictionary<BattleUnitModel, BattlePlayingCardDataInUnitModel> CurrentRevenge { get; set; } = new();
