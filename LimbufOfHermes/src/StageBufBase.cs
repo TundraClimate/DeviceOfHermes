@@ -7,4 +7,8 @@ public class StageBufBase : BattleUnitBuf
     public virtual void OnConsume(int stack, BattleUnitModel? consume)
     {
     }
+
+    internal virtual void AddBuf(int stack)
+    {
+    }
 }

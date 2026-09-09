@@ -38,18 +38,23 @@ public class BattleUnitBuf_Limbuf_Bloodfeast : StageBufBase
             {
                 BleedDmgHistory.GetValue(StageController.Instance.waveHistory, _ => new(0)).value += dmg;
 
-                StageBufListDetail.ChangeBufStack<BattleUnitBuf_Limbuf_Bloodfeast>(s => 999.Min(s + dmg));
-                StageBufListDetail.UpdateUI();
-
-                if (StageBufListDetail.GetBufCount(StageBuf.Bloodfeast) != 0)
-                {
-                    BattleObjectManager.instance.GetAliveList().ForEach(unit =>
-                    {
-                        unit.EachPassiveOf<ILimbuf.OnAddBloodfeast>(i => i.OnAddBloodfeast(dmg));
-                        unit.EachUnitBufOf<ILimbuf.OnAddBloodfeast>(i => i.OnAddBloodfeast(dmg));
-                    });
-                }
+                StageBufListDetail.AddBufCount(StageBuf.Bloodfeast, dmg);
             }
+        }
+    }
+
+    internal override void AddBuf(int stack)
+    {
+        StageBufListDetail.ChangeBufStack<BattleUnitBuf_Limbuf_Bloodfeast>(s => 999.Min(s + stack));
+        StageBufListDetail.UpdateUI();
+
+        if (StageBufListDetail.GetBufCount(StageBuf.Bloodfeast) != 0)
+        {
+            BattleObjectManager.instance.GetAliveList().ForEach(unit =>
+            {
+                unit.EachPassiveOf<ILimbuf.OnAddBloodfeast>(i => i.OnAddBloodfeast(stack));
+                unit.EachUnitBufOf<ILimbuf.OnAddBloodfeast>(i => i.OnAddBloodfeast(stack));
+            });
         }
     }
 

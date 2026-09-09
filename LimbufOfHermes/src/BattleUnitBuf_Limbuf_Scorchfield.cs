@@ -30,18 +30,23 @@ public class BattleUnitBuf_Limbuf_Scorchfield : StageBufBase
             {
                 BurnDmgHistory.GetValue(StageController.Instance.waveHistory, _ => new(0)).value += dmg;
 
-                StageBufListDetail.ChangeBufStack<BattleUnitBuf_Limbuf_Scorchfield>(s => 999.Min(s + dmg));
-                StageBufListDetail.UpdateUI();
-
-                if (StageBufListDetail.GetBufCount(StageBuf.Scorchfield) != 0)
-                {
-                    BattleObjectManager.instance.GetAliveList().ForEach(unit =>
-                    {
-                        unit.EachPassiveOf<ILimbuf.OnAddScorchfield>(i => i.OnAddScorchfield(dmg));
-                        unit.EachUnitBufOf<ILimbuf.OnAddScorchfield>(i => i.OnAddScorchfield(dmg));
-                    });
-                }
+                StageBufListDetail.AddBufCount(StageBuf.Scorchfield, dmg);
             }
+        }
+    }
+
+    internal override void AddBuf(int stack)
+    {
+        StageBufListDetail.ChangeBufStack<BattleUnitBuf_Limbuf_Scorchfield>(s => 999.Min(s + stack));
+        StageBufListDetail.UpdateUI();
+
+        if (StageBufListDetail.GetBufCount(StageBuf.Scorchfield) != 0)
+        {
+            BattleObjectManager.instance.GetAliveList().ForEach(unit =>
+            {
+                unit.EachPassiveOf<ILimbuf.OnAddScorchfield>(i => i.OnAddScorchfield(stack));
+                unit.EachUnitBufOf<ILimbuf.OnAddScorchfield>(i => i.OnAddScorchfield(stack));
+            });
         }
     }
 

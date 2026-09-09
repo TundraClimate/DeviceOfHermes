@@ -86,6 +86,12 @@ public static class StageBufListDetail
         return GetStageBuf(buf)?.stack ?? 0;
     }
 
+    /// <summary>Adds buf count</summary>
+    public static void AddBufCount(StageBuf buf, int count)
+    {
+        GetStageBuf(buf)?.AddBuf(count);
+    }
+
     internal static StageBufBase? GetStageBuf(StageBuf buf)
     {
         var ty = buf switch
