@@ -8329,6 +8329,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.IsKeepBarrier.IsKeepBarrier
   nameWithType: ILimbuf.IsKeepBarrier.IsKeepBarrier
+- uid: LimbufOfHermes.ILimbuf.IsKeepPoise
+  name: ILimbuf.IsKeepPoise
+  href: api/LimbufOfHermes.ILimbuf.IsKeepPoise.html
+  commentId: T:LimbufOfHermes.ILimbuf.IsKeepPoise
+  fullName: LimbufOfHermes.ILimbuf.IsKeepPoise
+  nameWithType: ILimbuf.IsKeepPoise
+- uid: LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise
+  name: IsKeepPoise()
+  href: api/LimbufOfHermes.ILimbuf.IsKeepPoise.html#LimbufOfHermes_ILimbuf_IsKeepPoise_IsKeepPoise
+  commentId: M:LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise
+  fullName: LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise()
+  nameWithType: ILimbuf.IsKeepPoise.IsKeepPoise()
+- uid: LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise*
+  name: IsKeepPoise
+  href: api/LimbufOfHermes.ILimbuf.IsKeepPoise.html#LimbufOfHermes_ILimbuf_IsKeepPoise_IsKeepPoise_
+  commentId: Overload:LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise
+  nameWithType: ILimbuf.IsKeepPoise.IsKeepPoise
 - uid: LimbufOfHermes.ILimbuf.OnAddBloodfeast
   name: ILimbuf.OnAddBloodfeast
   href: api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.html

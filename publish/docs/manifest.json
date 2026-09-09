@@ -1692,6 +1692,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.IsKeepPoise.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.IsKeepPoise.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.IsKeepPoise",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.IsKeepPoise.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnAddBloodfeast.yml",
       "output": {
         ".html": {

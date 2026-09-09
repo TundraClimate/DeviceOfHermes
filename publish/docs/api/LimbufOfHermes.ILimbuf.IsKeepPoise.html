@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface ILimbuf.OnCriticalAttack | DeviceOfHermes </title>
+      <title>Interface ILimbuf.IsKeepPoise | DeviceOfHermes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface ILimbuf.OnCriticalAttack | DeviceOfHermes ">
+      <meta name="title" content="Interface ILimbuf.IsKeepPoise | DeviceOfHermes ">
       
       <meta name="description" content="Interface">
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/new/master/apiSpec/new?filename=LimbufOfHermes_ILimbuf_OnCriticalAttack.md&amp;value=---%0Auid%3A%20LimbufOfHermes.ILimbuf.OnCriticalAttack%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/new/master/apiSpec/new?filename=LimbufOfHermes_ILimbuf_IsKeepPoise.md&amp;value=---%0Auid%3A%20LimbufOfHermes.ILimbuf.IsKeepPoise%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="LimbufOfHermes.ILimbuf.OnCriticalAttack">
+        <article data-uid="LimbufOfHermes.ILimbuf.IsKeepPoise">
 
 
 
-  <h1 id="LimbufOfHermes_ILimbuf_OnCriticalAttack" data-uid="LimbufOfHermes.ILimbuf.OnCriticalAttack" class="text-break">
-Interface ILimbuf.OnCriticalAttack  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <h1 id="LimbufOfHermes_ILimbuf_IsKeepPoise" data-uid="LimbufOfHermes.ILimbuf.IsKeepPoise" class="text-break">
+Interface ILimbuf.IsKeepPoise  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Interface ILimbuf.OnCriticalAttack  <a class="header-action link-secondary" titl
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILimbuf.OnCriticalAttack</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ILimbuf.IsKeepPoise</code></pre>
   </div>
 
 
@@ -134,27 +134,27 @@ Interface ILimbuf.OnCriticalAttack  <a class="header-action link-secondary" titl
 </h2>
 
 
-  <a id="LimbufOfHermes_ILimbuf_OnCriticalAttack_OnCriticalAttack_" data-uid="LimbufOfHermes.ILimbuf.OnCriticalAttack.OnCriticalAttack*"></a>
+  <a id="LimbufOfHermes_ILimbuf_IsKeepPoise_IsKeepPoise_" data-uid="LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise*"></a>
 
-  <h3 id="LimbufOfHermes_ILimbuf_OnCriticalAttack_OnCriticalAttack_BattleDiceBehavior_" data-uid="LimbufOfHermes.ILimbuf.OnCriticalAttack.OnCriticalAttack(BattleDiceBehavior)">
-  OnCriticalAttack(BattleDiceBehavior)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <h3 id="LimbufOfHermes_ILimbuf_IsKeepPoise_IsKeepPoise" data-uid="LimbufOfHermes.ILimbuf.IsKeepPoise.IsKeepPoise">
+  IsKeepPoise()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>On panic</p>
+  <div class="markdown level1 summary"><p>Is keeps poise</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnCriticalAttack(BattleDiceBehavior behavior)</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsKeepPoise()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><code>behavior</code> <span class="xref">BattleDiceBehavior</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
-
 
 
 
@@ -170,7 +170,7 @@ Interface ILimbuf.OnCriticalAttack  <a class="header-action link-secondary" titl
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L63" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/LimbufOfHermes/src/ILimbuf.cs/#L49" class="edit-link">Edit this page</a>
         </div>
 
 

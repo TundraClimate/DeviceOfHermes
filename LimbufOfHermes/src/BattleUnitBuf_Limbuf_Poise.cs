@@ -23,7 +23,23 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
 
     void UsePoise()
     {
-        ChangeStack(stack => ((int)(stack * 0.75f)));
+        var consume = true;
+
+        void Fn(ILimbuf.IsKeepPoise i)
+        {
+            if (i.IsKeepPoise())
+            {
+                consume = false;
+            }
+        }
+
+        base._owner.EachPassiveOf<ILimbuf.IsKeepPoise>(Fn);
+        base._owner.EachUnitBufOf<ILimbuf.IsKeepPoise>(Fn);
+
+        if (consume)
+        {
+            ChangeStack(stack => ((int)(stack * 0.75f)));
+        }
     }
 
     static BattleUnitBuf_Limbuf_Poise? GetPoise(BattleUnitModel owner)

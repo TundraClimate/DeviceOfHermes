@@ -46,6 +46,13 @@ public static class ILimbuf
     }
 
     /// <summary>Interface</summary>
+    public interface IsKeepPoise
+    {
+        /// <summary>Is keeps poise</summary>
+        public bool IsKeepPoise();
+    }
+
+    /// <summary>Interface</summary>
     public interface OnRollCritical
     {
         /// <summary>On panic</summary>
