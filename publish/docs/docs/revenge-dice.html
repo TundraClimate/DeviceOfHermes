@@ -97,6 +97,10 @@
 {
     static string Desc = &quot;復讐ダイス&quot;;
 
+    public override void OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
+    {
+    }
+
     public override void OnBeforeRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
     {
     }
@@ -109,6 +113,17 @@
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
 それの代わりに<code>RevengeDice</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="onbeforedeciderevengebattleplayingcarddatainunitmodel-battledicebehavior"><code>OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
+{
+}
+</code></pre>
+<p>被撃する直前に特殊反撃を使用するであろうダイスで実行されます。<br>
+まだ使用は確定していません。</p>
+<ul>
+<li><code>card</code>: そのダイスが実際に使用されるページ。</li>
+<li><code>revengeBy</code>: 反撃のトリガーになった敵のダイスです。</li>
+</ul>
 <h3 id="onbeforerevengebattleplayingcarddatainunitmodel-battledicebehavior"><code>OnBeforeRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)</code></h3>
 <pre><code class="lang-cs">public override void OnBeforeRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
 {

@@ -2250,6 +2250,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.CustomDice.RevengeDice.IsRevengeNow
   nameWithType: RevengeDice.IsRevengeNow
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  name: OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnBeforeDecideRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.CustomDice.RevengeDice.OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+  nameWithType: RevengeDice.OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
+- uid: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeDecideRevenge*
+  name: OnBeforeDecideRevenge
+  href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnBeforeDecideRevenge_
+  commentId: Overload:DeviceOfHermes.CustomDice.RevengeDice.OnBeforeDecideRevenge
+  isSpec: "True"
+  fullName: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeDecideRevenge
+  nameWithType: RevengeDice.OnBeforeDecideRevenge
 - uid: DeviceOfHermes.CustomDice.RevengeDice.OnBeforeRevenge(BattlePlayingCardDataInUnitModel,BattleDiceBehavior)
   name: OnBeforeRevenge(BattlePlayingCardDataInUnitModel, BattleDiceBehavior)
   href: api/DeviceOfHermes.CustomDice.RevengeDice.html#DeviceOfHermes_CustomDice_RevengeDice_OnBeforeRevenge_BattlePlayingCardDataInUnitModel_BattleDiceBehavior_

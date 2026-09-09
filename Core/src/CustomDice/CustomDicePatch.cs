@@ -26,6 +26,7 @@ internal static class CustomDicePatch
         Patch(typeof(PatchOnDiceRollen));
         Patch(typeof(PatchDiceMin));
         Patch(typeof(PatchDiceMax));
+        Patch(typeof(PatchOnBeforeGiveDamage));
 
         DiceUIChanger.Init();
     }
@@ -682,6 +683,24 @@ internal static class CustomDicePatch
                 var num = Mathf.CeilToInt((selfMin + enemMin) / 2);
 
                 __result = num;
+            }
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "BeforeGiveDamage")]
+    class PatchOnBeforeGiveDamage
+    {
+        static Exception Finalizer(Exception __exception, BattlePlayingCardDataInUnitModel __instance, BattleDiceBehavior behavior)
+        {
+            var target = __instance.target;
+
+            if (target is not null && RevengeDice.Cards.TryGetValue(target, out var res) && res.TryPeek(out var next))
+            {
+                next.cardBehaviorQueue
+                    .FlatMap(card => card.abilityList.OfType<RevengeDice>())
+                    .Foreach(abi => abi.OnBeforeDecideRevenge(next, behavior));
             }
 
             return __exception;

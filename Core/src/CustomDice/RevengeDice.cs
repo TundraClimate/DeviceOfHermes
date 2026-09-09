@@ -66,6 +66,11 @@ public class RevengeDice : AdvancedDiceBase
         return res.Count;
     }
 
+    /// <summary>A unit when before revenge decided</summary>
+    public virtual void OnBeforeDecideRevenge(BattlePlayingCardDataInUnitModel card, BattleDiceBehavior revengeBy)
+    {
+    }
+
     /// <summary>A unit when revenge decided</summary>
     /// <param name="card">A revenge dicecard</param>
     /// <param name="revengeBy">A dice of revenge decided</param>
