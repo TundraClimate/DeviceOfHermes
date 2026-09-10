@@ -349,14 +349,14 @@ internal static class CustomDicePatch
     {
         static bool Prefix(BattlePlayingCardDataInUnitModel cardA, BattlePlayingCardDataInUnitModel cardB)
         {
-            if (cardA.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is RevengeDice)))
+            if (cardA.cardBehaviorQueue.Count > 0 && cardA.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is RevengeDice)))
             {
                 StageController.Instance.StartActionNoPatch(cardA);
 
                 return false;
             }
 
-            if (cardB.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is RevengeDice)))
+            if (cardB.cardBehaviorQueue.Count > 0 && cardB.cardBehaviorQueue.All(beh => beh.abilityList.Exists(abi => abi is RevengeDice)))
             {
                 StageController.Instance.StartActionNoPatch(cardB);
 
