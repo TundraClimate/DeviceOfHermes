@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_AdvancedTakeDamage" data-uid="DeviceOfHermes.AdvancedTakeDamage" class="text-break">
-Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -155,9 +155,9 @@ Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View so
 
   <a id="DeviceOfHermes_AdvancedTakeDamage_DealDamage_" data-uid="DeviceOfHermes.AdvancedTakeDamage.DealDamage*"></a>
 
-  <h3 id="DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist__" data-uid="DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})">
-  DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <h3 id="DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_DamageType_BattleUnitModel_KeywordBuf_AtkResist_" data-uid="DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,DamageType,BattleUnitModel,KeywordBuf,AtkResist)">
+  DealDamage(BattleUnitModel, int, BehaviourDetail, DamageType, BattleUnitModel?, KeywordBuf, AtkResist)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deals Damage with specific detail and resist</p>
@@ -165,26 +165,25 @@ Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DealDamage(this BattleUnitModel target, int baseDmg, BehaviourDetail detail, BattleUnitModel? attacker = null, AtkResist? resist = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DealDamage(this BattleUnitModel owner, int baseDmg, BehaviourDetail detail, DamageType type = DamageType.Attack, BattleUnitModel? attacker = null, KeywordBuf keyword = KeywordBuf.None, AtkResist resist = AtkResist.None)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>target</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd><p>An attacking target</p>
-</dd>
+    <dt><code>owner</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd></dd>
     <dt><code>baseDmg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>A base damage before resist</p>
-</dd>
+    <dd></dd>
     <dt><code>detail</code> <span class="xref">BehaviourDetail</span></dt>
-    <dd><p>The damage detail only atk type</p>
-</dd>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">DamageType</span></dt>
+    <dd></dd>
     <dt><code>attacker</code> <span class="xref">BattleUnitModel</span></dt>
-    <dd><p>An attacker unit</p>
-</dd>
-    <dt><code>resist</code> <span class="xref">AtkResist</span>?</dt>
-    <dd><p>Take resist override</p>
-</dd>
+    <dd></dd>
+    <dt><code>keyword</code> <span class="xref">KeywordBuf</span></dt>
+    <dd></dd>
+    <dt><code>resist</code> <span class="xref">AtkResist</span></dt>
+    <dd></dd>
   </dl>
 
 
@@ -193,14 +192,7 @@ Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View so
 
 
 
-  <h4 class="section" id="DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist___examples">Examples</h4>
-  <pre><code class="lang-csharp">target.DealDamage(999, BehaviourDetail.Slash);</code></pre>
 
-
-  <h4 class="section" id="DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist___remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Use default resistance if resist override is null.<br>
-baseDmg is affected by resistance but not affected reducation passive, buf and etc.</p>
-</div>
 
 
 
@@ -209,7 +201,7 @@ baseDmg is affected by resistance but not affected reducation passive, buf and e
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

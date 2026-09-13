@@ -1557,15 +1557,15 @@ references:
   commentId: T:DeviceOfHermes.AdvancedTakeDamage
   fullName: DeviceOfHermes.AdvancedTakeDamage
   nameWithType: AdvancedTakeDamage
-- uid: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
-  name: DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
-  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_BattleUnitModel_System_Nullable_AtkResist__
-  commentId: M:DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,BattleUnitModel,System.Nullable{AtkResist})
-  name.vb: DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
-  fullName: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel, int, LOR_DiceSystem.BehaviourDetail, BattleUnitModel?, AtkResist?)
-  fullName.vb: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, LOR_DiceSystem.BehaviourDetail, BattleUnitModel, AtkResist?)
-  nameWithType: AdvancedTakeDamage.DealDamage(BattleUnitModel, int, BehaviourDetail, BattleUnitModel?, AtkResist?)
-  nameWithType.vb: AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, BehaviourDetail, BattleUnitModel, AtkResist?)
+- uid: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,DamageType,BattleUnitModel,KeywordBuf,AtkResist)
+  name: DealDamage(BattleUnitModel, int, BehaviourDetail, DamageType, BattleUnitModel?, KeywordBuf, AtkResist)
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_DamageType_BattleUnitModel_KeywordBuf_AtkResist_
+  commentId: M:DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,DamageType,BattleUnitModel,KeywordBuf,AtkResist)
+  name.vb: DealDamage(BattleUnitModel, Integer, BehaviourDetail, DamageType, BattleUnitModel, KeywordBuf, AtkResist)
+  fullName: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel, int, LOR_DiceSystem.BehaviourDetail, DamageType, BattleUnitModel?, KeywordBuf, AtkResist)
+  fullName.vb: DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, LOR_DiceSystem.BehaviourDetail, DamageType, BattleUnitModel, KeywordBuf, AtkResist)
+  nameWithType: AdvancedTakeDamage.DealDamage(BattleUnitModel, int, BehaviourDetail, DamageType, BattleUnitModel?, KeywordBuf, AtkResist)
+  nameWithType.vb: AdvancedTakeDamage.DealDamage(BattleUnitModel, Integer, BehaviourDetail, DamageType, BattleUnitModel, KeywordBuf, AtkResist)
 - uid: DeviceOfHermes.AdvancedTakeDamage.DealDamage*
   name: DealDamage
   href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_DealDamage_

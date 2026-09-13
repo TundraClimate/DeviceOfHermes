@@ -92,18 +92,23 @@
 <h1 id="advancedtakedamage">AdvancedTakeDamage</h1>
 <p>攻撃属性と耐性を指定してダメージを与えます。</p>
 <p>例:</p>
-<pre><code class="lang-cs">target.DealDamage(999, BehaviourDetail.Hit, owner);
+<pre><code class="lang-cs">// targetに999の打撃属性ダメージを与える
+target.DealDamage(999, BehaviourDetail.Hit);
+
+// targetに脆弱耐性として100の斬撃ダメージを与えます。
+target.DealDamage(100, BehaviourDetail.Slash, resist: AtkResist.Weak);
 </code></pre>
-<p>この例は<code>target</code>に対して999の打撃属性ダメージを与えるコードです。</p>
 <h2 id="specified-usage">Specified usage</h2>
-<h3 id="dealdamageint-lor_dicesystembehaviourdetail-battleunitmodel-atkresist"><code>DealDamage(int, LOR_DiceSystem.BehaviourDetail, BattleUnitModel, AtkResist)</code></h3>
-<pre><code class="lang-cs">target.DealDamage(dmg, detail, owner, resist);
+<h3 id="dealdamagebattleunitmodel-int-lor_dicesystembehaviourdetail-damagetype-battleunitmodel-keywordbuf-atkresist"><code>DealDamage(BattleUnitModel, int, LOR_DiceSystem.BehaviourDetail, DamageType, BattleUnitModel, KeywordBuf, AtkResist)</code></h3>
+<pre><code class="lang-cs">target.DealDamage(dmg, detail, type, attacker, keyword, resist);
 </code></pre>
 <ul>
 <li><code>target</code>: ダメージを与える対象です。</li>
 <li><code>dmg</code>: 耐性が適用される前のダメージです。</li>
 <li><code>detail</code>: 攻撃属性です。LOR_DiceSystem.BehaviourDetailを指定します。</li>
-<li><code>owner</code>: 攻撃を与える側です。省略可能。</li>
+<li><code>type</code>: 攻撃の種類です。省略可能。</li>
+<li><code>attacker</code>: 攻撃を与える側です。省略可能。</li>
+<li><code>keyword</code>: ダメージ原因の<code>KeywordBuf</code>です。省略可能。</li>
 <li><code>resist</code>: 攻撃を受ける耐性です。強制的に変更されるので、必要ない場合は指定しないでください。</li>
 </ul>
 
