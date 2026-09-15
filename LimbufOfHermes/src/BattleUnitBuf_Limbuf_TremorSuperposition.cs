@@ -9,6 +9,17 @@ public sealed class BattleUnitBuf_Limbuf_TremorSuperposition : BattleUnitBuf_Lim
     /// <summary>Impl bufType</summary>
     public override KeywordBuf bufType => LimKeywordBuf.TremorSuperposition;
 
+    /// <summary>Impl bufActivatedText</summary>
+    public override string bufActivatedText
+    {
+        get
+        {
+            var list = string.Join(Environment.NewLine, GetConversionTremor().Map(tremor => "- " + BattleEffectTextsXmlList.Instance.GetEffectTextName(tremor.KeywordId)));
+
+            return BattleEffectTextsXmlList.Instance.GetEffectTextDesc(this.keywordId) + list;
+        }
+    }
+
     /// <summary>Impl OnRoundEnd</summary>
     public override void OnRoundEnd()
     {

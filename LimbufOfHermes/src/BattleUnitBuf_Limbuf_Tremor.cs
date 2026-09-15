@@ -44,6 +44,13 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
         return base._owner.bufListDetail.HasBuf<BattleUnitBuf_Limbuf_TremorSuperposition>();
     }
 
+    /// <summary>Returns conversion tremor</summary>
+    public List<BattleUnitBuf> GetConversionTremor()
+    {
+        return base._owner.bufListDetail.GetActivatedBufList()
+                .FindAll(buf => buf is BattleUnitBuf_Limbuf_Tremor && buf.GetType() != typeof(BattleUnitBuf_Limbuf_Tremor) && buf.GetType() != typeof(BattleUnitBuf_Limbuf_TremorSuperposition));
+    }
+
     /// <summary>Impl OnStackChange</summary>
     public override void OnStackChangeAll(BattleUnitBuf buf, int last)
     {

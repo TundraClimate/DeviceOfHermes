@@ -4,13 +4,13 @@
 
         <BattleEffectText ID="LimbufOfHermes_Rupture">
             <Name>破裂</Name>
-            <Desc>被ダメージ時、破裂の値だけ物理追加ダメージを受ける。
+            <Desc>被ダメージ時、{0}だけ物理追加ダメージを受ける。
 効果発動後、値が2/3に減少。(端数切り捨て)</Desc>
         </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_Tremor">
             <Name>振動</Name>
-            <Desc>振動爆発を受けるとき、振動の値だけ混乱追加ダメージを受ける。</Desc>
+            <Desc>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。</Desc>
         </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_TremorBurst">
@@ -33,7 +33,10 @@
 
         <BattleEffectText ID="LimbufOfHermes_TremorSuperposition">
             <Name>振動-重畳</Name>
-            <Desc>振幅絡縺を通じて得られる。振幅変換時、振動-重畳に該当特殊振動が追加される</Desc>
+            <Desc>振幅絡縺を通じて得られる。振幅変換時、振動-重畳に該当特殊振動が追加される
+
+適用中の振動効果
+</Desc>
         </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_Sinking">
@@ -60,7 +63,7 @@
 
         <BattleEffectText ID="LimbufOfHermes_Poise">
             <Name>呼吸</Name>
-            <Desc>攻撃ダイス判定時、(呼吸 * 5)%の確率でクリティカルを与える。
+            <Desc>攻撃ダイス判定時、({0} * 5)%の確率でクリティカルを与える。
 クリティカル発動時は与えるダメージが20%増加する。
 クリティカル発動後、この効果の値が3/4に減少する。(端数切り捨て)</Desc>
         </BattleEffectText>
