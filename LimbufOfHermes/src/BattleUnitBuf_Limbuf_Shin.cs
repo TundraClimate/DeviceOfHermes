@@ -31,35 +31,8 @@ public class BattleUnitBuf_Limbuf_Shin : LimbufBase
         var go = bundle.LoadAsset<GameObject>("Shin");
 
         return UnityObject.Instantiate(go, owner.view.charAppearance.transform)
-            .Also(aura => aura.AddComponent<ShinAura>().Init(owner, marker));
+            .Also(aura => aura.AddComponent<EffectManage>().Init(owner.view, marker));
     }
 
     private GameObject? aura;
-
-    class ShinAura : MonoBehaviour
-    {
-        public void Init(BattleUnitModel owner, BattleUnitBuf? shin)
-        {
-            this.owner = owner;
-            this.shin = shin;
-        }
-
-        void FixedUpdate()
-        {
-            gameObject.GetComponentsInChildren<Transform>().Filter(i => i.gameObject != gameObject)
-                .Foreach(i => i.gameObject.layer = LayerMask.NameToLayer(owner!.view.charAppearance.GetLayerName()));
-
-            if (shin is not null)
-            {
-                if (shin.IsDestroyed() || shin.Hide || !shin.Owner.bufListDetail.GetActivatedBufList().Contains(shin))
-                {
-                    UnityObject.Destroy(gameObject);
-                }
-            }
-        }
-
-        private BattleUnitModel? owner;
-
-        private BattleUnitBuf? shin;
-    }
 }

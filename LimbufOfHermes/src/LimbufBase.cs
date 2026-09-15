@@ -29,4 +29,31 @@ public class LimbufBase : AdvancedUnitBuf
     }
 
     internal static AssetBundle bundle = AssetBundle.LoadFromStream(typeof(LimbufBase).Assembly.GetManifestResourceStream("LimbufOfHermes.public.limbuf.assetbundle"));
+
+    internal class EffectManage : MonoBehaviour
+    {
+        public void Init(BattleUnitView view, BattleUnitBuf? marker)
+        {
+            this.view = view;
+            this.marker = marker;
+        }
+
+        void FixedUpdate()
+        {
+            gameObject.GetComponentsInChildren<Transform>().Filter(i => i.gameObject != gameObject)
+                .Foreach(i => i.gameObject.layer = LayerMask.NameToLayer(view!.charAppearance.GetLayerName()));
+
+            if (marker is not null)
+            {
+                if (marker.IsDestroyed() || marker.Hide || !marker.Owner.bufListDetail.GetActivatedBufList().Contains(marker))
+                {
+                    UnityObject.Destroy(gameObject);
+                }
+            }
+        }
+
+        private BattleUnitView? view;
+
+        private BattleUnitBuf? marker;
+    }
 }
