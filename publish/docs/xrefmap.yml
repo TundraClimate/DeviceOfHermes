@@ -7418,6 +7418,80 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.positiveType
   nameWithType: BattleUnitBuf_Limbuf_Poise.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget
+  name: BattleUnitBuf_Limbuf_PrescriptTarget
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
+  name: Init(BattleUnitModel)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_Init_BattleUnitModel_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init*
+  name: Init
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_Init_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.Init
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf(System.Int32)
+  name: OnAddBuf(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_OnAddBuf_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf(System.Int32)
+  name.vb: OnAddBuf(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf*
+  name: OnAddBuf
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_OnAddBuf_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.OnAddBuf
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.bufType
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.bufType
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture
   name: BattleUnitBuf_Limbuf_Rupture
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture.html
@@ -7855,6 +7929,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.Consume
   nameWithType: BattleUnitBuf_Limbuf_Tremor.Consume
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetConversionTremor
+  name: GetConversionTremor()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_GetConversionTremor
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetConversionTremor
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetConversionTremor()
+  nameWithType: BattleUnitBuf_Limbuf_Tremor.GetConversionTremor()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetConversionTremor*
+  name: GetConversionTremor
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_GetConversionTremor_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetConversionTremor
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetConversionTremor
+  nameWithType: BattleUnitBuf_Limbuf_Tremor.GetConversionTremor
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.Hide
   name: Hide
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_Hide
@@ -8267,6 +8354,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.OnTremorBurst
   nameWithType: BattleUnitBuf_Limbuf_TremorSuperposition.OnTremorBurst
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText
+  name: bufActivatedText
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorSuperposition_bufActivatedText
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText
+  nameWithType: BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText*
+  name: bufActivatedText
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorSuperposition_bufActivatedText_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText
+  nameWithType: BattleUnitBuf_Limbuf_TremorSuperposition.bufActivatedText
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.bufType
   name: bufType
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorSuperposition_bufType
@@ -8809,6 +8909,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.Poise
   nameWithType: LimKeywordBuf.Poise
+- uid: LimbufOfHermes.LimKeywordBuf.PrescriptTarget
+  name: PrescriptTarget
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_PrescriptTarget
+  commentId: P:LimbufOfHermes.LimKeywordBuf.PrescriptTarget
+  fullName: LimbufOfHermes.LimKeywordBuf.PrescriptTarget
+  nameWithType: LimKeywordBuf.PrescriptTarget
+- uid: LimbufOfHermes.LimKeywordBuf.PrescriptTarget*
+  name: PrescriptTarget
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_PrescriptTarget_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.PrescriptTarget
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.PrescriptTarget
+  nameWithType: LimKeywordBuf.PrescriptTarget
 - uid: LimbufOfHermes.LimKeywordBuf.Rupture
   name: Rupture
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Rupture

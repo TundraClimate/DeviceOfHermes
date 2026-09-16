@@ -86,4 +86,8 @@ public class LimKeywordBuf
     /// <summary>BloodfeastConsumed KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_BloodfeastConsumed))]
     public static KeywordBuf BloodfeastConsumed { get; private set; }
+
+    /// <summary>PrescriptTarget KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_PrescriptTarget))]
+    public static KeywordBuf PrescriptTarget { get; private set; }
 }

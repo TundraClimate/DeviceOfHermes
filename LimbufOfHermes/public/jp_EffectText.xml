@@ -133,5 +133,10 @@
 この数値は全キャラクターで共有される。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_PrescriptTarget">
+          <Name>指令対象</Name>
+          <Desc>毎幕1つの対象のみに適用される。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>

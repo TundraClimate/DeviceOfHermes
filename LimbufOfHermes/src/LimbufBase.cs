@@ -40,14 +40,17 @@ public class LimbufBase : AdvancedUnitBuf
 
         void FixedUpdate()
         {
-            gameObject.GetComponentsInChildren<Transform>().Filter(i => i.gameObject != gameObject)
-                .Foreach(i => i.gameObject.layer = LayerMask.NameToLayer(view!.charAppearance.GetLayerName()));
-
-            if (marker is not null)
+            if (view is not null)
             {
-                if (marker.IsDestroyed() || marker.Hide || !marker.Owner.bufListDetail.GetActivatedBufList().Contains(marker))
+                gameObject.GetComponentsInChildren<Transform>().Filter(i => i.gameObject != gameObject)
+                    .Foreach(i => i.gameObject.layer = LayerMask.NameToLayer(view.charAppearance.GetLayerName()));
+
+                if (marker is not null)
                 {
-                    UnityObject.Destroy(gameObject);
+                    if (marker.IsDestroyed() || marker.Hide || !marker.Owner.bufListDetail.GetActivatedBufList().Contains(marker))
+                    {
+                        UnityObject.Destroy(gameObject);
+                    }
                 }
             }
         }
