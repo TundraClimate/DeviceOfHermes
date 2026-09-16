@@ -1291,6 +1291,8 @@ internal static class AdvancedPatch
                 .Insert(
                     new CodeInstruction(OpCodes.Ldloca, 1),
                     CodeInstruction.Local(2),
+                    CodeInstruction.Instance,
+                    CodeInstruction.Field(typeof(BattleUnitBufListDetail).Field("_self")),
                     CodeInstruction.Call(typeof(PatchOnAddNewKeywordBuf).Method("InjectMethod")),
                     CodeInstruction.SetLocal(2)
                 );
@@ -1298,30 +1300,35 @@ internal static class AdvancedPatch
             return matcher.Instructions();
         }
 
-        static BattleUnitBuf? InjectMethod(ref List<BattleUnitBuf> bufs, BattleUnitBuf target)
+        static BattleUnitBuf? InjectMethod(ref List<BattleUnitBuf> bufs, BattleUnitBuf target, BattleUnitModel self)
         {
-            if (target is AdvancedUnitBuf adv && adv.IsInstant)
+            if (target is AdvancedUnitBuf adv)
             {
-                adv.OnInstant();
+                OriginalAdvInit.Init(adv, self);
 
-                foreach (var unit in BattleObjectManager.instance.GetAliveList())
+                if (adv.IsInstant)
                 {
-                    var otherBufs = unit?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
+                    adv.OnInstant();
 
-                    if (otherBufs is null)
+                    foreach (var unit in BattleObjectManager.instance.GetAliveList())
                     {
-                        continue;
+                        var otherBufs = unit?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
+
+                        if (otherBufs is null)
+                        {
+                            continue;
+                        }
+
+                        foreach (var otherBuf in otherBufs)
+                        {
+                            otherBuf.OnOtherInstant(adv);
+                        }
                     }
 
-                    foreach (var otherBuf in otherBufs)
-                    {
-                        otherBuf.OnOtherInstant(adv);
-                    }
+                    bufs.Remove(target);
+
+                    return null;
                 }
-
-                bufs.Remove(target);
-
-                return null;
             }
 
             return target;
