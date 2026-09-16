@@ -540,6 +540,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf
   nameWithType: AdvancedPassiveBase.OnAddBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf,System.Int32)
+  name: OnAddKeywordBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddKeywordBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddKeywordBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf, Integer)
+  nameWithType: AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf, int)
+  nameWithType.vb: AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf*
+  name: OnAddKeywordBuf
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddKeywordBuf_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf
+  nameWithType: AdvancedPassiveBase.OnAddKeywordBuf
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf,System.Int32)
   name: OnChangeBufStack(BattleUnitBuf, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChangeBufStack_BattleUnitBuf_System_Int32_
@@ -803,6 +819,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll
   nameWithType: AdvancedUnitBuf.OnAddBufAll
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf(BattleUnitBuf,System.Int32)
+  name: OnAddKeywordBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeywordBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddKeywordBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf(BattleUnitBuf, Integer)
+  nameWithType: AdvancedUnitBuf.OnAddKeywordBuf(BattleUnitBuf, int)
+  nameWithType.vb: AdvancedUnitBuf.OnAddKeywordBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf*
+  name: OnAddKeywordBuf
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeywordBuf_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf
+  nameWithType: AdvancedUnitBuf.OnAddKeywordBuf
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBufByCard(BattleUnitBuf,System.Int32)
   name: OnAddKeywordBufByCard(BattleUnitBuf, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeywordBufByCard_BattleUnitBuf_System_Int32_

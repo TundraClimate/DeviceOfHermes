@@ -182,6 +182,11 @@
     public override void OnRecoverPP(int gain)
     {
     }
+
+    public override int OnAddKeywordBuf(BattleUnitBuf buf, int stack)
+    {
+        return 0;
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -377,6 +382,17 @@ null以外を返した場合、返したページで代わりにマッチをし�
 <p>光を回復したときに実行されます。</p>
 <ul>
 <li><code>gain</code>: 回復しようとした値です。</li>
+</ul>
+<h3 id="onaddkeywordbufbattleunitbuf-int"><code>OnAddKeywordBuf(BattleUnitBuf, int)</code></h3>
+<pre><code class="lang-cs">public override int OnAddKeywordBuf(BattleUnitBuf buf, int stack)
+{
+    return 0;
+}
+</code></pre>
+<p><code>KeywordBuf</code>を付与されたときに実行されます。</p>
+<ul>
+<li><code>buf</code>: 付与されたバフです。</li>
+<li><code>stack</code>: 付与されたスタック数です。</li>
 </ul>
 
 </article>

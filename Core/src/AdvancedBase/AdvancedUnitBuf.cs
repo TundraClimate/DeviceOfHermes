@@ -71,6 +71,12 @@ public class AdvancedUnitBuf : BattleUnitBuf
         return 0;
     }
 
+    /// <summary>On unit added keywordbuf</summary>
+    public virtual int OnAddKeywordBuf(BattleUnitBuf buf, int stack)
+    {
+        return 0;
+    }
+
     /// <summary>Reduce all break damage</summary>
     public virtual int GetBreakDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker)
     {

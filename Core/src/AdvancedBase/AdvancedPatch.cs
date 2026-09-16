@@ -59,6 +59,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnAddNewKeywordBuf));
         Patch(typeof(PatchOnSucceedAreaAttack));
         Patch(typeof(PatchOnWaveStartInModel));
+        Patch(typeof(PatchOnModifiedStack));
     }
 
     private static void Patch(Type type)
@@ -1373,6 +1374,29 @@ internal static class AdvancedPatch
                     self.Remove(deckCard);
                 }
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitBufListDetail), "ModifyStack")]
+    class PatchOnModifiedStack
+    {
+        static Exception Finalizer(Exception __exception, BattleUnitModel ____self, BattleUnitBuf buf, int stack, ref int __result)
+        {
+            if (stack > 0)
+            {
+                var num = 0;
+
+                num += ____self.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Sum(p => p.OnAddKeywordBuf(buf, stack)) ?? 0;
+
+                num += ____self.bufListDetail?.GetActivatedBufList()?
+                    .Filter(buf => !buf.IsDestroyed())
+                    .OfType<AdvancedUnitBuf>()?
+                    .Sum(p => p.OnAddKeywordBuf(buf, stack)) ?? 0;
+
+                __result += num;
+            }
+
+            return __exception;
         }
     }
 }

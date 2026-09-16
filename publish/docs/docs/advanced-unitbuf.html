@@ -119,10 +119,17 @@
 
     public override int OnAddKeywordBufByCard(BattleUnitBuf buf, int stack)
     {
+        return 0;
+    }
+
+    public override int OnAddKeywordBuf(BattleUnitBuf buf, int stack)
+    {
+        return 0;
     }
 
     public override int GetBreakDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker)
     {
+        return 0;
     }
 
     public override void OnStackChange(int last)
@@ -302,6 +309,17 @@ null以外を返した場合、返したページで代わりにマッチをし�
 <ul>
 <li><code>behavior</code>: 的中したダイスです。</li>
 <li><code>target</code>: 的中した対象です。</li>
+</ul>
+<h3 id="onaddkeywordbufbattleunitbuf-int"><code>OnAddKeywordBuf(BattleUnitBuf, int)</code></h3>
+<pre><code class="lang-cs">public override int OnAddKeywordBuf(BattleUnitBuf buf, int stack)
+{
+    return 0;
+}
+</code></pre>
+<p><code>KeywordBuf</code>を付与されたときに実行されます。</p>
+<ul>
+<li><code>buf</code>: 付与されたバフです。</li>
+<li><code>stack</code>: 付与されたスタック数です。</li>
 </ul>
 
 </article>

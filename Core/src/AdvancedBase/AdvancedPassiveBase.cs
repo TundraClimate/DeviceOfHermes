@@ -141,6 +141,12 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>On unit added keywordbuf</summary>
+    public virtual int OnAddKeywordBuf(BattleUnitBuf buf, int stack)
+    {
+        return 0;
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {
