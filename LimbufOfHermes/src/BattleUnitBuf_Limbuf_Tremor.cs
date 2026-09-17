@@ -104,19 +104,17 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
 
         if (instant is BattleUnitBuf_Limbuf_TremorBurst && instant.Owner == base._owner && TremorStack > 0)
         {
+            OnActivate(this.stack);
+
             if (StageController.Instance.IsLogState())
             {
-                base._owner.AddRencounterEvent(RencounterEvent.PrintEffect, () =>
+                base._owner.AddRencounterEvent(RencounterEvent.TakeDamaged, () =>
                 {
-                    OnActivate(this.stack);
-
                     base._owner.view.unitBottomStatUI.UpdateStatUI(base._owner.hp, base._owner.breakDetail.breakGauge, null);
                 });
             }
             else
             {
-                OnActivate(this.stack);
-
                 base._owner.view.unitBottomStatUI.UpdateStatUI(base._owner.hp, base._owner.breakDetail.breakGauge, null);
             }
         }
@@ -134,7 +132,10 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     /// <summary>Unit on tremor burst</summary>
     public virtual void OnTremorBurst(int stack)
     {
-        base._owner.breakDetail.TakeBreakDamage(stack, DamageType.Buf, keyword: this.bufType);
+        if (!IsEntangled() || this.GetType() == typeof(BattleUnitBuf_Limbuf_TremorSuperposition))
+        {
+            base._owner.breakDetail.TakeBreakDamage(stack, DamageType.Buf, keyword: this.bufType);
+        }
     }
 
     internal bool active = true;

@@ -21,7 +21,7 @@ public class BattleUnitBuf_Limbuf_TremorBurst : LimbufBase
     {
         if (StageController.Instance.IsLogState())
         {
-            base._owner.AddRencounterEvent(RencounterEvent.PrintEffect, () => OnActivate(this.stack));
+            base._owner.AddRencounterEvent(RencounterEvent.TakeDamaged, () => OnActivate(this.stack));
         }
         else
         {
@@ -49,6 +49,13 @@ internal class TremorBurstEffect : MonoBehaviour
             AttackEffectManager.Instance.damageRwbpTextColor[2],
             new Color32(200, 200, 0, 255)
         );
+
+        owner.view?.characterRotationCenter?.gameObject?.AddChildObject("TremorBurst", "Effect")?.AddComponent<AutoDestruct>()?.Let(target =>
+        {
+            target.time = 1f;
+
+            target.StartCoroutine(RingingRoutine(target.gameObject));
+        });
 
         SoundEffectManager.Instance.PlayClip("creature/quitegirl_hit", false, 10f, null).source.pitch = 3.2f;
     }
