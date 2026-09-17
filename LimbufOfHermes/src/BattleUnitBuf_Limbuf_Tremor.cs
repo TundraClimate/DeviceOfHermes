@@ -31,6 +31,20 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
         }
     }
 
+    /// <summary>Impl ChangeStack</summary>
+    public override void ChangeStack(Func<int, int> f)
+    {
+        base.ChangeStack(f);
+
+        if (base._owner?.bufListDetail?.GetActivatedBuf(LimKeywordBuf.Tremor)?.IsDestroyed() is true)
+        {
+            base._owner.bufListDetail.GetActivatedBufList()?.OfType<BattleUnitBuf_Limbuf_Tremor>()?.Foreach(buf =>
+            {
+                buf.Destroy();
+            });
+        }
+    }
+
     /// <summary>Get tremor stack</summary>
     public int TremorStack => base._owner?.bufListDetail?.GetActivatedBuf(LimKeywordBuf.Tremor)?.stack ?? 0;
 
