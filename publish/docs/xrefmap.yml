@@ -7945,6 +7945,22 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor
   nameWithType: BattleUnitBuf_Limbuf_Tremor
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.ChangeStack(System.Func{System.Int32,System.Int32})
+  name: ChangeStack(Func<int, int>)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_ChangeStack_System_Func_System_Int32_System_Int32__
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.ChangeStack(System.Func{System.Int32,System.Int32})
+  name.vb: ChangeStack(Func(Of Integer, Integer))
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.ChangeStack(System.Func<int, int>)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.ChangeStack(System.Func(Of Integer, Integer))
+  nameWithType: BattleUnitBuf_Limbuf_Tremor.ChangeStack(Func<int, int>)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Tremor.ChangeStack(Func(Of Integer, Integer))
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.ChangeStack*
+  name: ChangeStack
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_ChangeStack_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.ChangeStack
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.ChangeStack
+  nameWithType: BattleUnitBuf_Limbuf_Tremor.ChangeStack
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.Consume(System.Int32)
   name: Consume(int)
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_Consume_System_Int32_
@@ -8351,6 +8367,54 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorEntangle.keywordId
   nameWithType: BattleUnitBuf_Limbuf_TremorEntangle.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch
+  name: BattleUnitBuf_Limbuf_TremorScorch
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch
+  nameWithType: BattleUnitBuf_Limbuf_TremorScorch
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst(System.Int32)
+  name: OnTremorBurst(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorScorch_OnTremorBurst_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst(System.Int32)
+  name.vb: OnTremorBurst(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst*
+  name: OnTremorBurst
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorScorch_OnTremorBurst_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst
+  nameWithType: BattleUnitBuf_Limbuf_TremorScorch.OnTremorBurst
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorScorch_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.bufType
+  nameWithType: BattleUnitBuf_Limbuf_TremorScorch.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorScorch_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.bufType
+  nameWithType: BattleUnitBuf_Limbuf_TremorScorch.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorScorch_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_TremorScorch.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorScorch_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorScorch.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_TremorScorch.keywordId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition
   name: BattleUnitBuf_Limbuf_TremorSuperposition
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorSuperposition.html
@@ -9058,6 +9122,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.TremorEntangle
   nameWithType: LimKeywordBuf.TremorEntangle
+- uid: LimbufOfHermes.LimKeywordBuf.TremorScorch
+  name: TremorScorch
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorScorch
+  commentId: P:LimbufOfHermes.LimKeywordBuf.TremorScorch
+  fullName: LimbufOfHermes.LimKeywordBuf.TremorScorch
+  nameWithType: LimKeywordBuf.TremorScorch
+- uid: LimbufOfHermes.LimKeywordBuf.TremorScorch*
+  name: TremorScorch
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorScorch_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.TremorScorch
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.TremorScorch
+  nameWithType: LimKeywordBuf.TremorScorch
 - uid: LimbufOfHermes.LimKeywordBuf.TremorSuperposition
   name: TremorSuperposition
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorSuperposition

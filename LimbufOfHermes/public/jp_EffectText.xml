@@ -38,6 +38,12 @@
 適用中の振動効果
 </Desc>
         </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_TremorScorch">
+            <Name>振動-灼熱</Name>
+            <Desc>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。
+
+振動爆発を受ける時、(振動と火傷の合計÷2)だけ効果体力ダメージを受け、火傷数値が4/5に減少(端数切り捨て)。</Desc>
+        </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_Sinking">
             <Name>沈潜</Name>

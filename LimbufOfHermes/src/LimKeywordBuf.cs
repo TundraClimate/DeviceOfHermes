@@ -19,6 +19,10 @@ public class LimKeywordBuf
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Tremor))]
     public static KeywordBuf Tremor { get; private set; }
 
+    /// <summary>TremorScorch KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_TremorScorch))]
+    public static KeywordBuf TremorScorch { get; private set; }
+
     /// <summary>TremorSuperposition KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_TremorSuperposition))]
     public static KeywordBuf TremorSuperposition { get; private set; }

@@ -175,6 +175,20 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorEntangle, 
 <p>振幅変換が適用されたときに実行されます。</p>
 <h3 id="ilimbufontremorentangleontremorentangle"><code>ILimbuf.OnTremorEntangle.OnTremorEntangle()</code></h3>
 <p>振幅絡縺が適用されたときに実行されます。</p>
+<h1 id="tremorscorch">TremorScorch</h1>
+<p>リンバスの&quot;振動-灼熱&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。</p>
+<p>振動爆発を受ける時、(振動と火傷の合計÷2)だけ効果体力ダメージを受け、火傷数値が4/5に減少(端数切り捨て)。</p>
+</blockquote>
+<pre><code class="lang-cs">// targetの振動を灼熱に変換
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorScorch, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorConversion, 1, owner);
+
+// targetの振動へ灼熱を絡縺
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorScorch, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1, owner);
+</code></pre>
 
 </article>
 
