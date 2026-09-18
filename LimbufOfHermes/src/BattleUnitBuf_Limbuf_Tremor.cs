@@ -134,7 +134,7 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     {
         if (!IsEntangled() || this.GetType() == typeof(BattleUnitBuf_Limbuf_TremorSuperposition))
         {
-            base._owner.breakDetail.TakeBreakDamage(stack, DamageType.Buf, keyword: this.bufType);
+            base._owner.StyledBreakDamage(stack, this.GetBufIcon(), DamageType.Buf, keyword: this.bufType);
         }
     }
 
