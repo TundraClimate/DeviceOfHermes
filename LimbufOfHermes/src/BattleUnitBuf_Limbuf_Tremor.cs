@@ -65,6 +65,22 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
                 .FindAll(buf => buf is BattleUnitBuf_Limbuf_Tremor && buf.GetType() != typeof(BattleUnitBuf_Limbuf_Tremor) && buf.GetType() != typeof(BattleUnitBuf_Limbuf_TremorSuperposition));
     }
 
+    /// <summary>Returns current tremor</summary>
+    public BattleUnitBuf GetCurrentTremor()
+    {
+        if (base._owner.bufListDetail.GetActivatedBuf(LimKeywordBuf.TremorSuperposition) is BattleUnitBuf sup)
+        {
+            return sup;
+        }
+
+        if (base._owner.bufListDetail.GetActivatedBufList().Find(buf => !buf.IsDestroyed() && !buf.Hide) is BattleUnitBuf tremor)
+        {
+            return tremor;
+        }
+
+        return this;
+    }
+
     /// <summary>Impl OnStackChange</summary>
     public override void OnStackChangeAll(BattleUnitBuf buf, int last)
     {

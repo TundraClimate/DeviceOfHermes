@@ -16,6 +16,6 @@ public class BattleUnitBuf_Limbuf_TremorReverb : BattleUnitBuf_Limbuf_Tremor
 
         var dmg = stack;
 
-        base._owner?.StyledDamage(dmg, this.GetBufIcon(), DamageType.Buf, this.bufType);
+        base._owner?.StyledDamage(dmg, GetCurrentTremor().GetBufIcon(), DamageType.Buf, this.bufType);
     }
 }

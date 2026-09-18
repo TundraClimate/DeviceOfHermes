@@ -17,7 +17,7 @@ public class BattleUnitBuf_Limbuf_TremorScorch : BattleUnitBuf_Limbuf_Tremor
         var burn = base._owner?.bufListDetail?.GetActivatedBuf(KeywordBuf.Burn);
         var dmg = ((burn?.stack ?? 0) + stack) / 2;
 
-        base._owner?.StyledDamage(dmg, this.GetBufIcon(), DamageType.Buf, this.bufType);
+        base._owner?.StyledDamage(dmg, GetCurrentTremor().GetBufIcon(), DamageType.Buf, this.bufType);
 
         burn?.stack *= 4;
         burn?.stack /= 5;

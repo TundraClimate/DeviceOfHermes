@@ -17,7 +17,7 @@ public class BattleUnitBuf_Limbuf_TremorHemorrhage : BattleUnitBuf_Limbuf_Tremor
         var bleed = base._owner?.bufListDetail?.GetActivatedBuf(KeywordBuf.Bleeding);
         var dmg = ((bleed?.stack ?? 0) + stack) / 2;
 
-        base._owner?.StyledDamage(dmg, this.GetBufIcon(), DamageType.Buf, this.bufType);
+        base._owner?.StyledDamage(dmg, GetCurrentTremor().GetBufIcon(), DamageType.Buf, this.bufType);
 
         if (base._owner?.bufListDetail?.GetActivatedBuf(KeywordBuf.BloodStackBlock) is null)
         {
