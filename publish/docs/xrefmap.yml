@@ -6901,6 +6901,90 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.bufType
   nameWithType: BattleUnitBuf_Limbuf_ConsumeTremor.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp
+  name: BattleUnitBuf_Limbuf_CritDmgUp
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_BeforeRollDice_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.BeforeRollDice
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.bufType
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.bufType
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc
+  name: paramInBufDesc
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_paramInBufDesc
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc*
+  name: paramInBufDesc
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_paramInBufDesc_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.paramInBufDesc
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_CritDmgUp_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_CritDmgUp.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_DlvDown
   name: BattleUnitBuf_Limbuf_DlvDown
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvDown.html
@@ -9074,6 +9158,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.ConsumeTremor
   nameWithType: LimKeywordBuf.ConsumeTremor
+- uid: LimbufOfHermes.LimKeywordBuf.CritDmgUp
+  name: CritDmgUp
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_CritDmgUp
+  commentId: P:LimbufOfHermes.LimKeywordBuf.CritDmgUp
+  fullName: LimbufOfHermes.LimKeywordBuf.CritDmgUp
+  nameWithType: LimKeywordBuf.CritDmgUp
+- uid: LimbufOfHermes.LimKeywordBuf.CritDmgUp*
+  name: CritDmgUp
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_CritDmgUp_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.CritDmgUp
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.CritDmgUp
+  nameWithType: LimKeywordBuf.CritDmgUp
 - uid: LimbufOfHermes.LimKeywordBuf.DlvDown
   name: DlvDown
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_DlvDown

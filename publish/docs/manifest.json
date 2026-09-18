@@ -1412,6 +1412,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_CritDmgUp.yml\" sourcestartlinenumber=\"1\">A unit buf the CritDmgUp</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_DlvDown.yml",
       "output": {
         ".html": {
@@ -2647,6 +2661,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-bloodfeast.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-critdmgup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-critdmgup.html"
         }
       },
       "version": ""
