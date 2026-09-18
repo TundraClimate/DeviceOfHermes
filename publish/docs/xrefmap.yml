@@ -1605,6 +1605,38 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedTakeDamage.DealDamage
   nameWithType: AdvancedTakeDamage.DealDamage
+- uid: DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage(BattleUnitModel,System.Int32,UnityEngine.Sprite,DamageType,KeywordBuf)
+  name: StyledBreakDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_StyledBreakDamage_BattleUnitModel_System_Int32_UnityEngine_Sprite_DamageType_KeywordBuf_
+  commentId: M:DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage(BattleUnitModel,System.Int32,UnityEngine.Sprite,DamageType,KeywordBuf)
+  name.vb: StyledBreakDamage(BattleUnitModel, Integer, Sprite, DamageType, KeywordBuf)
+  fullName: DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage(BattleUnitModel, int, UnityEngine.Sprite, DamageType, KeywordBuf)
+  fullName.vb: DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage(BattleUnitModel, Integer, UnityEngine.Sprite, DamageType, KeywordBuf)
+  nameWithType: AdvancedTakeDamage.StyledBreakDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)
+  nameWithType.vb: AdvancedTakeDamage.StyledBreakDamage(BattleUnitModel, Integer, Sprite, DamageType, KeywordBuf)
+- uid: DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage*
+  name: StyledBreakDamage
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_StyledBreakDamage_
+  commentId: Overload:DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage
+  nameWithType: AdvancedTakeDamage.StyledBreakDamage
+- uid: DeviceOfHermes.AdvancedTakeDamage.StyledDamage(BattleUnitModel,System.Int32,UnityEngine.Sprite,DamageType,KeywordBuf)
+  name: StyledDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_StyledDamage_BattleUnitModel_System_Int32_UnityEngine_Sprite_DamageType_KeywordBuf_
+  commentId: M:DeviceOfHermes.AdvancedTakeDamage.StyledDamage(BattleUnitModel,System.Int32,UnityEngine.Sprite,DamageType,KeywordBuf)
+  name.vb: StyledDamage(BattleUnitModel, Integer, Sprite, DamageType, KeywordBuf)
+  fullName: DeviceOfHermes.AdvancedTakeDamage.StyledDamage(BattleUnitModel, int, UnityEngine.Sprite, DamageType, KeywordBuf)
+  fullName.vb: DeviceOfHermes.AdvancedTakeDamage.StyledDamage(BattleUnitModel, Integer, UnityEngine.Sprite, DamageType, KeywordBuf)
+  nameWithType: AdvancedTakeDamage.StyledDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)
+  nameWithType.vb: AdvancedTakeDamage.StyledDamage(BattleUnitModel, Integer, Sprite, DamageType, KeywordBuf)
+- uid: DeviceOfHermes.AdvancedTakeDamage.StyledDamage*
+  name: StyledDamage
+  href: api/DeviceOfHermes.AdvancedTakeDamage.html#DeviceOfHermes_AdvancedTakeDamage_StyledDamage_
+  commentId: Overload:DeviceOfHermes.AdvancedTakeDamage.StyledDamage
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedTakeDamage.StyledDamage
+  nameWithType: AdvancedTakeDamage.StyledDamage
 - uid: DeviceOfHermes.BattleBufExtension
   name: BattleBufExtension
   href: api/DeviceOfHermes.BattleBufExtension.html

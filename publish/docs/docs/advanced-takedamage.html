@@ -111,6 +111,28 @@ target.DealDamage(100, BehaviourDetail.Slash, resist: AtkResist.Weak);
 <li><code>keyword</code>: ダメージ原因の<code>KeywordBuf</code>です。省略可能。</li>
 <li><code>resist</code>: 攻撃を受ける耐性です。強制的に変更されるので、必要ない場合は指定しないでください。</li>
 </ul>
+<h3 id="styleddamagebattleunitmodel-int-sprite-damagetype-keywordbuf"><code>StyledDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)</code></h3>
+<pre><code class="lang-cs">target.DealDamage(dmg, img, type, keyword);
+</code></pre>
+<p>耐性アイコンの代わりに任意の画像を指定できます。</p>
+<ul>
+<li><code>target</code>: ダメージを与える対象です。</li>
+<li><code>dmg</code>: ダメージ量です。</li>
+<li><code>img</code>: 表示する任意の画像です。</li>
+<li><code>type</code>: 攻撃の種類です。省略可能。</li>
+<li><code>keyword</code>: ダメージ原因の<code>KeywordBuf</code>です。省略可能。</li>
+</ul>
+<h3 id="styledbreakdamagebattleunitmodel-int-sprite-damagetype-keywordbuf"><code>StyledBreakDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)</code></h3>
+<pre><code class="lang-cs">target.DealDamage(dmg, img, type, keyword);
+</code></pre>
+<p>耐性アイコンの代わりに任意の画像を指定できます。</p>
+<ul>
+<li><code>target</code>: 混乱ダメージを与える対象です。</li>
+<li><code>dmg</code>: 混乱ダメージ量です。</li>
+<li><code>img</code>: 表示する任意の画像です。</li>
+<li><code>type</code>: 攻撃の種類です。省略可能。</li>
+<li><code>keyword</code>: ダメージ原因の<code>KeywordBuf</code>です。省略可能。</li>
+</ul>
 
 </article>
 

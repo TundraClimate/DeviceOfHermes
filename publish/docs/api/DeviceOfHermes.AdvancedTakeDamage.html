@@ -89,7 +89,7 @@
 
 
   <h1 id="DeviceOfHermes_AdvancedTakeDamage" data-uid="DeviceOfHermes.AdvancedTakeDamage" class="text-break">
-Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View so
 
   <h3 id="DeviceOfHermes_AdvancedTakeDamage_DealDamage_BattleUnitModel_System_Int32_LOR_DiceSystem_BehaviourDetail_DamageType_BattleUnitModel_KeywordBuf_AtkResist_" data-uid="DeviceOfHermes.AdvancedTakeDamage.DealDamage(BattleUnitModel,System.Int32,LOR_DiceSystem.BehaviourDetail,DamageType,BattleUnitModel,KeywordBuf,AtkResist)">
   DealDamage(BattleUnitModel, int, BehaviourDetail, DamageType, BattleUnitModel?, KeywordBuf, AtkResist)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deals Damage with specific detail and resist</p>
@@ -197,11 +197,91 @@ Class AdvancedTakeDamage  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="DeviceOfHermes_AdvancedTakeDamage_StyledBreakDamage_" data-uid="DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedTakeDamage_StyledBreakDamage_BattleUnitModel_System_Int32_UnityEngine_Sprite_DamageType_KeywordBuf_" data-uid="DeviceOfHermes.AdvancedTakeDamage.StyledBreakDamage(BattleUnitModel,System.Int32,UnityEngine.Sprite,DamageType,KeywordBuf)">
+  StyledBreakDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deals BreakDamage with styled image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StyledBreakDamage(this BattleUnitModel owner, int dmg, Sprite image, DamageType type = DamageType.Buf, KeywordBuf keyword = KeywordBuf.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd></dd>
+    <dt><code>dmg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>image</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">DamageType</span></dt>
+    <dd></dd>
+    <dt><code>keyword</code> <span class="xref">KeywordBuf</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedTakeDamage_StyledDamage_" data-uid="DeviceOfHermes.AdvancedTakeDamage.StyledDamage*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedTakeDamage_StyledDamage_BattleUnitModel_System_Int32_UnityEngine_Sprite_DamageType_KeywordBuf_" data-uid="DeviceOfHermes.AdvancedTakeDamage.StyledDamage(BattleUnitModel,System.Int32,UnityEngine.Sprite,DamageType,KeywordBuf)">
+  StyledDamage(BattleUnitModel, int, Sprite, DamageType, KeywordBuf)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deals Damage with styled image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StyledDamage(this BattleUnitModel owner, int dmg, Sprite image, DamageType type = DamageType.Buf, KeywordBuf keyword = KeywordBuf.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd></dd>
+    <dt><code>dmg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>image</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">DamageType</span></dt>
+    <dd></dd>
+    <dt><code>keyword</code> <span class="xref">KeywordBuf</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/Core/src/AdvancedTakeDamage.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 
