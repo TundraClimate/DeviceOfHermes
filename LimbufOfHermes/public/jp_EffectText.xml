@@ -44,6 +44,12 @@
 
 振動爆発を受ける時、(振動と火傷の合計÷2)だけ効果体力ダメージを受け、火傷数値が4/5に減少(端数切り捨て)。</Desc>
         </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_TremorHemorrhage">
+            <Name>振動-大量出血</Name>
+            <Desc>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。
+
+振動爆発を受ける時、(振動と出血の合計÷2)だけ効果体力ダメージを受け、出血数値が4/5に減少(端数切り捨て)。</Desc>
+        </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_Sinking">
             <Name>沈潜</Name>
