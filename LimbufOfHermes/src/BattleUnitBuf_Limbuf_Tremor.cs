@@ -73,7 +73,7 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
             return sup;
         }
 
-        if (base._owner.bufListDetail.GetActivatedBufList().Find(buf => !buf.IsDestroyed() && !buf.Hide) is BattleUnitBuf tremor)
+        if (base._owner.bufListDetail.GetActivatedBufList().Find(buf => buf is BattleUnitBuf_Limbuf_Tremor && !buf.IsDestroyed() && !buf.Hide) is BattleUnitBuf tremor)
         {
             return tremor;
         }
