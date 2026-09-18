@@ -102,4 +102,8 @@ public class LimKeywordBuf
     /// <summary>PrescriptTarget KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_PrescriptTarget))]
     public static KeywordBuf PrescriptTarget { get; private set; }
+
+    /// <summary>CritDmgUp KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_CritDmgUp))]
+    public static KeywordBuf CritDmgUp { get; private set; }
 }

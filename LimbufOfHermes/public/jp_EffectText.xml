@@ -156,5 +156,10 @@
           <Desc>毎幕1つの対象のみに適用される。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_CritDmgUp">
+          <Name>クリティカルダメージ量増加</Name>
+          <Desc>今回の幕の間、クリティカルダメージ量 +{0}%</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
