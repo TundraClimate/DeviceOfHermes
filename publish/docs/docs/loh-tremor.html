@@ -189,6 +189,34 @@ target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorConversion,
 target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorScorch, 1, owner);
 target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1, owner);
 </code></pre>
+<h1 id="tremorhemorrhage">TremorHemorrhage</h1>
+<p>リンバスの&quot;振動-大量出血&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。</p>
+<p>振動爆発を受ける時、(振動と出血の合計÷2)だけ効果体力ダメージを受け、出血数値が4/5に減少(端数切り捨て)。</p>
+</blockquote>
+<pre><code class="lang-cs">// targetの振動を大量出血に変換
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorHemorrhage, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorConversion, 1, owner);
+
+// targetの振動へ大量出血を絡縺
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorHemorrhage, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1, owner);
+</code></pre>
+<h1 id="tremorreverb">TremorReverb</h1>
+<p>リンバスの&quot;振動-反響&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。</p>
+<p>振動爆発を受ける時、振動の数値だけ効果体力ダメージを受ける。</p>
+</blockquote>
+<pre><code class="lang-cs">// targetの振動を反響に変換
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorReverb, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorConversion, 1, owner);
+
+// targetの振動へ反響を絡縺
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorReverb, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1, owner);
+</code></pre>
 
 </article>
 
