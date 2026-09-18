@@ -229,6 +229,15 @@ public static class Extension
         public List<BattleUnitModel> AliveUnits => faction.GetAlives();
     }
 
+    extension(BattleDiceBehavior diceBehavior)
+    {
+        /// <summary>Get dice stat bonus</summary>
+        public DiceStatBonus StatBonus => _diceStatRef(diceBehavior);
+    }
+
+    static AccessTools.FieldRef<BattleDiceBehavior, DiceStatBonus> _diceStatRef
+        = typeof(BattleDiceBehavior).FieldRefAccess<DiceStatBonus>("_statBonus");
+
     extension(BattleUnitBuf buf)
     {
         /// <summary>Get owner</summary>
