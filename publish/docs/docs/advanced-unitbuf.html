@@ -164,6 +164,8 @@
     public override void OnSuccessAreaAttack(BattleDiceBehavior behavior, BattleUnitModel target)
     {
     }
+
+    public BattleUnitModel LastInflictBy;
 }
 </code></pre>
 <p>このクラスは<code>BattleUnitBuf</code>を継承しています。<br>
@@ -178,6 +180,10 @@
 </code></pre>
 <p>バフが即時適用型か指定します。<br>
 trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</code>が実行されます。</p>
+<h3 id="lastinflictby"><code>LastInflictBy</code></h3>
+<p>バフが<code>KeywordBuf</code>かつ<code>AdvancedUnitBuf</code>である場合に、このバフを付与したユニットが格納されます。<br>
+ただし、自分が自分に付与した場合は変更されません。</p>
+<p>初期値はnullです。</p>
 <h3 id="oninstant"><code>OnInstant()</code></h3>
 <pre><code class="lang-cs">public override void OnInstant()
 {

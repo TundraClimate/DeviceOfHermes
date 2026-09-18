@@ -136,4 +136,7 @@ public class AdvancedUnitBuf : BattleUnitBuf
         /// <summary>Middle</summary>
         Middle,
     }
+
+    /// <summary>Last unit the inflict this</summary>
+    public BattleUnitModel? LastInflictBy;
 }

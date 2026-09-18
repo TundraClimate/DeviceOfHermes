@@ -803,6 +803,12 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
   nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.LastInflictBy
+  name: LastInflictBy
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_LastInflictBy
+  commentId: F:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.LastInflictBy
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.LastInflictBy
+  nameWithType: AdvancedUnitBuf.LastInflictBy
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll(BattleUnitBuf,System.Int32)
   name: OnAddBufAll(BattleUnitBuf, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddBufAll_BattleUnitBuf_System_Int32_
@@ -8022,6 +8028,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetConversionTremor
   nameWithType: BattleUnitBuf_Limbuf_Tremor.GetConversionTremor
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor
+  name: GetCurrentTremor()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_GetCurrentTremor
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor()
+  nameWithType: BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor*
+  name: GetCurrentTremor
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_GetCurrentTremor_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor
+  nameWithType: BattleUnitBuf_Limbuf_Tremor.GetCurrentTremor
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.Hide
   name: Hide
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Tremor.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Tremor_Hide

@@ -60,6 +60,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnSucceedAreaAttack));
         Patch(typeof(PatchOnWaveStartInModel));
         Patch(typeof(PatchOnModifiedStack));
+        Patch(typeof(PatchOnAddKeywordBufs));
     }
 
     private static void Patch(Type type)
@@ -1290,49 +1291,21 @@ internal static class AdvancedPatch
                 .MatchEndBackwards(CodeMatch.Calls(typeof(BattleUnitBuf).Method("Init")))
                 .Advance(1)
                 .Insert(
-                    new CodeInstruction(OpCodes.Ldloca, 1),
                     CodeInstruction.Local(2),
                     CodeInstruction.Instance,
                     CodeInstruction.Field(typeof(BattleUnitBufListDetail).Field("_self")),
-                    CodeInstruction.Call(typeof(PatchOnAddNewKeywordBuf).Method("InjectMethod")),
-                    CodeInstruction.SetLocal(2)
+                    CodeInstruction.Call(typeof(PatchOnAddNewKeywordBuf).Method("InjectMethod"))
                 );
 
             return matcher.Instructions();
         }
 
-        static BattleUnitBuf? InjectMethod(ref List<BattleUnitBuf> bufs, BattleUnitBuf target, BattleUnitModel self)
+        static void InjectMethod(BattleUnitBuf target, BattleUnitModel self)
         {
             if (target is AdvancedUnitBuf adv)
             {
                 OriginalAdvInit.Init(adv, self);
-
-                if (adv.IsInstant)
-                {
-                    adv.OnInstant();
-
-                    foreach (var unit in BattleObjectManager.instance.GetAliveList())
-                    {
-                        var otherBufs = unit?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
-
-                        if (otherBufs is null)
-                        {
-                            continue;
-                        }
-
-                        foreach (var otherBuf in otherBufs)
-                        {
-                            otherBuf.OnOtherInstant(adv);
-                        }
-                    }
-
-                    bufs.Remove(target);
-
-                    return null;
-                }
             }
-
-            return target;
         }
     }
 
@@ -1397,6 +1370,74 @@ internal static class AdvancedPatch
             }
 
             return __exception;
+        }
+    }
+
+    [HarmonyPatch]
+    class PatchOnAddKeywordBufs
+    {
+        static IEnumerable<MethodInfo> TargetMethods()
+        {
+            yield return typeof(BattleUnitBufListDetail).Method("AddKeywordBufThisRoundByEtc");
+            yield return typeof(BattleUnitBufListDetail).Method("AddKeywordBufByEtc");
+            yield return typeof(BattleUnitBufListDetail).Method("AddKeywordBufThisRoundByCard");
+            yield return typeof(BattleUnitBufListDetail).Method("AddKeywordBufByCard");
+            yield return typeof(BattleUnitBufListDetail).Method("AddKeywordBufNextNextByCard");
+        }
+
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(CodeMatch.Calls(typeof(BattleUnitBufListDetail).Method("AddNewKeywordBufInList")), CodeMatch.IsStloc())
+                .Advance(1)
+                .Insert(
+                    CodeInstruction.Instance,
+                    CodeInstruction.Instance,
+                    CodeInstruction.Field(typeof(BattleUnitBufListDetail).Field("_self")),
+                    new CodeInstruction(OpCodes.Ldloca, 0),
+                    CodeInstruction.Arg(3),
+                    CodeInstruction.Call(typeof(PatchOnAddKeywordBufs).Method("InjectMethod"))
+                );
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleUnitBufListDetail __instance, BattleUnitModel _self, ref BattleUnitBuf? added, BattleUnitModel actor)
+        {
+            if (added is AdvancedUnitBuf adv)
+            {
+                if (actor is not null && actor != _self)
+                {
+                    adv.LastInflictBy = actor;
+                }
+
+                if (adv.IsInstant)
+                {
+                    adv.OnInstant();
+
+                    foreach (var unit in BattleObjectManager.instance.GetAliveList())
+                    {
+                        var otherBufs = unit?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
+
+                        if (otherBufs is null)
+                        {
+                            continue;
+                        }
+
+                        foreach (var otherBuf in otherBufs)
+                        {
+                            otherBuf.OnOtherInstant(adv);
+                        }
+                    }
+
+                    __instance.GetActivatedBufList().Remove(added);
+                    __instance.GetReadyBufList().Remove(added);
+                    __instance.GetReadyReadyBufList().Remove(added);
+
+                    added = null;
+                }
+            }
         }
     }
 }
