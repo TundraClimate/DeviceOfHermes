@@ -11,6 +11,7 @@ public class AdvancedDiceStatBonus : DiceStatBonus
     {
         var harmony = new Harmony("DeviceOfHermes.AdvancedDiceStatBonus");
 
+        harmony.CreateClassProcessor(typeof(PatchOnCopy)).Patch();
         harmony.CreateClassProcessor(typeof(PatchApplyDiceStat)).Patch();
         harmony.CreateClassProcessor(typeof(PatchUpdateDiceFinalValue)).Patch();
         harmony.CreateClassProcessor(typeof(PatchAddNewKeywordBuf)).Patch();
@@ -73,6 +74,25 @@ public class AdvancedDiceStatBonus : DiceStatBonus
 
     /// <summary>A delegate of KwdBufModifier</summary>
     public delegate void KwdBufModifier(BattleUnitBuf origin, ref BattleUnitBuf? result, BattleUnitModel target);
+
+    [HarmonyPatch(typeof(DiceStatBonus), "Copy")]
+    class PatchOnCopy
+    {
+        static Exception Finalizer(Exception __exception, DiceStatBonus __instance, ref DiceStatBonus __result)
+        {
+            if (__instance is AdvancedDiceStatBonus adv)
+            {
+                __result = new AdvancedDiceStatBonus().CopyFrom(adv);
+
+                if (__result is AdvancedDiceStatBonus res)
+                {
+                    res.ApplyAdvancedBonus(adv);
+                }
+            }
+
+            return __exception;
+        }
+    }
 
     [HarmonyPatch(typeof(BattleDiceBehavior), "ApplyDiceStatBonus")]
     class PatchApplyDiceStat
