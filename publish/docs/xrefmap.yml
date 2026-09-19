@@ -7439,6 +7439,96 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
   nameWithType: BattleUnitBuf_Limbuf_PenetrateVulnerable.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity
+  name: BattleUnitBuf_Limbuf_PhotoElectricity
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf(System.Int32)
+  name: OnAddBuf(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_OnAddBuf_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf(System.Int32)
+  name.vb: OnAddBuf(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf*
+  name: OnAddBuf
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_OnAddBuf_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.OnAddBuf
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack(BattleDiceBehavior,System.Int32)
+  name: OnTakeDamageByAttack(BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_OnTakeDamageByAttack_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack(BattleDiceBehavior,System.Int32)
+  name.vb: OnTakeDamageByAttack(BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack(BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack(BattleDiceBehavior, Integer)
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack(BattleDiceBehavior, int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack(BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack*
+  name: OnTakeDamageByAttack
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_OnTakeDamageByAttack_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.OnTakeDamageByAttack
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.bufType
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.bufType
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PhotoElectricity_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PhotoElectricity.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_PhotoElectricity.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise
   name: BattleUnitBuf_Limbuf_Poise
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html
@@ -9306,6 +9396,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.PenetrateVulnerable
   nameWithType: LimKeywordBuf.PenetrateVulnerable
+- uid: LimbufOfHermes.LimKeywordBuf.PhotoElectricity
+  name: PhotoElectricity
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_PhotoElectricity
+  commentId: P:LimbufOfHermes.LimKeywordBuf.PhotoElectricity
+  fullName: LimbufOfHermes.LimKeywordBuf.PhotoElectricity
+  nameWithType: LimKeywordBuf.PhotoElectricity
+- uid: LimbufOfHermes.LimKeywordBuf.PhotoElectricity*
+  name: PhotoElectricity
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_PhotoElectricity_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.PhotoElectricity
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.PhotoElectricity
+  nameWithType: LimKeywordBuf.PhotoElectricity
 - uid: LimbufOfHermes.LimKeywordBuf.Poise
   name: Poise
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Poise

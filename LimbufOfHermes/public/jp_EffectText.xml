@@ -167,5 +167,13 @@
           <Desc>今回の幕の間、クリティカルダメージ量 +{0}%</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_PhotoElectricity">
+          <Name>光電</Name>
+          <Desc>最大値: 3
+被ダメージ時、攻撃者に充電を{0}だけ付与(ページごとに1回)。
+攻撃者の充電数値が5以下なら、充電を追加で3付与。
+幕の終了時に消滅。</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>

@@ -110,4 +110,8 @@ public class LimKeywordBuf
     /// <summary>CritDmgUp KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_CritDmgUp))]
     public static KeywordBuf CritDmgUp { get; private set; }
+
+    /// <summary>PhotoElectricity KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_PhotoElectricity))]
+    public static KeywordBuf PhotoElectricity { get; private set; }
 }
