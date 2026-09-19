@@ -52,6 +52,13 @@ public class AdvancedDiceStatBonus : DiceStatBonus
         {
             this.noHit = true;
         }
+
+        this.customFields = new(this.customFields);
+
+        foreach (var (k, v) in bonus.customFields)
+        {
+            this.customFields[k] = this.customFields.GetValueOrDefault(k) + v;
+        }
     }
 
     /// <summary>Power rate</summary>
@@ -71,6 +78,9 @@ public class AdvancedDiceStatBonus : DiceStatBonus
 
     /// <summary>Is hit attack</summary>
     public bool noHit = false;
+
+    /// <summary>Custom bonus</summary>
+    public Dictionary<string, int> customFields = new();
 
     /// <summary>A delegate of KwdBufModifier</summary>
     public delegate void KwdBufModifier(BattleUnitBuf origin, ref BattleUnitBuf? result, BattleUnitModel target);

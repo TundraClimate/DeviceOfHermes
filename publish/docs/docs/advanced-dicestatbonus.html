@@ -118,6 +118,9 @@
 
     // 攻撃が的中せず、ダメージも与えない
     noHit = true,
+
+    // カスタムキーを作成して適用する
+    customFields = new() { [&quot;foo&quot;] = 1 };
 });
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
@@ -175,6 +178,11 @@ nullを代入した場合対象のバフを付与する処理はスキップさ�
 <pre><code class="lang-cs">noHit = true;
 </code></pre>
 <p>攻撃が的中せず、ダメージも与えません。</p>
+<h3 id="customfields"><code>customFields</code></h3>
+<pre><code class="lang-cs">customFields = new() { [&quot;foo&quot;] = 1 };
+</code></pre>
+<p>任意で設定できるカスタム設定です。<br>
+キーが重複した場合はそれらを加算します。</p>
 
 </article>
 

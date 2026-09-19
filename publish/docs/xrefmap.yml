@@ -1553,6 +1553,12 @@ references:
   commentId: T:DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
   fullName: DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier
   nameWithType: AdvancedDiceStatBonus.KwdBufModifier
+- uid: DeviceOfHermes.AdvancedDiceStatBonus.customFields
+  name: customFields
+  href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_customFields
+  commentId: F:DeviceOfHermes.AdvancedDiceStatBonus.customFields
+  fullName: DeviceOfHermes.AdvancedDiceStatBonus.customFields
+  nameWithType: AdvancedDiceStatBonus.customFields
 - uid: DeviceOfHermes.AdvancedDiceStatBonus.ferocity
   name: ferocity
   href: api/DeviceOfHermes.AdvancedDiceStatBonus.html#DeviceOfHermes_AdvancedDiceStatBonus_ferocity
