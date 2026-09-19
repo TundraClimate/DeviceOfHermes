@@ -25,6 +25,13 @@ public static class ILimbuf
     }
 
     /// <summary>Interface</summary>
+    public interface OnExecTremorBurst
+    {
+        /// <summary>On exec tremor burst</summary>
+        public void OnExecTremorBurst(BattleUnitModel target);
+    }
+
+    /// <summary>Interface</summary>
     public interface OnTremorConversion
     {
         /// <summary>On tremor burst</summary>

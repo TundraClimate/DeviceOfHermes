@@ -8923,6 +8923,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnCriticalAttack.OnCriticalAttack
   nameWithType: ILimbuf.OnCriticalAttack.OnCriticalAttack
+- uid: LimbufOfHermes.ILimbuf.OnExecTremorBurst
+  name: ILimbuf.OnExecTremorBurst
+  href: api/LimbufOfHermes.ILimbuf.OnExecTremorBurst.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnExecTremorBurst
+  fullName: LimbufOfHermes.ILimbuf.OnExecTremorBurst
+  nameWithType: ILimbuf.OnExecTremorBurst
+- uid: LimbufOfHermes.ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel)
+  name: OnExecTremorBurst(BattleUnitModel)
+  href: api/LimbufOfHermes.ILimbuf.OnExecTremorBurst.html#LimbufOfHermes_ILimbuf_OnExecTremorBurst_OnExecTremorBurst_BattleUnitModel_
+  commentId: M:LimbufOfHermes.ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel)
+  fullName: LimbufOfHermes.ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel)
+  nameWithType: ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel)
+- uid: LimbufOfHermes.ILimbuf.OnExecTremorBurst.OnExecTremorBurst*
+  name: OnExecTremorBurst
+  href: api/LimbufOfHermes.ILimbuf.OnExecTremorBurst.html#LimbufOfHermes_ILimbuf_OnExecTremorBurst_OnExecTremorBurst_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnExecTremorBurst.OnExecTremorBurst
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnExecTremorBurst.OnExecTremorBurst
+  nameWithType: ILimbuf.OnExecTremorBurst.OnExecTremorBurst
 - uid: LimbufOfHermes.ILimbuf.OnLoseBarrier
   name: ILimbuf.OnLoseBarrier
   href: api/LimbufOfHermes.ILimbuf.OnLoseBarrier.html
@@ -9487,6 +9506,31 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimbufExtension.ApplyCritDamageAdder
   nameWithType: LimbufExtension.ApplyCritDamageAdder
+- uid: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattleDiceBehavior,System.Int32)
+  name: ApplyTremorBreakRateAdder(BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ApplyTremorBreakRateAdder_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattleDiceBehavior,System.Int32)
+  name.vb: ApplyTremorBreakRateAdder(BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattleDiceBehavior, Integer)
+  nameWithType: LimbufExtension.ApplyTremorBreakRateAdder(BattleDiceBehavior, int)
+  nameWithType.vb: LimbufExtension.ApplyTremorBreakRateAdder(BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel,System.Int32)
+  name: ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel, int)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ApplyTremorBreakRateAdder_BattlePlayingCardDataInUnitModel_System_Int32_
+  commentId: M:LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel,System.Int32)
+  name.vb: ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel, Integer)
+  fullName: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel, int)
+  fullName.vb: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel, Integer)
+  nameWithType: LimbufExtension.ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel, int)
+  nameWithType.vb: LimbufExtension.ApplyTremorBreakRateAdder(BattlePlayingCardDataInUnitModel, Integer)
+- uid: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder*
+  name: ApplyTremorBreakRateAdder
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ApplyTremorBreakRateAdder_
+  commentId: Overload:LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder
+  nameWithType: LimbufExtension.ApplyTremorBreakRateAdder
 - uid: LimbufOfHermes.StageBuf
   name: StageBuf
   href: api/LimbufOfHermes.StageBuf.html

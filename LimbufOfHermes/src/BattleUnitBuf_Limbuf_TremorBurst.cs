@@ -27,6 +27,12 @@ public class BattleUnitBuf_Limbuf_TremorBurst : LimbufBase
     /// <summary>Impl OnInstant</summary>
     public override void OnInstant()
     {
+        if (this.LastInflictBy is BattleUnitModel actor)
+        {
+            actor.EachPassiveOf<ILimbuf.OnExecTremorBurst>(i => i.OnExecTremorBurst(base._owner));
+            actor.EachUnitBufOf<ILimbuf.OnExecTremorBurst>(i => i.OnExecTremorBurst(base._owner));
+        }
+
         if (StageController.Instance.IsLogState())
         {
             base._owner.AddRencounterEvent(RencounterEvent.TakeDamaged, () => OnActivate(this.stack));
