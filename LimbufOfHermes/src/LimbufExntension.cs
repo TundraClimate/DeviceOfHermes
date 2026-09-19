@@ -17,4 +17,19 @@ public static class LimbufExtension
             BattleUnitBuf_Limbuf_Poise.CritDamageAdder.GetValue(dice.StatBonus, _ => new(0)).value += value;
         }
     }
+
+    /// <summary>Applies tremor break rate adder</summary>
+    public static void ApplyTremorBreakRateAdder(this BattleDiceBehavior beh, int value)
+    {
+        BattleUnitBuf_Limbuf_Tremor.BreakRateAdder.GetValue(beh, _ => new(0)).value += value;
+    }
+
+    /// <summary>Applies tremor break rate adder</summary>
+    public static void ApplyTremorBreakRateAdder(this BattlePlayingCardDataInUnitModel card, int value)
+    {
+        foreach (var dice in card.cardBehaviorQueue)
+        {
+            BattleUnitBuf_Limbuf_Tremor.BreakRateAdder.GetValue(dice, _ => new(0)).value += value;
+        }
+    }
 }

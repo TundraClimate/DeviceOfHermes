@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 namespace LimbufOfHermes;
 
 /// <summary>A unit buf the Tremor</summary>
@@ -118,9 +120,11 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
             return;
         }
 
-        if (instant is BattleUnitBuf_Limbuf_TremorBurst && instant.Owner == base._owner && TremorStack > 0)
+        if (instant is BattleUnitBuf_Limbuf_TremorBurst burst && instant.Owner == base._owner && TremorStack > 0)
         {
-            OnActivate(this.stack);
+            var dmg = TremorStack * (1 + burst.GetTremorBreakRateAdder());
+
+            OnActivate((int)dmg);
 
             if (StageController.Instance.IsLogState())
             {
@@ -139,7 +143,7 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     /// <summary>Impl OnActivate</summary>
     public override void OnActivate(int stack)
     {
-        this.OnTremorBurst(TremorStack);
+        this.OnTremorBurst(stack);
 
         base._owner.EachPassiveOf<ILimbuf.OnTremorBurst>(i => i.OnTremorBurst(stack));
         base._owner.EachUnitBufOf<ILimbuf.OnTremorBurst>(i => i.OnTremorBurst(stack));
@@ -155,4 +159,6 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     }
 
     internal bool active = true;
+
+    internal static ConditionalWeakTable<BattleDiceBehavior, Box<int>> BreakRateAdder = new();
 }

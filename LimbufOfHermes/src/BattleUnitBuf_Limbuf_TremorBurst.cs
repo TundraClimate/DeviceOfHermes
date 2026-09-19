@@ -16,6 +16,14 @@ public class BattleUnitBuf_Limbuf_TremorBurst : LimbufBase
     /// <summary>Impl IsInstant</summary>
     public override bool IsInstant => true;
 
+    internal double GetTremorBreakRateAdder()
+    {
+        var current = this.LastInflictBy?.currentDiceAction?.currentBehavior;
+        var rate = current?.Let(key => BattleUnitBuf_Limbuf_Tremor.BreakRateAdder.GetValue(key, _ => new(0)).value / 100) ?? 0.0;
+
+        return rate;
+    }
+
     /// <summary>Impl OnInstant</summary>
     public override void OnInstant()
     {
