@@ -9512,6 +9512,31 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimbufExtension.ApplyCritDamageAdder
   nameWithType: LimbufExtension.ApplyCritDamageAdder
+- uid: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattleDiceBehavior,System.Int32)
+  name: ApplyCritDamageRateAdder(BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ApplyCritDamageRateAdder_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattleDiceBehavior,System.Int32)
+  name.vb: ApplyCritDamageRateAdder(BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattleDiceBehavior, Integer)
+  nameWithType: LimbufExtension.ApplyCritDamageRateAdder(BattleDiceBehavior, int)
+  nameWithType.vb: LimbufExtension.ApplyCritDamageRateAdder(BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel,System.Int32)
+  name: ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel, int)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ApplyCritDamageRateAdder_BattlePlayingCardDataInUnitModel_System_Int32_
+  commentId: M:LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel,System.Int32)
+  name.vb: ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel, Integer)
+  fullName: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel, int)
+  fullName.vb: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel, Integer)
+  nameWithType: LimbufExtension.ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel, int)
+  nameWithType.vb: LimbufExtension.ApplyCritDamageRateAdder(BattlePlayingCardDataInUnitModel, Integer)
+- uid: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder*
+  name: ApplyCritDamageRateAdder
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ApplyCritDamageRateAdder_
+  commentId: Overload:LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimbufExtension.ApplyCritDamageRateAdder
+  nameWithType: LimbufExtension.ApplyCritDamageRateAdder
 - uid: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder(BattleDiceBehavior,System.Int32)
   name: ApplyTremorBreakRateAdder(BattleDiceBehavior, int)
   href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ApplyTremorBreakRateAdder_BattleDiceBehavior_System_Int32_

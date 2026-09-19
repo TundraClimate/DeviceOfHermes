@@ -18,10 +18,9 @@ public class BattleUnitBuf_Limbuf_TremorBurst : LimbufBase
 
     internal double GetTremorBreakRateAdder()
     {
-        var current = this.LastInflictBy?.currentDiceAction?.currentBehavior;
-        var rate = current?.Let(key => BattleUnitBuf_Limbuf_Tremor.BreakRateAdder.GetValue(key, _ => new(0)).value / 100) ?? 0.0;
+        var current = this.LastInflictBy?.currentDiceAction?.currentBehavior?.StatBonus;
 
-        return rate;
+        return current is AdvancedDiceStatBonus adv ? adv.customFields.GetValueOrDefault("loh_tremorBreakRate") / 100 : 0.0;
     }
 
     /// <summary>Impl OnInstant</summary>

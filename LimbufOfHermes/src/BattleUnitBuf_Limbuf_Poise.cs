@@ -120,14 +120,14 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
     /// <summary>A damage adder of critical</summary>
     public double GetCriticalDamageAdder(BattleDiceBehavior beh)
     {
-        return 0.2 + CritDamageAdder.GetValue(beh.StatBonus, _ => new(0)).value;
+        var adder = beh.StatBonus is AdvancedDiceStatBonus adv ? adv.customFields.GetValueOrDefault("loh_critDmgRate") / 100 : 0.0;
+
+        return 0.2 + adder;
     }
 
     private bool isCritActive;
 
     private static ConditionalWeakTable<BattleDiceBehavior, Box<bool>> CritData = new();
-
-    internal static ConditionalWeakTable<DiceStatBonus, Box<double>> CritDamageAdder = new();
 
     [HarmonyPatch(typeof(BattleUnitModel), "ChangeDamage")]
     class PatchChangeDamage

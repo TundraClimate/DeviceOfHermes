@@ -102,6 +102,9 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorBurst, 1, 
 
 // 振動を5消耗
 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ConsumeTremor, 5, owner);
+
+// 振動爆発による混乱ダメージ +50%
+owner.currentDiceAction.ApplyTremorBreakRateAdder(50);
 </code></pre>
 <h2 id="special-tremor">Special Tremor</h2>
 <p>特殊振動を作成することが出来ます。<br>

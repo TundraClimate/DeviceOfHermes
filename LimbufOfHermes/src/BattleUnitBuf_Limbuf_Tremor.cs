@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 namespace LimbufOfHermes;
 
 /// <summary>A unit buf the Tremor</summary>
@@ -159,6 +157,4 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     }
 
     internal bool active = true;
-
-    internal static ConditionalWeakTable<BattleDiceBehavior, Box<int>> BreakRateAdder = new();
 }
