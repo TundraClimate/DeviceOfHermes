@@ -175,5 +175,10 @@
 幕の終了時に消滅。</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_DmgDown">
+          <Name>ダメージ量減少</Name>
+          <Desc>今回の幕の間、攻撃ダイスのダメージ量 -{0}</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>

@@ -114,4 +114,8 @@ public class LimKeywordBuf
     /// <summary>PhotoElectricity KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_PhotoElectricity))]
     public static KeywordBuf PhotoElectricity { get; private set; }
+
+    /// <summary>DmgDown KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_DmgDown))]
+    public static KeywordBuf DmgDown { get; private set; }
 }
