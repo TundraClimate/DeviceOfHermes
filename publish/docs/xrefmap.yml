@@ -8360,6 +8360,51 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurst.keywordId
   nameWithType: BattleUnitBuf_Limbuf_TremorBurst.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain
+  name: BattleUnitBuf_Limbuf_TremorChain
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain
+  nameWithType: BattleUnitBuf_Limbuf_TremorChain
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorChain_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorChain_BeforeRollDice_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice
+  nameWithType: BattleUnitBuf_Limbuf_TremorChain.BeforeRollDice
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorChain_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.bufType
+  nameWithType: BattleUnitBuf_Limbuf_TremorChain.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorChain_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.bufType
+  nameWithType: BattleUnitBuf_Limbuf_TremorChain.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorChain_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_TremorChain.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorChain_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_TremorChain.keywordId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorConversion
   name: BattleUnitBuf_Limbuf_TremorConversion
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorConversion.html
@@ -9365,6 +9410,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.TremorBurst
   nameWithType: LimKeywordBuf.TremorBurst
+- uid: LimbufOfHermes.LimKeywordBuf.TremorChain
+  name: TremorChain
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorChain
+  commentId: P:LimbufOfHermes.LimKeywordBuf.TremorChain
+  fullName: LimbufOfHermes.LimKeywordBuf.TremorChain
+  nameWithType: LimKeywordBuf.TremorChain
+- uid: LimbufOfHermes.LimKeywordBuf.TremorChain*
+  name: TremorChain
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorChain_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.TremorChain
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.TremorChain
+  nameWithType: LimKeywordBuf.TremorChain
 - uid: LimbufOfHermes.LimKeywordBuf.TremorConversion
   name: TremorConversion
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorConversion

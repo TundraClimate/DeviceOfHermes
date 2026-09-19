@@ -56,6 +56,12 @@
 
 振動爆発を受ける時、振動の数値だけ効果体力ダメージを受ける。</Desc>
         </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_TremorChain">
+            <Name>振動-鎖</Name>
+            <Desc>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。
+
+マッチ時、自身の振動10につきダイス威力が1減少(最大3)</Desc>
+        </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_Sinking">
             <Name>沈潜</Name>

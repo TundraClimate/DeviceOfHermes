@@ -222,6 +222,20 @@ target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorConversion,
 target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorReverb, 1, owner);
 target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1, owner);
 </code></pre>
+<h1 id="tremorchain">TremorChain</h1>
+<p>リンバスの&quot;振動-鎖&quot;と同じような挙動をするバフです。</p>
+<blockquote>
+<p>振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。</p>
+<p>マッチ時、振動10につきダイス威力が1減少(最大3)</p>
+</blockquote>
+<pre><code class="lang-cs">// targetの振動を鎖に変換
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorChain, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorConversion, 1, owner);
+
+// targetの振動へ鎖を絡縺
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorChain, 1, owner);
+target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1, owner);
+</code></pre>
 
 </article>
 
