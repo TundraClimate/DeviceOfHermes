@@ -118,4 +118,8 @@ public class LimKeywordBuf
     /// <summary>DmgDown KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_DmgDown))]
     public static KeywordBuf DmgDown { get; private set; }
+
+    /// <summary>Nails KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Nails))]
+    public static KeywordBuf Nails { get; private set; }
 }

@@ -1454,6 +1454,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_DmgDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_DmgDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_DmgDown",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_DmgDown.yml\" sourcestartlinenumber=\"1\">A unit buf the DmgDown</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.yml",
       "output": {
         ".html": {
@@ -1465,6 +1479,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.yml\" sourcestartlinenumber=\"1\">A unit buf the Hit vulnerable</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Nails",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.yml\" sourcestartlinenumber=\"1\">A unit buf the Nails</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2739,10 +2767,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/loh-dmgdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-dmgdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/loh-hvulnerable.md",
       "output": {
         ".html": {
           "relative_path": "docs/loh-hvulnerable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-nails.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-nails.html"
         }
       },
       "version": ""

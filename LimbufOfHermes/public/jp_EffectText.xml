@@ -180,5 +180,10 @@
           <Desc>今回の幕の間、攻撃ダイスのダメージ量 -{0}</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Nails">
+          <Name>釘</Name>
+          <Desc>攻撃ダイスを振って出血減少時、代わりに釘数値が1減少</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
