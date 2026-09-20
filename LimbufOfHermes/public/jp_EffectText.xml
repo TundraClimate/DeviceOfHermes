@@ -188,7 +188,7 @@
 
         <BattleEffectText ID="LimbufOfHermes_Fanatic">
           <Name>狂信</Name>
-          <Desc>今回の幕の間、釘の付与されている敵を攻撃時にダイス威力が{0}だけ増加</Desc>
+          <Desc>今回の幕の間、釘の付与されている敵に対して攻撃ダイス威力が{0}だけ増加</Desc>
         </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_ClashPowerUp">

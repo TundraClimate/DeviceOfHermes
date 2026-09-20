@@ -1037,12 +1037,12 @@
   "docs/loh-clashpowerdown.html": {
     "href": "docs/loh-clashpowerdown.html",
     "title": "using LimbufOfHermes; | DeviceOfHermes",
-    "summary": "using LimbufOfHermes; 名前空間LimbufOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 ClashPowerDown リンバスの\"マッチ威力減少\"と同じような挙動をするバフです。 今回の幕の間、マッチ時に全威力-{0}、ダメージ量+{0} // マッチ威力減少を3付与 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ClashPowerDown, 3);"
+    "summary": "using LimbufOfHermes; 名前空間LimbufOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 ClashPowerDown リンバスの\"マッチ威力減少\"と同じような挙動をするバフです。 今回の幕の間、マッチ時にダイス威力-{0}、ダメージ量+{0} // マッチ威力減少を3付与 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ClashPowerDown, 3);"
   },
   "docs/loh-clashpowerup.html": {
     "href": "docs/loh-clashpowerup.html",
     "title": "using LimbufOfHermes; | DeviceOfHermes",
-    "summary": "using LimbufOfHermes; 名前空間LimbufOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 ClashPowerUp リンバスの\"マッチ威力増加\"と同じような挙動をするバフです。 今回の幕の間、マッチ時に全威力+{0}、ダメージ量-{0} // マッチ威力増加を3獲得 owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ClashPowerUp, 3);"
+    "summary": "using LimbufOfHermes; 名前空間LimbufOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 ClashPowerUp リンバスの\"マッチ威力増加\"と同じような挙動をするバフです。 今回の幕の間、マッチ時にダイス威力+{0}、ダメージ量-{0} // マッチ威力増加を3獲得 owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ClashPowerUp, 3);"
   },
   "docs/loh-critdmgup.html": {
     "href": "docs/loh-critdmgup.html",
@@ -1067,7 +1067,7 @@
   "docs/loh-fanatic.html": {
     "href": "docs/loh-fanatic.html",
     "title": "using LimbufOfHermes; | DeviceOfHermes",
-    "summary": "using LimbufOfHermes; 名前空間LimbufOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 Nails リンバスの\"狂信\"と同じような挙動をするバフです。 この幕の間、釘の付与されている敵を攻撃時にダイス威力が{0}だけ増加 // 狂信を3獲得 owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Fanatic, 3);"
+    "summary": "using LimbufOfHermes; 名前空間LimbufOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 Nails リンバスの\"狂信\"と同じような挙動をするバフです。 今回の幕の間、釘の付与されている敵に対して攻撃ダイス威力が{0}だけ増加 // 狂信を3獲得 owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Fanatic, 3);"
   },
   "docs/loh-hvulnerable.html": {
     "href": "docs/loh-hvulnerable.html",

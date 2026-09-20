@@ -20,7 +20,7 @@ public class BattleUnitBuf_Limbuf_Fanatic : LimbufBase
             return;
         }
 
-        if (behavior.card.target?.bufListDetail?.GetActivatedBuf(LimKeywordBuf.Nails) is not null)
+        if (3 > (int)behavior.Detail && behavior.card.target?.bufListDetail?.GetActivatedBuf(LimKeywordBuf.Nails) is not null)
         {
             behavior.ApplyDiceStatBonus(new DiceStatBonus { power = this.stack });
         }
