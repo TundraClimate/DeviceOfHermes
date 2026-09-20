@@ -126,4 +126,12 @@ public class LimKeywordBuf
     /// <summary>Fanatic KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Fanatic))]
     public static KeywordBuf Fanatic { get; private set; }
+
+    /// <summary>ClashPowerUp KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_ClashPowerUp))]
+    public static KeywordBuf ClashPowerUp { get; private set; }
+
+    /// <summary>ClashPowerDown KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_ClashPowerDown))]
+    public static KeywordBuf ClashPowerDown { get; private set; }
 }

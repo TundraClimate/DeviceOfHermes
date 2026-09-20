@@ -1398,6 +1398,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerDown",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerDown.yml\" sourcestartlinenumber=\"1\">A unit buf the ClashPowerDown</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerUp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerUp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerUp",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_ClashPowerUp.yml\" sourcestartlinenumber=\"1\">A unit buf the ClashPowerUp</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_ConsumeTremor.yml",
       "output": {
         ".html": {
@@ -2745,6 +2773,26 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-bloodfeast.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-clashpowerdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-clashpowerdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-clashpowerup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-clashpowerup.html"
         }
       },
       "version": ""

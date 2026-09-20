@@ -190,5 +190,15 @@
           <Desc>今回の幕の間、釘の付与されている敵を攻撃時にダイス威力が{0}だけ増加</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_ClashPowerUp">
+          <Name>マッチ威力増加</Name>
+          <Desc>今回の幕の間、マッチ時に全威力+{0}、ダメージ量-{0}</Desc>
+        </BattleEffectText>
+
+        <BattleEffectText ID="LimbufOfHermes_ClashPowerDown">
+          <Name>マッチ威力減少</Name>
+          <Desc>今回の幕の間、マッチ時に全威力-{0}、ダメージ量+{0}</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
