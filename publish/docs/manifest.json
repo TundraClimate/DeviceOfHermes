@@ -1468,6 +1468,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.yml\" sourcestartlinenumber=\"1\">A unit buf the Fanatic</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.yml",
       "output": {
         ".html": {
@@ -2771,6 +2785,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-dmgdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-fanatic.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-fanatic.html"
         }
       },
       "version": ""

@@ -7268,6 +7268,77 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_DmgDown.positiveType
   nameWithType: BattleUnitBuf_Limbuf_DmgDown.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic
+  name: BattleUnitBuf_Limbuf_Fanatic
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_BeforeRollDice_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.BeforeRollDice
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.bufType
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Fanatic_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Fanatic.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable
   name: BattleUnitBuf_Limbuf_HitVulnerable
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html
@@ -9486,6 +9557,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.DmgDown
   nameWithType: LimKeywordBuf.DmgDown
+- uid: LimbufOfHermes.LimKeywordBuf.Fanatic
+  name: Fanatic
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Fanatic
+  commentId: P:LimbufOfHermes.LimKeywordBuf.Fanatic
+  fullName: LimbufOfHermes.LimKeywordBuf.Fanatic
+  nameWithType: LimKeywordBuf.Fanatic
+- uid: LimbufOfHermes.LimKeywordBuf.Fanatic*
+  name: Fanatic
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Fanatic_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.Fanatic
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.Fanatic
+  nameWithType: LimKeywordBuf.Fanatic
 - uid: LimbufOfHermes.LimKeywordBuf.HitVulnerable
   name: HitVulnerable
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HitVulnerable

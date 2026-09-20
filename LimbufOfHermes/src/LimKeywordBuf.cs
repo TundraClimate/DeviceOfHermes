@@ -122,4 +122,8 @@ public class LimKeywordBuf
     /// <summary>Nails KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Nails))]
     public static KeywordBuf Nails { get; private set; }
+
+    /// <summary>Fanatic KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_Fanatic))]
+    public static KeywordBuf Fanatic { get; private set; }
 }

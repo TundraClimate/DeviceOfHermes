@@ -185,5 +185,10 @@
           <Desc>攻撃ダイスを振って出血減少時、代わりに釘数値が1減少</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Fanatic">
+          <Name>狂信</Name>
+          <Desc>今回の幕の間、釘の付与されている敵を攻撃時にダイス威力が{0}だけ増加</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
