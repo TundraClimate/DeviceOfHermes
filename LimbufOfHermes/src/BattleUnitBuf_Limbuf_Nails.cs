@@ -16,6 +16,12 @@ public class BattleUnitBuf_Limbuf_Nails : LimbufBase
     /// <summary>Impl positiveType</summary>
     public override BufPositiveType positiveType => BufPositiveType.Negative;
 
+    /// <summary>Impl OnRoundStart</summary>
+    public override void OnRoundStart()
+    {
+        base._owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Bleeding, 1);
+    }
+
     [HarmonyPatch(typeof(BattleUnitBuf_bleeding), "AfterDiceAction")]
     class PatchAfterAction
     {
@@ -43,6 +49,11 @@ public class BattleUnitBuf_Limbuf_Nails : LimbufBase
 
         static bool InjectMethod(BattleUnitModel owner)
         {
+            if (3 > owner.bufListDetail.GetKewordBufStack(KeywordBuf.Bleeding))
+            {
+                return false;
+            }
+
             if (owner.bufListDetail.GetActivatedBuf(LimKeywordBuf.Nails) is BattleUnitBuf_Limbuf_Nails nail && nail.stack > 0)
             {
                 nail.ChangeStack(s => s - 1);

@@ -182,7 +182,8 @@
 
         <BattleEffectText ID="LimbufOfHermes_Nails">
           <Name>釘</Name>
-          <Desc>攻撃ダイスを振って出血減少時、代わりに釘数値が1減少</Desc>
+          <Desc>幕の開始時、出血1を得る。
+攻撃ダイスを振って出血減少時、代わりに釘数値が1減少</Desc>
         </BattleEffectText>
 
         <BattleEffectText ID="LimbufOfHermes_Fanatic">

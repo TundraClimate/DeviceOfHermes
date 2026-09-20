@@ -7558,6 +7558,19 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Nails
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Nails
   nameWithType: BattleUnitBuf_Limbuf_Nails
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.OnRoundStart
+  name: OnRoundStart()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Nails_OnRoundStart
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.OnRoundStart
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.OnRoundStart()
+  nameWithType: BattleUnitBuf_Limbuf_Nails.OnRoundStart()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.OnRoundStart*
+  name: OnRoundStart
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Nails_OnRoundStart_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.OnRoundStart
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.OnRoundStart
+  nameWithType: BattleUnitBuf_Limbuf_Nails.OnRoundStart
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.bufType
   name: bufType
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Nails.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Nails_bufType
