@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using HarmonyLib;
+using HarmonyExtension;
 
 namespace DeviceOfHermes;
 
@@ -12,16 +13,27 @@ public static class UnitHistoryExtension
 
         harmony.CreateClassProcessor(typeof(PatchOnRoundStart)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnChargeUse)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchOnTakeDamage)).Patch();
     }
 
     extension(UnitBattleDataHistory history)
     {
+        /// <summary>Returns number of taken damage by burn</summary>
+        public int GetDamageByBurn() => DamageByBurn.GetValue(history, _ => new(0)).value;
+
+        /// <summary>Returns number of taken damage by bleed</summary>
+        public int GetDamageByBleed() => DamageByBleed.GetValue(history, _ => new(0)).value;
+
         /// <summary>Returns number of charge consumed with UseStack</summary>
         public int GetConsumedChargeStack() => ConsumedChargeStack.GetValue(history, _ => new(0)).value;
 
         /// <summary>Returns number of charge consumed with UseStack at this round</summary>
         public int GetConsumedChargeStackAtOneRound() => ConsumedChargeStackAtOneRound.GetValue(history, _ => new(0)).value;
     }
+
+    static ConditionalWeakTable<UnitBattleDataHistory, Box<int>> DamageByBurn = new();
+
+    static ConditionalWeakTable<UnitBattleDataHistory, Box<int>> DamageByBleed = new();
 
     static ConditionalWeakTable<UnitBattleDataHistory, Box<int>> ConsumedChargeStack = new();
 
@@ -50,6 +62,37 @@ public static class UnitHistoryExtension
             }
 
             return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "TakeDamage")]
+    class PatchOnTakeDamage
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdloc(), CodeMatch.Calls(typeof(BattleUnitModel).Method("OnLoseHp")))
+                .Advance(1)
+                .Insert(CodeInstruction.Instance, CodeInstruction.Local(1), CodeInstruction.Arg(2), CodeInstruction.Arg(4), CodeInstruction.Call(typeof(PatchOnTakeDamage).Method("InjectMethod")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleUnitModel __instance, int dmg, DamageType dty, KeywordBuf buf)
+        {
+            if (dty is DamageType.Buf)
+            {
+                ConditionalWeakTable<UnitBattleDataHistory, Box<int>>? target = buf switch
+                {
+                    KeywordBuf.Burn => DamageByBurn,
+                    KeywordBuf.Bleeding => DamageByBleed,
+
+                    _ => null,
+                };
+
+                target?.GetValue(__instance.history, _ => new(0))?.value += dmg;
+            }
         }
     }
 }

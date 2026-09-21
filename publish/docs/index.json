@@ -1222,7 +1222,7 @@
   "docs/unithistory-extension.html": {
     "href": "docs/unithistory-extension.html",
     "title": "using DeviceOfHermes; | DeviceOfHermes",
-    "summary": "using DeviceOfHermes; 名前空間DeviceOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 UnitHistoryExtension ユニット関連のHistory拡充です。 Specified usage GetConsumedChargeStack() owner.history.GetConsumedChargeStack(); 累計で消耗した充電の値を取得します。 ただし、UseStack()により消耗した値のみを対象とします。 GetConsumedChargeStackAtOneRound() owner.history.GetConsumedChargeStackAtOneRound(); この幕で消耗した充電の値を取得します。 ただし、UseStack()により消耗した値のみを対象とします。"
+    "summary": "using DeviceOfHermes; 名前空間DeviceOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 UnitHistoryExtension ユニット関連のHistory拡充です。 Specified usage GetDamageByBurn() owner.history.GetDamageByBurn(); 累計で受けた火傷ダメージの合計を取得します。 GetDamageByBleed() owner.history.GetDamageByBleed(); 累計で受けた出血ダメージの合計を取得します。 GetConsumedChargeStack() owner.history.GetConsumedChargeStack(); 累計で消耗した充電の値を取得します。 ただし、UseStack()により消耗した値のみを対象とします。 GetConsumedChargeStackAtOneRound() owner.history.GetConsumedChargeStackAtOneRound(); この幕で消耗した充電の値を取得します。 ただし、UseStack()により消耗した値のみを対象とします。"
   },
   "docs/unitui-extension.html": {
     "href": "docs/unitui-extension.html",
