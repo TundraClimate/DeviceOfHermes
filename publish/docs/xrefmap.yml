@@ -624,6 +624,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct
   nameWithType: AdvancedPassiveBase.OnExtinct
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword(System.Int32,KeywordBuf)
+  name: OnLoseHpByKeyword(int, KeywordBuf)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnLoseHpByKeyword_System_Int32_KeywordBuf_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword(System.Int32,KeywordBuf)
+  name.vb: OnLoseHpByKeyword(Integer, KeywordBuf)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword(int, KeywordBuf)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword(Integer, KeywordBuf)
+  nameWithType: AdvancedPassiveBase.OnLoseHpByKeyword(int, KeywordBuf)
+  nameWithType.vb: AdvancedPassiveBase.OnLoseHpByKeyword(Integer, KeywordBuf)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword*
+  name: OnLoseHpByKeyword
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnLoseHpByKeyword_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword
+  nameWithType: AdvancedPassiveBase.OnLoseHpByKeyword
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
   name: OnPreRoundEnd()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnPreRoundEnd
@@ -883,6 +899,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
   nameWithType: AdvancedUnitBuf.OnInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnLoseHpByKeyword(System.Int32,KeywordBuf)
+  name: OnLoseHpByKeyword(int, KeywordBuf)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnLoseHpByKeyword_System_Int32_KeywordBuf_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnLoseHpByKeyword(System.Int32,KeywordBuf)
+  name.vb: OnLoseHpByKeyword(Integer, KeywordBuf)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnLoseHpByKeyword(int, KeywordBuf)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnLoseHpByKeyword(Integer, KeywordBuf)
+  nameWithType: AdvancedUnitBuf.OnLoseHpByKeyword(int, KeywordBuf)
+  nameWithType.vb: AdvancedUnitBuf.OnLoseHpByKeyword(Integer, KeywordBuf)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnLoseHpByKeyword*
+  name: OnLoseHpByKeyword
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnLoseHpByKeyword_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnLoseHpByKeyword
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnLoseHpByKeyword
+  nameWithType: AdvancedUnitBuf.OnLoseHpByKeyword
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant(DeviceOfHermes.AdvancedBase.AdvancedUnitBuf)
   name: OnOtherInstant(AdvancedUnitBuf)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherInstant_DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_

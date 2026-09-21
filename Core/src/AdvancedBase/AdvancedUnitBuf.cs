@@ -124,6 +124,11 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>On unit lose health by keyword</summary>
+    public virtual void OnLoseHpByKeyword(int losed, KeywordBuf keyword)
+    {
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

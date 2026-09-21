@@ -187,6 +187,10 @@
     {
         return 0;
     }
+
+    public override void OnLoseHpByKeyword(int losed, KeywordBuf keyword)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -393,6 +397,16 @@ null以外を返した場合、返したページで代わりにマッチをし�
 <ul>
 <li><code>buf</code>: 付与されたバフです。</li>
 <li><code>stack</code>: 付与されたスタック数です。</li>
+</ul>
+<h3 id="onlosehpbykeywordint-keywordbuf"><code>OnLoseHpByKeyword(int, KeywordBuf)</code></h3>
+<pre><code class="lang-cs">public override void OnLoseHpByKeyword(int losed, KeywordBuf keyword)
+{
+}
+</code></pre>
+<p><code>KeywordBuf</code>によって体力が減少したときに実行されます。</p>
+<ul>
+<li><code>losed</code>: 失った体力数値です。</li>
+<li><code>keyword</code>: 受けた<code>KeywordBuf</code>です。</li>
 </ul>
 
 </article>

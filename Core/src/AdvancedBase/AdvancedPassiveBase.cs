@@ -147,6 +147,11 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return 0;
     }
 
+    /// <summary>On unit lose health by keyword</summary>
+    public virtual void OnLoseHpByKeyword(int losed, KeywordBuf keyword)
+    {
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

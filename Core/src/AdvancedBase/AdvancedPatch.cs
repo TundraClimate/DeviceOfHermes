@@ -531,6 +531,26 @@ internal static class AdvancedPatch
                 v -= redu.Value;
             }
         }
+
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdloc(), CodeMatch.Calls(typeof(BattleUnitModel).Method("OnLoseHp")))
+                .Advance(1)
+                .Insert(CodeInstruction.Instance, CodeInstruction.Local(1), CodeInstruction.Arg(2), CodeInstruction.Arg(4), CodeInstruction.Call(typeof(PatchDiceDamageValue).Method("InjectMethod")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleUnitModel __instance, int dmg, DamageType dty, KeywordBuf buf)
+        {
+            if (dty is DamageType.Buf && buf is not KeywordBuf.None)
+            {
+                __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnLoseHpByKeyword(dmg, buf));
+                __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnLoseHpByKeyword(dmg, buf));
+            }
+        }
     }
 
     [HarmonyPatch(typeof(BattleUnitModel), "OnRoundStart_ignoreDead")]
