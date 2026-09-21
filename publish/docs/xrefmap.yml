@@ -6387,6 +6387,12 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon
   nameWithType: StoryLineMaker.RegisterSpecialIcon
+- uid: DeviceOfHermes.UnitHistoryExtension
+  name: UnitHistoryExtension
+  href: api/DeviceOfHermes.UnitHistoryExtension.html
+  commentId: T:DeviceOfHermes.UnitHistoryExtension
+  fullName: DeviceOfHermes.UnitHistoryExtension
+  nameWithType: UnitHistoryExtension
 - uid: DeviceOfHermes.UnitUIExtension
   name: UnitUIExtension
   href: api/DeviceOfHermes.UnitUIExtension.html
