@@ -33,7 +33,7 @@ public class VannilaUnitBuf
             target = typeof(BattleUnitBuf).Method("OnAddBuf");
         }
 
-        _forcelyMax.Add((KeywordBuf)typeof(T).Property("bufType").GetValue(new T()), max);
+        _forcelyMax[(KeywordBuf)typeof(T).Property("bufType").GetValue(new T())] = max;
 
         if (_harmony.GetPatchedMethods().All(mes => mes != target))
         {
@@ -61,7 +61,7 @@ public class VannilaUnitBuf
             target = typeof(BattleUnitBuf).Method("OnAddBuf");
         }
 
-        _ifMax.Add((KeywordBuf)typeof(T).Property("bufType").GetValue(new T()), new() { (cond, max) });
+        _ifMax[((KeywordBuf)typeof(T).Property("bufType").GetValue(new T()))] = new() { (cond, max) };
 
         if (_harmony.GetPatchedMethods().All(mes => mes != target))
         {
