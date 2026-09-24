@@ -57,30 +57,4 @@ public class AdvancedDiceBase : DiceCardAbilityBase
         /// <summary>Lose</summary>
         Lose,
     }
-
-    internal static List<BattleDiceBehavior> OnAddKeeped(List<BattleDiceBehavior> behaviourList)
-    {
-        List<BattleDiceBehavior> broke = new();
-
-        foreach (var beh in behaviourList)
-        {
-            foreach (var abi in beh.abilityList)
-            {
-                if (abi is AdvancedDiceBase)
-                {
-                    var advAbi = (AdvancedDiceBase)abi;
-
-                    advAbi.OnAddToKeeped();
-
-                    if (!advAbi.IsKeeps())
-                    {
-                        broke.Add(beh);
-                    }
-                }
-            }
-        }
-
-        return broke;
-    }
-
 }

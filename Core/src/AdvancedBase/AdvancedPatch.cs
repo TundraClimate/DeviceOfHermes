@@ -23,10 +23,8 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnDynamicParrying));
         Patch(typeof(PatchOnChangeTarget));
         Patch(typeof(PatchCanDiscard));
-        Patch(typeof(PatchOnAddKeeps1));
-        Patch(typeof(PatchOnAddKeeps2));
+        Patch(typeof(PatchOnAddKeeps));
         Patch(typeof(PatchOnAddKeep));
-        Patch(typeof(PatchOnAddKeepForDef));
         Patch(typeof(PatchParryingResult));
         Patch(typeof(PatchDiceResultValue));
         Patch(typeof(PatchDiceDamageValue));
@@ -320,53 +318,42 @@ internal static class AdvancedPatch
         }
     }
 
-    [HarmonyPatch
-    (
-        typeof(BattleKeepedCardDataInUnitModel),
-        "AddBehaviours",
-        new[] { typeof(DiceCardXmlInfo), typeof(List<BattleDiceBehavior>) }
-    )]
-    class PatchOnAddKeeps1
+    static bool IsKeepBehavior(BattleDiceBehavior behavior)
     {
+        var abis = behavior.abilityList.OfType<AdvancedDiceBase>();
+
+        abis.Foreach(abi => abi.OnAddToKeeped());
+
+        return abis.All(abi => abi.IsKeeps());
+    }
+
+    [HarmonyPatch]
+    class PatchOnAddKeeps
+    {
+        static IEnumerable<MethodInfo> TargetMethods()
+        {
+            yield return typeof(BattleKeepedCardDataInUnitModel).Method("AddBehaviours", [typeof(DiceCardXmlInfo), typeof(List<BattleDiceBehavior>)]);
+            yield return typeof(BattleKeepedCardDataInUnitModel).Method("AddBehaviours", [typeof(BattleDiceCardModel), typeof(List<BattleDiceBehavior>)]);
+        }
+
         static void Prefix(List<BattleDiceBehavior> behaviourList)
         {
-            var broke = AdvancedDiceBase.OnAddKeeped(behaviourList);
-
-            behaviourList.RemoveAll(b => broke.Contains(b));
+            behaviourList.RemoveAll(b => !IsKeepBehavior(b));
         }
     }
 
-    [HarmonyPatch
-    (
-        typeof(BattleKeepedCardDataInUnitModel),
-        "AddBehaviours",
-        new[] { typeof(BattleDiceCardModel), typeof(List<BattleDiceBehavior>) }
-    )]
-    class PatchOnAddKeeps2
-    {
-        static void Prefix(List<BattleDiceBehavior> behaviourList)
-        {
-            var broke = AdvancedDiceBase.OnAddKeeped(behaviourList);
-
-            behaviourList.RemoveAll(b => broke.Contains(b));
-        }
-    }
-
-    [HarmonyPatch(typeof(BattleKeepedCardDataInUnitModel), "AddBehaviour")]
+    [HarmonyPatch]
     class PatchOnAddKeep
     {
-        static bool Prefix(BattleDiceBehavior behaviour)
+        static IEnumerable<MethodInfo> TargetMethods()
         {
-            return AdvancedDiceBase.OnAddKeeped(new() { behaviour }).Count != 1;
+            yield return typeof(BattleKeepedCardDataInUnitModel).Method("AddBehaviour");
+            yield return typeof(BattleKeepedCardDataInUnitModel).Method("AddBehaviourForOnlyDefense");
         }
-    }
 
-    [HarmonyPatch(typeof(BattleKeepedCardDataInUnitModel), "AddBehaviourForOnlyDefense")]
-    class PatchOnAddKeepForDef
-    {
         static bool Prefix(BattleDiceBehavior behaviour)
         {
-            return AdvancedDiceBase.OnAddKeeped(new() { behaviour }).Count != 1;
+            return IsKeepBehavior(behaviour);
         }
     }
 
