@@ -152,6 +152,12 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>On unit adds keep dice</summary>
+    public virtual bool OnAddKeepDice(BattleDiceBehavior behavior)
+    {
+        return true;
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

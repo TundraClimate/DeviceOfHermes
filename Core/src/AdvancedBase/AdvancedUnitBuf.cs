@@ -129,6 +129,12 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>On unit adds keep dice</summary>
+    public virtual bool OnAddKeepDice(BattleDiceBehavior behavior)
+    {
+        return true;
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

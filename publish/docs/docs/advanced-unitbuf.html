@@ -169,6 +169,11 @@
     {
     }
 
+    public override bool OnAddKeepDice(BattleDiceBehavior behavior)
+    {
+        return true;
+    }
+
     public BattleUnitModel LastInflictBy;
 }
 </code></pre>
@@ -340,6 +345,17 @@ null以外を返した場合、返したページで代わりにマッチをし�
 <ul>
 <li><code>losed</code>: 失った体力数値です。</li>
 <li><code>keyword</code>: 受けた<code>KeywordBuf</code>です。</li>
+</ul>
+<h3 id="onaddkeepdicebattledicebehavior"><code>OnAddKeepDice(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override bool OnAddKeepDice(BattleDiceBehavior behavior)
+{
+    return true;
+}
+</code></pre>
+<p>ダイスが反撃として追加される直前に実行されます。<br>
+<code>false</code>を返すとそのダイス追加がキャンセルされます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
 </ul>
 
 </article>

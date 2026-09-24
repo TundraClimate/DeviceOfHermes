@@ -47,4 +47,10 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     public virtual void BeforeUseCard(ref BattlePlayingCardDataInUnitModel card)
     {
     }
+
+    /// <summary>Card owner on adds keep dice</summary>
+    public virtual bool OnAddKeepDice(BattleDiceBehavior behavior)
+    {
+        return true;
+    }
 }

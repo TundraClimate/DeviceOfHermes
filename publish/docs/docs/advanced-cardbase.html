@@ -119,6 +119,11 @@
     public override void BeforeUseCard(ref BattlePlayingCardDataInUnitModel card)
     {
     }
+
+    public override bool OnAddKeepDice(BattleDiceBehavior behavior)
+    {
+        return true;
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
@@ -184,6 +189,17 @@ falseを返すと捨てられるのをキャンセルすることが出来ます
 <code>card</code>に再代入した場合、そのページを代わりに使用します。</p>
 <ul>
 <li><code>card</code>: 使用しているページです。</li>
+</ul>
+<h3 id="onaddkeepdicebattledicebehavior"><code>OnAddKeepDice(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override bool OnAddKeepDice(BattleDiceBehavior behavior)
+{
+    return true;
+}
+</code></pre>
+<p>ダイスが反撃として追加される直前に実行されます。<br>
+<code>false</code>を返すとそのダイス追加がキャンセルされます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
 </ul>
 
 </article>

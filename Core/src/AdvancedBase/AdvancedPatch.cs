@@ -324,7 +324,27 @@ internal static class AdvancedPatch
 
         abis.Foreach(abi => abi.OnAddToKeeped());
 
-        return abis.All(abi => abi.IsKeeps());
+        bool F<T>(IEnumerable<T> list, Predicate<T> pred)
+        {
+            var res = true;
+
+            foreach (var elem in list)
+            {
+                if (!pred(elem))
+                {
+                    res = false;
+                }
+            }
+
+            return res;
+        }
+
+        var self = behavior.owner;
+        var isKeepsCard = !(behavior.card.cardAbility is AdvancedCardBase card && !card.OnAddKeepDice(behavior));
+        var isKeepsPassive = F(self?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>() ?? [], p => p.OnAddKeepDice(behavior));
+        var isKeepsUnitBuf = F(self?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>() ?? [], p => p.OnAddKeepDice(behavior));
+
+        return abis.All(abi => abi.IsKeeps()) && isKeepsCard && isKeepsPassive && isKeepsUnitBuf;
     }
 
     [HarmonyPatch]

@@ -157,6 +157,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
   nameWithType: AdvancedCardBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice(BattleDiceBehavior)
+  name: OnAddKeepDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnAddKeepDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice(BattleDiceBehavior)
+  nameWithType: AdvancedCardBase.OnAddKeepDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice*
+  name: OnAddKeepDice
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnAddKeepDice_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice
+  nameWithType: AdvancedCardBase.OnAddKeepDice
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder(System.Int32,System.Int32)
   name: SpecialPriorityAdder(int, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_SpecialPriorityAdder_System_Int32_System_Int32_
@@ -540,6 +553,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf
   nameWithType: AdvancedPassiveBase.OnAddBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeepDice(BattleDiceBehavior)
+  name: OnAddKeepDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddKeepDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeepDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeepDice(BattleDiceBehavior)
+  nameWithType: AdvancedPassiveBase.OnAddKeepDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeepDice*
+  name: OnAddKeepDice
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddKeepDice_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeepDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeepDice
+  nameWithType: AdvancedPassiveBase.OnAddKeepDice
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf,System.Int32)
   name: OnAddKeywordBuf(BattleUnitBuf, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddKeywordBuf_BattleUnitBuf_System_Int32_
@@ -841,6 +867,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddBufAll
   nameWithType: AdvancedUnitBuf.OnAddBufAll
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeepDice(BattleDiceBehavior)
+  name: OnAddKeepDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeepDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeepDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeepDice(BattleDiceBehavior)
+  nameWithType: AdvancedUnitBuf.OnAddKeepDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeepDice*
+  name: OnAddKeepDice
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeepDice_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeepDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeepDice
+  nameWithType: AdvancedUnitBuf.OnAddKeepDice
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnAddKeywordBuf(BattleUnitBuf,System.Int32)
   name: OnAddKeywordBuf(BattleUnitBuf, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnAddKeywordBuf_BattleUnitBuf_System_Int32_
