@@ -1,5 +1,7 @@
 using System.Collections;
 
+namespace DeviceOfHermes;
+
 /// <summary>An advanced FarAreaEffect</summary>
 public class AdvancedAreaEffect : FarAreaEffect
 {
