@@ -12,12 +12,15 @@ internal class SpeedDiceBufUI : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetImage(buf.GetBufIcon())
-            .Also(img =>
-            {
-                img.color = new Color(1f, 1f, 1f, 0.7f);
-                img.rectTransform.localScale = new Vector3(0.3f, 0.3f, 1f);
-            });
+        if (buf?.GetBufIcon() is Sprite sprite)
+        {
+            gameObject.SetImage(sprite)
+                .Also(img =>
+                {
+                    img.color = new Color(1f, 1f, 1f, 0.7f);
+                    img.rectTransform.localScale = new Vector3(0.3f, 0.3f, 1f);
+                });
+        }
     }
 
     internal int index;
