@@ -5,4 +5,5 @@
   <Folder Name="/LimbufOfHermes/">
     <Project Path="LimbufOfHermes/LimbufOfHermes.csproj" />
   </Folder>
+  <Project Path="Caduceus/Caduceus.csproj" />
 </Solution>

@@ -8,7 +8,6 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Optimize>true</Optimize>
     <Nullable>enable</Nullable>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <ImplicitUsings>enable</ImplicitUsings>
     <AnalysisLevel>latest</AnalysisLevel>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -21,6 +20,10 @@
 
   <ItemGroup>
     <EmbeddedResource Include="public\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Analyzer Include="$(PWD)\workshop\Caduceus.dll" />
   </ItemGroup>
 
   <ItemGroup>
