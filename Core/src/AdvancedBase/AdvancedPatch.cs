@@ -156,10 +156,7 @@ internal static class AdvancedPatch
             {
                 var res = adv.BeforeTakeOneSideAction(card!.owner, card);
 
-                if (useCard is null)
-                {
-                    useCard = res;
-                }
+                useCard ??= res;
             });
 
             var bufs = card?.target?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
@@ -168,10 +165,7 @@ internal static class AdvancedPatch
             {
                 var res = adv.BeforeTakeOneSideAction(card!.owner);
 
-                if (useCard is null)
-                {
-                    useCard = res;
-                }
+                useCard ??= res;
             });
 
             if (useCard is not null)
@@ -856,10 +850,7 @@ internal static class AdvancedPatch
             {
                 var clickable = bufIcon.gameObject.GetComponent<Clickable>();
 
-                if (clickable is null)
-                {
-                    clickable = bufIcon.gameObject.AddComponent<Clickable>();
-                }
+                clickable ??= bufIcon.gameObject.AddComponent<Clickable>();
 
                 if (bufs.ElementAtOrDefault(i) is BattleBufUIData data && data.buf is AdvancedUnitBuf advBuf)
                 {
@@ -1244,7 +1235,7 @@ internal static class AdvancedPatch
     {
         static Exception Finalizer(Exception __exception, ref Sprite __result, BattleDiceCardBuf __instance)
         {
-            if (__result is null && __instance is AdvancedCardBuf adv)
+            if (__result is null && __instance is AdvancedCardBuf)
             {
                 new BattleUnitBuf().GetBufIcon();
 

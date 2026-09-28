@@ -288,7 +288,7 @@ public sealed class BattleUnitBuf_Limbuf_Barrier : LimbufBase
             var view = _viewRef(origin!);
             var max = view.model.MaxHp;
             var start = Mathf.InverseLerp(90f, 0f, barBg?.gameObject?.transform?.localEulerAngles.z ?? 0f);
-            var end = value == 0 ? 0f : (float)max.Min(value) / (float)max;
+            var end = value == 0 ? 0f : max.Min(value) / (float)max;
 
             if (start == 0 && end == 0)
             {
@@ -434,7 +434,7 @@ public sealed class BattleUnitBuf_Limbuf_Barrier : LimbufBase
             var view = origin!.UnitModel.view;
             var max = view.model.MaxHp;
             var start = Mathf.InverseLerp(-756f, -284f, barBg?.transform?.localPosition.x ?? 0f);
-            var end = value == 0 ? 0f : (float)max.Min(value) / (float)max;
+            var end = value == 0 ? 0f : max.Min(value) / (float)max;
 
             if (start == 0 && end == 0)
             {
@@ -467,8 +467,6 @@ public sealed class BattleUnitBuf_Limbuf_Barrier : LimbufBase
         {
             healthTxt?.gameObject?.SetActive(true);
 
-            var view = origin!.UnitModel.view;
-            var max = view.model.MaxHp;
             var start = float.Parse(healthTxt?.text ?? "0");
             var end = Mathf.Floor(value);
 

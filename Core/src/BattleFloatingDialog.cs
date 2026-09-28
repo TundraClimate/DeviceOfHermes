@@ -39,7 +39,6 @@ internal class BattleFloatingDialog : MonoBehaviour, IPointerDownHandler
 
         var dialog = go.AddComponent<BattleFloatingDialog>();
 
-        dialog.root = go;
         dialog.rootCanvas = go.GetComponent<Canvas>();
         dialog.cg = go.GetComponent<CanvasGroup>();
 
@@ -101,8 +100,6 @@ internal class BattleFloatingDialog : MonoBehaviour, IPointerDownHandler
             UnityObject.Destroy(gameObject);
         }
     }
-
-    GameObject? root;
 
     Canvas? rootCanvas;
 

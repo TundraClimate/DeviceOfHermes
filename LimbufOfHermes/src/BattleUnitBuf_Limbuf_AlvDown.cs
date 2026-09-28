@@ -21,14 +21,14 @@ public class BattleUnitBuf_Limbuf_AlvDown : LimbufBase
         {
             behavior.ApplyDiceStatBonus(new DiceStatBonus
             {
-                max = -(5.Min(this.stack / 5)),
+                max = -5.Min(this.stack / 5),
             });
         }
 
         behavior.ApplyDiceStatBonus(new DiceStatBonus
         {
-            dmgRate = -(50.Min(this.stack)),
-            breakRate = -(50.Min(this.stack)),
+            dmgRate = -50.Min(this.stack),
+            breakRate = -50.Min(this.stack),
         });
     }
 

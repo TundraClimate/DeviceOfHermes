@@ -38,7 +38,7 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
 
         if (consume)
         {
-            ChangeStack(stack => ((int)(stack * 0.75f)));
+            ChangeStack(stack => (int)(stack * 0.75f));
         }
     }
 
@@ -226,8 +226,8 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
 
                 if (damage > 0)
                 {
-                    var log = (int)Mathf.Log10((float)damage);
-                    var digit = (int)Mathf.Pow(10f, (float)log);
+                    var log = (int)Mathf.Log10(damage);
+                    var digit = (int)Mathf.Pow(10f, log);
                     var value = damage / digit;
                     var dmgNum = UnityObject.Instantiate<DamageNumber>(__instance.damageNumberPrefabs[value], effect.damageNumParent);
 
@@ -259,7 +259,7 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
                     effect.numberList.Add(dmgNum);
                 }
 
-                effect.rotatePivot.transform.localScale *= Mathf.Min(3f, (float)(damage + 150) * 0.01f);
+                effect.rotatePivot.transform.localScale *= Mathf.Min(3f, (damage + 150) * 0.01f);
 
                 __instance.SetEffectSizeByCamZoom(effect);
                 __instance.SetEffectSizeByUnitHeight(unit, effect);

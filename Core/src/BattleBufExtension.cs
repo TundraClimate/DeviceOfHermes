@@ -36,7 +36,7 @@ public static class BattleBufExtension
     {
         var res = model.GetBuf<T>();
 
-        buf = res as T;
+        buf = res;
 
         return res is not null;
     }
@@ -88,7 +88,7 @@ public static class BattleBufExtension
     {
         var res = model.GetReadyBuf<T>();
 
-        buf = res as T;
+        buf = res;
 
         return res is not null;
     }

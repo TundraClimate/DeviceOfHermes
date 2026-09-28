@@ -324,7 +324,7 @@ public static class Artwork
     {
         type ??= Path.GetFileName(iconPath)
             .Let(name => (name.EndsWith(".png") || name.EndsWith(".jpg")) ? name.Substring(0, name.Length - 4) : name)
-            .Let(name => (name!.EndsWith(".jpeg") ? name!.Substring(0, name.Length - 5) : name));
+            .Let(name => name!.EndsWith(".jpeg") ? name!.Substring(0, name.Length - 5) : name);
         iconGlowPath ??= iconPath;
 
         var icon = Artwork.CreateSprite(iconPath);

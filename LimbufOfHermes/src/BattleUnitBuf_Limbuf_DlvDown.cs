@@ -21,7 +21,7 @@ public class BattleUnitBuf_Limbuf_DlvDown : LimbufBase
         {
             behavior.ApplyDiceStatBonus(new DiceStatBonus
             {
-                max = -(5.Min(this.stack / 5)),
+                max = -5.Min(this.stack / 5),
             });
         }
     }
@@ -29,13 +29,13 @@ public class BattleUnitBuf_Limbuf_DlvDown : LimbufBase
     /// <summary>Impl DmgFactor</summary>
     public override float DmgFactor(int dmg, DamageType type, KeywordBuf keyword)
     {
-        return 1f + (float)(this.stack.Min(50)) * 0.01f;
+        return 1f + this.stack.Min(50) * 0.01f;
     }
 
     /// <summary>Impl BreakDmgFactor</summary>
     public override float BreakDmgFactor(int dmg, DamageType type, KeywordBuf keyword)
     {
-        return 1f + (float)(this.stack.Min(50)) * 0.01f;
+        return 1f + this.stack.Min(50) * 0.01f;
     }
 
     /// <summary>Impl OnRoundEnd</summary>

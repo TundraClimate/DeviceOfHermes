@@ -61,10 +61,7 @@ public class BattleAmmoBuf : AdvancedUnitBuf
         {
             var card = base._owner?.currentDiceAction;
 
-            if (card is not null)
-            {
-                card.currentBehavior = CreateCancelAlternate(card);
-            }
+            card?.currentBehavior = CreateCancelAlternate(card);
 
             this.OnCancelled();
         }

@@ -158,7 +158,7 @@ public class AdvancedDiceStatBonus : DiceStatBonus
             {
                 var mul = adv.powerMultiplier;
 
-                mul += (adv.powerRate * 1f) / 100;
+                mul += adv.powerRate * 1f / 100;
 
                 loc1 = (int)(loc1 * mul);
             }

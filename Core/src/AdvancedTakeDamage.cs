@@ -39,7 +39,7 @@ public static class AdvancedTakeDamage
 
         InitData(owner, ctx);
 
-        owner.TakeDamage(((int)dmg), type: type, attacker: attacker, keyword: keyword);
+        owner.TakeDamage((int)dmg, type: type, attacker: attacker, keyword: keyword);
 
         RestoreData(owner);
     }
@@ -204,9 +204,7 @@ public static class AdvancedTakeDamage
     {
         static bool Prefix(int damage, int colorIdx, BattleUnitModel unit)
         {
-            Context ctx;
-
-            if (OtherData.TryGetValue(unit, out ctx))
+            if (OtherData.TryGetValue(unit, out var ctx))
             {
                 if (ctx.img is not null)
                 {

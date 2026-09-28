@@ -190,10 +190,7 @@ public class CommonCoroutine
 
         var effect = cam.gameObject.GetComponent<CameraFilterPack_FX_EarthQuake>();
 
-        if (effect is null)
-        {
-            effect = cam.gameObject.AddComponent<CameraFilterPack_FX_EarthQuake>();
-        }
+        effect ??= cam.gameObject.AddComponent<CameraFilterPack_FX_EarthQuake>();
 
         var elapsed = 0f;
 

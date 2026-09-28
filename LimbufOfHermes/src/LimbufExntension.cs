@@ -21,7 +21,7 @@ public static class LimbufExtension
     /// <summary>Applies crit damage rate adder</summary>
     public static void ApplyCritDamageRateAdder(this BattleDiceBehavior beh, int value)
     {
-        beh.ApplyDiceStatBonus(new AdvancedDiceStatBonus { customFields = new() { ["loh_critDmgRate"] = (int)value } });
+        beh.ApplyDiceStatBonus(new AdvancedDiceStatBonus { customFields = new() { ["loh_critDmgRate"] = value } });
     }
 
     /// <summary>Applies crit damage rate adder</summary>
@@ -36,7 +36,7 @@ public static class LimbufExtension
     /// <summary>Applies tremor break rate adder</summary>
     public static void ApplyTremorBreakRateAdder(this BattleDiceBehavior beh, int value)
     {
-        beh.ApplyDiceStatBonus(new AdvancedDiceStatBonus { customFields = new() { ["loh_tremorBreakRate"] = (int)value } });
+        beh.ApplyDiceStatBonus(new AdvancedDiceStatBonus { customFields = new() { ["loh_tremorBreakRate"] = value } });
     }
 
     /// <summary>Applies tremor break rate adder</summary>

@@ -393,12 +393,8 @@ internal class ParseStream(string script)
     {
         var res = (Func<ParseStream, Token?>)_cache.GetOrAdd(typeof(T), _ =>
         {
-            var method = typeof(T).GetMethod("Parse", AccessTools.all);
-
-            if (method is null)
-            {
-                throw new NotImplementedException($"Not implemented 'Parse' in {typeof(T).Name}");
-            }
+            var method = typeof(T).GetMethod("Parse", AccessTools.all)
+                    ?? throw new NotImplementedException($"Not implemented 'Parse' in {typeof(T).Name}");
 
             return method.CreateDelegate(typeof(Func<ParseStream, Token?>), null);
         });

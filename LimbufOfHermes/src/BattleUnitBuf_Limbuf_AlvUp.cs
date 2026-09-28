@@ -27,8 +27,8 @@ public class BattleUnitBuf_Limbuf_AlvUp : LimbufBase
 
         behavior.ApplyDiceStatBonus(new DiceStatBonus
         {
-            dmgRate = (50.Min(this.stack)),
-            breakRate = (50.Min(this.stack)),
+            dmgRate = 50.Min(this.stack),
+            breakRate = 50.Min(this.stack),
         });
     }
 

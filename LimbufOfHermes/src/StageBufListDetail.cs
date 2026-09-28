@@ -1,6 +1,6 @@
 using DeviceOfHermes.UI;
 
-using LimbufOfHermes;
+namespace LimbufOfHermes;
 
 /// <summary>A detail of StageBuf</summary>
 public static class StageBufListDetail
