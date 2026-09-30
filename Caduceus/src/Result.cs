@@ -9,10 +9,12 @@ internal record struct Result<T>
 
     public static Result<T> Err(Diagnostic value)
     {
-        return new() { kind = Kind.Ok, diagnostic = value };
+        return new() { kind = Kind.Err, diagnostic = value };
     }
 
     public bool IsOk => kind is Kind.Ok;
+
+    public T? value => Value;
 
     public Diagnostic? Error => diagnostic;
 
