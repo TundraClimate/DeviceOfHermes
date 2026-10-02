@@ -1,7 +1,7 @@
 namespace DeviceOfHermes.Derive;
 
 /// <summary>An attribute of represents usage</summary>
-[AttributeUsage(AttributeTargets.Class)]
+[AttributeUsage(AttributeTargets.Method)]
 public class DeriveUsageAttribute(Type cls, string method) : Attribute
 {
     /// <summary>defines class</summary>
