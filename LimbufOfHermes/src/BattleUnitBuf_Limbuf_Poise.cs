@@ -158,7 +158,12 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
     {
         static Exception Finalizer(Exception __exception, BattleCardTotalResult __instance)
         {
-            if (GetPoise(__instance.playingCard.owner)?.isCritActive == true)
+            if (__instance?.playingCard?.owner is not BattleUnitModel owner)
+            {
+                return __exception;
+            }
+
+            if (GetPoise(owner)?.isCritActive == true)
             {
                 var dmgList = __instance.playingCard?.target?.battleCardResultLog?.CurbehaviourResult?.dmgListTaken;
 
