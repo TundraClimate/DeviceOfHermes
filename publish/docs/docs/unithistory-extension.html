@@ -93,23 +93,47 @@
 <p>ユニット関連のHistory拡充です。</p>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="getdamagebyburn"><code>GetDamageByBurn()</code></h3>
-<pre><code>owner.history.GetDamageByBurn();
+<pre><code class="lang-cs">owner.history.GetDamageByBurn();
 </code></pre>
 <p>累計で受けた火傷ダメージの合計を取得します。</p>
 <h3 id="getdamagebybleed"><code>GetDamageByBleed()</code></h3>
-<pre><code>owner.history.GetDamageByBleed();
+<pre><code class="lang-cs">owner.history.GetDamageByBleed();
 </code></pre>
 <p>累計で受けた出血ダメージの合計を取得します。</p>
 <h3 id="getconsumedchargestack"><code>GetConsumedChargeStack()</code></h3>
-<pre><code>owner.history.GetConsumedChargeStack();
+<pre><code class="lang-cs">owner.history.GetConsumedChargeStack();
 </code></pre>
 <p>累計で消耗した充電の値を取得します。<br>
 ただし、<code>UseStack()</code>により消耗した値のみを対象とします。</p>
 <h3 id="getconsumedchargestackatoneround"><code>GetConsumedChargeStackAtOneRound()</code></h3>
-<pre><code>owner.history.GetConsumedChargeStackAtOneRound();
+<pre><code class="lang-cs">owner.history.GetConsumedChargeStackAtOneRound();
 </code></pre>
 <p>この幕で消耗した充電の値を取得します。<br>
 ただし、<code>UseStack()</code>により消耗した値のみを対象とします。</p>
+<h3 id="getrecoveredplaypoint"><code>GetRecoveredPlaypoint()</code></h3>
+<pre><code class="lang-cs">owner.history.GetRecoveredPlaypoint();
+</code></pre>
+<p>累計で回復した光の値を取得します。</p>
+<h3 id="getrecoveredplaypointatoneround"><code>GetRecoveredPlaypointAtOneRound()</code></h3>
+<pre><code class="lang-cs">owner.history.GetRecoveredPlaypointAtOneRound();
+</code></pre>
+<p>この幕で回復した光の値を取得します。</p>
+<h3 id="getrecoveredplaypointatprevround"><code>GetRecoveredPlaypointAtPrevRound()</code></h3>
+<pre><code class="lang-cs">owner.history.GetRecoveredPlaypointAtPrevRound();
+</code></pre>
+<p>直前の幕で回復した光の値を取得します。</p>
+<h3 id="getspendedcost"><code>GetSpendedCost()</code></h3>
+<pre><code class="lang-cs">owner.history.GetSpendedCost();
+</code></pre>
+<p>累計で消耗した光の値を取得します。</p>
+<h3 id="getspendedcostatoneround"><code>GetSpendedCostAtOneRound()</code></h3>
+<pre><code class="lang-cs">owner.history.GetSpendedCostAtOneRound();
+</code></pre>
+<p>この幕で消耗した光の値を取得します。</p>
+<h3 id="getspendedcostatprevround"><code>GetSpendedCostAtPrevRound()</code></h3>
+<pre><code class="lang-cs">owner.history.GetSpendedCostAtPrevRound();
+</code></pre>
+<p>直前の幕で消耗した光の値を取得します。</p>
 
 </article>
 

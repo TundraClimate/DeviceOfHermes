@@ -48,6 +48,70 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdditonalOnlyCard.AddCards
   nameWithType: AdditonalOnlyCard.AddCards
+- uid: DeviceOfHermes.AdvancedAreaEffect
+  name: AdvancedAreaEffect
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html
+  commentId: T:DeviceOfHermes.AdvancedAreaEffect
+  fullName: DeviceOfHermes.AdvancedAreaEffect
+  nameWithType: AdvancedAreaEffect
+- uid: DeviceOfHermes.AdvancedAreaEffect.ActionPhase(System.Single,BattleUnitModel,System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo},System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo}@)
+  name: ActionPhase(float, BattleUnitModel, List<VictimInfo>, ref List<VictimInfo>)
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_ActionPhase_System_Single_BattleUnitModel_System_Collections_Generic_List_BattleFarAreaPlayManager_VictimInfo__System_Collections_Generic_List_BattleFarAreaPlayManager_VictimInfo___
+  commentId: M:DeviceOfHermes.AdvancedAreaEffect.ActionPhase(System.Single,BattleUnitModel,System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo},System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo}@)
+  name.vb: ActionPhase(Single, BattleUnitModel, List(Of VictimInfo), List(Of VictimInfo))
+  fullName: DeviceOfHermes.AdvancedAreaEffect.ActionPhase(float, BattleUnitModel, System.Collections.Generic.List<BattleFarAreaPlayManager.VictimInfo>, ref System.Collections.Generic.List<BattleFarAreaPlayManager.VictimInfo>)
+  fullName.vb: DeviceOfHermes.AdvancedAreaEffect.ActionPhase(Single, BattleUnitModel, System.Collections.Generic.List(Of BattleFarAreaPlayManager.VictimInfo), System.Collections.Generic.List(Of BattleFarAreaPlayManager.VictimInfo))
+  nameWithType: AdvancedAreaEffect.ActionPhase(float, BattleUnitModel, List<BattleFarAreaPlayManager.VictimInfo>, ref List<BattleFarAreaPlayManager.VictimInfo>)
+  nameWithType.vb: AdvancedAreaEffect.ActionPhase(Single, BattleUnitModel, List(Of BattleFarAreaPlayManager.VictimInfo), List(Of BattleFarAreaPlayManager.VictimInfo))
+- uid: DeviceOfHermes.AdvancedAreaEffect.ActionPhase*
+  name: ActionPhase
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_ActionPhase_
+  commentId: Overload:DeviceOfHermes.AdvancedAreaEffect.ActionPhase
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedAreaEffect.ActionPhase
+  nameWithType: AdvancedAreaEffect.ActionPhase
+- uid: DeviceOfHermes.AdvancedAreaEffect.ActionSeq(BattleUnitModel,System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo})
+  name: ActionSeq(BattleUnitModel, List<VictimInfo>)
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_ActionSeq_BattleUnitModel_System_Collections_Generic_List_BattleFarAreaPlayManager_VictimInfo__
+  commentId: M:DeviceOfHermes.AdvancedAreaEffect.ActionSeq(BattleUnitModel,System.Collections.Generic.List{BattleFarAreaPlayManager.VictimInfo})
+  name.vb: ActionSeq(BattleUnitModel, List(Of VictimInfo))
+  fullName: DeviceOfHermes.AdvancedAreaEffect.ActionSeq(BattleUnitModel, System.Collections.Generic.List<BattleFarAreaPlayManager.VictimInfo>)
+  fullName.vb: DeviceOfHermes.AdvancedAreaEffect.ActionSeq(BattleUnitModel, System.Collections.Generic.List(Of BattleFarAreaPlayManager.VictimInfo))
+  nameWithType: AdvancedAreaEffect.ActionSeq(BattleUnitModel, List<BattleFarAreaPlayManager.VictimInfo>)
+  nameWithType.vb: AdvancedAreaEffect.ActionSeq(BattleUnitModel, List(Of BattleFarAreaPlayManager.VictimInfo))
+- uid: DeviceOfHermes.AdvancedAreaEffect.ActionSeq*
+  name: ActionSeq
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_ActionSeq_
+  commentId: Overload:DeviceOfHermes.AdvancedAreaEffect.ActionSeq
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedAreaEffect.ActionSeq
+  nameWithType: AdvancedAreaEffect.ActionSeq
+- uid: DeviceOfHermes.AdvancedAreaEffect.DefenseVictims
+  name: DefenseVictims
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_DefenseVictims
+  commentId: P:DeviceOfHermes.AdvancedAreaEffect.DefenseVictims
+  fullName: DeviceOfHermes.AdvancedAreaEffect.DefenseVictims
+  nameWithType: AdvancedAreaEffect.DefenseVictims
+- uid: DeviceOfHermes.AdvancedAreaEffect.DefenseVictims*
+  name: DefenseVictims
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_DefenseVictims_
+  commentId: Overload:DeviceOfHermes.AdvancedAreaEffect.DefenseVictims
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedAreaEffect.DefenseVictims
+  nameWithType: AdvancedAreaEffect.DefenseVictims
+- uid: DeviceOfHermes.AdvancedAreaEffect.DeltaTime
+  name: DeltaTime
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_DeltaTime
+  commentId: P:DeviceOfHermes.AdvancedAreaEffect.DeltaTime
+  fullName: DeviceOfHermes.AdvancedAreaEffect.DeltaTime
+  nameWithType: AdvancedAreaEffect.DeltaTime
+- uid: DeviceOfHermes.AdvancedAreaEffect.DeltaTime*
+  name: DeltaTime
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_DeltaTime_
+  commentId: Overload:DeviceOfHermes.AdvancedAreaEffect.DeltaTime
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedAreaEffect.DeltaTime
+  nameWithType: AdvancedAreaEffect.DeltaTime
 - uid: DeviceOfHermes.AdvancedBase
   name: DeviceOfHermes.AdvancedBase
   href: api/DeviceOfHermes.AdvancedBase.html
@@ -10247,6 +10311,86 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.StageBufBase.OnConsume
   nameWithType: StageBufBase.OnConsume
+- uid: LimbufOfHermes.StageBufListDetail
+  name: StageBufListDetail
+  href: api/LimbufOfHermes.StageBufListDetail.html
+  commentId: T:LimbufOfHermes.StageBufListDetail
+  fullName: LimbufOfHermes.StageBufListDetail
+  nameWithType: StageBufListDetail
+- uid: LimbufOfHermes.StageBufListDetail.ActivateStageBuf(LimbufOfHermes.StageBuf)
+  name: ActivateStageBuf(StageBuf)
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_ActivateStageBuf_LimbufOfHermes_StageBuf_
+  commentId: M:LimbufOfHermes.StageBufListDetail.ActivateStageBuf(LimbufOfHermes.StageBuf)
+  fullName: LimbufOfHermes.StageBufListDetail.ActivateStageBuf(LimbufOfHermes.StageBuf)
+  nameWithType: StageBufListDetail.ActivateStageBuf(StageBuf)
+- uid: LimbufOfHermes.StageBufListDetail.ActivateStageBuf*
+  name: ActivateStageBuf
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_ActivateStageBuf_
+  commentId: Overload:LimbufOfHermes.StageBufListDetail.ActivateStageBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.StageBufListDetail.ActivateStageBuf
+  nameWithType: StageBufListDetail.ActivateStageBuf
+- uid: LimbufOfHermes.StageBufListDetail.AddBufCount(LimbufOfHermes.StageBuf,System.Int32)
+  name: AddBufCount(StageBuf, int)
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_AddBufCount_LimbufOfHermes_StageBuf_System_Int32_
+  commentId: M:LimbufOfHermes.StageBufListDetail.AddBufCount(LimbufOfHermes.StageBuf,System.Int32)
+  name.vb: AddBufCount(StageBuf, Integer)
+  fullName: LimbufOfHermes.StageBufListDetail.AddBufCount(LimbufOfHermes.StageBuf, int)
+  fullName.vb: LimbufOfHermes.StageBufListDetail.AddBufCount(LimbufOfHermes.StageBuf, Integer)
+  nameWithType: StageBufListDetail.AddBufCount(StageBuf, int)
+  nameWithType.vb: StageBufListDetail.AddBufCount(StageBuf, Integer)
+- uid: LimbufOfHermes.StageBufListDetail.AddBufCount*
+  name: AddBufCount
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_AddBufCount_
+  commentId: Overload:LimbufOfHermes.StageBufListDetail.AddBufCount
+  isSpec: "True"
+  fullName: LimbufOfHermes.StageBufListDetail.AddBufCount
+  nameWithType: StageBufListDetail.AddBufCount
+- uid: LimbufOfHermes.StageBufListDetail.Consume(LimbufOfHermes.StageBuf,System.Int32,BattleUnitModel)
+  name: Consume(StageBuf, int, BattleUnitModel?)
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_Consume_LimbufOfHermes_StageBuf_System_Int32_BattleUnitModel_
+  commentId: M:LimbufOfHermes.StageBufListDetail.Consume(LimbufOfHermes.StageBuf,System.Int32,BattleUnitModel)
+  name.vb: Consume(StageBuf, Integer, BattleUnitModel)
+  fullName: LimbufOfHermes.StageBufListDetail.Consume(LimbufOfHermes.StageBuf, int, BattleUnitModel?)
+  fullName.vb: LimbufOfHermes.StageBufListDetail.Consume(LimbufOfHermes.StageBuf, Integer, BattleUnitModel)
+  nameWithType: StageBufListDetail.Consume(StageBuf, int, BattleUnitModel?)
+  nameWithType.vb: StageBufListDetail.Consume(StageBuf, Integer, BattleUnitModel)
+- uid: LimbufOfHermes.StageBufListDetail.Consume*
+  name: Consume
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_Consume_
+  commentId: Overload:LimbufOfHermes.StageBufListDetail.Consume
+  isSpec: "True"
+  fullName: LimbufOfHermes.StageBufListDetail.Consume
+  nameWithType: StageBufListDetail.Consume
+- uid: LimbufOfHermes.StageBufListDetail.GetBufCount(LimbufOfHermes.StageBuf)
+  name: GetBufCount(StageBuf)
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_GetBufCount_LimbufOfHermes_StageBuf_
+  commentId: M:LimbufOfHermes.StageBufListDetail.GetBufCount(LimbufOfHermes.StageBuf)
+  fullName: LimbufOfHermes.StageBufListDetail.GetBufCount(LimbufOfHermes.StageBuf)
+  nameWithType: StageBufListDetail.GetBufCount(StageBuf)
+- uid: LimbufOfHermes.StageBufListDetail.GetBufCount*
+  name: GetBufCount
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_GetBufCount_
+  commentId: Overload:LimbufOfHermes.StageBufListDetail.GetBufCount
+  isSpec: "True"
+  fullName: LimbufOfHermes.StageBufListDetail.GetBufCount
+  nameWithType: StageBufListDetail.GetBufCount
+- uid: LimbufOfHermes.StageBufListDetail.TryConsume(LimbufOfHermes.StageBuf,System.Int32,BattleUnitModel)
+  name: TryConsume(StageBuf, int, BattleUnitModel?)
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_TryConsume_LimbufOfHermes_StageBuf_System_Int32_BattleUnitModel_
+  commentId: M:LimbufOfHermes.StageBufListDetail.TryConsume(LimbufOfHermes.StageBuf,System.Int32,BattleUnitModel)
+  name.vb: TryConsume(StageBuf, Integer, BattleUnitModel)
+  fullName: LimbufOfHermes.StageBufListDetail.TryConsume(LimbufOfHermes.StageBuf, int, BattleUnitModel?)
+  fullName.vb: LimbufOfHermes.StageBufListDetail.TryConsume(LimbufOfHermes.StageBuf, Integer, BattleUnitModel)
+  nameWithType: StageBufListDetail.TryConsume(StageBuf, int, BattleUnitModel?)
+  nameWithType.vb: StageBufListDetail.TryConsume(StageBuf, Integer, BattleUnitModel)
+- uid: LimbufOfHermes.StageBufListDetail.TryConsume*
+  name: TryConsume
+  href: api/LimbufOfHermes.StageBufListDetail.html#LimbufOfHermes_StageBufListDetail_TryConsume_
+  commentId: Overload:LimbufOfHermes.StageBufListDetail.TryConsume
+  isSpec: "True"
+  fullName: LimbufOfHermes.StageBufListDetail.TryConsume
+  nameWithType: StageBufListDetail.TryConsume
 - uid: System
   name: System
   href: api/System.html
