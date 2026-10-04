@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -8,11 +9,14 @@ sealed class Generator : IIncrementalGenerator
 {
     const string DERIVE_ATTR = "DeviceOfHermes.Derive.DeriveAttribute";
     const string DERIVE_TEMPLATE_ATTR = "DeviceOfHermes.Derive.DeriveTemplateAttribute";
+    const string DERIVE_USAGE_ATTR = "DeviceOfHermes.Derive.DeriveUsageAttribute";
+    const string DERIVE_PRIORITY_ATTR = "DeviceOfHermes.Derive.DerivePriorityAttribute";
 
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        context.SyntaxProvider.ForAttributeWithMetadataName(DERIVE_ATTR, static (node, _) => node is ClassDeclarationSyntax, InitTransform)
-            .Unwrap(context);
+        var output = context.SyntaxProvider.ForAttributeWithMetadataName(DERIVE_ATTR, static (node, _) => node is ClassDeclarationSyntax, InitTransform)
+            .Unwrap(context)
+            .Select(GetCandidates);
     }
 
     static Result<ImplementInfo?> InitTransform(GeneratorAttributeSyntaxContext ctx, CancellationToken ct)
@@ -54,8 +58,41 @@ sealed class Generator : IIncrementalGenerator
 
         return new(new(symbol, templates.ToImmutableArray()), diagnostics.ToImmutableArray());
     }
+
+    static CandidatesInfo GetCandidates(ImplementInfo? res, CancellationToken ct)
+    {
+        var info = res!.Value;
+        var methods = info.Templates.SelectMany(t => t.GetMembers().OfType<IMethodSymbol>());
+
+        ConcurrentDictionary<IMethodSymbol, List<(int, IMethodSymbol)>> methodPriorityList = new(SymbolEqualityComparer.Default);
+
+        foreach (var method in methods)
+        {
+            if (method.FindAttribute(DERIVE_USAGE_ATTR) is not AttributeData usage || usage.Get(0).Value is not INamedTypeSymbol targetType || usage.Get(1).Value is not string targetName || !info.Applies.IsImplemented(targetType))
+            {
+                continue;
+            }
+
+            var targetParams = !usage.Get(2).Values.IsDefault ? usage.Get(2).Values.Select(v => v.Value).Cast<ITypeSymbol>() : null;
+
+            if (targetType.FindMethod(targetName, targetParams) is not IMethodSymbol targetMethod || !targetMethod.IsRootVirtual() || !info.Applies.CanOverride(targetMethod))
+            {
+                continue;
+            }
+
+            var priority = method.FindAttribute(DERIVE_PRIORITY_ATTR)?.Get(0).Value as int? ?? 0;
+
+            methodPriorityList.GetOrAdd(targetMethod, _ => new()).Add((priority, method));
+        }
+
+        var dict = methodPriorityList.ToImmutableDictionary<KeyValuePair<IMethodSymbol, List<(int, IMethodSymbol)>>, IMethodSymbol, ImmutableArray<IMethodSymbol>>(e => e.Key, e => e.Value.OrderByDescending(v => v.Item1).Select(v => v.Item2).ToImmutableArray(), SymbolEqualityComparer.Default);
+
+        return new(info.Applies, dict);
+    }
 }
 
 record struct Result<T>(T Value, ImmutableArray<Diagnostic> Diagnostics);
 
-record struct ImplementInfo(INamedTypeSymbol applies, ImmutableArray<INamedTypeSymbol> Templates);
+record struct ImplementInfo(INamedTypeSymbol Applies, ImmutableArray<INamedTypeSymbol> Templates);
+
+record struct CandidatesInfo(INamedTypeSymbol Applies, ImmutableDictionary<IMethodSymbol, ImmutableArray<IMethodSymbol>> Candidates);

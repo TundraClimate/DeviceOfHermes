@@ -39,6 +39,62 @@ internal static class Ext
 
             return IsImplemented(symbol.BaseType, spec);
         }
+
+        public IMethodSymbol? FindMethod(string methodName, IEnumerable<ITypeSymbol>? methodParams = null)
+        {
+            var methods = symbol.GetMembers().OfType<IMethodSymbol>();
+
+            if (methodParams is null)
+            {
+                return methods.FirstOrDefault(m => m.Name == methodName);
+            }
+
+            return methods.FirstOrDefault(m => m.Name == methodName && m.Parameters.Select(p => p.Type).SequenceEqual(methodParams, SymbolEqualityComparer.Default));
+        }
+
+        public bool CanOverride(IMethodSymbol rootMethod)
+        {
+            var name = rootMethod.Name;
+            var methodParams = rootMethod.Parameters.Select(p => p.Type);
+
+            if (symbol.FindMethod(name, methodParams) is IMethodSymbol find && find.IsOverride)
+            {
+                return false;
+            }
+
+            var targetCls = symbol.BaseType;
+
+            while (targetCls is not null)
+            {
+                if (targetCls.FindMethod(name, methodParams) is IMethodSymbol m && m.IsOverride && m.IsSealed)
+                {
+                    return false;
+                }
+
+                targetCls = targetCls.BaseType;
+            }
+
+            return true;
+        }
+    }
+
+    extension(IMethodSymbol symbol)
+    {
+        public AttributeData? FindAttribute(string metadataName)
+        {
+            return symbol.GetAttributes().FirstOrDefault(attr => attr.AttributeClass?.ToDisplayString() == metadataName);
+        }
+
+        public bool IsRootVirtual()
+        {
+            return symbol.IsVirtual
+                && !symbol.IsOverride
+                && !symbol.IsStatic
+                && !symbol.IsSealed
+                && symbol.DeclaredAccessibility is
+                    Accessibility.Public or
+                    Accessibility.Protected;
+        }
     }
 
     extension(AttributeData attribute)
