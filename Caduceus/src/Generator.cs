@@ -17,6 +17,8 @@ sealed class Generator : IIncrementalGenerator
         var output = context.SyntaxProvider.ForAttributeWithMetadataName(DERIVE_ATTR, static (node, _) => node is ClassDeclarationSyntax, InitTransform)
             .Unwrap(context)
             .Select(GetCandidates);
+
+        context.RegisterSourceOutput(output, GenerateAdditionalSource);
     }
 
     static Result<ImplementInfo?> InitTransform(GeneratorAttributeSyntaxContext ctx, CancellationToken ct)
@@ -88,6 +90,31 @@ sealed class Generator : IIncrementalGenerator
         var dict = methodPriorityList.ToImmutableDictionary<KeyValuePair<IMethodSymbol, List<(int, IMethodSymbol)>>, IMethodSymbol, ImmutableArray<IMethodSymbol>>(e => e.Key, e => e.Value.OrderByDescending(v => v.Item1).Select(v => v.Item2).ToImmutableArray(), SymbolEqualityComparer.Default);
 
         return new(info.Applies, dict);
+    }
+
+    static void GenerateAdditionalSource(SourceProductionContext ctx, CandidatesInfo info)
+    {
+        var methods = info.Candidates.Select(cand =>
+        {
+            var baseMethod = cand.Key.ConvertOverrideMethodSyntax();
+            List<List<StatementSyntax>> body = [[cand.Key.GenerateBaseInvokeStatement()], cand.Value.Select(c => c.GenerateStaticInvokeStatement(cand.Key)).ToList()];
+
+            return baseMethod.WithBody(SyntaxFactory.Block(body.SelectMany(s => s)));
+        });
+
+        var cls = (ClassDeclarationSyntax)info.Applies.DeclaringSyntaxReferences.First().GetSyntax();
+
+        cls = cls.WithAttributeLists(default).WithMembers(default).WithoutTrivia()
+            .AddMembers(methods.ToArray());
+
+        var ns = SyntaxFactory.NamespaceDeclaration(SyntaxFactory.ParseName(info.Applies.ContainingNamespace.ToDisplayString()))
+            .AddMembers(cls);
+
+        var fileName = $"CADUCEUS_{info.Applies.ToDisplayString()}.g.cs";
+        var compilation = SyntaxFactory.CompilationUnit().AddMembers(ns)
+            .NormalizeWhitespace().ToFullString();
+
+        ctx.AddSource(fileName, compilation);
     }
 }
 
