@@ -82,6 +82,11 @@ sealed class Generator : IIncrementalGenerator
                 continue;
             }
 
+            if (!targetMethod.ReturnsVoid)
+            {
+                continue;
+            }
+
             var priority = method.FindAttribute(DERIVE_PRIORITY_ATTR)?.Get(0).Value as int? ?? 0;
 
             methodPriorityList.GetOrAdd(targetMethod, _ => new()).Add((priority, method));
