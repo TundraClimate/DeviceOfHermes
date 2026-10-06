@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>using DeviceOfHermes.Derive; | DeviceOfHermes </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="using DeviceOfHermes.Derive; | DeviceOfHermes ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TundraClimate/DeviceOfHermes/blob/generator/docfx/docs/derive.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DeviceOfHermes">
+            DeviceOfHermes
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="using-deviceofhermesderive"><code>using DeviceOfHermes.Derive;</code></h1>
+
+<p>名前空間<code>DeviceOfHermes.Derive</code>に存在するクラスです。<br>
+この記事はこれを前提に書かれています。</p>
+<h1 id="caduceus-required">Caduceus REQUIRED</h1>
+<p><code>Caduceus</code>を必要とします。<br>
+詳細はトップページを参照してください。</p>
+<h1 id="derive">Derive</h1>
+<p>対応するテンプレートをクラスに指定し、自動で処理を実装する仕組みです。<br>
+この自動実装は対応するメソッドがユーザーによって既に実装されている場合は<strong>スキップされます。</strong><br>
+対応するメソッドは大抵テンプレート名に含んでいるため、そちらを参照してください。</p>
+<pre><code class="lang-cs">// クラスはpartialである必要があります
+// テンプレート 'DestroyOnRoundEnd' を指定している
+// ','で区切ることで複数のテンプレートを指定することが可能です
+[Derive(typeof(DestroyOnRoundEnd))]
+public partial class BattleUnitBuf_AutoDestroy : BattleUnitBuf
+{
+    // 以下のメソッドが自動で実装されます。
+    /* 
+    public override void OnRoundEnd()
+    {
+        base.OnRoundEnd();
+
+        Destroy();
+    }
+    */
+
+    // 自分で代わりに実装した場合は自動実装がスキップされます
+    public override void OnRoundEnd()
+    {
+    }
+}
+</code></pre>
+<p>組み込みテンプレートについては<a href="derive-template.html">DeriveTemplate</a>を参照してください。</p>
+<h2 id="defines-template">Defines Template</h2>
+<p>テンプレートを自作することが出来ます。</p>
+<pre><code class="lang-cs">// public staticでクラスを作成してください
+// 'DeriveTemplate'では対象とするクラスを指定してください(例: 'BattleUnitBuf'のメソッド用テンプレート)
+[DeriveTemplate(typeof(BattleUnitBuf))]
+public static class MyTemplateInit
+{
+    // public static voidでメソッドを作成してください
+    // Usageには対象とするメソッドを特定する情報を指定します
+    // 宣言型、メソッド名、メソッド引数配列の順番です
+    // DerivePriorityで指定した数値が高い順番に同じメソッド内のテンプレートが呼び出されます(初期値: 0)
+    // 実際に宣言するメソッドの引数は第一引数にインスタンスが、それ以降は本来の引数が順番に注入されます。
+    [DerivePriority(100)]
+    [DeriveUsage(typeof(BattleUnitBuf), &quot;Init&quot;, [ typeof(BattleUnitModel) ])]
+    public static void OnRoundEnd(BattleUnitBuf instance, BattleUnitModel owner)
+    {
+        // instanceを使用して処理を実装する
+    }
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TundraClimate/DeviceOfHermes/blob/generator/docfx/docs/derive.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

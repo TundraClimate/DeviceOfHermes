@@ -2675,6 +2675,148 @@ references:
   commentId: T:DeviceOfHermes.DeckExtension
   fullName: DeviceOfHermes.DeckExtension
   nameWithType: DeckExtension
+- uid: DeviceOfHermes.Derive
+  name: DeviceOfHermes.Derive
+  href: api/DeviceOfHermes.Derive.html
+  commentId: N:DeviceOfHermes.Derive
+  fullName: DeviceOfHermes.Derive
+  nameWithType: DeviceOfHermes.Derive
+- uid: DeviceOfHermes.Derive.DeriveAttribute
+  name: DeriveAttribute
+  href: api/DeviceOfHermes.Derive.DeriveAttribute.html
+  commentId: T:DeviceOfHermes.Derive.DeriveAttribute
+  fullName: DeviceOfHermes.Derive.DeriveAttribute
+  nameWithType: DeriveAttribute
+- uid: DeviceOfHermes.Derive.DeriveAttribute.#ctor(System.Type[])
+  name: DeriveAttribute(params Type[])
+  href: api/DeviceOfHermes.Derive.DeriveAttribute.html#DeviceOfHermes_Derive_DeriveAttribute__ctor_System_Type___
+  commentId: M:DeviceOfHermes.Derive.DeriveAttribute.#ctor(System.Type[])
+  name.vb: New(ParamArray Type())
+  fullName: DeviceOfHermes.Derive.DeriveAttribute.DeriveAttribute(params System.Type[])
+  fullName.vb: DeviceOfHermes.Derive.DeriveAttribute.New(ParamArray System.Type())
+  nameWithType: DeriveAttribute.DeriveAttribute(params Type[])
+  nameWithType.vb: DeriveAttribute.New(ParamArray Type())
+- uid: DeviceOfHermes.Derive.DeriveAttribute.#ctor*
+  name: DeriveAttribute
+  href: api/DeviceOfHermes.Derive.DeriveAttribute.html#DeviceOfHermes_Derive_DeriveAttribute__ctor_
+  commentId: Overload:DeviceOfHermes.Derive.DeriveAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.Derive.DeriveAttribute.DeriveAttribute
+  fullName.vb: DeviceOfHermes.Derive.DeriveAttribute.New
+  nameWithType: DeriveAttribute.DeriveAttribute
+  nameWithType.vb: DeriveAttribute.New
+- uid: DeviceOfHermes.Derive.DeriveAttribute.template
+  name: template
+  href: api/DeviceOfHermes.Derive.DeriveAttribute.html#DeviceOfHermes_Derive_DeriveAttribute_template
+  commentId: F:DeviceOfHermes.Derive.DeriveAttribute.template
+  fullName: DeviceOfHermes.Derive.DeriveAttribute.template
+  nameWithType: DeriveAttribute.template
+- uid: DeviceOfHermes.Derive.DerivePriorityAttribute
+  name: DerivePriorityAttribute
+  href: api/DeviceOfHermes.Derive.DerivePriorityAttribute.html
+  commentId: T:DeviceOfHermes.Derive.DerivePriorityAttribute
+  fullName: DeviceOfHermes.Derive.DerivePriorityAttribute
+  nameWithType: DerivePriorityAttribute
+- uid: DeviceOfHermes.Derive.DerivePriorityAttribute.#ctor(System.Int32)
+  name: DerivePriorityAttribute(int)
+  href: api/DeviceOfHermes.Derive.DerivePriorityAttribute.html#DeviceOfHermes_Derive_DerivePriorityAttribute__ctor_System_Int32_
+  commentId: M:DeviceOfHermes.Derive.DerivePriorityAttribute.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: DeviceOfHermes.Derive.DerivePriorityAttribute.DerivePriorityAttribute(int)
+  fullName.vb: DeviceOfHermes.Derive.DerivePriorityAttribute.New(Integer)
+  nameWithType: DerivePriorityAttribute.DerivePriorityAttribute(int)
+  nameWithType.vb: DerivePriorityAttribute.New(Integer)
+- uid: DeviceOfHermes.Derive.DerivePriorityAttribute.#ctor*
+  name: DerivePriorityAttribute
+  href: api/DeviceOfHermes.Derive.DerivePriorityAttribute.html#DeviceOfHermes_Derive_DerivePriorityAttribute__ctor_
+  commentId: Overload:DeviceOfHermes.Derive.DerivePriorityAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.Derive.DerivePriorityAttribute.DerivePriorityAttribute
+  fullName.vb: DeviceOfHermes.Derive.DerivePriorityAttribute.New
+  nameWithType: DerivePriorityAttribute.DerivePriorityAttribute
+  nameWithType.vb: DerivePriorityAttribute.New
+- uid: DeviceOfHermes.Derive.DerivePriorityAttribute.priority
+  name: priority
+  href: api/DeviceOfHermes.Derive.DerivePriorityAttribute.html#DeviceOfHermes_Derive_DerivePriorityAttribute_priority
+  commentId: F:DeviceOfHermes.Derive.DerivePriorityAttribute.priority
+  fullName: DeviceOfHermes.Derive.DerivePriorityAttribute.priority
+  nameWithType: DerivePriorityAttribute.priority
+- uid: DeviceOfHermes.Derive.DeriveTemplateAttribute
+  name: DeriveTemplateAttribute
+  href: api/DeviceOfHermes.Derive.DeriveTemplateAttribute.html
+  commentId: T:DeviceOfHermes.Derive.DeriveTemplateAttribute
+  fullName: DeviceOfHermes.Derive.DeriveTemplateAttribute
+  nameWithType: DeriveTemplateAttribute
+- uid: DeviceOfHermes.Derive.DeriveTemplateAttribute.#ctor(System.Type)
+  name: DeriveTemplateAttribute(Type)
+  href: api/DeviceOfHermes.Derive.DeriveTemplateAttribute.html#DeviceOfHermes_Derive_DeriveTemplateAttribute__ctor_System_Type_
+  commentId: M:DeviceOfHermes.Derive.DeriveTemplateAttribute.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: DeviceOfHermes.Derive.DeriveTemplateAttribute.DeriveTemplateAttribute(System.Type)
+  fullName.vb: DeviceOfHermes.Derive.DeriveTemplateAttribute.New(System.Type)
+  nameWithType: DeriveTemplateAttribute.DeriveTemplateAttribute(Type)
+  nameWithType.vb: DeriveTemplateAttribute.New(Type)
+- uid: DeviceOfHermes.Derive.DeriveTemplateAttribute.#ctor*
+  name: DeriveTemplateAttribute
+  href: api/DeviceOfHermes.Derive.DeriveTemplateAttribute.html#DeviceOfHermes_Derive_DeriveTemplateAttribute__ctor_
+  commentId: Overload:DeviceOfHermes.Derive.DeriveTemplateAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.Derive.DeriveTemplateAttribute.DeriveTemplateAttribute
+  fullName.vb: DeviceOfHermes.Derive.DeriveTemplateAttribute.New
+  nameWithType: DeriveTemplateAttribute.DeriveTemplateAttribute
+  nameWithType.vb: DeriveTemplateAttribute.New
+- uid: DeviceOfHermes.Derive.DeriveTemplateAttribute.target
+  name: target
+  href: api/DeviceOfHermes.Derive.DeriveTemplateAttribute.html#DeviceOfHermes_Derive_DeriveTemplateAttribute_target
+  commentId: F:DeviceOfHermes.Derive.DeriveTemplateAttribute.target
+  fullName: DeviceOfHermes.Derive.DeriveTemplateAttribute.target
+  nameWithType: DeriveTemplateAttribute.target
+- uid: DeviceOfHermes.Derive.DeriveUsageAttribute
+  name: DeriveUsageAttribute
+  href: api/DeviceOfHermes.Derive.DeriveUsageAttribute.html
+  commentId: T:DeviceOfHermes.Derive.DeriveUsageAttribute
+  fullName: DeviceOfHermes.Derive.DeriveUsageAttribute
+  nameWithType: DeriveUsageAttribute
+- uid: DeviceOfHermes.Derive.DeriveUsageAttribute.#ctor(System.Type,System.String,System.Type[])
+  name: DeriveUsageAttribute(Type, string, Type[]?)
+  href: api/DeviceOfHermes.Derive.DeriveUsageAttribute.html#DeviceOfHermes_Derive_DeriveUsageAttribute__ctor_System_Type_System_String_System_Type___
+  commentId: M:DeviceOfHermes.Derive.DeriveUsageAttribute.#ctor(System.Type,System.String,System.Type[])
+  name.vb: New(Type, String, Type())
+  fullName: DeviceOfHermes.Derive.DeriveUsageAttribute.DeriveUsageAttribute(System.Type, string, System.Type[]?)
+  fullName.vb: DeviceOfHermes.Derive.DeriveUsageAttribute.New(System.Type, String, System.Type())
+  nameWithType: DeriveUsageAttribute.DeriveUsageAttribute(Type, string, Type[]?)
+  nameWithType.vb: DeriveUsageAttribute.New(Type, String, Type())
+- uid: DeviceOfHermes.Derive.DeriveUsageAttribute.#ctor*
+  name: DeriveUsageAttribute
+  href: api/DeviceOfHermes.Derive.DeriveUsageAttribute.html#DeviceOfHermes_Derive_DeriveUsageAttribute__ctor_
+  commentId: Overload:DeviceOfHermes.Derive.DeriveUsageAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.Derive.DeriveUsageAttribute.DeriveUsageAttribute
+  fullName.vb: DeviceOfHermes.Derive.DeriveUsageAttribute.New
+  nameWithType: DeriveUsageAttribute.DeriveUsageAttribute
+  nameWithType.vb: DeriveUsageAttribute.New
+- uid: DeviceOfHermes.Derive.DeriveUsageAttribute.args
+  name: args
+  href: api/DeviceOfHermes.Derive.DeriveUsageAttribute.html#DeviceOfHermes_Derive_DeriveUsageAttribute_args
+  commentId: F:DeviceOfHermes.Derive.DeriveUsageAttribute.args
+  fullName: DeviceOfHermes.Derive.DeriveUsageAttribute.args
+  nameWithType: DeriveUsageAttribute.args
+- uid: DeviceOfHermes.Derive.DeriveUsageAttribute.cls
+  name: cls
+  href: api/DeviceOfHermes.Derive.DeriveUsageAttribute.html#DeviceOfHermes_Derive_DeriveUsageAttribute_cls
+  commentId: F:DeviceOfHermes.Derive.DeriveUsageAttribute.cls
+  fullName: DeviceOfHermes.Derive.DeriveUsageAttribute.cls
+  nameWithType: DeriveUsageAttribute.cls
+- uid: DeviceOfHermes.Derive.DeriveUsageAttribute.method
+  name: method
+  href: api/DeviceOfHermes.Derive.DeriveUsageAttribute.html#DeviceOfHermes_Derive_DeriveUsageAttribute_method
+  commentId: F:DeviceOfHermes.Derive.DeriveUsageAttribute.method
+  fullName: DeviceOfHermes.Derive.DeriveUsageAttribute.method
+  nameWithType: DeriveUsageAttribute.method
 - uid: DeviceOfHermes.DynamicAbilityCfg
   name: DynamicAbilityCfg
   href: api/DeviceOfHermes.DynamicAbilityCfg.html

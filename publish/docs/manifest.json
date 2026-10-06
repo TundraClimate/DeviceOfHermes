@@ -614,6 +614,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DeriveAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DeriveAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DeriveAttribute",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DeriveAttribute.yml\" sourcestartlinenumber=\"1\">An attribute of derive for auto implements</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DerivePriorityAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DerivePriorityAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DerivePriorityAttribute",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DerivePriorityAttribute.yml\" sourcestartlinenumber=\"1\">An attribute of derives priority</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DeriveTemplateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DeriveTemplateAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DeriveTemplateAttribute",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DeriveTemplateAttribute.yml\" sourcestartlinenumber=\"1\">An attribute of derive defines</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DeriveUsageAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DeriveUsageAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DeriveUsageAttribute",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DeriveUsageAttribute.yml\" sourcestartlinenumber=\"1\">An attribute of represents usage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.DynamicAbilityCfg.yml",
       "output": {
         ".html": {
@@ -2705,6 +2775,26 @@
       "output": {
         ".html": {
           "relative_path": "docs/deck-extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/derive-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/derive-template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/derive.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/derive.html"
         }
       },
       "version": ""
