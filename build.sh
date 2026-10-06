@@ -5,15 +5,17 @@ source "$PWD/.env"
 
 dotnet build -c Debug -nologo
 
-mkdir "$PWD/workshop/Assemblies/dependencies/"
+if [ ! -d "$PWD/workshop/Assemblies/dependencies" ]; then
+	mkdir "$PWD/workshop/Assemblies/dependencies/"
+fi
 
-mv "$PWD/Core/bin/Debug/net48/$ID.dll" "$PWD/publish/$ID.dll"
+mv "$PWD/src/Core/bin/Debug/net48/$ID.dll" "$PWD/publish/$ID.dll"
 cp "$PWD/publish/$ID.dll" "$PWD/workshop/Assemblies"
 
-mv "$PWD/LimbufOfHermes/bin/Debug/net48/LimbufOfHermes.dll" "$PWD/publish/LimbufOfHermes.dll"
+mv "$PWD/src/LimbufOfHermes/bin/Debug/net48/LimbufOfHermes.dll" "$PWD/publish/LimbufOfHermes.dll"
 cp "$PWD/publish/LimbufOfHermes.dll" "$PWD/workshop/Assemblies/HermesAssemblies"
 
-mv "$PWD/Caduceus/bin/Debug/netstandard2.0/Caduceus.dll" "$PWD/publish/Caduceus.dll"
+mv "$PWD/src/Caduceus/bin/Debug/netstandard2.0/Caduceus.dll" "$PWD/publish/Caduceus.dll"
 cp "$PWD/publish/Caduceus.dll" "$PWD/workshop/"
 
 rm "$PWD/publish/$ID.zip"
