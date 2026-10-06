@@ -615,11 +615,18 @@ internal static class AdvancedPatch
                     passive.OnPreRoundEnd();
                 }
 
-                foreach (var passive in all)
+                if (StageController.Instance.GetAllCards().Count > 0)
                 {
-                    if (!passive.IsAllowRoundEnd())
+                    ____phase = StageController.StagePhase.SetCurrentDiceAction;
+                }
+                else
+                {
+                    foreach (var passive in all)
                     {
-                        ____phase = StageController.StagePhase.SetCurrentDiceAction;
+                        if (!passive.IsAllowRoundEnd())
+                        {
+                            ____phase = StageController.StagePhase.SetCurrentDiceAction;
+                        }
                     }
                 }
             }
