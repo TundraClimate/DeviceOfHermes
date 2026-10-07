@@ -70,6 +70,7 @@ internal class Initializer : ModInitializer
         {
             CheckHermesAssemblyIncludes();
             CheckHermesAssemblySubs();
+            MuteUnnecessaryLogs();
             LoadOtherDependencies();
             AutoPatchAllMod();
             KeywordBufExtendAll();
@@ -123,6 +124,26 @@ internal class Initializer : ModInitializer
 
             new GameObject().AddComponent<DestroyApp>();
         }
+    }
+
+    [HarmonyLib.HarmonyPatch(typeof(Mod.ModContentManager), "GetErrorLogs")]
+    class PatchMuteLogs
+    {
+        static void Postfix(ref List<string> __result)
+        {
+            foreach (var err in __result.AsDefer(out var bin))
+            {
+                if (err.Contains("DeviceOfHermes") && err.Contains("Caduceus"))
+                {
+                    bin.Remove(err);
+                }
+            }
+        }
+    }
+
+    void MuteUnnecessaryLogs()
+    {
+        new HarmonyLib.Harmony("DeviceOfHermes.BootStrap.Mute").CreateClassProcessor(typeof(PatchMuteLogs)).Patch();
     }
 
     void AutoPatchAllMod()
