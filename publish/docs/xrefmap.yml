@@ -2681,6 +2681,44 @@ references:
   commentId: N:DeviceOfHermes.Derive
   fullName: DeviceOfHermes.Derive
   nameWithType: DeviceOfHermes.Derive
+- uid: DeviceOfHermes.Derive.Decrease1StackOnRoundEnd
+  name: Decrease1StackOnRoundEnd
+  href: api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.html
+  commentId: T:DeviceOfHermes.Derive.Decrease1StackOnRoundEnd
+  fullName: DeviceOfHermes.Derive.Decrease1StackOnRoundEnd
+  nameWithType: Decrease1StackOnRoundEnd
+- uid: DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  name: OnRoundEnd(BattleUnitBuf)
+  href: api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.html#DeviceOfHermes_Derive_Decrease1StackOnRoundEnd_OnRoundEnd_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  fullName: DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  nameWithType: Decrease1StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+- uid: DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.html#DeviceOfHermes_Derive_Decrease1StackOnRoundEnd_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.OnRoundEnd
+  nameWithType: Decrease1StackOnRoundEnd.OnRoundEnd
+- uid: DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd
+  name: DecreaseHalfStackOnRoundEnd
+  href: api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.html
+  commentId: T:DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd
+  fullName: DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd
+  nameWithType: DecreaseHalfStackOnRoundEnd
+- uid: DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  name: OnRoundEnd(BattleUnitBuf)
+  href: api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.html#DeviceOfHermes_Derive_DecreaseHalfStackOnRoundEnd_OnRoundEnd_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  fullName: DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  nameWithType: DecreaseHalfStackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+- uid: DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.html#DeviceOfHermes_Derive_DecreaseHalfStackOnRoundEnd_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.OnRoundEnd
+  nameWithType: DecreaseHalfStackOnRoundEnd.OnRoundEnd
 - uid: DeviceOfHermes.Derive.DeriveAttribute
   name: DeriveAttribute
   href: api/DeviceOfHermes.Derive.DeriveAttribute.html
@@ -2817,6 +2855,325 @@ references:
   commentId: F:DeviceOfHermes.Derive.DeriveUsageAttribute.method
   fullName: DeviceOfHermes.Derive.DeriveUsageAttribute.method
   nameWithType: DeriveUsageAttribute.method
+- uid: DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd
+  name: DestroyIfZeroOnRoundEnd
+  href: api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.html
+  commentId: T:DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd
+  fullName: DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd
+  nameWithType: DestroyIfZeroOnRoundEnd
+- uid: DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  name: OnRoundEnd(BattleUnitBuf)
+  href: api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.html#DeviceOfHermes_Derive_DestroyIfZeroOnRoundEnd_OnRoundEnd_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  fullName: DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  nameWithType: DestroyIfZeroOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+- uid: DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.html#DeviceOfHermes_Derive_DestroyIfZeroOnRoundEnd_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.OnRoundEnd
+  nameWithType: DestroyIfZeroOnRoundEnd.OnRoundEnd
+- uid: DeviceOfHermes.Derive.DestroyOnRoundEnd
+  name: DestroyOnRoundEnd
+  href: api/DeviceOfHermes.Derive.DestroyOnRoundEnd.html
+  commentId: T:DeviceOfHermes.Derive.DestroyOnRoundEnd
+  fullName: DeviceOfHermes.Derive.DestroyOnRoundEnd
+  nameWithType: DestroyOnRoundEnd
+- uid: DeviceOfHermes.Derive.DestroyOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  name: OnRoundEnd(BattleUnitBuf)
+  href: api/DeviceOfHermes.Derive.DestroyOnRoundEnd.html#DeviceOfHermes_Derive_DestroyOnRoundEnd_OnRoundEnd_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.Derive.DestroyOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  fullName: DeviceOfHermes.Derive.DestroyOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  nameWithType: DestroyOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+- uid: DeviceOfHermes.Derive.DestroyOnRoundEnd.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Derive.DestroyOnRoundEnd.html#DeviceOfHermes_Derive_DestroyOnRoundEnd_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Derive.DestroyOnRoundEnd.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.DestroyOnRoundEnd.OnRoundEnd
+  nameWithType: DestroyOnRoundEnd.OnRoundEnd
+- uid: DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying
+  name: DestroyOppoAllDiceOnWinParrying
+  href: api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.html
+  commentId: T:DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying
+  fullName: DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying
+  nameWithType: DestroyOppoAllDiceOnWinParrying
+- uid: DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+  name: OnWinParrying(DiceCardAbilityBase)
+  href: api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.html#DeviceOfHermes_Derive_DestroyOppoAllDiceOnWinParrying_OnWinParrying_DiceCardAbilityBase_
+  commentId: M:DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+  fullName: DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+  nameWithType: DestroyOppoAllDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+- uid: DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.OnWinParrying*
+  name: OnWinParrying
+  href: api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.html#DeviceOfHermes_Derive_DestroyOppoAllDiceOnWinParrying_OnWinParrying_
+  commentId: Overload:DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.OnWinParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.OnWinParrying
+  nameWithType: DestroyOppoAllDiceOnWinParrying.OnWinParrying
+- uid: DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying
+  name: DestroyOppoNextDiceOnWinParrying
+  href: api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.html
+  commentId: T:DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying
+  fullName: DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying
+  nameWithType: DestroyOppoNextDiceOnWinParrying
+- uid: DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+  name: OnWinParrying(DiceCardAbilityBase)
+  href: api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.html#DeviceOfHermes_Derive_DestroyOppoNextDiceOnWinParrying_OnWinParrying_DiceCardAbilityBase_
+  commentId: M:DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+  fullName: DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+  nameWithType: DestroyOppoNextDiceOnWinParrying.OnWinParrying(DiceCardAbilityBase)
+- uid: DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.OnWinParrying*
+  name: OnWinParrying
+  href: api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.html#DeviceOfHermes_Derive_DestroyOppoNextDiceOnWinParrying_OnWinParrying_
+  commentId: Overload:DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.OnWinParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.OnWinParrying
+  nameWithType: DestroyOppoNextDiceOnWinParrying.OnWinParrying
+- uid: DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying
+  name: DestroySelfAllDiceOnDrawParrying
+  href: api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.html
+  commentId: T:DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying
+  fullName: DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying
+  nameWithType: DestroySelfAllDiceOnDrawParrying
+- uid: DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.OnDrawParrying(DiceCardAbilityBase)
+  name: OnDrawParrying(DiceCardAbilityBase)
+  href: api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.html#DeviceOfHermes_Derive_DestroySelfAllDiceOnDrawParrying_OnDrawParrying_DiceCardAbilityBase_
+  commentId: M:DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.OnDrawParrying(DiceCardAbilityBase)
+  fullName: DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.OnDrawParrying(DiceCardAbilityBase)
+  nameWithType: DestroySelfAllDiceOnDrawParrying.OnDrawParrying(DiceCardAbilityBase)
+- uid: DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.OnDrawParrying*
+  name: OnDrawParrying
+  href: api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.html#DeviceOfHermes_Derive_DestroySelfAllDiceOnDrawParrying_OnDrawParrying_
+  commentId: Overload:DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.OnDrawParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.OnDrawParrying
+  nameWithType: DestroySelfAllDiceOnDrawParrying.OnDrawParrying
+- uid: DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying
+  name: DestroySelfAllDiceOnLoseParrying
+  href: api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.html
+  commentId: T:DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying
+  fullName: DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying
+  nameWithType: DestroySelfAllDiceOnLoseParrying
+- uid: DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.OnLoseParrying(DiceCardAbilityBase)
+  name: OnLoseParrying(DiceCardAbilityBase)
+  href: api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.html#DeviceOfHermes_Derive_DestroySelfAllDiceOnLoseParrying_OnLoseParrying_DiceCardAbilityBase_
+  commentId: M:DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.OnLoseParrying(DiceCardAbilityBase)
+  fullName: DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.OnLoseParrying(DiceCardAbilityBase)
+  nameWithType: DestroySelfAllDiceOnLoseParrying.OnLoseParrying(DiceCardAbilityBase)
+- uid: DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.OnLoseParrying*
+  name: OnLoseParrying
+  href: api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.html#DeviceOfHermes_Derive_DestroySelfAllDiceOnLoseParrying_OnLoseParrying_
+  commentId: Overload:DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.OnLoseParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.OnLoseParrying
+  nameWithType: DestroySelfAllDiceOnLoseParrying.OnLoseParrying
+- uid: DeviceOfHermes.Derive.Draws1CardOnUseCard
+  name: Draws1CardOnUseCard
+  href: api/DeviceOfHermes.Derive.Draws1CardOnUseCard.html
+  commentId: T:DeviceOfHermes.Derive.Draws1CardOnUseCard
+  fullName: DeviceOfHermes.Derive.Draws1CardOnUseCard
+  nameWithType: Draws1CardOnUseCard
+- uid: DeviceOfHermes.Derive.Draws1CardOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+  name: OnUseCard(DiceCardSelfAbilityBase)
+  href: api/DeviceOfHermes.Derive.Draws1CardOnUseCard.html#DeviceOfHermes_Derive_Draws1CardOnUseCard_OnUseCard_DiceCardSelfAbilityBase_
+  commentId: M:DeviceOfHermes.Derive.Draws1CardOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+  fullName: DeviceOfHermes.Derive.Draws1CardOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+  nameWithType: Draws1CardOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+- uid: DeviceOfHermes.Derive.Draws1CardOnUseCard.OnUseCard*
+  name: OnUseCard
+  href: api/DeviceOfHermes.Derive.Draws1CardOnUseCard.html#DeviceOfHermes_Derive_Draws1CardOnUseCard_OnUseCard_
+  commentId: Overload:DeviceOfHermes.Derive.Draws1CardOnUseCard.OnUseCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Draws1CardOnUseCard.OnUseCard
+  nameWithType: Draws1CardOnUseCard.OnUseCard
+- uid: DeviceOfHermes.Derive.Into1s3StackOnRoundEnd
+  name: Into1s3StackOnRoundEnd
+  href: api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.html
+  commentId: T:DeviceOfHermes.Derive.Into1s3StackOnRoundEnd
+  fullName: DeviceOfHermes.Derive.Into1s3StackOnRoundEnd
+  nameWithType: Into1s3StackOnRoundEnd
+- uid: DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  name: OnRoundEnd(BattleUnitBuf)
+  href: api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.html#DeviceOfHermes_Derive_Into1s3StackOnRoundEnd_OnRoundEnd_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  fullName: DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  nameWithType: Into1s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+- uid: DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.html#DeviceOfHermes_Derive_Into1s3StackOnRoundEnd_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.OnRoundEnd
+  nameWithType: Into1s3StackOnRoundEnd.OnRoundEnd
+- uid: DeviceOfHermes.Derive.Into2s3StackOnRoundEnd
+  name: Into2s3StackOnRoundEnd
+  href: api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.html
+  commentId: T:DeviceOfHermes.Derive.Into2s3StackOnRoundEnd
+  fullName: DeviceOfHermes.Derive.Into2s3StackOnRoundEnd
+  nameWithType: Into2s3StackOnRoundEnd
+- uid: DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  name: OnRoundEnd(BattleUnitBuf)
+  href: api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.html#DeviceOfHermes_Derive_Into2s3StackOnRoundEnd_OnRoundEnd_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  fullName: DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  nameWithType: Into2s3StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+- uid: DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.html#DeviceOfHermes_Derive_Into2s3StackOnRoundEnd_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.OnRoundEnd
+  nameWithType: Into2s3StackOnRoundEnd.OnRoundEnd
+- uid: DeviceOfHermes.Derive.Into4s5StackOnRoundEnd
+  name: Into4s5StackOnRoundEnd
+  href: api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.html
+  commentId: T:DeviceOfHermes.Derive.Into4s5StackOnRoundEnd
+  fullName: DeviceOfHermes.Derive.Into4s5StackOnRoundEnd
+  nameWithType: Into4s5StackOnRoundEnd
+- uid: DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  name: OnRoundEnd(BattleUnitBuf)
+  href: api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.html#DeviceOfHermes_Derive_Into4s5StackOnRoundEnd_OnRoundEnd_BattleUnitBuf_
+  commentId: M:DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  fullName: DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+  nameWithType: Into4s5StackOnRoundEnd.OnRoundEnd(BattleUnitBuf)
+- uid: DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.html#DeviceOfHermes_Derive_Into4s5StackOnRoundEnd_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.OnRoundEnd
+  nameWithType: Into4s5StackOnRoundEnd.OnRoundEnd
+- uid: DeviceOfHermes.Derive.Maximum100StackOnAddbuf
+  name: Maximum100StackOnAddbuf
+  href: api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.html
+  commentId: T:DeviceOfHermes.Derive.Maximum100StackOnAddbuf
+  fullName: DeviceOfHermes.Derive.Maximum100StackOnAddbuf
+  nameWithType: Maximum100StackOnAddbuf
+- uid: DeviceOfHermes.Derive.Maximum100StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name: OnAddBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum100StackOnAddbuf_OnAddBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.Derive.Maximum100StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.Derive.Maximum100StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.Derive.Maximum100StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+  nameWithType: Maximum100StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  nameWithType.vb: Maximum100StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.Derive.Maximum100StackOnAddbuf.OnAddBuf*
+  name: OnAddBuf
+  href: api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum100StackOnAddbuf_OnAddBuf_
+  commentId: Overload:DeviceOfHermes.Derive.Maximum100StackOnAddbuf.OnAddBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Maximum100StackOnAddbuf.OnAddBuf
+  nameWithType: Maximum100StackOnAddbuf.OnAddBuf
+- uid: DeviceOfHermes.Derive.Maximum10StackOnAddbuf
+  name: Maximum10StackOnAddbuf
+  href: api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.html
+  commentId: T:DeviceOfHermes.Derive.Maximum10StackOnAddbuf
+  fullName: DeviceOfHermes.Derive.Maximum10StackOnAddbuf
+  nameWithType: Maximum10StackOnAddbuf
+- uid: DeviceOfHermes.Derive.Maximum10StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name: OnAddBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum10StackOnAddbuf_OnAddBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.Derive.Maximum10StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.Derive.Maximum10StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.Derive.Maximum10StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+  nameWithType: Maximum10StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  nameWithType.vb: Maximum10StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.Derive.Maximum10StackOnAddbuf.OnAddBuf*
+  name: OnAddBuf
+  href: api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum10StackOnAddbuf_OnAddBuf_
+  commentId: Overload:DeviceOfHermes.Derive.Maximum10StackOnAddbuf.OnAddBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Maximum10StackOnAddbuf.OnAddBuf
+  nameWithType: Maximum10StackOnAddbuf.OnAddBuf
+- uid: DeviceOfHermes.Derive.Maximum1StackOnAddbuf
+  name: Maximum1StackOnAddbuf
+  href: api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.html
+  commentId: T:DeviceOfHermes.Derive.Maximum1StackOnAddbuf
+  fullName: DeviceOfHermes.Derive.Maximum1StackOnAddbuf
+  nameWithType: Maximum1StackOnAddbuf
+- uid: DeviceOfHermes.Derive.Maximum1StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name: OnAddBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum1StackOnAddbuf_OnAddBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.Derive.Maximum1StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.Derive.Maximum1StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.Derive.Maximum1StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+  nameWithType: Maximum1StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  nameWithType.vb: Maximum1StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.Derive.Maximum1StackOnAddbuf.OnAddBuf*
+  name: OnAddBuf
+  href: api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum1StackOnAddbuf_OnAddBuf_
+  commentId: Overload:DeviceOfHermes.Derive.Maximum1StackOnAddbuf.OnAddBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Maximum1StackOnAddbuf.OnAddBuf
+  nameWithType: Maximum1StackOnAddbuf.OnAddBuf
+- uid: DeviceOfHermes.Derive.Maximum20StackOnAddbuf
+  name: Maximum20StackOnAddbuf
+  href: api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.html
+  commentId: T:DeviceOfHermes.Derive.Maximum20StackOnAddbuf
+  fullName: DeviceOfHermes.Derive.Maximum20StackOnAddbuf
+  nameWithType: Maximum20StackOnAddbuf
+- uid: DeviceOfHermes.Derive.Maximum20StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name: OnAddBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum20StackOnAddbuf_OnAddBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.Derive.Maximum20StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.Derive.Maximum20StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.Derive.Maximum20StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+  nameWithType: Maximum20StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  nameWithType.vb: Maximum20StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.Derive.Maximum20StackOnAddbuf.OnAddBuf*
+  name: OnAddBuf
+  href: api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum20StackOnAddbuf_OnAddBuf_
+  commentId: Overload:DeviceOfHermes.Derive.Maximum20StackOnAddbuf.OnAddBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Maximum20StackOnAddbuf.OnAddBuf
+  nameWithType: Maximum20StackOnAddbuf.OnAddBuf
+- uid: DeviceOfHermes.Derive.Maximum50StackOnAddbuf
+  name: Maximum50StackOnAddbuf
+  href: api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.html
+  commentId: T:DeviceOfHermes.Derive.Maximum50StackOnAddbuf
+  fullName: DeviceOfHermes.Derive.Maximum50StackOnAddbuf
+  nameWithType: Maximum50StackOnAddbuf
+- uid: DeviceOfHermes.Derive.Maximum50StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name: OnAddBuf(BattleUnitBuf, int)
+  href: api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum50StackOnAddbuf_OnAddBuf_BattleUnitBuf_System_Int32_
+  commentId: M:DeviceOfHermes.Derive.Maximum50StackOnAddbuf.OnAddBuf(BattleUnitBuf,System.Int32)
+  name.vb: OnAddBuf(BattleUnitBuf, Integer)
+  fullName: DeviceOfHermes.Derive.Maximum50StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  fullName.vb: DeviceOfHermes.Derive.Maximum50StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+  nameWithType: Maximum50StackOnAddbuf.OnAddBuf(BattleUnitBuf, int)
+  nameWithType.vb: Maximum50StackOnAddbuf.OnAddBuf(BattleUnitBuf, Integer)
+- uid: DeviceOfHermes.Derive.Maximum50StackOnAddbuf.OnAddBuf*
+  name: OnAddBuf
+  href: api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.html#DeviceOfHermes_Derive_Maximum50StackOnAddbuf_OnAddBuf_
+  commentId: Overload:DeviceOfHermes.Derive.Maximum50StackOnAddbuf.OnAddBuf
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Maximum50StackOnAddbuf.OnAddBuf
+  nameWithType: Maximum50StackOnAddbuf.OnAddBuf
+- uid: DeviceOfHermes.Derive.Recover1CostOnUseCard
+  name: Recover1CostOnUseCard
+  href: api/DeviceOfHermes.Derive.Recover1CostOnUseCard.html
+  commentId: T:DeviceOfHermes.Derive.Recover1CostOnUseCard
+  fullName: DeviceOfHermes.Derive.Recover1CostOnUseCard
+  nameWithType: Recover1CostOnUseCard
+- uid: DeviceOfHermes.Derive.Recover1CostOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+  name: OnUseCard(DiceCardSelfAbilityBase)
+  href: api/DeviceOfHermes.Derive.Recover1CostOnUseCard.html#DeviceOfHermes_Derive_Recover1CostOnUseCard_OnUseCard_DiceCardSelfAbilityBase_
+  commentId: M:DeviceOfHermes.Derive.Recover1CostOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+  fullName: DeviceOfHermes.Derive.Recover1CostOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+  nameWithType: Recover1CostOnUseCard.OnUseCard(DiceCardSelfAbilityBase)
+- uid: DeviceOfHermes.Derive.Recover1CostOnUseCard.OnUseCard*
+  name: OnUseCard
+  href: api/DeviceOfHermes.Derive.Recover1CostOnUseCard.html#DeviceOfHermes_Derive_Recover1CostOnUseCard_OnUseCard_
+  commentId: Overload:DeviceOfHermes.Derive.Recover1CostOnUseCard.OnUseCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.Derive.Recover1CostOnUseCard.OnUseCard
+  nameWithType: Recover1CostOnUseCard.OnUseCard
 - uid: DeviceOfHermes.DynamicAbilityCfg
   name: DynamicAbilityCfg
   href: api/DeviceOfHermes.DynamicAbilityCfg.html

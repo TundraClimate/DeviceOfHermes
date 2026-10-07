@@ -214,6 +214,16 @@
     "title": "Class DeckExtension | DeviceOfHermes",
     "summary": "Class DeckExtension Namespace DeviceOfHermes Assembly DeviceOfHermes.dll A extension of decks public static class DeckExtension Inheritance object DeckExtension Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object)"
   },
+  "api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.html": {
+    "href": "api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.html",
+    "title": "Class Decrease1StackOnRoundEnd | DeviceOfHermes",
+    "summary": "Class Decrease1StackOnRoundEnd Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Decrease1StackOnRoundEnd Inheritance object Decrease1StackOnRoundEnd Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnRoundEnd(BattleUnitBuf) auto implement [DeriveUsage(typeof(BattleUnitBuf), \"OnRoundEnd\", null)] public static void OnRoundEnd(BattleUnitBuf instance) Parameters instance BattleUnitBuf"
+  },
+  "api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.html": {
+    "href": "api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.html",
+    "title": "Class DecreaseHalfStackOnRoundEnd | DeviceOfHermes",
+    "summary": "Class DecreaseHalfStackOnRoundEnd Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class DecreaseHalfStackOnRoundEnd Inheritance object DecreaseHalfStackOnRoundEnd Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnRoundEnd(BattleUnitBuf) auto implement [DeriveUsage(typeof(BattleUnitBuf), \"OnRoundEnd\", null)] public static void OnRoundEnd(BattleUnitBuf instance) Parameters instance BattleUnitBuf"
+  },
   "api/DeviceOfHermes.Derive.DeriveAttribute.html": {
     "href": "api/DeviceOfHermes.Derive.DeriveAttribute.html",
     "title": "Class DeriveAttribute | DeviceOfHermes",
@@ -234,10 +244,90 @@
     "title": "Class DeriveUsageAttribute | DeviceOfHermes",
     "summary": "Class DeriveUsageAttribute Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll An attribute of represents usage [AttributeUsage(AttributeTargets.Method)] public class DeriveUsageAttribute : Attribute, _Attribute Inheritance object Attribute DeriveUsageAttribute Implements _Attribute Inherited Members Attribute.GetCustomAttributes(MemberInfo, Type) Attribute.GetCustomAttributes(MemberInfo, Type, bool) Attribute.GetCustomAttributes(MemberInfo) Attribute.GetCustomAttributes(MemberInfo, bool) Attribute.IsDefined(MemberInfo, Type) Attribute.IsDefined(MemberInfo, Type, bool) Attribute.GetCustomAttribute(MemberInfo, Type) Attribute.GetCustomAttribute(MemberInfo, Type, bool) Attribute.GetCustomAttributes(ParameterInfo) Attribute.GetCustomAttributes(ParameterInfo, Type) Attribute.GetCustomAttributes(ParameterInfo, Type, bool) Attribute.GetCustomAttributes(ParameterInfo, bool) Attribute.IsDefined(ParameterInfo, Type) Attribute.IsDefined(ParameterInfo, Type, bool) Attribute.GetCustomAttribute(ParameterInfo, Type) Attribute.GetCustomAttribute(ParameterInfo, Type, bool) Attribute.GetCustomAttributes(Module, Type) Attribute.GetCustomAttributes(Module) Attribute.GetCustomAttributes(Module, bool) Attribute.GetCustomAttributes(Module, Type, bool) Attribute.IsDefined(Module, Type) Attribute.IsDefined(Module, Type, bool) Attribute.GetCustomAttribute(Module, Type) Attribute.GetCustomAttribute(Module, Type, bool) Attribute.GetCustomAttributes(Assembly, Type) Attribute.GetCustomAttributes(Assembly, Type, bool) Attribute.GetCustomAttributes(Assembly) Attribute.GetCustomAttributes(Assembly, bool) Attribute.IsDefined(Assembly, Type) Attribute.IsDefined(Assembly, Type, bool) Attribute.GetCustomAttribute(Assembly, Type) Attribute.GetCustomAttribute(Assembly, Type, bool) Attribute.Equals(object) Attribute.GetHashCode() Attribute.Match(object) Attribute.IsDefaultAttribute() Attribute.TypeId object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Constructors DeriveUsageAttribute(Type, string, Type[]?) An attribute of represents usage public DeriveUsageAttribute(Type cls, string method, Type[]? args = null) Parameters cls Type method string args Type[] Fields args target args public Type[]? args Field Value Type[] cls defines class public Type cls Field Value Type method target method public string method Field Value string"
   },
+  "api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.html": {
+    "href": "api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.html",
+    "title": "Class DestroyIfZeroOnRoundEnd | DeviceOfHermes",
+    "summary": "Class DestroyIfZeroOnRoundEnd Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class DestroyIfZeroOnRoundEnd Inheritance object DestroyIfZeroOnRoundEnd Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnRoundEnd(BattleUnitBuf) auto implement [DerivePriority(-1000)] [DeriveUsage(typeof(BattleUnitBuf), \"OnRoundEnd\", null)] public static void OnRoundEnd(BattleUnitBuf instance) Parameters instance BattleUnitBuf"
+  },
+  "api/DeviceOfHermes.Derive.DestroyOnRoundEnd.html": {
+    "href": "api/DeviceOfHermes.Derive.DestroyOnRoundEnd.html",
+    "title": "Class DestroyOnRoundEnd | DeviceOfHermes",
+    "summary": "Class DestroyOnRoundEnd Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class DestroyOnRoundEnd Inheritance object DestroyOnRoundEnd Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnRoundEnd(BattleUnitBuf) auto implement [DerivePriority(-1000)] [DeriveUsage(typeof(BattleUnitBuf), \"OnRoundEnd\", null)] public static void OnRoundEnd(BattleUnitBuf instance) Parameters instance BattleUnitBuf"
+  },
+  "api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.html": {
+    "href": "api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.html",
+    "title": "Class DestroyOppoAllDiceOnWinParrying | DeviceOfHermes",
+    "summary": "Class DestroyOppoAllDiceOnWinParrying Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(DiceCardAbilityBase))] public static class DestroyOppoAllDiceOnWinParrying Inheritance object DestroyOppoAllDiceOnWinParrying Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnWinParrying(DiceCardAbilityBase) auto implement [DeriveUsage(typeof(DiceCardAbilityBase), \"OnWinParrying\", null)] public static void OnWinParrying(DiceCardAbilityBase instance) Parameters instance DiceCardAbilityBase"
+  },
+  "api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.html": {
+    "href": "api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.html",
+    "title": "Class DestroyOppoNextDiceOnWinParrying | DeviceOfHermes",
+    "summary": "Class DestroyOppoNextDiceOnWinParrying Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(DiceCardAbilityBase))] public static class DestroyOppoNextDiceOnWinParrying Inheritance object DestroyOppoNextDiceOnWinParrying Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnWinParrying(DiceCardAbilityBase) auto implement [DeriveUsage(typeof(DiceCardAbilityBase), \"OnWinParrying\", null)] public static void OnWinParrying(DiceCardAbilityBase instance) Parameters instance DiceCardAbilityBase"
+  },
+  "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.html": {
+    "href": "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.html",
+    "title": "Class DestroySelfAllDiceOnDrawParrying | DeviceOfHermes",
+    "summary": "Class DestroySelfAllDiceOnDrawParrying Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(DiceCardAbilityBase))] public static class DestroySelfAllDiceOnDrawParrying Inheritance object DestroySelfAllDiceOnDrawParrying Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnDrawParrying(DiceCardAbilityBase) auto implement [DeriveUsage(typeof(DiceCardAbilityBase), \"OnDrawParrying\", null)] public static void OnDrawParrying(DiceCardAbilityBase instance) Parameters instance DiceCardAbilityBase"
+  },
+  "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.html": {
+    "href": "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.html",
+    "title": "Class DestroySelfAllDiceOnLoseParrying | DeviceOfHermes",
+    "summary": "Class DestroySelfAllDiceOnLoseParrying Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(DiceCardAbilityBase))] public static class DestroySelfAllDiceOnLoseParrying Inheritance object DestroySelfAllDiceOnLoseParrying Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnLoseParrying(DiceCardAbilityBase) auto implement [DeriveUsage(typeof(DiceCardAbilityBase), \"OnLoseParrying\", null)] public static void OnLoseParrying(DiceCardAbilityBase instance) Parameters instance DiceCardAbilityBase"
+  },
+  "api/DeviceOfHermes.Derive.Draws1CardOnUseCard.html": {
+    "href": "api/DeviceOfHermes.Derive.Draws1CardOnUseCard.html",
+    "title": "Class Draws1CardOnUseCard | DeviceOfHermes",
+    "summary": "Class Draws1CardOnUseCard Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(DiceCardSelfAbilityBase))] public static class Draws1CardOnUseCard Inheritance object Draws1CardOnUseCard Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnUseCard(DiceCardSelfAbilityBase) auto implement [DeriveUsage(typeof(DiceCardSelfAbilityBase), \"OnUseCard\", null)] public static void OnUseCard(DiceCardSelfAbilityBase instance) Parameters instance DiceCardSelfAbilityBase"
+  },
+  "api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.html": {
+    "href": "api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.html",
+    "title": "Class Into1s3StackOnRoundEnd | DeviceOfHermes",
+    "summary": "Class Into1s3StackOnRoundEnd Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Into1s3StackOnRoundEnd Inheritance object Into1s3StackOnRoundEnd Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnRoundEnd(BattleUnitBuf) auto implement [DeriveUsage(typeof(BattleUnitBuf), \"OnRoundEnd\", null)] public static void OnRoundEnd(BattleUnitBuf instance) Parameters instance BattleUnitBuf"
+  },
+  "api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.html": {
+    "href": "api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.html",
+    "title": "Class Into2s3StackOnRoundEnd | DeviceOfHermes",
+    "summary": "Class Into2s3StackOnRoundEnd Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Into2s3StackOnRoundEnd Inheritance object Into2s3StackOnRoundEnd Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnRoundEnd(BattleUnitBuf) auto implement [DeriveUsage(typeof(BattleUnitBuf), \"OnRoundEnd\", null)] public static void OnRoundEnd(BattleUnitBuf instance) Parameters instance BattleUnitBuf"
+  },
+  "api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.html": {
+    "href": "api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.html",
+    "title": "Class Into4s5StackOnRoundEnd | DeviceOfHermes",
+    "summary": "Class Into4s5StackOnRoundEnd Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Into4s5StackOnRoundEnd Inheritance object Into4s5StackOnRoundEnd Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnRoundEnd(BattleUnitBuf) auto implement [DeriveUsage(typeof(BattleUnitBuf), \"OnRoundEnd\", null)] public static void OnRoundEnd(BattleUnitBuf instance) Parameters instance BattleUnitBuf"
+  },
+  "api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.html": {
+    "href": "api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.html",
+    "title": "Class Maximum100StackOnAddbuf | DeviceOfHermes",
+    "summary": "Class Maximum100StackOnAddbuf Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Maximum100StackOnAddbuf Inheritance object Maximum100StackOnAddbuf Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnAddBuf(BattleUnitBuf, int) auto implement [DerivePriority(100)] [DeriveUsage(typeof(BattleUnitBuf), \"OnAddBuf\", new Type[] { typeof(int) })] public static void OnAddBuf(BattleUnitBuf instance, int added) Parameters instance BattleUnitBuf added int"
+  },
+  "api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.html": {
+    "href": "api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.html",
+    "title": "Class Maximum10StackOnAddbuf | DeviceOfHermes",
+    "summary": "Class Maximum10StackOnAddbuf Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Maximum10StackOnAddbuf Inheritance object Maximum10StackOnAddbuf Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnAddBuf(BattleUnitBuf, int) auto implement [DerivePriority(10)] [DeriveUsage(typeof(BattleUnitBuf), \"OnAddBuf\", new Type[] { typeof(int) })] public static void OnAddBuf(BattleUnitBuf instance, int added) Parameters instance BattleUnitBuf added int"
+  },
+  "api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.html": {
+    "href": "api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.html",
+    "title": "Class Maximum1StackOnAddbuf | DeviceOfHermes",
+    "summary": "Class Maximum1StackOnAddbuf Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Maximum1StackOnAddbuf Inheritance object Maximum1StackOnAddbuf Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnAddBuf(BattleUnitBuf, int) auto implement [DerivePriority(1)] [DeriveUsage(typeof(BattleUnitBuf), \"OnAddBuf\", new Type[] { typeof(int) })] public static void OnAddBuf(BattleUnitBuf instance, int added) Parameters instance BattleUnitBuf added int"
+  },
+  "api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.html": {
+    "href": "api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.html",
+    "title": "Class Maximum20StackOnAddbuf | DeviceOfHermes",
+    "summary": "Class Maximum20StackOnAddbuf Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Maximum20StackOnAddbuf Inheritance object Maximum20StackOnAddbuf Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnAddBuf(BattleUnitBuf, int) auto implement [DerivePriority(20)] [DeriveUsage(typeof(BattleUnitBuf), \"OnAddBuf\", new Type[] { typeof(int) })] public static void OnAddBuf(BattleUnitBuf instance, int added) Parameters instance BattleUnitBuf added int"
+  },
+  "api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.html": {
+    "href": "api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.html",
+    "title": "Class Maximum50StackOnAddbuf | DeviceOfHermes",
+    "summary": "Class Maximum50StackOnAddbuf Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(BattleUnitBuf))] public static class Maximum50StackOnAddbuf Inheritance object Maximum50StackOnAddbuf Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnAddBuf(BattleUnitBuf, int) auto implement [DerivePriority(50)] [DeriveUsage(typeof(BattleUnitBuf), \"OnAddBuf\", new Type[] { typeof(int) })] public static void OnAddBuf(BattleUnitBuf instance, int added) Parameters instance BattleUnitBuf added int"
+  },
+  "api/DeviceOfHermes.Derive.Recover1CostOnUseCard.html": {
+    "href": "api/DeviceOfHermes.Derive.Recover1CostOnUseCard.html",
+    "title": "Class Recover1CostOnUseCard | DeviceOfHermes",
+    "summary": "Class Recover1CostOnUseCard Namespace DeviceOfHermes.Derive Assembly DeviceOfHermes.dll A template for Derive [DeriveTemplate(typeof(DiceCardSelfAbilityBase))] public static class Recover1CostOnUseCard Inheritance object Recover1CostOnUseCard Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Methods OnUseCard(DiceCardSelfAbilityBase) auto implement [DeriveUsage(typeof(DiceCardSelfAbilityBase), \"OnUseCard\", null)] public static void OnUseCard(DiceCardSelfAbilityBase instance) Parameters instance DiceCardSelfAbilityBase"
+  },
   "api/DeviceOfHermes.Derive.html": {
     "href": "api/DeviceOfHermes.Derive.html",
     "title": "Namespace DeviceOfHermes.Derive | DeviceOfHermes",
-    "summary": "Namespace DeviceOfHermes.Derive Classes DeriveAttribute An attribute of derive for auto implements DerivePriorityAttribute An attribute of derives priority DeriveTemplateAttribute An attribute of derive defines DeriveUsageAttribute An attribute of represents usage"
+    "summary": "Namespace DeviceOfHermes.Derive Classes Decrease1StackOnRoundEnd A template for Derive DecreaseHalfStackOnRoundEnd A template for Derive DeriveAttribute An attribute of derive for auto implements DerivePriorityAttribute An attribute of derives priority DeriveTemplateAttribute An attribute of derive defines DeriveUsageAttribute An attribute of represents usage DestroyIfZeroOnRoundEnd A template for Derive DestroyOnRoundEnd A template for Derive DestroyOppoAllDiceOnWinParrying A template for Derive DestroyOppoNextDiceOnWinParrying A template for Derive DestroySelfAllDiceOnDrawParrying A template for Derive DestroySelfAllDiceOnLoseParrying A template for Derive Draws1CardOnUseCard A template for Derive Into1s3StackOnRoundEnd A template for Derive Into2s3StackOnRoundEnd A template for Derive Into4s5StackOnRoundEnd A template for Derive Maximum100StackOnAddbuf A template for Derive Maximum10StackOnAddbuf A template for Derive Maximum1StackOnAddbuf A template for Derive Maximum20StackOnAddbuf A template for Derive Maximum50StackOnAddbuf A template for Derive Recover1CostOnUseCard A template for Derive"
   },
   "api/DeviceOfHermes.DynamicAbilityCfg.html": {
     "href": "api/DeviceOfHermes.DynamicAbilityCfg.html",
@@ -1022,7 +1112,7 @@
   "docs/derive-template.html": {
     "href": "docs/derive-template.html",
     "title": "using DeviceOfHermes.Derive; | DeviceOfHermes",
-    "summary": "using DeviceOfHermes.Derive; 名前空間DeviceOfHermes.Deriveに存在するクラスです。 この記事はこれを前提に書かれています。 Caduceus REQUIRED Caduceusを必要とします。 詳細はトップページを参照してください。 DeriveTemplate 組み込みテンプレートのリストです。 BattleUnitBuf"
+    "summary": "using DeviceOfHermes.Derive; 名前空間DeviceOfHermes.Deriveに存在するクラスです。 この記事はこれを前提に書かれています。 Caduceus REQUIRED Caduceusを必要とします。 詳細はトップページを参照してください。 DeriveTemplate 組み込みテンプレートのリストです。 DiceCardSelfAbilityBase Draws1CardOnUseCard ページを1枚引く Recover1CostOnUseCard 光を1回復する DiceCardAbilityBase DestroyOppoAllDiceOnWinParrying マッチ勝利時に相手の全ダイスを破壊する DestroyOppoNextDiceOnWinParrying マッチ勝利時に相手の次のダイスを破壊する DestroySelfAllDiceOnLoseParrying マッチ敗北時に自分の全ダイスを破壊する DestroySelfAllDiceOnDrawParrying マッチ引き分け時に自分の全ダイスを破壊する BattleUnitBuf DestroyOnRoundEnd 幕の終了時に除去される DestroyIfZeroOnRoundEnd 幕の終了時に数値が0なら除去される Decrease1StackOnRoundEnd 幕の終了時に数値が1減少 DecreaseHalfStackOnRoundEnd 幕の終了時に数値が半減 Into1s3StackOnRoundEnd 幕の終了時に数値が1/3になる Into2s3StackOnRoundEnd 幕の終了時に数値が2/3になる Into4s5StackOnRoundEnd 幕の終了時に数値が4/5になる Maximum1StackOnAddbuf 最大値が1 Maximum10StackOnAddbuf 最大値が10 Maximum20StackOnAddbuf 最大値が20 Maximum50StackOnAddbuf 最大値が50 Maximum100StackOnAddbuf 最大値が100"
   },
   "docs/derive.html": {
     "href": "docs/derive.html",

@@ -614,6 +614,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Decrease1StackOnRoundEnd",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Decrease1StackOnRoundEnd.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DecreaseHalfStackOnRoundEnd.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Derive.DeriveAttribute.yml",
       "output": {
         ".html": {
@@ -667,6 +695,230 @@
       "IsMRef": true,
       "Title": "DeviceOfHermes.Derive.DeriveUsageAttribute",
       "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DeriveUsageAttribute.yml\" sourcestartlinenumber=\"1\">An attribute of represents usage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DestroyIfZeroOnRoundEnd.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DestroyOnRoundEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DestroyOnRoundEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DestroyOnRoundEnd",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DestroyOnRoundEnd.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DestroyOppoAllDiceOnWinParrying.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DestroyOppoNextDiceOnWinParrying.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DestroySelfAllDiceOnDrawParrying.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.DestroySelfAllDiceOnLoseParrying.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Draws1CardOnUseCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Draws1CardOnUseCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Draws1CardOnUseCard",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Draws1CardOnUseCard.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Into1s3StackOnRoundEnd",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Into1s3StackOnRoundEnd.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Into2s3StackOnRoundEnd",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Into2s3StackOnRoundEnd.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Into4s5StackOnRoundEnd",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Into4s5StackOnRoundEnd.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Maximum100StackOnAddbuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Maximum100StackOnAddbuf.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Maximum10StackOnAddbuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Maximum10StackOnAddbuf.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Maximum1StackOnAddbuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Maximum1StackOnAddbuf.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Maximum20StackOnAddbuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Maximum20StackOnAddbuf.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Maximum50StackOnAddbuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Maximum50StackOnAddbuf.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Derive.Recover1CostOnUseCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Derive.Recover1CostOnUseCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Derive.Recover1CostOnUseCard",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Derive.Recover1CostOnUseCard.yml\" sourcestartlinenumber=\"1\">A template for Derive</p>\n"
     },
     {
       "type": "ManagedReference",
