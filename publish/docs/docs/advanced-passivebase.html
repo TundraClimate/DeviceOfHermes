@@ -196,6 +196,10 @@
     {
         return true;
     }
+
+    public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -424,6 +428,18 @@ null以外を返した場合、返したページで代わりにマッチをし�
 <code>false</code>を返すとそのダイス追加がキャンセルされます。</p>
 <ul>
 <li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="onendencounterbattleunitmodel-bool-bool"><code>OnEndEncounter(BattleUnitModel?, bool, bool)</code></h3>
+<pre><code class="lang-cs">public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
+{
+}
+</code></pre>
+<p>接敵終了時に実行されます。<br>
+currentDiceActionはnullです。</p>
+<ul>
+<li><code>target</code>: 接敵した相手です。</li>
+<li><code>isParrying</code>: その接敵がマッチであったかどうかです。</li>
+<li><code>wasAttacker</code>: ページを使用していたかどうかです。</li>
 </ul>
 
 </article>

@@ -701,6 +701,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard
   nameWithType: AdvancedPassiveBase.OnDropCard
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name: OnEndEncounter(BattleUnitModel?, bool, bool)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnEndEncounter_BattleUnitModel_System_Boolean_System_Boolean_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name.vb: OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter(BattleUnitModel?, bool, bool)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  nameWithType: AdvancedPassiveBase.OnEndEncounter(BattleUnitModel?, bool, bool)
+  nameWithType.vb: AdvancedPassiveBase.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter*
+  name: OnEndEncounter
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnEndEncounter_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter
+  nameWithType: AdvancedPassiveBase.OnEndEncounter
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct
   name: OnExtinct()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnExtinct
@@ -989,6 +1005,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnClick
   nameWithType: AdvancedUnitBuf.OnClick
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name: OnEndEncounter(BattleUnitModel?, bool, bool)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnEndEncounter_BattleUnitModel_System_Boolean_System_Boolean_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name.vb: OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter(BattleUnitModel?, bool, bool)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  nameWithType: AdvancedUnitBuf.OnEndEncounter(BattleUnitModel?, bool, bool)
+  nameWithType.vb: AdvancedUnitBuf.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter*
+  name: OnEndEncounter
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnEndEncounter_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter
+  nameWithType: AdvancedUnitBuf.OnEndEncounter
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
   name: OnInstant()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnInstant

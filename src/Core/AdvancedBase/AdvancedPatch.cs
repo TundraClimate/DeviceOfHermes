@@ -59,6 +59,8 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnWaveStartInModel));
         Patch(typeof(PatchOnModifiedStack));
         Patch(typeof(PatchOnAddKeywordBufs));
+        Patch(typeof(PatchOnEndParrying));
+        Patch(typeof(PatchOnEndOneSideAction));
     }
 
     private static void Patch(Type type)
@@ -1464,6 +1466,40 @@ internal static class AdvancedPatch
                     added = null;
                 }
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnEndParrying")]
+    class PatchOnEndParrying
+    {
+        static void Prefix(BattleUnitModel __instance, out BattleUnitModel? __state)
+        {
+            __state = __instance.currentDiceAction?.target;
+        }
+
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, BattleUnitModel? __state)
+        {
+            __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnEndEncounter(__state, true, true));
+            __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnEndEncounter(__state, true, true));
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "OnEndOneSideAction")]
+    class PatchOnEndOneSideAction
+    {
+        static void Prefix(BattleUnitModel __instance, out BattleUnitModel? __state)
+        {
+            __state = __instance.currentDiceAction?.target;
+        }
+
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, bool wasAttacker, BattleUnitModel? __state)
+        {
+            __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnEndEncounter(__state, false, wasAttacker));
+            __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnEndEncounter(__state, false, wasAttacker));
+
+            return __exception;
         }
     }
 }

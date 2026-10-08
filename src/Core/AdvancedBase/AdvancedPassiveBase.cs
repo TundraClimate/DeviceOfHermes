@@ -158,6 +158,11 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return true;
     }
 
+    /// <summary>On unit ends encounter</summary>
+    public virtual void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
+    {
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

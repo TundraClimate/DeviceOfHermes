@@ -135,6 +135,11 @@ public class AdvancedUnitBuf : BattleUnitBuf
         return true;
     }
 
+    /// <summary>On unit ends encounter</summary>
+    public virtual void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
+    {
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {
