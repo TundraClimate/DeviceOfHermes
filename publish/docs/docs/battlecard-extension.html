@@ -99,6 +99,9 @@ BattleDiceBehavior dice = card.CreateBattleDiceBehavior(diceBehaviour);
 
 // ページ内のダイスにAbilityをそれぞれ適用する
 card.ApplyDiceAbility&lt;DiceCardAbility_XXX&gt;(DiceMatch.AllDice);
+
+// targetにlidのページを使用します。
+owner.UseCard(target, lid);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="createplayingcarddicecardxmlinfo-battleunitmodel-int-int-listbattleunitmodel"><code>CreatePlayingCard(DiceCardXmlInfo, BattleUnitModel, int, int, List&lt;BattleUnitModel&gt;)</code></h3>
@@ -130,6 +133,24 @@ card.ApplyDiceAbility&lt;DiceCardAbility_XXX&gt;(DiceMatch.AllDice);
 <li><code>card</code>: 対象のページです。</li>
 <li><code>diceMatch</code>: 適用するダイスを指定する条件式です。</li>
 <li><code>T</code>: 適用するAbilityの型です。<code>DiceCardAbilityBase</code>である必要があります。</li>
+</ul>
+<h3 id="usecardbattleunitmodel-battleplayingcarddatainunitmodel-bool"><code>UseCard(BattleUnitModel, BattlePlayingCardDataInUnitModel, bool)</code></h3>
+<pre><code class="lang-cs">owner.UseCard(target, playcard, originalSpeed);
+</code></pre>
+<p><code>target</code>にページを使用します。</p>
+<ul>
+<li><code>target</code>: ページを使用する対象です。</li>
+<li><code>playcard</code>: 使用するページです。</li>
+<li><code>originalSpeed</code>: ページの速度設定を維持するかです。</li>
+</ul>
+<h3 id="usecardbattleunitmodel-lorid-bool"><code>UseCard(BattleUnitModel, LorId, bool)</code></h3>
+<pre><code class="lang-cs">owner.UseCard(target, lid, originalSpeed);
+</code></pre>
+<p><code>target</code>にページを使用します。</p>
+<ul>
+<li><code>target</code>: ページを使用する対象です。</li>
+<li><code>lid</code>: 使用するページのIDです。</li>
+<li><code>originalSpeed</code>: ページの速度設定を維持するかです。</li>
 </ul>
 
 </article>

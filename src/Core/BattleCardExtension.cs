@@ -50,6 +50,45 @@ public static class BattleCardExtension
 
             return playcard;
         }
+
+        /// <summary>Add card to AllcardList and set currentDiceAction</summary>
+        public void UseCard(BattleUnitModel target, BattlePlayingCardDataInUnitModel playcard, bool originalSpeed = false)
+        {
+            if (target == owner || !target.IsTargetable(owner))
+            {
+                return;
+            }
+
+            var allCards = StageController.Instance.GetAllCards();
+            var speed = (allCards.Count != 0).Then(() => allCards.Max(c => c.speedDiceResultValue)) + 1;
+
+            if (!originalSpeed)
+            {
+                playcard.speedDiceResultValue = speed;
+            }
+
+            playcard.target = target;
+
+            allCards.Insert(0, playcard);
+
+            if (playcard.owner?.currentDiceAction is null)
+            {
+                playcard.owner?.currentDiceAction = playcard;
+            }
+        }
+
+        /// <summary>Add card to AllcardList and set currentDiceAction</summary>
+        public void UseCard(BattleUnitModel target, LorId cardId, bool originalSpeed = false)
+        {
+            if (ItemXmlDataList.instance.GetCardItem(cardId, true) is not DiceCardXmlInfo info)
+            {
+                return;
+            }
+
+            var card = owner.CreatePlayingCard(info);
+
+            owner.UseCard(target, card, originalSpeed);
+        }
     }
 
     extension(BattlePlayingCardDataInUnitModel playcard)
