@@ -131,6 +131,13 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return null;
     }
 
+    /// <summary>On unit take oneside before</summary>
+    public virtual void BeforeAlliesTakeOneSideAction(
+        BattleUnitModel victim, BattleUnitModel attacker, BattlePlayingCardDataInUnitModel attckCard, ref BattlePlayingCardDataInUnitModel? altCard
+    )
+    {
+    }
+
     /// <summary>On unit extinct</summary>
     public virtual void OnExtinct()
     {

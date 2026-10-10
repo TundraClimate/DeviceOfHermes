@@ -153,6 +153,10 @@
         return null;
     }
 
+    public override void BeforeAlliesTakeOneSideAction(BattleUnitModel victim, BattleUnitModel attacker, BattlePlayingCardDataInUnitModel attckCard, ref BattlePlayingCardDataInUnitModel altCard)
+    {
+    }
+
     public override void OnRecoverHp(int recoverAmount)
     {
     }
@@ -300,6 +304,19 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 null以外を返した場合、返したページで代わりにマッチをします。</p>
 <ul>
 <li><code>attacker</code>: 一方攻撃をしている相手です。</li>
+</ul>
+<h3 id="beforealliestakeonesideactionbattleunitmodel-battleunitmodel-battleplayingcarddatainunitmodel-battleplayingcarddatainunitmodel"><code>BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)</code></h3>
+<pre><code class="lang-cs">public override void BeforeAlliesTakeOneSideAction(BattleUnitModel victim, BattleUnitModel attacker, BattlePlayingCardDataInUnitModel attckCard, ref BattlePlayingCardDataInUnitModel altCard)
+{
+}
+</code></pre>
+<p>同陣営の自分以外の味方が一方攻撃を受ける前に実行されます。<br>
+<code>altCard</code>に代入した値で代わりにマッチします。</p>
+<ul>
+<li><code>victim</code>: 一方攻撃を受ける味方です。</li>
+<li><code>attacker</code>: 攻撃をしている相手です。</li>
+<li><code>attckCard</code>: 攻撃に使用しているページです。</li>
+<li><code>altCard</code>: 代わりにマッチするページです。null以外が代入されている場合もあります。</li>
 </ul>
 <h3 id="onrecoverhpint"><code>OnRecoverHp(int)</code></h3>
 <pre><code class="lang-cs">public override void OnRecoverHp(int recoverAmount)

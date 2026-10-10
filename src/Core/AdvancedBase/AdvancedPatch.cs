@@ -160,12 +160,21 @@ internal static class AdvancedPatch
             victim.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(adv => useCard ??= adv.BeforeTakeOneSideAction(attacker, card));
             victim.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(adv => useCard ??= adv.BeforeTakeOneSideAction(attacker));
 
+            victim.faction.AliveUnits.Filter(u => u != victim).Foreach(ally =>
+            {
+                ally.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(adv => adv.BeforeAlliesTakeOneSideAction(victim, attacker, card, ref useCard));
+                ally.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(adv => adv.BeforeAlliesTakeOneSideAction(victim, attacker, card, ref useCard));
+            });
+
             if (useCard is not null)
             {
                 if (!attacker.IsTargetable(victim) || !IsClashable(card, useCard) || card.cardBehaviorQueue.Any(q => q.abilityList.Exists(abi => abi is RevengeDice)))
                 {
                     return true;
                 }
+
+                useCard.target = attacker;
+                card.target = useCard.owner;
 
                 if (useCard.owner.faction == Faction.Player)
                 {

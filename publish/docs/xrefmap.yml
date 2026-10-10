@@ -454,6 +454,22 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase
   nameWithType: AdvancedPassiveBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction(BattleUnitModel,BattleUnitModel,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel@)
+  name: BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeAlliesTakeOneSideAction_BattleUnitModel_BattleUnitModel_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel__
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction(BattleUnitModel,BattleUnitModel,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel@)
+  name.vb: BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedPassiveBase.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  nameWithType.vb: AdvancedPassiveBase.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction*
+  name: BeforeAlliesTakeOneSideAction
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeAlliesTakeOneSideAction_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction
+  nameWithType: AdvancedPassiveBase.BeforeAlliesTakeOneSideAction
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction(BattleUnitModel,BattlePlayingCardDataInUnitModel)
   name: BeforeTakeOneSideAction(BattleUnitModel, BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeTakeOneSideAction_BattleUnitModel_BattlePlayingCardDataInUnitModel_
@@ -833,6 +849,22 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf
   nameWithType: AdvancedUnitBuf
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction(BattleUnitModel,BattleUnitModel,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel@)
+  name: BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeAlliesTakeOneSideAction_BattleUnitModel_BattleUnitModel_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel__
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction(BattleUnitModel,BattleUnitModel,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel@)
+  name.vb: BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedUnitBuf.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  nameWithType.vb: AdvancedUnitBuf.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction*
+  name: BeforeAlliesTakeOneSideAction
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeAlliesTakeOneSideAction_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction
+  nameWithType: AdvancedUnitBuf.BeforeAlliesTakeOneSideAction
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction(BattleUnitModel)
   name: BeforeTakeOneSideAction(BattleUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeTakeOneSideAction_BattleUnitModel_

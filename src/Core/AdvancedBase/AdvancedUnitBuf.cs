@@ -114,6 +114,13 @@ public class AdvancedUnitBuf : BattleUnitBuf
         return null;
     }
 
+    /// <summary>On unit take oneside before</summary>
+    public virtual void BeforeAlliesTakeOneSideAction(
+        BattleUnitModel victim, BattleUnitModel attacker, BattlePlayingCardDataInUnitModel attckCard, ref BattlePlayingCardDataInUnitModel? altCard
+    )
+    {
+    }
+
     /// <summary>On unit recover play point</summary>
     public virtual void OnRecoverPP(int gain)
     {
