@@ -150,40 +150,30 @@ internal static class AdvancedPatch
     {
         static bool Prefix(StageController __instance, BattlePlayingCardDataInUnitModel card)
         {
+            if (card?.owner is not BattleUnitModel attacker || card?.target is not BattleUnitModel victim)
+            {
+                return true;
+            }
+
             BattlePlayingCardDataInUnitModel? useCard = null;
 
-            var passives = card?.target?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>();
-
-            passives?.Foreach(adv =>
-            {
-                var res = adv.BeforeTakeOneSideAction(card!.owner, card);
-
-                useCard ??= res;
-            });
-
-            var bufs = card?.target?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>();
-
-            bufs?.Foreach(adv =>
-            {
-                var res = adv.BeforeTakeOneSideAction(card!.owner);
-
-                useCard ??= res;
-            });
+            victim.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(adv => useCard ??= adv.BeforeTakeOneSideAction(attacker, card));
+            victim.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(adv => useCard ??= adv.BeforeTakeOneSideAction(attacker));
 
             if (useCard is not null)
             {
-                if (!IsClashable(card!, useCard) || card!.cardBehaviorQueue.Any(q => q.abilityList.Exists(abi => abi is RevengeDice)))
+                if (!attacker.IsTargetable(victim) || !IsClashable(card, useCard) || card.cardBehaviorQueue.Any(q => q.abilityList.Exists(abi => abi is RevengeDice)))
                 {
                     return true;
                 }
 
                 if (useCard.owner.faction == Faction.Player)
                 {
-                    __instance.StartParryingNoPatch(card!, useCard);
+                    __instance.StartParryingNoPatch(card, useCard);
                 }
                 else
                 {
-                    __instance.StartParryingNoPatch(useCard, card!);
+                    __instance.StartParryingNoPatch(useCard, card);
                 }
 
                 return false;
