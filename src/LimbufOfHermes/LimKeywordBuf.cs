@@ -134,4 +134,8 @@ public class LimKeywordBuf
     /// <summary>ClashPowerDown KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_ClashPowerDown))]
     public static KeywordBuf ClashPowerDown { get; private set; }
+
+    /// <summary>AssistDefense KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_AssistDefense))]
+    public static KeywordBuf AssistDefense { get; private set; }
 }

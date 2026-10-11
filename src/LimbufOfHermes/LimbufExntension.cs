@@ -47,4 +47,10 @@ public static class LimbufExtension
             dice.ApplyTremorBreakRateAdder(value);
         }
     }
+
+    /// <summary>Returns card is assist defense card</summary>
+    public static bool IsAssistDefenseCard(this BattlePlayingCardDataInUnitModel card)
+    {
+        return card.card.GetBufList().Exists(buf => buf is AssistDefenseMarker);
+    }
 }

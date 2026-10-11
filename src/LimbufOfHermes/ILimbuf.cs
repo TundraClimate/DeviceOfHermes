@@ -122,6 +122,27 @@ public static class ILimbuf
         public void OnAddScorchfield(int value);
     }
 
+    /// <summary>Interface</summary>
+    public interface OnAssistDefense
+    {
+        /// <summary>On assist with defense</summary>
+        public void OnAssistDefense(BattleUnitModel victim);
+    }
+
+    /// <summary>Interface</summary>
+    public interface OnSuccessAssistDefense
+    {
+        /// <summary>On successflly assist with defense</summary>
+        public void OnSuccessAssistDefense(BattleUnitModel victim, BattlePlayingCardDataInUnitModel defenseCard);
+    }
+
+    /// <summary>Interface</summary>
+    public interface OnDefensedByAssist
+    {
+        /// <summary>On unit defensed by assist defense</summary>
+        public void OnDefensedByAssist(BattleUnitModel actor);
+    }
+
     internal static void EachPassiveOf<T>(this BattleUnitModel owner, Action<T> f)
     {
         owner.passiveDetail?.PassiveList?.Filter(passive => passive.isActiavted)?.OfType<T>().Foreach(f);

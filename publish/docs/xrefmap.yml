@@ -7413,6 +7413,124 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AlvUp.positiveType
   nameWithType: BattleUnitBuf_Limbuf_AlvUp.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense
+  name: BattleUnitBuf_Limbuf_AssistDefense
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction(BattleUnitModel,BattleUnitModel,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel@)
+  name: BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_BeforeAlliesTakeOneSideAction_BattleUnitModel_BattleUnitModel_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel__
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction(BattleUnitModel,BattleUnitModel,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel@)
+  name.vb: BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
+  nameWithType.vb: BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction*
+  name: BeforeAlliesTakeOneSideAction
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_BeforeAlliesTakeOneSideAction_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.BeforeAlliesTakeOneSideAction
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.bufType
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.bufType
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefense_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefense.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard
+  name: BattleUnitBuf_Limbuf_AssistDefenseCard
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefenseCard
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.#ctor(LorId)
+  name: BattleUnitBuf_Limbuf_AssistDefenseCard(LorId)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefenseCard__ctor_LorId_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.#ctor(LorId)
+  name.vb: New(LorId)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.BattleUnitBuf_Limbuf_AssistDefenseCard(LorId)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.New(LorId)
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefenseCard.BattleUnitBuf_Limbuf_AssistDefenseCard(LorId)
+  nameWithType.vb: BattleUnitBuf_Limbuf_AssistDefenseCard.New(LorId)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.#ctor*
+  name: BattleUnitBuf_Limbuf_AssistDefenseCard
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefenseCard__ctor_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.BattleUnitBuf_Limbuf_AssistDefenseCard
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.New
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefenseCard.BattleUnitBuf_Limbuf_AssistDefenseCard
+  nameWithType.vb: BattleUnitBuf_Limbuf_AssistDefenseCard.New
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.cardId
+  name: cardId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefenseCard_cardId
+  commentId: F:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.cardId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.cardId
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefenseCard.cardId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefenseCard_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_AssistDefenseCard_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_AssistDefenseCard.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier
   name: BattleUnitBuf_Limbuf_Barrier
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.html
@@ -10050,6 +10168,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst
   nameWithType: ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst
+- uid: LimbufOfHermes.ILimbuf.OnAssistDefense
+  name: ILimbuf.OnAssistDefense
+  href: api/LimbufOfHermes.ILimbuf.OnAssistDefense.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnAssistDefense
+  fullName: LimbufOfHermes.ILimbuf.OnAssistDefense
+  nameWithType: ILimbuf.OnAssistDefense
+- uid: LimbufOfHermes.ILimbuf.OnAssistDefense.OnAssistDefense(BattleUnitModel)
+  name: OnAssistDefense(BattleUnitModel)
+  href: api/LimbufOfHermes.ILimbuf.OnAssistDefense.html#LimbufOfHermes_ILimbuf_OnAssistDefense_OnAssistDefense_BattleUnitModel_
+  commentId: M:LimbufOfHermes.ILimbuf.OnAssistDefense.OnAssistDefense(BattleUnitModel)
+  fullName: LimbufOfHermes.ILimbuf.OnAssistDefense.OnAssistDefense(BattleUnitModel)
+  nameWithType: ILimbuf.OnAssistDefense.OnAssistDefense(BattleUnitModel)
+- uid: LimbufOfHermes.ILimbuf.OnAssistDefense.OnAssistDefense*
+  name: OnAssistDefense
+  href: api/LimbufOfHermes.ILimbuf.OnAssistDefense.html#LimbufOfHermes_ILimbuf_OnAssistDefense_OnAssistDefense_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnAssistDefense.OnAssistDefense
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnAssistDefense.OnAssistDefense
+  nameWithType: ILimbuf.OnAssistDefense.OnAssistDefense
 - uid: LimbufOfHermes.ILimbuf.OnBreakBarrier
   name: ILimbuf.OnBreakBarrier
   href: api/LimbufOfHermes.ILimbuf.OnBreakBarrier.html
@@ -10110,6 +10247,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnCriticalAttack.OnCriticalAttack
   nameWithType: ILimbuf.OnCriticalAttack.OnCriticalAttack
+- uid: LimbufOfHermes.ILimbuf.OnDefensedByAssist
+  name: ILimbuf.OnDefensedByAssist
+  href: api/LimbufOfHermes.ILimbuf.OnDefensedByAssist.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnDefensedByAssist
+  fullName: LimbufOfHermes.ILimbuf.OnDefensedByAssist
+  nameWithType: ILimbuf.OnDefensedByAssist
+- uid: LimbufOfHermes.ILimbuf.OnDefensedByAssist.OnDefensedByAssist(BattleUnitModel)
+  name: OnDefensedByAssist(BattleUnitModel)
+  href: api/LimbufOfHermes.ILimbuf.OnDefensedByAssist.html#LimbufOfHermes_ILimbuf_OnDefensedByAssist_OnDefensedByAssist_BattleUnitModel_
+  commentId: M:LimbufOfHermes.ILimbuf.OnDefensedByAssist.OnDefensedByAssist(BattleUnitModel)
+  fullName: LimbufOfHermes.ILimbuf.OnDefensedByAssist.OnDefensedByAssist(BattleUnitModel)
+  nameWithType: ILimbuf.OnDefensedByAssist.OnDefensedByAssist(BattleUnitModel)
+- uid: LimbufOfHermes.ILimbuf.OnDefensedByAssist.OnDefensedByAssist*
+  name: OnDefensedByAssist
+  href: api/LimbufOfHermes.ILimbuf.OnDefensedByAssist.html#LimbufOfHermes_ILimbuf_OnDefensedByAssist_OnDefensedByAssist_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnDefensedByAssist.OnDefensedByAssist
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnDefensedByAssist.OnDefensedByAssist
+  nameWithType: ILimbuf.OnDefensedByAssist.OnDefensedByAssist
 - uid: LimbufOfHermes.ILimbuf.OnExecTremorBurst
   name: ILimbuf.OnExecTremorBurst
   href: api/LimbufOfHermes.ILimbuf.OnExecTremorBurst.html
@@ -10211,6 +10367,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnRuptured.OnRuptured
   nameWithType: ILimbuf.OnRuptured.OnRuptured
+- uid: LimbufOfHermes.ILimbuf.OnSuccessAssistDefense
+  name: ILimbuf.OnSuccessAssistDefense
+  href: api/LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnSuccessAssistDefense
+  fullName: LimbufOfHermes.ILimbuf.OnSuccessAssistDefense
+  nameWithType: ILimbuf.OnSuccessAssistDefense
+- uid: LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense(BattleUnitModel,BattlePlayingCardDataInUnitModel)
+  name: OnSuccessAssistDefense(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+  href: api/LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.html#LimbufOfHermes_ILimbuf_OnSuccessAssistDefense_OnSuccessAssistDefense_BattleUnitModel_BattlePlayingCardDataInUnitModel_
+  commentId: M:LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense(BattleUnitModel,BattlePlayingCardDataInUnitModel)
+  fullName: LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+  nameWithType: ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense(BattleUnitModel, BattlePlayingCardDataInUnitModel)
+- uid: LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense*
+  name: OnSuccessAssistDefense
+  href: api/LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.html#LimbufOfHermes_ILimbuf_OnSuccessAssistDefense_OnSuccessAssistDefense_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense
+  nameWithType: ILimbuf.OnSuccessAssistDefense.OnSuccessAssistDefense
 - uid: LimbufOfHermes.ILimbuf.OnTakeBarrier
   name: ILimbuf.OnTakeBarrier
   href: api/LimbufOfHermes.ILimbuf.OnTakeBarrier.html
@@ -10325,6 +10500,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.AlvUp
   nameWithType: LimKeywordBuf.AlvUp
+- uid: LimbufOfHermes.LimKeywordBuf.AssistDefense
+  name: AssistDefense
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_AssistDefense
+  commentId: P:LimbufOfHermes.LimKeywordBuf.AssistDefense
+  fullName: LimbufOfHermes.LimKeywordBuf.AssistDefense
+  nameWithType: LimKeywordBuf.AssistDefense
+- uid: LimbufOfHermes.LimKeywordBuf.AssistDefense*
+  name: AssistDefense
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_AssistDefense_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.AssistDefense
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.AssistDefense
+  nameWithType: LimKeywordBuf.AssistDefense
 - uid: LimbufOfHermes.LimKeywordBuf.Barrier
   name: Barrier
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_Barrier
@@ -10834,6 +11022,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder
   nameWithType: LimbufExtension.ApplyTremorBreakRateAdder
+- uid: LimbufOfHermes.LimbufExtension.IsAssistDefenseCard(BattlePlayingCardDataInUnitModel)
+  name: IsAssistDefenseCard(BattlePlayingCardDataInUnitModel)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_IsAssistDefenseCard_BattlePlayingCardDataInUnitModel_
+  commentId: M:LimbufOfHermes.LimbufExtension.IsAssistDefenseCard(BattlePlayingCardDataInUnitModel)
+  fullName: LimbufOfHermes.LimbufExtension.IsAssistDefenseCard(BattlePlayingCardDataInUnitModel)
+  nameWithType: LimbufExtension.IsAssistDefenseCard(BattlePlayingCardDataInUnitModel)
+- uid: LimbufOfHermes.LimbufExtension.IsAssistDefenseCard*
+  name: IsAssistDefenseCard
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_IsAssistDefenseCard_
+  commentId: Overload:LimbufOfHermes.LimbufExtension.IsAssistDefenseCard
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimbufExtension.IsAssistDefenseCard
+  nameWithType: LimbufExtension.IsAssistDefenseCard
 - uid: LimbufOfHermes.StageBuf
   name: StageBuf
   href: api/LimbufOfHermes.StageBuf.html
@@ -11682,6 +11883,22 @@ references:
   isSpec: "True"
   fullName: System.Extension.Max
   nameWithType: Extension.Max
+- uid: System.Extension.MaxBy*
+  name: MaxBy
+  href: api/System.Extension.html#System_Extension_MaxBy_
+  commentId: Overload:System.Extension.MaxBy
+  isSpec: "True"
+  fullName: System.Extension.MaxBy
+  nameWithType: Extension.MaxBy
+- uid: System.Extension.MaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name: MaxBy<T, V>(IEnumerable<T>, Func<T, V>)
+  href: api/System.Extension.html#System_Extension_MaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  commentId: M:System.Extension.MaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name.vb: MaxBy(Of T, V)(IEnumerable(Of T), Func(Of T, V))
+  fullName: System.Extension.MaxBy<T, V>(System.Collections.Generic.IEnumerable<T>, System.Func<T, V>)
+  fullName.vb: System.Extension.MaxBy(Of T, V)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, V))
+  nameWithType: Extension.MaxBy<T, V>(IEnumerable<T>, Func<T, V>)
+  nameWithType.vb: Extension.MaxBy(Of T, V)(IEnumerable(Of T), Func(Of T, V))
 - uid: System.Extension.Min(System.Int32,System.Int32)
   name: Min(int, int)
   href: api/System.Extension.html#System_Extension_Min_System_Int32_System_Int32_

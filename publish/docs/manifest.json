@@ -1692,6 +1692,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.yml\" sourcestartlinenumber=\"1\">A unit buf the AssistDefense</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefenseCard.yml\" sourcestartlinenumber=\"1\">A unit buf the AssistDefense marker</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_Barrier.yml",
       "output": {
         ".html": {
@@ -2280,6 +2308,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnAssistDefense.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnAssistDefense.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnAssistDefense",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnAssistDefense.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnBreakBarrier.yml",
       "output": {
         ".html": {
@@ -2319,6 +2361,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.ILimbuf.OnCriticalAttack",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnCriticalAttack.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnDefensedByAssist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnDefensedByAssist.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnDefensedByAssist",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnDefensedByAssist.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2389,6 +2445,20 @@
       "IsMRef": true,
       "Title": "LimbufOfHermes.ILimbuf.OnRuptured",
       "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnRuptured.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.ILimbuf.OnSuccessAssistDefense",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.ILimbuf.OnSuccessAssistDefense.yml\" sourcestartlinenumber=\"1\">Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3137,6 +3207,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-alvup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-assistdefense.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-assistdefense.html"
         }
       },
       "version": ""

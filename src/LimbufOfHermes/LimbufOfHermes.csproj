@@ -33,6 +33,6 @@
       <Private>false</Private>
     </Reference>
 
-    <ProjectReference Include="../Core/DeviceOfHermes.csproj" />
+    <Reference Include="../../publish/DeviceOfHermes.dll" />
   </ItemGroup>
 </Project>

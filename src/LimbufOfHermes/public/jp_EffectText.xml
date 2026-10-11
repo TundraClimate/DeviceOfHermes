@@ -201,5 +201,12 @@
           <Desc>今回の幕の間、マッチ時にダイス威力-{0}、ダメージ量+{0}</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_AssistDefense">
+          <Name>援護防御</Name>
+          <Desc>味方が敵に一方攻撃されるとき、数値を1消耗して敵の攻撃対象を自分に変更し、援護防御ページを使用
+援護防御を保有する味方が複数名いるなら、最も高い数値を持つ味方が優先して発動
+幕の終了時に消滅</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
