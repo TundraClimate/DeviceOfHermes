@@ -43,6 +43,28 @@ public static class Extension
         return null;
     }
 
+    /// <summary>Implements MaxBy</summary>
+    public static T? MaxBy<T, V>(this IEnumerable<T> enumerable, Func<T, V> pred)
+    {
+        T? res = default;
+        V? key = default;
+
+        var cmp = Comparer<V>.Default;
+
+        foreach (var elem in enumerable)
+        {
+            var k = pred(elem);
+
+            if (key is null || cmp.Compare(k, key) > 0)
+            {
+                key = k;
+                res = elem;
+            }
+        }
+
+        return res;
+    }
+
     /// <summary>Renamed by Select</summary>
     public static IEnumerable<V> Map<T, V>(this IEnumerable<T> enumerable, Func<T, V> pred)
     {
