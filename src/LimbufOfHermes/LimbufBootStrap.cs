@@ -48,20 +48,26 @@ internal class LimbufBootStrap : HermesInitializer
     {
         var data = _manifest.FirstOrDefault((name) => name.Key.EndsWith($"{lang}_EffectText.xml")).Value;
 
-        var text = Encoding.UTF8.GetString(data);
-        var xml = Serde.FromXmlStr<BattleEffectTextRoot>(text);
+        if (data is not null)
+        {
+            var text = Encoding.UTF8.GetString(data);
+            var xml = Serde.FromXmlStr<BattleEffectTextRoot>(text);
 
-        TextModel.SetBattleEffectTexts(xml!.effectTextList, true);
+            TextModel.SetBattleEffectTexts(xml!.effectTextList, true);
+        }
     }
 
     static void LocalizeEtcText(string lang)
     {
         var data = _manifest.FirstOrDefault((name) => name.Key.EndsWith($"{lang}_EtcText.xml")).Value;
 
-        var text = Encoding.UTF8.GetString(data);
-        var xml = Serde.FromXmlStr<EtcDataXmlRoot>(text);
+        if (data is not null)
+        {
+            var text = Encoding.UTF8.GetString(data);
+            var xml = Serde.FromXmlStr<EtcDataXmlRoot>(text);
 
-        TextModel.SetTextData(xml!.localize.Map(info => (info.id, info.Text)), true);
+            TextModel.SetTextData(xml!.localize.Map(info => (info.id, info.Text)), true);
+        }
     }
 
     static Dictionary<string, byte[]> InitEmbeds()
