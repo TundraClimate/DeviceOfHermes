@@ -1471,15 +1471,19 @@ internal static class AdvancedPatch
     [HarmonyPatch(typeof(BattleUnitModel), "OnEndParrying")]
     class PatchOnEndParrying
     {
-        static void Prefix(BattleUnitModel __instance, out BattleUnitModel? __state)
+        static void Prefix(BattleUnitModel __instance, out BattlePlayingCardDataInUnitModel? __state)
         {
-            __state = __instance.currentDiceAction?.target;
+            __state = __instance.currentDiceAction;
         }
 
-        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, BattleUnitModel? __state)
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, BattlePlayingCardDataInUnitModel? __state)
         {
-            __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnEndEncounter(__state, true, true));
-            __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnEndEncounter(__state, true, true));
+            var target = __state?.target;
+
+            __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnEndEncounter(target, true, true));
+            __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnEndEncounter(target, true, true));
+
+            __state?.card?.GetBufList()?.OfType<AdvancedCardBuf>()?.Foreach(i => i.OnEndEncounter(target, true, true));
 
             return __exception;
         }
@@ -1488,15 +1492,19 @@ internal static class AdvancedPatch
     [HarmonyPatch(typeof(BattleUnitModel), "OnEndOneSideAction")]
     class PatchOnEndOneSideAction
     {
-        static void Prefix(BattleUnitModel __instance, out BattleUnitModel? __state)
+        static void Prefix(BattleUnitModel __instance, out BattlePlayingCardDataInUnitModel? __state)
         {
-            __state = __instance.currentDiceAction?.target;
+            __state = __instance.currentDiceAction;
         }
 
-        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, bool wasAttacker, BattleUnitModel? __state)
+        static Exception Finalizer(Exception __exception, BattleUnitModel __instance, bool wasAttacker, BattlePlayingCardDataInUnitModel? __state)
         {
-            __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnEndEncounter(__state, false, wasAttacker));
-            __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnEndEncounter(__state, false, wasAttacker));
+            var target = __state?.target;
+
+            __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnEndEncounter(target, false, wasAttacker));
+            __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnEndEncounter(target, false, wasAttacker));
+
+            __state?.card?.GetBufList()?.OfType<AdvancedCardBuf>()?.Foreach(i => i.OnEndEncounter(target, false, wasAttacker));
 
             return __exception;
         }

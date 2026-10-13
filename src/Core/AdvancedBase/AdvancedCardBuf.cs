@@ -37,4 +37,9 @@ public class AdvancedCardBuf : BattleDiceCardBuf
     public virtual void OnSuccessAttack_inDeck(BattleDiceBehavior behavior)
     {
     }
+
+    /// <summary>On own unit ends encounter that card</summary>
+    public virtual void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
+    {
+    }
 }

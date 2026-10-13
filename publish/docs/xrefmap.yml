@@ -269,6 +269,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.BeforeRollDice
   nameWithType: AdvancedCardBuf.BeforeRollDice
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name: OnEndEncounter(BattleUnitModel?, bool, bool)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnEndEncounter_BattleUnitModel_System_Boolean_System_Boolean_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name.vb: OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter(BattleUnitModel?, bool, bool)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  nameWithType: AdvancedCardBuf.OnEndEncounter(BattleUnitModel?, bool, bool)
+  nameWithType.vb: AdvancedCardBuf.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter*
+  name: OnEndEncounter
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnEndEncounter_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter
+  nameWithType: AdvancedCardBuf.OnEndEncounter
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnStartBattle
   name: OnStartBattle()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnStartBattle

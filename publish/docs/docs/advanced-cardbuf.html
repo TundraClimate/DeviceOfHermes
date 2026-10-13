@@ -122,6 +122,10 @@
     public override void OnSuccessAttack_inDeck(BattleDiceBehavior behavior)
     {
     }
+
+    public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
+    {
+    }
 }
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
@@ -188,6 +192,18 @@
 <p>ダイスが的中したときにデッキのページを対象に実行されます。</p>
 <ul>
 <li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="onendencounterbattleunitmodel-bool-bool"><code>OnEndEncounter(BattleUnitModel?, bool, bool)</code></h3>
+<pre><code class="lang-cs">public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
+{
+}
+</code></pre>
+<p>接敵終了時に実行されます。<br>
+currentDiceActionはnullです。</p>
+<ul>
+<li><code>target</code>: 接敵した相手です。</li>
+<li><code>isParrying</code>: その接敵がマッチであったかどうかです。</li>
+<li><code>wasAttacker</code>: ページを使用していたかどうかです。</li>
 </ul>
 
 </article>
