@@ -102,6 +102,8 @@
 
     public override bool DrawsOnWaveStart =&gt; false;
 
+    public override Type[] AutoSetCardBufs =&gt; [];
+
     public override bool CanDiscardByAbility(BattleDiceCardModel self)
     {
     }
@@ -149,6 +151,10 @@ trueを返すとマッチに速度を参照しなくなります。</p>
 </code></pre>
 <p>舞台開始時に自動で抽出されるかを指定するプロパティです。<br>
 trueを返すと自動で抽出されるようになります。</p>
+<h3 id="autosetcardbufs"><code>AutoSetCardBufs</code></h3>
+<pre><code class="lang-cs">public override Type[] AutoSetCardBufs =&gt; [];
+</code></pre>
+<p>ページ作成時に自動で追加されるページバフです。</p>
 <h3 id="candiscardbyabilitybattledicecardmodel"><code>CanDiscardByAbility(BattleDiceCardModel)</code></h3>
 <pre><code class="lang-cs">public override bool CanDiscardByAbility(BattleDiceCardModel self)
 {

@@ -62,6 +62,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnEndParrying));
         Patch(typeof(PatchOnEndOneSideAction));
         Patch(typeof(PatchIsTargetableAllUnit));
+        Patch(typeof(PatchOnCreatePlayingCard));
     }
 
     private static void Patch(Type type)
@@ -1517,6 +1518,31 @@ internal static class AdvancedPatch
         static Exception Finalizer(Exception __exception, BattleDiceCardModel __instance, ref bool __result)
         {
             __result = __result || __instance.GetBufList()?.OfType<AdvancedCardBuf>()?.Any(b => b.IsTargetableAllUnit) == true;
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceCardModel), "CreatePlayingCard")]
+    class PatchOnCreatePlayingCard
+    {
+        static Exception Finalizer(Exception __exception, BattleDiceCardModel __result)
+        {
+            var script = __result.CreateDiceCardSelfAbilityScript();
+            var bufList = __result.GetBufList();
+
+            if (script is AdvancedCardBase adv)
+            {
+                foreach (var buf in adv.AutoSetCardBufs)
+                {
+                    if (bufList.Exists(b => b.GetType() == buf.GetType()) || Activator.CreateInstance(buf) is not BattleDiceCardBuf cb)
+                    {
+                        continue;
+                    }
+
+                    __result.AddBuf(cb);
+                }
+            }
 
             return __exception;
         }

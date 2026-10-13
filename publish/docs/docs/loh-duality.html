@@ -97,6 +97,12 @@
 </blockquote>
 <pre><code class="lang-cs">// 双極性を付与
 card.AddBuf(new BattleDiceCardBuf_Limbuf_Duality());
+
+// ページ効果で自動追加
+class DiceCardSelfAbility_Duality : AdvancedCardBase
+{
+    public override Type[] AutoSetCardBufs =&gt; [typeof(BattleDiceCardBuf_Limbuf_Duality)];
+}
 </code></pre>
 
 </article>

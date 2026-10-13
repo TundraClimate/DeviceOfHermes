@@ -124,6 +124,19 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedCardBase
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase
   nameWithType: AdvancedCardBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.AutoSetCardBufs
+  name: AutoSetCardBufs
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_AutoSetCardBufs
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.AutoSetCardBufs
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.AutoSetCardBufs
+  nameWithType: AdvancedCardBase.AutoSetCardBufs
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.AutoSetCardBufs*
+  name: AutoSetCardBufs
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_AutoSetCardBufs_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.AutoSetCardBufs
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.AutoSetCardBufs
+  nameWithType: AdvancedCardBase.AutoSetCardBufs
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard(BattlePlayingCardDataInUnitModel@)
   name: BeforeUseCard(ref BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeUseCard_BattlePlayingCardDataInUnitModel__

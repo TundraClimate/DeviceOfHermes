@@ -23,6 +23,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Is card draws on wave start</summary>
     public virtual bool DrawsOnWaveStart => false;
 
+    /// <summary>Buf list of auto sets on card ability generated</summary>
+    public virtual Type[] AutoSetCardBufs => [];
+
     /// <summary>Can discard this card by ability</summary>
     /// <returns>Is card can discard</returns>
     public virtual bool CanDiscardByAbility(BattleDiceCardModel self)
