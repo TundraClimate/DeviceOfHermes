@@ -3,6 +3,9 @@ namespace DeviceOfHermes.AdvancedBase;
 /// <summary>An advanced DiceCardBuf</summary>
 public class AdvancedCardBuf : BattleDiceCardBuf
 {
+    /// <summary>An own card is targetable all unit</summary>
+    public virtual bool IsTargetableAllUnit => false;
+
     /// <summary>An own unit on start battle</summary>
     public virtual void OnStartBattle()
     {

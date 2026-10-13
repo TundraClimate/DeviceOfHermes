@@ -95,6 +95,8 @@
 {
     protected override string keywordIconId =&gt; &quot;アイコンのID&quot;;
 
+    public override bool IsTargetableAllUnit =&gt; false;
+
     public override void OnStartBattle()
     {
     }
@@ -136,6 +138,13 @@
 アイコンはユニットバフと同じ方法で追加することが出来ます。</p>
 <ul>
 <li><code>id</code>: バフアイコンのIDです。</li>
+</ul>
+<h3 id="istargetableallunit"><code>IsTargetableAllUnit</code></h3>
+<pre><code class="lang-cs">public override bool IsTargetableAllUnit =&gt; targetable;
+</code></pre>
+<p>付与したページが全ユニットをターゲットできるかを指定します。</p>
+<ul>
+<li><code>targetable</code>: trueならば全ユニットをターゲット可能になります。</li>
 </ul>
 <h3 id="onstartbattle"><code>OnStartBattle()</code></h3>
 <pre><code class="lang-cs">public override void OnStartBattle()

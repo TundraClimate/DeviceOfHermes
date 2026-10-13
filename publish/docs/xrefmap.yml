@@ -269,6 +269,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.BeforeRollDice
   nameWithType: AdvancedCardBuf.BeforeRollDice
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.IsTargetableAllUnit
+  name: IsTargetableAllUnit
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_IsTargetableAllUnit
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.IsTargetableAllUnit
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.IsTargetableAllUnit
+  nameWithType: AdvancedCardBuf.IsTargetableAllUnit
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.IsTargetableAllUnit*
+  name: IsTargetableAllUnit
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_IsTargetableAllUnit_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.IsTargetableAllUnit
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.IsTargetableAllUnit
+  nameWithType: AdvancedCardBuf.IsTargetableAllUnit
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
   name: OnEndEncounter(BattleUnitModel?, bool, bool)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnEndEncounter_BattleUnitModel_System_Boolean_System_Boolean_

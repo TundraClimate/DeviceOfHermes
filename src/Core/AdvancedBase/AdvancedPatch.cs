@@ -61,6 +61,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnAddKeywordBufs));
         Patch(typeof(PatchOnEndParrying));
         Patch(typeof(PatchOnEndOneSideAction));
+        Patch(typeof(PatchIsTargetableAllUnit));
     }
 
     private static void Patch(Type type)
@@ -1505,6 +1506,17 @@ internal static class AdvancedPatch
             __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnEndEncounter(target, false, wasAttacker));
 
             __state?.card?.GetBufList()?.OfType<AdvancedCardBuf>()?.Foreach(i => i.OnEndEncounter(target, false, wasAttacker));
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceCardModel), "IsTargetableAllUnit")]
+    class PatchIsTargetableAllUnit
+    {
+        static Exception Finalizer(Exception __exception, BattleDiceCardModel __instance, ref bool __result)
+        {
+            __result = __result || __instance.GetBufList()?.OfType<AdvancedCardBuf>()?.Any(b => b.IsTargetableAllUnit) == true;
 
             return __exception;
         }
