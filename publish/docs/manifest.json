@@ -1664,6 +1664,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.yml\" sourcestartlinenumber=\"1\">A card buf the Duality</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvDown.yml",
       "output": {
         ".html": {
@@ -2560,6 +2574,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LimbufOfHermes.LimbufCardBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LimbufOfHermes.LimbufCardBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LimbufOfHermes.LimbufCardBuf",
+      "Summary": "<p sourcefile=\"api/LimbufOfHermes.LimbufCardBuf.yml\" sourcestartlinenumber=\"1\">A card buf base</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LimbufOfHermes.LimbufExtension.yml",
       "output": {
         ".html": {
@@ -3297,6 +3325,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/loh-dmgdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-duality.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-duality.html"
         }
       },
       "version": ""

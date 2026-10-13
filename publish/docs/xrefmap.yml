@@ -7300,6 +7300,67 @@ references:
   commentId: N:LimbufOfHermes
   fullName: LimbufOfHermes
   nameWithType: LimbufOfHermes
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality
+  name: BattleDiceCardBuf_Limbuf_Duality
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html
+  commentId: T:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_BeforeRollDice_
+  commentId: Overload:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.BeforeRollDice
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit
+  name: IsTargetableAllUnit
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_IsTargetableAllUnit
+  commentId: P:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit*
+  name: IsTargetableAllUnit
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_IsTargetableAllUnit_
+  commentId: Overload:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.IsTargetableAllUnit
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name: OnEndEncounter(BattleUnitModel?, bool, bool)
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_OnEndEncounter_BattleUnitModel_System_Boolean_System_Boolean_
+  commentId: M:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
+  name.vb: OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter(BattleUnitModel?, bool, bool)
+  fullName.vb: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter(BattleUnitModel?, bool, bool)
+  nameWithType.vb: BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter(BattleUnitModel, Boolean, Boolean)
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter*
+  name: OnEndEncounter
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_OnEndEncounter_
+  commentId: Overload:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.OnEndEncounter
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_keywordId
+  commentId: P:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.keywordId
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.keywordId
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.keywordId
+- uid: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.html#LimbufOfHermes_BattleDiceCardBuf_Limbuf_Duality_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleDiceCardBuf_Limbuf_Duality.keywordId
+  nameWithType: BattleDiceCardBuf_Limbuf_Duality.keywordId
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AlvDown
   name: BattleUnitBuf_Limbuf_AlvDown
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AlvDown.html
@@ -10970,6 +11031,12 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimbufBase.OnActivate
   nameWithType: LimbufBase.OnActivate
+- uid: LimbufOfHermes.LimbufCardBuf
+  name: LimbufCardBuf
+  href: api/LimbufOfHermes.LimbufCardBuf.html
+  commentId: T:LimbufOfHermes.LimbufCardBuf
+  fullName: LimbufOfHermes.LimbufCardBuf
+  nameWithType: LimbufCardBuf
 - uid: LimbufOfHermes.LimbufExtension
   name: LimbufExtension
   href: api/LimbufOfHermes.LimbufExtension.html

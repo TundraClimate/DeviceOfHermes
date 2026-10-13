@@ -208,5 +208,12 @@
 幕の終了時に消滅</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="CardBuf_LimbufOfHermes_Duality">
+          <Name>双極性</Name>
+          <Desc>双極性
+味方を攻撃対象にできる
+対象が味方の場合、攻撃が的中せず、最大の速度でページを使用する</Desc>
+        </BattleEffectText>
+
     </effectTextList>
 </BattleEffectTextRoot>
