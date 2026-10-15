@@ -1890,6 +1890,44 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedTakeDamage.StyledDamage
   nameWithType: AdvancedTakeDamage.StyledDamage
+- uid: DeviceOfHermes.AutoMapSetter
+  name: AutoMapSetter
+  href: api/DeviceOfHermes.AutoMapSetter.html
+  commentId: T:DeviceOfHermes.AutoMapSetter
+  fullName: DeviceOfHermes.AutoMapSetter
+  nameWithType: AutoMapSetter
+- uid: DeviceOfHermes.AutoMapSetter.CreateNewMap(UnityEngine.Sprite,UnityEngine.Sprite,UnityEngine.AudioClip[],System.Nullable{UnityEngine.Color},System.Collections.Generic.List{System.String},DeviceOfHermes.NewMapOptions)
+  name: CreateNewMap(Sprite, Sprite, AudioClip[]?, Color?, List<string>?, NewMapOptions)
+  href: api/DeviceOfHermes.AutoMapSetter.html#DeviceOfHermes_AutoMapSetter_CreateNewMap_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_AudioClip___System_Nullable_UnityEngine_Color__System_Collections_Generic_List_System_String__DeviceOfHermes_NewMapOptions_
+  commentId: M:DeviceOfHermes.AutoMapSetter.CreateNewMap(UnityEngine.Sprite,UnityEngine.Sprite,UnityEngine.AudioClip[],System.Nullable{UnityEngine.Color},System.Collections.Generic.List{System.String},DeviceOfHermes.NewMapOptions)
+  name.vb: CreateNewMap(Sprite, Sprite, AudioClip(), Color?, List(Of String), NewMapOptions)
+  fullName: DeviceOfHermes.AutoMapSetter.CreateNewMap(UnityEngine.Sprite, UnityEngine.Sprite, UnityEngine.AudioClip[]?, UnityEngine.Color?, System.Collections.Generic.List<string>?, DeviceOfHermes.NewMapOptions)
+  fullName.vb: DeviceOfHermes.AutoMapSetter.CreateNewMap(UnityEngine.Sprite, UnityEngine.Sprite, UnityEngine.AudioClip(), UnityEngine.Color?, System.Collections.Generic.List(Of String), DeviceOfHermes.NewMapOptions)
+  nameWithType: AutoMapSetter.CreateNewMap(Sprite, Sprite, AudioClip[]?, Color?, List<string>?, NewMapOptions)
+  nameWithType.vb: AutoMapSetter.CreateNewMap(Sprite, Sprite, AudioClip(), Color?, List(Of String), NewMapOptions)
+- uid: DeviceOfHermes.AutoMapSetter.CreateNewMap*
+  name: CreateNewMap
+  href: api/DeviceOfHermes.AutoMapSetter.html#DeviceOfHermes_AutoMapSetter_CreateNewMap_
+  commentId: Overload:DeviceOfHermes.AutoMapSetter.CreateNewMap
+  isSpec: "True"
+  fullName: DeviceOfHermes.AutoMapSetter.CreateNewMap
+  nameWithType: AutoMapSetter.CreateNewMap
+- uid: DeviceOfHermes.AutoMapSetter.SetMapFactory(System.String,System.Func{DeviceOfHermes.AutoMapSetter,MapManager})
+  name: SetMapFactory(string, Func<AutoMapSetter, MapManager>)
+  href: api/DeviceOfHermes.AutoMapSetter.html#DeviceOfHermes_AutoMapSetter_SetMapFactory_System_String_System_Func_DeviceOfHermes_AutoMapSetter_MapManager__
+  commentId: M:DeviceOfHermes.AutoMapSetter.SetMapFactory(System.String,System.Func{DeviceOfHermes.AutoMapSetter,MapManager})
+  name.vb: SetMapFactory(String, Func(Of AutoMapSetter, MapManager))
+  fullName: DeviceOfHermes.AutoMapSetter.SetMapFactory(string, System.Func<DeviceOfHermes.AutoMapSetter, MapManager>)
+  fullName.vb: DeviceOfHermes.AutoMapSetter.SetMapFactory(String, System.Func(Of DeviceOfHermes.AutoMapSetter, MapManager))
+  nameWithType: AutoMapSetter.SetMapFactory(string, Func<AutoMapSetter, MapManager>)
+  nameWithType.vb: AutoMapSetter.SetMapFactory(String, Func(Of AutoMapSetter, MapManager))
+- uid: DeviceOfHermes.AutoMapSetter.SetMapFactory*
+  name: SetMapFactory
+  href: api/DeviceOfHermes.AutoMapSetter.html#DeviceOfHermes_AutoMapSetter_SetMapFactory_
+  commentId: Overload:DeviceOfHermes.AutoMapSetter.SetMapFactory
+  isSpec: "True"
+  fullName: DeviceOfHermes.AutoMapSetter.SetMapFactory
+  nameWithType: AutoMapSetter.SetMapFactory
 - uid: DeviceOfHermes.BattleBufExtension
   name: BattleBufExtension
   href: api/DeviceOfHermes.BattleBufExtension.html
@@ -4009,6 +4047,24 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.ModPackage.packageId
   nameWithType: ModPackage.packageId
+- uid: DeviceOfHermes.NewMapOptions
+  name: NewMapOptions
+  href: api/DeviceOfHermes.NewMapOptions.html
+  commentId: T:DeviceOfHermes.NewMapOptions
+  fullName: DeviceOfHermes.NewMapOptions
+  nameWithType: NewMapOptions
+- uid: DeviceOfHermes.NewMapOptions.NoBlackFrame
+  name: NoBlackFrame
+  href: api/DeviceOfHermes.NewMapOptions.html#DeviceOfHermes_NewMapOptions_NoBlackFrame
+  commentId: F:DeviceOfHermes.NewMapOptions.NoBlackFrame
+  fullName: DeviceOfHermes.NewMapOptions.NoBlackFrame
+  nameWithType: NewMapOptions.NoBlackFrame
+- uid: DeviceOfHermes.NewMapOptions.None
+  name: None
+  href: api/DeviceOfHermes.NewMapOptions.html#DeviceOfHermes_NewMapOptions_None
+  commentId: F:DeviceOfHermes.NewMapOptions.None
+  fullName: DeviceOfHermes.NewMapOptions.None
+  nameWithType: NewMapOptions.None
 - uid: DeviceOfHermes.NoPatchMethod
   name: NoPatchMethod
   href: api/DeviceOfHermes.NoPatchMethod.html
