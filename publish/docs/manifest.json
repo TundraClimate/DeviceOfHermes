@@ -3261,6 +3261,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/emotioncard-data.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/emotioncard-data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/env-container.md",
       "output": {
         ".html": {
