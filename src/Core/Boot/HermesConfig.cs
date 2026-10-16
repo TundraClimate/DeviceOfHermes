@@ -16,6 +16,9 @@ internal class HermesConfig
 
 internal class DataConfig
 {
+    [TomlMember(Key = "automap")]
+    public string AutoMap { get; set; } = "";
+
     [TomlMember(Key = "onlycard")]
     public string OnlyCard { get; set; } = "";
 
@@ -34,6 +37,12 @@ internal class LocalizeConfig
 
 internal class ResourceConfig
 {
+    [TomlMember(Key = "automap-artwork")]
+    public string AutoMapArtwork { get; set; } = "";
+
+    [TomlMember(Key = "automap-audio")]
+    public string AutoMapAudio { get; set; } = "";
+
     [TomlMember(Key = "abnocard-artwork")]
     public string AbnoCardArtwork { get; set; } = "";
 }

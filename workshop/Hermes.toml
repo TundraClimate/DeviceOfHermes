@@ -3,6 +3,9 @@ auto-patch = false
 
 [data]
 
+# 自動マップ設定をロードするファイルのパス
+automap = "Data/AutoMap.xml"
+
 # 専用ページをロードするファイルのパス
 # 下の行頭の#を消すことでロードするようになる
 #onlycard = "Data/OnlyCard.xml"
@@ -22,6 +25,12 @@ auto-patch = false
 #abnocard = "LocalizeBase/{0}/AbnoCard"
 
 [resource]
+
+# 自動マップ設定で画像データをロードするフォルダのパス
+automap-artwork = "Resource/AutoMapArtwork"
+
+# 自動マップ設定で音声データをロードするフォルダのパス
+automap-audio = "Resource/AutoMapAudio"
 
 # 幻想体ページの画像データをロードするフォルダのパス
 # 下の行頭の#を消すことでロードするようになる

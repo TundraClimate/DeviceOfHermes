@@ -2777,6 +2777,66 @@ references:
   commentId: N:DeviceOfHermes.Data
   fullName: DeviceOfHermes.Data
   nameWithType: DeviceOfHermes.Data
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo
+  name: AutoMapXmlInfo
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html
+  commentId: T:DeviceOfHermes.Data.AutoMapXmlInfo
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo
+  nameWithType: AutoMapXmlInfo
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo.bg
+  name: bg
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html#DeviceOfHermes_Data_AutoMapXmlInfo_bg
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlInfo.bg
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo.bg
+  nameWithType: AutoMapXmlInfo.bg
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo.bgm
+  name: bgm
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html#DeviceOfHermes_Data_AutoMapXmlInfo_bgm
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlInfo.bgm
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo.bgm
+  nameWithType: AutoMapXmlInfo.bgm
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo.dialog
+  name: dialog
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html#DeviceOfHermes_Data_AutoMapXmlInfo_dialog
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlInfo.dialog
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo.dialog
+  nameWithType: AutoMapXmlInfo.dialog
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo.dlgColor
+  name: dlgColor
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html#DeviceOfHermes_Data_AutoMapXmlInfo_dlgColor
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlInfo.dlgColor
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo.dlgColor
+  nameWithType: AutoMapXmlInfo.dlgColor
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo.floor
+  name: floor
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html#DeviceOfHermes_Data_AutoMapXmlInfo_floor
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlInfo.floor
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo.floor
+  nameWithType: AutoMapXmlInfo.floor
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo.key
+  name: key
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html#DeviceOfHermes_Data_AutoMapXmlInfo_key
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlInfo.key
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo.key
+  nameWithType: AutoMapXmlInfo.key
+- uid: DeviceOfHermes.Data.AutoMapXmlInfo.option
+  name: option
+  href: api/DeviceOfHermes.Data.AutoMapXmlInfo.html#DeviceOfHermes_Data_AutoMapXmlInfo_option
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlInfo.option
+  fullName: DeviceOfHermes.Data.AutoMapXmlInfo.option
+  nameWithType: AutoMapXmlInfo.option
+- uid: DeviceOfHermes.Data.AutoMapXmlRoot
+  name: AutoMapXmlRoot
+  href: api/DeviceOfHermes.Data.AutoMapXmlRoot.html
+  commentId: T:DeviceOfHermes.Data.AutoMapXmlRoot
+  fullName: DeviceOfHermes.Data.AutoMapXmlRoot
+  nameWithType: AutoMapXmlRoot
+- uid: DeviceOfHermes.Data.AutoMapXmlRoot.info
+  name: info
+  href: api/DeviceOfHermes.Data.AutoMapXmlRoot.html#DeviceOfHermes_Data_AutoMapXmlRoot_info
+  commentId: F:DeviceOfHermes.Data.AutoMapXmlRoot.info
+  fullName: DeviceOfHermes.Data.AutoMapXmlRoot.info
+  nameWithType: AutoMapXmlRoot.info
 - uid: DeviceOfHermes.Data.OnlyCardXmlInfo
   name: OnlyCardXmlInfo
   href: api/DeviceOfHermes.Data.OnlyCardXmlInfo.html
@@ -4635,6 +4695,28 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Resource.Artwork.SetStoryIconSprite
   nameWithType: Artwork.SetStoryIconSprite
+- uid: DeviceOfHermes.Resource.Audio
+  name: Audio
+  href: api/DeviceOfHermes.Resource.Audio.html
+  commentId: T:DeviceOfHermes.Resource.Audio
+  fullName: DeviceOfHermes.Resource.Audio
+  nameWithType: Audio
+- uid: DeviceOfHermes.Resource.Audio.ReadFromMp3(System.String)
+  name: ReadFromMp3(string)
+  href: api/DeviceOfHermes.Resource.Audio.html#DeviceOfHermes_Resource_Audio_ReadFromMp3_System_String_
+  commentId: M:DeviceOfHermes.Resource.Audio.ReadFromMp3(System.String)
+  name.vb: ReadFromMp3(String)
+  fullName: DeviceOfHermes.Resource.Audio.ReadFromMp3(string)
+  fullName.vb: DeviceOfHermes.Resource.Audio.ReadFromMp3(String)
+  nameWithType: Audio.ReadFromMp3(string)
+  nameWithType.vb: Audio.ReadFromMp3(String)
+- uid: DeviceOfHermes.Resource.Audio.ReadFromMp3*
+  name: ReadFromMp3
+  href: api/DeviceOfHermes.Resource.Audio.html#DeviceOfHermes_Resource_Audio_ReadFromMp3_
+  commentId: Overload:DeviceOfHermes.Resource.Audio.ReadFromMp3
+  isSpec: "True"
+  fullName: DeviceOfHermes.Resource.Audio.ReadFromMp3
+  nameWithType: Audio.ReadFromMp3
 - uid: DeviceOfHermes.Resource.EmotionCard
   name: EmotionCard
   href: api/DeviceOfHermes.Resource.EmotionCard.html
