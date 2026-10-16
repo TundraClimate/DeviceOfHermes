@@ -36,6 +36,18 @@ public class AdvancedUnitBuf : BattleUnitBuf
     /// <returns>Is instant buf if true</returns>
     public virtual bool IsInstant { get => false; }
 
+    /// <summary>Returns min value of speed dice</summary>
+    public virtual int GetSpeedDiceMinAdder()
+    {
+        return 0;
+    }
+
+    /// <summary>Returns max value of speed dice</summary>
+    public virtual int GetSpeedDiceMaxAdder()
+    {
+        return 0;
+    }
+
     /// <summary>The instant buf on inflicted</summary>
     /// <remarks>
     /// Only activates <see cref="IsInstant"/> is true.

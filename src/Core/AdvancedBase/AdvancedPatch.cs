@@ -63,6 +63,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnEndOneSideAction));
         Patch(typeof(PatchIsTargetableAllUnit));
         Patch(typeof(PatchOnCreatePlayingCard));
+        Patch(typeof(PatchOnCreateSpeedDiceRule));
     }
 
     private static void Patch(Type type)
@@ -1545,6 +1546,59 @@ internal static class AdvancedPatch
             }
 
             return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BookModel), "GetSpeedDiceRule")]
+    class PatchOnCreateSpeedDiceRule
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.Calls(typeof(BookModel).Method("get_SpeedMin")))
+                .Advance(1)
+                .Insert(CodeInstruction.Arg(1), CodeInstruction.Call(typeof(PatchOnCreateSpeedDiceRule).Method("InjectMin")));
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.Calls(typeof(BookModel).Method("get_SpeedMax")))
+                .Advance(1)
+                .Insert(CodeInstruction.Arg(1), CodeInstruction.Call(typeof(PatchOnCreateSpeedDiceRule).Method("InjectMax")));
+
+            return matcher.Instructions();
+        }
+
+        static int InjectMin(int origin, BattleUnitModel unit)
+        {
+            var num = 0;
+
+            foreach (var p in unit.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>() ?? [])
+            {
+                num += p.GetSpeedDiceMinAdder();
+            }
+
+            foreach (var p in unit.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>() ?? [])
+            {
+                num += p.GetSpeedDiceMinAdder();
+            }
+
+            return 1.Max(origin + num);
+        }
+
+        static int InjectMax(int origin, BattleUnitModel unit)
+        {
+            var num = 0;
+
+            foreach (var p in unit.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>() ?? [])
+            {
+                num += p.GetSpeedDiceMaxAdder();
+            }
+
+            foreach (var p in unit.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>() ?? [])
+            {
+                num += p.GetSpeedDiceMaxAdder();
+            }
+
+            return origin + num;
         }
     }
 }

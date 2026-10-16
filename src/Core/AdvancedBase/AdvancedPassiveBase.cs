@@ -25,6 +25,18 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     /// <summary>Is instead of extinct from die</summary>
     public virtual bool IsDieInsteadOfExtinction => false;
 
+    /// <summary>Returns min value of speed dice</summary>
+    public virtual int GetSpeedDiceMinAdder()
+    {
+        return 0;
+    }
+
+    /// <summary>Returns max value of speed dice</summary>
+    public virtual int GetSpeedDiceMaxAdder()
+    {
+        return 0;
+    }
+
     /// <summary>Unit on wave start before</summary>
     public virtual void OnWaveStartBefore()
     {

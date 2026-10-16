@@ -575,6 +575,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
   nameWithType: AdvancedPassiveBase.DrawCardAddr
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder
+  name: GetSpeedDiceMaxAdder()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMaxAdder
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder()
+  nameWithType: AdvancedPassiveBase.GetSpeedDiceMaxAdder()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder*
+  name: GetSpeedDiceMaxAdder
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMaxAdder_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder
+  nameWithType: AdvancedPassiveBase.GetSpeedDiceMaxAdder
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder
+  name: GetSpeedDiceMinAdder()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMinAdder
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder()
+  nameWithType: AdvancedPassiveBase.GetSpeedDiceMinAdder()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder*
+  name: GetSpeedDiceMinAdder
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMinAdder_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder
+  nameWithType: AdvancedPassiveBase.GetSpeedDiceMinAdder
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.HealthStopperLine
   name: HealthStopperLine
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_HealthStopperLine
@@ -973,6 +999,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll
   nameWithType: AdvancedUnitBuf.GetBreakDamageReductionAll
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMaxAdder
+  name: GetSpeedDiceMaxAdder()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetSpeedDiceMaxAdder
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMaxAdder
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMaxAdder()
+  nameWithType: AdvancedUnitBuf.GetSpeedDiceMaxAdder()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMaxAdder*
+  name: GetSpeedDiceMaxAdder
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetSpeedDiceMaxAdder_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMaxAdder
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMaxAdder
+  nameWithType: AdvancedUnitBuf.GetSpeedDiceMaxAdder
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMinAdder
+  name: GetSpeedDiceMinAdder()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetSpeedDiceMinAdder
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMinAdder
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMinAdder()
+  nameWithType: AdvancedUnitBuf.GetSpeedDiceMinAdder()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMinAdder*
+  name: GetSpeedDiceMinAdder
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetSpeedDiceMinAdder_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMinAdder
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMinAdder
+  nameWithType: AdvancedUnitBuf.GetSpeedDiceMinAdder
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init(BattleUnitModel)
   name: Init(BattleUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_Init_BattleUnitModel_

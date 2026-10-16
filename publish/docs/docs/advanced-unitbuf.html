@@ -97,6 +97,16 @@
 
     public override bool IsInstant { get =&gt; false; }
 
+    public override int GetSpeedDiceMinAdder()
+    {
+        return 0;
+    }
+
+    public override int GetSpeedDiceMaxAdder()
+    {
+        return 0;
+    }
+
     public override void OnInstant()
     {
     }
@@ -201,6 +211,20 @@ trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</c
 <p>バフが<code>KeywordBuf</code>かつ<code>AdvancedUnitBuf</code>である場合に、このバフを付与したユニットが格納されます。<br>
 ただし、自分が自分に付与した場合は変更されません。</p>
 <p>初期値はnullです。</p>
+<h3 id="getspeeddiceminadder"><code>GetSpeedDiceMinAdder()</code></h3>
+<pre><code class="lang-cs">public override int GetSpeedDiceMinAdder()
+{
+    return 0;
+}
+</code></pre>
+<p>速度の最低値に加算する値を返します。</p>
+<h3 id="getspeeddicemaxadder"><code>GetSpeedDiceMaxAdder()</code></h3>
+<pre><code class="lang-cs">public override int GetSpeedDiceMaxAdder()
+{
+    return 0;
+}
+</code></pre>
+<p>速度の最大値に加算する値を返します。</p>
 <h3 id="oninstant"><code>OnInstant()</code></h3>
 <pre><code class="lang-cs">public override void OnInstant()
 {

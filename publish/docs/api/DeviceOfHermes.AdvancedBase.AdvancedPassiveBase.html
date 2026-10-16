@@ -681,7 +681,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeAlliesTakeOneSideAction_BattleUnitModel_BattleUnitModel_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel__" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction(BattleUnitModel,BattleUnitModel,BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel@)">
   BeforeAlliesTakeOneSideAction(BattleUnitModel, BattleUnitModel, BattlePlayingCardDataInUnitModel, ref BattlePlayingCardDataInUnitModel?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit take oneside before</p>
@@ -719,7 +719,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeTakeOneSideAction_BattleUnitModel_BattlePlayingCardDataInUnitModel_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction(BattleUnitModel,BattlePlayingCardDataInUnitModel)">
   BeforeTakeOneSideAction(BattleUnitModel, BattlePlayingCardDataInUnitModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit take oneside before</p>
@@ -758,7 +758,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_CanDiscardByAbility_BattleDiceCardModel_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.CanDiscardByAbility(BattleDiceCardModel)">
   CanDiscardByAbility(BattleDiceCardModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Can discard this <code class="paramref">card</code> by ability</p>
@@ -793,11 +793,75 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
 
 
+  <a id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMaxAdder_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMaxAdder" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder">
+  GetSpeedDiceMaxAdder()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns max value of speed dice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetSpeedDiceMaxAdder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMinAdder_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMinAdder" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMinAdder">
+  GetSpeedDiceMinAdder()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns min value of speed dice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetSpeedDiceMinAdder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsAllowRoundEnd_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd*"></a>
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsAllowRoundEnd" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsAllowRoundEnd">
   IsAllowRoundEnd()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Is allows round end</p>
@@ -830,7 +894,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsClashable_BattlePlayingCardDataInUnitModel_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel)">
   IsClashable(BattlePlayingCardDataInUnitModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Is <code class="paramref">card</code> is clashable</p>
@@ -869,7 +933,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsClashable_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsClashable(BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)">
   IsClashable(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Is <code class="paramref">self</code> is clashable with <code class="paramref">target</code></p>
@@ -911,7 +975,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsIgnoreSpeedByMatch_BattlePlayingCardDataInUnitModel_BattlePlayingCardDataInUnitModel_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel,BattlePlayingCardDataInUnitModel)">
   IsIgnoreSpeedByMatch(BattlePlayingCardDataInUnitModel, BattlePlayingCardDataInUnitModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Is <code class="paramref">self</code> is ignore speed by match with <code class="paramref">target</code></p>
@@ -953,7 +1017,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnActivatedBuf_BattleUnitBuf_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf(BattleUnitBuf)">
   OnActivatedBuf(BattleUnitBuf)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unit on activate bufs</p>
@@ -985,7 +1049,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddBuf_BattleUnitBuf_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddBuf(BattleUnitBuf,System.Int32)">
   OnAddBuf(BattleUnitBuf, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit added buf</p>
@@ -1019,7 +1083,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddKeepDice_BattleDiceBehavior_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeepDice(BattleDiceBehavior)">
   OnAddKeepDice(BattleDiceBehavior)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit adds keep dice</p>
@@ -1056,7 +1120,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnAddKeywordBuf_BattleUnitBuf_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnAddKeywordBuf(BattleUnitBuf,System.Int32)">
   OnAddKeywordBuf(BattleUnitBuf, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit added keywordbuf</p>
@@ -1095,7 +1159,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChangeBufStack_BattleUnitBuf_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChangeBufStack(BattleUnitBuf,System.Int32)">
   OnChangeBufStack(BattleUnitBuf, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unit on change buf stack</p>
@@ -1129,7 +1193,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnChooseCard_BattleDiceCardModel_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnChooseCard(BattleDiceCardModel)">
   OnChooseCard(BattleDiceCardModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit choose card</p>
@@ -1166,7 +1230,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnClickUnit_DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_ClickType_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnClickUnit(DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.ClickType)">
   OnClickUnit(ClickType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit clicked</p>
@@ -1198,7 +1262,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnDropCard_BattlePlayingCardDataInUnitModel_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnDropCard(BattlePlayingCardDataInUnitModel)">
   OnDropCard(BattlePlayingCardDataInUnitModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On dropped card</p>
@@ -1231,7 +1295,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnEndEncounter_BattleUnitModel_System_Boolean_System_Boolean_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)">
   OnEndEncounter(BattleUnitModel?, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit ends encounter</p>
@@ -1267,7 +1331,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnExtinct" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct">
   OnExtinct()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit extinct</p>
@@ -1294,7 +1358,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnLoseHpByKeyword_System_Int32_KeywordBuf_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword(System.Int32,KeywordBuf)">
   OnLoseHpByKeyword(int, KeywordBuf)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit lose health by keyword</p>
@@ -1328,7 +1392,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnPreRoundEnd" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd">
   OnPreRoundEnd()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On Round end before</p>
@@ -1355,7 +1419,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRecoverPP_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRecoverPP(System.Int32)">
   OnRecoverPP(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>On unit recover play point</p>
@@ -1387,7 +1451,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartFirst" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartFirst">
   OnRoundStartFirst()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unit on round start before <span class="xref">PassiveAbilityBase.OnRoundStart()</span></p>
@@ -1414,7 +1478,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnRoundStartLast" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast">
   OnRoundStartLast()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unit on round start after <span class="xref">PassiveAbilityBase.OnRoundStartAfter()</span></p>
@@ -1441,7 +1505,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnWaveStartAfter" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter">
   OnWaveStartAfter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unit on wave start after</p>
@@ -1468,7 +1532,7 @@ Class AdvancedPassiveBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnWaveStartBefore" data-uid="DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartBefore">
   OnWaveStartBefore()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedPassiveBase.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unit on wave start before</p>
