@@ -89,9 +89,9 @@
 
 <p>DeviceOfHermes用の設定ファイルです。</p>
 <p>MODフォルダ内の<code>Hermes.toml</code>を対象として読み込みます。<br>
-存在しない場合はデフォルト設定を使用します。</p>
-<p>最新のデフォルト設定は<code>DeviceOfHermes</code>のMODフォルダ内をの<code>Hermes.toml</code>を参照してください。</p>
-<p>デフォルト設定:</p>
+存在しない場合は設定ファイルを参照する全ての機能が実行されません。</p>
+<p>最新の推奨設定は<code>DeviceOfHermes</code>のMODフォルダ内をの<code>Hermes.toml</code>を参照してください。</p>
+<p>推奨設定:</p>
 <pre><code class="lang-toml"># 自動でAssemblies/内のパッチを当てるかどうか
 # trueにすると自動でパッチを当てます
 auto-patch = false
@@ -102,22 +102,18 @@ auto-patch = false
 automap = &quot;Data/AutoMap.xml&quot;
 
 # 専用ページをロードするファイルのパス
-# 下の行頭の#を消すことでロードするようになる
-#onlycard = &quot;Data/OnlyCard.xml&quot;
+onlycard = &quot;Data/OnlyCard.xml&quot;
 
 # フォーメーションをロードするファイルのパス
-# 下の行頭の#を消すことでロードするようになる
-#formation = &quot;Data/Formation.xml&quot;
+formation = &quot;Data/Formation.xml&quot;
 
 # 幻想体ページをロードするファイルのパス
-# 下の行頭の#を消すことでロードするようになる
-#emotioncard = &quot;Data/EmotionCard.xml&quot;
+emotioncard = &quot;Data/EmotionCard.xml&quot;
 
 [localize]
 
 # 幻想体ページのローカライズをロードするフォルダのパス
-# 下の行頭の#を消すことでロードするようになる
-#abnocard = &quot;LocalizeBase/{0}/AbnoCard&quot;
+abnocard = &quot;LocalizeBase/{0}/AbnoCard&quot;
 
 [resource]
 
@@ -128,8 +124,7 @@ automap-artwork = &quot;Resource/AutoMapArtwork&quot;
 automap-audio = &quot;Resource/AutoMapAudio&quot;
 
 # 幻想体ページの画像データをロードするフォルダのパス
-# 下の行頭の#を消すことでロードするようになる
-#abnocard-artwork = &quot;Resource/AbnoCardArtwork&quot;
+abnocard-artwork = &quot;Resource/AbnoCardArtwork&quot;
 </code></pre>
 
 </article>

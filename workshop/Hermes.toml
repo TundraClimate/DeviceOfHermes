@@ -7,22 +7,18 @@ auto-patch = false
 automap = "Data/AutoMap.xml"
 
 # 専用ページをロードするファイルのパス
-# 下の行頭の#を消すことでロードするようになる
-#onlycard = "Data/OnlyCard.xml"
+onlycard = "Data/OnlyCard.xml"
 
 # フォーメーションをロードするファイルのパス
-# 下の行頭の#を消すことでロードするようになる
-#formation = "Data/Formation.xml"
+formation = "Data/Formation.xml"
 
 # 幻想体ページをロードするファイルのパス
-# 下の行頭の#を消すことでロードするようになる
-#emotioncard = "Data/EmotionCard.xml"
+emotioncard = "Data/EmotionCard.xml"
 
 [localize]
 
 # 幻想体ページのローカライズをロードするフォルダのパス
-# 下の行頭の#を消すことでロードするようになる
-#abnocard = "LocalizeBase/{0}/AbnoCard"
+abnocard = "LocalizeBase/{0}/AbnoCard"
 
 [resource]
 
@@ -33,5 +29,4 @@ automap-artwork = "Resource/AutoMapArtwork"
 automap-audio = "Resource/AutoMapAudio"
 
 # 幻想体ページの画像データをロードするフォルダのパス
-# 下の行頭の#を消すことでロードするようになる
-#abnocard-artwork = "Resource/AbnoCardArtwork"
+abnocard-artwork = "Resource/AbnoCardArtwork"
