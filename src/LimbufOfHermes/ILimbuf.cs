@@ -143,6 +143,27 @@ public static class ILimbuf
         public void OnDefensedByAssist(BattleUnitModel actor);
     }
 
+    /// <summary>Interface</summary>
+    public interface OnConsumeAmmo
+    {
+        /// <summary>On unit defensed by assist defense</summary>
+        public void OnConsumeAmmo(BattleUnitBuf ammo, BattleDiceBehavior dice, int num);
+    }
+
+    /// <summary>Interface</summary>
+    public interface OnAmmoEmpty
+    {
+        /// <summary>On unit defensed by assist defense</summary>
+        public void OnAmmoEmpty(BattleUnitBuf ammo, BattleDiceBehavior dice);
+    }
+
+    /// <summary>Interface</summary>
+    public interface OnReloadAmmo
+    {
+        /// <summary>On unit defensed by assist defense</summary>
+        public void OnReloadAmmo(BattleUnitBuf ammo);
+    }
+
     internal static void EachPassiveOf<T>(this BattleUnitModel owner, Action<T> f)
     {
         owner.passiveDetail?.PassiveList?.Filter(passive => passive.isActiavted)?.OfType<T>().Foreach(f);

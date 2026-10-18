@@ -208,6 +208,19 @@
 幕の終了時に消滅</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_Ammo">
+          <Name>弾丸</Name>
+          <Desc>最大値: {0}
+
+特定の攻撃ダイスで弾丸を消耗することが出来る
+弾丸消耗時、弾丸が足りないなら該当のダイスは的中しない</Desc>
+        </BattleEffectText>
+
+        <BattleEffectText ID="LimbufOfHermes_Reload">
+          <Name>再装填</Name>
+          <Desc>自身が保有する弾丸の値を0にし、自身が取得出来る最大値まで弾丸を得る</Desc>
+        </BattleEffectText>
+
         <BattleEffectText ID="CardBuf_LimbufOfHermes_Duality">
           <Name>双極性</Name>
           <Desc>双極性

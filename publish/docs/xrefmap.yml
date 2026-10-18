@@ -7706,6 +7706,193 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_AlvUp.positiveType
   nameWithType: BattleUnitBuf_Limbuf_AlvUp.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo
+  name: BattleUnitBuf_Limbuf_Ammo
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo
+  nameWithType: BattleUnitBuf_Limbuf_Ammo
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.BeforeConsume(BattleDiceBehavior,System.Int32,System.Int32)
+  name: BeforeConsume(BattleDiceBehavior, int, int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_BeforeConsume_BattleDiceBehavior_System_Int32_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.BeforeConsume(BattleDiceBehavior,System.Int32,System.Int32)
+  name.vb: BeforeConsume(BattleDiceBehavior, Integer, Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.BeforeConsume(BattleDiceBehavior, int, int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.BeforeConsume(BattleDiceBehavior, Integer, Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.BeforeConsume(BattleDiceBehavior, int, int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Ammo.BeforeConsume(BattleDiceBehavior, Integer, Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.BeforeConsume*
+  name: BeforeConsume
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_BeforeConsume_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.BeforeConsume
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.BeforeConsume
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.BeforeConsume
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty
+  name: CanFireWhileEmpty
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_CanFireWhileEmpty
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty*
+  name: CanFireWhileEmpty
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_CanFireWhileEmpty_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.CanFireWhileEmpty
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Consume(BattleDiceBehavior,System.Int32)
+  name: Consume(BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_Consume_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Consume(BattleDiceBehavior,System.Int32)
+  name.vb: Consume(BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Consume(BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Consume(BattleDiceBehavior, Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.Consume(BattleDiceBehavior, int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Ammo.Consume(BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Consume*
+  name: Consume
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_Consume_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Consume
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Consume
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.Consume
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.MaxValue
+  name: MaxValue
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_MaxValue
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.MaxValue
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.MaxValue
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.MaxValue
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.MaxValue*
+  name: MaxValue
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_MaxValue_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.MaxValue
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.MaxValue
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.MaxValue
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnAddBuf(System.Int32)
+  name: OnAddBuf(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnAddBuf_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnAddBuf(System.Int32)
+  name.vb: OnAddBuf(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnAddBuf(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnAddBuf(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnAddBuf(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Ammo.OnAddBuf(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnAddBuf*
+  name: OnAddBuf
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnAddBuf_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnAddBuf
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnAddBuf
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnAddBuf
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnConsume(BattleDiceBehavior,System.Int32)
+  name: OnConsume(BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnConsume_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnConsume(BattleDiceBehavior,System.Int32)
+  name.vb: OnConsume(BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnConsume(BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnConsume(BattleDiceBehavior, Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnConsume(BattleDiceBehavior, int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Ammo.OnConsume(BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnConsume*
+  name: OnConsume
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnConsume_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnConsume
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnConsume
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnConsume
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnEmpty(BattleDiceBehavior)
+  name: OnEmpty(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnEmpty_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnEmpty(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnEmpty(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnEmpty(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnEmpty*
+  name: OnEmpty
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnEmpty_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnEmpty
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnEmpty
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnEmpty
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnReload
+  name: OnReload()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnReload
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnReload
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnReload()
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnReload()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnReload*
+  name: OnReload
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_OnReload_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnReload
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.OnReload
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.OnReload
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Reload
+  name: Reload()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_Reload
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Reload
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Reload()
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.Reload()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Reload*
+  name: Reload
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_Reload_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Reload
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.Reload
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.Reload
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.TotalConsumed
+  name: TotalConsumed
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_TotalConsumed
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.TotalConsumed
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.TotalConsumed
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.TotalConsumed
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.TotalConsumed*
+  name: TotalConsumed
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_TotalConsumed_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.TotalConsumed
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.TotalConsumed
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.TotalConsumed
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.paramInBufDesc
+  name: paramInBufDesc
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_paramInBufDesc
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.paramInBufDesc
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.paramInBufDesc
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.paramInBufDesc
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.paramInBufDesc*
+  name: paramInBufDesc
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_paramInBufDesc_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.paramInBufDesc
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.paramInBufDesc
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.paramInBufDesc
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Ammo_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Ammo.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Ammo.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense
   name: BattleUnitBuf_Limbuf_AssistDefense
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_AssistDefense.html
@@ -9199,6 +9386,126 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
   nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1
+  name: BattleUnitBuf_Limbuf_Reload<T>
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1
+  name.vb: BattleUnitBuf_Limbuf_Reload(Of T)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T)
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.BeforeReload
+  name: BeforeReload()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_BeforeReload
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.BeforeReload
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.BeforeReload()
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).BeforeReload()
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.BeforeReload()
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).BeforeReload()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.BeforeReload*
+  name: BeforeReload
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_BeforeReload_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.BeforeReload
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.BeforeReload
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).BeforeReload
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.BeforeReload
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).BeforeReload
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.IsInstant
+  name: IsInstant
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_IsInstant
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.IsInstant
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.IsInstant
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).IsInstant
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.IsInstant
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).IsInstant
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.IsInstant*
+  name: IsInstant
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_IsInstant_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.IsInstant
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.IsInstant
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).IsInstant
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.IsInstant
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).IsInstant
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnActivate(System.Int32)
+  name: OnActivate(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_OnActivate_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnActivate(System.Int32)
+  name.vb: OnActivate(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.OnActivate(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).OnActivate(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.OnActivate(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).OnActivate(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnActivate*
+  name: OnActivate
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_OnActivate_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnActivate
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.OnActivate
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).OnActivate
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.OnActivate
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).OnActivate
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnInstant
+  name: OnInstant()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_OnInstant
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnInstant
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.OnInstant()
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).OnInstant()
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.OnInstant()
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).OnInstant()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnInstant*
+  name: OnInstant
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_OnInstant_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.OnInstant
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.OnInstant
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).OnInstant
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.OnInstant
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).OnInstant
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.appliesEffect
+  name: appliesEffect
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_appliesEffect
+  commentId: F:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.appliesEffect
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.appliesEffect
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).appliesEffect
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.appliesEffect
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).appliesEffect
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.keywordId
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.keywordId
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.keywordId
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).keywordId
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.keywordId
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.positiveType
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.positiveType
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Reload-1.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Reload_1_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Reload`1.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload<T>.positiveType
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_Reload(Of T).positiveType
+  nameWithType: BattleUnitBuf_Limbuf_Reload<T>.positiveType
+  nameWithType.vb: BattleUnitBuf_Limbuf_Reload(Of T).positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture
   name: BattleUnitBuf_Limbuf_Rupture
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Rupture.html
@@ -10442,6 +10749,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnAddScorchfield.OnAddScorchfield
   nameWithType: ILimbuf.OnAddScorchfield.OnAddScorchfield
+- uid: LimbufOfHermes.ILimbuf.OnAmmoEmpty
+  name: ILimbuf.OnAmmoEmpty
+  href: api/LimbufOfHermes.ILimbuf.OnAmmoEmpty.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnAmmoEmpty
+  fullName: LimbufOfHermes.ILimbuf.OnAmmoEmpty
+  nameWithType: ILimbuf.OnAmmoEmpty
+- uid: LimbufOfHermes.ILimbuf.OnAmmoEmpty.OnAmmoEmpty(BattleUnitBuf,BattleDiceBehavior)
+  name: OnAmmoEmpty(BattleUnitBuf, BattleDiceBehavior)
+  href: api/LimbufOfHermes.ILimbuf.OnAmmoEmpty.html#LimbufOfHermes_ILimbuf_OnAmmoEmpty_OnAmmoEmpty_BattleUnitBuf_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.ILimbuf.OnAmmoEmpty.OnAmmoEmpty(BattleUnitBuf,BattleDiceBehavior)
+  fullName: LimbufOfHermes.ILimbuf.OnAmmoEmpty.OnAmmoEmpty(BattleUnitBuf, BattleDiceBehavior)
+  nameWithType: ILimbuf.OnAmmoEmpty.OnAmmoEmpty(BattleUnitBuf, BattleDiceBehavior)
+- uid: LimbufOfHermes.ILimbuf.OnAmmoEmpty.OnAmmoEmpty*
+  name: OnAmmoEmpty
+  href: api/LimbufOfHermes.ILimbuf.OnAmmoEmpty.html#LimbufOfHermes_ILimbuf_OnAmmoEmpty_OnAmmoEmpty_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnAmmoEmpty.OnAmmoEmpty
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnAmmoEmpty.OnAmmoEmpty
+  nameWithType: ILimbuf.OnAmmoEmpty.OnAmmoEmpty
 - uid: LimbufOfHermes.ILimbuf.OnApplyTremorBurst
   name: ILimbuf.OnApplyTremorBurst
   href: api/LimbufOfHermes.ILimbuf.OnApplyTremorBurst.html
@@ -10499,6 +10825,28 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnBreakBarrier.OnBreakBarrier
   nameWithType: ILimbuf.OnBreakBarrier.OnBreakBarrier
+- uid: LimbufOfHermes.ILimbuf.OnConsumeAmmo
+  name: ILimbuf.OnConsumeAmmo
+  href: api/LimbufOfHermes.ILimbuf.OnConsumeAmmo.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnConsumeAmmo
+  fullName: LimbufOfHermes.ILimbuf.OnConsumeAmmo
+  nameWithType: ILimbuf.OnConsumeAmmo
+- uid: LimbufOfHermes.ILimbuf.OnConsumeAmmo.OnConsumeAmmo(BattleUnitBuf,BattleDiceBehavior,System.Int32)
+  name: OnConsumeAmmo(BattleUnitBuf, BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.ILimbuf.OnConsumeAmmo.html#LimbufOfHermes_ILimbuf_OnConsumeAmmo_OnConsumeAmmo_BattleUnitBuf_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.ILimbuf.OnConsumeAmmo.OnConsumeAmmo(BattleUnitBuf,BattleDiceBehavior,System.Int32)
+  name.vb: OnConsumeAmmo(BattleUnitBuf, BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.ILimbuf.OnConsumeAmmo.OnConsumeAmmo(BattleUnitBuf, BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.ILimbuf.OnConsumeAmmo.OnConsumeAmmo(BattleUnitBuf, BattleDiceBehavior, Integer)
+  nameWithType: ILimbuf.OnConsumeAmmo.OnConsumeAmmo(BattleUnitBuf, BattleDiceBehavior, int)
+  nameWithType.vb: ILimbuf.OnConsumeAmmo.OnConsumeAmmo(BattleUnitBuf, BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.ILimbuf.OnConsumeAmmo.OnConsumeAmmo*
+  name: OnConsumeAmmo
+  href: api/LimbufOfHermes.ILimbuf.OnConsumeAmmo.html#LimbufOfHermes_ILimbuf_OnConsumeAmmo_OnConsumeAmmo_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnConsumeAmmo.OnConsumeAmmo
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnConsumeAmmo.OnConsumeAmmo
+  nameWithType: ILimbuf.OnConsumeAmmo.OnConsumeAmmo
 - uid: LimbufOfHermes.ILimbuf.OnConsumeStageBuf
   name: ILimbuf.OnConsumeStageBuf
   href: api/LimbufOfHermes.ILimbuf.OnConsumeStageBuf.html
@@ -10619,6 +10967,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnPanic.OnPanic
   nameWithType: ILimbuf.OnPanic.OnPanic
+- uid: LimbufOfHermes.ILimbuf.OnReloadAmmo
+  name: ILimbuf.OnReloadAmmo
+  href: api/LimbufOfHermes.ILimbuf.OnReloadAmmo.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnReloadAmmo
+  fullName: LimbufOfHermes.ILimbuf.OnReloadAmmo
+  nameWithType: ILimbuf.OnReloadAmmo
+- uid: LimbufOfHermes.ILimbuf.OnReloadAmmo.OnReloadAmmo(BattleUnitBuf)
+  name: OnReloadAmmo(BattleUnitBuf)
+  href: api/LimbufOfHermes.ILimbuf.OnReloadAmmo.html#LimbufOfHermes_ILimbuf_OnReloadAmmo_OnReloadAmmo_BattleUnitBuf_
+  commentId: M:LimbufOfHermes.ILimbuf.OnReloadAmmo.OnReloadAmmo(BattleUnitBuf)
+  fullName: LimbufOfHermes.ILimbuf.OnReloadAmmo.OnReloadAmmo(BattleUnitBuf)
+  nameWithType: ILimbuf.OnReloadAmmo.OnReloadAmmo(BattleUnitBuf)
+- uid: LimbufOfHermes.ILimbuf.OnReloadAmmo.OnReloadAmmo*
+  name: OnReloadAmmo
+  href: api/LimbufOfHermes.ILimbuf.OnReloadAmmo.html#LimbufOfHermes_ILimbuf_OnReloadAmmo_OnReloadAmmo_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnReloadAmmo.OnReloadAmmo
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnReloadAmmo.OnReloadAmmo
+  nameWithType: ILimbuf.OnReloadAmmo.OnReloadAmmo
 - uid: LimbufOfHermes.ILimbuf.OnRollCritical
   name: ILimbuf.OnRollCritical
   href: api/LimbufOfHermes.ILimbuf.OnRollCritical.html
@@ -11321,6 +11688,47 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimbufExtension.ApplyTremorBreakRateAdder
   nameWithType: LimbufExtension.ApplyTremorBreakRateAdder
+- uid: LimbufOfHermes.LimbufExtension.ConsumeAmmo(BattleUnitModel,BattleDiceBehavior,System.Int32)
+  name: ConsumeAmmo(BattleUnitModel, BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ConsumeAmmo_BattleUnitModel_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.LimbufExtension.ConsumeAmmo(BattleUnitModel,BattleDiceBehavior,System.Int32)
+  name.vb: ConsumeAmmo(BattleUnitModel, BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.LimbufExtension.ConsumeAmmo(BattleUnitModel, BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.LimbufExtension.ConsumeAmmo(BattleUnitModel, BattleDiceBehavior, Integer)
+  nameWithType: LimbufExtension.ConsumeAmmo(BattleUnitModel, BattleDiceBehavior, int)
+  nameWithType.vb: LimbufExtension.ConsumeAmmo(BattleUnitModel, BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.LimbufExtension.ConsumeAmmo*
+  name: ConsumeAmmo
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ConsumeAmmo_
+  commentId: Overload:LimbufOfHermes.LimbufExtension.ConsumeAmmo
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimbufExtension.ConsumeAmmo
+  nameWithType: LimbufExtension.ConsumeAmmo
+- uid: LimbufOfHermes.LimbufExtension.ConsumeAmmo``1(BattleUnitModel,BattleDiceBehavior,System.Int32)
+  name: ConsumeAmmo<T>(BattleUnitModel, BattleDiceBehavior, int)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ConsumeAmmo__1_BattleUnitModel_BattleDiceBehavior_System_Int32_
+  commentId: M:LimbufOfHermes.LimbufExtension.ConsumeAmmo``1(BattleUnitModel,BattleDiceBehavior,System.Int32)
+  name.vb: ConsumeAmmo(Of T)(BattleUnitModel, BattleDiceBehavior, Integer)
+  fullName: LimbufOfHermes.LimbufExtension.ConsumeAmmo<T>(BattleUnitModel, BattleDiceBehavior, int)
+  fullName.vb: LimbufOfHermes.LimbufExtension.ConsumeAmmo(Of T)(BattleUnitModel, BattleDiceBehavior, Integer)
+  nameWithType: LimbufExtension.ConsumeAmmo<T>(BattleUnitModel, BattleDiceBehavior, int)
+  nameWithType.vb: LimbufExtension.ConsumeAmmo(Of T)(BattleUnitModel, BattleDiceBehavior, Integer)
+- uid: LimbufOfHermes.LimbufExtension.InitAmmo*
+  name: InitAmmo
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_InitAmmo_
+  commentId: Overload:LimbufOfHermes.LimbufExtension.InitAmmo
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimbufExtension.InitAmmo
+  nameWithType: LimbufExtension.InitAmmo
+- uid: LimbufOfHermes.LimbufExtension.InitAmmo``1(BattleUnitModel,``0,System.Int32)
+  name: InitAmmo<T>(BattleUnitModel, T, int)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_InitAmmo__1_BattleUnitModel___0_System_Int32_
+  commentId: M:LimbufOfHermes.LimbufExtension.InitAmmo``1(BattleUnitModel,``0,System.Int32)
+  name.vb: InitAmmo(Of T)(BattleUnitModel, T, Integer)
+  fullName: LimbufOfHermes.LimbufExtension.InitAmmo<T>(BattleUnitModel, T, int)
+  fullName.vb: LimbufOfHermes.LimbufExtension.InitAmmo(Of T)(BattleUnitModel, T, Integer)
+  nameWithType: LimbufExtension.InitAmmo<T>(BattleUnitModel, T, int)
+  nameWithType.vb: LimbufExtension.InitAmmo(Of T)(BattleUnitModel, T, Integer)
 - uid: LimbufOfHermes.LimbufExtension.IsAssistDefenseCard(BattlePlayingCardDataInUnitModel)
   name: IsAssistDefenseCard(BattlePlayingCardDataInUnitModel)
   href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_IsAssistDefenseCard_BattlePlayingCardDataInUnitModel_
@@ -11334,6 +11742,50 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimbufExtension.IsAssistDefenseCard
   nameWithType: LimbufExtension.IsAssistDefenseCard
+- uid: LimbufOfHermes.LimbufExtension.IsConsumedAmmo(BattleDiceBehavior)
+  name: IsConsumedAmmo(BattleDiceBehavior)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_IsConsumedAmmo_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.LimbufExtension.IsConsumedAmmo(BattleDiceBehavior)
+  fullName: LimbufOfHermes.LimbufExtension.IsConsumedAmmo(BattleDiceBehavior)
+  nameWithType: LimbufExtension.IsConsumedAmmo(BattleDiceBehavior)
+- uid: LimbufOfHermes.LimbufExtension.IsConsumedAmmo*
+  name: IsConsumedAmmo
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_IsConsumedAmmo_
+  commentId: Overload:LimbufOfHermes.LimbufExtension.IsConsumedAmmo
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimbufExtension.IsConsumedAmmo
+  nameWithType: LimbufExtension.IsConsumedAmmo
+- uid: LimbufOfHermes.LimbufExtension.IsConsumedAmmo``1(BattleDiceBehavior)
+  name: IsConsumedAmmo<T>(BattleDiceBehavior)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_IsConsumedAmmo__1_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.LimbufExtension.IsConsumedAmmo``1(BattleDiceBehavior)
+  name.vb: IsConsumedAmmo(Of T)(BattleDiceBehavior)
+  fullName: LimbufOfHermes.LimbufExtension.IsConsumedAmmo<T>(BattleDiceBehavior)
+  fullName.vb: LimbufOfHermes.LimbufExtension.IsConsumedAmmo(Of T)(BattleDiceBehavior)
+  nameWithType: LimbufExtension.IsConsumedAmmo<T>(BattleDiceBehavior)
+  nameWithType.vb: LimbufExtension.IsConsumedAmmo(Of T)(BattleDiceBehavior)
+- uid: LimbufOfHermes.LimbufExtension.ReloadAmmo(BattleUnitModel)
+  name: ReloadAmmo(BattleUnitModel)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ReloadAmmo_BattleUnitModel_
+  commentId: M:LimbufOfHermes.LimbufExtension.ReloadAmmo(BattleUnitModel)
+  fullName: LimbufOfHermes.LimbufExtension.ReloadAmmo(BattleUnitModel)
+  nameWithType: LimbufExtension.ReloadAmmo(BattleUnitModel)
+- uid: LimbufOfHermes.LimbufExtension.ReloadAmmo*
+  name: ReloadAmmo
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ReloadAmmo_
+  commentId: Overload:LimbufOfHermes.LimbufExtension.ReloadAmmo
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimbufExtension.ReloadAmmo
+  nameWithType: LimbufExtension.ReloadAmmo
+- uid: LimbufOfHermes.LimbufExtension.ReloadAmmo``1(BattleUnitModel)
+  name: ReloadAmmo<T>(BattleUnitModel)
+  href: api/LimbufOfHermes.LimbufExtension.html#LimbufOfHermes_LimbufExtension_ReloadAmmo__1_BattleUnitModel_
+  commentId: M:LimbufOfHermes.LimbufExtension.ReloadAmmo``1(BattleUnitModel)
+  name.vb: ReloadAmmo(Of T)(BattleUnitModel)
+  fullName: LimbufOfHermes.LimbufExtension.ReloadAmmo<T>(BattleUnitModel)
+  fullName.vb: LimbufOfHermes.LimbufExtension.ReloadAmmo(Of T)(BattleUnitModel)
+  nameWithType: LimbufExtension.ReloadAmmo<T>(BattleUnitModel)
+  nameWithType.vb: LimbufExtension.ReloadAmmo(Of T)(BattleUnitModel)
 - uid: LimbufOfHermes.StageBuf
   name: StageBuf
   href: api/LimbufOfHermes.StageBuf.html
