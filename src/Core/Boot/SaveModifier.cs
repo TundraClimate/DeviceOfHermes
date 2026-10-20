@@ -1,5 +1,7 @@
+using Mod;
 using GameSave;
 using HarmonyLib;
+using HarmonyExtension;
 
 namespace DeviceOfHermes.Boot;
 
@@ -77,5 +79,5 @@ internal static class SaveModifier
         }
     }
 
-    private static string SavePath => Path.Combine(SaveManager.savePath, "ModSetting.save");
+    private static string SavePath => (string)typeof(ModContentManager).Method("get_savePath").Invoke(ModContentManager.Instance, []);
 }
