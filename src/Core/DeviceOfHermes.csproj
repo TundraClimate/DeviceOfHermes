@@ -35,5 +35,7 @@
       <HintPath>%(_Libs.FullPath)</HintPath>
       <Private>false</Private>
     </Reference>
+
+    <Reference Include="../../publish/ScrapOfHermes.dll" />
   </ItemGroup>
 </Project>
