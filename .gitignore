@@ -10,6 +10,7 @@ libs
 publish/Caduceus.dll
 publish/DeviceOfHermes.dll
 publish/LimbufOfHermes.dll
+publish/ScrapOfHermes.dll
 publish/DeviceOfHermes.zip
 publish/doh_rs.dll
 
@@ -17,5 +18,6 @@ workshop/Caduceus.dll
 workshop/Assemblies/dependencies/doh_rs.dll
 workshop/Assemblies/DeviceOfHermes.dll
 workshop/Assemblies/HermesAssemblies/LimbufOfHermes.dll
+workshop/Assemblies/HermesAssemblies/ScrapOfHermes.dll
 
 upload.sh
