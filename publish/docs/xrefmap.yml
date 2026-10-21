@@ -3921,6 +3921,160 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.EasyAreaEffect.WaitForSecs
   nameWithType: EasyAreaEffect.WaitForSecs
+- uid: DeviceOfHermes.Effect
+  name: DeviceOfHermes.Effect
+  href: api/DeviceOfHermes.Effect.html
+  commentId: N:DeviceOfHermes.Effect
+  fullName: DeviceOfHermes.Effect
+  nameWithType: DeviceOfHermes.Effect
+- uid: DeviceOfHermes.Effect.EffectManage
+  name: EffectManage
+  href: api/DeviceOfHermes.Effect.EffectManage.html
+  commentId: T:DeviceOfHermes.Effect.EffectManage
+  fullName: DeviceOfHermes.Effect.EffectManage
+  nameWithType: EffectManage
+- uid: DeviceOfHermes.Effect.EffectManage.isDestroySelf
+  name: isDestroySelf
+  href: api/DeviceOfHermes.Effect.EffectManage.html#DeviceOfHermes_Effect_EffectManage_isDestroySelf
+  commentId: F:DeviceOfHermes.Effect.EffectManage.isDestroySelf
+  fullName: DeviceOfHermes.Effect.EffectManage.isDestroySelf
+  nameWithType: EffectManage.isDestroySelf
+- uid: DeviceOfHermes.Effect.EffectManage.layerUpdate
+  name: layerUpdate
+  href: api/DeviceOfHermes.Effect.EffectManage.html#DeviceOfHermes_Effect_EffectManage_layerUpdate
+  commentId: F:DeviceOfHermes.Effect.EffectManage.layerUpdate
+  fullName: DeviceOfHermes.Effect.EffectManage.layerUpdate
+  nameWithType: EffectManage.layerUpdate
+- uid: DeviceOfHermes.Effect.SimpleAuraBase
+  name: SimpleAuraBase
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.html
+  commentId: T:DeviceOfHermes.Effect.SimpleAuraBase
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase
+  nameWithType: SimpleAuraBase
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer
+  name: SimpleAuraBase.AuraLayer
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html
+  commentId: T:DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer
+  nameWithType: SimpleAuraBase.AuraLayer
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura1
+  name: Aura1
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_Aura1
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura1
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura1
+  nameWithType: SimpleAuraBase.AuraLayer.Aura1
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura2
+  name: Aura2
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_Aura2
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura2
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura2
+  nameWithType: SimpleAuraBase.AuraLayer.Aura2
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura3
+  name: Aura3
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_Aura3
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura3
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.Aura3
+  nameWithType: SimpleAuraBase.AuraLayer.Aura3
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN1
+  name: AuraN1
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_AuraN1
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN1
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN1
+  nameWithType: SimpleAuraBase.AuraLayer.AuraN1
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN2
+  name: AuraN2
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_AuraN2
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN2
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN2
+  nameWithType: SimpleAuraBase.AuraLayer.AuraN2
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN3
+  name: AuraN3
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_AuraN3
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN3
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.AuraN3
+  nameWithType: SimpleAuraBase.AuraLayer.AuraN3
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec
+  name: SimpleAuraBase.AuraSpec
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.html
+  commentId: T:DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec
+  nameWithType: SimpleAuraBase.AuraSpec
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat1
+  name: Mat1
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraSpec_Mat1
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat1
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat1
+  nameWithType: SimpleAuraBase.AuraSpec.Mat1
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat2
+  name: Mat2
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraSpec_Mat2
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat2
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat2
+  nameWithType: SimpleAuraBase.AuraSpec.Mat2
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat3
+  name: Mat3
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.html#DeviceOfHermes_Effect_SimpleAuraBase_AuraSpec_Mat3
+  commentId: F:DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat3
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.Mat3
+  nameWithType: SimpleAuraBase.AuraSpec.Mat3
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.Init
+  name: Init()
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.html#DeviceOfHermes_Effect_SimpleAuraBase_Init
+  commentId: M:DeviceOfHermes.Effect.SimpleAuraBase.Init
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.Init()
+  nameWithType: SimpleAuraBase.Init()
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.Init*
+  name: Init
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.html#DeviceOfHermes_Effect_SimpleAuraBase_Init_
+  commentId: Overload:DeviceOfHermes.Effect.SimpleAuraBase.Init
+  isSpec: "True"
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.Init
+  nameWithType: SimpleAuraBase.Init
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.SetColor(DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer,UnityEngine.Color)
+  name: SetColor(AuraLayer, Color)
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.html#DeviceOfHermes_Effect_SimpleAuraBase_SetColor_DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_UnityEngine_Color_
+  commentId: M:DeviceOfHermes.Effect.SimpleAuraBase.SetColor(DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer,UnityEngine.Color)
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.SetColor(DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer, UnityEngine.Color)
+  nameWithType: SimpleAuraBase.SetColor(SimpleAuraBase.AuraLayer, Color)
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.SetColor*
+  name: SetColor
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.html#DeviceOfHermes_Effect_SimpleAuraBase_SetColor_
+  commentId: Overload:DeviceOfHermes.Effect.SimpleAuraBase.SetColor
+  isSpec: "True"
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.SetColor
+  nameWithType: SimpleAuraBase.SetColor
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.SetMaterial(DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer,DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec)
+  name: SetMaterial(AuraLayer, AuraSpec)
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.html#DeviceOfHermes_Effect_SimpleAuraBase_SetMaterial_DeviceOfHermes_Effect_SimpleAuraBase_AuraLayer_DeviceOfHermes_Effect_SimpleAuraBase_AuraSpec_
+  commentId: M:DeviceOfHermes.Effect.SimpleAuraBase.SetMaterial(DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer,DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec)
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.SetMaterial(DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer, DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec)
+  nameWithType: SimpleAuraBase.SetMaterial(SimpleAuraBase.AuraLayer, SimpleAuraBase.AuraSpec)
+- uid: DeviceOfHermes.Effect.SimpleAuraBase.SetMaterial*
+  name: SetMaterial
+  href: api/DeviceOfHermes.Effect.SimpleAuraBase.html#DeviceOfHermes_Effect_SimpleAuraBase_SetMaterial_
+  commentId: Overload:DeviceOfHermes.Effect.SimpleAuraBase.SetMaterial
+  isSpec: "True"
+  fullName: DeviceOfHermes.Effect.SimpleAuraBase.SetMaterial
+  nameWithType: SimpleAuraBase.SetMaterial
+- uid: DeviceOfHermes.Effect.SimpleAuraFactory
+  name: SimpleAuraFactory
+  href: api/DeviceOfHermes.Effect.SimpleAuraFactory.html
+  commentId: T:DeviceOfHermes.Effect.SimpleAuraFactory
+  fullName: DeviceOfHermes.Effect.SimpleAuraFactory
+  nameWithType: SimpleAuraFactory
+- uid: DeviceOfHermes.Effect.SimpleAuraFactory.Attach(BattleUnitModel,DeviceOfHermes.Effect.SimpleAuraBase)
+  name: Attach(BattleUnitModel, SimpleAuraBase)
+  href: api/DeviceOfHermes.Effect.SimpleAuraFactory.html#DeviceOfHermes_Effect_SimpleAuraFactory_Attach_BattleUnitModel_DeviceOfHermes_Effect_SimpleAuraBase_
+  commentId: M:DeviceOfHermes.Effect.SimpleAuraFactory.Attach(BattleUnitModel,DeviceOfHermes.Effect.SimpleAuraBase)
+  fullName: DeviceOfHermes.Effect.SimpleAuraFactory.Attach(BattleUnitModel, DeviceOfHermes.Effect.SimpleAuraBase)
+  nameWithType: SimpleAuraFactory.Attach(BattleUnitModel, SimpleAuraBase)
+- uid: DeviceOfHermes.Effect.SimpleAuraFactory.Attach*
+  name: Attach
+  href: api/DeviceOfHermes.Effect.SimpleAuraFactory.html#DeviceOfHermes_Effect_SimpleAuraFactory_Attach_
+  commentId: Overload:DeviceOfHermes.Effect.SimpleAuraFactory.Attach
+  isSpec: "True"
+  fullName: DeviceOfHermes.Effect.SimpleAuraFactory.Attach
+  nameWithType: SimpleAuraFactory.Attach
 - uid: DeviceOfHermes.HermesConstants
   name: HermesConstants
   href: api/DeviceOfHermes.HermesConstants.html
@@ -11906,6 +12060,111 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.StageBufListDetail.TryConsume
   nameWithType: StageBufListDetail.TryConsume
+- uid: ScrapOfHermes
+  name: ScrapOfHermes
+  href: api/ScrapOfHermes.html
+  commentId: N:ScrapOfHermes
+  fullName: ScrapOfHermes
+  nameWithType: ScrapOfHermes
+- uid: ScrapOfHermes.Scrap
+  name: Scrap
+  href: api/ScrapOfHermes.Scrap.html
+  commentId: T:ScrapOfHermes.Scrap
+  fullName: ScrapOfHermes.Scrap
+  nameWithType: Scrap
+- uid: ScrapOfHermes.Scrap.Load*
+  name: Load
+  href: api/ScrapOfHermes.Scrap.html#ScrapOfHermes_Scrap_Load_
+  commentId: Overload:ScrapOfHermes.Scrap.Load
+  isSpec: "True"
+  fullName: ScrapOfHermes.Scrap.Load
+  nameWithType: Scrap.Load
+- uid: ScrapOfHermes.Scrap.Load``1(UnityEngine.Transform)
+  name: Load<T>(Transform)
+  href: api/ScrapOfHermes.Scrap.html#ScrapOfHermes_Scrap_Load__1_UnityEngine_Transform_
+  commentId: M:ScrapOfHermes.Scrap.Load``1(UnityEngine.Transform)
+  name.vb: Load(Of T)(Transform)
+  fullName: ScrapOfHermes.Scrap.Load<T>(UnityEngine.Transform)
+  fullName.vb: ScrapOfHermes.Scrap.Load(Of T)(UnityEngine.Transform)
+  nameWithType: Scrap.Load<T>(Transform)
+  nameWithType.vb: Scrap.Load(Of T)(Transform)
+- uid: ScrapOfHermes.SimpleAura
+  name: SimpleAura
+  href: api/ScrapOfHermes.SimpleAura.html
+  commentId: T:ScrapOfHermes.SimpleAura
+  fullName: ScrapOfHermes.SimpleAura
+  nameWithType: SimpleAura
+- uid: ScrapOfHermes.SimpleAura.Aura1
+  name: Aura1
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_Aura1
+  commentId: F:ScrapOfHermes.SimpleAura.Aura1
+  fullName: ScrapOfHermes.SimpleAura.Aura1
+  nameWithType: SimpleAura.Aura1
+- uid: ScrapOfHermes.SimpleAura.Aura2
+  name: Aura2
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_Aura2
+  commentId: F:ScrapOfHermes.SimpleAura.Aura2
+  fullName: ScrapOfHermes.SimpleAura.Aura2
+  nameWithType: SimpleAura.Aura2
+- uid: ScrapOfHermes.SimpleAura.Aura3
+  name: Aura3
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_Aura3
+  commentId: F:ScrapOfHermes.SimpleAura.Aura3
+  fullName: ScrapOfHermes.SimpleAura.Aura3
+  nameWithType: SimpleAura.Aura3
+- uid: ScrapOfHermes.SimpleAura.AuraN1
+  name: AuraN1
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_AuraN1
+  commentId: F:ScrapOfHermes.SimpleAura.AuraN1
+  fullName: ScrapOfHermes.SimpleAura.AuraN1
+  nameWithType: SimpleAura.AuraN1
+- uid: ScrapOfHermes.SimpleAura.AuraN2
+  name: AuraN2
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_AuraN2
+  commentId: F:ScrapOfHermes.SimpleAura.AuraN2
+  fullName: ScrapOfHermes.SimpleAura.AuraN2
+  nameWithType: SimpleAura.AuraN2
+- uid: ScrapOfHermes.SimpleAura.AuraN3
+  name: AuraN3
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_AuraN3
+  commentId: F:ScrapOfHermes.SimpleAura.AuraN3
+  fullName: ScrapOfHermes.SimpleAura.AuraN3
+  nameWithType: SimpleAura.AuraN3
+- uid: ScrapOfHermes.SimpleAura.SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  name: SetColor(GameObject, Color)
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_SetColor_UnityEngine_GameObject_UnityEngine_Color_
+  commentId: M:ScrapOfHermes.SimpleAura.SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  fullName: ScrapOfHermes.SimpleAura.SetColor(UnityEngine.GameObject, UnityEngine.Color)
+  nameWithType: SimpleAura.SetColor(GameObject, Color)
+- uid: ScrapOfHermes.SimpleAura.SetColor*
+  name: SetColor
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_SetColor_
+  commentId: Overload:ScrapOfHermes.SimpleAura.SetColor
+  isSpec: "True"
+  fullName: ScrapOfHermes.SimpleAura.SetColor
+  nameWithType: SimpleAura.SetColor
+- uid: ScrapOfHermes.SimpleAura.SetMaterial(UnityEngine.GameObject,System.Int32)
+  name: SetMaterial(GameObject, int)
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_SetMaterial_UnityEngine_GameObject_System_Int32_
+  commentId: M:ScrapOfHermes.SimpleAura.SetMaterial(UnityEngine.GameObject,System.Int32)
+  name.vb: SetMaterial(GameObject, Integer)
+  fullName: ScrapOfHermes.SimpleAura.SetMaterial(UnityEngine.GameObject, int)
+  fullName.vb: ScrapOfHermes.SimpleAura.SetMaterial(UnityEngine.GameObject, Integer)
+  nameWithType: SimpleAura.SetMaterial(GameObject, int)
+  nameWithType.vb: SimpleAura.SetMaterial(GameObject, Integer)
+- uid: ScrapOfHermes.SimpleAura.SetMaterial*
+  name: SetMaterial
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_SetMaterial_
+  commentId: Overload:ScrapOfHermes.SimpleAura.SetMaterial
+  isSpec: "True"
+  fullName: ScrapOfHermes.SimpleAura.SetMaterial
+  nameWithType: SimpleAura.SetMaterial
+- uid: ScrapOfHermes.SimpleAura.samples
+  name: samples
+  href: api/ScrapOfHermes.SimpleAura.html#ScrapOfHermes_SimpleAura_samples
+  commentId: F:ScrapOfHermes.SimpleAura.samples
+  fullName: ScrapOfHermes.SimpleAura.samples
+  nameWithType: SimpleAura.samples
 - uid: System
   name: System
   href: api/System.html

@@ -1062,6 +1062,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Effect.EffectManage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Effect.EffectManage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Effect.EffectManage",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Effect.EffectManage.yml\" sourcestartlinenumber=\"1\">A behaviour the manages effect</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Effect.SimpleAuraBase.AuraLayer.yml\" sourcestartlinenumber=\"1\">Layer enum</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Effect.SimpleAuraBase.AuraSpec.yml\" sourcestartlinenumber=\"1\">Layer materials</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Effect.SimpleAuraBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Effect.SimpleAuraBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Effect.SimpleAuraBase",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Effect.SimpleAuraBase.yml\" sourcestartlinenumber=\"1\">A base class the SimpleAura</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Effect.SimpleAuraFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Effect.SimpleAuraFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Effect.SimpleAuraFactory",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Effect.SimpleAuraFactory.yml\" sourcestartlinenumber=\"1\">Factory the SimpleAura</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Effect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Effect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Effect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.HermesConstants.yml",
       "output": {
         ".html": {
@@ -2798,6 +2882,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ScrapOfHermes.Scrap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScrapOfHermes.Scrap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ScrapOfHermes.Scrap",
+      "Summary": "<p sourcefile=\"api/ScrapOfHermes.Scrap.yml\" sourcestartlinenumber=\"1\">A scrap loader</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScrapOfHermes.SimpleAura.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScrapOfHermes.SimpleAura.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ScrapOfHermes.SimpleAura",
+      "Summary": "<p sourcefile=\"api/ScrapOfHermes.SimpleAura.yml\" sourcestartlinenumber=\"1\">An aura manager script</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScrapOfHermes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScrapOfHermes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ScrapOfHermes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/System.Box-1.yml",
       "output": {
         ".html": {
@@ -3325,6 +3451,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/dynamic-ability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/effect-simpleaura.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/effect-simpleaura.html"
         }
       },
       "version": ""
