@@ -1,3 +1,4 @@
+using DeviceOfHermes.Effect;
 using UnityEngine;
 
 namespace LimbufOfHermes;
@@ -31,7 +32,11 @@ public class BattleUnitBuf_Limbuf_Shin : LimbufBase
         var go = bundle.LoadAsset<GameObject>("Shin");
 
         return UnityObject.Instantiate(go, owner.view.charAppearance.transform)
-            .Also(aura => aura.AddComponent<EffectManage>().Init(owner.view, marker));
+            .Also(aura => aura.AddComponent<EffectManage>().Also(em =>
+            {
+                em.layerUpdate = () => LayerMask.NameToLayer(owner.view.charAppearance.GetLayerName());
+                em.isDestroySelf = () => marker is null || marker.IsDestroyed() || marker.Hide || !marker.Owner.bufListDetail.GetActivatedBufList().Contains(marker);
+            }));
     }
 
     private GameObject? aura;

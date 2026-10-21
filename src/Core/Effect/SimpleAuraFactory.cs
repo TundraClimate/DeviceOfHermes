@@ -13,6 +13,11 @@ public static class SimpleAuraFactory
 
         data.Apply(aura);
 
+        aura.gameObject.AddComponent<EffectManage>().Also(em =>
+        {
+            em.layerUpdate = () => LayerMask.NameToLayer(owner.view.charAppearance.GetLayerName());
+        });
+
         return aura.gameObject;
     }
 }

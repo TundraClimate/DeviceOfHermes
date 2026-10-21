@@ -1,3 +1,4 @@
+using DeviceOfHermes.Effect;
 using UnityEngine;
 
 namespace LimbufOfHermes;
@@ -26,7 +27,11 @@ public class BattleUnitBuf_Limbuf_PrescriptTarget : LimbufBase
         else
         {
             effect = UnityObject.Instantiate(bundle.LoadAsset<GameObject>("IndexMark"), owner.view.characterRotationCenter)
-                .Also(aura => aura.AddComponent<EffectManage>().Init(owner.view, this));
+                .Also(aura => aura.AddComponent<EffectManage>().Also(em =>
+                {
+                    em.layerUpdate = () => LayerMask.NameToLayer(owner.view.charAppearance.GetLayerName());
+                    em.isDestroySelf = () => this.IsDestroyed() || this.Hide || !this.Owner.bufListDetail.GetActivatedBufList().Contains(this);
+                }));
         }
 
         BattleObjectManager.instance.GetAliveList_random(Faction.Enemy, 1)[0].bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.PrescriptTarget, 1);
