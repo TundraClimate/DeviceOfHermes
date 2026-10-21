@@ -5,7 +5,7 @@ namespace ScrapOfHermes;
 /// <summary>An aura manager script</summary>
 public class SimpleAura : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         SetColor(Aura1, new(0, 0, 0, 0));
         SetColor(Aura2, new(0, 0, 0, 0));
@@ -27,9 +27,8 @@ public class SimpleAura : MonoBehaviour
     public void SetColor(GameObject target, Color color)
     {
         var main = target.GetComponent<ParticleSystem>().main;
-        var startColor = main.startColor;
 
-        startColor.color = color;
+        main.startColor = color;
     }
 
     /// <summary>Sample aura 1</summary>

@@ -1,0 +1,18 @@
+using ScrapOfHermes;
+using UnityEngine;
+
+namespace DeviceOfHermes.Effect;
+
+/// <summary>Factory the SimpleAura</summary>
+public static class SimpleAuraFactory
+{
+    /// <summary>Attach</summary>
+    public static GameObject Attach(BattleUnitModel owner, SimpleAuraBase data)
+    {
+        var aura = Scrap.Load<SimpleAura>(owner.view.charAppearance.transform);
+
+        data.Apply(aura);
+
+        return aura.gameObject;
+    }
+}

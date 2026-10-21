@@ -6,8 +6,8 @@ namespace ScrapOfHermes;
 public class Scrap : MonoBehaviour
 {
     /// <summary>Loads and instatiate the scrap</summary>
-    public static void Load<T>(Transform parent)
+    public static T Load<T>(Transform parent)
     {
-        UnityEngine.Object.Instantiate(AssetLoader.bundle.LoadAsset<GameObject>(typeof(T).Name), parent);
+        return UnityEngine.Object.Instantiate(AssetLoader.bundle.LoadAsset<GameObject>(typeof(T).Name), parent).GetComponent<T>();
     }
 }
