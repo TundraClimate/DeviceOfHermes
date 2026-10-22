@@ -1,7 +1,6 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using HarmonyLib;
-using HarmonyExtension;
 using LOR_BattleUnit_UI;
 
 namespace DeviceOfHermes;

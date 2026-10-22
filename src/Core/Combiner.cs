@@ -2,7 +2,6 @@ using System.Reflection;
 using System.Linq.Expressions;
 using System.Collections.Concurrent;
 using HarmonyLib;
-using HarmonyExtension;
 using Castle.DynamicProxy;
 
 namespace DeviceOfHermes;

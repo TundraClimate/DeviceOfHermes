@@ -1,5 +1,5 @@
+using DeviceOfHermes;
 using HarmonyLib;
-using HarmonyExtension;
 
 namespace System.Collections.Generic;
 

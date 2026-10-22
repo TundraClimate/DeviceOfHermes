@@ -1,6 +1,5 @@
 using System.Runtime.CompilerServices;
 using HarmonyLib;
-using HarmonyExtension;
 
 namespace LimbufOfHermes;
 

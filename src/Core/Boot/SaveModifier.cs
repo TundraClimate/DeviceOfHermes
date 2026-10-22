@@ -1,7 +1,6 @@
 using Mod;
 using GameSave;
 using HarmonyLib;
-using HarmonyExtension;
 
 namespace DeviceOfHermes.Boot;
 

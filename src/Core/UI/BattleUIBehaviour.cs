@@ -3,7 +3,6 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 using HarmonyLib;
-using HarmonyExtension;
 
 namespace DeviceOfHermes.UI;
 

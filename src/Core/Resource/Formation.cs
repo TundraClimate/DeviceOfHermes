@@ -1,7 +1,6 @@
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using HarmonyLib;
-using HarmonyExtension;
 
 namespace DeviceOfHermes.Resource;
 

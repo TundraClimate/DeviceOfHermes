@@ -4,7 +4,6 @@ using UnityEngine.UI;
 using TMPro;
 using UI;
 using HarmonyLib;
-using HarmonyExtension;
 
 using UIUIController = UI.UIController;
 

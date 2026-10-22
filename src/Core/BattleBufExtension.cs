@@ -1,7 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using LOR_DiceSystem;
 using HarmonyLib;
-using HarmonyExtension;
 
 namespace DeviceOfHermes;
 

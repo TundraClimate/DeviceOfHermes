@@ -1,7 +1,6 @@
 using UI;
 using UnityEngine;
 using HarmonyLib;
-using HarmonyExtension;
 using static HarmonyLib.AccessTools;
 
 namespace DeviceOfHermes.Resource;

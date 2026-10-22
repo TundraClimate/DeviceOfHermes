@@ -2,11 +2,44 @@ using System.Reflection.Emit;
 using System.Reflection;
 using HarmonyLib;
 
-namespace HarmonyExtension;
+namespace DeviceOfHermes;
 
 /// <summary>Harmony extensions</summary>
 public static class HarmonyExtension
 {
+    static readonly HashSet<OpCode> ldloc = [
+        OpCodes.Ldloc,
+        OpCodes.Ldloc_S,
+        OpCodes.Ldloc_0,
+        OpCodes.Ldloc_1,
+        OpCodes.Ldloc_2,
+        OpCodes.Ldloc_3,
+    ];
+
+    static readonly HashSet<OpCode> ldloca = [
+        OpCodes.Ldloca,
+        OpCodes.Ldloca_S,
+    ];
+
+    static readonly HashSet<OpCode> stloc = [
+        OpCodes.Stloc,
+        OpCodes.Stloc_S,
+        OpCodes.Stloc_0,
+        OpCodes.Stloc_1,
+        OpCodes.Stloc_2,
+        OpCodes.Stloc_3,
+    ];
+
+    static readonly HashSet<OpCode> ldfld = [
+        OpCodes.Ldfld,
+        OpCodes.Ldsfld,
+    ];
+
+    static readonly HashSet<OpCode> stfld = [
+        OpCodes.Stfld,
+        OpCodes.Stsfld,
+    ];
+
     extension(CodeMatch)
     {
         /// <summary>Matches OpCode</summary>
@@ -18,35 +51,32 @@ public static class HarmonyExtension
         /// <summary>Is Ldarg</summary>
         public static CodeMatch IsLdarg(int? num = null) => new CodeMatch(instruction => instruction.IsLdarg(num));
 
-        /// <summary>Is Ldloc</summary>
-        public static CodeMatch IsLdloc() => new CodeMatch(instruction => instruction.IsLdloc());
-
-        /// <summary>Is Ldfld</summary>
-        public static CodeMatch IsLdfld() => IsOpCode(OpCodes.Ldfld);
-
-        /// <summary>Is Ldfld</summary>
-        public static CodeMatch IsLdfld(FieldInfo info)
-            => new CodeMatch(i => i.opcode == OpCodes.Ldfld && i.OperandIs(info));
+        /// <summary>Is Ldarga</summary>
+        public static CodeMatch IsLdarga(int? num = null) => new CodeMatch(instruction => instruction.IsLdarga(num));
 
         /// <summary>Is Starg</summary>
         public static CodeMatch IsStarg(int? num = null) => new CodeMatch(instruction => instruction.IsStarg(num));
 
+        /// <summary>Is Ldloc</summary>
+        public static CodeMatch IsLdloc(int? idx = null) => new CodeMatch(instruction => ldloc.Contains(instruction.opcode) && (idx is null || instruction.operand is LocalVariableInfo i && i.LocalIndex == idx));
+
+        /// <summary>Is Ldloca</summary>
+        public static CodeMatch IsLdloca(int? idx = null) => new CodeMatch(instruction => ldloca.Contains(instruction.opcode) && (idx is null || instruction.operand is LocalVariableInfo i && i.LocalIndex == idx));
+
         /// <summary>Is Stloc</summary>
-        public static CodeMatch IsStloc() => new CodeMatch(instruction => instruction.IsStloc());
+        public static CodeMatch IsStloc(int? idx = null) => new CodeMatch(instruction => stloc.Contains(instruction.opcode) && (idx is null || instruction.operand is LocalVariableInfo i && i.LocalIndex == idx));
+
+        /// <summary>Is Ldfld</summary>
+        public static CodeMatch IsLdfld(FieldInfo? info = null) => new CodeMatch(i => info is null ? ldfld.Contains(i.opcode) : i.LoadsField(info));
 
         /// <summary>Is Stfld</summary>
-        public static CodeMatch IsStfld() => IsOpCode(OpCodes.Stfld);
-
-        /// <summary>Is Stfld</summary>
-        public static CodeMatch IsStfld(FieldInfo info)
-            => new CodeMatch(i => i.opcode == OpCodes.Stfld && i.OperandIs(info));
+        public static CodeMatch IsStfld(FieldInfo? info = null) => new CodeMatch(i => info is null ? stfld.Contains(i.opcode) : i.StoresField(info));
     }
 
     extension(Type ty)
     {
         /// <summary>Access method</summary>
-        public MethodInfo Method(string name, Type[]? parameters = null, Type[]? generics = null)
-            => AccessTools.Method(ty, name, parameters, generics);
+        public MethodInfo Method(string name, Type[]? parameters = null, Type[]? generics = null) => AccessTools.Method(ty, name, parameters, generics);
 
         /// <summary>Access property</summary>
         public PropertyInfo Property(string name) => AccessTools.Property(ty, name);
@@ -89,55 +119,6 @@ public static class HarmonyExtension
 
         /// <summary>Create Stfld instruction</summary>
         public static CodeInstruction SetField(FieldInfo target) => new CodeInstruction(OpCodes.Stfld, target);
-
-        /// <summary>Create literal instruction</summary>
-        public static CodeInstruction Literal<T>(T value)
-        {
-            var result = value switch
-            {
-                null => new CodeInstruction(OpCodes.Ldnull),
-
-                int i when i == -1 => new CodeInstruction(OpCodes.Ldc_I4_M1),
-                int i when i is >= -128 and < 128 => new CodeInstruction(OpCodes.Ldc_I4_S, i),
-                int i => new CodeInstruction(OpCodes.Ldc_I4, i),
-
-                uint i when i < 128 => new CodeInstruction(OpCodes.Ldc_I4_S, i),
-                uint i => new CodeInstruction(OpCodes.Ldc_I4, i),
-
-                bool b when !b => new CodeInstruction(OpCodes.Ldc_I4_0),
-                bool b when b => new CodeInstruction(OpCodes.Ldc_I4_1),
-
-                char c => new CodeInstruction(OpCodes.Ldc_I4_S, (ushort)c),
-
-                byte b when b < 128 => new CodeInstruction(OpCodes.Ldc_I4_S, (int)b),
-                byte b => new CodeInstruction(OpCodes.Ldc_I4, (int)b),
-                sbyte b => new CodeInstruction(OpCodes.Ldc_I4_S, (int)b),
-                short s => new CodeInstruction(OpCodes.Ldc_I4, (int)s),
-                ushort s => new CodeInstruction(OpCodes.Ldc_I4, (int)s),
-
-                long l => new CodeInstruction(OpCodes.Ldc_I8, l),
-                ulong l => new CodeInstruction(OpCodes.Ldc_I8, l),
-
-                float f => new CodeInstruction(OpCodes.Ldc_R4, f),
-
-                double d => new CodeInstruction(OpCodes.Ldc_R8, d),
-
-                string s => new CodeInstruction(OpCodes.Ldstr, s),
-
-                _ => throw new InvalidOperationException($"{typeof(T).Name} is not literal"),
-            };
-
-            return result;
-        }
-
-        /// <summary>Create enum instruction</summary>
-        public static CodeInstruction Enum<T>(T e)
-            where T : Enum
-        {
-            var num = (int)(object)e;
-
-            return Literal<int>(num);
-        }
 
         /// <summary>Replace labels</summary>
         public List<Label> ReplaceLabels(List<Label> newLabels)

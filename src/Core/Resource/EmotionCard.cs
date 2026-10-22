@@ -1,5 +1,4 @@
 using HarmonyLib;
-using HarmonyExtension;
 
 namespace DeviceOfHermes.Resource;
 

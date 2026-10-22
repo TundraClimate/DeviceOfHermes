@@ -2,7 +2,6 @@ using System.Reflection;
 using UI;
 using UnityEngine.UI;
 using HarmonyLib;
-using HarmonyExtension;
 using DeviceOfHermes.Boot;
 
 namespace DeviceOfHermes.Resource;
