@@ -18,7 +18,7 @@ public class BattleUnitBuf_Limbuf_Scorchfield : StageBufBase
 
             matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdloc(), CodeMatch.Calls(typeof(BattleUnitModel).Method("OnLoseHp")))
                 .Advance(1)
-                .Insert(CodeInstruction.Local(1), CodeInstruction.Arg(2), CodeInstruction.Arg(4), CodeInstruction.Call(typeof(PatchOnTakeDamage).Method("InjectMethod")));
+                .Insert(CodeInstruction.Ldloc(1), CodeInstruction.Ldarg(2), CodeInstruction.Ldarg(4), CodeInstruction.Call(typeof(PatchOnTakeDamage).Method("InjectMethod")));
 
             return matcher.Instructions();
         }

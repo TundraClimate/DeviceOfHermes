@@ -4075,6 +4075,119 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.Effect.SimpleAuraFactory.Attach
   nameWithType: SimpleAuraFactory.Attach
+- uid: DeviceOfHermes.HarmonyExtension
+  name: HarmonyExtension
+  href: api/DeviceOfHermes.HarmonyExtension.html
+  commentId: T:DeviceOfHermes.HarmonyExtension
+  fullName: DeviceOfHermes.HarmonyExtension
+  nameWithType: HarmonyExtension
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo
+  name: HarmonyExtension.PatchInfo
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html
+  commentId: T:DeviceOfHermes.HarmonyExtension.PatchInfo
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo
+  nameWithType: HarmonyExtension.PatchInfo
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.#ctor(DeviceOfHermes.HarmonyExtension.PatchType,System.String,System.Reflection.MethodInfo,System.Int32)
+  name: PatchInfo(PatchType, string, MethodInfo, int)
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo__ctor_DeviceOfHermes_HarmonyExtension_PatchType_System_String_System_Reflection_MethodInfo_System_Int32_
+  commentId: M:DeviceOfHermes.HarmonyExtension.PatchInfo.#ctor(DeviceOfHermes.HarmonyExtension.PatchType,System.String,System.Reflection.MethodInfo,System.Int32)
+  name.vb: New(PatchType, String, MethodInfo, Integer)
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.PatchInfo(DeviceOfHermes.HarmonyExtension.PatchType, string, System.Reflection.MethodInfo, int)
+  fullName.vb: DeviceOfHermes.HarmonyExtension.PatchInfo.New(DeviceOfHermes.HarmonyExtension.PatchType, String, System.Reflection.MethodInfo, Integer)
+  nameWithType: HarmonyExtension.PatchInfo.PatchInfo(HarmonyExtension.PatchType, string, MethodInfo, int)
+  nameWithType.vb: HarmonyExtension.PatchInfo.New(HarmonyExtension.PatchType, String, MethodInfo, Integer)
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.#ctor*
+  name: PatchInfo
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo__ctor_
+  commentId: Overload:DeviceOfHermes.HarmonyExtension.PatchInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.PatchInfo
+  fullName.vb: DeviceOfHermes.HarmonyExtension.PatchInfo.New
+  nameWithType: HarmonyExtension.PatchInfo.PatchInfo
+  nameWithType.vb: HarmonyExtension.PatchInfo.New
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.Method
+  name: Method
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_Method
+  commentId: P:DeviceOfHermes.HarmonyExtension.PatchInfo.Method
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.Method
+  nameWithType: HarmonyExtension.PatchInfo.Method
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.Method*
+  name: Method
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_Method_
+  commentId: Overload:DeviceOfHermes.HarmonyExtension.PatchInfo.Method
+  isSpec: "True"
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.Method
+  nameWithType: HarmonyExtension.PatchInfo.Method
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.Owner
+  name: Owner
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_Owner
+  commentId: P:DeviceOfHermes.HarmonyExtension.PatchInfo.Owner
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.Owner
+  nameWithType: HarmonyExtension.PatchInfo.Owner
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.Owner*
+  name: Owner
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_Owner_
+  commentId: Overload:DeviceOfHermes.HarmonyExtension.PatchInfo.Owner
+  isSpec: "True"
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.Owner
+  nameWithType: HarmonyExtension.PatchInfo.Owner
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.PatchType
+  name: PatchType
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_PatchType
+  commentId: P:DeviceOfHermes.HarmonyExtension.PatchInfo.PatchType
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.PatchType
+  nameWithType: HarmonyExtension.PatchInfo.PatchType
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.PatchType*
+  name: PatchType
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_PatchType_
+  commentId: Overload:DeviceOfHermes.HarmonyExtension.PatchInfo.PatchType
+  isSpec: "True"
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.PatchType
+  nameWithType: HarmonyExtension.PatchInfo.PatchType
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.Priority
+  name: Priority
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_Priority
+  commentId: P:DeviceOfHermes.HarmonyExtension.PatchInfo.Priority
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.Priority
+  nameWithType: HarmonyExtension.PatchInfo.Priority
+- uid: DeviceOfHermes.HarmonyExtension.PatchInfo.Priority*
+  name: Priority
+  href: api/DeviceOfHermes.HarmonyExtension.PatchInfo.html#DeviceOfHermes_HarmonyExtension_PatchInfo_Priority_
+  commentId: Overload:DeviceOfHermes.HarmonyExtension.PatchInfo.Priority
+  isSpec: "True"
+  fullName: DeviceOfHermes.HarmonyExtension.PatchInfo.Priority
+  nameWithType: HarmonyExtension.PatchInfo.Priority
+- uid: DeviceOfHermes.HarmonyExtension.PatchType
+  name: HarmonyExtension.PatchType
+  href: api/DeviceOfHermes.HarmonyExtension.PatchType.html
+  commentId: T:DeviceOfHermes.HarmonyExtension.PatchType
+  fullName: DeviceOfHermes.HarmonyExtension.PatchType
+  nameWithType: HarmonyExtension.PatchType
+- uid: DeviceOfHermes.HarmonyExtension.PatchType.Finalizer
+  name: Finalizer
+  href: api/DeviceOfHermes.HarmonyExtension.PatchType.html#DeviceOfHermes_HarmonyExtension_PatchType_Finalizer
+  commentId: F:DeviceOfHermes.HarmonyExtension.PatchType.Finalizer
+  fullName: DeviceOfHermes.HarmonyExtension.PatchType.Finalizer
+  nameWithType: HarmonyExtension.PatchType.Finalizer
+- uid: DeviceOfHermes.HarmonyExtension.PatchType.Postfix
+  name: Postfix
+  href: api/DeviceOfHermes.HarmonyExtension.PatchType.html#DeviceOfHermes_HarmonyExtension_PatchType_Postfix
+  commentId: F:DeviceOfHermes.HarmonyExtension.PatchType.Postfix
+  fullName: DeviceOfHermes.HarmonyExtension.PatchType.Postfix
+  nameWithType: HarmonyExtension.PatchType.Postfix
+- uid: DeviceOfHermes.HarmonyExtension.PatchType.Prefix
+  name: Prefix
+  href: api/DeviceOfHermes.HarmonyExtension.PatchType.html#DeviceOfHermes_HarmonyExtension_PatchType_Prefix
+  commentId: F:DeviceOfHermes.HarmonyExtension.PatchType.Prefix
+  fullName: DeviceOfHermes.HarmonyExtension.PatchType.Prefix
+  nameWithType: HarmonyExtension.PatchType.Prefix
+- uid: DeviceOfHermes.HarmonyExtension.PatchType.Transpiler
+  name: Transpiler
+  href: api/DeviceOfHermes.HarmonyExtension.PatchType.html#DeviceOfHermes_HarmonyExtension_PatchType_Transpiler
+  commentId: F:DeviceOfHermes.HarmonyExtension.PatchType.Transpiler
+  fullName: DeviceOfHermes.HarmonyExtension.PatchType.Transpiler
+  nameWithType: HarmonyExtension.PatchType.Transpiler
 - uid: DeviceOfHermes.HermesConstants
   name: HermesConstants
   href: api/DeviceOfHermes.HermesConstants.html

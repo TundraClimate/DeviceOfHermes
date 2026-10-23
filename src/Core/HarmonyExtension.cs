@@ -40,6 +40,21 @@ public static class HarmonyExtension
         OpCodes.Stsfld,
     ];
 
+    static readonly HashSet<OpCode> ldelem = [
+        OpCodes.Ldelem,
+        OpCodes.Ldelem_I,
+        OpCodes.Ldelem_I1,
+        OpCodes.Ldelem_I2,
+        OpCodes.Ldelem_I4,
+        OpCodes.Ldelem_I8,
+        OpCodes.Ldelem_R4,
+        OpCodes.Ldelem_R8,
+        OpCodes.Ldelem_Ref,
+        OpCodes.Ldelem_U1,
+        OpCodes.Ldelem_U2,
+        OpCodes.Ldelem_U4,
+    ];
+
     extension(CodeMatch)
     {
         /// <summary>Matches OpCode</summary>
@@ -71,6 +86,39 @@ public static class HarmonyExtension
 
         /// <summary>Is Stfld</summary>
         public static CodeMatch IsStfld(FieldInfo? info = null) => new CodeMatch(i => info is null ? stfld.Contains(i.opcode) : i.StoresField(info));
+
+        /// <summary>Is Newobj</summary>
+        public static CodeMatch IsNewobj(ConstructorInfo? info) => new CodeMatch(i => i.opcode == OpCodes.Newobj && (info is null || i.operand is ConstructorInfo ctor && ctor == info));
+
+        /// <summary>Is Const</summary>
+        public static CodeMatch IsConst() => new CodeMatch(i => i.LoadsConstant());
+
+        /// <summary>Is Const</summary>
+        public static CodeMatch IsConst(long num) => new CodeMatch(i => i.LoadsConstant(num));
+
+        /// <summary>Is Const</summary>
+        public static CodeMatch IsConst(double num) => new CodeMatch(i => i.LoadsConstant(num));
+
+        /// <summary>Is Const</summary>
+        public static CodeMatch IsConst(Enum num) => new CodeMatch(i => i.LoadsConstant(num));
+
+        /// <summary>Is Ldelem</summary>
+        public static CodeMatch IsLdelem() => new CodeMatch(i => ldelem.Contains(i.opcode));
+
+        /// <summary>Is Ldlen</summary>
+        public static CodeMatch IsLdlen() => new CodeMatch(i => i.opcode == OpCodes.Ldlen);
+
+        /// <summary>Is Ret</summary>
+        public static CodeMatch IsRet() => new CodeMatch(i => i.opcode == OpCodes.Ret);
+
+        /// <summary>Is Dup</summary>
+        public static CodeMatch IsDup() => new CodeMatch(i => i.opcode == OpCodes.Dup);
+
+        /// <summary>Is Pop</summary>
+        public static CodeMatch IsPop() => new CodeMatch(i => i.opcode == OpCodes.Pop);
+
+        /// <summary>Is Leave</summary>
+        public static CodeMatch IsLeave() => new CodeMatch(i => i.opcode == OpCodes.Leave || i.opcode == OpCodes.Leave_S);
     }
 
     extension(Type ty)
@@ -108,14 +156,35 @@ public static class HarmonyExtension
         /// <summary>Create Null instruction</summary>
         public static CodeInstruction Null => new CodeInstruction(OpCodes.Ldnull);
 
+        /// <summary>Create Ret instruction</summary>
+        public static CodeInstruction Ret => new CodeInstruction(OpCodes.Ret);
+
+        /// <summary>Create Add instruction</summary>
+        public static CodeInstruction Add => new CodeInstruction(OpCodes.Add);
+
+        /// <summary>Create Sub instruction</summary>
+        public static CodeInstruction Sub => new CodeInstruction(OpCodes.Sub);
+
+        /// <summary>Create Mul instruction</summary>
+        public static CodeInstruction Mul => new CodeInstruction(OpCodes.Mul);
+
+        /// <summary>Create Div instruction</summary>
+        public static CodeInstruction Div => new CodeInstruction(OpCodes.Div);
+
         /// <summary>Create ldarg instruction</summary>
         public static CodeInstruction Ldarg(int idx) => new CodeInstruction(OpCodes.Ldarg, idx);
+
+        /// <summary>Create ldarga instruction</summary>
+        public static CodeInstruction Ldarga(int idx) => new CodeInstruction(OpCodes.Ldarga, idx);
 
         /// <summary>Create Call instruction</summary>
         public static CodeInstruction Call(MethodInfo target) => new CodeInstruction(OpCodes.Call, target);
 
         /// <summary>Create Ldloc instruction</summary>
         public static CodeInstruction Ldloc(int idx) => new CodeInstruction(OpCodes.Ldloc, idx);
+
+        /// <summary>Create Ldloca instruction</summary>
+        public static CodeInstruction Ldloca(int idx) => new CodeInstruction(OpCodes.Ldloca, idx);
 
         /// <summary>Create Stloc instruction</summary>
         public static CodeInstruction Stloc(int idx) => new CodeInstruction(OpCodes.Stloc, idx);
@@ -144,14 +213,77 @@ public static class HarmonyExtension
         /// <summary>Create const instruction</summary>
         public static CodeInstruction Const(string str) => new CodeInstruction(OpCodes.Ldstr, str);
 
-        /// <summary>Replace labels</summary>
-        public List<Label> ReplaceLabels(List<Label> newLabels)
+        /// <summary>Create const instruction</summary>
+        public static CodeInstruction Const(Enum e) => new CodeInstruction(OpCodes.Ldc_I4, Convert.ToInt32(e));
+    }
+
+    extension(MethodInfo method)
+    {
+        /// <summary>Returns patch list</summary>
+        public List<PatchInfo> GetPatches()
         {
-            var old = instruction.ExtractLabels();
+            var info = Harmony.GetPatchInfo(method);
 
-            instruction.WithLabels(newLabels);
+            if (info is null)
+            {
+                return [];
+            }
 
-            return old;
+            var res = new List<PatchInfo>();
+
+            foreach (var prefix in info.Prefixes)
+            {
+                res.Add(new(PatchType.Prefix, prefix.owner, prefix.PatchMethod, prefix.priority));
+            }
+
+            foreach (var postfix in info.Postfixes)
+            {
+                res.Add(new(PatchType.Postfix, postfix.owner, postfix.PatchMethod, postfix.priority));
+            }
+
+            foreach (var transpiler in info.Transpilers)
+            {
+                res.Add(new(PatchType.Transpiler, transpiler.owner, transpiler.PatchMethod, transpiler.priority));
+            }
+
+            foreach (var finalizer in info.Finalizers)
+            {
+                res.Add(new(PatchType.Transpiler, finalizer.owner, finalizer.PatchMethod, finalizer.priority));
+            }
+
+            return res;
         }
+    }
+
+    /// <summary>A struct patch info</summary>
+    public struct PatchInfo(PatchType patchType, string owner, MethodInfo method, int priority)
+    {
+        /// <summary>PatchType</summary>
+        public PatchType PatchType { get; private set; } = patchType;
+
+        /// <summary>Owner</summary>
+        public string Owner { get; private set; } = owner;
+
+        /// <summary>Method</summary>
+        public MethodInfo Method { get; private set; } = method;
+
+        /// <summary>Priority</summary>
+        public int Priority { get; private set; } = priority;
+    }
+
+    /// <summary>A list patch type</summary>
+    public enum PatchType
+    {
+        /// <summary>Prefix</summary>
+        Prefix,
+
+        /// <summary>Postfix</summary>
+        Postfix,
+
+        /// <summary>Transpiler</summary>
+        Transpiler,
+
+        /// <summary>Finalizer</summary>
+        Finalizer,
     }
 }

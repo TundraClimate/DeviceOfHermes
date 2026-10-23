@@ -1146,6 +1146,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.HarmonyExtension.PatchInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.HarmonyExtension.PatchInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.HarmonyExtension.PatchInfo",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.HarmonyExtension.PatchInfo.yml\" sourcestartlinenumber=\"1\">A struct patch info</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.HarmonyExtension.PatchType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.HarmonyExtension.PatchType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.HarmonyExtension.PatchType",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.HarmonyExtension.PatchType.yml\" sourcestartlinenumber=\"1\">A list patch type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.HarmonyExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.HarmonyExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.HarmonyExtension",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.HarmonyExtension.yml\" sourcestartlinenumber=\"1\">Harmony extensions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.HermesConstants.yml",
       "output": {
         ".html": {
@@ -3501,6 +3543,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/formation-data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/harmony-extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/harmony-extension.html"
         }
       },
       "version": ""

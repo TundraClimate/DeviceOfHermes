@@ -38,7 +38,7 @@ public class BattleUnitBuf_Limbuf_Nails : LimbufBase
             matcher.Advance(1)
                 .Insert(
                     CodeInstruction.Instance,
-                    CodeInstruction.Field(typeof(BattleUnitBuf).Field("_owner")),
+                    CodeInstruction.Ldfld(typeof(BattleUnitBuf).Field("_owner")),
                     CodeInstruction.Call(typeof(PatchAfterAction).Method("InjectMethod")),
                     skip
                 );
