@@ -52,6 +52,8 @@ internal class HermesBootStrap : DiceCardAbilityBase
             UnbreakableDice.Init();
             SecondlyDice.Init();
             EqualDice.Init();
+
+            Hermes.Say("DeviceOfHermes successfully loaded");
         }
         catch (Exception e)
         {
