@@ -241,9 +241,9 @@ public static class AdvancedTakeDamage
             matcher.End()
                 .MatchEndBackwards(CodeMatch.IsOpCode(OpCodes.Ret))
                 .Insert(
-                    CodeInstruction.Local(0),
-                    CodeInstruction.Arg(2),
-                    CodeInstruction.Arg(5),
+                    CodeInstruction.Ldloc(0),
+                    CodeInstruction.Ldarg(2),
+                    CodeInstruction.Ldarg(5),
                     CodeInstruction.Call(typeof(PatchOnDamageEffect).Method("InjectMethod"))
                 );
 

@@ -141,11 +141,11 @@ public class AdvancedDiceStatBonus : DiceStatBonus
             )
                 .Advance(1)
                 .Insert(
-                    CodeInstruction.Local(1),
+                    CodeInstruction.Ldloc(1),
                     CodeInstruction.Instance,
-                    CodeInstruction.Field(statBonus),
+                    CodeInstruction.Ldfld(statBonus),
                     CodeInstruction.Call(typeof(PatchUpdateDiceFinalValue).Method("InjectMethod")),
-                    CodeInstruction.SetLocal(1)
+                    CodeInstruction.Stloc(1)
                 );
 
             return matcher.Instructions();
@@ -243,8 +243,8 @@ public class AdvancedDiceStatBonus : DiceStatBonus
                 .Advance(1)
                 .Insert(
                     CodeInstruction.Instance,
-                    CodeInstruction.Local(0),
-                    CodeInstruction.Local(1),
+                    CodeInstruction.Ldloc(0),
+                    CodeInstruction.Ldloc(1),
                     CodeInstruction.Call(typeof(PatchRollDice).Method("InjectMethod"))
                 );
 

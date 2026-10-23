@@ -102,23 +102,47 @@ public static class HarmonyExtension
         /// <summary>Create nop instruction</summary>
         public static CodeInstruction Nop => new CodeInstruction(OpCodes.Nop);
 
+        /// <summary>Create dup instruction</summary>
+        public static CodeInstruction Dup => new CodeInstruction(OpCodes.Dup);
+
+        /// <summary>Create Null instruction</summary>
+        public static CodeInstruction Null => new CodeInstruction(OpCodes.Ldnull);
+
         /// <summary>Create ldarg instruction</summary>
-        public static CodeInstruction Arg(int idx) => new CodeInstruction(OpCodes.Ldarg, idx);
+        public static CodeInstruction Ldarg(int idx) => new CodeInstruction(OpCodes.Ldarg, idx);
 
         /// <summary>Create Call instruction</summary>
         public static CodeInstruction Call(MethodInfo target) => new CodeInstruction(OpCodes.Call, target);
 
         /// <summary>Create Ldloc instruction</summary>
-        public static CodeInstruction Local(int idx) => new CodeInstruction(OpCodes.Ldloc, idx);
+        public static CodeInstruction Ldloc(int idx) => new CodeInstruction(OpCodes.Ldloc, idx);
 
         /// <summary>Create Stloc instruction</summary>
-        public static CodeInstruction SetLocal(int idx) => new CodeInstruction(OpCodes.Stloc, idx);
+        public static CodeInstruction Stloc(int idx) => new CodeInstruction(OpCodes.Stloc, idx);
 
         /// <summary>Create Ldfld instruction</summary>
-        public static CodeInstruction Field(FieldInfo target) => new CodeInstruction(OpCodes.Ldfld, target);
+        public static CodeInstruction Ldfld(FieldInfo target) => new CodeInstruction(OpCodes.Ldfld, target);
 
         /// <summary>Create Stfld instruction</summary>
-        public static CodeInstruction SetField(FieldInfo target) => new CodeInstruction(OpCodes.Stfld, target);
+        public static CodeInstruction Stfld(FieldInfo target) => new CodeInstruction(OpCodes.Stfld, target);
+
+        /// <summary>Create const instruction</summary>
+        public static CodeInstruction Const(int num) => new CodeInstruction(OpCodes.Ldc_I4, num);
+
+        /// <summary>Create const instruction</summary>
+        public static CodeInstruction Const(long num) => new CodeInstruction(OpCodes.Ldc_I8, num);
+
+        /// <summary>Create const instruction</summary>
+        public static CodeInstruction Const(float num) => new CodeInstruction(OpCodes.Ldc_R4, num);
+
+        /// <summary>Create const instruction</summary>
+        public static CodeInstruction Const(double num) => new CodeInstruction(OpCodes.Ldc_R8, num);
+
+        /// <summary>Create const instruction</summary>
+        public static CodeInstruction Const(bool b) => b ? new CodeInstruction(OpCodes.Ldc_I4_1) : new CodeInstruction(OpCodes.Ldc_I4_0);
+
+        /// <summary>Create const instruction</summary>
+        public static CodeInstruction Const(string str) => new CodeInstruction(OpCodes.Ldstr, str);
 
         /// <summary>Replace labels</summary>
         public List<Label> ReplaceLabels(List<Label> newLabels)

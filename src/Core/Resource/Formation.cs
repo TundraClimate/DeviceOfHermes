@@ -61,8 +61,8 @@ public static class Formation
             )
                 .Advance(1)
                 .Insert(
-                    CodeInstruction.Arg(1),
-                    CodeInstruction.Arg(2),
+                    CodeInstruction.Ldarg(1),
+                    CodeInstruction.Ldarg(2),
                     CodeInstruction.Call(typeof(PatchStageWaveInit).Method("InjectMethod"))
                 );
 

@@ -135,7 +135,7 @@ public class CustomLevelUpUI
                 .Advance(1)
                 .Insert(
                     CodeInstruction.Instance,
-                    CodeInstruction.Local(0),
+                    CodeInstruction.Ldloc(0),
                     CodeInstruction.Call(typeof(PatchOnSelecteEmotion).Method("InjectMethod")),
                     new CodeInstruction(OpCodes.Brfalse, label)
                 );

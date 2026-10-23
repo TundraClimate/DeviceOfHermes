@@ -543,7 +543,7 @@ internal static class AdvancedPatch
 
             matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdloc(), CodeMatch.Calls(typeof(BattleUnitModel).Method("OnLoseHp")))
                 .Advance(1)
-                .Insert(CodeInstruction.Instance, CodeInstruction.Local(1), CodeInstruction.Arg(2), CodeInstruction.Arg(4), CodeInstruction.Call(typeof(PatchDiceDamageValue).Method("InjectMethod")));
+                .Insert(CodeInstruction.Instance, CodeInstruction.Ldloc(1), CodeInstruction.Ldarg(2), CodeInstruction.Ldarg(4), CodeInstruction.Call(typeof(PatchDiceDamageValue).Method("InjectMethod")));
 
             return matcher.Instructions();
         }
@@ -964,8 +964,8 @@ internal static class AdvancedPatch
             matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdfld(), new CodeMatch(i => i.opcode == OpCodes.Newobj))
                 .Advance(1)
                 .Insert(
-                    CodeInstruction.Arg(1),
-                    CodeInstruction.Arg(2),
+                    CodeInstruction.Ldarg(1),
+                    CodeInstruction.Ldarg(2),
                     CodeInstruction.Call(typeof(PatchPlayForAuto).Method("InjectMethod"))
                 );
 
@@ -1037,14 +1037,14 @@ internal static class AdvancedPatch
             matcher.MatchStartForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdfld(passiveList))
                 .Insert(
                     CodeInstruction.Instance,
-                    CodeInstruction.Field(passiveList),
+                    CodeInstruction.Ldfld(passiveList),
                     CodeInstruction.Call(typeof(PatchOnWaveStart).Method("InjectBefore"))
                 )
                 .MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
                 .MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
                 .Insert(
                     CodeInstruction.Instance.MoveLabelsFrom(matcher.Instruction),
-                    CodeInstruction.Field(passiveList),
+                    CodeInstruction.Ldfld(passiveList),
                     CodeInstruction.Call(typeof(PatchOnWaveStart).Method("InjectAfter"))
                 );
 
@@ -1205,7 +1205,7 @@ internal static class AdvancedPatch
                 CodeMatch.Calls(typeof(BattleUnitPassiveDetail).Method("OnRecoverHp"))
             )
                 .Advance(1)
-                .Insert(CodeInstruction.Instance, CodeInstruction.Arg(1), CodeInstruction.Call(typeof(PatchOnRecoverHp).Method("InjectMethod")));
+                .Insert(CodeInstruction.Instance, CodeInstruction.Ldarg(1), CodeInstruction.Call(typeof(PatchOnRecoverHp).Method("InjectMethod")));
 
             return matcher.Instructions();
         }
@@ -1269,7 +1269,7 @@ internal static class AdvancedPatch
             matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
                 .Insert(
                     CodeInstruction.Instance,
-                    CodeInstruction.Arg(1),
+                    CodeInstruction.Ldarg(1),
                     CodeInstruction.Call(typeof(PatchBeforeRollDice).Method("InjectMethod"))
                 );
 
@@ -1292,7 +1292,7 @@ internal static class AdvancedPatch
             matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
                 .Insert(
                     CodeInstruction.Instance,
-                    CodeInstruction.Arg(1),
+                    CodeInstruction.Ldarg(1),
                     CodeInstruction.Call(typeof(PatchOnSucceedAttack).Method("InjectMethod"))
                 );
 
@@ -1320,9 +1320,9 @@ internal static class AdvancedPatch
                 .MatchEndBackwards(CodeMatch.Calls(typeof(BattleUnitBuf).Method("Init")))
                 .Advance(1)
                 .Insert(
-                    CodeInstruction.Local(2),
+                    CodeInstruction.Ldloc(2),
                     CodeInstruction.Instance,
-                    CodeInstruction.Field(typeof(BattleUnitBufListDetail).Field("_self")),
+                    CodeInstruction.Ldfld(typeof(BattleUnitBufListDetail).Field("_self")),
                     CodeInstruction.Call(typeof(PatchOnAddNewKeywordBuf).Method("InjectMethod"))
                 );
 
@@ -1348,8 +1348,8 @@ internal static class AdvancedPatch
             matcher.MatchStartForward(CodeMatch.IsOpCode(OpCodes.Leave))
                 .Insert(
                     CodeInstruction.Instance,
-                    CodeInstruction.Arg(1),
-                    CodeInstruction.Arg(2),
+                    CodeInstruction.Ldarg(1),
+                    CodeInstruction.Ldarg(2),
                     CodeInstruction.Call(typeof(PatchOnSucceedAreaAttack).Method("InjectMethod"))
                 );
 
@@ -1423,9 +1423,9 @@ internal static class AdvancedPatch
                 .Insert(
                     CodeInstruction.Instance,
                     CodeInstruction.Instance,
-                    CodeInstruction.Field(typeof(BattleUnitBufListDetail).Field("_self")),
+                    CodeInstruction.Ldfld(typeof(BattleUnitBufListDetail).Field("_self")),
                     new CodeInstruction(OpCodes.Ldloca, 0),
-                    CodeInstruction.Arg(3),
+                    CodeInstruction.Ldarg(3),
                     CodeInstruction.Call(typeof(PatchOnAddKeywordBufs).Method("InjectMethod"))
                 );
 
@@ -1557,11 +1557,11 @@ internal static class AdvancedPatch
 
             matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.Calls(typeof(BookModel).Method("get_SpeedMin")))
                 .Advance(1)
-                .Insert(CodeInstruction.Arg(1), CodeInstruction.Call(typeof(PatchOnCreateSpeedDiceRule).Method("InjectMin")));
+                .Insert(CodeInstruction.Ldarg(1), CodeInstruction.Call(typeof(PatchOnCreateSpeedDiceRule).Method("InjectMin")));
 
             matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.Calls(typeof(BookModel).Method("get_SpeedMax")))
                 .Advance(1)
-                .Insert(CodeInstruction.Arg(1), CodeInstruction.Call(typeof(PatchOnCreateSpeedDiceRule).Method("InjectMax")));
+                .Insert(CodeInstruction.Ldarg(1), CodeInstruction.Call(typeof(PatchOnCreateSpeedDiceRule).Method("InjectMax")));
 
             return matcher.Instructions();
         }
