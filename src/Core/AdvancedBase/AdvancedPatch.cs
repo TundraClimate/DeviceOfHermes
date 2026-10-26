@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using DeviceOfHermes.CustomDice;
+using System.Runtime.CompilerServices;
 
 namespace DeviceOfHermes.AdvancedBase;
 
@@ -63,6 +64,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchIsTargetableAllUnit));
         Patch(typeof(PatchOnCreatePlayingCard));
         Patch(typeof(PatchOnCreateSpeedDiceRule));
+        Patch(typeof(PatchOnEndBattle));
     }
 
     private static void Patch(Type type)
@@ -1368,6 +1370,29 @@ internal static class AdvancedPatch
     {
         static void Prefix(BattleUnitModel __instance)
         {
+            var dataModel = __instance.UnitData;
+
+            if (dataModel is not null)
+            {
+                var savedPassives = _saveOnReceptionPassive.GetValue(dataModel, _ => new());
+                var passives = __instance.passiveDetail?.PassiveList ?? [];
+
+                foreach (ref var passive in passives.AsRef())
+                {
+                    var id = passive.id;
+                    var dup = savedPassives.Find(p => id == p.id && id is not null);
+
+                    if (dup is not null)
+                    {
+                        passive = dup;
+                    }
+                }
+
+                var savedBufs = _saveOnReceptionUnitbuf.GetValue(dataModel, _ => new());
+
+                __instance.bufListDetail?.GetActivatedBufList()?.AddRange(savedBufs);
+            }
+
             foreach (var deckCard in __instance.allyCardDetail.Deck().AsDefer(out var self))
             {
                 if (deckCard.CreateDiceCardSelfAbilityScript() is AdvancedCardBase adv && adv.DrawsOnWaveStart)
@@ -1600,4 +1625,37 @@ internal static class AdvancedPatch
             return origin + num;
         }
     }
+
+    [HarmonyPatch(typeof(StageController), "EndBattle")]
+    class PatchOnEndBattle
+    {
+        static void Prefix()
+        {
+            var list = BattleObjectManager.instance.GetList();
+
+            foreach (var unit in list)
+            {
+                var dataModel = unit.UnitData;
+
+                var passives = unit.passiveDetail.PassiveList.OfType<AdvancedPassiveBase>().Filter(i => i.IsSaveWhileReception).Collect();
+                var bufs = unit.bufListDetail.GetActivatedBufList().OfType<AdvancedUnitBuf>().Filter(i => i.IsSaveWhileReception).Collect();
+
+                _saveOnReceptionPassive.GetValue(dataModel, _ => new()).Also(list =>
+                {
+                    list.Clear();
+                    list.AddRange(passives);
+                });
+
+                _saveOnReceptionUnitbuf.GetValue(dataModel, _ => new()).Also(list =>
+                {
+                    list.Clear();
+                    list.AddRange(bufs);
+                });
+            }
+        }
+    }
+
+    static ConditionalWeakTable<UnitBattleDataModel, List<AdvancedPassiveBase>> _saveOnReceptionPassive = new();
+
+    static ConditionalWeakTable<UnitBattleDataModel, List<AdvancedUnitBuf>> _saveOnReceptionUnitbuf = new();
 }

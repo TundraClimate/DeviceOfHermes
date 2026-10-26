@@ -672,6 +672,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch
   nameWithType: AdvancedPassiveBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception
+  name: IsSaveWhileReception
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsSaveWhileReception
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception
+  nameWithType: AdvancedPassiveBase.IsSaveWhileReception
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception*
+  name: IsSaveWhileReception
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsSaveWhileReception_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception
+  nameWithType: AdvancedPassiveBase.IsSaveWhileReception
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf(BattleUnitBuf)
   name: OnActivatedBuf(BattleUnitBuf)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnActivatedBuf_BattleUnitBuf_
@@ -1051,6 +1064,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
   nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception
+  name: IsSaveWhileReception
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsSaveWhileReception
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception
+  nameWithType: AdvancedUnitBuf.IsSaveWhileReception
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception*
+  name: IsSaveWhileReception
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsSaveWhileReception_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception
+  nameWithType: AdvancedUnitBuf.IsSaveWhileReception
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.LastInflictBy
   name: LastInflictBy
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_LastInflictBy

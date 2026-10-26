@@ -25,6 +25,9 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     /// <summary>Is instead of extinct from die</summary>
     public virtual bool IsDieInsteadOfExtinction => false;
 
+    /// <summary>Is saves this while reception</summary>
+    public virtual bool IsSaveWhileReception => false;
+
     /// <summary>Returns min value of speed dice</summary>
     public virtual int GetSpeedDiceMinAdder()
     {

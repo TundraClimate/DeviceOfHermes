@@ -36,6 +36,9 @@ public class AdvancedUnitBuf : BattleUnitBuf
     /// <returns>Is instant buf if true</returns>
     public virtual bool IsInstant { get => false; }
 
+    /// <summary>Is saves this while reception</summary>
+    public virtual bool IsSaveWhileReception => false;
+
     /// <summary>Returns min value of speed dice</summary>
     public virtual int GetSpeedDiceMinAdder()
     {

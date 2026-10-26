@@ -100,6 +100,8 @@
 
     public override bool IsDieInsteadOfExtinction =&gt; base.IsDieInsteadOfExtinction;
 
+    public override bool IsSaveWhileReception =&gt; true;
+
     public override int GetSpeedDiceMinAdder()
     {
         return 0;
@@ -239,6 +241,14 @@
 <p><code>Die</code>を<code>Extinct(true)</code>に置き換えます。</p>
 <ul>
 <li><code>value</code>: 置き換えるかどうかです。</li>
+</ul>
+<h3 id="issavewhilereception"><code>IsSaveWhileReception</code></h3>
+<pre><code class="lang-cs">public override bool IsSaveWhileReception =&gt; value;
+</code></pre>
+<p>舞台を跨いでインスタンスを維持します。<br>
+同じIDのインスタンスを複数維持することは出来ません。</p>
+<ul>
+<li><code>value</code>: 維持するかどうかです。</li>
 </ul>
 <h3 id="getspeeddiceminadder"><code>GetSpeedDiceMinAdder()</code></h3>
 <pre><code class="lang-cs">public override int GetSpeedDiceMinAdder()

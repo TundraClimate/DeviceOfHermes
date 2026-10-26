@@ -97,6 +97,8 @@
 
     public override bool IsInstant { get =&gt; false; }
 
+    public override bool IsSaveWhileReception =&gt; true;
+
     public override int GetSpeedDiceMinAdder()
     {
         return 0;
@@ -207,6 +209,13 @@
 </code></pre>
 <p>バフが即時適用型か指定します。<br>
 trueを指定した場合、<code>AddBuf</code>時に即座に<code>OnInstant</code>が実行されます。</p>
+<h3 id="issavewhilereception"><code>IsSaveWhileReception</code></h3>
+<pre><code class="lang-cs">public override bool IsSaveWhileReception =&gt; value;
+</code></pre>
+<p>舞台を跨いでインスタンスを維持します。</p>
+<ul>
+<li><code>value</code>: 維持するかどうかです。</li>
+</ul>
 <h3 id="lastinflictby"><code>LastInflictBy</code></h3>
 <p>バフが<code>KeywordBuf</code>かつ<code>AdvancedUnitBuf</code>である場合に、このバフを付与したユニットが格納されます。<br>
 ただし、自分が自分に付与した場合は変更されません。</p>
