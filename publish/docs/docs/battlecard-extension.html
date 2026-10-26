@@ -102,6 +102,8 @@ card.ApplyDiceAbility&lt;DiceCardAbility_XXX&gt;(DiceMatch.AllDice);
 
 // targetにlidのページを使用します。
 owner.UseCard(target, lid);
+
+DiceStatBonus bonus = dice.GetStatBonus();
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="createplayingcarddicecardxmlinfo-battleunitmodel-int-int-listbattleunitmodel"><code>CreatePlayingCard(DiceCardXmlInfo, BattleUnitModel, int, int, List&lt;BattleUnitModel&gt;)</code></h3>
@@ -152,6 +154,10 @@ owner.UseCard(target, lid);
 <li><code>lid</code>: 使用するページのIDです。</li>
 <li><code>originalSpeed</code>: ページの速度設定を維持するかです。</li>
 </ul>
+<h3 id="getstatbonus"><code>GetStatBonus()</code></h3>
+<pre><code class="lang-cs">dice.GetStatBonus();
+</code></pre>
+<p><code>DiceStatBonus</code>を取得します。</p>
 
 </article>
 

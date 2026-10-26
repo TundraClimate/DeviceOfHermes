@@ -1,3 +1,4 @@
+using HarmonyLib;
 using LOR_DiceSystem;
 
 namespace DeviceOfHermes;
@@ -124,4 +125,13 @@ public static class BattleCardExtension
             playcard.ForeachQueue(match, dice => dice.AddAbility(new T()));
         }
     }
+
+    extension(BattleDiceBehavior dice)
+    {
+        /// <summary>Returns dice stat bonus</summary>
+        public DiceStatBonus GetStatBonus() => _diceStatRef(dice);
+    }
+
+    static AccessTools.FieldRef<BattleDiceBehavior, DiceStatBonus> _diceStatRef
+        = typeof(BattleDiceBehavior).FieldRefAccess<DiceStatBonus>("_statBonus");
 }
