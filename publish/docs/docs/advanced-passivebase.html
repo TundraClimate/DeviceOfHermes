@@ -216,6 +216,16 @@
     public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
     {
     }
+
+    public override int GetHealingAdder(int origin)
+    {
+        return 0;
+    }
+
+    public override bool IsNullifyHealing(int healNum)
+    {
+        return false;
+    }
 }
 </code></pre>
 <p>このクラスは<code>PassiveAbilityBase</code>を継承しています。<br>
@@ -491,6 +501,26 @@ currentDiceActionはnullです。</p>
 <li><code>target</code>: 接敵した相手です。</li>
 <li><code>isParrying</code>: その接敵がマッチであったかどうかです。</li>
 <li><code>wasAttacker</code>: ページを使用していたかどうかです。</li>
+</ul>
+<h3 id="gethealingadderint"><code>GetHealingAdder(int)</code></h3>
+<pre><code class="lang-cs">public override int GetHealingAdder(int origin)
+{
+    return 0;
+}
+</code></pre>
+<p>体力回復量に加算する数値を返します。</p>
+<ul>
+<li><code>origin</code>: 加算前の回復数値です。</li>
+</ul>
+<h3 id="isnullifyhealingint"><code>IsNullifyHealing(int)</code></h3>
+<pre><code class="lang-cs">public override bool IsNullifyHealing(int healNum)
+{
+    return false;
+}
+</code></pre>
+<p>体力回復数値を0にするかどうかです。</p>
+<ul>
+<li><code>healNum</code>: 回復数値です。</li>
 </ul>
 
 </article>

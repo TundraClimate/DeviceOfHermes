@@ -65,6 +65,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnCreatePlayingCard));
         Patch(typeof(PatchOnCreateSpeedDiceRule));
         Patch(typeof(PatchOnEndBattle));
+        Patch(typeof(PatchOnRecoverHP));
     }
 
     private static void Patch(Type type)
@@ -1651,6 +1652,58 @@ internal static class AdvancedPatch
                     list.Clear();
                     list.AddRange(bufs);
                 });
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "RecoverHP")]
+    class PatchOnRecoverHP
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(
+                CodeMatch.IsLdarg(0),
+                CodeMatch.IsLdarg(1),
+                CodeMatch.Calls(typeof(BattleUnitModel).Method("CanRecoverHp", [typeof(int)]))
+            )
+                .Insert(CodeInstruction.Instance.MoveLabelsFrom(matcher.Instruction), CodeInstruction.Ldarga(1), CodeInstruction.Call(typeof(PatchOnRecoverHP).Method("InjectMethod")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleUnitModel __instance, ref int v)
+        {
+            var origin = v;
+            var adder = 0;
+            var passives = __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>() ?? [];
+            var bufs = __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>() ?? [];
+
+            adder += passives.Sum(i => i.GetHealingAdder(origin));
+            adder += bufs.Sum(i => i.GetHealingAdder(origin));
+
+            var isNullify = false;
+
+            foreach (var p in passives)
+            {
+                if (p.IsNullifyHealing(v))
+                {
+                    isNullify = true;
+                }
+            }
+
+            foreach (var b in bufs)
+            {
+                if (b.IsNullifyHealing(v))
+                {
+                    isNullify = true;
+                }
+            }
+
+            if (isNullify)
+            {
+                v = 0;
             }
         }
     }

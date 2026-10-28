@@ -575,6 +575,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
   nameWithType: AdvancedPassiveBase.DrawCardAddr
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder(System.Int32)
+  name: GetHealingAdder(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetHealingAdder_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder(System.Int32)
+  name.vb: GetHealingAdder(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder(Integer)
+  nameWithType: AdvancedPassiveBase.GetHealingAdder(int)
+  nameWithType.vb: AdvancedPassiveBase.GetHealingAdder(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder*
+  name: GetHealingAdder
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetHealingAdder_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder
+  nameWithType: AdvancedPassiveBase.GetHealingAdder
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetSpeedDiceMaxAdder
   name: GetSpeedDiceMaxAdder()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetSpeedDiceMaxAdder
@@ -672,6 +688,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsIgnoreSpeedByMatch
   nameWithType: AdvancedPassiveBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsNullifyHealing(System.Int32)
+  name: IsNullifyHealing(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsNullifyHealing_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsNullifyHealing(System.Int32)
+  name.vb: IsNullifyHealing(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsNullifyHealing(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsNullifyHealing(Integer)
+  nameWithType: AdvancedPassiveBase.IsNullifyHealing(int)
+  nameWithType.vb: AdvancedPassiveBase.IsNullifyHealing(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsNullifyHealing*
+  name: IsNullifyHealing
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsNullifyHealing_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsNullifyHealing
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsNullifyHealing
+  nameWithType: AdvancedPassiveBase.IsNullifyHealing
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception
   name: IsSaveWhileReception
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsSaveWhileReception
@@ -1012,6 +1044,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll
   nameWithType: AdvancedUnitBuf.GetBreakDamageReductionAll
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder(System.Int32)
+  name: GetHealingAdder(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetHealingAdder_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder(System.Int32)
+  name.vb: GetHealingAdder(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder(Integer)
+  nameWithType: AdvancedUnitBuf.GetHealingAdder(int)
+  nameWithType.vb: AdvancedUnitBuf.GetHealingAdder(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder*
+  name: GetHealingAdder
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetHealingAdder_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder
+  nameWithType: AdvancedUnitBuf.GetHealingAdder
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMaxAdder
   name: GetSpeedDiceMaxAdder()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetSpeedDiceMaxAdder
@@ -1064,6 +1112,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsInstant
   nameWithType: AdvancedUnitBuf.IsInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsNullifyHealing(System.Int32)
+  name: IsNullifyHealing(int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsNullifyHealing_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsNullifyHealing(System.Int32)
+  name.vb: IsNullifyHealing(Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsNullifyHealing(int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsNullifyHealing(Integer)
+  nameWithType: AdvancedUnitBuf.IsNullifyHealing(int)
+  nameWithType.vb: AdvancedUnitBuf.IsNullifyHealing(Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsNullifyHealing*
+  name: IsNullifyHealing
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsNullifyHealing_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsNullifyHealing
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsNullifyHealing
+  nameWithType: AdvancedUnitBuf.IsNullifyHealing
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception
   name: IsSaveWhileReception
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsSaveWhileReception
@@ -9076,6 +9140,122 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Fanatic.positiveType
   nameWithType: BattleUnitBuf_Limbuf_Fanatic.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown
+  name: BattleUnitBuf_Limbuf_HPHealingDown
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.bufType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.bufType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp
+  name: BattleUnitBuf_Limbuf_HPHealingUp
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_OnRoundEnd
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd()
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_OnRoundEnd_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.bufType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.bufType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.keywordId
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_keywordId
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.keywordId
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.keywordId*
+  name: keywordId
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_keywordId_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.keywordId
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.keywordId
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.positiveType
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_positiveType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.positiveType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.positiveType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.positiveType*
+  name: positiveType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_positiveType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.positiveType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.positiveType
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.positiveType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable
   name: BattleUnitBuf_Limbuf_HitVulnerable
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HitVulnerable.html
@@ -11596,6 +11776,32 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.Fanatic
   nameWithType: LimKeywordBuf.Fanatic
+- uid: LimbufOfHermes.LimKeywordBuf.HPHealingDown
+  name: HPHealingDown
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HPHealingDown
+  commentId: P:LimbufOfHermes.LimKeywordBuf.HPHealingDown
+  fullName: LimbufOfHermes.LimKeywordBuf.HPHealingDown
+  nameWithType: LimKeywordBuf.HPHealingDown
+- uid: LimbufOfHermes.LimKeywordBuf.HPHealingDown*
+  name: HPHealingDown
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HPHealingDown_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.HPHealingDown
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.HPHealingDown
+  nameWithType: LimKeywordBuf.HPHealingDown
+- uid: LimbufOfHermes.LimKeywordBuf.HPHealingUp
+  name: HPHealingUp
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HPHealingUp
+  commentId: P:LimbufOfHermes.LimKeywordBuf.HPHealingUp
+  fullName: LimbufOfHermes.LimKeywordBuf.HPHealingUp
+  nameWithType: LimKeywordBuf.HPHealingUp
+- uid: LimbufOfHermes.LimKeywordBuf.HPHealingUp*
+  name: HPHealingUp
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HPHealingUp_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.HPHealingUp
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.HPHealingUp
+  nameWithType: LimKeywordBuf.HPHealingUp
 - uid: LimbufOfHermes.LimKeywordBuf.HitVulnerable
   name: HitVulnerable
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_HitVulnerable

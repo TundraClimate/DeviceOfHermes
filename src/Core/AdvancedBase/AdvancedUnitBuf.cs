@@ -162,6 +162,18 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>Returns Healing efficient</summary>
+    public virtual int GetHealingAdder(int origin)
+    {
+        return 0;
+    }
+
+    /// <summary>Is nullify heal</summary>
+    public virtual bool IsNullifyHealing(int healNum)
+    {
+        return false;
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

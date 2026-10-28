@@ -185,6 +185,18 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>Returns Healing efficient</summary>
+    public virtual int GetHealingAdder(int origin)
+    {
+        return 0;
+    }
+
+    /// <summary>Is nullify heal</summary>
+    public virtual bool IsNullifyHealing(int healNum)
+    {
+        return false;
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {
