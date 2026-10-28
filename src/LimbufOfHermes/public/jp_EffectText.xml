@@ -221,6 +221,15 @@
           <Desc>自身が保有する弾丸の値を0にし、自身が取得出来る最大値まで弾丸を得る</Desc>
         </BattleEffectText>
 
+        <BattleEffectText ID="LimbufOfHermes_HPHealingDown">
+          <Name>体力回復減少</Name>
+          <Desc>今回の幕の間、体力回復量 -{0}</Desc>
+        </BattleEffectText>
+        <BattleEffectText ID="LimbufOfHermes_HPHealingUp">
+          <Name>体力回復増加</Name>
+          <Desc>今回の幕の間、体力回復量 +{0}</Desc>
+        </BattleEffectText>
+
         <BattleEffectText ID="CardBuf_LimbufOfHermes_Duality">
           <Name>双極性</Name>
           <Desc>双極性

@@ -3757,6 +3757,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/loh-hphealingdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-hphealingdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/loh-hphealingup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/loh-hphealingup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/loh-hvulnerable.md",
       "output": {
         ".html": {

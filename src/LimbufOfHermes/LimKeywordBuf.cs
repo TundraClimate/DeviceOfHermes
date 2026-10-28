@@ -138,4 +138,12 @@ public class LimKeywordBuf
     /// <summary>AssistDefense KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_AssistDefense))]
     public static KeywordBuf AssistDefense { get; private set; }
+
+    /// <summary>HPHealingUp KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_HPHealingUp))]
+    public static KeywordBuf HPHealingUp { get; private set; }
+
+    /// <summary>HPHealingDown KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_HPHealingDown))]
+    public static KeywordBuf HPHealingDown { get; private set; }
 }

@@ -9146,6 +9146,22 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown
   nameWithType: BattleUnitBuf_Limbuf_HPHealingDown
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder(System.Int32)
+  name: GetHealingAdder(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_GetHealingAdder_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder(System.Int32)
+  name.vb: GetHealingAdder(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder*
+  name: GetHealingAdder
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_GetHealingAdder_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingDown.GetHealingAdder
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.OnRoundEnd
   name: OnRoundEnd()
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingDown.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingDown_OnRoundEnd
@@ -9204,6 +9220,22 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp
   nameWithType: BattleUnitBuf_Limbuf_HPHealingUp
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder(System.Int32)
+  name: GetHealingAdder(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_GetHealingAdder_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder(System.Int32)
+  name.vb: GetHealingAdder(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder*
+  name: GetHealingAdder
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_GetHealingAdder_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder
+  nameWithType: BattleUnitBuf_Limbuf_HPHealingUp.GetHealingAdder
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.OnRoundEnd
   name: OnRoundEnd()
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_HPHealingUp.html#LimbufOfHermes_BattleUnitBuf_Limbuf_HPHealingUp_OnRoundEnd
