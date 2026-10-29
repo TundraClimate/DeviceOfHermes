@@ -100,6 +100,8 @@
 
     public override bool IsIgnoreSpeedByMatch =&gt; false;
 
+    public override bool IsTakeAmmoEffectNotFar =&gt; true;
+
     public override bool DrawsOnWaveStart =&gt; false;
 
     public override Type[] AutoSetCardBufs =&gt; [];
@@ -162,6 +164,11 @@ falseを指定するとマッチ不可になります。</p>
 </code></pre>
 <p>速度を無視してマッチできるかを指定するプロパティです。<br>
 trueを返すとマッチに速度を参照しなくなります。</p>
+<h3 id="istakeammoeffectnotfar"><code>IsTakeAmmoEffectNotFar</code></h3>
+<pre><code class="lang-cs">public override bool IsTakeAmmoEffectNotFar =&gt; false;
+</code></pre>
+<p>弾丸の効果を受けるかどうかを指定するプロパティです。<br>
+trueを返すと弾丸の効果を受けます。</p>
 <h3 id="drawsonwavestart"><code>DrawsOnWaveStart</code></h3>
 <pre><code class="lang-cs">public override bool DrawsOnWaveStart =&gt; false;
 </code></pre>

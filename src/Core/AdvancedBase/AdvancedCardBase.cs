@@ -20,6 +20,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Property is card ignore speed by match</summary>
     public virtual bool IsIgnoreSpeedByMatch => false;
 
+    /// <summary>Property is card take ammo effect</summary>
+    public virtual bool IsTakeAmmoEffectNotFar => false;
+
     /// <summary>Is card draws on wave start</summary>
     public virtual bool DrawsOnWaveStart => false;
 

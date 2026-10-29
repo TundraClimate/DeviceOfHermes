@@ -1738,8 +1738,18 @@ internal static class AdvancedPatch
     [HarmonyPatch(typeof(BattleDiceBehavior), "OnEventDiceAbility")]
     class PatchOnEventDiceAbility
     {
-        static void Prefix(BattleDiceBehavior __instance, DiceCardAbilityBase.DiceCardPassiveType dicePassiveType)
+        static void Prefix(BattleDiceBehavior __instance, DiceCardAbilityBase.DiceCardPassiveType dicePassiveType, ref CardRange? __state)
         {
+            if (__instance.card?.cardAbility is AdvancedCardBase adv && adv.IsTakeAmmoEffectNotFar)
+            {
+                __state = __instance.card.card?.GetSpec()?.Ranged;
+
+                if (__state is not null)
+                {
+                    __instance.card.card?.GetSpec().Ranged = CardRange.Far;
+                }
+            }
+
             if (dicePassiveType is not DiceCardAbilityBase.DiceCardPassiveType.BeforeRollDice)
             {
                 return;
@@ -1753,7 +1763,7 @@ internal static class AdvancedPatch
             }
         }
 
-        static Exception? Finalizer(Exception __exception, BattleDiceBehavior __instance, DiceCardAbilityBase.DiceCardPassiveType dicePassiveType)
+        static Exception? Finalizer(Exception __exception, BattleDiceBehavior __instance, DiceCardAbilityBase.DiceCardPassiveType dicePassiveType, CardRange? __state)
         {
             try
             {
@@ -1776,6 +1786,13 @@ internal static class AdvancedPatch
             {
                 Debug.LogError("card internal error");
                 Debug.LogError(ex);
+            }
+            finally
+            {
+                if (__state is not null)
+                {
+                    __instance.card?.card?.XmlData?.Spec?.Ranged = __state.Value;
+                }
             }
 
             return null;

@@ -286,6 +286,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
   nameWithType: AdvancedCardBase.IsIgnoreSpeedByMatch
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsTakeAmmoEffectNotFar
+  name: IsTakeAmmoEffectNotFar
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsTakeAmmoEffectNotFar
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsTakeAmmoEffectNotFar
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsTakeAmmoEffectNotFar
+  nameWithType: AdvancedCardBase.IsTakeAmmoEffectNotFar
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsTakeAmmoEffectNotFar*
+  name: IsTakeAmmoEffectNotFar
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsTakeAmmoEffectNotFar_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsTakeAmmoEffectNotFar
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsTakeAmmoEffectNotFar
+  nameWithType: AdvancedCardBase.IsTakeAmmoEffectNotFar
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice(BattleDiceBehavior)
   name: OnAddKeepDice(BattleDiceBehavior)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnAddKeepDice_BattleDiceBehavior_
