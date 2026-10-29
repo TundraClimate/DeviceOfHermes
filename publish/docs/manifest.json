@@ -642,6 +642,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.DebugExtension.ExceptionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.DebugExtension.ExceptionInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.DebugExtension.ExceptionInfo",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.DebugExtension.ExceptionInfo.yml\" sourcestartlinenumber=\"1\">A struct represents exception info</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.DebugExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.DebugExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.DebugExtension",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.DebugExtension.yml\" sourcestartlinenumber=\"1\">An extension class the Debug utility</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.DeckExtension.yml",
       "output": {
         ".html": {
@@ -3481,6 +3509,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/custom-levelupui.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/debug-extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/debug-extension.html"
         }
       },
       "version": ""

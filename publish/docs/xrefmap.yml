@@ -3015,6 +3015,43 @@ references:
   commentId: F:DeviceOfHermes.Data.OnlyCardXmlRoot.info
   fullName: DeviceOfHermes.Data.OnlyCardXmlRoot.info
   nameWithType: OnlyCardXmlRoot.info
+- uid: DeviceOfHermes.DebugExtension
+  name: DebugExtension
+  href: api/DeviceOfHermes.DebugExtension.html
+  commentId: T:DeviceOfHermes.DebugExtension
+  fullName: DeviceOfHermes.DebugExtension
+  nameWithType: DebugExtension
+- uid: DeviceOfHermes.DebugExtension.ExceptionInfo
+  name: DebugExtension.ExceptionInfo
+  href: api/DeviceOfHermes.DebugExtension.ExceptionInfo.html
+  commentId: T:DeviceOfHermes.DebugExtension.ExceptionInfo
+  fullName: DeviceOfHermes.DebugExtension.ExceptionInfo
+  nameWithType: DebugExtension.ExceptionInfo
+- uid: DeviceOfHermes.DebugExtension.ExceptionInfo.ILOffset
+  name: ILOffset
+  href: api/DeviceOfHermes.DebugExtension.ExceptionInfo.html#DeviceOfHermes_DebugExtension_ExceptionInfo_ILOffset
+  commentId: F:DeviceOfHermes.DebugExtension.ExceptionInfo.ILOffset
+  fullName: DeviceOfHermes.DebugExtension.ExceptionInfo.ILOffset
+  nameWithType: DebugExtension.ExceptionInfo.ILOffset
+- uid: DeviceOfHermes.DebugExtension.ExceptionInfo.Method
+  name: Method
+  href: api/DeviceOfHermes.DebugExtension.ExceptionInfo.html#DeviceOfHermes_DebugExtension_ExceptionInfo_Method
+  commentId: F:DeviceOfHermes.DebugExtension.ExceptionInfo.Method
+  fullName: DeviceOfHermes.DebugExtension.ExceptionInfo.Method
+  nameWithType: DebugExtension.ExceptionInfo.Method
+- uid: DeviceOfHermes.DebugExtension.ExceptionInfo.ToString
+  name: ToString()
+  href: api/DeviceOfHermes.DebugExtension.ExceptionInfo.html#DeviceOfHermes_DebugExtension_ExceptionInfo_ToString
+  commentId: M:DeviceOfHermes.DebugExtension.ExceptionInfo.ToString
+  fullName: DeviceOfHermes.DebugExtension.ExceptionInfo.ToString()
+  nameWithType: DebugExtension.ExceptionInfo.ToString()
+- uid: DeviceOfHermes.DebugExtension.ExceptionInfo.ToString*
+  name: ToString
+  href: api/DeviceOfHermes.DebugExtension.ExceptionInfo.html#DeviceOfHermes_DebugExtension_ExceptionInfo_ToString_
+  commentId: Overload:DeviceOfHermes.DebugExtension.ExceptionInfo.ToString
+  isSpec: "True"
+  fullName: DeviceOfHermes.DebugExtension.ExceptionInfo.ToString
+  nameWithType: DebugExtension.ExceptionInfo.ToString
 - uid: DeviceOfHermes.DeckExtension
   name: DeckExtension
   href: api/DeviceOfHermes.DeckExtension.html
