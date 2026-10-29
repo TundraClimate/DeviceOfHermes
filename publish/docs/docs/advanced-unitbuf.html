@@ -204,6 +204,11 @@
         return false;
     }
 
+    public override bool IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel card)
+    {
+        return false;
+    }
+
     public BattleUnitModel LastInflictBy;
 }
 </code></pre>
@@ -452,6 +457,16 @@ currentDiceActionはnullです。</p>
 <p>体力回復数値を0にするかどうかです。</p>
 <ul>
 <li><code>healNum</code>: 回復数値です。</li>
+</ul>
+<h3 id="istakeammoeffectnotfarbattleplayingcarddatainunitmodel"><code>IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)</code></h3>
+<pre><code class="lang-cs">public override bool IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel card)
+{
+    return false;
+}
+</code></pre>
+<p>ページが弾丸の効果を得るかどうかです。</p>
+<ul>
+<li><code>card</code>: 対象のページです。</li>
 </ul>
 
 </article>

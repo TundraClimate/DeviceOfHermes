@@ -174,6 +174,12 @@ public class AdvancedUnitBuf : BattleUnitBuf
         return false;
     }
 
+    /// <summary>Is takes ammo effect with nor far card</summary>
+    public virtual bool IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel card)
+    {
+        return false;
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

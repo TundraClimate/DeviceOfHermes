@@ -1740,13 +1740,39 @@ internal static class AdvancedPatch
     {
         static void Prefix(BattleDiceBehavior __instance, DiceCardAbilityBase.DiceCardPassiveType dicePassiveType, ref CardRange? __state)
         {
-            if (__instance.card?.cardAbility is AdvancedCardBase adv && adv.IsTakeAmmoEffectNotFar)
+            if (__instance.card is not null)
             {
-                __state = __instance.card.card?.GetSpec()?.Ranged;
+                var appliesAmmoEffect = false;
 
-                if (__state is not null)
+                if (__instance.card.cardAbility is AdvancedCardBase adv && adv.IsTakeAmmoEffectNotFar)
                 {
-                    __instance.card.card?.GetSpec().Ranged = CardRange.Far;
+                    appliesAmmoEffect = true;
+                }
+
+                foreach (var passive in __instance.card.owner?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>() ?? [])
+                {
+                    if (passive.IsTakeAmmoEffectNotFar(__instance.card))
+                    {
+                        appliesAmmoEffect = true;
+                    }
+                }
+
+                foreach (var buf in __instance.card.owner?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>() ?? [])
+                {
+                    if (buf.IsTakeAmmoEffectNotFar(__instance.card))
+                    {
+                        appliesAmmoEffect = true;
+                    }
+                }
+
+                if (appliesAmmoEffect)
+                {
+                    __state = __instance.card.card?.GetSpec()?.Ranged;
+
+                    if (__state is not null)
+                    {
+                        __instance.card.card?.GetSpec().Ranged = CardRange.Far;
+                    }
                 }
             }
 

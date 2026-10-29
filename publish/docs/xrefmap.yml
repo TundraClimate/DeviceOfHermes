@@ -847,6 +847,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsSaveWhileReception
   nameWithType: AdvancedPassiveBase.IsSaveWhileReception
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  name: IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsTakeAmmoEffectNotFar_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedPassiveBase.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsTakeAmmoEffectNotFar*
+  name: IsTakeAmmoEffectNotFar
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_IsTakeAmmoEffectNotFar_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsTakeAmmoEffectNotFar
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.IsTakeAmmoEffectNotFar
+  nameWithType: AdvancedPassiveBase.IsTakeAmmoEffectNotFar
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnActivatedBuf(BattleUnitBuf)
   name: OnActivatedBuf(BattleUnitBuf)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnActivatedBuf_BattleUnitBuf_
@@ -1271,6 +1284,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsSaveWhileReception
   nameWithType: AdvancedUnitBuf.IsSaveWhileReception
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  name: IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsTakeAmmoEffectNotFar_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedUnitBuf.IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsTakeAmmoEffectNotFar*
+  name: IsTakeAmmoEffectNotFar
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_IsTakeAmmoEffectNotFar_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsTakeAmmoEffectNotFar
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.IsTakeAmmoEffectNotFar
+  nameWithType: AdvancedUnitBuf.IsTakeAmmoEffectNotFar
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.LastInflictBy
   name: LastInflictBy
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_LastInflictBy

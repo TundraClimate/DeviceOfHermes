@@ -197,6 +197,12 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return false;
     }
 
+    /// <summary>Is takes ammo effect with nor far card</summary>
+    public virtual bool IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel card)
+    {
+        return false;
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {
