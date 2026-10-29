@@ -126,6 +126,22 @@
     {
         return true;
     }
+
+    public override void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void BeforeRollDiceBefore(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void BeforeRollDiceAfter(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
@@ -204,6 +220,42 @@ falseを返すと捨てられるのをキャンセルすることが出来ます
 </code></pre>
 <p>ダイスが反撃として追加される直前に実行されます。<br>
 <code>false</code>を返すとそのダイス追加がキャンセルされます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="beforerolldicefirstbattledicebehavior"><code>BeforeRollDiceFirst(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>より先に実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="beforerolldicebeforebattledicebehavior"><code>BeforeRollDiceBefore(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceBefore(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>の直前に実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="beforerolldiceafterbattledicebehavior"><code>BeforeRollDiceAfter(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceAfter(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>の直後に実行されます。</p>
+<ul>
+<li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="beforerolldicelastbattledicebehavior"><code>BeforeRollDiceLast(BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>より後に実行されます。</p>
 <ul>
 <li><code>behavior</code>: 対象のダイスです。</li>
 </ul>

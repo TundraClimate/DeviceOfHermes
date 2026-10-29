@@ -67,6 +67,9 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnEndBattle));
         Patch(typeof(PatchOnRecoverHP));
         Patch(typeof(PatchOnUseCard));
+        Patch(typeof(PatchOnEventDiceAbility));
+        Patch(typeof(PatchUnitBeforeRollDice));
+        Patch(typeof(PatchLambdaBeforeRollDice));
     }
 
     private static void Patch(Type type)
@@ -1729,6 +1732,129 @@ internal static class AdvancedPatch
         static void InjectMethod(BattlePlayingCardDataInUnitModel __instance)
         {
             __instance?.cardBehaviorQueue?.FlatMap(d => d.abilityList.OfType<AdvancedDiceBase>())?.Foreach(abi => abi.OnUseCard(__instance));
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "OnEventDiceAbility")]
+    class PatchOnEventDiceAbility
+    {
+        static void Prefix(BattleDiceBehavior __instance, DiceCardAbilityBase.DiceCardPassiveType dicePassiveType)
+        {
+            if (dicePassiveType is not DiceCardAbilityBase.DiceCardPassiveType.BeforeRollDice)
+            {
+                return;
+            }
+
+            __instance.abilityList?.OfType<AdvancedDiceBase>()?.Foreach(abi => abi.BeforeRollDiceFirst());
+
+            if (__instance.card?.cardAbility is AdvancedCardBase abi)
+            {
+                abi.BeforeRollDiceFirst(__instance);
+            }
+        }
+
+        static Exception? Finalizer(Exception __exception, BattleDiceBehavior __instance, DiceCardAbilityBase.DiceCardPassiveType dicePassiveType)
+        {
+            try
+            {
+                if (__exception is not null)
+                {
+                    throw __exception;
+                }
+
+                if (dicePassiveType is DiceCardAbilityBase.DiceCardPassiveType.BeforeRollDice)
+                {
+                    __instance?.abilityList?.OfType<AdvancedDiceBase>()?.Foreach(abi => abi.BeforeRollDiceLast());
+
+                    if (__instance?.card?.cardAbility is AdvancedCardBase abi)
+                    {
+                        abi.BeforeRollDiceLast(__instance);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("card internal error");
+                Debug.LogError(ex);
+            }
+
+            return null;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitModel), "BeforeRollDice")]
+    class PatchUnitBeforeRollDice
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(CodeMatch.IsLdarg(1), CodeMatch.IsLdfld(typeof(BattleDiceBehavior).Field("card")), CodeMatch.IsDup())
+                .Insert(CodeInstruction.Ldarg(1), CodeInstruction.Call(typeof(PatchUnitBeforeRollDice).Method("InjectBefore")));
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(1), CodeMatch.Calls(typeof(BattlePlayingCardDataInUnitModel).Method("BeforeRollDice")))
+                .Advance(1)
+                .Insert(CodeInstruction.Ldarg(1), CodeInstruction.Call(typeof(PatchUnitBeforeRollDice).Method("InjectAfter")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectBefore(BattleDiceBehavior behavior)
+        {
+            if (behavior?.card?.cardAbility is AdvancedCardBase adv)
+            {
+                adv.BeforeRollDiceBefore(behavior);
+            }
+        }
+
+        static void InjectAfter(BattleDiceBehavior behavior)
+        {
+            if (behavior?.card?.cardAbility is AdvancedCardBase adv)
+            {
+                adv.BeforeRollDiceAfter(behavior);
+            }
+        }
+    }
+
+    [HarmonyPatch]
+    class PatchLambdaBeforeRollDice
+    {
+        static MethodBase TargetMethod()
+        {
+            return typeof(BattleDiceBehavior)
+                .GetNestedTypes(AccessTools.all)
+                .First(t => t.Name.Contains("<>c"))
+                .Method("<OnEventDiceAbility>b__85_0");
+        }
+
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(CodeMatch.IsLdarg(1), CodeMatch.Calls(typeof(DiceCardAbilityBase).Method("BeforeRollDice")))
+                .Insert(CodeInstruction.Ldarg(1), CodeInstruction.Call(typeof(PatchLambdaBeforeRollDice).Method("InjectBefore")));
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(1), CodeMatch.Calls(typeof(DiceCardAbilityBase).Method("BeforeRollDice")))
+                .Advance(1)
+                .Insert(CodeInstruction.Ldarg(1), CodeInstruction.Call(typeof(PatchLambdaBeforeRollDice).Method("InjectAfter")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectBefore(DiceCardAbilityBase ability)
+        {
+            if (ability is AdvancedDiceBase adv)
+            {
+                adv.BeforeRollDiceBefore();
+            }
+        }
+
+        static void InjectAfter(DiceCardAbilityBase ability)
+        {
+            if (ability is AdvancedDiceBase adv)
+            {
+                adv.BeforeRollDiceAfter();
+            }
         }
     }
 

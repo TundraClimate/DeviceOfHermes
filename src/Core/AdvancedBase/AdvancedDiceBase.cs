@@ -49,6 +49,26 @@ public class AdvancedDiceBase : DiceCardAbilityBase
     {
     }
 
+    /// <summary>Unit before roll dice with first</summary>
+    public virtual void BeforeRollDiceFirst()
+    {
+    }
+
+    /// <summary>Unit before roll dice with before</summary>
+    public virtual void BeforeRollDiceBefore()
+    {
+    }
+
+    /// <summary>Unit before roll dice with after</summary>
+    public virtual void BeforeRollDiceAfter()
+    {
+    }
+
+    /// <summary>Unit before roll dice with last</summary>
+    public virtual void BeforeRollDiceLast()
+    {
+    }
+
     /// <summary>A result of parrying</summary>
     /// <remarks>That uses only the <see cref="GetParryingResult(ParryingResult)"/></remarks>
     public enum ParryingResult

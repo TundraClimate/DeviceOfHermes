@@ -56,4 +56,24 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     {
         return true;
     }
+
+    /// <summary>Unit before roll dice with first</summary>
+    public virtual void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+    {
+    }
+
+    /// <summary>Unit before roll dice with before</summary>
+    public virtual void BeforeRollDiceBefore(BattleDiceBehavior behavior)
+    {
+    }
+
+    /// <summary>Unit before roll dice with after</summary>
+    public virtual void BeforeRollDiceAfter(BattleDiceBehavior behavior)
+    {
+    }
+
+    /// <summary>Unit before roll dice with last</summary>
+    public virtual void BeforeRollDiceLast(BattleDiceBehavior behavior)
+    {
+    }
 }

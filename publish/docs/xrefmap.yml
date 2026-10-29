@@ -137,6 +137,58 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.AutoSetCardBufs
   nameWithType: AdvancedCardBase.AutoSetCardBufs
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceAfter(BattleDiceBehavior)
+  name: BeforeRollDiceAfter(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceAfter_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceAfter(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceAfter(BattleDiceBehavior)
+  nameWithType: AdvancedCardBase.BeforeRollDiceAfter(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceAfter*
+  name: BeforeRollDiceAfter
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceAfter_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceAfter
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceAfter
+  nameWithType: AdvancedCardBase.BeforeRollDiceAfter
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceBefore(BattleDiceBehavior)
+  name: BeforeRollDiceBefore(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceBefore_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceBefore(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceBefore(BattleDiceBehavior)
+  nameWithType: AdvancedCardBase.BeforeRollDiceBefore(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceBefore*
+  name: BeforeRollDiceBefore
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceBefore_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceBefore
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceBefore
+  nameWithType: AdvancedCardBase.BeforeRollDiceBefore
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceFirst(BattleDiceBehavior)
+  name: BeforeRollDiceFirst(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceFirst_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceFirst(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceFirst(BattleDiceBehavior)
+  nameWithType: AdvancedCardBase.BeforeRollDiceFirst(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceFirst*
+  name: BeforeRollDiceFirst
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceFirst_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceFirst
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceFirst
+  nameWithType: AdvancedCardBase.BeforeRollDiceFirst
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceLast(BattleDiceBehavior)
+  name: BeforeRollDiceLast(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceLast_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceLast(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceLast(BattleDiceBehavior)
+  nameWithType: AdvancedCardBase.BeforeRollDiceLast(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceLast*
+  name: BeforeRollDiceLast
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeRollDiceLast_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceLast
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeRollDiceLast
+  nameWithType: AdvancedCardBase.BeforeRollDiceLast
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard(BattlePlayingCardDataInUnitModel@)
   name: BeforeUseCard(ref BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_BeforeUseCard_BattlePlayingCardDataInUnitModel__
@@ -395,6 +447,58 @@ references:
   commentId: T:DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   nameWithType: AdvancedDiceBase
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceAfter
+  name: BeforeRollDiceAfter()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceAfter
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceAfter
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceAfter()
+  nameWithType: AdvancedDiceBase.BeforeRollDiceAfter()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceAfter*
+  name: BeforeRollDiceAfter
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceAfter_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceAfter
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceAfter
+  nameWithType: AdvancedDiceBase.BeforeRollDiceAfter
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceBefore
+  name: BeforeRollDiceBefore()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceBefore
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceBefore
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceBefore()
+  nameWithType: AdvancedDiceBase.BeforeRollDiceBefore()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceBefore*
+  name: BeforeRollDiceBefore
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceBefore_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceBefore
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceBefore
+  nameWithType: AdvancedDiceBase.BeforeRollDiceBefore
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceFirst
+  name: BeforeRollDiceFirst()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceFirst
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceFirst
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceFirst()
+  nameWithType: AdvancedDiceBase.BeforeRollDiceFirst()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceFirst*
+  name: BeforeRollDiceFirst
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceFirst_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceFirst
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceFirst
+  nameWithType: AdvancedDiceBase.BeforeRollDiceFirst
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceLast
+  name: BeforeRollDiceLast()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceLast
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceLast
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceLast()
+  nameWithType: AdvancedDiceBase.BeforeRollDiceLast()
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceLast*
+  name: BeforeRollDiceLast
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_BeforeRollDiceLast_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceLast
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.BeforeRollDiceLast
+  nameWithType: AdvancedDiceBase.BeforeRollDiceLast
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.GetDiceFinalResultValue(System.Int32)
   name: GetDiceFinalResultValue(int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_GetDiceFinalResultValue_System_Int32_

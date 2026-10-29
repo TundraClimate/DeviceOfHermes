@@ -126,6 +126,22 @@
     public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
     {
     }
+
+    public override void BeforeRollDiceFirst()
+    {
+    }
+
+    public override void BeforeRollDiceBefore()
+    {
+    }
+
+    public override void BeforeRollDiceAfter()
+    {
+    }
+
+    public override void BeforeRollDiceLast()
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
@@ -195,6 +211,30 @@
 <ul>
 <li><code>curCard</code>: 使用したページです。</li>
 </ul>
+<h3 id="beforerolldicefirst"><code>BeforeRollDiceFirst()</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceFirst()
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>より先に実行されます。</p>
+<h3 id="beforerolldicebefore"><code>BeforeRollDiceBefore()</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceBefore()
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>の直前に実行されます。</p>
+<h3 id="beforerolldiceafter"><code>BeforeRollDiceAfter()</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceAfter()
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>の直後に実行されます。</p>
+<h3 id="beforerolldicelast"><code>BeforeRollDiceLast()</code></h3>
+<pre><code class="lang-cs">public override void BeforeRollDiceLast()
+{
+}
+</code></pre>
+<p><code>BeforeRollDice</code>より後に実行されます。</p>
 
 </article>
 
