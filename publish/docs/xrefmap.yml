@@ -466,6 +466,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnAddToKeeped
   nameWithType: AdvancedDiceBase.OnAddToKeeped
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnUseCard(BattlePlayingCardDataInUnitModel)
+  name: OnUseCard(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_OnUseCard_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnUseCard(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnUseCard(BattlePlayingCardDataInUnitModel)
+  nameWithType: AdvancedDiceBase.OnUseCard(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnUseCard*
+  name: OnUseCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html#DeviceOfHermes_AdvancedBase_AdvancedDiceBase_OnUseCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnUseCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.OnUseCard
+  nameWithType: AdvancedDiceBase.OnUseCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult
   name: AdvancedDiceBase.ParryingResult
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.ParryingResult.html

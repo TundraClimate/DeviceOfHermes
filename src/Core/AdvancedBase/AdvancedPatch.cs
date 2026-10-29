@@ -66,6 +66,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnCreateSpeedDiceRule));
         Patch(typeof(PatchOnEndBattle));
         Patch(typeof(PatchOnRecoverHP));
+        Patch(typeof(PatchOnUseCard));
     }
 
     private static void Patch(Type type)
@@ -1705,6 +1706,29 @@ internal static class AdvancedPatch
             {
                 v = 0;
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnUseCard")]
+    class PatchOnUseCard
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(
+                CodeMatch.IsLdarg(0),
+                CodeMatch.IsLdfld(typeof(BattlePlayingCardDataInUnitModel).Field("owner")),
+                CodeMatch.IsLdfld(typeof(BattleUnitModel).Field("battleCardResultLog"))
+            )
+                .Insert(CodeInstruction.Instance.MoveLabelsFrom(matcher.Instruction), CodeInstruction.Call(typeof(PatchOnUseCard).Method("InjectMethod")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattlePlayingCardDataInUnitModel __instance)
+        {
+            __instance?.cardBehaviorQueue?.FlatMap(d => d.abilityList.OfType<AdvancedDiceBase>())?.Foreach(abi => abi.OnUseCard(__instance));
         }
     }
 

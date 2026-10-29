@@ -122,6 +122,10 @@
     {
         return origin;
     }
+
+    public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardAbilityBase</code>を継承しています。<br>
@@ -181,6 +185,15 @@
 <p>全てのダメージ変更処理の後にダメージ量をこのメソッドが返した値に変更します。</p>
 <ul>
 <li><code>origin</code>: 変更前の最終ダメージ量です。</li>
+</ul>
+<h3 id="onusecardbattleplayingcarddatainunitmodel"><code>OnUseCard(BattlePlayingCardDataInUnitModel)</code></h3>
+<pre><code class="lang-cs">public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
+{
+}
+</code></pre>
+<p>自身が存在するページを使用したときに実行されます。</p>
+<ul>
+<li><code>curCard</code>: 使用したページです。</li>
 </ul>
 
 </article>

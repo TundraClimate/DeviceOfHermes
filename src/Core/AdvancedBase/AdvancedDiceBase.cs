@@ -44,6 +44,11 @@ public class AdvancedDiceBase : DiceCardAbilityBase
         return origin;
     }
 
+    /// <summary>On unit use card</summary>
+    public virtual void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
+    {
+    }
+
     /// <summary>A result of parrying</summary>
     /// <remarks>That uses only the <see cref="GetParryingResult(ParryingResult)"/></remarks>
     public enum ParryingResult
