@@ -70,6 +70,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnEventDiceAbility));
         Patch(typeof(PatchUnitBeforeRollDice));
         Patch(typeof(PatchLambdaBeforeRollDice));
+        Patch(typeof(PatchOnAddCard));
     }
 
     private static void Patch(Type type)
@@ -1916,6 +1917,33 @@ internal static class AdvancedPatch
             {
                 adv.BeforeRollDiceAfter();
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardSlotDetail), "AddCard")]
+    class PatchOnAddCard
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            yield return CodeInstruction.Ldarg(1);
+            yield return CodeInstruction.Ldarg(2);
+            yield return CodeInstruction.Ldarg(3);
+            yield return CodeInstruction.Call(typeof(PatchOnAddCard).Method("InjectMethod"));
+
+            foreach (var i in instructions)
+            {
+                yield return i;
+            }
+        }
+
+        static void InjectMethod(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+        {
+            if (card.CreateDiceCardSelfAbilityScript() is not AdvancedCardBase abi)
+            {
+                return;
+            }
+
+            abi.OnSelectTarget(card, target, targetSlot);
         }
     }
 

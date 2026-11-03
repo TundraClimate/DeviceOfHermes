@@ -82,4 +82,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     public virtual void BeforeRollDiceLast(BattleDiceBehavior behavior)
     {
     }
+
+    /// <summary>Select target unit</summary>
+    public virtual void OnSelectTarget(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+    {
+    }
 }

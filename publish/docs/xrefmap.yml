@@ -338,6 +338,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice
   nameWithType: AdvancedCardBase.OnAddKeepDice
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget(BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name: OnSelectTarget(BattleDiceCardModel, BattleUnitModel, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnSelectTarget_BattleDiceCardModel_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget(BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name.vb: OnSelectTarget(BattleDiceCardModel, BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget(BattleDiceCardModel, BattleUnitModel, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget(BattleDiceCardModel, BattleUnitModel, Integer)
+  nameWithType: AdvancedCardBase.OnSelectTarget(BattleDiceCardModel, BattleUnitModel, int)
+  nameWithType.vb: AdvancedCardBase.OnSelectTarget(BattleDiceCardModel, BattleUnitModel, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget*
+  name: OnSelectTarget
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnSelectTarget_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget
+  nameWithType: AdvancedCardBase.OnSelectTarget
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder(System.Int32,System.Int32)
   name: SpecialPriorityAdder(int, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_SpecialPriorityAdder_System_Int32_System_Int32_
