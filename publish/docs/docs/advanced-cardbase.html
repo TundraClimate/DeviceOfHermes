@@ -102,6 +102,8 @@
 
     public override bool IsTakeAmmoEffectNotFar =&gt; false;
 
+    public override bool CanDestroyCard =&gt; true;
+
     public override bool DrawsOnWaveStart =&gt; false;
 
     public override bool MoveToPersonal =&gt; false;
@@ -175,6 +177,11 @@ trueを返すとマッチに速度を参照しなくなります。</p>
 </code></pre>
 <p>弾丸の効果を受けるかどうかを指定するプロパティです。<br>
 trueを返すと弾丸の効果を受けます。</p>
+<h3 id="candestroycard"><code>CanDestroyCard</code></h3>
+<pre><code class="lang-cs">public override bool CanDestroyCard =&gt; true;
+</code></pre>
+<p>ページが破壊されうるかどうかです。<br>
+falseを返すと破壊されなくなります。</p>
 <h3 id="drawsonwavestart"><code>DrawsOnWaveStart</code></h3>
 <pre><code class="lang-cs">public override bool DrawsOnWaveStart =&gt; false;
 </code></pre>

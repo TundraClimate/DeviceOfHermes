@@ -23,6 +23,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Property is card take ammo effect</summary>
     public virtual bool IsTakeAmmoEffectNotFar => false;
 
+    /// <summary>Property is card can destroy</summary>
+    public virtual bool CanDestroyCard => true;
+
     /// <summary>Is card draws on wave start</summary>
     public virtual bool DrawsOnWaveStart => false;
 

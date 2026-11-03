@@ -218,6 +218,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.BeforeUseCard
   nameWithType: AdvancedCardBase.BeforeUseCard
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDestroyCard
+  name: CanDestroyCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_CanDestroyCard
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDestroyCard
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDestroyCard
+  nameWithType: AdvancedCardBase.CanDestroyCard
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDestroyCard*
+  name: CanDestroyCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_CanDestroyCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDestroyCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDestroyCard
+  nameWithType: AdvancedCardBase.CanDestroyCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.CanDiscardByAbility(BattleDiceCardModel)
   name: CanDiscardByAbility(BattleDiceCardModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_CanDiscardByAbility_BattleDiceCardModel_

@@ -71,6 +71,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchUnitBeforeRollDice));
         Patch(typeof(PatchLambdaBeforeRollDice));
         Patch(typeof(PatchOnAddCard));
+        Patch(typeof(PatchOnDestroyCard));
     }
 
     private static void Patch(Type type)
@@ -1944,6 +1945,20 @@ internal static class AdvancedPatch
             }
 
             abi.OnSelectTarget(card, target, targetSlot);
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "DestroyPlayingCard")]
+    class PatchOnDestroyCard
+    {
+        static bool Prefix(BattlePlayingCardDataInUnitModel __instance)
+        {
+            if (__instance.cardAbility is AdvancedCardBase adv && !adv.CanDestroyCard)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 
