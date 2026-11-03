@@ -32,6 +32,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Is Card auto move to personalDetail</summary>
     public virtual bool MoveToPersonal => false;
 
+    /// <summary>Is Card use on start battle</summary>
+    public virtual bool UseOnStartBattle => false;
+
     /// <summary>Buf list of auto sets on card ability generated</summary>
     public virtual Type[] AutoSetCardBufs => [];
 

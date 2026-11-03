@@ -72,6 +72,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchLambdaBeforeRollDice));
         Patch(typeof(PatchOnAddCard));
         Patch(typeof(PatchOnDestroyCard));
+        Patch(typeof(PatchOnStartBattlePhase));
     }
 
     private static void Patch(Type type)
@@ -1959,6 +1960,27 @@ internal static class AdvancedPatch
             }
 
             return true;
+        }
+    }
+
+    [HarmonyPatch(typeof(StageController), "ActivateStartBattleEffectPhase")]
+    class PatchOnStartBattlePhase
+    {
+        static Exception Finalizer(Exception __exception)
+        {
+            var allCards = StageController.Instance.GetAllCards();
+
+            var f = allCards.Filter(c => c.cardAbility is AdvancedCardBase adv && adv.UseOnStartBattle).ToList();
+            var s = allCards.Filter(c => c.cardAbility is not AdvancedCardBase adv || !adv.UseOnStartBattle).ToList();
+
+            f.ForEach(c => c.speedDiceResultValue = 9999);
+
+            allCards.Clear();
+
+            allCards.AddRange(f);
+            allCards.AddRange(s);
+
+            return __exception;
         }
     }
 

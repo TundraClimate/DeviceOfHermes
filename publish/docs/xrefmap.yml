@@ -383,6 +383,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder
   nameWithType: AdvancedCardBase.SpecialPriorityAdder
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.UseOnStartBattle
+  name: UseOnStartBattle
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_UseOnStartBattle
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.UseOnStartBattle
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.UseOnStartBattle
+  nameWithType: AdvancedCardBase.UseOnStartBattle
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.UseOnStartBattle*
+  name: UseOnStartBattle
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_UseOnStartBattle_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.UseOnStartBattle
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.UseOnStartBattle
+  nameWithType: AdvancedCardBase.UseOnStartBattle
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf
   name: AdvancedCardBuf
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html

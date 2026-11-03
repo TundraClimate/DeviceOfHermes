@@ -108,6 +108,8 @@
 
     public override bool MoveToPersonal =&gt; false;
 
+    public override bool UseOnStartBattle =&gt; false;
+
     public override Type[] AutoSetCardBufs =&gt; [];
 
     public override bool CanDiscardByAbility(BattleDiceCardModel self)
@@ -192,6 +194,11 @@ trueを返すと自動で抽出されるようになります。</p>
 </code></pre>
 <p>舞台開始時に個人デッキに移動するかを指定するプロパティです。<br>
 trueを返すと個人デッキに移動するようになります。</p>
+<h3 id="useonstartbattle"><code>UseOnStartBattle</code></h3>
+<pre><code class="lang-cs">public override bool UseOnStartBattle =&gt; false;
+</code></pre>
+<p>戦闘開始時に同距離のページから最速で使用されるかどうかです。<br>
+trueなら戦闘開始時に同距離のうちで最速使用されます。</p>
 <h3 id="autosetcardbufs"><code>AutoSetCardBufs</code></h3>
 <pre><code class="lang-cs">public override Type[] AutoSetCardBufs =&gt; [];
 </code></pre>
