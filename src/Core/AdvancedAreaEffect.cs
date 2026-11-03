@@ -5,6 +5,9 @@ namespace DeviceOfHermes;
 /// <summary>An advanced FarAreaEffect</summary>
 public class AdvancedAreaEffect : FarAreaEffect
 {
+    /// <summary>Impl HasIndependentAction</summary>
+    public override bool HasIndependentAction => true;
+
     /// <summary>Default override</summary>
     public override bool ActionPhase(float deltaTime, BattleUnitModel attacker, List<BattleFarAreaPlayManager.VictimInfo> victims, ref List<BattleFarAreaPlayManager.VictimInfo> defenseVictims)
     {
