@@ -4758,6 +4758,50 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.KeywordBufExtender.ExtendProps
   nameWithType: KeywordBufExtender.ExtendProps
+- uid: DeviceOfHermes.LazyUnitBuf
+  name: LazyUnitBuf
+  href: api/DeviceOfHermes.LazyUnitBuf.html
+  commentId: T:DeviceOfHermes.LazyUnitBuf
+  fullName: DeviceOfHermes.LazyUnitBuf
+  nameWithType: LazyUnitBuf
+- uid: DeviceOfHermes.LazyUnitBuf.#ctor(System.Int32)
+  name: LazyUnitBuf(int)
+  href: api/DeviceOfHermes.LazyUnitBuf.html#DeviceOfHermes_LazyUnitBuf__ctor_System_Int32_
+  commentId: M:DeviceOfHermes.LazyUnitBuf.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: DeviceOfHermes.LazyUnitBuf.LazyUnitBuf(int)
+  fullName.vb: DeviceOfHermes.LazyUnitBuf.New(Integer)
+  nameWithType: LazyUnitBuf.LazyUnitBuf(int)
+  nameWithType.vb: LazyUnitBuf.New(Integer)
+- uid: DeviceOfHermes.LazyUnitBuf.#ctor*
+  name: LazyUnitBuf
+  href: api/DeviceOfHermes.LazyUnitBuf.html#DeviceOfHermes_LazyUnitBuf__ctor_
+  commentId: Overload:DeviceOfHermes.LazyUnitBuf.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.LazyUnitBuf.LazyUnitBuf
+  fullName.vb: DeviceOfHermes.LazyUnitBuf.New
+  nameWithType: LazyUnitBuf.LazyUnitBuf
+  nameWithType.vb: LazyUnitBuf.New
+- uid: DeviceOfHermes.LazyUnitBuf.OnRoundStart
+  name: OnRoundStart()
+  href: api/DeviceOfHermes.LazyUnitBuf.html#DeviceOfHermes_LazyUnitBuf_OnRoundStart
+  commentId: M:DeviceOfHermes.LazyUnitBuf.OnRoundStart
+  fullName: DeviceOfHermes.LazyUnitBuf.OnRoundStart()
+  nameWithType: LazyUnitBuf.OnRoundStart()
+- uid: DeviceOfHermes.LazyUnitBuf.OnRoundStart*
+  name: OnRoundStart
+  href: api/DeviceOfHermes.LazyUnitBuf.html#DeviceOfHermes_LazyUnitBuf_OnRoundStart_
+  commentId: Overload:DeviceOfHermes.LazyUnitBuf.OnRoundStart
+  isSpec: "True"
+  fullName: DeviceOfHermes.LazyUnitBuf.OnRoundStart
+  nameWithType: LazyUnitBuf.OnRoundStart
+- uid: DeviceOfHermes.LazyUnitBuf.onActivate
+  name: onActivate
+  href: api/DeviceOfHermes.LazyUnitBuf.html#DeviceOfHermes_LazyUnitBuf_onActivate
+  commentId: F:DeviceOfHermes.LazyUnitBuf.onActivate
+  fullName: DeviceOfHermes.LazyUnitBuf.onActivate
+  nameWithType: LazyUnitBuf.onActivate
 - uid: DeviceOfHermes.ModPackage
   name: ModPackage
   href: api/DeviceOfHermes.ModPackage.html

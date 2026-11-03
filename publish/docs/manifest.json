@@ -1287,6 +1287,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.LazyUnitBuf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.LazyUnitBuf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.LazyUnitBuf",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.LazyUnitBuf.yml\" sourcestartlinenumber=\"1\">Activates on lazy</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.ModPackage.yml",
       "output": {
         ".html": {
@@ -3650,6 +3664,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/keywordbuf-extender.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/lazyunitbuf.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/lazyunitbuf.html"
         }
       },
       "version": ""
