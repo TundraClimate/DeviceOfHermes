@@ -112,6 +112,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedAreaEffect.DeltaTime
   nameWithType: AdvancedAreaEffect.DeltaTime
+- uid: DeviceOfHermes.AdvancedAreaEffect.HasIndependentAction
+  name: HasIndependentAction
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_HasIndependentAction
+  commentId: P:DeviceOfHermes.AdvancedAreaEffect.HasIndependentAction
+  fullName: DeviceOfHermes.AdvancedAreaEffect.HasIndependentAction
+  nameWithType: AdvancedAreaEffect.HasIndependentAction
+- uid: DeviceOfHermes.AdvancedAreaEffect.HasIndependentAction*
+  name: HasIndependentAction
+  href: api/DeviceOfHermes.AdvancedAreaEffect.html#DeviceOfHermes_AdvancedAreaEffect_HasIndependentAction_
+  commentId: Overload:DeviceOfHermes.AdvancedAreaEffect.HasIndependentAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedAreaEffect.HasIndependentAction
+  nameWithType: AdvancedAreaEffect.HasIndependentAction
 - uid: DeviceOfHermes.AdvancedBase
   name: DeviceOfHermes.AdvancedBase
   href: api/DeviceOfHermes.AdvancedBase.html
@@ -299,6 +312,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsTakeAmmoEffectNotFar
   nameWithType: AdvancedCardBase.IsTakeAmmoEffectNotFar
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.MoveToPersonal
+  name: MoveToPersonal
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_MoveToPersonal
+  commentId: P:DeviceOfHermes.AdvancedBase.AdvancedCardBase.MoveToPersonal
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.MoveToPersonal
+  nameWithType: AdvancedCardBase.MoveToPersonal
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.MoveToPersonal*
+  name: MoveToPersonal
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_MoveToPersonal_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.MoveToPersonal
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.MoveToPersonal
+  nameWithType: AdvancedCardBase.MoveToPersonal
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice(BattleDiceBehavior)
   name: OnAddKeepDice(BattleDiceBehavior)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnAddKeepDice_BattleDiceBehavior_

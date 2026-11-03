@@ -106,6 +106,18 @@ var discards = owner.allyCardDetail.Discard();
 // 現時点の仕様予約がされているページのリスト
 var reserves = owner.allyCardDetail.Reserved();
 
+// 個人ページの現時点の山札を直接取得します。
+var personalAll = owner.personalEgoDetail.All();
+
+// 個人ページ現時点の手札を直接取得します。
+var handPersonal = owner.personalEgoDetail.Hand();
+
+// 個人ページの現時点の使用済みページのリスト
+var usesPersonal = owner.personalEgoDetail.Uses();
+
+// 個人ページの現時点の仕様予約がされているページのリスト
+var reservesPersonal = owner.personalEgoDetail.Reserved();
+
 // BattleUnitModelに紐づくList&lt;BattleDiceCardModel&gt;を文字列キーで取得します。
 var subDeck = owner.AlterDeck(&quot;SubDeck&quot;);
 </code></pre>

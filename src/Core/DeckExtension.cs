@@ -24,6 +24,21 @@ public static class DeckExtension
         public ref List<BattleDiceCardModel> Reserved() => ref _unitReserved(ally);
     }
 
+    extension(BattlePersonalEgoCardDetail personal)
+    {
+        /// <summary>Returns personal all cards</summary>
+        public ref List<BattleDiceCardModel> All() => ref _unitPersonalAll(personal);
+
+        /// <summary>Returns personal hands</summary>
+        public ref List<BattleDiceCardModel> Hand() => ref _unitPersonalHands(personal);
+
+        /// <summary>Returns personal uses</summary>
+        public ref List<BattleDiceCardModel> Uses() => ref _unitPersonalUses(personal);
+
+        /// <summary>Returns personal reserves</summary>
+        public ref List<BattleDiceCardModel> Reserved() => ref _unitPersonalReserved(personal);
+    }
+
     extension(BattleUnitModel owner)
     {
         /// <summary>Get or init to alter decks</summary>
@@ -56,4 +71,16 @@ public static class DeckExtension
 
     private static AccessTools.FieldRef<BattleAllyCardDetail, List<BattleDiceCardModel>> _unitReserved
         = typeof(BattleAllyCardDetail).FieldRefAccess<List<BattleDiceCardModel>>("_cardInReserved");
+
+    private static AccessTools.FieldRef<BattlePersonalEgoCardDetail, List<BattleDiceCardModel>> _unitPersonalAll
+        = typeof(BattlePersonalEgoCardDetail).FieldRefAccess<List<BattleDiceCardModel>>("_cardsAll");
+
+    private static AccessTools.FieldRef<BattlePersonalEgoCardDetail, List<BattleDiceCardModel>> _unitPersonalHands
+        = typeof(BattlePersonalEgoCardDetail).FieldRefAccess<List<BattleDiceCardModel>>("_cardInHand");
+
+    private static AccessTools.FieldRef<BattlePersonalEgoCardDetail, List<BattleDiceCardModel>> _unitPersonalUses
+        = typeof(BattlePersonalEgoCardDetail).FieldRefAccess<List<BattleDiceCardModel>>("_cardInUse");
+
+    private static AccessTools.FieldRef<BattlePersonalEgoCardDetail, List<BattleDiceCardModel>> _unitPersonalReserved
+        = typeof(BattlePersonalEgoCardDetail).FieldRefAccess<List<BattleDiceCardModel>>("_cardInReserved");
 }
