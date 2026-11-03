@@ -1400,10 +1400,28 @@ internal static class AdvancedPatch
 
             foreach (var deckCard in __instance.allyCardDetail.Deck().AsDefer(out var self))
             {
-                if (deckCard.CreateDiceCardSelfAbilityScript() is AdvancedCardBase adv && adv.DrawsOnWaveStart)
+                if (deckCard.CreateDiceCardSelfAbilityScript() is AdvancedCardBase adv)
                 {
-                    __instance.allyCardDetail.Hand().Add(deckCard);
-                    self.Remove(deckCard);
+                    if (adv.MoveToPersonal)
+                    {
+                        deckCard.XmlData.optionList ??= new();
+                        deckCard.XmlData.optionList.Add(CardOption.Personal);
+
+                        __instance.personalEgoDetail.All().Add(deckCard);
+                        __instance.personalEgoDetail.Hand().Add(deckCard);
+
+                        self.Remove(deckCard);
+
+                        continue;
+                    }
+
+                    if (adv.DrawsOnWaveStart)
+                    {
+                        __instance.allyCardDetail.Hand().Add(deckCard);
+                        self.Remove(deckCard);
+
+                        continue;
+                    }
                 }
             }
         }

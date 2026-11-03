@@ -26,6 +26,9 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Is card draws on wave start</summary>
     public virtual bool DrawsOnWaveStart => false;
 
+    /// <summary>Is Card auto move to personalDetail</summary>
+    public virtual bool MoveToPersonal => false;
+
     /// <summary>Buf list of auto sets on card ability generated</summary>
     public virtual Type[] AutoSetCardBufs => [];
 
