@@ -1940,7 +1940,7 @@ internal static class AdvancedPatch
 
         static void InjectMethod(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
         {
-            if (card.CreateDiceCardSelfAbilityScript() is not AdvancedCardBase abi)
+            if (card?.CreateDiceCardSelfAbilityScript() is not AdvancedCardBase abi)
             {
                 return;
             }
