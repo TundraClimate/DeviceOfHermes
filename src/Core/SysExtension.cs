@@ -179,6 +179,36 @@ public static class Extension
         return enumerable;
     }
 
+    /// <summary>Iterate the enumerable, finds index with it</summary>
+    public static int IndexOf<T>(this IEnumerable<T> enumerable, T value)
+    {
+        var compare = EqualityComparer<T>.Default;
+
+        foreach (var (i, elem) in enumerable.Enumerate())
+        {
+            if (compare.Equals(elem, value))
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    /// <summary>Iterate the enumerable, finds index with it</summary>
+    public static int IndexOf<T>(this IEnumerable<T> enumerable, Func<T, bool> pred)
+    {
+        foreach (var (i, elem) in enumerable.Enumerate())
+        {
+            if (pred(elem))
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
     /// <summary>Runs fn with it</summary>
     public static R? Let<T, R>(this T it, Func<T, R> fn)
     {
