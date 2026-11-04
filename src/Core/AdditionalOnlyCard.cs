@@ -59,6 +59,16 @@ public class AdditonalOnlyCard
                 {
                     var cardXmls = vcards.Map(id => ItemXmlDataList.instance.GetCardItem(id, true)).Filter(card => card is not null);
 
+                    foreach (var xml in cardXmls)
+                    {
+                        xml.optionList ??= new();
+
+                        if (!xml.optionList.Contains(CardOption.OnlyPage))
+                        {
+                            xml.optionList.Add(CardOption.OnlyPage);
+                        }
+                    }
+
                     ____onlyCards.AddRange(cardXmls);
                 }
 
@@ -68,6 +78,16 @@ public class AdditonalOnlyCard
             if (AdditonalOnlyCard._onlyCardDict.TryGetValue(__instance.ClassInfo.id, out var cards))
             {
                 var cardXmls = cards.Map(id => ItemXmlDataList.instance.GetCardItem(id, true)).Filter(card => card is not null);
+
+                foreach (var xml in cardXmls)
+                {
+                    xml.optionList ??= new();
+
+                    if (!xml.optionList.Contains(CardOption.OnlyPage))
+                    {
+                        xml.optionList.Add(CardOption.OnlyPage);
+                    }
+                }
 
                 ____onlyCards.AddRange(cardXmls);
             }
