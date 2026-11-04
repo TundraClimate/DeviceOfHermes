@@ -23,14 +23,7 @@ internal static class FormationXmlLoader
 
             var file = Path.Combine(mod.dirInfo.FullName, path);
 
-            if (!File.Exists(file))
-            {
-                continue;
-            }
-
-            var root = Serde.FromXmlFile<FormationXmlRoot>(file);
-
-            if (root is null)
+            if (!File.Exists(file) || Serde.FromXmlFile<FormationXmlRoot>(file) is not FormationXmlRoot root)
             {
                 continue;
             }

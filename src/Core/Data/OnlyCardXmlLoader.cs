@@ -23,14 +23,7 @@ internal static class OnlyCardXmlLoader
 
             var file = Path.Combine(mod.dirInfo.FullName, path);
 
-            if (!File.Exists(file))
-            {
-                continue;
-            }
-
-            var root = Serde.FromXmlFile<OnlyCardXmlRoot>(file);
-
-            if (root is null)
+            if (!File.Exists(file) || Serde.FromXmlFile<OnlyCardXmlRoot>(file) is not OnlyCardXmlRoot root)
             {
                 continue;
             }

@@ -23,14 +23,7 @@ internal static class EmotionCardXmlLoader
 
             var file = Path.Combine(mod.dirInfo.FullName, path);
 
-            if (!File.Exists(file))
-            {
-                continue;
-            }
-
-            var root = Serde.FromXmlFile<EmotionCardXmlRoot>(file);
-
-            if (root is null)
+            if (!File.Exists(file) || Serde.FromXmlFile<EmotionCardXmlRoot>(file) is not EmotionCardXmlRoot root)
             {
                 continue;
             }
