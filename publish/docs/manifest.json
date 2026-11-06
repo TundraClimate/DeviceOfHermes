@@ -1637,6 +1637,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.StageEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.StageEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.StageEvents",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.StageEvents.yml\" sourcestartlinenumber=\"1\">A set of Stage events</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.StageLibrarianList.yml",
       "output": {
         ".html": {
@@ -4074,6 +4088,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/shim-passivebase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/stageevents.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/stageevents.html"
         }
       },
       "version": ""

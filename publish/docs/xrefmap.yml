@@ -6686,6 +6686,18 @@ references:
   commentId: T:DeviceOfHermes.SpeedDiceBufDetailExt
   fullName: DeviceOfHermes.SpeedDiceBufDetailExt
   nameWithType: SpeedDiceBufDetailExt
+- uid: DeviceOfHermes.StageEvents
+  name: StageEvents
+  href: api/DeviceOfHermes.StageEvents.html
+  commentId: T:DeviceOfHermes.StageEvents
+  fullName: DeviceOfHermes.StageEvents
+  nameWithType: StageEvents
+- uid: DeviceOfHermes.StageEvents.OnCleanup
+  name: OnCleanup
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnCleanup
+  commentId: E:DeviceOfHermes.StageEvents.OnCleanup
+  fullName: DeviceOfHermes.StageEvents.OnCleanup
+  nameWithType: StageEvents.OnCleanup
 - uid: DeviceOfHermes.StageLibrarianList
   name: StageLibrarianList
   href: api/DeviceOfHermes.StageLibrarianList.html
@@ -13502,6 +13514,31 @@ references:
   isSpec: "True"
   fullName: System.Extension.GetAsmDirectory
   nameWithType: Extension.GetAsmDirectory
+- uid: System.Extension.IndexOf*
+  name: IndexOf
+  href: api/System.Extension.html#System_Extension_IndexOf_
+  commentId: Overload:System.Extension.IndexOf
+  isSpec: "True"
+  fullName: System.Extension.IndexOf
+  nameWithType: Extension.IndexOf
+- uid: System.Extension.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  name: IndexOf<T>(IEnumerable<T>, Func<T, bool>)
+  href: api/System.Extension.html#System_Extension_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  commentId: M:System.Extension.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+  fullName: System.Extension.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>)
+  fullName.vb: System.Extension.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean))
+  nameWithType: Extension.IndexOf<T>(IEnumerable<T>, Func<T, bool>)
+  nameWithType.vb: Extension.IndexOf(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+- uid: System.Extension.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)
+  name: IndexOf<T>(IEnumerable<T>, T)
+  href: api/System.Extension.html#System_Extension_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_
+  commentId: M:System.Extension.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), T)
+  fullName: System.Extension.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, T)
+  fullName.vb: System.Extension.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), T)
+  nameWithType: Extension.IndexOf<T>(IEnumerable<T>, T)
+  nameWithType.vb: Extension.IndexOf(Of T)(IEnumerable(Of T), T)
 - uid: System.Extension.Inspect*
   name: Inspect
   href: api/System.Extension.html#System_Extension_Inspect_

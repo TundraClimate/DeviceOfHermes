@@ -157,7 +157,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_Also__1___0_System_Action___0__" data-uid="System.Extension.Also``1(``0,System.Action{``0})">
   Also&lt;T&gt;(T, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Runs fn with it and returns self</p>
@@ -285,7 +285,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_FaceTo_Faction_" data-uid="System.Extension.FaceTo(Faction)">
   FaceTo(Faction)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns opponent</p>
@@ -587,7 +587,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_GetAsmDirectory_System_Type_" data-uid="System.Extension.GetAsmDirectory(System.Type)">
   GetAsmDirectory(Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns directory of ty found assembly</p>
@@ -610,6 +610,94 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Extension_IndexOf_" data-uid="System.Extension.IndexOf*"></a>
+
+  <h3 id="System_Extension_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__" data-uid="System.Extension.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">
+  IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Iterate the enumerable, finds index with it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; enumerable, Func&lt;T, bool&gt; pred)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumerable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>pred</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Extension_IndexOf_" data-uid="System.Extension.IndexOf*"></a>
+
+  <h3 id="System_Extension_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_" data-uid="System.Extension.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)">
+  IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Iterate the enumerable, finds index with it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; enumerable, T value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumerable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -668,7 +756,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_Let__1___0_System_Action___0__" data-uid="System.Extension.Let``1(``0,System.Action{``0})">
   Let&lt;T&gt;(T, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Runs fn with it</p>
@@ -707,7 +795,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_Let__2___0_System_Func___0___1__" data-uid="System.Extension.Let``2(``0,System.Func{``0,``1})">
   Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Runs fn with it</p>
@@ -1045,7 +1133,7 @@ Class Extension  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="System_Extension_Then__1_System_Boolean_System_Func___0__" data-uid="System.Extension.Then``1(System.Boolean,System.Func{``0})">
   Then&lt;T&gt;(bool, Func&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/SysExtension.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns some if true else returns null</p>
