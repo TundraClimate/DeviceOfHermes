@@ -11,6 +11,7 @@ namespace DeviceOfHermes;
 /// <example><code>
 /// ScheduleRunner.AddSchedule(ScheduleTiming.RoundStart, () => { Hermes.Say("Round started") });
 /// </code></example>
+[Obsolete]
 public static class ScheduleRunner
 {
     static ScheduleRunner()

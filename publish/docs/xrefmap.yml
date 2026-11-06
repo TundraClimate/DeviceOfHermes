@@ -6692,12 +6692,72 @@ references:
   commentId: T:DeviceOfHermes.StageEvents
   fullName: DeviceOfHermes.StageEvents
   nameWithType: StageEvents
+- uid: DeviceOfHermes.StageEvents.BeforeRoundEnd
+  name: BeforeRoundEnd
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_BeforeRoundEnd
+  commentId: E:DeviceOfHermes.StageEvents.BeforeRoundEnd
+  fullName: DeviceOfHermes.StageEvents.BeforeRoundEnd
+  nameWithType: StageEvents.BeforeRoundEnd
+- uid: DeviceOfHermes.StageEvents.BeforeRoundStart
+  name: BeforeRoundStart
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_BeforeRoundStart
+  commentId: E:DeviceOfHermes.StageEvents.BeforeRoundStart
+  fullName: DeviceOfHermes.StageEvents.BeforeRoundStart
+  nameWithType: StageEvents.BeforeRoundStart
+- uid: DeviceOfHermes.StageEvents.BeforeStartBattle
+  name: BeforeStartBattle
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_BeforeStartBattle
+  commentId: E:DeviceOfHermes.StageEvents.BeforeStartBattle
+  fullName: DeviceOfHermes.StageEvents.BeforeStartBattle
+  nameWithType: StageEvents.BeforeStartBattle
+- uid: DeviceOfHermes.StageEvents.BeforeWaveStart
+  name: BeforeWaveStart
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_BeforeWaveStart
+  commentId: E:DeviceOfHermes.StageEvents.BeforeWaveStart
+  fullName: DeviceOfHermes.StageEvents.BeforeWaveStart
+  nameWithType: StageEvents.BeforeWaveStart
 - uid: DeviceOfHermes.StageEvents.OnCleanup
   name: OnCleanup
   href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnCleanup
   commentId: E:DeviceOfHermes.StageEvents.OnCleanup
   fullName: DeviceOfHermes.StageEvents.OnCleanup
   nameWithType: StageEvents.OnCleanup
+- uid: DeviceOfHermes.StageEvents.OnRoundEnd
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnRoundEnd
+  commentId: E:DeviceOfHermes.StageEvents.OnRoundEnd
+  fullName: DeviceOfHermes.StageEvents.OnRoundEnd
+  nameWithType: StageEvents.OnRoundEnd
+- uid: DeviceOfHermes.StageEvents.OnRoundStart
+  name: OnRoundStart
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnRoundStart
+  commentId: E:DeviceOfHermes.StageEvents.OnRoundStart
+  fullName: DeviceOfHermes.StageEvents.OnRoundStart
+  nameWithType: StageEvents.OnRoundStart
+- uid: DeviceOfHermes.StageEvents.OnStartBattle
+  name: OnStartBattle
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnStartBattle
+  commentId: E:DeviceOfHermes.StageEvents.OnStartBattle
+  fullName: DeviceOfHermes.StageEvents.OnStartBattle
+  nameWithType: StageEvents.OnStartBattle
+- uid: DeviceOfHermes.StageEvents.OnStopSpeedDice
+  name: OnStopSpeedDice
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnStopSpeedDice
+  commentId: E:DeviceOfHermes.StageEvents.OnStopSpeedDice
+  fullName: DeviceOfHermes.StageEvents.OnStopSpeedDice
+  nameWithType: StageEvents.OnStopSpeedDice
+- uid: DeviceOfHermes.StageEvents.OnUseCard
+  name: OnUseCard
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnUseCard
+  commentId: E:DeviceOfHermes.StageEvents.OnUseCard
+  fullName: DeviceOfHermes.StageEvents.OnUseCard
+  nameWithType: StageEvents.OnUseCard
+- uid: DeviceOfHermes.StageEvents.OnWaveStart
+  name: OnWaveStart
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_OnWaveStart
+  commentId: E:DeviceOfHermes.StageEvents.OnWaveStart
+  fullName: DeviceOfHermes.StageEvents.OnWaveStart
+  nameWithType: StageEvents.OnWaveStart
 - uid: DeviceOfHermes.StageLibrarianList
   name: StageLibrarianList
   href: api/DeviceOfHermes.StageLibrarianList.html

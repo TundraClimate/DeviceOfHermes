@@ -91,10 +91,38 @@
 この記事はこれを前提に書かれています。</p>
 <h1 id="stageevents">StageEvents</h1>
 <p>接待中のイベントを監視してフックします。</p>
-<pre><code class="lang-cs">// 接待のCleanup処理の直後に実行される
-StageEvents.OnCleanup += () =&gt; {
-    Hermes.Say($&quot;end cleanup&quot;);
-};
+<pre><code class="lang-cs">// 舞台開始前に実行される
+StageEvents.BeforeWaveStart += () =&gt; Hermes.Say($&quot;start wave before&quot;);
+
+// 舞台開始時に実行される
+StageEvents.OnWaveStart += () =&gt; Hermes.Say($&quot;start wave&quot;);
+
+// 幕の開始前に実行される
+StageEvents.BeforeRoundStart += () =&gt; Hermes.Say($&quot;round start before&quot;);
+
+// 幕の開始時に実行される
+StageEvents.OnRoundStart += () =&gt; Hermes.Say($&quot;round start&quot;);
+
+// 速度ダイスをUI上で決定したときに実行される
+StageEvents.OnStopSpeedDice += () =&gt; Hermes.Say($&quot;stop speed dice&quot;);
+
+// 戦闘開始前に実行される
+StageEvents.BeforeStartBattle += () =&gt; Hermes.Say($&quot;start battle before&quot;);
+
+// 戦闘開始時に実行される
+StageEvents.OnStartBattle += () =&gt; Hermes.Say($&quot;start battle&quot;);
+
+// 幕の終了前に実行される
+StageEvents.BeforeRoundEnd += () =&gt; Hermes.Say($&quot;round end before&quot;);
+
+// 幕の終了時に実行される
+StageEvents.OnRoundEnd += () =&gt; Hermes.Say($&quot;round end&quot;);
+
+// ページ使用時に実行される
+StageEvents.OnUseCard += _ =&gt; Hermes.Say($&quot;card used&quot;);
+
+// 接待のCleanup処理の直後に実行される
+StageEvents.OnCleanup += () =&gt; Hermes.Say($&quot;end cleanup&quot;);
 </code></pre>
 
 </article>
