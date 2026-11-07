@@ -44,6 +44,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
             UnitUIExtension.Init();
             ChainBattle.Init();
             UnitHistoryExtension.Init();
+            StageEvents.Init();
 
             AdvancedPatch.Init();
 
