@@ -15,6 +15,7 @@ public static class StageEvents
         harmony.CreateClassProcessor(typeof(PatchOnStartBattle)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnRoundEnd)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnUseCard)).Patch();
+        harmony.CreateClassProcessor(typeof(PatchBeforeRollDice)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnClearResource)).Patch();
     }
 
@@ -47,6 +48,9 @@ public static class StageEvents
 
     /// <summary>An event on use card</summary>
     public static event Action<BattlePlayingCardDataInUnitModel> OnUseCard = _ => { };
+
+    /// <summary>An event on before roll dice</summary>
+    public static event Action<BattleDiceBehavior> BeforeRollDice = _ => { };
 
     /// <summary>An event on cleanup</summary>
     public static event Action OnCleanup = () => { };
@@ -185,6 +189,17 @@ public static class StageEvents
         static Exception Finalizer(Exception __exception, BattlePlayingCardDataInUnitModel __instance)
         {
             OnUseCard.Invoke(__instance);
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceBehavior), "BeforeRollDice")]
+    class PatchBeforeRollDice
+    {
+        static Exception Finalizer(Exception __exception, BattleDiceBehavior __instance)
+        {
+            BeforeRollDice.Invoke(__instance);
 
             return __exception;
         }

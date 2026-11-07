@@ -6692,6 +6692,12 @@ references:
   commentId: T:DeviceOfHermes.StageEvents
   fullName: DeviceOfHermes.StageEvents
   nameWithType: StageEvents
+- uid: DeviceOfHermes.StageEvents.BeforeRollDice
+  name: BeforeRollDice
+  href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_BeforeRollDice
+  commentId: E:DeviceOfHermes.StageEvents.BeforeRollDice
+  fullName: DeviceOfHermes.StageEvents.BeforeRollDice
+  nameWithType: StageEvents.BeforeRollDice
 - uid: DeviceOfHermes.StageEvents.BeforeRoundEnd
   name: BeforeRoundEnd
   href: api/DeviceOfHermes.StageEvents.html#DeviceOfHermes_StageEvents_BeforeRoundEnd
@@ -8051,6 +8057,122 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UI.StoryLineMaker.RegisterSpecialIcon
   nameWithType: StoryLineMaker.RegisterSpecialIcon
+- uid: DeviceOfHermes.Unifield
+  name: Unifield
+  href: api/DeviceOfHermes.Unifield.html
+  commentId: T:DeviceOfHermes.Unifield
+  fullName: DeviceOfHermes.Unifield
+  nameWithType: Unifield
+- uid: DeviceOfHermes.Unifield.ActivateField*
+  name: ActivateField
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_ActivateField_
+  commentId: Overload:DeviceOfHermes.Unifield.ActivateField
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.ActivateField
+  nameWithType: Unifield.ActivateField
+- uid: DeviceOfHermes.Unifield.ActivateField``1(``0)
+  name: ActivateField<T>(T)
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_ActivateField__1___0_
+  commentId: M:DeviceOfHermes.Unifield.ActivateField``1(``0)
+  name.vb: ActivateField(Of T)(T)
+  fullName: DeviceOfHermes.Unifield.ActivateField<T>(T)
+  fullName.vb: DeviceOfHermes.Unifield.ActivateField(Of T)(T)
+  nameWithType: Unifield.ActivateField<T>(T)
+  nameWithType.vb: Unifield.ActivateField(Of T)(T)
+- uid: DeviceOfHermes.Unifield.Cleanup
+  name: Cleanup()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_Cleanup
+  commentId: M:DeviceOfHermes.Unifield.Cleanup
+  fullName: DeviceOfHermes.Unifield.Cleanup()
+  nameWithType: Unifield.Cleanup()
+- uid: DeviceOfHermes.Unifield.Cleanup*
+  name: Cleanup
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_Cleanup_
+  commentId: Overload:DeviceOfHermes.Unifield.Cleanup
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.Cleanup
+  nameWithType: Unifield.Cleanup
+- uid: DeviceOfHermes.Unifield.DeactivateField*
+  name: DeactivateField
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_DeactivateField_
+  commentId: Overload:DeviceOfHermes.Unifield.DeactivateField
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.DeactivateField
+  nameWithType: Unifield.DeactivateField
+- uid: DeviceOfHermes.Unifield.DeactivateField``1
+  name: DeactivateField<T>()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_DeactivateField__1
+  commentId: M:DeviceOfHermes.Unifield.DeactivateField``1
+  name.vb: DeactivateField(Of T)()
+  fullName: DeviceOfHermes.Unifield.DeactivateField<T>()
+  fullName.vb: DeviceOfHermes.Unifield.DeactivateField(Of T)()
+  nameWithType: Unifield.DeactivateField<T>()
+  nameWithType.vb: Unifield.DeactivateField(Of T)()
+- uid: DeviceOfHermes.Unifield.OnActivate
+  name: OnActivate()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnActivate
+  commentId: M:DeviceOfHermes.Unifield.OnActivate
+  fullName: DeviceOfHermes.Unifield.OnActivate()
+  nameWithType: Unifield.OnActivate()
+- uid: DeviceOfHermes.Unifield.OnActivate*
+  name: OnActivate
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnActivate_
+  commentId: Overload:DeviceOfHermes.Unifield.OnActivate
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.OnActivate
+  nameWithType: Unifield.OnActivate
+- uid: DeviceOfHermes.Unifield.OnEnable
+  name: OnEnable()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnEnable
+  commentId: M:DeviceOfHermes.Unifield.OnEnable
+  fullName: DeviceOfHermes.Unifield.OnEnable()
+  nameWithType: Unifield.OnEnable()
+- uid: DeviceOfHermes.Unifield.OnEnable*
+  name: OnEnable
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnEnable_
+  commentId: Overload:DeviceOfHermes.Unifield.OnEnable
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.OnEnable
+  nameWithType: Unifield.OnEnable
+- uid: DeviceOfHermes.Unifield.OnRoundEnd
+  name: OnRoundEnd()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnRoundEnd
+  commentId: M:DeviceOfHermes.Unifield.OnRoundEnd
+  fullName: DeviceOfHermes.Unifield.OnRoundEnd()
+  nameWithType: Unifield.OnRoundEnd()
+- uid: DeviceOfHermes.Unifield.OnRoundEnd*
+  name: OnRoundEnd
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnRoundEnd_
+  commentId: Overload:DeviceOfHermes.Unifield.OnRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.OnRoundEnd
+  nameWithType: Unifield.OnRoundEnd
+- uid: DeviceOfHermes.Unifield.OnRoundStart
+  name: OnRoundStart()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnRoundStart
+  commentId: M:DeviceOfHermes.Unifield.OnRoundStart
+  fullName: DeviceOfHermes.Unifield.OnRoundStart()
+  nameWithType: Unifield.OnRoundStart()
+- uid: DeviceOfHermes.Unifield.OnRoundStart*
+  name: OnRoundStart
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnRoundStart_
+  commentId: Overload:DeviceOfHermes.Unifield.OnRoundStart
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.OnRoundStart
+  nameWithType: Unifield.OnRoundStart
+- uid: DeviceOfHermes.Unifield.OnUseCard(BattlePlayingCardDataInUnitModel)
+  name: OnUseCard(BattlePlayingCardDataInUnitModel)
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnUseCard_BattlePlayingCardDataInUnitModel_
+  commentId: M:DeviceOfHermes.Unifield.OnUseCard(BattlePlayingCardDataInUnitModel)
+  fullName: DeviceOfHermes.Unifield.OnUseCard(BattlePlayingCardDataInUnitModel)
+  nameWithType: Unifield.OnUseCard(BattlePlayingCardDataInUnitModel)
+- uid: DeviceOfHermes.Unifield.OnUseCard*
+  name: OnUseCard
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_OnUseCard_
+  commentId: Overload:DeviceOfHermes.Unifield.OnUseCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.OnUseCard
+  nameWithType: Unifield.OnUseCard
 - uid: DeviceOfHermes.UnitHistoryExtension
   name: UnitHistoryExtension
   href: api/DeviceOfHermes.UnitHistoryExtension.html
