@@ -1297,6 +1297,12 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetSpeedDiceMinAdder
   nameWithType: AdvancedUnitBuf.GetSpeedDiceMinAdder
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init
+  name: Init()
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_Init
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init()
+  nameWithType: AdvancedUnitBuf.Init()
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.Init(BattleUnitModel)
   name: Init(BattleUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_Init_BattleUnitModel_
@@ -8079,6 +8085,45 @@ references:
   fullName.vb: DeviceOfHermes.Unifield.ActivateField(Of T)(T)
   nameWithType: Unifield.ActivateField<T>(T)
   nameWithType.vb: Unifield.ActivateField(Of T)(T)
+- uid: DeviceOfHermes.Unifield.BeforeRollDice(BattleDiceBehavior)
+  name: BeforeRollDice(BattleDiceBehavior)
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_BeforeRollDice_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.Unifield.BeforeRollDice(BattleDiceBehavior)
+  fullName: DeviceOfHermes.Unifield.BeforeRollDice(BattleDiceBehavior)
+  nameWithType: Unifield.BeforeRollDice(BattleDiceBehavior)
+- uid: DeviceOfHermes.Unifield.BeforeRollDice*
+  name: BeforeRollDice
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_BeforeRollDice_
+  commentId: Overload:DeviceOfHermes.Unifield.BeforeRollDice
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.BeforeRollDice
+  nameWithType: Unifield.BeforeRollDice
+- uid: DeviceOfHermes.Unifield.BeforeRoundEnd
+  name: BeforeRoundEnd()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_BeforeRoundEnd
+  commentId: M:DeviceOfHermes.Unifield.BeforeRoundEnd
+  fullName: DeviceOfHermes.Unifield.BeforeRoundEnd()
+  nameWithType: Unifield.BeforeRoundEnd()
+- uid: DeviceOfHermes.Unifield.BeforeRoundEnd*
+  name: BeforeRoundEnd
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_BeforeRoundEnd_
+  commentId: Overload:DeviceOfHermes.Unifield.BeforeRoundEnd
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.BeforeRoundEnd
+  nameWithType: Unifield.BeforeRoundEnd
+- uid: DeviceOfHermes.Unifield.BeforeRoundStart
+  name: BeforeRoundStart()
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_BeforeRoundStart
+  commentId: M:DeviceOfHermes.Unifield.BeforeRoundStart
+  fullName: DeviceOfHermes.Unifield.BeforeRoundStart()
+  nameWithType: Unifield.BeforeRoundStart()
+- uid: DeviceOfHermes.Unifield.BeforeRoundStart*
+  name: BeforeRoundStart
+  href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_BeforeRoundStart_
+  commentId: Overload:DeviceOfHermes.Unifield.BeforeRoundStart
+  isSpec: "True"
+  fullName: DeviceOfHermes.Unifield.BeforeRoundStart
+  nameWithType: Unifield.BeforeRoundStart
 - uid: DeviceOfHermes.Unifield.Cleanup
   name: Cleanup()
   href: api/DeviceOfHermes.Unifield.html#DeviceOfHermes_Unifield_Cleanup
@@ -9948,12 +9993,12 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.DefaultStack
   nameWithType: BattleUnitBuf_Limbuf_Panic.DefaultStack
-- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
-  name: Init(BattleUnitModel)
-  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_Init_BattleUnitModel_
-  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
-  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
-  nameWithType: BattleUnitBuf_Limbuf_Panic.Init(BattleUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init
+  name: Init()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_Init
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init()
+  nameWithType: BattleUnitBuf_Limbuf_Panic.Init()
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.Init*
   name: Init
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Panic.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Panic_Init_
@@ -10322,12 +10367,12 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget
   nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget
-- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
-  name: Init(BattleUnitModel)
-  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_Init_BattleUnitModel_
-  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
-  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
-  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.Init(BattleUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init
+  name: Init()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_Init
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init()
+  nameWithType: BattleUnitBuf_Limbuf_PrescriptTarget.Init()
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.Init*
   name: Init
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_PrescriptTarget.html#LimbufOfHermes_BattleUnitBuf_Limbuf_PrescriptTarget_Init_
@@ -10641,12 +10686,12 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.DefaultStack
   nameWithType: BattleUnitBuf_Limbuf_Shin.DefaultStack
-- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
-  name: Init(BattleUnitModel)
-  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_Init_BattleUnitModel_
-  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
-  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
-  nameWithType: BattleUnitBuf_Limbuf_Shin.Init(BattleUnitModel)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init
+  name: Init()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_Init
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init()
+  nameWithType: BattleUnitBuf_Limbuf_Shin.Init()
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.Init*
   name: Init
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Shin.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Shin_Init_
