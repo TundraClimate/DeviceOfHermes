@@ -32,9 +32,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnBattleLast));
         Patch(typeof(PatchOnRoundStartLast));
         Patch(typeof(PatchCanDiscard));
-        Patch(typeof(OriginalAdvInit));
-        Patch(typeof(PatchAddBufInitializer));
-        Patch(typeof(PatchAddBufWdInitializer));
+        Patch(typeof(PatchAddBuf));
         Patch(typeof(PatchUnusedRemove));
         Patch(typeof(PatchOnDrawCardPhase));
         Patch(typeof(PatchOnSetBuf));
@@ -648,17 +646,17 @@ internal static class AdvancedPatch
         }
     }
 
-    [HarmonyPatch(typeof(AdvancedUnitBuf), "Init")]
-    static class OriginalAdvInit
+    [HarmonyPatch]
+    class PatchAddBuf
     {
-        [HarmonyReversePatch]
-        internal static void Init(AdvancedUnitBuf instance, BattleUnitModel owner) =>
-            throw new NotImplementedException();
-    }
+        static IEnumerable<MethodBase> TargetMethods()
+        {
+            yield return typeof(BattleUnitBufListDetail).Method("AddBuf");
+            yield return typeof(BattleUnitBufListDetail).Method("AddBufWithoutDuplication");
+            yield return typeof(BattleUnitBufListDetail).Method("AddReadyBuf");
+            yield return typeof(BattleUnitBufListDetail).Method("AddReadyReadyBuf");
+        }
 
-    [HarmonyPatch(typeof(BattleUnitBufListDetail), "AddBuf")]
-    static class PatchAddBufInitializer
-    {
         static bool Prefix(BattleUnitBufListDetail __instance, BattleUnitBuf buf, BattleUnitModel ____self)
         {
             if (!__instance.CanAddBuf(buf))
@@ -669,6 +667,7 @@ internal static class AdvancedPatch
             if (buf is AdvancedUnitBuf adv && adv.IsInstant)
             {
                 adv.Init(____self);
+                adv.Init();
                 adv.OnInstant();
 
                 foreach (var unit in BattleObjectManager.instance.GetAliveList())
@@ -692,64 +691,14 @@ internal static class AdvancedPatch
             return true;
         }
 
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        static Exception Finalizer(Exception __exception, BattleUnitBuf buf)
         {
-            var inject = AccessTools.Method(typeof(PatchAddBufInitializer), "Init");
-            var target = AccessTools.Method(typeof(BattleUnitBuf), "Init");
-
-            var _self = AccessTools.Field(typeof(BattleUnitBufListDetail), "_self");
-
-            var matcher = new CodeMatcher(instructions);
-
-            matcher.MatchStartForward(CodeMatch.Calls(target))
-                .Insert(
-                    new CodeInstruction(OpCodes.Ldarg_1),
-                    new CodeInstruction(OpCodes.Ldarg_0),
-                    new CodeInstruction(OpCodes.Ldfld, _self),
-                    new CodeInstruction(OpCodes.Call, inject)
-                );
-
-            return matcher.Instructions();
-        }
-
-        static void Init(BattleUnitBuf instance, BattleUnitModel owner)
-        {
-            if (instance is AdvancedUnitBuf advInstance)
+            if (buf is AdvancedUnitBuf adv)
             {
-                OriginalAdvInit.Init(advInstance, owner);
+                adv.Init();
             }
-        }
-    }
 
-    [HarmonyPatch(typeof(BattleUnitBufListDetail), "AddBufWithoutDuplication")]
-    static class PatchAddBufWdInitializer
-    {
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
-        {
-            var inject = AccessTools.Method(typeof(PatchAddBufWdInitializer), "Init");
-            var target = AccessTools.Method(typeof(BattleUnitBuf), "Init");
-
-            var _self = AccessTools.Field(typeof(BattleUnitBufListDetail), "_self");
-
-            var matcher = new CodeMatcher(instructions);
-
-            matcher.MatchStartForward(CodeMatch.Calls(target))
-                .Insert(
-                    new CodeInstruction(OpCodes.Ldarg_1),
-                    new CodeInstruction(OpCodes.Ldarg_0),
-                    new CodeInstruction(OpCodes.Ldfld, _self),
-                    new CodeInstruction(OpCodes.Call, inject)
-                );
-
-            return matcher.Instructions();
-        }
-
-        static void Init(BattleUnitBuf instance, BattleUnitModel owner)
-        {
-            if (instance is AdvancedUnitBuf advInstance)
-            {
-                OriginalAdvInit.Init(advInstance, owner);
-            }
+            return __exception;
         }
     }
 
@@ -1343,7 +1292,7 @@ internal static class AdvancedPatch
         {
             if (target is AdvancedUnitBuf adv)
             {
-                OriginalAdvInit.Init(adv, self);
+                adv.Init();
             }
         }
     }

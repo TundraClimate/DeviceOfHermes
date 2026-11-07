@@ -13,23 +13,23 @@ public class BattleUnitBuf_Limbuf_PrescriptTarget : LimbufBase
     public override KeywordBuf bufType => LimKeywordBuf.PrescriptTarget;
 
     /// <summary>Impl Init</summary>
-    public override void Init(BattleUnitModel owner)
+    public override void Init()
     {
         if (effect is not null)
         {
             return;
         }
 
-        if (owner.faction.AliveUnits.Exists(unit => unit.bufListDetail.HasBuf<BattleUnitBuf_Limbuf_PrescriptTarget>() && unit != owner))
+        if (base._owner.faction.AliveUnits.Exists(unit => unit.bufListDetail.HasBuf<BattleUnitBuf_Limbuf_PrescriptTarget>() && unit != base._owner))
         {
             Destroy();
         }
         else
         {
-            effect = UnityObject.Instantiate(bundle.LoadAsset<GameObject>("IndexMark"), owner.view.characterRotationCenter)
+            effect = UnityObject.Instantiate(bundle.LoadAsset<GameObject>("IndexMark"), base._owner.view.characterRotationCenter)
                 .Also(aura => aura.AddComponent<EffectManage>().Also(em =>
                 {
-                    em.layerUpdate = () => LayerMask.NameToLayer(owner.view.charAppearance.GetLayerName());
+                    em.layerUpdate = () => LayerMask.NameToLayer(base._owner.view.charAppearance.GetLayerName());
                     em.isDestroySelf = () => this.IsDestroyed() || this.Hide || !this.Owner.bufListDetail.GetActivatedBufList().Contains(this);
                 }));
         }

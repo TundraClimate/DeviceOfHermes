@@ -16,7 +16,7 @@ public class BattleUnitBuf_Limbuf_Shin : LimbufBase
     public override int DefaultStack => 0;
 
     /// <summary>Impl Init</summary>
-    public override void Init(BattleUnitModel owner)
+    public override void Init()
     {
         if (aura is not null)
         {

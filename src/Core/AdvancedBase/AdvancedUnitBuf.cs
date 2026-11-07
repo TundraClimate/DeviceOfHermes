@@ -21,16 +21,24 @@ public class AdvancedUnitBuf : BattleUnitBuf
     /// AdvancedUnitBuf is implemented force initializer.<br/>
     /// Dont calls <c>base.Init(onwer)</c>.
     /// </remarks>
-    public override void Init(BattleUnitModel owner)
+    public sealed override void Init(BattleUnitModel owner)
     {
         base.Init(owner);
 
-        this.stack = this.DefaultStack;
+        if (DefaultStack > -1)
+        {
+            this.stack = this.DefaultStack;
+        }
+    }
+
+    /// <summary>A new initializer</summary>
+    public virtual void Init()
+    {
     }
 
     /// <summary>The stack of Unitbuf on inflicted</summary>
     /// <returns>Returns default stack</returns>
-    public virtual int DefaultStack { get => 0; }
+    public virtual int DefaultStack => -1;
 
     /// <summary>Is Unitbuf is instant</summary>
     /// <returns>Is instant buf if true</returns>
