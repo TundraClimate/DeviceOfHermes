@@ -5,7 +5,7 @@ namespace DeviceOfHermes;
 /// <summary>A set of Stage events</summary>
 public static class StageEvents
 {
-    static StageEvents()
+    internal static void Init()
     {
         var harmony = new Harmony("DeviceOfHermes.StageEvents");
 
