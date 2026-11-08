@@ -24,7 +24,7 @@ public class PersonalLevelUpUI(BattleUnitModel owner) : CustomLevelUpUI
             ((TextMeshProUGUI)typeof(LevelUpUI).Field("txt_SelectDesc").GetValue(ui)).text = name;
         }
 
-        var image = ((Image)typeof(LevelUpUI).Field("FloorIconImage").GetValue(ui));
+        var image = (Image)typeof(LevelUpUI).Field("FloorIconImage").GetValue(ui);
 
         if (icon is not null)
         {
@@ -63,7 +63,7 @@ public class PersonalLevelUpUI(BattleUnitModel owner) : CustomLevelUpUI
 
         if (icon is null)
         {
-            var image = ((Image)typeof(LevelUpUI).Field("FloorIconImage").GetValue(ui));
+            var image = (Image)typeof(LevelUpUI).Field("FloorIconImage").GetValue(ui);
 
             image.transform.localPosition += new Vector3(-40, -40, 0);
             image.transform.localScale += new Vector3(-0.2f, -0.2f, 0f);

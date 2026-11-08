@@ -165,11 +165,8 @@ public class CustomLevelUpUI
         {
             yield return new WaitForSeconds(0.2f);
 
-            if (_currentUI is not null)
-            {
-                _currentUI.Drop(__instance);
-                _currentUI = null;
-            }
+            _currentUI?.Drop(__instance);
+            _currentUI = null;
         }
     }
 

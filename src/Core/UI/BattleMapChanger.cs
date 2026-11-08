@@ -47,7 +47,7 @@ public static class BattleMapChanger
         pref.SetActive(false);
 
         _fixedMap = true;
-        _map = pref.GetComponent<MapManager>()!;
+        _map = pref.GetComponent<MapManager>();
         _mapObject = pref;
         _originalMap = false;
         _bgSprite = bg;

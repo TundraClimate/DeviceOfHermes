@@ -192,13 +192,13 @@ public static class StoryLineMaker
             var dx = posB.Item1 - posA.Item1;
             var dy = posB.Item2 - posA.Item2;
             var rotate = Math.Atan2(dy, dx) * 180f / Math.PI;
-            var scale = (Math.Sqrt(dx * dx + dy * dy) / 200f);
+            var scale = Math.Sqrt(dx * dx + dy * dy) / 200f;
 
             var newLine = UnityEngine.Object.Instantiate(lineBase, lineBase.transform.parent);
 
             newLine.transform.localPosition = new Vector3(x, y);
-            newLine.transform.localRotation = Quaternion.Euler(1f, 1f, ((float)rotate));
-            newLine.transform.localScale = new Vector3(((float)scale), 1f, 1f);
+            newLine.transform.localRotation = Quaternion.Euler(1f, 1f, (float)rotate);
+            newLine.transform.localScale = new Vector3((float)scale, 1f, 1f);
 
             return newLine;
         }
