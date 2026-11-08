@@ -1086,6 +1086,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword
   nameWithType: AdvancedPassiveBase.OnLoseHpByKeyword
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnOtherUseInstantCard(BattleUnitModel,BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name: OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnOtherUseInstantCard_BattleUnitModel_BattleDiceCardModel_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnOtherUseInstantCard(BattleUnitModel,BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name.vb: OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, Integer)
+  nameWithType: AdvancedPassiveBase.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)
+  nameWithType.vb: AdvancedPassiveBase.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnOtherUseInstantCard*
+  name: OnOtherUseInstantCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnOtherUseInstantCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnOtherUseInstantCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnOtherUseInstantCard
+  nameWithType: AdvancedPassiveBase.OnOtherUseInstantCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnPreRoundEnd
   name: OnPreRoundEnd()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnPreRoundEnd
@@ -1141,6 +1157,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnRoundStartLast
   nameWithType: AdvancedPassiveBase.OnRoundStartLast
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnUseInstantCard(BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name: OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnUseInstantCard_BattleDiceCardModel_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnUseInstantCard(BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name.vb: OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, Integer)
+  nameWithType: AdvancedPassiveBase.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)
+  nameWithType.vb: AdvancedPassiveBase.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnUseInstantCard*
+  name: OnUseInstantCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnUseInstantCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnUseInstantCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnUseInstantCard
+  nameWithType: AdvancedPassiveBase.OnUseInstantCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnWaveStartAfter
   name: OnWaveStartAfter()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnWaveStartAfter
@@ -1509,6 +1541,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherInstant
   nameWithType: AdvancedUnitBuf.OnOtherInstant
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard(BattleUnitModel,BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name: OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherUseInstantCard_BattleUnitModel_BattleDiceCardModel_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard(BattleUnitModel,BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name.vb: OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, Integer)
+  nameWithType: AdvancedUnitBuf.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)
+  nameWithType.vb: AdvancedUnitBuf.OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard*
+  name: OnOtherUseInstantCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherUseInstantCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard
+  nameWithType: AdvancedUnitBuf.OnOtherUseInstantCard
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverHp(System.Int32)
   name: OnRecoverHp(int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRecoverHp_System_Int32_
@@ -1625,6 +1673,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnSuccessAreaAttack
   nameWithType: AdvancedUnitBuf.OnSuccessAreaAttack
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard(BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name: OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnUseInstantCard_BattleDiceCardModel_BattleUnitModel_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard(BattleDiceCardModel,BattleUnitModel,System.Int32)
+  name.vb: OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, Integer)
+  nameWithType: AdvancedUnitBuf.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)
+  nameWithType.vb: AdvancedUnitBuf.OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard*
+  name: OnUseInstantCard
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnUseInstantCard_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard
+  nameWithType: AdvancedUnitBuf.OnUseInstantCard
 - uid: DeviceOfHermes.AdvancedBase.AmmoExtension
   name: AmmoExtension
   href: api/DeviceOfHermes.AdvancedBase.AmmoExtension.html
@@ -2542,6 +2606,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.BattleBufExtension.UpdateBufIcons
   nameWithType: BattleBufExtension.UpdateBufIcons
+- uid: DeviceOfHermes.BattleBufExtension.UseCharge(BattleUnitModel,System.Int32,System.Boolean)
+  name: UseCharge(BattleUnitModel, int, bool)
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_UseCharge_BattleUnitModel_System_Int32_System_Boolean_
+  commentId: M:DeviceOfHermes.BattleBufExtension.UseCharge(BattleUnitModel,System.Int32,System.Boolean)
+  name.vb: UseCharge(BattleUnitModel, Integer, Boolean)
+  fullName: DeviceOfHermes.BattleBufExtension.UseCharge(BattleUnitModel, int, bool)
+  fullName.vb: DeviceOfHermes.BattleBufExtension.UseCharge(BattleUnitModel, Integer, Boolean)
+  nameWithType: BattleBufExtension.UseCharge(BattleUnitModel, int, bool)
+  nameWithType.vb: BattleBufExtension.UseCharge(BattleUnitModel, Integer, Boolean)
+- uid: DeviceOfHermes.BattleBufExtension.UseCharge*
+  name: UseCharge
+  href: api/DeviceOfHermes.BattleBufExtension.html#DeviceOfHermes_BattleBufExtension_UseCharge_
+  commentId: Overload:DeviceOfHermes.BattleBufExtension.UseCharge
+  isSpec: "True"
+  fullName: DeviceOfHermes.BattleBufExtension.UseCharge
+  nameWithType: BattleBufExtension.UseCharge
 - uid: DeviceOfHermes.BattleCardExtension
   name: BattleCardExtension
   href: api/DeviceOfHermes.BattleCardExtension.html

@@ -1879,15 +1879,21 @@ internal static class AdvancedPatch
             yield return CodeInstruction.Ldarg(1);
             yield return CodeInstruction.Ldarg(2);
             yield return CodeInstruction.Ldarg(3);
-            yield return CodeInstruction.Call(typeof(PatchOnAddCard).Method("InjectMethod"));
+            yield return CodeInstruction.Call(typeof(PatchOnAddCard).Method("Pref"));
 
-            foreach (var i in instructions)
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdfld(typeof(BattlePlayingCardSlotDetail).Field("_self")), CodeMatch.IsLdarg(1), CodeMatch.Calls(typeof(BattleUnitModel).Method("SpendCardAndCost")))
+                .Advance(1)
+                .Insert(CodeInstruction.Instance, CodeInstruction.Ldfld(typeof(BattlePlayingCardSlotDetail).Field("_self")), CodeInstruction.Ldarg(1), CodeInstruction.Ldarg(2), CodeInstruction.Ldarg(3), CodeInstruction.Call(typeof(PatchOnAddCard).Method("InjectMethod")));
+
+            foreach (var i in matcher.InstructionEnumeration())
             {
                 yield return i;
             }
         }
 
-        static void InjectMethod(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+        static void Pref(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
         {
             if (card?.CreateDiceCardSelfAbilityScript() is not AdvancedCardBase abi)
             {
@@ -1895,6 +1901,23 @@ internal static class AdvancedPatch
             }
 
             abi.OnSelectTarget(card, target, targetSlot);
+        }
+
+        static void InjectMethod(BattleUnitModel self, BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+        {
+            foreach (var unit in self.faction.AliveUnits)
+            {
+                if (unit == self)
+                {
+                    unit.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(p => p.OnUseInstantCard(card, target, targetSlot));
+                    unit.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(b => b.OnUseInstantCard(card, target, targetSlot));
+                }
+                else
+                {
+                    unit.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(p => p.OnOtherUseInstantCard(self, card, target, targetSlot));
+                    unit.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(b => b.OnOtherUseInstantCard(self, card, target, targetSlot));
+                }
+            }
         }
     }
 

@@ -124,6 +124,8 @@ owner.AddReadyBufStack&lt;BattleUnitBuf_MyUnitBuf&gt;(2);
 
 buf.UpdateBufIcon();
 owner.UpdateBufIcons();
+
+owner.UseCharge(5, false);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="getbuft"><code>GetBuf&lt;T&gt;()</code></h3>
@@ -269,6 +271,14 @@ owner.UpdateBufIcons();
 <p>表示されている全てのバフアイコンを更新します。</p>
 <ul>
 <li><code>owner</code>: 更新対象のユニットです。</li>
+</ul>
+<h3 id="usechargeint-bool"><code>UseCharge(int, bool)</code></h3>
+<pre><code class="lang-cs">owner.UseCharge(num, isCard);
+</code></pre>
+<p><code>BattleUnitBuf_warpCharge.UseStack</code>のエイリアスです。</p>
+<ul>
+<li><code>num</code>: 消耗する充電数値です。</li>
+<li><code>isCard</code>: ページによる消耗かどうかです</li>
 </ul>
 
 </article>

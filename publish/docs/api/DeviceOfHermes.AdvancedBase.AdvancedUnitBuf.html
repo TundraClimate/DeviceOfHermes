@@ -522,7 +522,7 @@ Class AdvancedUnitBuf  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_LastInflictBy" data-uid="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.LastInflictBy">
   LastInflictBy
-  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedUnitBuf.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedUnitBuf.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Last unit the inflict this</p>
@@ -1324,6 +1324,44 @@ Dont calls <code>base.Init(onwer)</code>.</p>
 
 
 
+  <a id="DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherUseInstantCard_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnOtherUseInstantCard_BattleUnitModel_BattleDiceCardModel_BattleUnitModel_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnOtherUseInstantCard(BattleUnitModel,BattleDiceCardModel,BattleUnitModel,System.Int32)">
+  OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedUnitBuf.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>On other unit instance card used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnOtherUseInstantCard(BattleUnitModel unit, BattleDiceCardModel card, BattleUnitModel target, int targetSlot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd></dd>
+    <dt><code>card</code> <span class="xref">BattleDiceCardModel</span></dt>
+    <dd></dd>
+    <dt><code>target</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd></dd>
+    <dt><code>targetSlot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRecoverHp_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverHp*"></a>
 
   <h3 id="DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnRecoverHp_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnRecoverHp(System.Int32)">
@@ -1555,6 +1593,42 @@ Dont calls <code>base.Init(onwer)</code>.</p>
     <dt><code>behavior</code> <span class="xref">BattleDiceBehavior</span></dt>
     <dd></dd>
     <dt><code>target</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnUseInstantCard_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard*"></a>
+
+  <h3 id="DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnUseInstantCard_BattleDiceCardModel_BattleUnitModel_System_Int32_" data-uid="DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnUseInstantCard(BattleDiceCardModel,BattleUnitModel,System.Int32)">
+  OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TundraClimate/DeviceOfHermes/blob/master/src/Core/AdvancedBase/AdvancedUnitBuf.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>On unit instance card used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUseInstantCard(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>card</code> <span class="xref">BattleDiceCardModel</span></dt>
+    <dd></dd>
+    <dt><code>target</code> <span class="xref">BattleUnitModel</span></dt>
+    <dd></dd>
+    <dt><code>targetSlot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 

@@ -203,6 +203,16 @@ public class AdvancedPassiveBase : PassiveAbilityBase
         return false;
     }
 
+    /// <summary>On unit instance card used</summary>
+    public virtual void OnUseInstantCard(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+    {
+    }
+
+    /// <summary>On other unit instance card used</summary>
+    public virtual void OnOtherUseInstantCard(BattleUnitModel unit, BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+    {
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

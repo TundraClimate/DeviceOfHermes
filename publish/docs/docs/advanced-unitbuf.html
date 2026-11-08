@@ -209,6 +209,14 @@
         return false;
     }
 
+    public override void OnUseInstantCard(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+    {
+    }
+
+    public override void OnOtherUseInstantCard(BattleUnitModel unit, BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+    {
+    }
+
     public BattleUnitModel LastInflictBy;
 }
 </code></pre>
@@ -467,6 +475,29 @@ currentDiceActionはnullです。</p>
 <p>ページが弾丸の効果を得るかどうかです。</p>
 <ul>
 <li><code>card</code>: 対象のページです。</li>
+</ul>
+<h3 id="onuseinstantcardbattledicecardmodel-battleunitmodel-int"><code>OnUseInstantCard(BattleDiceCardModel, BattleUnitModel, int)</code></h3>
+<pre><code class="lang-cs">public override void OnUseInstantCard(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+{
+}
+</code></pre>
+<p>自身が装着ページを装着したときに実行されます。</p>
+<ul>
+<li><code>card</code>: 装着したページです。</li>
+<li><code>target</code>: 装着時のターゲットです。</li>
+<li><code>targetSlot</code>: 装着時のターゲットのスロットです。</li>
+</ul>
+<h3 id="onotheruseinstantcardbattleunitmodel-battledicecardmodel-battleunitmodel-int"><code>OnOtherUseInstantCard(BattleUnitModel, BattleDiceCardModel, BattleUnitModel, int)</code></h3>
+<pre><code class="lang-cs">public override void OnOtherUseInstantCard(BattleUnitModel unit, BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
+{
+}
+</code></pre>
+<p>味方が装着ページを装着したときに実行されます。</p>
+<ul>
+<li><code>unit</code>: 装着したユニットです。</li>
+<li><code>card</code>: 装着したページです。</li>
+<li><code>target</code>: 装着時のターゲットです。</li>
+<li><code>targetSlot</code>: 装着時のターゲットのスロットです。</li>
 </ul>
 
 </article>
