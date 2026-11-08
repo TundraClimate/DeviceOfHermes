@@ -122,16 +122,15 @@ public class CustomLevelUpUI
         {
             var matcher = new CodeMatcher(instructions);
 
-            var label = matcher.MatchStartForward(
-                CodeMatch.Calls(typeof(BattleSoundManager).Method("get_Instance")),
-                CodeMatch.IsOpCode(OpCodes.Ldc_R4),
-                CodeMatch.Calls(typeof(BattleSoundManager).Method("SetBgmVolumeRatio"))
-            )
-                .Instruction
-                .labels[0];
+            Label? label = null;
 
-            matcher.Start()
-                .MatchEndForward(CodeMatch.IsLdarg(1), CodeMatch.Calls(typeof(EmotionPassiveCardUI).Method("get_Card")), CodeMatch.IsStloc())
+            matcher.MatchEndForward(
+                CodeMatch.IsLdarg(1),
+                CodeMatch.Calls(typeof(EmotionPassiveCardUI).Method("get_Card")),
+                new CodeMatch(i => i.Branches(out label))
+            );
+
+            matcher.MatchEndForward(CodeMatch.IsLdarg(1), CodeMatch.Calls(typeof(EmotionPassiveCardUI).Method("get_Card")), CodeMatch.IsStloc())
                 .Advance(1)
                 .Insert(
                     CodeInstruction.Instance,
