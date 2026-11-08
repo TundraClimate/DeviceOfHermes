@@ -198,6 +198,11 @@ public class AdvancedUnitBuf : BattleUnitBuf
     {
     }
 
+    /// <summary>On unit flips emotion coin</summary>
+    public virtual void OnFlipEmotionCoin(EmotionCoinType coinType, int num)
+    {
+    }
+
     /// <summary>The clicktype for OnClick</summary>
     public enum ClickType
     {

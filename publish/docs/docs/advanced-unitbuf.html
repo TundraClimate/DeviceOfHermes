@@ -217,6 +217,10 @@
     {
     }
 
+    public override void OnFlipEmotionCoin(EmotionCoinType coinType, int num)
+    {
+    }
+
     public BattleUnitModel LastInflictBy;
 }
 </code></pre>
@@ -498,6 +502,16 @@ currentDiceActionはnullです。</p>
 <li><code>card</code>: 装着したページです。</li>
 <li><code>target</code>: 装着時のターゲットです。</li>
 <li><code>targetSlot</code>: 装着時のターゲットのスロットです。</li>
+</ul>
+<h3 id="onflipemotioncoinemotioncointype-int"><code>OnFlipEmotionCoin(EmotionCoinType, int)</code></h3>
+<pre><code class="lang-cs">public override void OnFlipEmotionCoin(EmotionCoinType coinType, int num)
+{
+}
+</code></pre>
+<p>感情コインの獲得条件を満たしたときに実行されます。</p>
+<ul>
+<li><code>coinType</code>: 対象のコインの種類です。</li>
+<li><code>num</code>: 獲得した枚数です。</li>
 </ul>
 
 </article>

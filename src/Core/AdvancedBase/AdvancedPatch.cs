@@ -71,6 +71,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnAddCard));
         Patch(typeof(PatchOnDestroyCard));
         Patch(typeof(PatchOnStartBattlePhase));
+        Patch(typeof(PatchOnCreateEmotionCoin));
     }
 
     private static void Patch(Type type)
@@ -1953,6 +1954,26 @@ internal static class AdvancedPatch
             allCards.AddRange(s);
 
             return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleUnitEmotionDetail), "CreateEmotionCoin")]
+    class PatchOnCreateEmotionCoin
+    {
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var matcher = new CodeMatcher(instructions);
+
+            matcher.MatchStartForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdfld(typeof(BattleUnitEmotionDetail).Field("_emotionLevel")), CodeMatch.IsLdarg(0), CodeMatch.Calls(typeof(BattleUnitEmotionDetail).Method("get_MaximumEmotionLevel")))
+                .Insert(CodeInstruction.Instance.MoveLabelsFrom(matcher.Instruction), CodeInstruction.Ldfld(typeof(BattleUnitEmotionDetail).Field("_self")), CodeInstruction.Ldarg(1), CodeInstruction.Ldarg(2), CodeInstruction.Call(typeof(PatchOnCreateEmotionCoin).Method("InjectMethod")));
+
+            return matcher.Instructions();
+        }
+
+        static void InjectMethod(BattleUnitModel self, EmotionCoinType coinType, int num)
+        {
+            self.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnFlipEmotionCoin(coinType, num));
+            self.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnFlipEmotionCoin(coinType, num));
         }
     }
 

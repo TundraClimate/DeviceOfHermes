@@ -213,6 +213,11 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>On unit flips emotion coin</summary>
+    public virtual void OnFlipEmotionCoin(EmotionCoinType coinType, int num)
+    {
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

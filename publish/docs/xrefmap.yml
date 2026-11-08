@@ -1070,6 +1070,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnExtinct
   nameWithType: AdvancedPassiveBase.OnExtinct
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnFlipEmotionCoin(EmotionCoinType,System.Int32)
+  name: OnFlipEmotionCoin(EmotionCoinType, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnFlipEmotionCoin_EmotionCoinType_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnFlipEmotionCoin(EmotionCoinType,System.Int32)
+  name.vb: OnFlipEmotionCoin(EmotionCoinType, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnFlipEmotionCoin(EmotionCoinType, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnFlipEmotionCoin(EmotionCoinType, Integer)
+  nameWithType: AdvancedPassiveBase.OnFlipEmotionCoin(EmotionCoinType, int)
+  nameWithType.vb: AdvancedPassiveBase.OnFlipEmotionCoin(EmotionCoinType, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnFlipEmotionCoin*
+  name: OnFlipEmotionCoin
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnFlipEmotionCoin_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnFlipEmotionCoin
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnFlipEmotionCoin
+  nameWithType: AdvancedPassiveBase.OnFlipEmotionCoin
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.OnLoseHpByKeyword(System.Int32,KeywordBuf)
   name: OnLoseHpByKeyword(int, KeywordBuf)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_OnLoseHpByKeyword_System_Int32_KeywordBuf_
@@ -1499,6 +1515,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnEndEncounter
   nameWithType: AdvancedUnitBuf.OnEndEncounter
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnFlipEmotionCoin(EmotionCoinType,System.Int32)
+  name: OnFlipEmotionCoin(EmotionCoinType, int)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnFlipEmotionCoin_EmotionCoinType_System_Int32_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnFlipEmotionCoin(EmotionCoinType,System.Int32)
+  name.vb: OnFlipEmotionCoin(EmotionCoinType, Integer)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnFlipEmotionCoin(EmotionCoinType, int)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnFlipEmotionCoin(EmotionCoinType, Integer)
+  nameWithType: AdvancedUnitBuf.OnFlipEmotionCoin(EmotionCoinType, int)
+  nameWithType.vb: AdvancedUnitBuf.OnFlipEmotionCoin(EmotionCoinType, Integer)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnFlipEmotionCoin*
+  name: OnFlipEmotionCoin
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnFlipEmotionCoin_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnFlipEmotionCoin
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnFlipEmotionCoin
+  nameWithType: AdvancedUnitBuf.OnFlipEmotionCoin
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.OnInstant
   name: OnInstant()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_OnInstant
