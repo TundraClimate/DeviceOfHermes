@@ -1,5 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-using LOR_DiceSystem;
 using HarmonyLib;
 
 namespace DeviceOfHermes;
@@ -240,53 +239,6 @@ public static class BattleBufExtension
             .Foreach(buf => buf?.UpdateBufIcon());
     }
 
-    extension(BattleUnitBuf_burn burn)
-    {
-        /// <summary>Activate Burn</summary>
-        public void Activate()
-        {
-            burn.BurnOnRoundEndNoPatch();
-        }
-    }
-
-    extension(BattleUnitBuf_bleeding bleed)
-    {
-        /// <summary>Activate Bleeding</summary>
-        public void Activate()
-        {
-            bleed.BleedingAfterDiceActionNoPatch(_mockDice);
-        }
-    }
-
-    extension(BattleUnitBuf_Decay decay)
-    {
-        /// <summary>Activate Decay</summary>
-        public void Activate()
-        {
-            decay.DecayOnRoundEndNoPatch();
-        }
-    }
-
-    extension(BattleUnitBuf_fairy fairy)
-    {
-        /// <summary>Activate fairy</summary>
-        public void Activate()
-        {
-            fairy.FairyAfterDiceActionNoPatch();
-        }
-    }
-
-    extension(BattleUnitBuf_Alriune_Debuf alriuneDebuf)
-    {
-        /// <summary>Activate fairy</summary>
-        public void Activate()
-        {
-            alriuneDebuf.AlriuneDebufOnRoundEndTheLastNoPatch();
-        }
-    }
-
     private static AccessTools.FieldRef<BattleUnitBuf, bool> _iconInitRef
         = typeof(BattleUnitBuf).FieldRefAccess<bool>("_iconInit");
-
-    private static BattleDiceBehavior _mockDice = new() { behaviourInCard = new() { Detail = BehaviourDetail.Slash } };
 }
