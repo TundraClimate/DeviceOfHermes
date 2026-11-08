@@ -239,6 +239,14 @@ public static class BattleBufExtension
             .Foreach(buf => buf?.UpdateBufIcon());
     }
 
+    /// <summary>Use charge stack</summary>
+    public static bool UseCharge(this BattleUnitModel owner, int num, bool isCard = false)
+    {
+        var charge = owner?.bufListDetail?.GetActivatedBuf(KeywordBuf.WarpCharge) as BattleUnitBuf_warpCharge;
+
+        return charge is not null && charge.UseStack(num, isCard);
+    }
+
     private static AccessTools.FieldRef<BattleUnitBuf, bool> _iconInitRef
         = typeof(BattleUnitBuf).FieldRefAccess<bool>("_iconInit");
 }
