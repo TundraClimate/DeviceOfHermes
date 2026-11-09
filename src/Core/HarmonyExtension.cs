@@ -73,13 +73,85 @@ public static class HarmonyExtension
         public static CodeMatch IsStarg(int? num = null) => new CodeMatch(instruction => instruction.IsStarg(num));
 
         /// <summary>Is Ldloc</summary>
-        public static CodeMatch IsLdloc(int? idx = null) => new CodeMatch(instruction => ldloc.Contains(instruction.opcode) && (idx is null || instruction.operand is LocalVariableInfo i && i.LocalIndex == idx));
+        public static CodeMatch IsLdloc(int? idx = null)
+        {
+            if (idx is null)
+            {
+                return new CodeMatch(instruction => ldloc.Contains(instruction.opcode));
+            }
+
+            return new CodeMatch(instruction =>
+            {
+                if (instruction.opcode == OpCodes.Ldloc_0 && idx == 0)
+                {
+                    return true;
+                }
+
+                if (instruction.opcode == OpCodes.Ldloc_1 && idx == 1)
+                {
+                    return true;
+                }
+
+                if (instruction.opcode == OpCodes.Ldloc_2 && idx == 2)
+                {
+                    return true;
+                }
+
+                if (instruction.opcode == OpCodes.Ldloc_3 && idx == 3)
+                {
+                    return true;
+                }
+
+                if ((instruction.opcode == OpCodes.Ldloc_S || instruction.opcode == OpCodes.Ldloc) && instruction.operand is LocalVariableInfo info && info.LocalIndex == idx)
+                {
+                    return true;
+                }
+
+                return false;
+            });
+        }
 
         /// <summary>Is Ldloca</summary>
         public static CodeMatch IsLdloca(int? idx = null) => new CodeMatch(instruction => ldloca.Contains(instruction.opcode) && (idx is null || instruction.operand is LocalVariableInfo i && i.LocalIndex == idx));
 
         /// <summary>Is Stloc</summary>
-        public static CodeMatch IsStloc(int? idx = null) => new CodeMatch(instruction => stloc.Contains(instruction.opcode) && (idx is null || instruction.operand is LocalVariableInfo i && i.LocalIndex == idx));
+        public static CodeMatch IsStloc(int? idx = null)
+        {
+            if (idx is null)
+            {
+                return new CodeMatch(instruction => stloc.Contains(instruction.opcode));
+            }
+
+            return new CodeMatch(instruction =>
+            {
+                if (instruction.opcode == OpCodes.Stloc_0 && idx == 0)
+                {
+                    return true;
+                }
+
+                if (instruction.opcode == OpCodes.Stloc_1 && idx == 1)
+                {
+                    return true;
+                }
+
+                if (instruction.opcode == OpCodes.Stloc_2 && idx == 2)
+                {
+                    return true;
+                }
+
+                if (instruction.opcode == OpCodes.Stloc_3 && idx == 3)
+                {
+                    return true;
+                }
+
+                if ((instruction.opcode == OpCodes.Stloc_S || instruction.opcode == OpCodes.Stloc) && instruction.operand is LocalVariableInfo info && info.LocalIndex == idx)
+                {
+                    return true;
+                }
+
+                return false;
+            });
+        }
 
         /// <summary>Is Ldfld</summary>
         public static CodeMatch IsLdfld(FieldInfo? info = null) => new CodeMatch(i => info is null ? ldfld.Contains(i.opcode) : i.LoadsField(info));
