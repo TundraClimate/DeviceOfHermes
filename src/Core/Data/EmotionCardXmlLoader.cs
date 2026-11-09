@@ -33,6 +33,8 @@ internal static class EmotionCardXmlLoader
             foreach (var info in root.emotionCardXmlList)
             {
                 EmotionCard.Add(pid, info);
+
+                Hermes.Say($"EmotionCardXml Load('{pid}'): {info.Name}");
             }
         }
     }

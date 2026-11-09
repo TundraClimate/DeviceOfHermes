@@ -33,6 +33,8 @@ internal static class FormationXmlLoader
             foreach (var info in root.list)
             {
                 Formation.Add(pid, info);
+
+                Hermes.Say($"FormationXml Load('{pid}'): {info.id}");
             }
         }
     }

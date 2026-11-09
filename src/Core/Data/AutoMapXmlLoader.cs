@@ -86,6 +86,8 @@ internal static class AutoMapXmlLoader
                 }
 
                 AutoMapSetter.SetMapFactory(info.key, f => f.CreateNewMap(bg, floor, bgm.ToArray(), dlgColor, info.dialog, opt));
+
+                Hermes.Say($"AutoMapXml Load('{pid}'): {info.key}");
             }
         }
     }

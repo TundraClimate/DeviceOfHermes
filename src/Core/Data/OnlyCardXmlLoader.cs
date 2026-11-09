@@ -35,6 +35,8 @@ internal static class OnlyCardXmlLoader
                 var ao = new AdditonalOnlyCard(info.Target(pid));
 
                 ao.AddCards(info.Cards(pid).ToArray());
+
+                Hermes.Say($"OnlyCardXml Load('{pid}'): {info.id} <={info.cards.Map(xml => xml.xmlId).Fold("", (txt, id) => txt + " " + id)}");
             }
         }
     }
