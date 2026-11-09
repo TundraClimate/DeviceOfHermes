@@ -34,6 +34,11 @@ public class CustomLevelUpUI
         return true;
     }
 
+    /// <summary>On select character</summary>
+    public virtual void OnCharacterClick(EmotionCardXmlInfo card, BattleUnitModel target)
+    {
+    }
+
     /// <summary>Queue levelui</summary>
     public static void QueueLevelUp(CustomLevelUpUI ui, int level, Func<List<EmotionCardXmlInfo>> candGen)
     {
@@ -51,6 +56,7 @@ public class CustomLevelUpUI
             return;
         }
 
+        _currentUIRef = null;
         _currentUI = ui;
 
         origin.SetRootCanvas(true);
@@ -94,6 +100,8 @@ public class CustomLevelUpUI
     private static Queue<(CustomLevelUpUI, int, Func<List<EmotionCardXmlInfo>>)> _levelUpQueue = new();
 
     private static CustomLevelUpUI? _currentUI;
+
+    private static CustomLevelUpUI? _currentUIRef;
 
     private static EmotionCardXmlInfo? _selectedCard;
 
@@ -146,9 +154,16 @@ public class CustomLevelUpUI
         {
             if (_currentUI is not null)
             {
+                var onSelect = _currentUI.OnSelect(info);
+
                 _selectedCard = info;
 
-                return _currentUI.OnSelect(info);
+                if (onSelect)
+                {
+                    _currentUIRef = _currentUI;
+                }
+
+                return onSelect;
             }
 
             return true;
@@ -175,6 +190,10 @@ public class CustomLevelUpUI
     {
         static bool Prefix(EmotionCardXmlInfo card, BattleUnitModel target)
         {
+            _currentUIRef?.OnCharacterClick(card, target);
+
+            _currentUIRef = null;
+
             if (Equals(card, _selectedCard))
             {
                 if (target is null)

@@ -7922,6 +7922,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UI.CustomLevelUpUI.Init
   nameWithType: CustomLevelUpUI.Init
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.OnCharacterClick(EmotionCardXmlInfo,BattleUnitModel)
+  name: OnCharacterClick(EmotionCardXmlInfo, BattleUnitModel)
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_OnCharacterClick_EmotionCardXmlInfo_BattleUnitModel_
+  commentId: M:DeviceOfHermes.UI.CustomLevelUpUI.OnCharacterClick(EmotionCardXmlInfo,BattleUnitModel)
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.OnCharacterClick(EmotionCardXmlInfo, BattleUnitModel)
+  nameWithType: CustomLevelUpUI.OnCharacterClick(EmotionCardXmlInfo, BattleUnitModel)
+- uid: DeviceOfHermes.UI.CustomLevelUpUI.OnCharacterClick*
+  name: OnCharacterClick
+  href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_OnCharacterClick_
+  commentId: Overload:DeviceOfHermes.UI.CustomLevelUpUI.OnCharacterClick
+  isSpec: "True"
+  fullName: DeviceOfHermes.UI.CustomLevelUpUI.OnCharacterClick
+  nameWithType: CustomLevelUpUI.OnCharacterClick
 - uid: DeviceOfHermes.UI.CustomLevelUpUI.OnSelect(EmotionCardXmlInfo)
   name: OnSelect(EmotionCardXmlInfo)
   href: api/DeviceOfHermes.UI.CustomLevelUpUI.html#DeviceOfHermes_UI_CustomLevelUpUI_OnSelect_EmotionCardXmlInfo_

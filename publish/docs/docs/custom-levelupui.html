@@ -118,6 +118,12 @@ CustomLevelUpUI.OpenLevelUpUI(new CustomLevelUpUI(), 0, () =&gt; [ /* 表示さ�
         // falseを返した場合、ページ選択後のユニット選択フェーズをスキップする
         return true;
     }
+
+    public override void OnCharacterClick(EmotionCardXmlInfo card, BattleUnitModel target)
+    {
+        // ページ選択後、キャラクターを選択したときに実行される
+        // OnSelectでfalseを返したなら一緒にスキップされる
+    }
 }
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
@@ -170,6 +176,17 @@ CustomLevelUpUI.OpenLevelUpUI(new CustomLevelUpUI(), 0, () =&gt; [ /* 表示さ�
 trueを返した場合は既存の処理を使いまわしますが、falseを返した場合はその処理をスキップするため、専用処理を実行することが出来ます。</p>
 <ul>
 <li><code>info</code>: 選択されたページです。</li>
+</ul>
+<h3 id="oncharacterclickemotioncardxmlinfo-battleunitmodel"><code>OnCharacterClick(EmotionCardXmlInfo, BattleUnitModel)</code></h3>
+<pre><code class="lang-cs">public override void OnCharacterClick(EmotionCardXmlInfo card, BattleUnitModel target)
+{
+}
+</code></pre>
+<p>ページ選択後にキャラクターをクリックしたときに実行されます。<br>
+<code>OnSelect</code>にて<code>false</code>を返した場合は一緒にスキップされます。</p>
+<ul>
+<li><code>card</code>: 選択したページです。</li>
+<li><code>target</code>: 選択したキャラクターです。</li>
 </ul>
 
 </article>
