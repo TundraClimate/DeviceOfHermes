@@ -99,9 +99,9 @@ internal static class AutoMapXmlLoader
             return null;
         }
 
-        if (!byte.TryParse(color.Substring(0, 2), NumberStyles.HexNumber, null, out var r)
-            || !byte.TryParse(color.Substring(2, 2), NumberStyles.HexNumber, null, out var g)
-            || !byte.TryParse(color.Substring(4, 2), NumberStyles.HexNumber, null, out var b))
+        if (!byte.TryParse(color[0..2], NumberStyles.HexNumber, null, out var r)
+            || !byte.TryParse(color[2..2], NumberStyles.HexNumber, null, out var g)
+            || !byte.TryParse(color[4..2], NumberStyles.HexNumber, null, out var b))
         {
             return null;
         }

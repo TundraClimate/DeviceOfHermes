@@ -166,11 +166,11 @@ public static class Artwork
 
         if (imgFileName.EndsWith(".png") || imgFileName.EndsWith(".jpg"))
         {
-            imgId = imgFileName.Substring(0, imgFileName.Length - 4);
+            imgId = imgFileName[0..(imgFileName.Length - 4)];
         }
         else if (imgFileName.EndsWith(".jpeg"))
         {
-            imgId = imgFileName.Substring(0, imgFileName.Length - 5);
+            imgId = imgFileName[0..(imgFileName.Length - 5)];
         }
         else
         {
@@ -322,8 +322,8 @@ public static class Artwork
     public static void SetStoryIconSprite(string iconPath, string? iconGlowPath = null, string? type = null, bool replace = false)
     {
         type ??= Path.GetFileName(iconPath)
-            .Let(name => (name.EndsWith(".png") || name.EndsWith(".jpg")) ? name.Substring(0, name.Length - 4) : name)
-            .Let(name => name!.EndsWith(".jpeg") ? name!.Substring(0, name.Length - 5) : name);
+            .Let(name => (name.EndsWith(".png") || name.EndsWith(".jpg")) ? name[0..(name.Length - 4)] : name)
+            .Let(name => name!.EndsWith(".jpeg") ? name![0..(name.Length - 5)] : name);
         iconGlowPath ??= iconPath;
 
         var icon = Artwork.CreateSprite(iconPath);
@@ -378,7 +378,7 @@ public static class Artwork
             }
 
             var ext = Path.GetExtension(path);
-            var glowPath = string.Format("{0}{1}{2}", path.Substring(0, path.Length - ext.Length), glowSuffix, ext);
+            var glowPath = string.Format("{0}{1}{2}", path[0..(path.Length - ext.Length)], glowSuffix, ext);
 
             var icon = Artwork.CreateSprite(path);
             var glow = Artwork.CreateSprite(glowPath);

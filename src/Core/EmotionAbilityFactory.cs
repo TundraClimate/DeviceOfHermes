@@ -35,7 +35,7 @@ internal static class EmotionAbilityFactory
 
             if (type.IsSubclassOf(typeof(EmotionCardAbilityBase)) && name.StartsWith("EmotionCardAbility_"))
             {
-                abilities[name.Substring("EmotionCardAbility_".Length)] = type;
+                abilities[name["EmotionCardAbility_".Length..]] = type;
             }
         }
     }

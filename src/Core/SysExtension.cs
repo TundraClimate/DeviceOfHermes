@@ -26,7 +26,7 @@ public static class Extension
     {
         if (original.StartsWith(strip))
         {
-            return original.Substring(strip.Length);
+            return original[strip.Length..];
         }
 
         return null;
@@ -37,7 +37,7 @@ public static class Extension
     {
         if (original.EndsWith(strip))
         {
-            return original.Substring(0, (original.Length - strip.Length).Max(0));
+            return original[0..(original.Length - strip.Length).Max(0)];
         }
 
         return null;

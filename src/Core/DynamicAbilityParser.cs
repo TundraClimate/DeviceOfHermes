@@ -377,7 +377,7 @@ internal class ParseStream(string script)
 
     public ParseStream Fork()
     {
-        return Fork(_script.Substring(_cursor + 1));
+        return Fork(_script[(_cursor + 1)..]);
     }
 
     public void SetError(string msg)

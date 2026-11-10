@@ -22,7 +22,7 @@ internal class DynamicAbility
                 return __exception;
             }
 
-            if (!(name.Substring(0, 4) is "DOHC" or "dohc" or "Card"))
+            if (!(name[0..4] is "DOHC" or "dohc" or "Card"))
             {
                 return __exception;
             }
@@ -52,7 +52,7 @@ internal class DynamicAbility
                 return __exception;
             }
 
-            if (!(name.Substring(0, 4) is "DOHD" or "dohd" or "Dice"))
+            if (!(name[0..4] is "DOHD" or "dohd" or "Dice"))
             {
                 return __exception;
             }
