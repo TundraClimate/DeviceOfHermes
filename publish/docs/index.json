@@ -122,7 +122,7 @@
   "api/DeviceOfHermes.BattleTickAction.html": {
     "href": "api/DeviceOfHermes.BattleTickAction.html",
     "title": "Class BattleTickAction | DeviceOfHermes",
-    "summary": "Class BattleTickAction Namespace DeviceOfHermes Assembly DeviceOfHermes.dll Manage tick actions in battle public class BattleTickAction Inheritance object BattleTickAction Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Events OnTick An event that invokes every ticks public static event Action OnTick Event Type Action"
+    "summary": "Class BattleTickAction Namespace DeviceOfHermes Assembly DeviceOfHermes.dll Manage tick actions in battle public class BattleTickAction Inheritance object BattleTickAction Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ToString() object.ReferenceEquals(object, object) Extension Methods Extension.Also<T>(T, Action<T>) Extension.Let<T>(T, Action<T>) Extension.Let<T, R>(T, Func<T, R>) Events OnFrame An event that invokes every frames public static event Action OnFrame Event Type Action OnTick An event that invokes every ticks public static event Action OnTick Event Type Action"
   },
   "api/DeviceOfHermes.BattleUIBehaviour.html": {
     "href": "api/DeviceOfHermes.BattleUIBehaviour.html",
@@ -1262,7 +1262,7 @@
   "docs/battle-tickaction.html": {
     "href": "docs/battle-tickaction.html",
     "title": "using DeviceOfHermes; | DeviceOfHermes",
-    "summary": "using DeviceOfHermes; 名前空間DeviceOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 BattleTickAction 毎Tick実行される処理を管理します。 処理速度により変動しますが、毎秒数十回は呼び出されることになるため気をつけるべきでしょう。 例: BattleTickAction.OnTick += () => { Hermes.Say(\"BOO!\") }; Specified usage OnTick BattleTickAction.OnTick += () => { }; 毎Tickの処理を追加します。"
+    "summary": "using DeviceOfHermes; 名前空間DeviceOfHermesに存在するクラスです。 この記事はこれを前提に書かれています。 BattleTickAction 毎Tick実行される処理を管理します。 処理速度により変動しますが、毎秒数十回は呼び出されることになるため気をつけるべきでしょう。 例: BattleTickAction.OnTick += () => { Hermes.Say(\"BOO!\") }; BattleTickAction.OnFrame += () => { Hermes.Say(\"BOOM!\") }; Specified usage OnTick BattleTickAction.OnTick += () => { }; 毎Tickの処理を追加します。 OnFrame BattleTickAction.OnFrame += () => { }; 毎フレーム実行される処理です。"
   },
   "docs/battlebuf-extension.html": {
     "href": "docs/battlebuf-extension.html",

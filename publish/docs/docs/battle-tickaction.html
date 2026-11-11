@@ -94,12 +94,18 @@
 処理速度により変動しますが、毎秒数十回は呼び出されることになるため気をつけるべきでしょう。</p>
 <p>例:</p>
 <pre><code class="lang-cs">BattleTickAction.OnTick += () =&gt; { Hermes.Say(&quot;BOO!&quot;) };
+
+BattleTickAction.OnFrame += () =&gt; { Hermes.Say(&quot;BOOM!&quot;) };
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="ontick"><code>OnTick</code></h3>
 <pre><code class="lang-cs">BattleTickAction.OnTick += () =&gt; { };
 </code></pre>
 <p>毎Tickの処理を追加します。</p>
+<h3 id="onframe"><code>OnFrame</code></h3>
+<pre><code class="lang-cs">BattleTickAction.OnFrame += () =&gt; { };
+</code></pre>
+<p>毎フレーム実行される処理です。</p>
 
 </article>
 

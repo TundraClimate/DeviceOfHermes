@@ -2666,6 +2666,12 @@ references:
   commentId: T:DeviceOfHermes.BattleTickAction
   fullName: DeviceOfHermes.BattleTickAction
   nameWithType: BattleTickAction
+- uid: DeviceOfHermes.BattleTickAction.OnFrame
+  name: OnFrame
+  href: api/DeviceOfHermes.BattleTickAction.html#DeviceOfHermes_BattleTickAction_OnFrame
+  commentId: E:DeviceOfHermes.BattleTickAction.OnFrame
+  fullName: DeviceOfHermes.BattleTickAction.OnFrame
+  nameWithType: BattleTickAction.OnFrame
 - uid: DeviceOfHermes.BattleTickAction.OnTick
   name: OnTick
   href: api/DeviceOfHermes.BattleTickAction.html#DeviceOfHermes_BattleTickAction_OnTick

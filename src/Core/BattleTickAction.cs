@@ -9,6 +9,7 @@ public class BattleTickAction
     {
         var harmony = new Harmony("DeviceOfHermes.TickAction");
 
+        harmony.CreateClassProcessor(typeof(PatchOnFrame)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnTick)).Patch();
         harmony.CreateClassProcessor(typeof(PatchBeforeSetBehaviour)).Patch();
         harmony.CreateClassProcessor(typeof(PatchOnSetBehaviour)).Patch();
@@ -16,6 +17,20 @@ public class BattleTickAction
 
     /// <summary>An event that invokes every ticks</summary>
     public static event Action OnTick = () => { };
+
+    /// <summary>An event that invokes every frames</summary>
+    public static event Action OnFrame = () => { };
+
+    [HarmonyPatch(typeof(StageController), "OnUpdate")]
+    private class PatchOnFrame
+    {
+        static Exception Finalizer(Exception __exception)
+        {
+            OnFrame.Invoke();
+
+            return __exception;
+        }
+    }
 
     [HarmonyPatch(typeof(StageController), "OnFixedUpdate")]
     private class PatchOnTick
@@ -33,6 +48,7 @@ public class BattleTickAction
     {
         static void Prefix()
         {
+            OnFrame.Invoke();
             OnTick.Invoke();
         }
     }
@@ -43,6 +59,7 @@ public class BattleTickAction
         static void Prefix()
         {
             StageController.Instance.dontUseUILog = true;
+            OnFrame.Invoke();
             OnTick.Invoke();
             StageController.Instance.dontUseUILog = false;
         }
