@@ -8354,6 +8354,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UnitUIExtension.GetHoveredCardUI
   nameWithType: UnitUIExtension.GetHoveredCardUI
+- uid: DeviceOfHermes.UnitUIExtension.ReplaceHand(BattleDiceCardUI,BattleDiceCardModel)
+  name: ReplaceHand(BattleDiceCardUI, BattleDiceCardModel)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_ReplaceHand_BattleDiceCardUI_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.UnitUIExtension.ReplaceHand(BattleDiceCardUI,BattleDiceCardModel)
+  fullName: DeviceOfHermes.UnitUIExtension.ReplaceHand(BattleDiceCardUI, BattleDiceCardModel)
+  nameWithType: UnitUIExtension.ReplaceHand(BattleDiceCardUI, BattleDiceCardModel)
+- uid: DeviceOfHermes.UnitUIExtension.ReplaceHand*
+  name: ReplaceHand
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_ReplaceHand_
+  commentId: Overload:DeviceOfHermes.UnitUIExtension.ReplaceHand
+  isSpec: "True"
+  fullName: DeviceOfHermes.UnitUIExtension.ReplaceHand
+  nameWithType: UnitUIExtension.ReplaceHand
+- uid: DeviceOfHermes.UnitUIExtension.ReplaceHoveredHand(BattleUnitModel,BattleDiceCardModel)
+  name: ReplaceHoveredHand(BattleUnitModel, BattleDiceCardModel)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_ReplaceHoveredHand_BattleUnitModel_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.UnitUIExtension.ReplaceHoveredHand(BattleUnitModel,BattleDiceCardModel)
+  fullName: DeviceOfHermes.UnitUIExtension.ReplaceHoveredHand(BattleUnitModel, BattleDiceCardModel)
+  nameWithType: UnitUIExtension.ReplaceHoveredHand(BattleUnitModel, BattleDiceCardModel)
+- uid: DeviceOfHermes.UnitUIExtension.ReplaceHoveredHand*
+  name: ReplaceHoveredHand
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_ReplaceHoveredHand_
+  commentId: Overload:DeviceOfHermes.UnitUIExtension.ReplaceHoveredHand
+  isSpec: "True"
+  fullName: DeviceOfHermes.UnitUIExtension.ReplaceHoveredHand
+  nameWithType: UnitUIExtension.ReplaceHoveredHand
 - uid: DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel,System.String)
   name: Say(BattleUnitModel, string)
   href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_BattleUnitModel_System_String_

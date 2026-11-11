@@ -103,6 +103,10 @@ owner.GetClickedSpeedDice();
 owner.GetHoveredCardUI();
 
 owner.CreateEffectText(&quot;沈潜殺到&quot;, SinkingDeluge);
+
+diceCardUI.ReplaceHand(card);
+
+owner.ReplaceHoveredHand(card);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
 <h3 id="saystring"><code>Say(string)</code></h3>
@@ -156,6 +160,22 @@ owner.CreateEffectText(&quot;沈潜殺到&quot;, SinkingDeluge);
 <li><code>sprite</code>: テキスト左に表示する画像です。</li>
 <li><code>textColor</code>: テキストの色です。</li>
 <li><code>spriteColor</code>: 画像の色です。</li>
+</ul>
+<h3 id="replacehandbattledicecardmodel"><code>ReplaceHand(BattleDiceCardModel)</code></h3>
+<pre><code class="lang-cs">diceCardUI.ReplaceHand(card);
+</code></pre>
+<p>ページUIの表示ごとユニットの手札を書き換えます。<br>
+ユニットの選択中にのみ有効です。</p>
+<ul>
+<li><code>card</code>: 置き換える<code>BattleDiceCardModel</code>です。</li>
+</ul>
+<h3 id="replacehoveredhandbattledicecardmodel"><code>ReplaceHoveredHand(BattleDiceCardModel)</code></h3>
+<pre><code class="lang-cs">owner.ReplaceHoveredHand(card);
+</code></pre>
+<p>現在カーソルを置いているページUIの表示ごとユニットの手札を書き換えます。<br>
+ユニットの選択中にのみ有効です。</p>
+<ul>
+<li><code>card</code>: 置き換える<code>BattleDiceCardModel</code>です。</li>
 </ul>
 
 </article>

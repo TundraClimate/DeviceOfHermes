@@ -124,6 +124,51 @@ public static class UnitUIExtension
         go.AddComponent<AutoDestruct>().time = 1f;
     }
 
+    static BattleDiceCardModel? ReplaceHand(BattleDiceCardUI ui, BattleDiceCardModel newCard, List<BattleDiceCardModel> hand)
+    {
+        if (ui?.CardModel is not BattleDiceCardModel model)
+        {
+            return null;
+        }
+
+        if (hand.IndexOf(model) is int idx and > -1)
+        {
+            ui.SetCard(newCard);
+
+            return Mem.Replace(ref hand.AsRef()[idx]!, newCard);
+        }
+
+        return null;
+    }
+
+    static BattleDiceCardModel? ReplaceHoveredHand(BattleUnitModel owner, BattleDiceCardModel card, List<BattleDiceCardModel> hand) => owner.GetHoveredCardUI()?.Let(ui => ReplaceHand(ui, card, hand));
+
+    /// <summary>Replaces current Hand</summary>
+    public static BattleDiceCardModel? ReplaceHand(this BattleDiceCardUI ui, BattleDiceCardModel card)
+    {
+        if (BattleManagerUI.Instance?.ui_unitCardsInHand?.HOveredModel is not BattleUnitModel owner)
+        {
+            return null;
+        }
+
+        return BattleManagerUI.Instance?.ui_unitCardsInHand?.CurrentHandState switch
+        {
+            BattleUnitCardsInHandUI.HandState.BattleCard => ReplaceHand(ui, card, owner.allyCardDetail.Hand()),
+            BattleUnitCardsInHandUI.HandState.EgoCard => ReplaceHand(ui, card, owner.personalEgoDetail.Hand()),
+
+            _ => null,
+        };
+    }
+
+    /// <summary>Replaces current hovered Hand</summary>
+    public static BattleDiceCardModel? ReplaceHoveredHand(this BattleUnitModel owner, BattleDiceCardModel card) => BattleManagerUI.Instance?.ui_unitCardsInHand?.CurrentHandState switch
+    {
+        BattleUnitCardsInHandUI.HandState.BattleCard => ReplaceHoveredHand(owner, card, owner.allyCardDetail.Hand()),
+        BattleUnitCardsInHandUI.HandState.EgoCard => ReplaceHoveredHand(owner, card, owner.personalEgoDetail.Hand()),
+
+        _ => null,
+    };
+
     [HarmonyPatch(typeof(BattleObjectLayer), "AddUnit")]
     class PatchOnAddUnit
     {
