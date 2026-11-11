@@ -100,6 +100,8 @@ owner.view.AddEffect(sprite, new Vector2(0.5f, 0.52f), 3f);
 
 owner.GetClickedSpeedDice();
 
+owner.GetHoveredCardUI();
+
 owner.CreateEffectText(&quot;沈潜殺到&quot;, SinkingDeluge);
 </code></pre>
 <h2 id="specified-usage">Specified usage</h2>
@@ -140,6 +142,11 @@ owner.CreateEffectText(&quot;沈潜殺到&quot;, SinkingDeluge);
 </code></pre>
 <p>現在選択されている速度ダイスのスロット番号を返します。<br>
 未選択の場合は-1を返します。</p>
+<h3 id="gethoveredcardui"><code>GetHoveredCardUI()</code></h3>
+<pre><code class="lang-cs">owner.GetHoveredCardUI();
+</code></pre>
+<p>現在カーソルが乗っている自身のバトルページUIを返します。<br>
+未選択の場合はnullを返します。</p>
 <h3 id="createeffecttextstring-sprite-color-color"><code>CreateEffectText(string, Sprite?, Color?, Color?)</code></h3>
 <pre><code class="lang-cs">owner.CreateEffectText(text, sprite, textColor, spriteColor);
 </code></pre>

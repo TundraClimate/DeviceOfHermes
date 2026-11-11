@@ -8335,6 +8335,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.UnitUIExtension.GetClickedSpeedDice
   nameWithType: UnitUIExtension.GetClickedSpeedDice
+- uid: DeviceOfHermes.UnitUIExtension.GetHoveredCardUI(BattleUnitModel)
+  name: GetHoveredCardUI(BattleUnitModel)
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_GetHoveredCardUI_BattleUnitModel_
+  commentId: M:DeviceOfHermes.UnitUIExtension.GetHoveredCardUI(BattleUnitModel)
+  fullName: DeviceOfHermes.UnitUIExtension.GetHoveredCardUI(BattleUnitModel)
+  nameWithType: UnitUIExtension.GetHoveredCardUI(BattleUnitModel)
+- uid: DeviceOfHermes.UnitUIExtension.GetHoveredCardUI*
+  name: GetHoveredCardUI
+  href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_GetHoveredCardUI_
+  commentId: Overload:DeviceOfHermes.UnitUIExtension.GetHoveredCardUI
+  isSpec: "True"
+  fullName: DeviceOfHermes.UnitUIExtension.GetHoveredCardUI
+  nameWithType: UnitUIExtension.GetHoveredCardUI
 - uid: DeviceOfHermes.UnitUIExtension.Say(BattleUnitModel,System.String)
   name: Say(BattleUnitModel, string)
   href: api/DeviceOfHermes.UnitUIExtension.html#DeviceOfHermes_UnitUIExtension_Say_BattleUnitModel_System_String_
@@ -14097,6 +14110,165 @@ references:
   fullName.vb: System.Hermes.TryLoad(Of T)(T)
   nameWithType: Hermes.TryLoad<T>(out T?)
   nameWithType.vb: Hermes.TryLoad(Of T)(T)
+- uid: System.Index
+  name: Index
+  href: api/System.Index.html
+  commentId: T:System.Index
+  fullName: System.Index
+  nameWithType: Index
+- uid: System.Index.#ctor(System.Int32,System.Boolean)
+  name: Index(int, bool)
+  href: api/System.Index.html#System_Index__ctor_System_Int32_System_Boolean_
+  commentId: M:System.Index.#ctor(System.Int32,System.Boolean)
+  name.vb: New(Integer, Boolean)
+  fullName: System.Index.Index(int, bool)
+  fullName.vb: System.Index.New(Integer, Boolean)
+  nameWithType: Index.Index(int, bool)
+  nameWithType.vb: Index.New(Integer, Boolean)
+- uid: System.Index.#ctor*
+  name: Index
+  href: api/System.Index.html#System_Index__ctor_
+  commentId: Overload:System.Index.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Index.Index
+  fullName.vb: System.Index.New
+  nameWithType: Index.Index
+  nameWithType.vb: Index.New
+- uid: System.Index.Equals(System.Index)
+  name: Equals(Index)
+  href: api/System.Index.html#System_Index_Equals_System_Index_
+  commentId: M:System.Index.Equals(System.Index)
+  fullName: System.Index.Equals(System.Index)
+  nameWithType: Index.Equals(Index)
+- uid: System.Index.Equals(System.Object)
+  name: Equals(object)
+  href: api/System.Index.html#System_Index_Equals_System_Object_
+  commentId: M:System.Index.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: System.Index.Equals(object)
+  fullName.vb: System.Index.Equals(Object)
+  nameWithType: Index.Equals(object)
+  nameWithType.vb: Index.Equals(Object)
+- uid: System.Index.Equals*
+  name: Equals
+  href: api/System.Index.html#System_Index_Equals_
+  commentId: Overload:System.Index.Equals
+  isSpec: "True"
+  fullName: System.Index.Equals
+  nameWithType: Index.Equals
+- uid: System.Index.GetHashCode
+  name: GetHashCode()
+  href: api/System.Index.html#System_Index_GetHashCode
+  commentId: M:System.Index.GetHashCode
+  fullName: System.Index.GetHashCode()
+  nameWithType: Index.GetHashCode()
+- uid: System.Index.GetHashCode*
+  name: GetHashCode
+  href: api/System.Index.html#System_Index_GetHashCode_
+  commentId: Overload:System.Index.GetHashCode
+  isSpec: "True"
+  fullName: System.Index.GetHashCode
+  nameWithType: Index.GetHashCode
+- uid: System.Index.GetOffset(System.Int32)
+  name: GetOffset(int)
+  href: api/System.Index.html#System_Index_GetOffset_System_Int32_
+  commentId: M:System.Index.GetOffset(System.Int32)
+  name.vb: GetOffset(Integer)
+  fullName: System.Index.GetOffset(int)
+  fullName.vb: System.Index.GetOffset(Integer)
+  nameWithType: Index.GetOffset(int)
+  nameWithType.vb: Index.GetOffset(Integer)
+- uid: System.Index.GetOffset*
+  name: GetOffset
+  href: api/System.Index.html#System_Index_GetOffset_
+  commentId: Overload:System.Index.GetOffset
+  isSpec: "True"
+  fullName: System.Index.GetOffset
+  nameWithType: Index.GetOffset
+- uid: System.Index.IsFromEnd
+  name: IsFromEnd
+  href: api/System.Index.html#System_Index_IsFromEnd
+  commentId: P:System.Index.IsFromEnd
+  fullName: System.Index.IsFromEnd
+  nameWithType: Index.IsFromEnd
+- uid: System.Index.IsFromEnd*
+  name: IsFromEnd
+  href: api/System.Index.html#System_Index_IsFromEnd_
+  commentId: Overload:System.Index.IsFromEnd
+  isSpec: "True"
+  fullName: System.Index.IsFromEnd
+  nameWithType: Index.IsFromEnd
+- uid: System.Index.Value
+  name: Value
+  href: api/System.Index.html#System_Index_Value
+  commentId: P:System.Index.Value
+  fullName: System.Index.Value
+  nameWithType: Index.Value
+- uid: System.Index.Value*
+  name: Value
+  href: api/System.Index.html#System_Index_Value_
+  commentId: Overload:System.Index.Value
+  isSpec: "True"
+  fullName: System.Index.Value
+  nameWithType: Index.Value
+- uid: System.Index.op_Equality(System.Index,System.Index)
+  name: operator ==(Index, Index)
+  href: api/System.Index.html#System_Index_op_Equality_System_Index_System_Index_
+  commentId: M:System.Index.op_Equality(System.Index,System.Index)
+  name.vb: =(Index, Index)
+  fullName: System.Index.operator ==(System.Index, System.Index)
+  fullName.vb: System.Index.=(System.Index, System.Index)
+  nameWithType: Index.operator ==(Index, Index)
+  nameWithType.vb: Index.=(Index, Index)
+- uid: System.Index.op_Equality*
+  name: operator ==
+  href: api/System.Index.html#System_Index_op_Equality_
+  commentId: Overload:System.Index.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: System.Index.operator ==
+  fullName.vb: System.Index.=
+  nameWithType: Index.operator ==
+  nameWithType.vb: Index.=
+- uid: System.Index.op_Implicit(System.Int32)~System.Index
+  name: implicit operator Index(int)
+  href: api/System.Index.html#System_Index_op_Implicit_System_Int32__System_Index
+  commentId: M:System.Index.op_Implicit(System.Int32)~System.Index
+  name.vb: CType(Integer)
+  fullName: System.Index.implicit operator System.Index(int)
+  fullName.vb: System.Index.CType(Integer)
+  nameWithType: Index.implicit operator Index(int)
+  nameWithType.vb: Index.CType(Integer)
+- uid: System.Index.op_Implicit*
+  name: implicit operator
+  href: api/System.Index.html#System_Index_op_Implicit_
+  commentId: Overload:System.Index.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: System.Index.implicit operator
+  fullName.vb: System.Index.CType
+  nameWithType: Index.implicit operator
+  nameWithType.vb: Index.CType
+- uid: System.Index.op_Inequality(System.Index,System.Index)
+  name: operator !=(Index, Index)
+  href: api/System.Index.html#System_Index_op_Inequality_System_Index_System_Index_
+  commentId: M:System.Index.op_Inequality(System.Index,System.Index)
+  name.vb: <>(Index, Index)
+  fullName: System.Index.operator !=(System.Index, System.Index)
+  fullName.vb: System.Index.<>(System.Index, System.Index)
+  nameWithType: Index.operator !=(Index, Index)
+  nameWithType.vb: Index.<>(Index, Index)
+- uid: System.Index.op_Inequality*
+  name: operator !=
+  href: api/System.Index.html#System_Index_op_Inequality_
+  commentId: Overload:System.Index.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: System.Index.operator !=
+  fullName.vb: System.Index.<>
+  nameWithType: Index.operator !=
+  nameWithType.vb: Index.<>
 - uid: System.Mem
   name: Mem
   href: api/System.Mem.html
@@ -14308,3 +14480,217 @@ references:
   commentId: F:System.MessageLevel.Warn
   fullName: System.MessageLevel.Warn
   nameWithType: MessageLevel.Warn
+- uid: System.Range
+  name: Range
+  href: api/System.Range.html
+  commentId: T:System.Range
+  fullName: System.Range
+  nameWithType: Range
+- uid: System.Range.#ctor(System.Index,System.Index)
+  name: Range(Index, Index)
+  href: api/System.Range.html#System_Range__ctor_System_Index_System_Index_
+  commentId: M:System.Range.#ctor(System.Index,System.Index)
+  name.vb: New(Index, Index)
+  fullName: System.Range.Range(System.Index, System.Index)
+  fullName.vb: System.Range.New(System.Index, System.Index)
+  nameWithType: Range.Range(Index, Index)
+  nameWithType.vb: Range.New(Index, Index)
+- uid: System.Range.#ctor*
+  name: Range
+  href: api/System.Range.html#System_Range__ctor_
+  commentId: Overload:System.Range.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Range.Range
+  fullName.vb: System.Range.New
+  nameWithType: Range.Range
+  nameWithType.vb: Range.New
+- uid: System.Range.End
+  name: End
+  href: api/System.Range.html#System_Range_End
+  commentId: P:System.Range.End
+  fullName: System.Range.End
+  nameWithType: Range.End
+- uid: System.Range.End*
+  name: End
+  href: api/System.Range.html#System_Range_End_
+  commentId: Overload:System.Range.End
+  isSpec: "True"
+  fullName: System.Range.End
+  nameWithType: Range.End
+- uid: System.Range.Equals(System.Object)
+  name: Equals(object)
+  href: api/System.Range.html#System_Range_Equals_System_Object_
+  commentId: M:System.Range.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: System.Range.Equals(object)
+  fullName.vb: System.Range.Equals(Object)
+  nameWithType: Range.Equals(object)
+  nameWithType.vb: Range.Equals(Object)
+- uid: System.Range.Equals(System.Range)
+  name: Equals(Range)
+  href: api/System.Range.html#System_Range_Equals_System_Range_
+  commentId: M:System.Range.Equals(System.Range)
+  fullName: System.Range.Equals(System.Range)
+  nameWithType: Range.Equals(Range)
+- uid: System.Range.Equals*
+  name: Equals
+  href: api/System.Range.html#System_Range_Equals_
+  commentId: Overload:System.Range.Equals
+  isSpec: "True"
+  fullName: System.Range.Equals
+  nameWithType: Range.Equals
+- uid: System.Range.GetEnumerator
+  name: GetEnumerator()
+  href: api/System.Range.html#System_Range_GetEnumerator
+  commentId: M:System.Range.GetEnumerator
+  fullName: System.Range.GetEnumerator()
+  nameWithType: Range.GetEnumerator()
+- uid: System.Range.GetEnumerator*
+  name: GetEnumerator
+  href: api/System.Range.html#System_Range_GetEnumerator_
+  commentId: Overload:System.Range.GetEnumerator
+  isSpec: "True"
+  fullName: System.Range.GetEnumerator
+  nameWithType: Range.GetEnumerator
+- uid: System.Range.GetHashCode
+  name: GetHashCode()
+  href: api/System.Range.html#System_Range_GetHashCode
+  commentId: M:System.Range.GetHashCode
+  fullName: System.Range.GetHashCode()
+  nameWithType: Range.GetHashCode()
+- uid: System.Range.GetHashCode*
+  name: GetHashCode
+  href: api/System.Range.html#System_Range_GetHashCode_
+  commentId: Overload:System.Range.GetHashCode
+  isSpec: "True"
+  fullName: System.Range.GetHashCode
+  nameWithType: Range.GetHashCode
+- uid: System.Range.Start
+  name: Start
+  href: api/System.Range.html#System_Range_Start
+  commentId: P:System.Range.Start
+  fullName: System.Range.Start
+  nameWithType: Range.Start
+- uid: System.Range.Start*
+  name: Start
+  href: api/System.Range.html#System_Range_Start_
+  commentId: Overload:System.Range.Start
+  isSpec: "True"
+  fullName: System.Range.Start
+  nameWithType: Range.Start
+- uid: System.Range.op_Equality(System.Range,System.Range)
+  name: operator ==(Range, Range)
+  href: api/System.Range.html#System_Range_op_Equality_System_Range_System_Range_
+  commentId: M:System.Range.op_Equality(System.Range,System.Range)
+  name.vb: =(Range, Range)
+  fullName: System.Range.operator ==(System.Range, System.Range)
+  fullName.vb: System.Range.=(System.Range, System.Range)
+  nameWithType: Range.operator ==(Range, Range)
+  nameWithType.vb: Range.=(Range, Range)
+- uid: System.Range.op_Equality*
+  name: operator ==
+  href: api/System.Range.html#System_Range_op_Equality_
+  commentId: Overload:System.Range.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: System.Range.operator ==
+  fullName.vb: System.Range.=
+  nameWithType: Range.operator ==
+  nameWithType.vb: Range.=
+- uid: System.Range.op_Inequality(System.Range,System.Range)
+  name: operator !=(Range, Range)
+  href: api/System.Range.html#System_Range_op_Inequality_System_Range_System_Range_
+  commentId: M:System.Range.op_Inequality(System.Range,System.Range)
+  name.vb: <>(Range, Range)
+  fullName: System.Range.operator !=(System.Range, System.Range)
+  fullName.vb: System.Range.<>(System.Range, System.Range)
+  nameWithType: Range.operator !=(Range, Range)
+  nameWithType.vb: Range.<>(Range, Range)
+- uid: System.Range.op_Inequality*
+  name: operator !=
+  href: api/System.Range.html#System_Range_op_Inequality_
+  commentId: Overload:System.Range.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: System.Range.operator !=
+  fullName.vb: System.Range.<>
+  nameWithType: Range.operator !=
+  nameWithType.vb: Range.<>
+- uid: System.RangeEnumerator
+  name: RangeEnumerator
+  href: api/System.RangeEnumerator.html
+  commentId: T:System.RangeEnumerator
+  fullName: System.RangeEnumerator
+  nameWithType: RangeEnumerator
+- uid: System.RangeEnumerator.#ctor(System.Int32,System.Int32)
+  name: RangeEnumerator(int, int)
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator__ctor_System_Int32_System_Int32_
+  commentId: M:System.RangeEnumerator.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: System.RangeEnumerator.RangeEnumerator(int, int)
+  fullName.vb: System.RangeEnumerator.New(Integer, Integer)
+  nameWithType: RangeEnumerator.RangeEnumerator(int, int)
+  nameWithType.vb: RangeEnumerator.New(Integer, Integer)
+- uid: System.RangeEnumerator.#ctor*
+  name: RangeEnumerator
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator__ctor_
+  commentId: Overload:System.RangeEnumerator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.RangeEnumerator.RangeEnumerator
+  fullName.vb: System.RangeEnumerator.New
+  nameWithType: RangeEnumerator.RangeEnumerator
+  nameWithType.vb: RangeEnumerator.New
+- uid: System.RangeEnumerator.Current
+  name: Current
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_Current
+  commentId: P:System.RangeEnumerator.Current
+  fullName: System.RangeEnumerator.Current
+  nameWithType: RangeEnumerator.Current
+- uid: System.RangeEnumerator.Current*
+  name: Current
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_Current_
+  commentId: Overload:System.RangeEnumerator.Current
+  isSpec: "True"
+  fullName: System.RangeEnumerator.Current
+  nameWithType: RangeEnumerator.Current
+- uid: System.RangeEnumerator.Dispose
+  name: Dispose()
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_Dispose
+  commentId: M:System.RangeEnumerator.Dispose
+  fullName: System.RangeEnumerator.Dispose()
+  nameWithType: RangeEnumerator.Dispose()
+- uid: System.RangeEnumerator.Dispose*
+  name: Dispose
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_Dispose_
+  commentId: Overload:System.RangeEnumerator.Dispose
+  isSpec: "True"
+  fullName: System.RangeEnumerator.Dispose
+  nameWithType: RangeEnumerator.Dispose
+- uid: System.RangeEnumerator.MoveNext
+  name: MoveNext()
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_MoveNext
+  commentId: M:System.RangeEnumerator.MoveNext
+  fullName: System.RangeEnumerator.MoveNext()
+  nameWithType: RangeEnumerator.MoveNext()
+- uid: System.RangeEnumerator.MoveNext*
+  name: MoveNext
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_MoveNext_
+  commentId: Overload:System.RangeEnumerator.MoveNext
+  isSpec: "True"
+  fullName: System.RangeEnumerator.MoveNext
+  nameWithType: RangeEnumerator.MoveNext
+- uid: System.RangeEnumerator.Reset
+  name: Reset()
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_Reset
+  commentId: M:System.RangeEnumerator.Reset
+  fullName: System.RangeEnumerator.Reset()
+  nameWithType: RangeEnumerator.Reset()
+- uid: System.RangeEnumerator.Reset*
+  name: Reset
+  href: api/System.RangeEnumerator.html#System_RangeEnumerator_Reset_
+  commentId: Overload:System.RangeEnumerator.Reset
+  isSpec: "True"
+  fullName: System.RangeEnumerator.Reset
+  nameWithType: RangeEnumerator.Reset

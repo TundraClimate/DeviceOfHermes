@@ -86,6 +86,9 @@ public static class UnitUIExtension
         return -1;
     }
 
+    /// <summary>Returns hovered card ui</summary>
+    public static BattleDiceCardUI? GetHoveredCardUI(this BattleUnitModel owner) => BattleManagerUI.Instance?.ui_unitCardsInHand?.Let(hand => hand.HOveredModel == owner ? hand : null)?.GetCardUIList()?.Find(card => card.IsEntered);
+
     /// <summary>Creates new unit-floating text</summary>
     public static void CreateTextEffect(
         this BattleUnitModel owner,
