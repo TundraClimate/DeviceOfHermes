@@ -94,6 +94,14 @@
 <p>例:</p>
 <pre><code class="lang-cs">public class DiceCardSelfAbility_AdvCard : AdvancedCardBase
 {
+    static DiceCardSelfAbility_AdvCard()
+    {
+        RegisterKeyDownEvent(typeof(DiceCardSelfAbility_AdvCard), KeyCode.Tab, (owner, _) =&gt;
+        {
+            owner.ReplaceHoveredHand(BattleDiceCardModel.CreatePlayingCard(ItemXmlDataList.instance.GetCardItem(607006)));
+        });
+    }
+
     public override bool IsClashable =&gt; true;
 
     public override bool IsClashableWithStandby =&gt; true;
@@ -159,6 +167,16 @@
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
 それの代わりに<code>AdvancedCardBase</code>を継承し、幾つかの追加要素のあるそれとして扱うことを想定しています。</p>
 <h2 id="specified-usage">Specified usage</h2>
+<h3 id="registerkeydowneventtype-keycode-actionbattleunitmodel-battledicecardmodel"><code>RegisterKeyDownEvent(Type, KeyCode, Action&lt;BattleUnitModel, BattleDiceCardModel&gt;)</code></h3>
+<pre><code class="lang-cs">RegisterKeyDownEvent(self, key, handler);
+</code></pre>
+<p>ページ選択中にキー入力したときのイベントハンドラを追加します。<br>
+staticコンストラクタ内で呼び出してください。</p>
+<ul>
+<li><code>self</code>: その型そのものです。他の型を入れると想定外の処理が走る可能性があります。</li>
+<li><code>key</code>: 入力を検知するKeyCodeです。</li>
+<li><code>handler</code>: キー入力がされたときに実行する処理です。</li>
+</ul>
 <h3 id="isclashable"><code>IsClashable</code></h3>
 <pre><code class="lang-cs">public override bool IsClashable =&gt; true;
 </code></pre>

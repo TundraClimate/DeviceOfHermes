@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace DeviceOfHermes.AdvancedBase;
 
 /// <summary>An advanced <see cref="DiceCardSelfAbilityBase"/></summary>
@@ -92,5 +94,29 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Select target unit</summary>
     public virtual void OnSelectTarget(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
     {
+    }
+
+    /// <summary>Register keydown event</summary>
+    protected static void RegisterKeyDownEvent(Type self, KeyCode c, Action<BattleUnitModel, BattleDiceCardModel> handler)
+    {
+        BattleTickAction.OnFrame += () =>
+        {
+            if (!Input.GetKeyDown(c))
+            {
+                return;
+            }
+
+            if (BattleManagerUI.Instance?.ui_unitCardsInHand?.HOveredModel is not BattleUnitModel curUIUnit || curUIUnit.GetHoveredCardUI() is not BattleDiceCardUI ui)
+            {
+                return;
+            }
+
+            if (ui.CardModel?.CreateDiceCardSelfAbilityScript() is not AdvancedCardBase adv || adv.GetType() != self)
+            {
+                return;
+            }
+
+            handler(curUIUnit, ui.CardModel);
+        };
     }
 }

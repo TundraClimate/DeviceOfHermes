@@ -367,6 +367,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget
   nameWithType: AdvancedCardBase.OnSelectTarget
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent(System.Type,UnityEngine.KeyCode,System.Action{BattleUnitModel,BattleDiceCardModel})
+  name: RegisterKeyDownEvent(Type, KeyCode, Action<BattleUnitModel, BattleDiceCardModel>)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_RegisterKeyDownEvent_System_Type_UnityEngine_KeyCode_System_Action_BattleUnitModel_BattleDiceCardModel__
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent(System.Type,UnityEngine.KeyCode,System.Action{BattleUnitModel,BattleDiceCardModel})
+  name.vb: RegisterKeyDownEvent(Type, KeyCode, Action(Of BattleUnitModel, BattleDiceCardModel))
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent(System.Type, UnityEngine.KeyCode, System.Action<BattleUnitModel, BattleDiceCardModel>)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent(System.Type, UnityEngine.KeyCode, System.Action(Of BattleUnitModel, BattleDiceCardModel))
+  nameWithType: AdvancedCardBase.RegisterKeyDownEvent(Type, KeyCode, Action<BattleUnitModel, BattleDiceCardModel>)
+  nameWithType.vb: AdvancedCardBase.RegisterKeyDownEvent(Type, KeyCode, Action(Of BattleUnitModel, BattleDiceCardModel))
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent*
+  name: RegisterKeyDownEvent
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_RegisterKeyDownEvent_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent
+  nameWithType: AdvancedCardBase.RegisterKeyDownEvent
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.SpecialPriorityAdder(System.Int32,System.Int32)
   name: SpecialPriorityAdder(int, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_SpecialPriorityAdder_System_Int32_System_Int32_
