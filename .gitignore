@@ -3,7 +3,9 @@
 bin/
 libs/
 obj/
-docfx/
+
+docfx/api
+docfx/_site
 
 libs
 

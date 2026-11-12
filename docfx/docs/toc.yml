@@ -1,0 +1,196 @@
+- name: Table of Content
+  href: table-of-content.md
+- name: DeviceOfHermes
+  items:
+    - name: AdditionalOnlyCard
+      href: additional-onlycard.md
+    - name: AdvancedAreaEffect
+      href: advanced-areaeffect.md
+    - name: AdvancedDiceStatBonus
+      href: advanced-dicestatbonus.md
+    - name: AdvancedTakeDamage
+      href: advanced-takedamage.md
+    - name: AutoMapSetter
+      href: automap-setter.md
+    - name: BattleTickAction
+      href: battle-tickaction.md
+    - name: BattleBufExtension
+      href: battlebuf-extension.md
+    - name: BattleCardExtension
+      href: battlecard-extension.md
+    - name: BattleUnitExtension
+      href: battleunit-extension.md
+    - name: ChainBattle
+      href: chainbattle.md
+    - name: Composite
+      href: composite.md
+    - name: CustomDiceSprite
+      href: custom-dicesprite.md
+    - name: DebugExtension
+      href: debug-extension.md
+    - name: Derive
+      href: derive.md
+    - name: DeriveTemplate
+      href: derive-template.md
+    - name: DeckExtension
+      href: deck-extension.md
+    - name: HarmonyExtension
+      href: harmony-extension.md
+    - name: KeywordBufExtender
+      href: keywordbuf-extender.md
+    - name: PassiveResolver
+      href: passive-resolver.md
+    - name: Remainder
+      href: remainder.md
+    - name: RencounterEvent
+      href: rencounter-event.md
+    - name: ScheduleRunner
+      href: schedule-runner.md
+    - name: StageEvents
+      href: stageevents.md
+    - name: StageLibrarianList
+      href: stagelibrarian-list.md
+    - name: Unifield
+      href: unifield.md
+    - name: UnitHistoryExtension
+      href: unithistory-extension.md
+    - name: UnitUIExtension
+      href: unitui-extension.md
+    - name: VannilaUnitBuf
+      href: vannila-unitbuf.md
+- name: DeviceOfHermes.AdvancedBase
+  items:
+    - name: AdvancedCardBase
+      href: advanced-cardbase.md
+    - name: AdvancedCardBuf
+      href: advanced-cardbuf.md
+    - name: AdvancedDiceBase
+      href: advanced-dicebase.md
+    - name: AdvancedPassiveBase
+      href: advanced-passivebase.md
+    - name: AdvancedUnitBuf
+      href: advanced-unitbuf.md
+    - name: ShimPassiveBase
+      href: shim-passivebase.md
+- name: DeviceOfHermes.CustomDice
+  items:
+    - name: EqualDice
+      href: equal-dice.md
+    - name: RevengeDice
+      href: revenge-dice.md
+    - name: SecondlyDice
+      href: secondly-dice.md
+    - name: UnbreakableDice
+      href: unbreakable-dice.md
+- name: DeviceOfHermes.Data
+  items:
+    - name: AutoMapXml
+      href: automap-data.md
+    - name: EmotionCardXml
+      href: emotioncard-data.md
+    - name: FormationXml
+      href: formation-data.md
+    - name: OnlyCardXml
+      href: onlycard-data.md
+- name: DeviceOfHermes.Effect
+  items:
+    - name: SimpleAura
+      href: effect-simpleaura.md
+- name: DeviceOfHermes.Resource
+  items:
+    - name: Artwork
+      href: artwork.md
+    - name: Audio
+      href: audio.md
+    - name: Serde
+      href: serde.md
+    - name: TextModel
+      href: textmodel.md
+    - name: EnvContainer
+      href: env-container.md
+- name: DeviceOfHermes.UI
+  items:
+    - name: BattleMapChanger
+      href: battlemap-changer.md
+    - name: BattleUIBehaviour
+      href: battleui-behaviour.md
+    - name: BattleFloatingDiceCardUI
+      href: battle-floating-dicecardui.md
+    - name: BattleFloatingDiceCardListUI
+      href: battle-floating-dicecardlistui.md
+    - name: CustomLevelUpUI
+      href: custom-levelupui.md
+    - name: CommonLevelUpUI
+      href: common-levelupui.md
+    - name: PersonalLevelUpUI
+      href: personal-levelupui.md
+    - name: StoryLineMaker
+      href: storyline-maker.md
+- name: Hijack System
+  items:
+    - name: HermesConfig
+      hred: hermes-config.md
+    - name: DynamicAbility
+      href: dynamic-ability.md
+    - name: HermesPreloader
+      href: hermes-preloader.md
+- name: LimbufOfHermes
+  items:
+    - name: StageBuf
+      href: loh-stagebuf.md
+    - name: Barrier
+      href: loh-barrier.md
+    - name: Rupture
+      href: loh-rupture.md
+    - name: Tremor
+      href: loh-tremor.md
+    - name: Sinking
+      href: loh-sinking.md
+    - name: Poise
+      href: loh-poise.md
+    - name: AlvUp
+      href: loh-alvup.md
+    - name: AlvDown
+      href: loh-alvdown.md
+    - name: DlvUp
+      href: loh-dlvup.md
+    - name: DlvDown
+      href: loh-dlvdown.md
+    - name: SlashVulnerable
+      href: loh-svulnerable.md
+    - name: PenetrateVulnerable
+      href: loh-pvulnerable.md
+    - name: HitVulnerable
+      href: loh-hvulnerable.md
+    - name: Shin
+      href: loh-shin.md
+    - name: Bloodfeast
+      href: loh-bloodfeast.md
+    - name: Scorchfield
+      href: loh-scorchfield.md
+    - name: PrescriptTarget
+      href: loh-prescripttarget.md
+    - name: CritDmgUp
+      href: loh-critdmgup.md
+    - name: PhotoElectricity
+      href: loh-photoelectricity.md
+    - name: DmgDown
+      href: loh-dmgdown.md
+    - name: Nails
+      href: loh-nails.md
+    - name: Fanatic
+      href: loh-fanatic.md
+    - name: ClashPowerUp
+      href: loh-clashpowerup.md
+    - name: ClashPowerDown
+      href: loh-clashpowerdown.md
+    - name: AssistDefense
+      href: loh-assistdefense.md
+    - name: Duality
+      href: loh-duality.md
+    - name: Ammo
+      href: loh-ammo.md
+    - name: HPHealingUp
+      href: loh-hphealingup.md
+    - name: HPHealingDown
+      href: loh-hphealingdown.md
