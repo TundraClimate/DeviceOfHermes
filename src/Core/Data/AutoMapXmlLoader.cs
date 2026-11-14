@@ -100,8 +100,8 @@ internal static class AutoMapXmlLoader
         }
 
         if (!byte.TryParse(color[0..2], NumberStyles.HexNumber, null, out var r)
-            || !byte.TryParse(color[2..2], NumberStyles.HexNumber, null, out var g)
-            || !byte.TryParse(color[4..2], NumberStyles.HexNumber, null, out var b))
+            || !byte.TryParse(color[2..4], NumberStyles.HexNumber, null, out var g)
+            || !byte.TryParse(color[4..6], NumberStyles.HexNumber, null, out var b))
         {
             return null;
         }
