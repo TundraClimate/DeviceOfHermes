@@ -1,12 +1,14 @@
 # `using DeviceOfHermes.AdvancedBase;`
+
 名前空間`DeviceOfHermes.AdvancedBase`に存在するクラスです。  
 この記事はこれを前提に書かれています。
 
 # AdvancedCardBase
 
-効果拡張版`DiceCardSelfAbilityBase`です。  
+効果拡張版`DiceCardSelfAbilityBase`です。
 
-例:  
+例:
+
 ```cs
 public class DiceCardSelfAbility_AdvCard : AdvancedCardBase
 {
@@ -206,19 +208,6 @@ public override int SpecialPriorityAdder(int slot, int speed)
 - `slot`: 計算に使用する速度スロットです。
 - `speed`: スロットに対応する速度です。
 
-### `GetFinalResultDamageValue(int)`
-
-```cs
-public override int GetForceResultDamageValue(int origin)
-{
-    return origin;
-}
-```
-
-全てのダメージ変更処理の後にダメージ量をこのメソッドが返した値に変更します。
-
-- `origin`: 変更前の最終ダメージ量です。
-
 ### `BeforeUseCard(ref BattlePlayingCardDataInUnitModel)`
 
 ```cs
@@ -266,7 +255,7 @@ public override void BeforeRollDiceBefore(BattleDiceBehavior behavior)
 }
 ```
 
-`BeforeRollDice`の直前に実行されます。  
+`BeforeRollDice`の直前に実行されます。
 
 - `behavior`: 対象のダイスです。
 
@@ -278,7 +267,7 @@ public override void BeforeRollDiceAfter(BattleDiceBehavior behavior)
 }
 ```
 
-`BeforeRollDice`の直後に実行されます。  
+`BeforeRollDice`の直後に実行されます。
 
 - `behavior`: 対象のダイスです。
 
@@ -290,7 +279,7 @@ public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
 }
 ```
 
-`BeforeRollDice`より後に実行されます。  
+`BeforeRollDice`より後に実行されます。
 
 - `behavior`: 対象のダイスです。
 

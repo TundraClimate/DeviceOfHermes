@@ -5,9 +5,10 @@
 
 # AdvancedDiceBase
 
-効果拡張版`DiceCardAbilityBase`です。  
+効果拡張版`DiceCardAbilityBase`です。
 
-例:  
+例:
+
 ```cs
 class DiceCardAbility_AdvDice : AdvancedDiceBase
 {
@@ -31,11 +32,6 @@ class DiceCardAbility_AdvDice : AdvancedDiceBase
     }
 
     public override int GetFinalResultDamageValue(int origin)
-    {
-        return origin;
-    }
-
-    public override int GetForceResultDamageValue(int origin)
     {
         return origin;
     }
@@ -112,7 +108,7 @@ public override int GetDiceFinalResultValue(int origin)
 }
 ```
 
-最終威力をこのメソッドが返した値に変更します。  
+最終威力をこのメソッドが返した値に変更します。
 
 - `origin`: 変更前の最終威力です。
 
@@ -172,7 +168,7 @@ public override void BeforeRollDiceBefore()
 }
 ```
 
-`BeforeRollDice`の直前に実行されます。  
+`BeforeRollDice`の直前に実行されます。
 
 ### `BeforeRollDiceAfter()`
 
@@ -182,7 +178,7 @@ public override void BeforeRollDiceAfter()
 }
 ```
 
-`BeforeRollDice`の直後に実行されます。  
+`BeforeRollDice`の直後に実行されます。
 
 ### `BeforeRollDiceLast()`
 
@@ -192,4 +188,4 @@ public override void BeforeRollDiceLast()
 }
 ```
 
-`BeforeRollDice`より後に実行されます。  
+`BeforeRollDice`より後に実行されます。
