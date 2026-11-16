@@ -1,12 +1,13 @@
 # EmotionCardXml
 
 XMLファイルを配置することで幻想体ページ設定を追加することが出来ます。  
-条件は`DeviceOfHermes`のサブスクライブのみです。  
+条件は`DeviceOfHermes`のサブスクライブのみです。
 
 [HermesConfig](hermes-config.md)に従って読み込みます。  
 フォルダ・ファイルが存在しない場合は無視します。
 
 `EmotionCard.xml`
+
 ```xml
 <EmotionCardXmlRoot>
 
@@ -44,6 +45,7 @@ XMLファイルを配置することで幻想体ページ設定を追加する�
 ```
 
 `AbnoCard.xml`
+
 ```xml
 <AbnormalityCardsRoot>
   <!-- SephirahTypeは関係ない -->

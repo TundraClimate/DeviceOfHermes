@@ -23,6 +23,13 @@ internal static class Localizer
             {
                 AbnoCardLocalizer.Load(Path.Combine(mod.dirInfo.FullName, string.Format(abnocard, lang)));
             }
+
+            if (conf.localize.BookTag.Trim() is string booktag && !string.IsNullOrEmpty(booktag))
+            {
+                BookTagLocalizer.Load(Path.Combine(mod.dirInfo.FullName, string.Format(booktag, lang)));
+            }
         }
+
+        BookTagLocalizer.LoadBuiltin(lang);
     }
 }

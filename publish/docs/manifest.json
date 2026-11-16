@@ -405,6 +405,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.BookTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.BookTag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.BookTag",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.BookTag.yml\" sourcestartlinenumber=\"1\">A book tag</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Boot.HermesInitializer.yml",
       "output": {
         ".html": {
@@ -598,6 +612,34 @@
       "IsMRef": true,
       "Title": "DeviceOfHermes.Data.AutoMapXmlRoot",
       "Summary": "<p sourcefile=\"api/DeviceOfHermes.Data.AutoMapXmlRoot.yml\" sourcestartlinenumber=\"1\">A template of AutoMapXml root</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Data.BookTagXmlInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Data.BookTagXmlInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Data.BookTagXmlInfo",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Data.BookTagXmlInfo.yml\" sourcestartlinenumber=\"1\">A template of BookTagXml</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Data.BookTagXmlRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Data.BookTagXmlRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Data.BookTagXmlRoot",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Data.BookTagXmlRoot.yml\" sourcestartlinenumber=\"1\">A template of BookTagXml root</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3544,6 +3586,26 @@
       "output": {
         ".html": {
           "relative_path": "docs/battleunit-extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/booktag-data.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/booktag-data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/booktag.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/booktag.html"
         }
       },
       "version": ""

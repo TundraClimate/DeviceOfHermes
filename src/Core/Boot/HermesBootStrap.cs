@@ -30,6 +30,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
             OnlyCardXmlLoader.Load();
             FormationXmlLoader.Load();
             EmotionCardXmlLoader.Load();
+            BookTagXmlLoader.Load();
 
             TextModel.Init();
             Artwork.Init();
@@ -38,6 +39,7 @@ internal class HermesBootStrap : DiceCardAbilityBase
             Localizer.Init();
 
             BattleUIBehaviour.Init();
+            BookTagUI.Init();
 
             EmotionAbilityFactory.Init();
             CompositePatch.Init();

@@ -27,12 +27,18 @@ internal class DataConfig
 
     [TomlMember(Key = "emotioncard")]
     public string EmotionCard { get; set; } = "";
+
+    [TomlMember(Key = "booktag")]
+    public string BookTag { get; set; } = "";
 }
 
 internal class LocalizeConfig
 {
     [TomlMember(Key = "abnocard")]
     public string AbnoCard { get; set; } = "";
+
+    [TomlMember(Key = "booktag")]
+    public string BookTag { get; set; } = "";
 }
 
 internal class ResourceConfig

@@ -1,0 +1,480 @@
+# Yun office#1
+101003 = ["Fixer"]
+101004 = ["Fixer"]
+201003 = ["Fixer"]
+
+# Yun office#2
+100004 = ["Fixer"]
+200004 = ["Fixer"]
+
+# Yun office#3
+101001 = ["Fixer"]
+201001 = ["Fixer"]
+221002 = ["Fixer"]
+221003 = ["Fixer"]
+221004 = ["Fixer"]
+101002 = ["Fixer"]
+201002 = ["Fixer"]
+100006 = ["Fixer"]
+200006 = ["Fixer"]
+100005 = ["Fixer"]
+200005 = ["Fixer"]
+
+# IronBros#1
+100007 = ["Group"]
+200007 = ["Group"]
+100008 = ["Group"]
+200008 = ["Group"]
+100009 = ["Group"]
+200009 = ["Group"]
+
+# Hook office#1
+111001 = ["Fixer"]
+211001 = ["Fixer"]
+
+# Hook office#2
+100011 = ["Fixer"]
+200011 = ["Fixer"]
+100010 = ["Fixer"]
+200010 = ["Fixer"]
+100012 = ["Fixer"]
+200012 = ["Fixer"]
+
+# Pierre#1
+110002 = ["Group"]
+210002 = ["Group"]
+110001 = ["Group"]
+210001 = ["Group"]
+
+# Streetlight office#1
+110005 = ["Fixer"]
+220001 = ["Fixer"]
+120001 = ["Fixer"]
+110003 = ["Fixer"]
+210003 = ["Fixer"]
+110004 = ["Fixer"]
+210006 = ["Fixer"]
+110006 = ["Fixer"]
+
+# Streetlight office#2
+111005 = ["Fixer"]
+211005 = ["Fixer"]
+111007 = ["Fixer"]
+211007 = ["Fixer"]
+
+# Straydog#1
+121005 = ["Group"]
+221005 = ["Group"]
+121006 = ["Group"]
+221006 = ["Group"]
+120008 = ["Group"]
+220008 = ["Group"]
+120009 = ["Group"]
+220009 = ["Group"]
+120010 = ["Group"]
+220010 = ["Group"]
+
+# Zwei association#1
+221001 = ["Fixer", "2Assoc"]
+121001 = ["Fixer", "2Assoc"]
+121002 = ["Fixer", "2Assoc"]
+121003 = ["Fixer", "2Assoc"]
+121004 = ["Fixer", "2Assoc"]
+
+# Zwei association#2
+120002 = ["Fixer", "2Assoc"]
+220002 = ["Fixer", "2Assoc"]
+
+# Zewi association#3
+120004 = ["Fixer", "2Assoc"]
+220004 = ["Fixer", "2Assoc"]
+120003 = ["Fixer", "2Assoc"]
+220003 = ["Fixer", "2Assoc"]
+
+# Molar office#1
+120006 = ["Fixer"]
+220006 = ["Fixer"]
+120005 = ["Fixer"]
+220005 = ["Fixer"]
+120007 = ["Fixer"]
+220007 = ["Fixer"]
+
+# the carnival#1
+130001 = ["Group"]
+130002 = ["Group"]
+130003 = ["Group"]
+230001 = ["Group"]
+
+# Full-stop office#1
+130004 = ["Fixer"]
+230004 = ["Fixer"]
+130005 = ["Fixer"]
+230005 = ["Fixer"]
+130006 = ["Fixer"]
+230006 = ["Fixer"]
+
+# Dawn office#1
+130007 = ["Fixer"]
+230007 = ["Fixer"]
+130008 = ["Fixer"]
+230008 = ["Fixer"]
+130009 = ["Fixer"]
+
+# Gaze office#1
+130010 = ["Fixer"]
+230010 = ["Fixer"]
+130011 = ["Fixer"]
+230011 = ["Fixer"]
+130012 = ["Fixer"]
+230012 = ["Fixer"]
+
+# Kurokumo#1
+131001 = ["Group", "Kurokumo"]
+231001 = ["Group", "Kurokumo"]
+130018 = ["Group", "Kurokumo"]
+230018 = ["Group", "Kurokumo"]
+130019 = ["Group", "Kurokumo"]
+230019 = ["Group", "Kurokumo"]
+130020 = ["Group", "Kurokumo"]
+230020 = ["Group", "Kurokumo"]
+
+# Bremen#1
+130021 = ["Group"]
+230021 = ["Group"]
+130022 = ["Group"]
+230022 = ["Group"]
+130023 = ["Group"]
+230023 = ["Group"]
+
+# Wedge office#1
+130024 = ["Fixer"]
+230024 = ["Fixer"]
+130025 = ["Fixer"]
+230025 = ["Fixer"]
+130026 = ["Fixer"]
+230026 = ["Fixer"]
+130027 = ["Fixer"]
+130028 = ["Fixer"]
+
+# Sweeper#1
+141002 = ["Group"]
+241002 = ["Group"]
+140015 = ["Group"]
+240015 = ["Group"]
+140016 = ["Group"]
+240016 = ["Group"]
+140017 = ["Group"]
+240017 = ["Group"]
+
+# Shi association#1
+141001 = ["Fixer", "4Assoc"]
+241001 = ["Fixer", "4Assoc"]
+140001 = ["Fixer", "4Assoc"]
+240001 = ["Fixer", "4Assoc"]
+140002 = ["Fixer", "4Assoc"]
+240002 = ["Fixer", "4Assoc"]
+140003 = ["Fixer", "4Assoc"]
+240003 = ["Fixer", "4Assoc"]
+
+# Circus#1
+140008 = ["Group"]
+240009 = ["Group"]
+140009 = ["Group"]
+140014 = ["Group"]
+140011 = ["Group"]
+140012 = ["Group"]
+140013 = ["Group"]
+
+# Index proselyte#1
+140018 = ["Finger", "Index"]
+240018 = ["Finger", "Index"]
+
+# Smiling face#
+140026 = ["Group"]
+240026 = ["Group"]
+140023 = ["Group"]
+240023 = ["Group"]
+140024 = ["Group"]
+240024 = ["Group"]
+140025 = ["Group"]
+240025 = ["Group"]
+
+# WCorp#1
+140022 = ["WCorp"]
+240022 = ["WCorp"]
+140019 = ["WCorp"]
+240019 = ["WCorp"]
+140020 = ["WCorp"]
+240020 = ["WCorp"]
+140021 = ["WCorp"]
+240021 = ["WCorp"]
+
+# Crying#1
+240027 = ["Fixer"]
+
+# Thumb#1
+150005 = ["Finger", "Thumb"]
+250005 = ["Finger", "Thumb"]
+
+# Thumb#2
+150105 = ["Finger", "Thumb"]
+150009 = ["Finger", "Thumb"]
+250009 = ["Finger", "Thumb"]
+150007 = ["Finger", "Thumb"]
+250007 = ["Finger", "Thumb"]
+150008 = ["Finger", "Thumb"]
+250008 = ["Finger", "Thumb"]
+150006 = ["Finger", "Thumb"]
+250006 = ["Finger", "Thumb"]
+
+# Blue reve#1
+150014 = ["Group"]
+250014 = ["Group"]
+150013 = ["Fixer", "Color"]
+
+# Liu2#1
+150001 = ["Fixer", "6Assoc"]
+250001 = ["Fixer", "6Assoc"]
+
+# Liu2#2
+150002 = ["Fixer", "6Assoc"]
+250002 = ["Fixer", "6Assoc"]
+150003 = ["Fixer", "6Assoc"]
+250003 = ["Fixer", "6Assoc"]
+150004 = ["Fixer", "6Assoc"]
+250004 = ["Fixer", "6Assoc"]
+
+# Cane office#1
+150010 = ["Fixer"]
+250010 = ["Fixer"]
+150011 = ["Fixer"]
+250011 = ["Fixer"]
+150012 = ["Fixer"]
+250012 = ["Fixer"]
+
+# Index proxies#1
+151001 = ["Finger", "Index"]
+151002 = ["Finger", "Index"]
+150015 = ["Finger", "Index"]
+250015 = ["Finger", "Index"]
+150016 = ["Finger", "Index"]
+250016 = ["Finger", "Index"]
+150017 = ["Finger", "Index"]
+250017 = ["Finger", "Index"]
+
+# Red Mist#1
+150022 = ["Fixer", "Color"]
+
+# Liu1#1
+150019 = ["Fixer", "6Assoc"]
+250019 = ["Fixer", "6Assoc"]
+150020 = ["Fixer", "6Assoc"]
+150021 = ["Fixer", "6Assoc"]
+150018 = ["Fixer", "6Assoc"]
+250018 = ["Fixer", "6Assoc"]
+
+# RCorp#1
+150026 = ["RCorp"]
+250026 = ["RCorp"]
+150103 = ["RCorp"]
+251003 = ["RCorp"]
+150025 = ["RCorp"]
+250025 = ["RCorp"]
+150102 = ["RCorp"]
+251002 = ["RCorp"]
+150023 = ["RCorp"]
+250023 = ["RCorp"]
+150024 = ["RCorp"]
+250024 = ["RCorp"]
+150101 = ["RCorp"]
+251001 = ["RCorp"]
+
+# Yan#1
+150051 = ["Finger", "Index"]
+250051 = ["Finger", "Index"]
+150039 = ["Finger", "Index"]
+150040 = ["Finger", "Index"]
+
+# BBA#1
+150035 = ["Fixer", "Color"]
+250035 = ["Fixer", "Color"]
+
+# Xiao#1
+150036 = ["Fixer", "6Assoc"]
+250036 = ["Fixer", "6Assoc"]
+150038 = ["Fixer", "6Assoc"]
+150037 = ["Fixer", "6Assoc"]
+250037 = ["Fixer", "6Assoc"]
+
+# RCorpReturns#1
+150030 = ["RCorp"]
+150034 = ["RCorp"]
+150029 = ["RCorp"]
+150033 = ["RCorp"]
+150028 = ["RCorp"]
+150032 = ["RCorp"]
+150031 = ["RCorp"]
+
+# Hana#1
+160001 = ["Fixer", "1Assoc"]
+160101 = ["Fixer", "1Assoc"]
+260001 = ["Fixer", "1Assoc"]
+160002 = ["Fixer", "1Assoc"]
+260002 = ["Fixer", "1Assoc"]
+160003 = ["Fixer", "1Assoc"]
+260003 = ["Fixer", "1Assoc"]
+
+# Hana#2
+160004 = ["Fixer", "1Assoc"]
+260004 = ["Fixer", "1Assoc"]
+
+# Band#1
+1301011 = ["Group"]
+260006 = ["Group"]
+1302011 = ["Group"]
+260007 = ["Group"]
+1302021 = ["Group"]
+1303011 = ["Group"]
+260008 = ["Group"]
+1304011 = ["Group"]
+260009 = ["Group"]
+1304031 = ["Group"]
+1305011 = ["Group"]
+260010 = ["Group"]
+1305021 = ["Group"]
+1305031 = ["Group"]
+1306011 = ["Group"]
+260011 = ["Group"]
+1307011 = ["Group"]
+260012 = ["Group"]
+1308011 = ["Group", "Bloodfiend"]
+260013 = ["Group", "Bloodfiend"]
+1309011 = ["Group"]
+260014 = ["Group"]
+1310011 = ["Group", "Fixer:Delete", "Color:Delete"]
+260005 = ["Group", "Fixer", "Color"]
+
+# BlackSilence#1
+170001 = ["Fixer"]
+170301 = ["Fixer"]
+170321 = ["Fixer"]
+170322 = ["Fixer"]
+170323 = ["Fixer"]
+170324 = ["Fixer"]
+
+# BandReturned
+1401011 = ["Group"]
+1402011 = ["Group"]
+1403011 = ["Group"]
+1404011 = ["Group"]
+1405011 = ["Group"]
+1406011 = ["Group"]
+1407011 = ["Group"]
+1408011 = ["Group"]
+1409011 = ["Group"]
+1410011 = ["Group"]
+
+# Head
+180001 = ["Head"]
+180002 = ["Claw"]
+1410012 = ["Fixer"]
+180003 = ["Fixer"]
+180004 = ["Fixer", "Color"]
+250022 = ["Fixer", "Color"]
+
+# Library
+6 = ["Fixer:Delete", "Color:Delete"]
+8 = ["Head:Delete"]
+102 = ["Fixer"]
+
+# ---
+
+# Butcher
+111003 = ["Group"]
+211003 = ["Group"]
+111004 = ["Group"]
+211004 = ["Group"]
+
+# Hook
+111002 = ["Fixer"]
+211002 = ["Fixer"]
+
+# Grade8
+121007 = ["Fixer"]
+221007 = ["Fixer"]
+121008 = ["Fixer"]
+121009 = ["Fixer"]
+221009 = ["Fixer"]
+221008 = ["Fixer"]
+
+# Grade7
+121010 = ["Fixer"]
+121012 = ["Fixer"]
+221010 = ["Fixer"]
+221011 = ["Fixer"]
+221012 = ["Fixer"]
+
+# Axe
+121013 = ["Group"]
+221013 = ["Group"]
+121014 = ["Group"]
+221014 = ["Group"]
+99999 = ["Group"]
+
+# Rusted Chain
+132002 = ["Group"]
+232002 = ["Group"]
+132001 = ["Group"]
+232001 = ["Group"]
+
+# Workshop
+133001 = ["Fixer"]
+233001 = ["Fixer"]
+
+# jeong
+134001 = ["Fixer"]
+234001 = ["Fixer"]
+
+# Seven
+143002 = ["Fixer", "7Assoc"]
+243002 = ["Fixer", "7Assoc"]
+143001 = ["Fixer", "7Assoc"]
+243001 = ["Fixer", "7Assoc"]
+
+# Geomgye
+143003 = ["Group", "Geomgye"]
+243003 = ["Group", "Geomgye"]
+143004 = ["Group", "Geomgye"]
+243004 = ["Group", "Geomgye"]
+
+# DongHwan
+143005 = ["Fixer", "DongHwan"]
+243005 = ["Fixer", "DongHwan"]
+
+# Awls
+152001 = ["Group"]
+252001 = ["Group"]
+152002 = ["Group"]
+252002 = ["Group"]
+
+# Udjat
+153001 = ["Fixer", "Group"]
+253001 = ["Fixer", "Group"]
+
+# Mirae
+154001 = ["Group"]
+254001 = ["Group"]
+154002 = ["Group"]
+254002 = ["Group"]
+
+# Leaf
+155001 = ["Fixer"]
+255001 = ["Fixer"]
+155002 = ["Fixer"]
+255002 = ["Fixer"]
+
+# Bayard
+156001 = ["Fixer"]
+256001 = ["Fixer"]
+156002 = ["Fixer"]
+256002 = ["Fixer"]

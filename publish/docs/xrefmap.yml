@@ -2754,6 +2754,28 @@ references:
   commentId: T:DeviceOfHermes.BattleUnitExtension
   fullName: DeviceOfHermes.BattleUnitExtension
   nameWithType: BattleUnitExtension
+- uid: DeviceOfHermes.BookTag
+  name: BookTag
+  href: api/DeviceOfHermes.BookTag.html
+  commentId: T:DeviceOfHermes.BookTag
+  fullName: DeviceOfHermes.BookTag
+  nameWithType: BookTag
+- uid: DeviceOfHermes.BookTag.SetTags(LorId,System.Collections.Generic.List{System.String})
+  name: SetTags(LorId, params List<string>)
+  href: api/DeviceOfHermes.BookTag.html#DeviceOfHermes_BookTag_SetTags_LorId_System_Collections_Generic_List_System_String__
+  commentId: M:DeviceOfHermes.BookTag.SetTags(LorId,System.Collections.Generic.List{System.String})
+  name.vb: SetTags(LorId, List(Of String))
+  fullName: DeviceOfHermes.BookTag.SetTags(LorId, params System.Collections.Generic.List<string>)
+  fullName.vb: DeviceOfHermes.BookTag.SetTags(LorId, System.Collections.Generic.List(Of String))
+  nameWithType: BookTag.SetTags(LorId, params List<string>)
+  nameWithType.vb: BookTag.SetTags(LorId, List(Of String))
+- uid: DeviceOfHermes.BookTag.SetTags*
+  name: SetTags
+  href: api/DeviceOfHermes.BookTag.html#DeviceOfHermes_BookTag_SetTags_
+  commentId: Overload:DeviceOfHermes.BookTag.SetTags
+  isSpec: "True"
+  fullName: DeviceOfHermes.BookTag.SetTags
+  nameWithType: BookTag.SetTags
 - uid: DeviceOfHermes.Boot
   name: DeviceOfHermes.Boot
   href: api/DeviceOfHermes.Boot.html
@@ -3343,6 +3365,42 @@ references:
   commentId: F:DeviceOfHermes.Data.AutoMapXmlRoot.info
   fullName: DeviceOfHermes.Data.AutoMapXmlRoot.info
   nameWithType: AutoMapXmlRoot.info
+- uid: DeviceOfHermes.Data.BookTagXmlInfo
+  name: BookTagXmlInfo
+  href: api/DeviceOfHermes.Data.BookTagXmlInfo.html
+  commentId: T:DeviceOfHermes.Data.BookTagXmlInfo
+  fullName: DeviceOfHermes.Data.BookTagXmlInfo
+  nameWithType: BookTagXmlInfo
+- uid: DeviceOfHermes.Data.BookTagXmlInfo.id
+  name: id
+  href: api/DeviceOfHermes.Data.BookTagXmlInfo.html#DeviceOfHermes_Data_BookTagXmlInfo_id
+  commentId: F:DeviceOfHermes.Data.BookTagXmlInfo.id
+  fullName: DeviceOfHermes.Data.BookTagXmlInfo.id
+  nameWithType: BookTagXmlInfo.id
+- uid: DeviceOfHermes.Data.BookTagXmlInfo.pid
+  name: pid
+  href: api/DeviceOfHermes.Data.BookTagXmlInfo.html#DeviceOfHermes_Data_BookTagXmlInfo_pid
+  commentId: F:DeviceOfHermes.Data.BookTagXmlInfo.pid
+  fullName: DeviceOfHermes.Data.BookTagXmlInfo.pid
+  nameWithType: BookTagXmlInfo.pid
+- uid: DeviceOfHermes.Data.BookTagXmlInfo.tags
+  name: tags
+  href: api/DeviceOfHermes.Data.BookTagXmlInfo.html#DeviceOfHermes_Data_BookTagXmlInfo_tags
+  commentId: F:DeviceOfHermes.Data.BookTagXmlInfo.tags
+  fullName: DeviceOfHermes.Data.BookTagXmlInfo.tags
+  nameWithType: BookTagXmlInfo.tags
+- uid: DeviceOfHermes.Data.BookTagXmlRoot
+  name: BookTagXmlRoot
+  href: api/DeviceOfHermes.Data.BookTagXmlRoot.html
+  commentId: T:DeviceOfHermes.Data.BookTagXmlRoot
+  fullName: DeviceOfHermes.Data.BookTagXmlRoot
+  nameWithType: BookTagXmlRoot
+- uid: DeviceOfHermes.Data.BookTagXmlRoot.info
+  name: info
+  href: api/DeviceOfHermes.Data.BookTagXmlRoot.html#DeviceOfHermes_Data_BookTagXmlRoot_info
+  commentId: F:DeviceOfHermes.Data.BookTagXmlRoot.info
+  fullName: DeviceOfHermes.Data.BookTagXmlRoot.info
+  nameWithType: BookTagXmlRoot.info
 - uid: DeviceOfHermes.Data.OnlyCardXmlInfo
   name: OnlyCardXmlInfo
   href: api/DeviceOfHermes.Data.OnlyCardXmlInfo.html
@@ -4685,6 +4743,18 @@ references:
   commentId: T:DeviceOfHermes.HermesConstants
   fullName: DeviceOfHermes.HermesConstants
   nameWithType: HermesConstants
+- uid: DeviceOfHermes.HermesConstants.BuiltinBookTagData
+  name: BuiltinBookTagData
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_BuiltinBookTagData
+  commentId: F:DeviceOfHermes.HermesConstants.BuiltinBookTagData
+  fullName: DeviceOfHermes.HermesConstants.BuiltinBookTagData
+  nameWithType: HermesConstants.BuiltinBookTagData
+- uid: DeviceOfHermes.HermesConstants.BuiltinBookTagLocalizeJP
+  name: BuiltinBookTagLocalizeJP
+  href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_BuiltinBookTagLocalizeJP
+  commentId: F:DeviceOfHermes.HermesConstants.BuiltinBookTagLocalizeJP
+  fullName: DeviceOfHermes.HermesConstants.BuiltinBookTagLocalizeJP
+  nameWithType: HermesConstants.BuiltinBookTagLocalizeJP
 - uid: DeviceOfHermes.HermesConstants.EqualEvasion
   name: EqualEvasion
   href: api/DeviceOfHermes.HermesConstants.html#DeviceOfHermes_HermesConstants_EqualEvasion

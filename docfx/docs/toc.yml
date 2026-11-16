@@ -20,6 +20,8 @@
       href: battlecard-extension.md
     - name: BattleUnitExtension
       href: battleunit-extension.md
+    - name: BookTag
+      href: booktag.md
     - name: ChainBattle
       href: chainbattle.md
     - name: Composite
@@ -86,6 +88,8 @@
   items:
     - name: AutoMapXml
       href: automap-data.md
+    - name: BookTagXml
+      href: booktag-data.md
     - name: EmotionCardXml
       href: emotioncard-data.md
     - name: FormationXml
@@ -129,7 +133,7 @@
 - name: Hijack System
   items:
     - name: HermesConfig
-      hred: hermes-config.md
+      href: hermes-config.md
     - name: DynamicAbility
       href: dynamic-ability.md
     - name: HermesPreloader

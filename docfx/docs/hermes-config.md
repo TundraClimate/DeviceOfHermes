@@ -7,7 +7,8 @@ MODフォルダ内の`Hermes.toml`を対象として読み込みます。
 
 最新の推奨設定は`DeviceOfHermes`のMODフォルダ内をの`Hermes.toml`を参照してください。
 
-推奨設定:  
+推奨設定:
+
 ```toml
 # 自動でAssemblies/内のパッチを当てるかどうか
 # trueにすると自動でパッチを当てます
@@ -27,10 +28,16 @@ formation = "Data/Formation.xml"
 # 幻想体ページをロードするファイルのパス
 emotioncard = "Data/EmotionCard.xml"
 
+# コアページとタグのマッピングをロードするファイルのパス
+booktag = "Data/BookTag.xml"
+
 [localize]
 
 # 幻想体ページのローカライズをロードするフォルダのパス
 abnocard = "LocalizeBase/{0}/AbnoCard"
+
+# コアページタグのローカライズをロードするフォルダのパス
+booktag = "LocalizeBase/{0}/BookTag"
 
 [resource]
 

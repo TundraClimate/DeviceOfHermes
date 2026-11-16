@@ -1,6 +1,7 @@
 using System.Reflection;
 using UnityEngine;
 using DeviceOfHermes.Resource;
+using System.Text;
 
 namespace DeviceOfHermes;
 
@@ -9,6 +10,8 @@ public static class HermesConstants
 {
     static HermesConstants()
     {
+        BuiltinBookTagData = Serde.FromTomlStr<Dictionary<string, List<string>>>(Encoding.UTF8.GetString(LoadBytes("booktag_data.toml")))!;
+        BuiltinBookTagLocalizeJP = Serde.FromTomlStr<Dictionary<string, string>>(Encoding.UTF8.GetString(LoadBytes("booktag_localize_jp.toml")))!;
         RevengeDiceSlash = Artwork.CreateSprite(LoadBytes("revenge_slash.png"))!;
         RevengeDicePenetrate = Artwork.CreateSprite(LoadBytes("revenge_penetrate.png"))!;
         RevengeDiceHit = Artwork.CreateSprite(LoadBytes("revenge_hit.png"))!;
@@ -49,6 +52,12 @@ public static class HermesConstants
 
         return ms.ToArray();
     }
+
+    /// A dictionary the BookTag data
+    public static Dictionary<string, List<string>> BuiltinBookTagData;
+
+    /// A dictionary the BookTag localize
+    public static Dictionary<string, string> BuiltinBookTagLocalizeJP;
 
     /// A sprite used by <see cref="DeviceOfHermes.CustomDice.RevengeDice"/>
     public static Sprite RevengeDiceSlash;
