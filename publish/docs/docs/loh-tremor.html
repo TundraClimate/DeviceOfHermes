@@ -149,6 +149,9 @@ owner.currentDiceAction.ApplyTremorBreakRateAdder(50);
 <pre><code class="lang-cs">// 特殊振動を付与する(値は自動で揃うため、1の付与で良い)
 target.bufListDetail.AddKeywordBufThisRoundByCard(MyKeywordBuf.SpecialTremor, 1, owner);
 
+// キーワードを作成していない場合
+// target.bufListDetail.AddBufWithoutDuplication(new SpecialTremor());
+
 // 振幅変換する
 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorConversion, 1, owner);
 </code></pre>

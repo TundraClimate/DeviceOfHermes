@@ -5,7 +5,7 @@
 
 # Tremor
 
-リンバスの"振動"と同じような挙動をするバフです。  
+リンバスの"振動"と同じような挙動をするバフです。
 
 > 振動爆発を受けるとき、振動の値だけ混乱追加ダメージを受ける。
 
@@ -37,7 +37,7 @@ class SpecialTremor : BattleUnitBuf_Limbuf_Tremor
 ```
 
 `bufType`は`None`、もしくは重複しないKeywordBufを作成・使用してください。  
-[KeywordBufExtender](keywordbuf-extender.md)等を使用してください。  
+[KeywordBufExtender](keywordbuf-extender.md)等を使用してください。
 
 ```cs
 class SpecialTremor : BattleUnitBuf_Limbuf_Tremor
@@ -78,6 +78,9 @@ class SpecialTremor : BattleUnitBuf_Limbuf_Tremor
 // 特殊振動を付与する(値は自動で揃うため、1の付与で良い)
 target.bufListDetail.AddKeywordBufThisRoundByCard(MyKeywordBuf.SpecialTremor, 1, owner);
 
+// キーワードを作成していない場合
+// target.bufListDetail.AddBufWithoutDuplication(new SpecialTremor());
+
 // 振幅変換する
 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorConversion, 1, owner);
 ```
@@ -85,7 +88,7 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorConversion
 ## TremorEntangle
 
 振幅絡縺を行うことが出来ます。  
-直前で特殊振動を付与している必要があります。  
+直前で特殊振動を付与している必要があります。
 
 > 絡縺させる振動効果と、対象の振動系効果を振動-重畳に合算。絡縺時、振動の値が維持される。
 > 振動-重畳に振幅変換発動時、変換させる振動効果が絡縺で適用される。
@@ -129,7 +132,7 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorEntangle, 
 リンバスの"振動-灼熱"と同じような挙動をするバフです。
 
 > 振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。
-> 
+>
 > 振動爆発を受ける時、(振動と火傷の合計÷2)だけ効果体力ダメージを受け、火傷数値が4/5に減少(端数切り捨て)。
 
 ```cs
@@ -147,7 +150,7 @@ target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1
 リンバスの"振動-大量出血"と同じような挙動をするバフです。
 
 > 振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。
-> 
+>
 > 振動爆発を受ける時、(振動と出血の合計÷2)だけ効果体力ダメージを受け、出血数値が4/5に減少(端数切り捨て)。
 
 ```cs
@@ -165,7 +168,7 @@ target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1
 リンバスの"振動-反響"と同じような挙動をするバフです。
 
 > 振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。
-> 
+>
 > 振動爆発を受ける時、振動の数値だけ効果体力ダメージを受ける。
 
 ```cs
@@ -183,7 +186,7 @@ target.bufListDetail.AddKeywordBufThisRoundByEtc(LimKeywordBuf.TremorEntangle, 1
 リンバスの"振動-鎖"と同じような挙動をするバフです。
 
 > 振動爆発を受けるとき、{0}だけ混乱追加ダメージを受ける。
-> 
+>
 > マッチ時、振動10につきダイス威力が1減少(最大3)
 
 ```cs
