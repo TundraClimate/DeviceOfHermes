@@ -52,4 +52,13 @@ public class BattleUnitBuf_Limbuf_Sinking : LimbufBase
             base._owner.EachUnitBufOf<ILimbuf.OnPanic>(i => i.OnPanic());
         }
     }
+
+    /// <summary>Impl OnRoundStartAfter</summary>
+    public override void OnRoundStartAfter()
+    {
+        if (base._owner.bufListDetail.HasBuf<BattleUnitBuf_Limbuf_Panic>())
+        {
+            Destroy();
+        }
+    }
 }
