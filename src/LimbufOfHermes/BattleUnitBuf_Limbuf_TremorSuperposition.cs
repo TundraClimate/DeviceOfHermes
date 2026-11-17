@@ -40,6 +40,11 @@ public sealed class BattleUnitBuf_Limbuf_TremorSuperposition : BattleUnitBuf_Lim
     /// <summary>Impl OnTremorBurst</summary>
     public override void OnTremorBurst(int stack)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         base.OnTremorBurst(stack);
     }
 }

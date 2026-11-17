@@ -12,6 +12,11 @@ public class BattleUnitBuf_Limbuf_TremorReverb : BattleUnitBuf_Limbuf_Tremor
     /// <summary>Impl OnTremorBurst</summary>
     public override void OnTremorBurst(int stack)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         base.OnTremorBurst(stack);
 
         var dmg = stack;

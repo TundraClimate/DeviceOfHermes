@@ -30,6 +30,11 @@ public class BattleUnitBuf_Limbuf_Ammo : LimbufBase
     /// <summary>Consume ammo</summary>
     public bool Consume(BattleDiceBehavior dice, int num)
     {
+        if (this.IsDestroyed())
+        {
+            return false;
+        }
+
         num += BeforeConsume(dice, this.stack, num);
         num = 0.Max(num);
 

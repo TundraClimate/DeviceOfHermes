@@ -39,6 +39,11 @@ public class BattleUnitBuf_Limbuf_Panic : LimbufBase
     /// <summary>Impl BeforeRollDice</summary>
     public override void BeforeRollDice(BattleDiceBehavior behavior)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         if (base._owner.IsImmune(this.bufType))
         {
             return;

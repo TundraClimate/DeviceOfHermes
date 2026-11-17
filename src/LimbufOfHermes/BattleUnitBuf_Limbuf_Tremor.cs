@@ -108,6 +108,11 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
     /// <summary>Impl OnOtherInstant</summary>
     public override void OnOtherInstant(AdvancedUnitBuf instant)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         if (base._owner.IsImmune(this.bufType))
         {
             return;

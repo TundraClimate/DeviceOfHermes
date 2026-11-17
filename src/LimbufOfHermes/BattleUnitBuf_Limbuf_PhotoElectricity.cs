@@ -15,6 +15,11 @@ public class BattleUnitBuf_Limbuf_PhotoElectricity : LimbufBase
     /// <summary>Impl OnTakeDamageByAttack</summary>
     public override void OnTakeDamageByAttack(BattleDiceBehavior atkDice, int dmg)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         if (!atkDice.owner.bufListDetail.HasBuf<Check>())
         {
             var num = atkDice.owner.bufListDetail?.GetKewordBufStack(KeywordBuf.WarpCharge) > 5 ? this.stack : this.stack + 3;

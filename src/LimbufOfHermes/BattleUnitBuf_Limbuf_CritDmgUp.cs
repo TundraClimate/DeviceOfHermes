@@ -18,6 +18,11 @@ public class BattleUnitBuf_Limbuf_CritDmgUp : LimbufBase
     /// <summary>Impl BeforeRollDice</summary>
     public override void BeforeRollDice(BattleDiceBehavior behavior)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         behavior.ApplyCritDamageAdder(0.1);
     }
 

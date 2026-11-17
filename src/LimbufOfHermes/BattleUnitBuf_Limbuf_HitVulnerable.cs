@@ -17,6 +17,11 @@ public class BattleUnitBuf_Limbuf_HitVulnerable : LimbufBase
     /// <summary>Impl GetDamageReduction</summary>
     public override int GetDamageReduction(BattleDiceBehavior behavior)
     {
+        if (this.IsDestroyed())
+        {
+            return 0;
+        }
+
         if (base._owner.IsImmune(this.bufType) || behavior.Detail is not BehaviourDetail.Hit)
         {
             return base.GetDamageReduction(behavior);

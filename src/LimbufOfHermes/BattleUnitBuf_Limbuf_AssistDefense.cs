@@ -21,6 +21,11 @@ public class BattleUnitBuf_Limbuf_AssistDefense : LimbufBase
     /// <summary>Impl BeforeAlliesTakeOneSideAction</summary>
     public override void BeforeAlliesTakeOneSideAction(BattleUnitModel victim, BattleUnitModel attacker, BattlePlayingCardDataInUnitModel attckCard, ref BattlePlayingCardDataInUnitModel? altCard)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         if (0 >= this.stack || altCard is not null || attckCard.target != victim || base._owner.faction.AliveUnits.Filter(u => u != victim && u.bufListDetail.HasBuf<BattleUnitBuf_Limbuf_AssistDefenseCard>()).MaxBy(u => u.GetBufStack<BattleUnitBuf_Limbuf_AssistDefense>() ?? 0) != base._owner)
         {
             return;

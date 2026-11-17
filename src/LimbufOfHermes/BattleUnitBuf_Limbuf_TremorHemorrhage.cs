@@ -12,6 +12,11 @@ public class BattleUnitBuf_Limbuf_TremorHemorrhage : BattleUnitBuf_Limbuf_Tremor
     /// <summary>Impl OnTremorBurst</summary>
     public override void OnTremorBurst(int stack)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         base.OnTremorBurst(stack);
 
         var bleed = base._owner?.bufListDetail?.GetActivatedBuf(KeywordBuf.Bleeding);

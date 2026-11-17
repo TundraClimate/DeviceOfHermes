@@ -15,6 +15,11 @@ public class BattleUnitBuf_Limbuf_DmgDown : LimbufBase
     /// <summary>Impl BeforeRollDice</summary>
     public override void BeforeRollDice(BattleDiceBehavior behavior)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         if (!_owner.IsImmune(bufType))
         {
             behavior.ApplyDiceStatBonus(new DiceStatBonus

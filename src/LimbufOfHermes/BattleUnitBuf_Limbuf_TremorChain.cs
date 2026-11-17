@@ -12,6 +12,11 @@ public class BattleUnitBuf_Limbuf_TremorChain : BattleUnitBuf_Limbuf_Tremor
     /// <summary>Impl BeforeRollDice</summary>
     public override void BeforeRollDice(BattleDiceBehavior behavior)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         var tremor = TremorStack;
 
         if (behavior.TargetDice is not null && tremor >= 10)

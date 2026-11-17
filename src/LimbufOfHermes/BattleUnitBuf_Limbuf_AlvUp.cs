@@ -17,6 +17,11 @@ public class BattleUnitBuf_Limbuf_AlvUp : LimbufBase
     /// <summary>Impl BeforeRollDice</summary>
     public override void BeforeRollDice(BattleDiceBehavior behavior)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         if (behavior.Type is BehaviourType.Atk)
         {
             behavior.ApplyDiceStatBonus(new DiceStatBonus

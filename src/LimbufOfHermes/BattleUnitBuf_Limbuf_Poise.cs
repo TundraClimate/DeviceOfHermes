@@ -49,6 +49,11 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
     /// <summary>Impl BeforeRollDice</summary>
     public override void BeforeRollDice(BattleDiceBehavior behavior)
     {
+        if (this.IsDestroyed())
+        {
+            return;
+        }
+
         var isCrit = CritData.GetValue(behavior, _ => new(false));
 
         isCrit.value = false;

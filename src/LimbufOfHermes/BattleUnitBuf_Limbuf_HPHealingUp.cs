@@ -15,6 +15,11 @@ public class BattleUnitBuf_Limbuf_HPHealingUp : LimbufBase
     /// <summary>Impl GetHealingAdder</summary>
     public override int GetHealingAdder(int origin)
     {
+        if (this.IsDestroyed())
+        {
+            return 0;
+        }
+
         return this.stack;
     }
 
