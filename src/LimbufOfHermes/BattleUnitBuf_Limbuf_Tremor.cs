@@ -129,6 +129,12 @@ public class BattleUnitBuf_Limbuf_Tremor : LimbufBase
 
             OnActivate((int)dmg);
 
+            if (burst.bufType == LimKeywordBuf.TremorBurstByCard)
+            {
+                base._owner.EachPassiveOf<ILimbuf.OnTremorBurstByCard>(i => i.OnTremorBurstByCard(stack));
+                base._owner.EachUnitBufOf<ILimbuf.OnTremorBurstByCard>(i => i.OnTremorBurstByCard(stack));
+            }
+
             if (StageController.Instance.IsLogState())
             {
                 base._owner.AddRencounterEvent(RencounterEvent.TakeDamaged, () =>

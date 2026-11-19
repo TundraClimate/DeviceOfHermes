@@ -16,6 +16,9 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Tremor, 7, owner
 // 振動爆発
 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorBurst, 1, owner);
 
+// ページ効果に因る振動爆発
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorBurstByCard, 1, owner);
+
 // 振動を5消耗
 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ConsumeTremor, 5, owner);
 
@@ -111,9 +114,19 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorEntangle, 
 
 - `stack`: 振動の値です。
 
+### `ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(int stack)`
+
+ページ効果により振動爆発によって影響を受けたときに実行されます。
+
+- `stack`: 振動の値です。
+
 ### `ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst()`
 
 振動爆発が適用されたときに実行されます。
+
+### `ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard()`
+
+ページ効果により振動爆発が適用されたときに実行されます。
 
 ### `ILimbuf.OnTremorConversion.OnTremorConversion()`
 
@@ -123,9 +136,13 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorEntangle, 
 
 振幅絡縺が適用されたときに実行されます。
 
-### `ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel)`
+### `ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel target)`
 
 振動爆発させたときに実行されます。
+
+### `ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard(BattleUnitModel target)`
+
+ページ効果により振動爆発させたときに実行されます。
 
 # TremorScorch
 

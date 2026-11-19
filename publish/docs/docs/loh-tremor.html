@@ -100,6 +100,9 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Tremor, 7, owner
 // 振動爆発
 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorBurst, 1, owner);
 
+// ページ効果に因る振動爆発
+target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorBurstByCard, 1, owner);
+
 // 振動を5消耗
 target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.ConsumeTremor, 5, owner);
 
@@ -175,14 +178,23 @@ target.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.TremorEntangle, 
 <ul>
 <li><code>stack</code>: 振動の値です。</li>
 </ul>
+<h3 id="ilimbufontremorburstbycardontremorburstbycardint-stack"><code>ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(int stack)</code></h3>
+<p>ページ効果により振動爆発によって影響を受けたときに実行されます。</p>
+<ul>
+<li><code>stack</code>: 振動の値です。</li>
+</ul>
 <h3 id="ilimbufonapplytremorburstonapplytremorburst"><code>ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst()</code></h3>
 <p>振動爆発が適用されたときに実行されます。</p>
+<h3 id="ilimbufonapplytremorburstbycardonapplytremorburstbycard"><code>ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard()</code></h3>
+<p>ページ効果により振動爆発が適用されたときに実行されます。</p>
 <h3 id="ilimbufontremorconversionontremorconversion"><code>ILimbuf.OnTremorConversion.OnTremorConversion()</code></h3>
 <p>振幅変換が適用されたときに実行されます。</p>
 <h3 id="ilimbufontremorentangleontremorentangle"><code>ILimbuf.OnTremorEntangle.OnTremorEntangle()</code></h3>
 <p>振幅絡縺が適用されたときに実行されます。</p>
-<h3 id="ilimbufonexectremorburstonexectremorburstbattleunitmodel"><code>ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel)</code></h3>
+<h3 id="ilimbufonexectremorburstonexectremorburstbattleunitmodel-target"><code>ILimbuf.OnExecTremorBurst.OnExecTremorBurst(BattleUnitModel target)</code></h3>
 <p>振動爆発させたときに実行されます。</p>
+<h3 id="ilimbufonexectremorburstbycardonexectremorburstbycardbattleunitmodel-target"><code>ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard(BattleUnitModel target)</code></h3>
+<p>ページ効果により振動爆発させたときに実行されます。</p>
 <h1 id="tremorscorch">TremorScorch</h1>
 <p>リンバスの&quot;振動-灼熱&quot;と同じような挙動をするバフです。</p>
 <blockquote>

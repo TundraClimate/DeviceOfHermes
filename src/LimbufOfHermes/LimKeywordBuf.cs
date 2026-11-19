@@ -43,6 +43,10 @@ public class LimKeywordBuf
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_TremorBurst))]
     public static KeywordBuf TremorBurst { get; private set; }
 
+    /// <summary>TremorBurstByCard KeywordBuf</summary>
+    [KeywordBuf(typeof(BattleUnitBuf_Limbuf_TremorBurstByCard))]
+    public static KeywordBuf TremorBurstByCard { get; private set; }
+
     /// <summary>TremorConversion KeywordBuf</summary>
     [KeywordBuf(typeof(BattleUnitBuf_Limbuf_TremorConversion))]
     public static KeywordBuf TremorConversion { get; private set; }

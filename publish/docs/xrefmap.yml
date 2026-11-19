@@ -10964,6 +10964,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast
   nameWithType: BattleUnitBuf_Limbuf_Sinking.OnRoundEndTheLast
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter
+  name: OnRoundStartAfter()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_OnRoundStartAfter
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter()
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter*
+  name: OnRoundStartAfter
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_OnRoundStartAfter_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter
+  nameWithType: BattleUnitBuf_Limbuf_Sinking.OnRoundStartAfter
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.bufType
   name: bufType
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Sinking.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Sinking_bufType
@@ -11454,6 +11467,54 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurst.keywordId
   nameWithType: BattleUnitBuf_Limbuf_TremorBurst.keywordId
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard
+  name: BattleUnitBuf_Limbuf_TremorBurstByCard
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.html
+  commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard
+  nameWithType: BattleUnitBuf_Limbuf_TremorBurstByCard
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate(System.Int32)
+  name: OnActivate(int)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorBurstByCard_OnActivate_System_Int32_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate(System.Int32)
+  name.vb: OnActivate(Integer)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate(int)
+  fullName.vb: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate(Integer)
+  nameWithType: BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate(int)
+  nameWithType.vb: BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate(Integer)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate*
+  name: OnActivate
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorBurstByCard_OnActivate_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate
+  nameWithType: BattleUnitBuf_Limbuf_TremorBurstByCard.OnActivate
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant
+  name: OnInstant()
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorBurstByCard_OnInstant
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant()
+  nameWithType: BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant()
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant*
+  name: OnInstant
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorBurstByCard_OnInstant_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant
+  nameWithType: BattleUnitBuf_Limbuf_TremorBurstByCard.OnInstant
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.bufType
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorBurstByCard_bufType
+  commentId: P:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.bufType
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.bufType
+  nameWithType: BattleUnitBuf_Limbuf_TremorBurstByCard.bufType
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.bufType*
+  name: bufType
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.html#LimbufOfHermes_BattleUnitBuf_Limbuf_TremorBurstByCard_bufType_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.bufType
+  isSpec: "True"
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorBurstByCard.bufType
+  nameWithType: BattleUnitBuf_Limbuf_TremorBurstByCard.bufType
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain
   name: BattleUnitBuf_Limbuf_TremorChain
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_TremorChain.html
@@ -12027,6 +12088,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst
   nameWithType: ILimbuf.OnApplyTremorBurst.OnApplyTremorBurst
+- uid: LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard
+  name: ILimbuf.OnApplyTremorBurstByCard
+  href: api/LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard
+  fullName: LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard
+  nameWithType: ILimbuf.OnApplyTremorBurstByCard
+- uid: LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard
+  name: OnApplyTremorBurstByCard()
+  href: api/LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.html#LimbufOfHermes_ILimbuf_OnApplyTremorBurstByCard_OnApplyTremorBurstByCard
+  commentId: M:LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard
+  fullName: LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard()
+  nameWithType: ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard()
+- uid: LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard*
+  name: OnApplyTremorBurstByCard
+  href: api/LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.html#LimbufOfHermes_ILimbuf_OnApplyTremorBurstByCard_OnApplyTremorBurstByCard_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard
+  nameWithType: ILimbuf.OnApplyTremorBurstByCard.OnApplyTremorBurstByCard
 - uid: LimbufOfHermes.ILimbuf.OnAssistDefense
   name: ILimbuf.OnAssistDefense
   href: api/LimbufOfHermes.ILimbuf.OnAssistDefense.html
@@ -12166,6 +12246,25 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnExecTremorBurst.OnExecTremorBurst
   nameWithType: ILimbuf.OnExecTremorBurst.OnExecTremorBurst
+- uid: LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard
+  name: ILimbuf.OnExecTremorBurstByCard
+  href: api/LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard
+  fullName: LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard
+  nameWithType: ILimbuf.OnExecTremorBurstByCard
+- uid: LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard(BattleUnitModel)
+  name: OnExecTremorBurstByCard(BattleUnitModel)
+  href: api/LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.html#LimbufOfHermes_ILimbuf_OnExecTremorBurstByCard_OnExecTremorBurstByCard_BattleUnitModel_
+  commentId: M:LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard(BattleUnitModel)
+  fullName: LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard(BattleUnitModel)
+  nameWithType: ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard(BattleUnitModel)
+- uid: LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard*
+  name: OnExecTremorBurstByCard
+  href: api/LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.html#LimbufOfHermes_ILimbuf_OnExecTremorBurstByCard_OnExecTremorBurstByCard_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard
+  nameWithType: ILimbuf.OnExecTremorBurstByCard.OnExecTremorBurstByCard
 - uid: LimbufOfHermes.ILimbuf.OnLoseBarrier
   name: ILimbuf.OnLoseBarrier
   href: api/LimbufOfHermes.ILimbuf.OnLoseBarrier.html
@@ -12330,6 +12429,28 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.ILimbuf.OnTremorBurst.OnTremorBurst
   nameWithType: ILimbuf.OnTremorBurst.OnTremorBurst
+- uid: LimbufOfHermes.ILimbuf.OnTremorBurstByCard
+  name: ILimbuf.OnTremorBurstByCard
+  href: api/LimbufOfHermes.ILimbuf.OnTremorBurstByCard.html
+  commentId: T:LimbufOfHermes.ILimbuf.OnTremorBurstByCard
+  fullName: LimbufOfHermes.ILimbuf.OnTremorBurstByCard
+  nameWithType: ILimbuf.OnTremorBurstByCard
+- uid: LimbufOfHermes.ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(System.Int32)
+  name: OnTremorBurstByCard(int)
+  href: api/LimbufOfHermes.ILimbuf.OnTremorBurstByCard.html#LimbufOfHermes_ILimbuf_OnTremorBurstByCard_OnTremorBurstByCard_System_Int32_
+  commentId: M:LimbufOfHermes.ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(System.Int32)
+  name.vb: OnTremorBurstByCard(Integer)
+  fullName: LimbufOfHermes.ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(int)
+  fullName.vb: LimbufOfHermes.ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(Integer)
+  nameWithType: ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(int)
+  nameWithType.vb: ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard(Integer)
+- uid: LimbufOfHermes.ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard*
+  name: OnTremorBurstByCard
+  href: api/LimbufOfHermes.ILimbuf.OnTremorBurstByCard.html#LimbufOfHermes_ILimbuf_OnTremorBurstByCard_OnTremorBurstByCard_
+  commentId: Overload:LimbufOfHermes.ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard
+  isSpec: "True"
+  fullName: LimbufOfHermes.ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard
+  nameWithType: ILimbuf.OnTremorBurstByCard.OnTremorBurstByCard
 - uid: LimbufOfHermes.ILimbuf.OnTremorConversion
   name: ILimbuf.OnTremorConversion
   href: api/LimbufOfHermes.ILimbuf.OnTremorConversion.html
@@ -12738,6 +12859,19 @@ references:
   isSpec: "True"
   fullName: LimbufOfHermes.LimKeywordBuf.TremorBurst
   nameWithType: LimKeywordBuf.TremorBurst
+- uid: LimbufOfHermes.LimKeywordBuf.TremorBurstByCard
+  name: TremorBurstByCard
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorBurstByCard
+  commentId: P:LimbufOfHermes.LimKeywordBuf.TremorBurstByCard
+  fullName: LimbufOfHermes.LimKeywordBuf.TremorBurstByCard
+  nameWithType: LimKeywordBuf.TremorBurstByCard
+- uid: LimbufOfHermes.LimKeywordBuf.TremorBurstByCard*
+  name: TremorBurstByCard
+  href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorBurstByCard_
+  commentId: Overload:LimbufOfHermes.LimKeywordBuf.TremorBurstByCard
+  isSpec: "True"
+  fullName: LimbufOfHermes.LimKeywordBuf.TremorBurstByCard
+  nameWithType: LimKeywordBuf.TremorBurstByCard
 - uid: LimbufOfHermes.LimKeywordBuf.TremorChain
   name: TremorChain
   href: api/LimbufOfHermes.LimKeywordBuf.html#LimbufOfHermes_LimKeywordBuf_TremorChain

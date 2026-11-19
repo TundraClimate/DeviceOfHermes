@@ -18,6 +18,13 @@ public static class ILimbuf
     }
 
     /// <summary>Interface</summary>
+    public interface OnApplyTremorBurstByCard
+    {
+        /// <summary>On applies tremor burst by card</summary>
+        public void OnApplyTremorBurstByCard();
+    }
+
+    /// <summary>Interface</summary>
     public interface OnTremorBurst
     {
         /// <summary>On tremor burst</summary>
@@ -25,10 +32,24 @@ public static class ILimbuf
     }
 
     /// <summary>Interface</summary>
+    public interface OnTremorBurstByCard
+    {
+        /// <summary>On tremor burst by card</summary>
+        public void OnTremorBurstByCard(int value);
+    }
+
+    /// <summary>Interface</summary>
     public interface OnExecTremorBurst
     {
         /// <summary>On exec tremor burst</summary>
         public void OnExecTremorBurst(BattleUnitModel target);
+    }
+
+    /// <summary>Interface</summary>
+    public interface OnExecTremorBurstByCard
+    {
+        /// <summary>On exec tremor burst by card</summary>
+        public void OnExecTremorBurstByCard(BattleUnitModel target);
     }
 
     /// <summary>Interface</summary>
