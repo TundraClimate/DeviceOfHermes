@@ -726,6 +726,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeAlliesTakeOneSideAction
   nameWithType: AdvancedPassiveBase.BeforeAlliesTakeOneSideAction
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceFirst(BattleDiceBehavior)
+  name: BeforeRollDiceFirst(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeRollDiceFirst_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceFirst(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceFirst(BattleDiceBehavior)
+  nameWithType: AdvancedPassiveBase.BeforeRollDiceFirst(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceFirst*
+  name: BeforeRollDiceFirst
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeRollDiceFirst_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceFirst
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceFirst
+  nameWithType: AdvancedPassiveBase.BeforeRollDiceFirst
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceLast(BattleDiceBehavior)
+  name: BeforeRollDiceLast(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeRollDiceLast_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceLast(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceLast(BattleDiceBehavior)
+  nameWithType: AdvancedPassiveBase.BeforeRollDiceLast(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceLast*
+  name: BeforeRollDiceLast
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeRollDiceLast_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceLast
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeRollDiceLast
+  nameWithType: AdvancedPassiveBase.BeforeRollDiceLast
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.BeforeTakeOneSideAction(BattleUnitModel,BattlePlayingCardDataInUnitModel)
   name: BeforeTakeOneSideAction(BattleUnitModel, BattlePlayingCardDataInUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_BeforeTakeOneSideAction_BattleUnitModel_BattlePlayingCardDataInUnitModel_
@@ -1253,6 +1279,32 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeAlliesTakeOneSideAction
   nameWithType: AdvancedUnitBuf.BeforeAlliesTakeOneSideAction
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceFirst(BattleDiceBehavior)
+  name: BeforeRollDiceFirst(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeRollDiceFirst_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceFirst(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceFirst(BattleDiceBehavior)
+  nameWithType: AdvancedUnitBuf.BeforeRollDiceFirst(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceFirst*
+  name: BeforeRollDiceFirst
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeRollDiceFirst_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceFirst
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceFirst
+  nameWithType: AdvancedUnitBuf.BeforeRollDiceFirst
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceLast(BattleDiceBehavior)
+  name: BeforeRollDiceLast(BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeRollDiceLast_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceLast(BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceLast(BattleDiceBehavior)
+  nameWithType: AdvancedUnitBuf.BeforeRollDiceLast(BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceLast*
+  name: BeforeRollDiceLast
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeRollDiceLast_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceLast
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeRollDiceLast
+  nameWithType: AdvancedUnitBuf.BeforeRollDiceLast
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.BeforeTakeOneSideAction(BattleUnitModel)
   name: BeforeTakeOneSideAction(BattleUnitModel)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_BeforeTakeOneSideAction_BattleUnitModel_

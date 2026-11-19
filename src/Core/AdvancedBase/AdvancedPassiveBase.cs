@@ -218,6 +218,16 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>Unit before roll dice with first</summary>
+    public virtual void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+    {
+    }
+
+    /// <summary>Unit before roll dice with last</summary>
+    public virtual void BeforeRollDiceLast(BattleDiceBehavior behavior)
+    {
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

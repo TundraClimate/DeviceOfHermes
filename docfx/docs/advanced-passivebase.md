@@ -5,9 +5,10 @@
 
 # AdvancedPassiveBase
 
-効果拡張版`PassiveAbilityBase`です。  
+効果拡張版`PassiveAbilityBase`です。
 
-例:  
+例:
+
 ```cs
 class PassiveAbility_TestAdvPassive : AdvancedPassiveBase
 {
@@ -158,6 +159,14 @@ class PassiveAbility_TestAdvPassive : AdvancedPassiveBase
     }
 
     public override void OnFlipEmotionCoin(EmotionCoinType coinType, int num)
+    {
+    }
+
+    public override void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
     {
     }
 }
@@ -360,7 +369,7 @@ public override void OnActivatedBuf(BattleUnitBuf activate)
 }
 ```
 
-バフ効果が新たに有効化したときに実行されます。  
+バフ効果が新たに有効化したときに実行されます。
 
 - `activate`: 新たに有効化されたバフです。
 
@@ -477,6 +486,7 @@ public override void OnRecoverPP(int gain)
 {
 }
 ```
+
 光を回復したときに実行されます。
 
 - `gain`: 回復しようとした値です。
@@ -503,7 +513,7 @@ public override void OnLoseHpByKeyword(int losed, KeywordBuf keyword)
 }
 ```
 
-`KeywordBuf`によって体力が減少したときに実行されます。  
+`KeywordBuf`によって体力が減少したときに実行されます。
 
 - `losed`: 失った体力数値です。
 - `keyword`: 受けた`KeywordBuf`です。
@@ -572,7 +582,7 @@ public override bool IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel car
 }
 ```
 
-ページが弾丸の効果を得るかどうかです。  
+ページが弾丸の効果を得るかどうかです。
 
 - `card`: 対象のページです。
 
@@ -617,3 +627,27 @@ public override void OnFlipEmotionCoin(EmotionCoinType coinType, int num)
 
 - `coinType`: 対象のコインの種類です。
 - `num`: 獲得した枚数です。
+
+### `BeforeRollDiceFirst(BattleDiceBehavior)`
+
+```cs
+public override void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+{
+}
+```
+
+`BeforeRollDice`より先に実行されます。
+
+- `behavior`: 対象のダイスです。
+
+### `BeforeRollDiceLast(BattleDiceBehavior)`
+
+```cs
+public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
+{
+}
+```
+
+`BeforeRollDice`より後に実行されます。
+
+- `behavior`: 対象のダイスです。

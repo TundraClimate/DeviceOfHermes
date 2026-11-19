@@ -1752,6 +1752,10 @@ internal static class AdvancedPatch
                 return;
             }
 
+            __instance.card?.owner?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(p => p.BeforeRollDiceFirst(__instance));
+
+            __instance.card?.owner?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(buf => buf.BeforeRollDiceFirst(__instance));
+
             __instance.abilityList?.OfType<AdvancedDiceBase>()?.Foreach(abi => abi.BeforeRollDiceFirst());
 
             if (__instance.card?.cardAbility is AdvancedCardBase abi)
@@ -1777,6 +1781,10 @@ internal static class AdvancedPatch
                     {
                         abi.BeforeRollDiceLast(__instance);
                     }
+
+                    __instance?.card?.owner?.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(p => p.BeforeRollDiceLast(__instance));
+
+                    __instance?.card?.owner?.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(buf => buf.BeforeRollDiceLast(__instance));
                 }
             }
             catch (Exception ex)

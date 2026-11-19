@@ -5,7 +5,7 @@
 
 # AdvancedUnitBuf
 
-効果拡張版`BattleUnitBuf`です。  
+効果拡張版`BattleUnitBuf`です。
 
 ```cs
 class BattleUnitBuf_AdvBuf : AdvancedUnitBuf
@@ -93,7 +93,7 @@ class BattleUnitBuf_AdvBuf : AdvancedUnitBuf
     public override void OnRecoverPP(int gain)
     {
     }
-    
+
     public override void OnSuccessAreaAttack(BattleDiceBehavior behavior, BattleUnitModel target)
     {
     }
@@ -138,6 +138,14 @@ class BattleUnitBuf_AdvBuf : AdvancedUnitBuf
     {
     }
 
+    public override void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+    {
+    }
+
+    public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
+    {
+    }
+
     public BattleUnitModel LastInflictBy;
 }
 ```
@@ -170,14 +178,14 @@ trueを指定した場合、`AddBuf`時に即座に`OnInstant`が実行されま
 public override bool IsSaveWhileReception => value;
 ```
 
-舞台を跨いでインスタンスを維持します。  
+舞台を跨いでインスタンスを維持します。
 
 - `value`: 維持するかどうかです。
 
 ### `LastInflictBy`
 
 バフが`KeywordBuf`かつ`AdvancedUnitBuf`である場合に、このバフを付与したユニットが格納されます。  
-ただし、自分が自分に付与した場合は変更されません。  
+ただし、自分が自分に付与した場合は変更されません。
 
 初期値はnullです。
 
@@ -382,6 +390,7 @@ public override void OnRecoverPP(int gain)
 {
 }
 ```
+
 光を回復したときに実行されます。
 
 - `gain`: 回復しようとした値です。
@@ -421,7 +430,7 @@ public override void OnLoseHpByKeyword(int losed, KeywordBuf keyword)
 }
 ```
 
-`KeywordBuf`によって体力が減少したときに実行されます。  
+`KeywordBuf`によって体力が減少したときに実行されます。
 
 - `losed`: 失った体力数値です。
 - `keyword`: 受けた`KeywordBuf`です。
@@ -490,7 +499,7 @@ public override bool IsTakeAmmoEffectNotFar(BattlePlayingCardDataInUnitModel car
 }
 ```
 
-ページが弾丸の効果を得るかどうかです。  
+ページが弾丸の効果を得るかどうかです。
 
 - `card`: 対象のページです。
 
@@ -535,3 +544,27 @@ public override void OnFlipEmotionCoin(EmotionCoinType coinType, int num)
 
 - `coinType`: 対象のコインの種類です。
 - `num`: 獲得した枚数です。
+
+### `BeforeRollDiceFirst(BattleDiceBehavior)`
+
+```cs
+public override void BeforeRollDiceFirst(BattleDiceBehavior behavior)
+{
+}
+```
+
+`BeforeRollDice`より先に実行されます。
+
+- `behavior`: 対象のダイスです。
+
+### `BeforeRollDiceLast(BattleDiceBehavior)`
+
+```cs
+public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
+{
+}
+```
+
+`BeforeRollDice`より後に実行されます。
+
+- `behavior`: 対象のダイスです。
