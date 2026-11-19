@@ -65,6 +65,11 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
             OnRollCritical(behavior);
 
             isCrit.value = true;
+
+            if (behavior.StatBonus is AdvancedDiceStatBonus adv)
+            {
+                behavior.ApplyDiceStatBonus(new() { dmgRate = adv.customFields.GetValueOrDefault("loh_critDmgRateAdder") });
+            }
         }
     }
 

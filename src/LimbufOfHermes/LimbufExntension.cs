@@ -21,7 +21,7 @@ public static class LimbufExtension
     /// <summary>Applies crit damage rate adder</summary>
     public static void ApplyCritDamageRateAdder(this BattleDiceBehavior beh, int value)
     {
-        beh.ApplyDiceStatBonus(new AdvancedDiceStatBonus { customFields = new() { ["loh_critDmgRate"] = value } });
+        beh.ApplyDiceStatBonus(new AdvancedDiceStatBonus { customFields = new() { ["loh_critDmgRateAdder"] = value } });
     }
 
     /// <summary>Applies crit damage rate adder</summary>

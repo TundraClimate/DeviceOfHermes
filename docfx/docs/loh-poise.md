@@ -18,7 +18,7 @@ owner.bufListDetail.AddKeywordBufThisRoundByCard(LimKeywordBuf.Poise, 20);
 // クリティカル倍率0.2に2.3を加算する
 owner.currentDiceAction.ApplyCritDamageAdder(2.3);
 
-// クリティカルダメージ +20%
+// クリティカル時、ダメージ量 +20%
 owner.currentDiceAction.ApplyCritDamageRateAdder(20);
 ```
 
