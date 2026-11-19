@@ -46,8 +46,8 @@ public class BattleUnitBuf_Limbuf_Poise : LimbufBase
         return owner.bufListDetail?.GetActivatedBuf(LimKeywordBuf.Poise) as BattleUnitBuf_Limbuf_Poise;
     }
 
-    /// <summary>Impl BeforeRollDice</summary>
-    public override void BeforeRollDice(BattleDiceBehavior behavior)
+    /// <summary>Impl BeforeRollDiceLast</summary>
+    public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
     {
         if (this.IsDestroyed())
         {
