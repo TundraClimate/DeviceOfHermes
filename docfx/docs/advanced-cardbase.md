@@ -80,6 +80,10 @@ public class DiceCardSelfAbility_AdvCard : AdvancedCardBase
     public override void OnSelectTarget(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
     {
     }
+
+    public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
 }
 ```
 
@@ -296,3 +300,16 @@ public override void OnSelectTarget(BattleDiceCardModel card, BattleUnitModel ta
 - `card`: セットしたページです。
 - `target`: 攻撃対象です。
 - `targetSlot`: 対象の速度スロットです。
+
+### `OnWinParrying(BattleDiceBehavior, BattleDiceBehavior)`
+
+```cs
+public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+```
+
+マッチに勝利したときに実行されます。
+
+- `behavior`: マッチに勝利した自分のダイスです。
+- `targetDice`: マッチに敗北した相手のダイスです。

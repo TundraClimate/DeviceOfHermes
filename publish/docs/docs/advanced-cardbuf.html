@@ -125,6 +125,18 @@
     {
     }
 
+    public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+    {
+    }
+
+    public override void OnLoseParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    public override void OnDrawParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
     public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
     {
     }
@@ -201,6 +213,37 @@
 <p>ダイスが的中したときにデッキのページを対象に実行されます。</p>
 <ul>
 <li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="onwinparryingbattledicebehavior-battledicebehavior-bool"><code>OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, bool)</code></h3>
+<pre><code class="lang-cs">public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+{
+}
+</code></pre>
+<p>マッチに勝利したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 勝利した自分のダイスです。</li>
+<li><code>targetDice</code>: 勝利した相手のダイスです。</li>
+<li><code>isAtkDice</code>: 攻撃ダイスでマッチ勝利したかどうかです。</li>
+</ul>
+<h3 id="onloseparryingbattledicebehavior-battledicebehavior"><code>OnLoseParrying(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnLoseParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+</code></pre>
+<p>マッチに敗北したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 敗北した自分のダイスです。</li>
+<li><code>targetDice</code>: 敗北した相手のダイスです。</li>
+</ul>
+<h3 id="ondrawparryingbattledicebehavior-battledicebehavior"><code>OnDrawParrying(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnDrawParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+</code></pre>
+<p>マッチに引き分けたときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 引き分けた自分のダイスです。</li>
+<li><code>targetDice</code>: 引き分けた相手のダイスです。</li>
 </ul>
 <h3 id="onendencounterbattleunitmodel-bool-bool"><code>OnEndEncounter(BattleUnitModel?, bool, bool)</code></h3>
 <pre><code class="lang-cs">public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)

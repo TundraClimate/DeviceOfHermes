@@ -367,6 +367,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget
   nameWithType: AdvancedCardBase.OnSelectTarget
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnWinParrying(BattleDiceBehavior,BattleDiceBehavior)
+  name: OnWinParrying(BattleDiceBehavior, BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnWinParrying_BattleDiceBehavior_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnWinParrying(BattleDiceBehavior,BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnWinParrying(BattleDiceBehavior, BattleDiceBehavior)
+  nameWithType: AdvancedCardBase.OnWinParrying(BattleDiceBehavior, BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnWinParrying*
+  name: OnWinParrying
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnWinParrying_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnWinParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnWinParrying
+  nameWithType: AdvancedCardBase.OnWinParrying
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.RegisterKeyDownEvent(System.Type,UnityEngine.KeyCode,System.Action{BattleUnitModel,BattleDiceCardModel})
   name: RegisterKeyDownEvent(Type, KeyCode, Action<BattleUnitModel, BattleDiceCardModel>)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_RegisterKeyDownEvent_System_Type_UnityEngine_KeyCode_System_Action_BattleUnitModel_BattleDiceCardModel__
@@ -444,6 +457,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.IsTargetableAllUnit
   nameWithType: AdvancedCardBuf.IsTargetableAllUnit
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnDrawParrying(BattleDiceBehavior,BattleDiceBehavior)
+  name: OnDrawParrying(BattleDiceBehavior, BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnDrawParrying_BattleDiceBehavior_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnDrawParrying(BattleDiceBehavior,BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnDrawParrying(BattleDiceBehavior, BattleDiceBehavior)
+  nameWithType: AdvancedCardBuf.OnDrawParrying(BattleDiceBehavior, BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnDrawParrying*
+  name: OnDrawParrying
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnDrawParrying_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnDrawParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnDrawParrying
+  nameWithType: AdvancedCardBuf.OnDrawParrying
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter(BattleUnitModel,System.Boolean,System.Boolean)
   name: OnEndEncounter(BattleUnitModel?, bool, bool)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnEndEncounter_BattleUnitModel_System_Boolean_System_Boolean_
@@ -460,6 +486,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnEndEncounter
   nameWithType: AdvancedCardBuf.OnEndEncounter
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnLoseParrying(BattleDiceBehavior,BattleDiceBehavior)
+  name: OnLoseParrying(BattleDiceBehavior, BattleDiceBehavior)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnLoseParrying_BattleDiceBehavior_BattleDiceBehavior_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnLoseParrying(BattleDiceBehavior,BattleDiceBehavior)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnLoseParrying(BattleDiceBehavior, BattleDiceBehavior)
+  nameWithType: AdvancedCardBuf.OnLoseParrying(BattleDiceBehavior, BattleDiceBehavior)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnLoseParrying*
+  name: OnLoseParrying
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnLoseParrying_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnLoseParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnLoseParrying
+  nameWithType: AdvancedCardBuf.OnLoseParrying
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnStartBattle
   name: OnStartBattle()
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnStartBattle
@@ -538,6 +577,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnSuccessAttack_inHand
   nameWithType: AdvancedCardBuf.OnSuccessAttack_inHand
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnWinParrying(BattleDiceBehavior,BattleDiceBehavior,System.Boolean)
+  name: OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, bool)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnWinParrying_BattleDiceBehavior_BattleDiceBehavior_System_Boolean_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnWinParrying(BattleDiceBehavior,BattleDiceBehavior,System.Boolean)
+  name.vb: OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, Boolean)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, bool)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, Boolean)
+  nameWithType: AdvancedCardBuf.OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, bool)
+  nameWithType.vb: AdvancedCardBuf.OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, Boolean)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnWinParrying*
+  name: OnWinParrying
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBuf.html#DeviceOfHermes_AdvancedBase_AdvancedCardBuf_OnWinParrying_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnWinParrying
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBuf.OnWinParrying
+  nameWithType: AdvancedCardBuf.OnWinParrying
 - uid: DeviceOfHermes.AdvancedBase.AdvancedDiceBase
   name: AdvancedDiceBase
   href: api/DeviceOfHermes.AdvancedBase.AdvancedDiceBase.html
@@ -10471,19 +10526,19 @@ references:
   commentId: T:LimbufOfHermes.BattleUnitBuf_Limbuf_Poise
   fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise
   nameWithType: BattleUnitBuf_Limbuf_Poise
-- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDice(BattleDiceBehavior)
-  name: BeforeRollDice(BattleDiceBehavior)
-  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Poise_BeforeRollDice_BattleDiceBehavior_
-  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDice(BattleDiceBehavior)
-  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDice(BattleDiceBehavior)
-  nameWithType: BattleUnitBuf_Limbuf_Poise.BeforeRollDice(BattleDiceBehavior)
-- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDice*
-  name: BeforeRollDice
-  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Poise_BeforeRollDice_
-  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDice
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast(BattleDiceBehavior)
+  name: BeforeRollDiceLast(BattleDiceBehavior)
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Poise_BeforeRollDiceLast_BattleDiceBehavior_
+  commentId: M:LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast(BattleDiceBehavior)
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast(BattleDiceBehavior)
+  nameWithType: BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast(BattleDiceBehavior)
+- uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast*
+  name: BeforeRollDiceLast
+  href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Poise_BeforeRollDiceLast_
+  commentId: Overload:LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast
   isSpec: "True"
-  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDice
-  nameWithType: BattleUnitBuf_Limbuf_Poise.BeforeRollDice
+  fullName: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast
+  nameWithType: BattleUnitBuf_Limbuf_Poise.BeforeRollDiceLast
 - uid: LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.GetCriticalDamageAdder(BattleDiceBehavior)
   name: GetCriticalDamageAdder(BattleDiceBehavior)
   href: api/LimbufOfHermes.BattleUnitBuf_Limbuf_Poise.html#LimbufOfHermes_BattleUnitBuf_Limbuf_Poise_GetCriticalDamageAdder_BattleDiceBehavior_

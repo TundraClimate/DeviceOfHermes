@@ -42,6 +42,18 @@ public class DiceCardBuf_AdvCardBuf : AdvancedCardBuf
     {
     }
 
+    public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+    {
+    }
+
+    public override void OnLoseParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    public override void OnDrawParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
     public override void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
     {
     }
@@ -150,6 +162,46 @@ public override void OnSuccessAttack_inDeck(BattleDiceBehavior behavior)
 ダイスが的中したときにデッキのページを対象に実行されます。
 
 - `behavior`: 対象のダイスです。
+
+### `OnWinParrying(BattleDiceBehavior, BattleDiceBehavior, bool)`
+
+```cs
+public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+{
+}
+```
+
+マッチに勝利したときに実行されます。
+
+- `behavior`: 勝利した自分のダイスです。
+- `targetDice`: 勝利した相手のダイスです。
+- `isAtkDice`: 攻撃ダイスでマッチ勝利したかどうかです。
+
+### `OnLoseParrying(BattleDiceBehavior, BattleDiceBehavior)`
+
+```cs
+public override void OnLoseParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+```
+
+マッチに敗北したときに実行されます。
+
+- `behavior`: 敗北した自分のダイスです。
+- `targetDice`: 敗北した相手のダイスです。
+
+### `OnDrawParrying(BattleDiceBehavior, BattleDiceBehavior)`
+
+```cs
+public override void OnDrawParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+```
+
+マッチに引き分けたときに実行されます。
+
+- `behavior`: 引き分けた自分のダイスです。
+- `targetDice`: 引き分けた相手のダイスです。
 
 ### `OnEndEncounter(BattleUnitModel?, bool, bool)`
 

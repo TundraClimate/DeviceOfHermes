@@ -72,6 +72,10 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnDestroyCard));
         Patch(typeof(PatchOnStartBattlePhase));
         Patch(typeof(PatchOnCreateEmotionCoin));
+        Patch(typeof(PatchOnWinParryingAttack));
+        Patch(typeof(PatchOnWinParryingDefense));
+        Patch(typeof(PatchOnLoseParrying));
+        Patch(typeof(PatchOnDrawParrying));
     }
 
     private static void Patch(Type type)
@@ -1982,6 +1986,92 @@ internal static class AdvancedPatch
         {
             self.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Foreach(i => i.OnFlipEmotionCoin(coinType, num));
             self.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Foreach(i => i.OnFlipEmotionCoin(coinType, num));
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnWinParryingAttack")]
+    class PatchOnWinParryingAttack
+    {
+        static Exception Finalizer(Exception __exception, BattlePlayingCardDataInUnitModel __instance)
+        {
+            if (__instance?.currentBehavior?.TargetDice is not BattleDiceBehavior targetDice)
+            {
+                return __exception;
+            }
+
+            if (__instance.cardAbility is AdvancedCardBase advCard)
+            {
+                advCard.OnWinParrying(__instance.currentBehavior, targetDice);
+            }
+
+            foreach (var advBuf in __instance.card?.GetBufList()?.OfType<AdvancedCardBuf>() ?? [])
+            {
+                advBuf.OnWinParrying(__instance.currentBehavior, targetDice, true);
+            }
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnWinParryingDefense")]
+    class PatchOnWinParryingDefense
+    {
+        static Exception Finalizer(Exception __exception, BattlePlayingCardDataInUnitModel __instance)
+        {
+            if (__instance?.currentBehavior?.TargetDice is not BattleDiceBehavior targetDice)
+            {
+                return __exception;
+            }
+
+            if (__instance.cardAbility is AdvancedCardBase advCard)
+            {
+                advCard.OnWinParrying(__instance.currentBehavior, targetDice);
+            }
+
+            foreach (var advBuf in __instance.card?.GetBufList()?.OfType<AdvancedCardBuf>() ?? [])
+            {
+                advBuf.OnWinParrying(__instance.currentBehavior, targetDice, false);
+            }
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnLoseParrying")]
+    class PatchOnLoseParrying
+    {
+        static Exception Finalizer(Exception __exception, BattlePlayingCardDataInUnitModel __instance)
+        {
+            if (__instance?.currentBehavior?.TargetDice is not BattleDiceBehavior targetDice)
+            {
+                return __exception;
+            }
+
+            foreach (var advBuf in __instance.card?.GetBufList()?.OfType<AdvancedCardBuf>() ?? [])
+            {
+                advBuf.OnLoseParrying(__instance.currentBehavior, targetDice);
+            }
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattlePlayingCardDataInUnitModel), "OnDrawParrying")]
+    class PatchOnDrawParrying
+    {
+        static Exception Finalizer(Exception __exception, BattlePlayingCardDataInUnitModel __instance)
+        {
+            if (__instance?.currentBehavior?.TargetDice is not BattleDiceBehavior targetDice)
+            {
+                return __exception;
+            }
+
+            foreach (var advBuf in __instance.card?.GetBufList()?.OfType<AdvancedCardBuf>() ?? [])
+            {
+                advBuf.OnDrawParrying(__instance.currentBehavior, targetDice);
+            }
+
+            return __exception;
         }
     }
 

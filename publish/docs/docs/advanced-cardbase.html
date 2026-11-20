@@ -162,6 +162,10 @@
     public override void OnSelectTarget(BattleDiceCardModel card, BattleUnitModel target, int targetSlot)
     {
     }
+
+    public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
 }
 </code></pre>
 <p>このクラスは<code>DiceCardSelfAbilityBase</code>を継承しています。<br>
@@ -309,6 +313,16 @@ falseを返すと捨てられるのをキャンセルすることが出来ます
 <li><code>card</code>: セットしたページです。</li>
 <li><code>target</code>: 攻撃対象です。</li>
 <li><code>targetSlot</code>: 対象の速度スロットです。</li>
+</ul>
+<h3 id="onwinparryingbattledicebehavior-battledicebehavior"><code>OnWinParrying(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+</code></pre>
+<p>マッチに勝利したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: マッチに勝利した自分のダイスです。</li>
+<li><code>targetDice</code>: マッチに敗北した相手のダイスです。</li>
 </ul>
 
 </article>

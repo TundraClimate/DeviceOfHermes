@@ -96,6 +96,11 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     {
     }
 
+    /// <summary>Unit on win parrying</summary>
+    public virtual void OnWinParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
     /// <summary>Register keydown event</summary>
     protected static void RegisterKeyDownEvent(Type self, KeyCode c, Action<BattleUnitModel, BattleDiceCardModel> handler)
     {
