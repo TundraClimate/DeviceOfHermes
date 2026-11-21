@@ -2009,6 +2009,16 @@ internal static class AdvancedPatch
                 advBuf.OnWinParrying(__instance.currentBehavior, targetDice, true);
             }
 
+            foreach (var advBufHand in __instance.owner?.allyCardDetail?.GetHand()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufHand.OnWinParrying_inHand(__instance.currentBehavior, targetDice, true);
+            }
+
+            foreach (var advBufDeck in __instance.owner?.allyCardDetail?.GetAllDeck()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufDeck.OnWinParrying_inDeck(__instance.currentBehavior, targetDice, true);
+            }
+
             return __exception;
         }
     }
@@ -2033,6 +2043,16 @@ internal static class AdvancedPatch
                 advBuf.OnWinParrying(__instance.currentBehavior, targetDice, false);
             }
 
+            foreach (var advBufHand in __instance.owner?.allyCardDetail?.GetHand()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufHand.OnWinParrying_inHand(__instance.currentBehavior, targetDice, false);
+            }
+
+            foreach (var advBufDeck in __instance.owner?.allyCardDetail?.GetAllDeck()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufDeck.OnWinParrying_inDeck(__instance.currentBehavior, targetDice, false);
+            }
+
             return __exception;
         }
     }
@@ -2052,6 +2072,16 @@ internal static class AdvancedPatch
                 advBuf.OnLoseParrying(__instance.currentBehavior, targetDice);
             }
 
+            foreach (var advBufHand in __instance.owner?.allyCardDetail?.GetHand()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufHand.OnLoseParrying_inHand(__instance.currentBehavior, targetDice);
+            }
+
+            foreach (var advBufDeck in __instance.owner?.allyCardDetail?.GetAllDeck()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufDeck.OnLoseParrying_inDeck(__instance.currentBehavior, targetDice);
+            }
+
             return __exception;
         }
     }
@@ -2069,6 +2099,16 @@ internal static class AdvancedPatch
             foreach (var advBuf in __instance.card?.GetBufList()?.OfType<AdvancedCardBuf>() ?? [])
             {
                 advBuf.OnDrawParrying(__instance.currentBehavior, targetDice);
+            }
+
+            foreach (var advBufHand in __instance.owner?.allyCardDetail?.GetHand()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufHand.OnDrawParrying_inHand(__instance.currentBehavior, targetDice);
+            }
+
+            foreach (var advBufDeck in __instance.owner?.allyCardDetail?.GetAllDeck()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
+            {
+                advBufDeck.OnDrawParrying_inDeck(__instance.currentBehavior, targetDice);
             }
 
             return __exception;

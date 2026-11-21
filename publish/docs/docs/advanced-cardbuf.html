@@ -129,11 +129,35 @@
     {
     }
 
+    public override void OnWinParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+    {
+    }
+
+    public override void OnWinParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+    {
+    }
+
     public override void OnLoseParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
     {
     }
 
+    public override void OnLoseParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    public override void OnLoseParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
     public override void OnDrawParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    public override void OnDrawParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    public override void OnDrawParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
     {
     }
 
@@ -225,6 +249,28 @@
 <li><code>targetDice</code>: 勝利した相手のダイスです。</li>
 <li><code>isAtkDice</code>: 攻撃ダイスでマッチ勝利したかどうかです。</li>
 </ul>
+<h3 id="onwinparrying_inhandbattledicebehavior-battledicebehavior-bool"><code>OnWinParrying_inHand(BattleDiceBehavior, BattleDiceBehavior, bool)</code></h3>
+<pre><code class="lang-cs">public override void OnWinParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+{
+}
+</code></pre>
+<p>手札に存在する際にマッチに勝利したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 勝利した自分のダイスです。</li>
+<li><code>targetDice</code>: 勝利した相手のダイスです。</li>
+<li><code>isAtkDice</code>: 攻撃ダイスでマッチ勝利したかどうかです。</li>
+</ul>
+<h3 id="onwinparrying_indeckbattledicebehavior-battledicebehavior-bool"><code>OnWinParrying_inDeck(BattleDiceBehavior, BattleDiceBehavior, bool)</code></h3>
+<pre><code class="lang-cs">public override void OnWinParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+{
+}
+</code></pre>
+<p>デッキに存在する際にマッチに勝利したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 勝利した自分のダイスです。</li>
+<li><code>targetDice</code>: 勝利した相手のダイスです。</li>
+<li><code>isAtkDice</code>: 攻撃ダイスでマッチ勝利したかどうかです。</li>
+</ul>
 <h3 id="onloseparryingbattledicebehavior-battledicebehavior"><code>OnLoseParrying(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
 <pre><code class="lang-cs">public override void OnLoseParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
 {
@@ -235,12 +281,52 @@
 <li><code>behavior</code>: 敗北した自分のダイスです。</li>
 <li><code>targetDice</code>: 敗北した相手のダイスです。</li>
 </ul>
+<h3 id="onloseparrying_inhandbattledicebehavior-battledicebehavior"><code>OnLoseParrying_inHand(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnLoseParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+</code></pre>
+<p>手札に存在する際にマッチに敗北したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 敗北した自分のダイスです。</li>
+<li><code>targetDice</code>: 敗北した相手のダイスです。</li>
+</ul>
+<h3 id="onloseparrying_indeckbattledicebehavior-battledicebehavior"><code>OnLoseParrying_inDeck(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnLoseParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+</code></pre>
+<p>デッキに存在する際にマッチに敗北したときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 敗北した自分のダイスです。</li>
+<li><code>targetDice</code>: 敗北した相手のダイスです。</li>
+</ul>
 <h3 id="ondrawparryingbattledicebehavior-battledicebehavior"><code>OnDrawParrying(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
 <pre><code class="lang-cs">public override void OnDrawParrying(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
 {
 }
 </code></pre>
 <p>マッチに引き分けたときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 引き分けた自分のダイスです。</li>
+<li><code>targetDice</code>: 引き分けた相手のダイスです。</li>
+</ul>
+<h3 id="ondrawparrying_inhandbattledicebehavior-battledicebehavior"><code>OnDrawParrying_inHand(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnDrawParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+</code></pre>
+<p>手札に存在する際にマッチに引き分けたときに実行されます。</p>
+<ul>
+<li><code>behavior</code>: 引き分けた自分のダイスです。</li>
+<li><code>targetDice</code>: 引き分けた相手のダイスです。</li>
+</ul>
+<h3 id="ondrawparrying_indeckbattledicebehavior-battledicebehavior"><code>OnDrawParrying_inDeck(BattleDiceBehavior, BattleDiceBehavior)</code></h3>
+<pre><code class="lang-cs">public override void OnDrawParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+{
+}
+</code></pre>
+<p>デッキに存在する際にマッチに引き分けたときに実行されます。</p>
 <ul>
 <li><code>behavior</code>: 引き分けた自分のダイスです。</li>
 <li><code>targetDice</code>: 引き分けた相手のダイスです。</li>

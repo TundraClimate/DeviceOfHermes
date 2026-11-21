@@ -56,6 +56,36 @@ public class AdvancedCardBuf : BattleDiceCardBuf
     {
     }
 
+    /// <summary>An own unit on win parrying in hand</summary>
+    public virtual void OnWinParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+    {
+    }
+
+    /// <summary>An own unit on win parrying in deck</summary>
+    public virtual void OnWinParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice, bool isAtkDice)
+    {
+    }
+
+    /// <summary>An own unit on lose parrying in hand</summary>
+    public virtual void OnLoseParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    /// <summary>An own unit on lose parrying in deck</summary>
+    public virtual void OnLoseParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    /// <summary>An own unit on draw parrying in hand</summary>
+    public virtual void OnDrawParrying_inHand(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
+    /// <summary>An own unit on draw parrying in deck</summary>
+    public virtual void OnDrawParrying_inDeck(BattleDiceBehavior behavior, BattleDiceBehavior targetDice)
+    {
+    }
+
     /// <summary>On own unit ends encounter that card</summary>
     public virtual void OnEndEncounter(BattleUnitModel? target, bool isParrying, bool wasAttacker)
     {
