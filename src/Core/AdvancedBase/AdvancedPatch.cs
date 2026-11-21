@@ -76,6 +76,7 @@ internal static class AdvancedPatch
         Patch(typeof(PatchOnWinParryingDefense));
         Patch(typeof(PatchOnLoseParrying));
         Patch(typeof(PatchOnDrawParrying));
+        Patch(typeof(PatchGetClickableState));
     }
 
     private static void Patch(Type type)
@@ -2109,6 +2110,101 @@ internal static class AdvancedPatch
             foreach (var advBufDeck in __instance.owner?.allyCardDetail?.GetAllDeck()?.FlatMap(c => c.GetBufList().OfType<AdvancedCardBuf>()) ?? [])
             {
                 advBufDeck.OnDrawParrying_inDeck(__instance.currentBehavior, targetDice);
+            }
+
+            return __exception;
+        }
+    }
+
+    [HarmonyPatch(typeof(BattleDiceCardUI), "GetClickableState")]
+    class PatchGetClickableState
+    {
+        static Exception Finalizer(Exception __exception, BattleDiceCardUI __instance, ref BattleDiceCardUI.ClickableState __result)
+        {
+            try
+            {
+                if ((int)__result is not 2)
+                {
+                    return __exception;
+                }
+
+                var handUI = BattleManagerUI.Instance.ui_unitCardsInHand;
+                var owner = handUI.HOveredModel;
+
+                owner ??= handUI.SelectedModel;
+
+                if (owner is null || handUI.GetSelectedCard() is not BattleDiceCardUI cui || cui.CardModel is not BattleDiceCardModel selected)
+                {
+                    Hermes.Say($"Hand not selected");
+
+                    return __exception;
+                }
+
+                if (__instance.CardModel is not BattleDiceCardModel clicked)
+                {
+                    Hermes.Say($"Hand is invalid");
+
+                    return __exception;
+                }
+
+                if (clicked == selected)
+                {
+                    Hermes.Say($"Same hand clicked");
+
+                    return __exception;
+                }
+
+                if (selected.CreateDiceCardSelfAbilityScript() is not AdvancedCardBase adv || !adv.IsEquippable(owner, selected, clicked))
+                {
+                    Hermes.Say($"Hand clicked but not equippable");
+
+                    return __exception;
+                }
+
+                if (selected.XmlData.IsPersonal())
+                {
+                    owner.personalEgoDetail?.UseCard(selected);
+                }
+                else
+                {
+                    owner.allyCardDetail?.UseCard(selected);
+                }
+
+                owner.SpendCardAndCost(selected);
+
+                adv.OnEquip(owner, selected, clicked);
+
+                BattleManagerUI.Instance.ui_unitListInfoSummary.UpdateCharacterProfileAll();
+
+                if (selected.IsExhaustOnUse())
+                {
+                    selected.ReserveExhaust();
+                }
+
+                if (selected.exhaust)
+                {
+                    owner.allyCardDetail?.ExhaustACardAnywhere(selected);
+                    owner.personalEgoDetail?.Hand().Remove(selected);
+                }
+
+                BattleManagerUI.Instance.ui_unitInformationPlayer.OpenUnitInformationBySelectedCard(owner, null, -1);
+                BattleManagerUI.Instance.ui_unitInformationPlayer.OpenUnitInformationByCharacter(owner, true);
+                BattleManagerUI.Instance.ui_unitCardsInHand.UpdateCardList();
+
+                __instance.ShowDetail();
+
+                __result = (BattleDiceCardUI.ClickableState)2215768;
+            }
+            catch (Exception e)
+            {
+                var info = e.GetInfo();
+
+                if (info is not null)
+                {
+                    Hermes.Say($"ILC: {info.Value.ILOffset:X}", MessageLevel.Error);
+                }
+
+                Hermes.Say($"{e}", MessageLevel.Error);
             }
 
             return __exception;

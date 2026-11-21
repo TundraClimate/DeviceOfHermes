@@ -40,6 +40,17 @@ public class AdvancedCardBase : DiceCardSelfAbilityBase
     /// <summary>Buf list of auto sets on card ability generated</summary>
     public virtual Type[] AutoSetCardBufs => [];
 
+    /// <summary>Is card equippable</summary>
+    public virtual bool IsEquippable(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+    {
+        return false;
+    }
+
+    /// <summary>On card equips</summary>
+    public virtual void OnEquip(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+    {
+    }
+
     /// <summary>Can discard this card by ability</summary>
     /// <returns>Is card can discard</returns>
     public virtual bool CanDiscardByAbility(BattleDiceCardModel self)
