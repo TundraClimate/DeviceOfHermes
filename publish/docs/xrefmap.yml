@@ -299,6 +299,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsClashableWithStandby
   nameWithType: AdvancedCardBase.IsClashableWithStandby
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsEquippable(BattleUnitModel,BattleDiceCardModel,BattleDiceCardModel)
+  name: IsEquippable(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsEquippable_BattleUnitModel_BattleDiceCardModel_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsEquippable(BattleUnitModel,BattleDiceCardModel,BattleDiceCardModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsEquippable(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)
+  nameWithType: AdvancedCardBase.IsEquippable(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsEquippable*
+  name: IsEquippable
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsEquippable_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsEquippable
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsEquippable
+  nameWithType: AdvancedCardBase.IsEquippable
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.IsIgnoreSpeedByMatch
   name: IsIgnoreSpeedByMatch
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_IsIgnoreSpeedByMatch
@@ -351,6 +364,19 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnAddKeepDice
   nameWithType: AdvancedCardBase.OnAddKeepDice
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnEquip(BattleUnitModel,BattleDiceCardModel,BattleDiceCardModel)
+  name: OnEquip(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnEquip_BattleUnitModel_BattleDiceCardModel_BattleDiceCardModel_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnEquip(BattleUnitModel,BattleDiceCardModel,BattleDiceCardModel)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnEquip(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)
+  nameWithType: AdvancedCardBase.OnEquip(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnEquip*
+  name: OnEquip
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnEquip_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnEquip
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnEquip
+  nameWithType: AdvancedCardBase.OnEquip
 - uid: DeviceOfHermes.AdvancedBase.AdvancedCardBase.OnSelectTarget(BattleDiceCardModel,BattleUnitModel,System.Int32)
   name: OnSelectTarget(BattleDiceCardModel, BattleUnitModel, int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedCardBase.html#DeviceOfHermes_AdvancedBase_AdvancedCardBase_OnSelectTarget_BattleDiceCardModel_BattleUnitModel_System_Int32_

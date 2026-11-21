@@ -120,6 +120,15 @@
 
     public override Type[] AutoSetCardBufs =&gt; [];
 
+    public override bool IsEquippable(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+    {
+        return false;
+    }
+
+    public override void OnEquip(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+    {
+    }
+
     public override bool CanDiscardByAbility(BattleDiceCardModel self)
     {
     }
@@ -225,6 +234,30 @@ trueなら戦闘開始時に同距離のうちで最速使用されます。</p>
 <pre><code class="lang-cs">public override Type[] AutoSetCardBufs =&gt; [];
 </code></pre>
 <p>ページ作成時に自動で追加されるページバフです。</p>
+<h3 id="isequippablebattleunitmodel-battledicecardmodel-battledicecardmodel"><code>IsEquippable(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)</code></h3>
+<pre><code class="lang-cs">public override bool IsEquippable(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+{
+    return false;
+}
+</code></pre>
+<p>このページがページに装着可能かどうかです。<br>
+<code>true</code>を返す場合、このページで他のページを選択したままクリックすることで装着することが出来ます。</p>
+<ul>
+<li><code>unit</code>: 装着するユニットです。</li>
+<li><code>card</code>: このアビリティを保有するページです。</li>
+<li><code>targetCard</code>: 装着しようとしているページです。</li>
+</ul>
+<h3 id="onequipbattleunitmodel-battledicecardmodel-battledicecardmodel"><code>OnEquip(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)</code></h3>
+<pre><code class="lang-cs">public override void OnEquip(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+{
+}
+</code></pre>
+<p>このページをページに装着したときに実行されます。</p>
+<ul>
+<li><code>unit</code>: 装着するユニットです。</li>
+<li><code>card</code>: このアビリティを保有するページです。</li>
+<li><code>targetCard</code>: 装着したページです。</li>
+</ul>
 <h3 id="candiscardbyabilitybattledicecardmodel"><code>CanDiscardByAbility(BattleDiceCardModel)</code></h3>
 <pre><code class="lang-cs">public override bool CanDiscardByAbility(BattleDiceCardModel self)
 {

@@ -38,6 +38,15 @@ public class DiceCardSelfAbility_AdvCard : AdvancedCardBase
 
     public override Type[] AutoSetCardBufs => [];
 
+    public override bool IsEquippable(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+    {
+        return false;
+    }
+
+    public override void OnEquip(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+    {
+    }
+
     public override bool CanDiscardByAbility(BattleDiceCardModel self)
     {
     }
@@ -184,6 +193,36 @@ public override Type[] AutoSetCardBufs => [];
 ```
 
 ページ作成時に自動で追加されるページバフです。
+
+### `IsEquippable(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)`
+
+```cs
+public override bool IsEquippable(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+{
+    return false;
+}
+```
+
+このページがページに装着可能かどうかです。  
+`true`を返す場合、このページで他のページを選択したままクリックすることで装着することが出来ます。
+
+- `unit`: 装着するユニットです。
+- `card`: このアビリティを保有するページです。
+- `targetCard`: 装着しようとしているページです。
+
+### `OnEquip(BattleUnitModel, BattleDiceCardModel, BattleDiceCardModel)`
+
+```cs
+public override void OnEquip(BattleUnitModel unit, BattleDiceCardModel card, BattleDiceCardModel targetCard)
+{
+}
+```
+
+このページをページに装着したときに実行されます。
+
+- `unit`: 装着するユニットです。
+- `card`: このアビリティを保有するページです。
+- `targetCard`: 装着したページです。
 
 ### `CanDiscardByAbility(BattleDiceCardModel)`
 
