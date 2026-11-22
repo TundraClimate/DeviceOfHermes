@@ -4,9 +4,9 @@ _layout: landing
 
 # Device Of Hermes
 
-Library of Ruina Moddingのライブラリです。  
+Library of Ruina Moddingのライブラリです。
 
-コーディングの簡略化、パッチが必要な処理のフレームワーク化が主要素。  
+コーディングの簡略化、パッチが必要な処理のフレームワーク化が主要素。
 
 ## In Workshop
 
@@ -20,7 +20,7 @@ VisualStudioなど、dllの参照が必要であるならこの場所にある�
 ## Includes Your MOD
 
 ワークショップの`Device Of Hermes`をサブスクライブし、dllを参照に追加したなら、それで準備は完了です。  
-dll本体は`Device Of Hermes`自体に含まれているので、個別のダウンロード・コピーは不要です。  
+dll本体は`Device Of Hermes`自体に含まれているので、個別のダウンロード・コピーは不要です。
 
 ゲームを起動後、`Device Of Hermes`にチェックを入れて続けてください。
 
@@ -31,7 +31,7 @@ dll本体は`Device Of Hermes`自体に含まれているので、個別のダ�
 ### LimbufOfHermes
 
 Limbus Companyのバフ効果を一部再現した物を含んでいるライブラリです。  
-追加で参照することによって使用可能になります。  
+追加で参照することによって使用可能になります。
 
 参照先→ `C:\Program Files (x86)\Steam\steamapps\workshop\content\1256670\3689874580\Assemblies\HermesAssemblies\LimbufOfHermes.dll`
 
@@ -40,16 +40,16 @@ Limbus Companyのバフ効果を一部再現した物を含んでいるライブ
 ### Caduceus
 
 .NET Compilerが使用するAnalyzerです。  
-**Assemblies下に入れないでください**  
+**Assemblies下に入れないでください**
 
 DeviceOfHermesの一部機能はこのAnalyzerを前提としています。  
-.csprojファイルに以下のセクションを追加してください。  
+.csprojファイルに以下のセクションを追加してください。
 
 ```xml
   <!-- DeviceOfHermes.Caduceus -->
   <ItemGroup>
     <!-- Steamのインストール先を変更している場合は同じように変更してください -->
-    <Analyzer Include="C:\Program Files (x86)\Steam\steamapps\workshop\content\1256670\3689874580\Caduceus.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Steam\steamapps\workshop\content\1256670\3689874580\Analyzer\Caduceus.dll" />
   </ItemGroup>
 ```
 

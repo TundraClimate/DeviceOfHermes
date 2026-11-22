@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Analyzer Include="$(PWD)\workshop\Caduceus.dll" />
+    <Analyzer Include="$(PWD)\workshop\Analyzer\Caduceus.dll" />
   </ItemGroup>
 
   <ItemGroup>

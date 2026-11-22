@@ -17,7 +17,7 @@ publish/ScrapOfHermes.dll
 publish/DeviceOfHermes.zip
 publish/liqtal_ffi.dll
 
-workshop/Caduceus.dll
+workshop/Analyzer/Caduceus.dll
 workshop/Assemblies/dependencies_native/liqtal_ffi.dll
 workshop/Assemblies/DeviceOfHermes.dll
 workshop/Assemblies/HermesAssemblies/LimbufOfHermes.dll

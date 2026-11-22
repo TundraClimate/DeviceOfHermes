@@ -7,6 +7,10 @@ dotnet build -c Debug -nologo
 
 cargo build -r --target x86_64-pc-windows-gnu
 
+if [ ! -d "$PWD/workshop/Analyzer" ]; then
+	mkdir "$PWD/workshop/Analyzer/"
+fi
+
 if [ ! -d "$PWD/workshop/Assemblies/dependencies" ]; then
 	mkdir "$PWD/workshop/Assemblies/dependencies/"
 fi
@@ -25,7 +29,7 @@ mv "$PWD/src/ScrapOfHermes/bin/Debug/net48/ScrapOfHermes.dll" "$PWD/publish/Scra
 cp "$PWD/publish/ScrapOfHermes.dll" "$PWD/workshop/Assemblies/HermesAssemblies"
 
 mv "$PWD/src/Caduceus/bin/Debug/netstandard2.0/Caduceus.dll" "$PWD/publish/Caduceus.dll"
-cp "$PWD/publish/Caduceus.dll" "$PWD/workshop/"
+cp "$PWD/publish/Caduceus.dll" "$PWD/workshop/Analyzer/"
 
 mv "$PWD/target/x86_64-pc-windows-gnu/release/liqtal_ffi.dll" "$PWD/publish/liqtal_ffi.dll"
 cp "$PWD/publish/liqtal_ffi.dll" "$PWD/workshop/Assemblies/dependencies_native/"
