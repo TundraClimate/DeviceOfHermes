@@ -1,0 +1,10 @@
+[package]
+name = "liqtal-ffi"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+liqtal = { path = "../liqtal" }

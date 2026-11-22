@@ -3,6 +3,7 @@
 bin/
 libs/
 obj/
+target/
 
 docfx/api
 docfx/_site
@@ -14,10 +15,10 @@ publish/DeviceOfHermes.dll
 publish/LimbufOfHermes.dll
 publish/ScrapOfHermes.dll
 publish/DeviceOfHermes.zip
-publish/doh_rs.dll
+publish/liqtal_ffi.dll
 
 workshop/Caduceus.dll
-workshop/Assemblies/dependencies/doh_rs.dll
+workshop/Assemblies/dependencies_native/liqtal_ffi.dll
 workshop/Assemblies/DeviceOfHermes.dll
 workshop/Assemblies/HermesAssemblies/LimbufOfHermes.dll
 workshop/Assemblies/HermesAssemblies/ScrapOfHermes.dll
