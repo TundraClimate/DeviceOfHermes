@@ -31,7 +31,7 @@ cp "$PWD/publish/ScrapOfHermes.dll" "$PWD/workshop/Assemblies/HermesAssemblies"
 mv "$PWD/src/Caduceus/bin/Debug/netstandard2.0/Caduceus.dll" "$PWD/publish/Caduceus.dll"
 cp "$PWD/publish/Caduceus.dll" "$PWD/workshop/Analyzer/"
 
-mv "$PWD/target/x86_64-pc-windows-gnu/release/liqtal_ffi.dll" "$PWD/publish/liqtal_ffi.dll"
+mv "$PWD/target/x86_64-pc-windows-gnu/release/liqtal_ffi.dll" "$PWD/publish/liqtal_ffi.dll" 2>/dev/null
 cp "$PWD/publish/liqtal_ffi.dll" "$PWD/workshop/Assemblies/dependencies_native/"
 
 rm "$PWD/publish/$ID.zip"
