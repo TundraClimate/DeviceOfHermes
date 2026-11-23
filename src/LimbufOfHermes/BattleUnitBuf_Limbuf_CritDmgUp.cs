@@ -23,7 +23,7 @@ public class BattleUnitBuf_Limbuf_CritDmgUp : LimbufBase
             return;
         }
 
-        behavior.ApplyCritDamageAdder(0.1);
+        behavior.ApplyCritDamageRateAdder(this.stack * 10);
     }
 
     /// <summary>Impl OnRoundEnd</summary>
