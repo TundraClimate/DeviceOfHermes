@@ -1483,6 +1483,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.RencounterRoutine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.RencounterRoutine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.RencounterRoutine",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.RencounterRoutine.yml\" sourcestartlinenumber=\"1\">Routine set on Rencounter</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Resource.Artwork.yml",
       "output": {
         ".html": {

@@ -5755,6 +5755,12 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.RencounterEventExtension.AddRencounterEvent
   nameWithType: RencounterEventExtension.AddRencounterEvent
+- uid: DeviceOfHermes.RencounterRoutine
+  name: RencounterRoutine
+  href: api/DeviceOfHermes.RencounterRoutine.html
+  commentId: T:DeviceOfHermes.RencounterRoutine
+  fullName: DeviceOfHermes.RencounterRoutine
+  nameWithType: RencounterRoutine
 - uid: DeviceOfHermes.Resource
   name: DeviceOfHermes.Resource
   href: api/DeviceOfHermes.Resource.html

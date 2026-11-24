@@ -2,7 +2,7 @@
 
 DeviceOfHermes用の設定ファイルです。
 
-MODフォルダ内の`Hermes.toml`を対象として読み込みます。  
+適用する自身のMODフォルダ内の`Hermes.toml`を対象として読み込みます。  
 存在しない場合は設定ファイルを参照する全ての機能が実行されません。
 
 最新の推奨設定は`DeviceOfHermes`のMODフォルダ内をの`Hermes.toml`を参照してください。
