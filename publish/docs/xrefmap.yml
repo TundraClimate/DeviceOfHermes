@@ -2483,6 +2483,168 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.ShimPassiveBase.Shimmering
   nameWithType: ShimPassiveBase.Shimmering
+- uid: DeviceOfHermes.AdvancedBehaviourAction
+  name: AdvancedBehaviourAction
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html
+  commentId: T:DeviceOfHermes.AdvancedBehaviourAction
+  fullName: DeviceOfHermes.AdvancedBehaviourAction
+  nameWithType: AdvancedBehaviourAction
+- uid: DeviceOfHermes.AdvancedBehaviourAction.GetMoving(RencounterManager.ActionAfterBehaviour,RencounterManager.ActionAfterBehaviour)
+  name: GetMoving(ActionAfterBehaviour, ActionAfterBehaviour)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_GetMoving_RencounterManager_ActionAfterBehaviour_RencounterManager_ActionAfterBehaviour_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.GetMoving(RencounterManager.ActionAfterBehaviour,RencounterManager.ActionAfterBehaviour)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.GetMoving(RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+  nameWithType: AdvancedBehaviourAction.GetMoving(RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.GetMoving*
+  name: GetMoving
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_GetMoving_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.GetMoving
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.GetMoving
+  nameWithType: AdvancedBehaviourAction.GetMoving
+- uid: DeviceOfHermes.AdvancedBehaviourAction.GetMovingAction(RencounterManager.ActionAfterBehaviour@,RencounterManager.ActionAfterBehaviour@)
+  name: GetMovingAction(ref ActionAfterBehaviour, ref ActionAfterBehaviour)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_GetMovingAction_RencounterManager_ActionAfterBehaviour__RencounterManager_ActionAfterBehaviour__
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.GetMovingAction(RencounterManager.ActionAfterBehaviour@,RencounterManager.ActionAfterBehaviour@)
+  name.vb: GetMovingAction(ActionAfterBehaviour, ActionAfterBehaviour)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.GetMovingAction(ref RencounterManager.ActionAfterBehaviour, ref RencounterManager.ActionAfterBehaviour)
+  fullName.vb: DeviceOfHermes.AdvancedBehaviourAction.GetMovingAction(RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+  nameWithType: AdvancedBehaviourAction.GetMovingAction(ref RencounterManager.ActionAfterBehaviour, ref RencounterManager.ActionAfterBehaviour)
+  nameWithType.vb: AdvancedBehaviourAction.GetMovingAction(RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.GetMovingAction*
+  name: GetMovingAction
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_GetMovingAction_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.GetMovingAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.GetMovingAction
+  nameWithType: AdvancedBehaviourAction.GetMovingAction
+- uid: DeviceOfHermes.AdvancedBehaviourAction.Init(System.Collections.Generic.List{DeviceOfHermes.AdvancedBehaviourAction.ParallelAction},RencounterManager.ActionAfterBehaviour,RencounterManager.ActionAfterBehaviour)
+  name: Init(List<ParallelAction>, ActionAfterBehaviour, ActionAfterBehaviour)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_Init_System_Collections_Generic_List_DeviceOfHermes_AdvancedBehaviourAction_ParallelAction__RencounterManager_ActionAfterBehaviour_RencounterManager_ActionAfterBehaviour_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.Init(System.Collections.Generic.List{DeviceOfHermes.AdvancedBehaviourAction.ParallelAction},RencounterManager.ActionAfterBehaviour,RencounterManager.ActionAfterBehaviour)
+  name.vb: Init(List(Of ParallelAction), ActionAfterBehaviour, ActionAfterBehaviour)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.Init(System.Collections.Generic.List<DeviceOfHermes.AdvancedBehaviourAction.ParallelAction>, RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+  fullName.vb: DeviceOfHermes.AdvancedBehaviourAction.Init(System.Collections.Generic.List(Of DeviceOfHermes.AdvancedBehaviourAction.ParallelAction), RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+  nameWithType: AdvancedBehaviourAction.Init(List<AdvancedBehaviourAction.ParallelAction>, RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+  nameWithType.vb: AdvancedBehaviourAction.Init(List(Of AdvancedBehaviourAction.ParallelAction), RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.Init*
+  name: Init
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_Init_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.Init
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.Init
+  nameWithType: AdvancedBehaviourAction.Init
+- uid: DeviceOfHermes.AdvancedBehaviourAction.IsDiscardAction(RencounterManager.ActionAfterBehaviour,RencounterManager.ActionAfterBehaviour)
+  name: IsDiscardAction(ActionAfterBehaviour, ActionAfterBehaviour)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_IsDiscardAction_RencounterManager_ActionAfterBehaviour_RencounterManager_ActionAfterBehaviour_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.IsDiscardAction(RencounterManager.ActionAfterBehaviour,RencounterManager.ActionAfterBehaviour)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.IsDiscardAction(RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+  nameWithType: AdvancedBehaviourAction.IsDiscardAction(RencounterManager.ActionAfterBehaviour, RencounterManager.ActionAfterBehaviour)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.IsDiscardAction*
+  name: IsDiscardAction
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_IsDiscardAction_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.IsDiscardAction
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.IsDiscardAction
+  nameWithType: AdvancedBehaviourAction.IsDiscardAction
+- uid: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction
+  name: AdvancedBehaviourAction.ParallelAction
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.html
+  commentId: T:DeviceOfHermes.AdvancedBehaviourAction.ParallelAction
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction
+  nameWithType: AdvancedBehaviourAction.ParallelAction
+- uid: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.#ctor(BattleUnitView,System.Collections.IEnumerator)
+  name: ParallelAction(BattleUnitView, IEnumerator)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.html#DeviceOfHermes_AdvancedBehaviourAction_ParallelAction__ctor_BattleUnitView_System_Collections_IEnumerator_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.#ctor(BattleUnitView,System.Collections.IEnumerator)
+  name.vb: New(BattleUnitView, IEnumerator)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.ParallelAction(BattleUnitView, System.Collections.IEnumerator)
+  fullName.vb: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.New(BattleUnitView, System.Collections.IEnumerator)
+  nameWithType: AdvancedBehaviourAction.ParallelAction.ParallelAction(BattleUnitView, IEnumerator)
+  nameWithType.vb: AdvancedBehaviourAction.ParallelAction.New(BattleUnitView, IEnumerator)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.#ctor*
+  name: ParallelAction
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.html#DeviceOfHermes_AdvancedBehaviourAction_ParallelAction__ctor_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.ParallelAction
+  fullName.vb: DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.New
+  nameWithType: AdvancedBehaviourAction.ParallelAction.ParallelAction
+  nameWithType.vb: AdvancedBehaviourAction.ParallelAction.New
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintDamage
+  name: PrintDamage()
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintDamage
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.PrintDamage
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintDamage()
+  nameWithType: AdvancedBehaviourAction.PrintDamage()
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintDamage*
+  name: PrintDamage
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintDamage_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.PrintDamage
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintDamage
+  nameWithType: AdvancedBehaviourAction.PrintDamage
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintEffect(System.String,BattleUnitView,BattleUnitView,System.Single)
+  name: PrintEffect(string, BattleUnitView, BattleUnitView, float)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintEffect_System_String_BattleUnitView_BattleUnitView_System_Single_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.PrintEffect(System.String,BattleUnitView,BattleUnitView,System.Single)
+  name.vb: PrintEffect(String, BattleUnitView, BattleUnitView, Single)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintEffect(string, BattleUnitView, BattleUnitView, float)
+  fullName.vb: DeviceOfHermes.AdvancedBehaviourAction.PrintEffect(String, BattleUnitView, BattleUnitView, Single)
+  nameWithType: AdvancedBehaviourAction.PrintEffect(string, BattleUnitView, BattleUnitView, float)
+  nameWithType.vb: AdvancedBehaviourAction.PrintEffect(String, BattleUnitView, BattleUnitView, Single)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintEffect*
+  name: PrintEffect
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintEffect_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.PrintEffect
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintEffect
+  nameWithType: AdvancedBehaviourAction.PrintEffect
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintRecovery
+  name: PrintRecovery()
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintRecovery
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.PrintRecovery
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintRecovery()
+  nameWithType: AdvancedBehaviourAction.PrintRecovery()
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintRecovery*
+  name: PrintRecovery
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintRecovery_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.PrintRecovery
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintRecovery
+  nameWithType: AdvancedBehaviourAction.PrintRecovery
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(ActionDetail,BattleUnitView,System.Boolean)
+  name: PrintSound(ActionDetail, BattleUnitView, bool)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintSound_ActionDetail_BattleUnitView_System_Boolean_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.PrintSound(ActionDetail,BattleUnitView,System.Boolean)
+  name.vb: PrintSound(ActionDetail, BattleUnitView, Boolean)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(ActionDetail, BattleUnitView, bool)
+  fullName.vb: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(ActionDetail, BattleUnitView, Boolean)
+  nameWithType: AdvancedBehaviourAction.PrintSound(ActionDetail, BattleUnitView, bool)
+  nameWithType.vb: AdvancedBehaviourAction.PrintSound(ActionDetail, BattleUnitView, Boolean)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(System.String,BattleUnitView)
+  name: PrintSound(string, BattleUnitView)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintSound_System_String_BattleUnitView_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.PrintSound(System.String,BattleUnitView)
+  name.vb: PrintSound(String, BattleUnitView)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(string, BattleUnitView)
+  fullName.vb: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(String, BattleUnitView)
+  nameWithType: AdvancedBehaviourAction.PrintSound(string, BattleUnitView)
+  nameWithType.vb: AdvancedBehaviourAction.PrintSound(String, BattleUnitView)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(UnityEngine.AudioClip,BattleUnitView)
+  name: PrintSound(AudioClip, BattleUnitView)
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintSound_UnityEngine_AudioClip_BattleUnitView_
+  commentId: M:DeviceOfHermes.AdvancedBehaviourAction.PrintSound(UnityEngine.AudioClip,BattleUnitView)
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintSound(UnityEngine.AudioClip, BattleUnitView)
+  nameWithType: AdvancedBehaviourAction.PrintSound(AudioClip, BattleUnitView)
+- uid: DeviceOfHermes.AdvancedBehaviourAction.PrintSound*
+  name: PrintSound
+  href: api/DeviceOfHermes.AdvancedBehaviourAction.html#DeviceOfHermes_AdvancedBehaviourAction_PrintSound_
+  commentId: Overload:DeviceOfHermes.AdvancedBehaviourAction.PrintSound
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBehaviourAction.PrintSound
+  nameWithType: AdvancedBehaviourAction.PrintSound
 - uid: DeviceOfHermes.AdvancedDiceStatBonus
   name: AdvancedDiceStatBonus
   href: api/DeviceOfHermes.AdvancedDiceStatBonus.html

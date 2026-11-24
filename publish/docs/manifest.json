@@ -265,6 +265,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBehaviourAction.ParallelAction",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBehaviourAction.ParallelAction.yml\" sourcestartlinenumber=\"1\">An action unit</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.AdvancedBehaviourAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.AdvancedBehaviourAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.AdvancedBehaviourAction",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.AdvancedBehaviourAction.yml\" sourcestartlinenumber=\"1\">An advanced behaviour action</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.AdvancedDiceStatBonus.KwdBufModifier.yml",
       "output": {
         ".html": {
@@ -3442,6 +3470,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/advanced-areaeffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced-behaviouraction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced-behaviouraction.html"
         }
       },
       "version": ""

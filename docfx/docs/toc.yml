@@ -6,6 +6,8 @@
       href: additional-onlycard.md
     - name: AdvancedAreaEffect
       href: advanced-areaeffect.md
+    - name: AdvancedBehaviourAction
+      href: advanced-behaviouraction.md
     - name: AdvancedDiceStatBonus
       href: advanced-dicestatbonus.md
     - name: AdvancedTakeDamage

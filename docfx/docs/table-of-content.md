@@ -8,6 +8,9 @@
 広域のエフェクトを作りやすくしたいなら...  
 [AdvancedAreaEffect](advanced-areaeffect.md)
 
+ActionScriptを作りやすくしたいなら...  
+[AdvancedBehaviourAction](advanced-behaviouraction.md)
+
 ダイスにさらなるボーナスを与えたいなら...  
 [AdvancedDiceStatBonus](advanced-dicestatbonus.md)
 
