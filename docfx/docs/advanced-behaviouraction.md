@@ -12,6 +12,8 @@ IEnumeratorを使用してCoroutineのように構築できるようにした`Be
 このユニットもIEnumeratorを使用して行動を制御することが出来ます。  
 ただし、メインのユニットが行動を終えた場合はその他のユニットも同時に行動を終了します。
 
+実行中に行う操作の簡略化されたものについては、[RencounterRoutine](rencounter-routine.md)を参照してください。
+
 ```cs
 public class BehaviourAction_Test : AdvancedBehaviourAction
 {
@@ -58,5 +60,17 @@ protected override void Init(List<ParallelAction> parallels, RencounterManager.A
 IEnumerator GetFamilyMoving(BattleUnitView view, BattleUnitView oppo)
 {
     // GetMovingと同じように実装する
+}
+```
+
+標準では"攻撃ダイス的中時"にActionScriptが再生されます。  
+この条件を変更したい場合は`IsDiscardAction(RencounterManager.ActionAfterBehaviour self, RencounterManager.ActionAfterBehaviour opponent)`を実装してください。  
+`false`を返す場合にはActionScriptが再生されます。
+
+```cs
+protected override bool IsDiscardAction(RencounterManager.ActionAfterBehaviour self, RencounterManager.ActionAfterBehaviour opponent)
+{
+    // 常に再生する
+    return false;
 }
 ```

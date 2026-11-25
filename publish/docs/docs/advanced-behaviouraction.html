@@ -95,6 +95,7 @@
 <p>また、<code>Init</code>で設定することで複数ユニットを同時に動かすことが出来ます。<br>
 このユニットもIEnumeratorを使用して行動を制御することが出来ます。<br>
 ただし、メインのユニットが行動を終えた場合はその他のユニットも同時に行動を終了します。</p>
+<p>実行中に行う操作の簡略化されたものについては、<a href="rencounter-routine.html">RencounterRoutine</a>を参照してください。</p>
 <pre><code class="lang-cs">public class BehaviourAction_Test : AdvancedBehaviourAction
 {
     protected override IEnumerator GetMoving(RencounterManager.ActionAfterBehaviour self, RencounterManager.ActionAfterBehaviour opponent)
@@ -137,6 +138,15 @@
 IEnumerator GetFamilyMoving(BattleUnitView view, BattleUnitView oppo)
 {
     // GetMovingと同じように実装する
+}
+</code></pre>
+<p>標準では&quot;攻撃ダイス的中時&quot;にActionScriptが再生されます。<br>
+この条件を変更したい場合は<code>IsDiscardAction(RencounterManager.ActionAfterBehaviour self, RencounterManager.ActionAfterBehaviour opponent)</code>を実装してください。<br>
+<code>false</code>を返す場合にはActionScriptが再生されます。</p>
+<pre><code class="lang-cs">protected override bool IsDiscardAction(RencounterManager.ActionAfterBehaviour self, RencounterManager.ActionAfterBehaviour opponent)
+{
+    // 常に再生する
+    return false;
 }
 </code></pre>
 
