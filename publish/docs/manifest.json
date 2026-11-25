@@ -4270,6 +4270,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/rencounter-routine.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/rencounter-routine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/revenge-dice.md",
       "output": {
         ".html": {

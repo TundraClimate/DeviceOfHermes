@@ -48,6 +48,8 @@
       href: remainder.md
     - name: RencounterEvent
       href: rencounter-event.md
+    - name: RencounterRoutine
+      href: rencounter-routine.md
     - name: ScheduleRunner
       href: schedule-runner.md
     - name: StageEvents
