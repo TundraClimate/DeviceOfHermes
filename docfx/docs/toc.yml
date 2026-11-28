@@ -94,6 +94,8 @@
       href: automap-data.md
     - name: BookTagXml
       href: booktag-data.md
+    - name: DialogScriptXml
+      href: dialogscript-data.md
     - name: EmotionCardXml
       href: emotioncard-data.md
     - name: FormationXml

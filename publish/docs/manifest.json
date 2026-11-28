@@ -671,6 +671,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Data.DialogScriptXmlInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Data.DialogScriptXmlInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Data.DialogScriptXmlInfo",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Data.DialogScriptXmlInfo.yml\" sourcestartlinenumber=\"1\">A dialog script appends</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DeviceOfHermes.Data.DialogScriptXmlRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DeviceOfHermes.Data.DialogScriptXmlRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DeviceOfHermes.Data.DialogScriptXmlRoot",
+      "Summary": "<p sourcefile=\"api/DeviceOfHermes.Data.DialogScriptXmlRoot.yml\" sourcestartlinenumber=\"1\">A dialog script apeends</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DeviceOfHermes.Data.OnlyCardXmlInfo.yml",
       "output": {
         ".html": {
@@ -3804,6 +3832,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/derive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/dialogscript-data.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/dialogscript-data.html"
         }
       },
       "version": ""

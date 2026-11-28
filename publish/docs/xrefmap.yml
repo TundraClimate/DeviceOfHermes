@@ -3780,6 +3780,36 @@ references:
   commentId: F:DeviceOfHermes.Data.BookTagXmlRoot.info
   fullName: DeviceOfHermes.Data.BookTagXmlRoot.info
   nameWithType: BookTagXmlRoot.info
+- uid: DeviceOfHermes.Data.DialogScriptXmlInfo
+  name: DialogScriptXmlInfo
+  href: api/DeviceOfHermes.Data.DialogScriptXmlInfo.html
+  commentId: T:DeviceOfHermes.Data.DialogScriptXmlInfo
+  fullName: DeviceOfHermes.Data.DialogScriptXmlInfo
+  nameWithType: DialogScriptXmlInfo
+- uid: DeviceOfHermes.Data.DialogScriptXmlInfo.id
+  name: id
+  href: api/DeviceOfHermes.Data.DialogScriptXmlInfo.html#DeviceOfHermes_Data_DialogScriptXmlInfo_id
+  commentId: F:DeviceOfHermes.Data.DialogScriptXmlInfo.id
+  fullName: DeviceOfHermes.Data.DialogScriptXmlInfo.id
+  nameWithType: DialogScriptXmlInfo.id
+- uid: DeviceOfHermes.Data.DialogScriptXmlInfo.script
+  name: script
+  href: api/DeviceOfHermes.Data.DialogScriptXmlInfo.html#DeviceOfHermes_Data_DialogScriptXmlInfo_script
+  commentId: F:DeviceOfHermes.Data.DialogScriptXmlInfo.script
+  fullName: DeviceOfHermes.Data.DialogScriptXmlInfo.script
+  nameWithType: DialogScriptXmlInfo.script
+- uid: DeviceOfHermes.Data.DialogScriptXmlRoot
+  name: DialogScriptXmlRoot
+  href: api/DeviceOfHermes.Data.DialogScriptXmlRoot.html
+  commentId: T:DeviceOfHermes.Data.DialogScriptXmlRoot
+  fullName: DeviceOfHermes.Data.DialogScriptXmlRoot
+  nameWithType: DialogScriptXmlRoot
+- uid: DeviceOfHermes.Data.DialogScriptXmlRoot.list
+  name: list
+  href: api/DeviceOfHermes.Data.DialogScriptXmlRoot.html#DeviceOfHermes_Data_DialogScriptXmlRoot_list
+  commentId: F:DeviceOfHermes.Data.DialogScriptXmlRoot.list
+  fullName: DeviceOfHermes.Data.DialogScriptXmlRoot.list
+  nameWithType: DialogScriptXmlRoot.list
 - uid: DeviceOfHermes.Data.OnlyCardXmlInfo
   name: OnlyCardXmlInfo
   href: api/DeviceOfHermes.Data.OnlyCardXmlInfo.html
