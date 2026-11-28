@@ -23,7 +23,7 @@ internal class CombinableInterceptor(IEnumerable<object> children) : IIntercepto
         var method = invocation.Method;
         var resType = method.ReturnType;
 
-        var fn = (Func<object, object?[], object>)_cache.GetOrAdd(method, MakeDelegate);
+        var fn = (Func<object, object?[], object>)_cache.GetOrAdd(method, MakeDelegate(method));
 
         if (NeqFld(invocation.Proxy, invocation.InvocationTarget))
         {
