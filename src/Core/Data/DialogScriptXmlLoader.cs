@@ -9,11 +9,16 @@ internal static class DialogScriptXmlLoader
     {
         foreach (var mod in HermesPreloader.ActiveMods)
         {
-            var relative = mod.invInfo.fileInfo.dialogFile.relativePath;
+            var relative = mod?.invInfo?.fileInfo?.dialogFile?.relativePath;
 
-            relative = relative.StartsWith("/") || relative.StartsWith("\\") ? relative[1..] : relative;
+            if (string.IsNullOrEmpty(relative))
+            {
+                continue;
+            }
 
-            var path = Path.Combine(mod.dirInfo.FullName, relative);
+            relative = relative!.StartsWith("/") || relative.StartsWith("\\") ? relative[1..] : relative;
+
+            var path = Path.Combine(mod!.dirInfo.FullName, relative);
 
             if (!File.Exists(path) || Serde.FromXmlFile<DialogScriptXmlRoot>(path) is not DialogScriptXmlRoot root)
             {
@@ -24,6 +29,11 @@ internal static class DialogScriptXmlLoader
 
             foreach (var book in root.list)
             {
+                if (string.IsNullOrEmpty(book.script))
+                {
+                    continue;
+                }
+
                 var lid = new LorId(pid, book.id);
 
                 CustomDialogueScript.SetDialogScript(lid, book.script);
