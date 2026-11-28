@@ -21,6 +21,10 @@ card.ApplyDiceAbility<DiceCardAbility_XXX>(DiceMatch.AllDice);
 owner.UseCard(target, lid);
 
 DiceStatBonus bonus = dice.GetStatBonus();
+
+// ページのIDを"弾丸"ページとして判定するように指定する
+card.EnableIsBulletId(true);
+id.EnableIsBulletId(true);
 ```
 
 ## Specified usage
@@ -95,3 +99,15 @@ dice.GetStatBonus();
 ```
 
 `DiceStatBonus`を取得します。
+
+### `EnableIsBulletId(bool)`
+
+```cs
+card.EnableIsBulletId(enable);
+id.EnableIsBulletId(enable);
+```
+
+`BattleDiceCardModel`及び`LorId`を"弾丸"として判定するように設定します。  
+`false`を入力した場合は代わりにしないように設定します。
+
+- `enable`: 対象を有効化するかどうかです。

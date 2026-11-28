@@ -6,6 +6,13 @@ namespace DeviceOfHermes;
 /// <summary>A extension of BattleCard</summary>
 public static class BattleCardExtension
 {
+    static BattleCardExtension()
+    {
+        var harmony = new Harmony("DeviceOfHermes.BattleCardExtension");
+
+        harmony.CreateClassProcessor(typeof(PatchIsBulletId)).Patch();
+    }
+
     extension(BattleUnitModel owner)
     {
         /// <summary>Creates new <see cref="BattlePlayingCardDataInUnitModel"/></summary>
@@ -132,6 +139,51 @@ public static class BattleCardExtension
         public DiceStatBonus GetStatBonus() => _diceStatRef(dice);
     }
 
+    extension(BattleDiceCardModel card)
+    {
+        /// sets is bullet card
+        public void EnableIsBulletId(bool enable)
+        {
+            if (enable)
+            {
+                bulletAppends.Add(card.GetID());
+            }
+            else
+            {
+                bulletAppends.Remove(card.GetID());
+            }
+        }
+    }
+
+    extension(LorId card)
+    {
+        /// sets is bullet card
+        public void EnableIsBulletId(bool enable)
+        {
+            if (enable)
+            {
+                bulletAppends.Add(card);
+            }
+            else
+            {
+                bulletAppends.Remove(card);
+            }
+        }
+    }
+
     static AccessTools.FieldRef<BattleDiceBehavior, DiceStatBonus> _diceStatRef
         = typeof(BattleDiceBehavior).FieldRefAccess<DiceStatBonus>("_statBonus");
+
+    static HashSet<LorId> bulletAppends = new();
+
+    [HarmonyPatch(typeof(ThumbBulletClass), "IsBulletId")]
+    class PatchIsBulletId
+    {
+        static Exception Finalizer(Exception __exception, ref bool __result, LorId id)
+        {
+            __result |= bulletAppends.Contains(id);
+
+            return __exception;
+        }
+    }
 }
