@@ -229,6 +229,11 @@
     {
     }
 
+    public override int GetDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker, KeywordBuf buf)
+    {
+        return 0;
+    }
+
     public BattleUnitModel LastInflictBy;
 }
 </code></pre>
@@ -538,6 +543,19 @@ currentDiceActionはnullです。</p>
 <p><code>BeforeRollDice</code>より後に実行されます。</p>
 <ul>
 <li><code>behavior</code>: 対象のダイスです。</li>
+</ul>
+<h3 id="getdamagereductionallint-damagetype-battleunitmodel-keywordbuf"><code>GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)</code></h3>
+<pre><code class="lang-cs">public override int GetDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker, KeywordBuf buf)
+{
+    return 0;
+}
+</code></pre>
+<p>全てのダメージに対して軽減を得ます。</p>
+<ul>
+<li><code>dmg</code>: 受ける元のダメージです。</li>
+<li><code>dmgType</code>: ダメージの種類です。</li>
+<li><code>attacker</code>: 攻撃元のユニットです。</li>
+<li><code>buf</code>: キーワードバフ由来のダメージであればそのキーワードです。</li>
 </ul>
 
 </article>

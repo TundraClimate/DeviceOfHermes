@@ -228,6 +228,12 @@ public class AdvancedPassiveBase : PassiveAbilityBase
     {
     }
 
+    /// <summary>Returns damage reducation</summary>
+    public virtual int GetDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker, KeywordBuf buf)
+    {
+        return 0;
+    }
+
     /// <summary>The type of OnClick</summary>
     public enum ClickType
     {

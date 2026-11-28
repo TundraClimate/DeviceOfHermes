@@ -555,11 +555,21 @@ internal static class AdvancedPatch
         {
             var matcher = new CodeMatcher(instructions);
 
+            matcher.MatchEndForward(CodeMatch.IsLdloc(1), CodeMatch.IsLdarg(0), CodeMatch.Calls(typeof(BattleUnitModel).Method("GetDamageReductionAll")), CodeMatch.IsOpCode(OpCodes.Sub), CodeMatch.IsStloc(1))
+                .Advance(1)
+                .Insert(CodeInstruction.Instance, CodeInstruction.Ldloca(1), CodeInstruction.Ldarg(1), CodeInstruction.Ldarg(2), CodeInstruction.Ldarg(3), CodeInstruction.Ldarg(4), CodeInstruction.Call(typeof(PatchDiceDamageValue).Method("InjectReducation")));
+
             matcher.MatchEndForward(CodeMatch.IsLdarg(0), CodeMatch.IsLdloc(), CodeMatch.Calls(typeof(BattleUnitModel).Method("OnLoseHp")))
                 .Advance(1)
                 .Insert(CodeInstruction.Instance, CodeInstruction.Ldloc(1), CodeInstruction.Ldarg(2), CodeInstruction.Ldarg(4), CodeInstruction.Call(typeof(PatchDiceDamageValue).Method("InjectMethod")));
 
             return matcher.Instructions();
+        }
+
+        static void InjectReducation(BattleUnitModel __instance, ref int num, int v, DamageType type, BattleUnitModel attacker, KeywordBuf buf)
+        {
+            num -= __instance.passiveDetail?.PassiveList?.OfType<AdvancedPassiveBase>()?.Sum(i => i.GetDamageReductionAll(v, type, attacker, buf)) ?? 0;
+            num -= __instance.bufListDetail?.GetActivatedBufList()?.OfType<AdvancedUnitBuf>()?.Sum(i => i.GetDamageReductionAll(v, type, attacker, buf)) ?? 0;
         }
 
         static void InjectMethod(BattleUnitModel __instance, int dmg, DamageType dty, KeywordBuf buf)

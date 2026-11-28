@@ -980,6 +980,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.DrawCardAddr
   nameWithType: AdvancedPassiveBase.DrawCardAddr
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetDamageReductionAll(System.Int32,DamageType,BattleUnitModel,KeywordBuf)
+  name: GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetDamageReductionAll_System_Int32_DamageType_BattleUnitModel_KeywordBuf_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetDamageReductionAll(System.Int32,DamageType,BattleUnitModel,KeywordBuf)
+  name.vb: GetDamageReductionAll(Integer, DamageType, BattleUnitModel, KeywordBuf)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetDamageReductionAll(Integer, DamageType, BattleUnitModel, KeywordBuf)
+  nameWithType: AdvancedPassiveBase.GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)
+  nameWithType.vb: AdvancedPassiveBase.GetDamageReductionAll(Integer, DamageType, BattleUnitModel, KeywordBuf)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetDamageReductionAll*
+  name: GetDamageReductionAll
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetDamageReductionAll_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetDamageReductionAll
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetDamageReductionAll
+  nameWithType: AdvancedPassiveBase.GetDamageReductionAll
 - uid: DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.GetHealingAdder(System.Int32)
   name: GetHealingAdder(int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedPassiveBase.html#DeviceOfHermes_AdvancedBase_AdvancedPassiveBase_GetHealingAdder_System_Int32_
@@ -1536,6 +1552,22 @@ references:
   isSpec: "True"
   fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetBreakDamageReductionAll
   nameWithType: AdvancedUnitBuf.GetBreakDamageReductionAll
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetDamageReductionAll(System.Int32,DamageType,BattleUnitModel,KeywordBuf)
+  name: GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetDamageReductionAll_System_Int32_DamageType_BattleUnitModel_KeywordBuf_
+  commentId: M:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetDamageReductionAll(System.Int32,DamageType,BattleUnitModel,KeywordBuf)
+  name.vb: GetDamageReductionAll(Integer, DamageType, BattleUnitModel, KeywordBuf)
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)
+  fullName.vb: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetDamageReductionAll(Integer, DamageType, BattleUnitModel, KeywordBuf)
+  nameWithType: AdvancedUnitBuf.GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)
+  nameWithType.vb: AdvancedUnitBuf.GetDamageReductionAll(Integer, DamageType, BattleUnitModel, KeywordBuf)
+- uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetDamageReductionAll*
+  name: GetDamageReductionAll
+  href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetDamageReductionAll_
+  commentId: Overload:DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetDamageReductionAll
+  isSpec: "True"
+  fullName: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetDamageReductionAll
+  nameWithType: AdvancedUnitBuf.GetDamageReductionAll
 - uid: DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.GetHealingAdder(System.Int32)
   name: GetHealingAdder(int)
   href: api/DeviceOfHermes.AdvancedBase.AdvancedUnitBuf.html#DeviceOfHermes_AdvancedBase_AdvancedUnitBuf_GetHealingAdder_System_Int32_

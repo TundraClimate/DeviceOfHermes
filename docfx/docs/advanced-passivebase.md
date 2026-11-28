@@ -169,6 +169,11 @@ class PassiveAbility_TestAdvPassive : AdvancedPassiveBase
     public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
     {
     }
+
+    public override int GetDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker, KeywordBuf buf)
+    {
+        return 0;
+    }
 }
 ```
 
@@ -651,3 +656,19 @@ public override void BeforeRollDiceLast(BattleDiceBehavior behavior)
 `BeforeRollDice`より後に実行されます。
 
 - `behavior`: 対象のダイスです。
+
+### `GetDamageReductionAll(int, DamageType, BattleUnitModel, KeywordBuf)`
+
+```cs
+public override int GetDamageReductionAll(int dmg, DamageType dmgType, BattleUnitModel attacker, KeywordBuf buf)
+{
+    return 0;
+}
+```
+
+全てのダメージに対して軽減を得ます。
+
+- `dmg`: 受ける元のダメージです。
+- `dmgType`: ダメージの種類です。
+- `attacker`: 攻撃元のユニットです。
+- `buf`: キーワードバフ由来のダメージであればそのキーワードです。
